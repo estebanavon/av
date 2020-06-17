@@ -1,0 +1,162 @@
+
+
+section.av-nosolas-main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url('#{$route-images}/responsabilidad-social/woman_manifiesto.jpg');
+    background-position: 25% top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+    }
+    .av-nosolas-aside {
+        width: 100%;
+        min-width: 80px;
+        height: 100%;
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width:768px) {
+            min-height: 100vh;
+            width: 30%;
+            padding: 0 0 4rem 0;
+            align-items: flex-end;
+        }
+
+        .av-nosolas-identity {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 95%;
+        }
+    }
+    .av-nosolas-container {
+        flex: 1;
+        height: 100%;
+        min-height: 100vh;
+        background-color: rgba(12,62,101,0.91);
+        padding-bottom: 3rem;
+
+        .av-nosolas-title {
+
+            text-transform: uppercase;
+            font-family: $black-zona;
+            color: $color-white;
+            font-style: normal;
+            position: relative;
+            left: -5px;
+
+            &.primary{
+                margin-top: 0.6rem;
+                font-size: 460%;
+                @media (min-width:768px) {
+                    font-size: 570%;
+                }
+                @media (min-width:992px) {
+                    font-size: 670%;
+                }
+            }
+            &.secondary{
+                font-size: 300%;
+                margin-top: -0.3rem;
+                color: $color-nosolas-primary;
+                @media (min-width:768px) {
+                    font-size: 440%;
+                }
+                @media (min-width:992px) {
+                    font-size: 550%;
+                }
+            }
+            
+        }
+        .av-nosolas-content {
+            width: 100%;
+            padding: $margin-sm;
+            @media (min-width:768px) {
+                padding: 0rem 4rem;
+            }
+            @media (min-width:992px) {
+                padding: 0rem 7rem;
+            }
+            .av-nosolas-text {
+                color: $color-white;
+                font-family: $light-zona;
+                margin-bottom: 1.3rem;
+                font-size: 14px;
+                text-align: justify;
+            }
+            .av-nosolas-hashtag {
+                text-transform: uppercase;
+                font-family: $black-zona;
+                padding: 0.3rem 0.6rem;
+                background-color: $color-nosolas-primary;
+                color: $color-nosolas-secondary;
+                display: inline-block;
+                margin: 1.5rem 0rem;
+                font-size: 20px;
+            }
+            .av-nosolas-subtitle {
+                font-family: $bold-zona;
+                color: $color-white;
+                text-transform: capitalize;
+                margin: 1rem 0rem;
+                font-size: 1.2rem;
+            }
+            .av-nosolas-strong {
+                font-family: $bold-zona;
+                color: $color-nosolas-primary;
+                text-transform: uppercase;
+            }
+            
+        }
+    }   
+}
+.av-nosolas-title {
+    align-items: flex-start;
+    background-image: url('#{$route-images}/responsabilidad-social/not-alone-title.jpg');
+    .av-title-stroke {
+        -webkit-text-stroke: 2px $color-hg-primary !important;
+    }
+    .av-title-text:nth-child(2), .av-title-support{
+        background-image: url('#{$route-images}/avon-gradient.jpg');
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+.av-nosolas-banner-1 {
+    background-image: url('#{$route-images}/responsabilidad-social/not-alone-banner-1.jpg');
+    background-size: cover;
+}
+.av-nosolas-banner-3 {
+    background-image: url('#{$route-images}/responsabilidad-social/not-alone-banner-3.jpg');
+    background-size: cover;
+}
+.av-nosolas-banner-2 {
+    background-image: url('#{$route-images}/responsabilidad-social/not-alone-banner-2.jpg');
+    background-size: cover;
+    height: 300px;
+}
+.av-nosolas-brands {
+    width: 80px;
+    display: block;
+    margin: $size-text auto;
+}
+.av-nosolas-letter {
+    .av-list {
+        margin-bottom: $size-text + 1.1rem;
+        li {
+            text-align: justify;
+            margin-bottom: 1.4rem;
+        }
+    }
+    .av-text:not(:nth-child(1)),.av-text:not(:nth-child(2)) {
+        text-align: justify;
+    }
+}

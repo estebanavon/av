@@ -1,0 +1,39 @@
+
+
+//Basic colors
+$color-white : #fff;
+$color-light-white: #fafafa;
+$color-dark-lighter: scale-color($color-white, $lightness: -6%);
+$color-dark-50: scale-color($color-white, $lightness: -50%);
+$color-dark-light: scale-color($color-white, $lightness: -60%);
+$color-dark: #464646;
+$color-dark-50: scale-color($color-white, $lightness: -50%);
+$color-dark-10: scale-color($color-white, $lightness: -10%);
+
+$color-text: $color-dark;
+
+// Main color
+$color-primary: #ED288A;
+$color-primary-light: #EF4D94;
+$color-primary-lighter: #F06798;
+$color-primary-lightest: #F49AC1;
+
+//Secondary color
+$color-secondary: #EE3129;
+$color-secondary-dark: #EE2F4E;
+$color-secondary-light: #F9B5B2;
+
+//Gradient color
+$color-gradient-1: #9113B0;
+$color-gradient-2: #C1047E;
+$color-gradient-3: #E23679;
+$color-gradient: linear-gradient(to right, $color-gradient-1, $color-gradient-2, $color-gradient-3);
+
+$color-nosolas-primary: #F68B23;
+$color-nosolas-secondary: #0C3E65;
+
+$color-hg-primary: $color-gradient-1;
+
+$color-protinol: #061E3F;
+$color-protinol-secondary: #0E5781;
+$color-protinol-gold: #AA7B41;

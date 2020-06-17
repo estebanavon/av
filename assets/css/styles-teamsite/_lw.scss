@@ -1,0 +1,137 @@
+body{
+    background-color: $color-dark-lighter;
+}
+$transition-speed: 1s;
+
+section.av-lw {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: $color-white;
+    min-height: 50vh;
+    margin: 0 auto;
+    @media (min-width:$media-3){
+        max-width: 80%; 
+    }
+
+
+
+    aside {
+        flex: 1;
+        z-index: 20;
+        .av-intro {
+            min-height: 80vh;
+            background-image: url('./../img/lw-i.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all $transition-speed - 0.5s;
+        }
+        .av-recent{
+            height: 40vh;
+        }
+    }
+
+
+
+    article.av-section-container {
+        width: 60%;
+        transition: all $transition-speed;
+        position: relative;
+        background-color: $color-white;
+        &.expand {
+            width: 75%;
+        }
+        .av-button-back {
+            position: absolute;
+            left: -50%;
+            cursor: pointer;
+            z-index: 10;
+            transition: all $transition-speed;
+            overflow: hidden;
+            width: 0;
+            i{
+                padding: 1.5em;
+            }
+            &:active{
+                background-color: $color-dark-light;
+            }
+            &.unable {
+                width: auto;
+                left: 0;
+            }
+        }
+        .av-divider {
+            width: 75%;
+            height: 1px;
+            background-color: $color-text;
+            margin: 0.4rem auto;
+        }
+        .av-section {
+            @mixin section-select($padding:1% 18%,$color:$color-text,$font-increase:0.3rem,$align:center){
+                padding: $padding;
+                color: $color;
+                font-family: $regular-monts;
+                font-size: $size-text + $font-increase;
+                margin-top: $size-text + 0.2rem;
+                text-decoration: none;
+                display: flex;
+                align-items: $align;
+            }
+
+            &-title{
+                @include section-select(1% 18%,$color-dark-light,0rem,center);
+            }
+
+            .av-section-select {
+                @include section-select(2% 14%,$color-text,0.3rem,flex-start);
+                transition: all $transition-speed;
+                
+                &.unable {
+                    cursor: pointer;
+                    margin-top: 0rem;
+                    padding: $size-text 18%;
+                    &.sub {
+                        padding: ($size-text - 0.3rem) 18%;
+                        font-size: $size-text + 0.2rem;
+                    }
+                    &:hover{
+                        background-color: $color-dark-lighter;
+                    }
+                    &:active{
+                        background-color: $color-light-white;
+                    }
+                    
+                    i {
+                        display: inline-block;
+                        
+                    }
+                }
+                .av-selection-spacer {
+                    flex-grow: 1;
+                }
+                i {
+                    display: none;
+                }
+            }
+            .av-doc-container {
+                overflow: hidden;
+                height: 0;
+                opacity: 0;
+                margin-left: 14%;
+                margin-right: 12%;
+                transition: all $transition-speed;
+                &.unable {
+                    height: 70vh;
+                    opacity: 1;
+                }
+                .av-doc-item {
+                    padding: $margin-default $margin-lg;
+                }
+            }   
+        }
+    }
+}

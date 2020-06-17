@@ -1,0 +1,64 @@
+
+@font-face {
+    src: url('#{$route-font}/ZonaPro-Black.otf');
+    font-family: zona-pro-black;
+}
+@font-face {
+    src: url('#{$route-font}/ZonaPro-Light.otf');
+    font-family: zona-pro-light;
+} 
+@font-face {
+    src: url('#{$route-font}/ZonaPro-Bold.otf');
+    font-family: zona-pro-bold;
+}
+@font-face {
+    src: url('#{$route-font}/ZonaPro-Regular.otf');
+    font-family: zona-pro-regular;
+}
+@font-face {
+    src: url('#{$route-font}/ZonaPro-SemiBold.otf');
+    font-family: zona-pro-semi-bold;
+}
+@font-face {
+    src: url('#{$route-font}/ZonaPro-Thin.otf');
+    font-family: ZonaProThin;
+}
+@font-face {
+    src: url('#{$route-font}/Montserrat-regular.ttf');
+    font-family: montserrat-regular;
+}
+@font-face {
+    src: url('#{$route-font}/Montserrat-Light.ttf');
+    font-family: montserrat-light;
+}
+@font-face {
+    src: url('#{$route-font}/Montserrat-SemiBold.ttf');
+    font-family: montserrat-semi-bold;
+}
+
+@font-face {
+    src: url('#{$route-font}/Gotham-Bold.otf');
+    font-family: gotham-bold;
+}
+@font-face {
+    src: url('#{$route-font}/Gotham-Book.otf');
+    font-family: gotham-book;
+}
+//Use this global variables for changing a font weight
+
+$safe-font: Helvetica, sans-serif;
+$safe-font-bold: "Arial Black", Gadget, sans-serif;
+
+$black-zona : zona-pro-black, $safe-font-bold;
+$light-zona : zona-pro-light, $safe-font;
+$bold-zona : zona-pro-bold, $safe-font;
+$regular-zona : zona-pro-regular, $safe-font;
+$semi-bold-zona : zona-pro-semi-bold, $safe-font;
+$thin : ZonaProThin, $safe-font;
+
+$regular-monts: montserrat-regular, $safe-font;
+$light-monts: montserrat-light, $safe-font;
+$semi-bold-monts: montserrat-semi-bold, $safe-font;
+
+$bold-gotham: gotham-bold, $safe-font-bold;
+$book-gotham: gotham-book, $safe-font;

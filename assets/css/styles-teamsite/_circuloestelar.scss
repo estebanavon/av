@@ -1,0 +1,149 @@
+
+.av-ce-container {
+    width: 100%;
+    min-width: 100%;
+    @media (min-width:$media-1){
+        min-width: 920px;
+    }
+}
+.av-ce-header {
+    background-image: url('#{$route-images}/circulo_estelar/ce-header.jpg');
+    height: 45vh;
+    margin-bottom: 0;
+    .av-title-text {
+        line-height: $line-height * 1.8;
+        @media (min-width:$media-1) {
+            font-size: 3.5rem;
+            line-height: $line-height * 2.5;
+        }   
+    }
+    .av-title-brand{
+        width:120px;
+    }
+}
+
+
+.ce-onboarding {
+    > p {
+        font-size: 8rem;
+        font-family: $light-zona;
+        color: $color-dark-light;
+        position: relative;
+        top: -20px;
+    }
+    div {
+        h3{
+            font-size: 1.7rem;
+            font-family: $light-zona;
+            color: $color-dark-light;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 0;
+        }
+        h4{
+            font-size: 1.4rem;
+            font-family: $light-zona;
+            color: $color-primary;
+            text-align: left;
+        }
+        .av-text:nth-child(3){
+            font-size: 1.4rem;
+        }
+    }
+}
+.av-pink {
+    color: $color-primary;
+    &.ce-text-1 {
+        font-size: $size-text + 0.2rem;
+        font-family: $regular-zona;
+        line-height: 25px;
+    }
+}
+
+
+.av-ce-option{ 
+    h4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        padding-right: 2rem;
+        font-size: $size-text;
+        font-family: $light-zona;
+        color: $color-dark-light;
+        transition: all 0.2s;
+        cursor: pointer;
+        i{
+            display: none;
+        }
+        &.active{
+            color: $color-primary;
+            font-family: $regular-zona;
+            i{
+                color: $color-primary;
+                display: inline-block;
+            }
+        }
+        &:hover:not(.active) {
+            color: $color-dark;
+        }
+    }
+}
+.av-list-container {
+    height: 100%;
+    position: relative;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+@mixin card-image($number:default){
+    .av-card-#{$number} {
+        background-image: url('#{$route-images}/circulo_estelar/ce-#{$number}.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+}
+@include card-image();
+@include card-image(6);
+@include card-image(7);
+@include card-image(8);
+@include card-image(9);
+@include card-image(10);
+
+.av-scroll-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    span {
+        font-family: $light-zona;
+    }
+    i {
+        animation-name: scrollAnimation;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+}
+@keyframes scrollAnimation {
+    0%{
+        transform: translateY(-10px);
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        transform: translateY(10px);
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}

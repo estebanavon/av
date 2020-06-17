@@ -1,0 +1,152 @@
+
+@mixin main-containers($variant: 0rem) {
+    
+    padding-left: $margin-default;
+    padding-right: $margin-default;
+    padding-top: $margin-md;
+    padding-bottom: $margin-md;
+    margin-right: $margin-none;
+    margin-left: $margin-none;
+    
+    @media (min-width:$media-1){
+        padding-left: $margin-sm;
+        padding-right: $margin-sm;
+        padding-top: $margin-lg;
+        padding-bottom: $margin-lg;
+    }
+    @media (min-width:$media-3){
+        padding-left: $margin-md - ($variant/1.3);
+        padding-right: $margin-md - ($variant/1.3);    
+    }
+    @media (min-width:$media-4){
+        padding-left: $margin-lg - $variant;
+        padding-right: $margin-lg - $variant;
+    }
+}
+@mixin secondary-containers() {
+    margin-right: $margin-none;
+    margin-left: $margin-none;
+    [class^="col"]:first-child,[class^="col"]:last-child{
+        padding-left: $margin-default;
+        padding-right: $margin-default;
+        padding-top: $margin-md;
+        padding-bottom: $margin-md;
+        margin-bottom: $margin-sm;
+        @media (min-width:$media-1){
+            padding-left: $margin-lg;
+            padding-right: $margin-lg;
+            padding-top: $margin-lg;
+            padding-bottom: $margin-lg;
+            margin-bottom: $margin-none;
+        }
+    }
+}
+
+section.av-container {
+    overflow-x: hidden;
+    .av-row {
+        @include main-containers();
+    }
+    &.av-container-small {
+        .av-row {
+            @include main-containers(4rem);
+        }
+    }
+    .av-row-thin {
+        @include secondary-containers();
+    }
+}
+
+
+@mixin card-pair($direction:left) {
+    .av-pair-text {
+        $card-padding: 7rem;
+        flex: 1;
+        padding: $card-padding/1.9 0em;
+        transition: all 1s;
+
+        @media (min-width:$media-1){
+            padding: $card-padding/1.5;
+            padding-#{$direction}: 0rem;
+        }
+
+        @media (min-width:$media-2) {
+            padding: $card-padding $card-padding/1.5;
+            padding-#{$direction}: 2rem;    
+        }
+
+        &.expand {
+            padding: $card-padding 0rem;
+        }    
+    }
+}
+
+
+.av-pair-container {
+    @include main-containers();
+    &.av-card-small {
+        @include main-containers(4rem);
+    }
+    //&.horizontal {
+        .av-pair-content {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0 $margin-default;
+
+            @media (min-width:$media-1) {
+                flex-direction: row;
+            }
+            @include card-pair(left);
+
+            &.reverse {
+                flex-direction: column-reverse;
+                @media (min-width:$media-1) {
+                    flex-direction: row-reverse;
+                }    
+                @include card-pair(right);
+            }
+            
+            [class^="av-pair"] {
+                width: 100%;
+                @media (min-width:$media-1) {
+                    flex-basis: 50%;
+                }
+            }
+            .av-pair-image {
+                min-height: 200px;
+            }
+
+            
+        }
+    
+}
+@mixin pLeftRight ($variant:0rem,$direction:left) {
+    padding-left: $margin-sm + $variant;
+    padding-right: $margin-sm + $variant;
+    margin-right: $margin-none;
+    margin-left: $margin-none;
+    
+    @media (min-width:$media-1){
+        padding-#{$direction}: $margin-sm;
+    }
+    @media (min-width:$media-3){
+        padding-#{$direction}: $margin-md;
+    }
+    @media (min-width:$media-4){
+        padding-#{$direction}: $margin-lg;
+    }
+}
+.av-p {
+    &left{
+        @include pLeftRight(0rem,left);
+        &.av-pleft-variant {
+            @include pLeftRight(2rem,left);
+        }
+    }
+    &right{
+        @include pLeftRight(0rem,right);
+        &.av-pright-variant {
+            @include pLeftRight(2rem,right);
+        }
+    }
+}

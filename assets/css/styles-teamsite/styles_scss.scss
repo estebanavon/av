@@ -1,0 +1,19 @@
+
+
+@import '../partial-scss/routes';
+@import '../partial-scss/font';
+@import '../partial-scss/colors';
+@import '../partial-scss/variables';
+
+$size-text: 1rem;
+
+@import '../partial-scss/primary-grid';
+@import '../partial-scss/primary';
+@import '../partial-scss/button';
+@import '../partial-scss/reset';
+
+@import 'hg-team-site';
+@import 'circuloestelar';
+
+@import 'lw';
+@import 'home-slider';

@@ -1,0 +1,110 @@
+
+.av-img-higiene {
+    background-image: url('#{$route-images}/folletos/hg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 500px;
+    position: relative;
+    top: -11rem;
+    display: none;
+    @media (min-width:$media-1){
+        display: block;
+    }
+}
+.av-subtitle-altern {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-hg-primary;
+    font-family: $black-zona;
+    margin-bottom: 1rem;
+    &.negative {
+        color: $color-white;
+        text-align: center;
+
+        @media (min-width:$media-2){
+            text-align: left;
+        }
+    }
+}
+
+.av-row-higiene {
+    @include secondary-containers();
+}
+.av-hg-images {
+    width: 33.3%;
+}
+.av-slide-container {
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width:$media-0){
+        flex-direction: row;
+    }
+
+    .av-slide-product {
+        
+        border-radius: 3px;
+        background-color: $color-white;
+        flex: 1;
+        transition: all 0.4s;
+        margin: 0.4rem;
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        position: relative;
+        
+        .av-slide-header {
+            .av-slide-image {
+                width: 100%;
+            }
+        }
+        
+
+        // Second Modification
+
+        .av-slide-description {
+            color: $color-dark-light;
+            display: block;
+            font-family: $light-monts;
+
+            .av-slide-description-price {
+                font-size: $size-text + 0.2rem;
+                color: $color-primary;
+                font-family: $regular-monts;
+                display: block;
+            }
+        }
+        .av-slide-code {
+            font-size: $size-text+0.1rem;
+            font-family: $regular-monts;
+            margin-bottom: $margin-none;
+        }
+        .av-slide-text { 
+            padding: $size-text ($size-text+0.2rem);
+            display: flex;
+
+            .av-slide-text-item:first-child{
+                padding-right: $size-text;
+                flex: 2;
+            }
+            .av-slide-text-item.right{
+                text-align: right;
+                flex: 1;
+                padding-left: $size-text;
+            }
+            
+            .av-slide-title{
+                font-size: $size-text+0.1rem;
+                font-family: $light-zona;
+                margin-bottom: $size-text / 1.1;
+                p {
+                    color: $color-dark-light;
+                }
+            }
+            
+        }
+
+    }
+}

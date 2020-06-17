@@ -1,0 +1,22 @@
+
+// Media Master configuration
+$media-0: 576px;
+$media-1: 768px;
+$media-2: 992px;
+$media-3: 1024px;
+$media-4: 1200px;
+
+// Margin Variables Master
+
+$initial-unit: 0.6rem;
+
+$margin-lg: 7rem - $initial-unit;
+$margin-md: 5rem - $initial-unit;
+$margin-sm: 3rem - $initial-unit;
+$margin-default: $initial-unit;
+$margin-none: 0rem;
+
+// Text Size Master
+
+$line-height: 24px;
+$size-text: 1.1rem;

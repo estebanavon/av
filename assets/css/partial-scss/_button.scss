@@ -1,0 +1,92 @@
+
+@mixin button-basic() {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: $size-text;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &.negative {
+        color: $color-white;
+    }
+}
+@mixin button-basic-fill($padding:1) {
+    color: $color-white;
+    padding: ($size-text / $padding) $size-text * 1.8;
+    text-align: center;
+    font-family: $regular-monts;
+}
+
+
+
+
+
+.av-button-primary {
+    @include button-basic();
+    @include button-basic-fill();
+    background-color: $color-primary;
+    display: inline-block;
+    &:hover {
+        background-color: scale-color($color-primary, $lightness: -15%);
+    }
+}
+.av-button-secondary {
+    @include button-basic();
+    @include button-basic-fill(2);
+    border: 1px solid $color-white;
+    width: 50%; 
+    transition: all 1.5s;
+    &:after {
+        content: 'Ir';
+    }
+}
+.av-button-gradient {
+    @include button-basic();
+    @include button-basic-fill();
+    padding: ($size-text * 1.2) 0rem;
+    
+    text-transform: uppercase;
+    background-image: $color-gradient;
+    background-color: $color-primary;
+    display: block;
+    width: 100%;
+}
+.av-button-icon {
+    @include button-basic();
+    padding: 0.6rem;
+    &:hover {
+        background-color: $color-dark-10;   
+    }
+}
+.av-link {
+    $size-padding: $size-text * 1.5;
+    font-family: $regular-monts;
+    font-size: $size-text;
+    color: $color-primary;
+    padding: $size-padding $size-padding $size-padding 0rem;
+    display: block;
+    @include button-basic();
+    @mixin icons-button($color){
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: $size-text;
+        color: $color;   
+    }
+    &-icon {
+        @include icons-button($color-dark-light);
+        @include button-basic(); 
+    }
+    &-icon.primary {
+        @include icons-button($color-primary);
+        @include button-basic(); 
+    }
+    &-inline {
+        color: $color-primary;
+        @include button-basic();
+    }
+}

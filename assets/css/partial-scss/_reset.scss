@@ -1,0 +1,44 @@
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{ 
+    max-width: 1600px;
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+    // Bootstrap container reset
+
+    .container {
+        @media (min-width:576px){
+            max-width: 100%;
+        }
+        @media (min-width:768px){
+            max-width: 100%;
+        }
+        @media (min-width:992px){
+            max-width: 100%;
+        }
+        @media (min-width: 1200px){
+            max-width: 1170px;
+        }
+    
+    }
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin: 0;
+    }
+}
+video:focus {
+    outline: none;
+  }
+.multimedia-title h2 {
+    @include subtitle(1.4rem);
+    margin: 2rem;
+}
+.multimedia-layout-wrapper .video-text-item h3 {
+    @include subtitle(1.2rem);
+    margin: 2rem;
+}

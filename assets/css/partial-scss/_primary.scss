@@ -1,0 +1,362 @@
+
+ @mixin img-fallback($color:$color-white, $spacing: 0px) {
+    color: $color;
+    font-family: $safe-font;
+    text-align: center;
+    font-size: $size-text * 1.3;
+    letter-spacing: $spacing;
+    font-weight: 300;
+}
+@mixin titile-mixin($color:$color-white){
+    color: $color;
+    font-family: $black-zona;
+    text-transform: uppercase;
+    line-height: $line-height * 2;
+    font-style: normal;
+    word-break: break-word;
+    margin: $margin-none;
+
+}
+.av-title-container {
+    position: relative;
+    height: 50vh;
+    padding: $margin-sm;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: $color-gradient;
+    background-color: $color-primary;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    transition: all 1s;
+    margin: 0 (-$margin-default);
+
+    @media (min-width:$media-1) {
+        padding: $margin-sm;
+        margin-bottom: $margin-sm;
+        height: 60vh;
+    }
+    @media (min-width:$media-2) {
+        padding: $margin-md;
+    }
+    .av-title-text{
+        
+        @include titile-mixin();
+        font-size: 3rem;
+        text-align: right;
+
+        @media (min-width:$media-1) {
+            font-size: 4rem;
+            line-height: $line-height * 2.6;
+        }
+        @media (min-width:$media-2) {
+            font-size: 5rem;
+            line-height: $line-height * 3.2;
+        }
+
+        .av-title-stroke {
+            @supports (-webkit-text-stroke: 1px black) {
+                -webkit-text-stroke: 1px white;
+                -webkit-text-fill-color: transparent;
+              }
+        }
+
+    }
+
+    .av-title-support {
+        color: white;
+        font-size: 1rem;
+        font-family: $semi-bold-zona;
+        text-align: right;
+        line-height: $size-text;
+        font-style: normal;
+
+        @media (min-width:$media-1) {
+            font-size: 1.4em;
+        }
+    }
+
+    .av-title-brand {
+        width: 130px;
+        @include img-fallback($color-white,16px);
+        @media (min-width:$media-1) {
+            margin-top: $size-text;
+            width: 160px;
+        }
+    }
+}
+
+
+// TEXTS
+
+@mixin negative($align:center) {
+    &.negative {
+        color: $color-white;
+        text-align: $align;
+        @media (min-width:$media-1) {
+            text-align: left;
+        }
+    }
+}
+
+@mixin subtitle($size) {
+    color: $color-text;
+    font-family: $semi-bold-zona;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 1.4rem;
+    margin-top: 0rem;
+    font-size: $size - 0.2rem;
+    display: block;
+    padding: 0;
+    
+    @media (min-width:$media-0){
+        font-size: $size - 0.1rem;
+    }
+    @media (min-width:$media-1){
+        text-align: center;
+        font-size: $size;
+    }
+    &.left {
+        text-align: left;
+    }
+}
+@mixin highlight() {
+    .av-highlight {
+        font-family: $semi-bold-monts;
+    }
+}
+.av-subtitle {
+    @include subtitle(1.8rem);
+    @include negative();
+
+    &-support {
+        @include subtitle($size-text);
+        @include negative();
+    }
+    
+}
+
+@mixin text-mixin($font:$regular-monts){
+    color: $color-text;
+    font-family: $font;
+    font-size: $size-text;
+    line-height: $line-height;
+    margin-bottom: $size-text + 0.7rem;
+}
+.av-text{
+    @include text-mixin();
+
+    @include negative;
+    
+    @include highlight();
+    
+    &.av-text-small {
+        font-size: $size-text - 0.1rem;
+        line-height: 20px;
+        p {
+            margin-bottom: $size-text;
+        }
+    }
+    &.av-text-large {
+        font-size: $size-text + 0.5rem;
+        line-height: 25px;
+    }
+
+    &:last-child{
+        margin-bottom: $margin-none;
+    }
+}
+
+
+// LISTS
+
+
+.av-list {
+    font-family: $regular-monts;
+    padding-left: $size-text;
+    line-height: $line-height;
+    font-size: $size-text;
+    color: $color-text;
+    list-style-type: disc;
+    @include highlight();
+    li {
+        margin-bottom: $size-text / 2.5;
+    }
+    
+    &.av-list-doc {
+        padding-left: 0;
+        li {
+            padding: 0 0.5rem;
+            border-bottom: 1px $color-dark-lighter solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+
+            [class^='material-icons'] {
+                color: $color-primary;
+            }
+            &:hover:not(.av-list-divider) {
+                background-color: $color-dark-lighter;
+            }
+            .av-list-spacer{
+                flex: 1;
+            }
+        }
+    }
+    .av-list-title {
+        font-size: $size-text - 0.1rem;
+        font-family: $bold-zona;
+        padding: $size-text 0rem !important;
+        background-color: $color-white;
+        color: $color-text;
+        &:hover{
+            background-color: $color-white !important;
+        }
+    }
+}
+.av-hashtag {
+    font-family: $light-zona;
+    margin: 1rem 0;
+    color: $color-text;
+    font-size: $size-text+0.1rem;
+}
+
+.av-table-container {
+    overflow-x: auto;
+    width: 100%;
+    .av-table {
+        width: 100%;
+        border-collapse: collapse;
+        thead tr {
+            background-color: $color-dark-light;
+            td {
+                padding: ($size-text * 1.7);
+                color: $color-white;
+                font-weight: bolder;
+            }
+        }
+        tr:nth-child(even){
+            background-color: $color-dark-lighter;
+        }
+        td {
+            padding: $size-text $size-text * 1.8;
+            font-family: $light-monts;
+        }
+    }    
+}
+
+.av-brand {
+    width: 160px;
+    @media (min-width:$media-1){
+        width: 190px;
+    }
+}
+
+
+.av-gradient {
+    background-image: $color-gradient;
+    margin: 0 (-$margin-default);
+}
+.av-gray {
+    background-color: $color-dark-lighter;
+    margin: 0 (-$margin-default);
+}
+.av-spacer {
+    height: 2rem;
+    width: 100%;
+    @media (min-width:$media-1){
+        height: 5rem;
+    }
+}
+.av {
+   &-lg-icons {
+    font-size: 2rem;
+   }
+   &-sm-icons {
+    font-size: 1rem;
+   } 
+}
+
+.av-tooltip {
+    position: relative;
+    .tooltiptext {
+        visibility: hidden;
+        width: auto;
+        font-family: $regular-monts;
+        font-size: $size-text - 0.2rem;
+        background-color: $color-dark;
+        color: $color-white;
+        text-align: center;
+        padding: 7px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        top: -70%;
+        left: -70%;
+        white-space: nowrap;
+      }
+      &:hover .tooltiptext {
+        visibility: visible;
+      }
+    
+  }
+ 
+ .av-fallback{
+     @include img-fallback($color-dark);
+ }
+
+@mixin fade-settings ($direction:-100px){
+    opacity: 0;
+    transform: translateX($direction);
+    transition: all 1s;
+    &.fade-active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+ .av-fade {
+    @include fade-settings ();
+    &-reverse {
+        @include fade-settings(100px);
+    }
+}
+.av-prllx-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+
+    .av-prllx-image {
+        width: 100%;
+        height: 150%;
+        background-image: url('#{$route-images}/anew-protinol/prtnl-background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        position: absolute;
+    }
+    .av-prllx-content {
+        padding-top: $margin-md;
+        padding-bottom: $margin-md;
+        z-index: 2;
+        position: relative;
+    }
+}
+.av-frame {
+    position: absolute;
+    top: 1rem;
+    
+    width: 90%;
+    height: 90%;
+    border: 1px $color-white solid;
+    border-radius: 5rem 0;
+    align-self: center;
+    
+}
