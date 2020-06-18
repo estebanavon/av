@@ -1,7 +1,17 @@
-body{
+body {
     background-color: $color-dark-lighter;
 }
 $transition-speed: 1s;
+@mixin section-select($padding:18%,$font-increase:0rem,$align:center){
+    padding: 2% $padding;
+    color: $color-text;
+    font-family: $regular-monts;
+    font-size: $size-text + $font-increase;
+    margin-top: $size-text;
+    text-decoration: none;
+    display: flex;
+    align-items: $align;
+}
 
 section.av-lw {
     display: flex;
@@ -11,16 +21,16 @@ section.av-lw {
     min-height: 50vh;
     margin: 0 auto;
     @media (min-width:$media-3){
-        max-width: 80%; 
+        max-width: 75%; 
     }
-
 
 
     aside {
         flex: 1;
         z-index: 20;
+        display: none;
         .av-intro {
-            min-height: 80vh;
+            min-height: 75vh;
             background-image: url('./../../img/lw-i.jpg');
             background-repeat: no-repeat;
             background-size: cover;
@@ -32,18 +42,28 @@ section.av-lw {
         }
         .av-recent{
             height: 40vh;
+            background-color: $color-text;
+        }
+        @media (min-width:$media-1){
+            display: block;
         }
     }
 
 
 
     article.av-section-container {
-        width: 60%;
+        width: 100%;
         transition: all $transition-speed;
         position: relative;
         background-color: $color-white;
         &.expand {
-            width: 75%;
+            width: 100%;
+            @media (min-width:$media-1){
+                width: 75%;
+            }
+        }
+        @media (min-width:$media-1){
+            width: 65%;
         }
         .av-button-back {
             position: absolute;
@@ -53,9 +73,7 @@ section.av-lw {
             transition: all $transition-speed;
             overflow: hidden;
             width: 0;
-            i{
-                padding: 1.5em;
-            }
+            padding: 2em;
             &:active{
                 background-color: $color-dark-light;
             }
@@ -65,29 +83,24 @@ section.av-lw {
             }
         }
         .av-divider {
-            width: 75%;
+            width: 65%;
             height: 1px;
-            background-color: $color-text;
+            background-color: $color-dark-light;
             margin: 0.4rem auto;
         }
+        .av-section-title,.av-section-select {
+            i:nth-child(1){
+                margin-right: 1rem;
+                color: $color-primary;
+            }
+            
+        }
+        .av-section-title {
+            @include section-select(18%,0rem,center);
+        }
         .av-section {
-            @mixin section-select($padding:1% 18%,$color:$color-text,$font-increase:0.3rem,$align:center){
-                padding: $padding;
-                color: $color;
-                font-family: $regular-monts;
-                font-size: $size-text + $font-increase;
-                margin-top: $size-text + 0.2rem;
-                text-decoration: none;
-                display: flex;
-                align-items: $align;
-            }
-
-            &-title{
-                @include section-select(1% 18%,$color-dark-light,0rem,center);
-            }
-
             .av-section-select {
-                @include section-select(2% 14%,$color-text,0.3rem,flex-start);
+                @include section-select(14%,0.3rem,flex-start);
                 transition: all $transition-speed;
                 
                 &.unable {
@@ -95,7 +108,7 @@ section.av-lw {
                     margin-top: 0rem;
                     padding: $size-text 18%;
                     &.sub {
-                        padding: ($size-text - 0.3rem) 18%;
+                        padding: ($size-text - 0.3rem) 18% ($size-text - 0.3rem) 25%;
                         font-size: $size-text + 0.2rem;
                     }
                     &:hover{
@@ -107,9 +120,9 @@ section.av-lw {
                     
                     i {
                         display: inline-block;
-                        
                     }
                 }
+                
                 .av-selection-spacer {
                     flex-grow: 1;
                 }

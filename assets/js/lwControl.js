@@ -14,11 +14,23 @@ $(document).ready(function(){
 
         // Documents append
         if (once[avdata]==="true"){
-            let avArrayPrint = "";
-            avArrayPrint += '<ol class="av-list av-list-doc"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[avdata] +'</ol>'
-            
-            $(this).find('.av-doc-container').append(avArrayPrint);
-         }
+            if(avdata < 7){
+                let avArrayPrint = "";
+                avArrayPrint += '<ol class="av-list av-list-doc"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[avdata] +'</ol>'
+                
+                $(this).find('.av-doc-container').append(avArrayPrint);
+             } else if (avdata == 7){
+                let avArrayPrint = "";
+                avArrayPrint += '<ol class="av-list av-list-doc active"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[7] +'</ol>'+
+                '<ol class="av-list av-list-doc"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[8] +'</ol>';
+                $(this).find('.av-doc-container').append(avArrayPrint);
+             } else if (avdata == 8) {
+                let avArrayPrint = "";
+                avArrayPrint += '<ol class="av-list av-list-doc active"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[9] +'</ol>'+
+                '<ol class="av-list av-list-doc"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[10] +'</ol>';
+                $(this).find('.av-doc-container').append(avArrayPrint);
+             }
+        } 
          once[avdata] = "false";
     });
     $(".av-button-back").click(function(){
@@ -45,13 +57,79 @@ $(document).ready(function(){
     ];
     const imssSection2019 = [
         {
-            name: '2019',
+            name: 'Programa IMSS periodo C 2019',
+            file: 'select',
+        },
+        {
+            name: 'Ganadoras de periodo B 2019',
+            file: 'select',
+        },
+        {
+            name: 'Programa IMSS Periodo B 2019',
+            file: 'select',
+        },
+        {
+            name: 'Programa IMSS Periodo A 2019',
+            file: 'select',
+        },
+        {
+            name: 'Flyer IMSS para Empresarias periodo C',
             file: 'select',
         },
     ];
-    const vacationsSection = [
+    const vacationsSection2020 = [
         {
-            name: 'Vacaciones',
+            name: 'Bases Vacaciones Tercera Edición Bloque A',
+            file: 'select',
+        },
+        {
+            name: 'Bases Vacaciones Tercera Edición Bloque B',
+            file: 'select',
+        },
+        {
+            name: 'Bases Vacaciones Tercera Edición Bloque C',
+            file: 'select',
+        },
+        {
+            name: 'Anuncio Tercera Edición Vacaciones con Liderazgo Avon',
+            file: 'select',
+        },
+    ];
+    const vacationsSection2019 = [
+        {
+            name: 'Guía de Viaje para Ganadoras Bloque A',
+            file: 'select',
+        },
+        {
+            name: 'Guía de Viaje para Ganadoras Bloque B',
+            file: 'select',
+        },
+        {
+            name: 'Guía de Viaje para Ganadoras Bloque C',
+            file: 'select',
+        },
+        {
+            name: 'Lista Ganadoras Bloque A 2019',
+            file: 'select',
+        },
+        {
+            name: 'Lista Ganadoras Bloque B 2019',
+            file: 'select',
+        },
+        {
+            name: 'slLista Ganadoras Bloque C 2019ec',
+            file: 'select',
+        },
+        {
+            name: 'Apuéstale a tus vacaciones C4 y C8´2019',
+            file: 'select',
+        },
+        {
+            name: 'Bases Apuéstale a tus Vacaciones C4 a C8',
+            file: 'select',
+        },
+        {
+            name: 'Bases Generales Bloques Vacaciones con Liderazgo Avon 2019',
             file: 'select',
         },
     ];
@@ -267,8 +345,8 @@ $(document).ready(function(){
         },
     ];
 
-    var avConstructor = [generalToolsSection,messagesToolsSection,prospectionSection,conversionsSection,celayaSection,retentionSection,videosSection];
-    var once = ["true","true","true","true","true","true","true","true","true"];
+    var avConstructor = [generalToolsSection,messagesToolsSection,prospectionSection,conversionsSection,celayaSection,retentionSection,videosSection,imssSection2020,imssSection2019,vacationsSection2020,vacationsSection2019];
+    var once = ["true","true","true","true","true","true","true","true","true","true"];
 
     var e = 0;
     var i;
