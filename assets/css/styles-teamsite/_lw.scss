@@ -21,7 +21,7 @@ section.av-lw {
         z-index: 20;
         .av-intro {
             min-height: 80vh;
-            background-image: url('./../img/lw-i.jpg');
+            background-image: url('./../../img/lw-i.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -125,13 +125,32 @@ section.av-lw {
                 margin-right: 12%;
                 transition: all $transition-speed;
                 &.unable {
-                    height: 70vh;
+                    height: 100vh;
                     opacity: 1;
                 }
-                .av-doc-item {
-                    padding: $margin-default $margin-lg;
-                }
+                
             }   
+        }
+    }
+}
+.av-tabs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: $regular-monts;
+    margin: 1.5rem 0;
+
+    .av-tabs-items {
+        flex-grow: 1;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        padding: 1rem;
+        cursor: pointer;
+        &.active{
+            border-bottom-color: $color-text;
+        }
+        &:hover {
+            background-color: $color-light-white;
         }
     }
 }

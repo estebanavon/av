@@ -683,7 +683,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-list.av-list-doc li:hover:not(.av-list-divider) {
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .av-list.av-list-doc li .av-list-spacer {
@@ -1576,7 +1576,7 @@ section.av-lw aside {
 
 section.av-lw aside .av-intro {
   min-height: 80vh;
-  background-image: url("./../img/lw-i.jpg");
+  background-image: url("./../../img/lw-i.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1716,12 +1716,38 @@ section.av-lw article.av-section-container .av-section .av-doc-container {
 }
 
 section.av-lw article.av-section-container .av-section .av-doc-container.unable {
-  height: 70vh;
+  height: 100vh;
   opacity: 1;
 }
 
-section.av-lw article.av-section-container .av-section .av-doc-container .av-doc-item {
-  padding: 0.6rem 6.4rem;
+.av-tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  margin: 1.5rem 0;
+}
+
+.av-tabs .av-tabs-items {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  border-bottom: 5px solid transparent;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.av-tabs .av-tabs-items.active {
+  border-bottom-color: #464646;
+}
+
+.av-tabs .av-tabs-items:hover {
+  background-color: #fafafa;
 }
 
 .avh-slider-container {

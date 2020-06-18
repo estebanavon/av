@@ -3,38 +3,55 @@ $(document).ready(function(){
     const transtionSpeed = 900 ;
 
     $(".av-section").click(function(){
-        let t2 =$(this).attr("avdata");
-        let t1 = "url('./../img/lw-"+ t2 +".jpg')"; 
+        let avdata =$(this).attr("avdata");
+        let img = "url('./../img/lw-"+ avdata +".jpg')"; 
         $(this).children(".av-section-select").removeClass("unable").siblings().addClass("unable");
-        $(this).siblings(".av-section,.av-divider,.av-section-title").hide(transtionSpeed);
+        $(this).siblings(':not(.av-button-back)').hide(transtionSpeed);
         
         // Global DOM Manipulations
-        $(".av-section-container").addClass("expand").siblings().children().eq(0).css("backgroundImage",t1);
+        $(".av-section-container").addClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $(".av-button-back").addClass("unable");
+
+        // Documents append
+        if (once[avdata]==="true"){
+            let avArrayPrint = "";
+            avArrayPrint += '<ol class="av-list av-list-doc"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[avdata] +'</ol>'
+            
+            $(this).find('.av-doc-container').append(avArrayPrint);
+         }
+         once[avdata] = "false";
     });
     $(".av-button-back").click(function(){
-        let t1 = "url('./../img/lw-i.jpg')"; 
+        let img = "url('./../img/lw-i.jpg')"; 
         $(".av-section-select").addClass("unable");
         $(".av-doc-container").removeClass("unable");
-        $(".av-section,.av-divider,.av-section-title").show(transtionSpeed - 500);
+        $(this).siblings().show(transtionSpeed - 500);
 
         // Global DOM Manipulations
-        $(".av-section-container").removeClass("expand").siblings().children().eq(0).css("backgroundImage",t1);
+        $(".av-section-container").removeClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $(this).removeClass("unable");
     });
     
+    $('.av-tabs').children().click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
 
-    //////
 
-    const imssSection = [
+    const imssSection2020 = [
         {
-            name: 'Portada de facebook 2',
+            name: 'Programa IMSS periodo A 2020 (C2 a C6)',
+            file: 'select',
+        },
+    ];
+    const imssSection2019 = [
+        {
+            name: '2019',
             file: 'select',
         },
     ];
     const vacationsSection = [
         {
-            name: 'Portada de facebook 21',
+            name: 'Vacaciones',
             file: 'select',
         },
     ];
@@ -250,7 +267,7 @@ $(document).ready(function(){
         },
     ];
 
-    var avConstructor = [generalToolsSection,messagesToolsSection,prospectionSection,conversionsSection,celayaSection,retentionSection,imssSection,vacationsSection,videosSection];
+    var avConstructor = [generalToolsSection,messagesToolsSection,prospectionSection,conversionsSection,celayaSection,retentionSection,videosSection];
     var once = ["true","true","true","true","true","true","true","true","true"];
 
     var e = 0;
@@ -269,22 +286,6 @@ $(document).ready(function(){
         e++    
     }
     
-    function printDocs(n){
-        $("[avdata='"+ n +"']").click(function(){
-            if (once[n]=="true"){
-                let avArrayPrint = "";
-                avArrayPrint += '<ol class="av-list av-list-doc"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[n] +'</ol>'
-                $(this).children().eq(1).append(avArrayPrint);
-             }
-             once[n] = "false";
-        });
-        
-    }
-    
-    for (i=0;i<9;i++){
-        printDocs(i);
-    }
-    
-    
+
    
 });

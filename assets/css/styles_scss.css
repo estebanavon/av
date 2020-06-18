@@ -683,7 +683,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-list.av-list-doc li:hover:not(.av-list-divider) {
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .av-list.av-list-doc li .av-list-spacer {
@@ -2233,7 +2233,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-en-title {
-  height: 13rem;
+  height: 10rem;
   margin-bottom: 30rem;
   padding: 0rem;
 }
@@ -2263,7 +2263,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
       align-self: flex-start;
   padding: 2.2rem;
   left: 0%;
-  top: 48vh;
+  top: 24rem;
   width: 98%;
 }
 
