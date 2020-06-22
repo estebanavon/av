@@ -1576,7 +1576,7 @@ section.av-lw aside {
 }
 
 section.av-lw aside .av-intro {
-  min-height: 75vh;
+  min-height: 70vh;
   background-image: url("./../../img/lw-i.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1595,8 +1595,8 @@ section.av-lw aside .av-intro {
 }
 
 section.av-lw aside .av-recent {
-  height: 40vh;
-  background-color: #464646;
+  padding: 2rem;
+  background-image: linear-gradient(130deg, #D0709F, #B3276D 40%);
 }
 
 @media (min-width: 768px) {
@@ -1663,7 +1663,7 @@ section.av-lw article.av-section-container .av-section-title i:nth-child(1), sec
 }
 
 section.av-lw article.av-section-container .av-section-title {
-  padding: 2% 18%;
+  padding: 2% 12%;
   color: #464646;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 1rem;
@@ -1697,11 +1697,11 @@ section.av-lw article.av-section-container .av-section .av-section-select {
 section.av-lw article.av-section-container .av-section .av-section-select.unable {
   cursor: pointer;
   margin-top: 0rem;
-  padding: 1rem 18%;
+  padding: 1rem 12%;
 }
 
 section.av-lw article.av-section-container .av-section .av-section-select.unable.sub {
-  padding: 0.7rem 18% 0.7rem 25%;
+  padding: 0.7rem 12% 0.7rem 17%;
   font-size: 1.2rem;
 }
 
