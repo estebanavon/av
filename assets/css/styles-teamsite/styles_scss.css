@@ -460,7 +460,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #fff;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
-  line-height: 48px;
+  line-height: 44px;
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
@@ -471,14 +471,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 @media (min-width: 768px) {
   .av-title-container .av-title-text {
     font-size: 4rem;
-    line-height: 62.4px;
+    line-height: 57.2px;
   }
 }
 
 @media (min-width: 992px) {
   .av-title-container .av-title-text {
     font-size: 5rem;
-    line-height: 76.8px;
+    line-height: 70.4px;
   }
 }
 
@@ -605,7 +605,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #464646;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 22px;
   margin-bottom: 1.7rem;
 }
 
@@ -645,7 +645,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 .av-list {
   font-family: montserrat-regular, Helvetica, sans-serif;
   padding-left: 1rem;
-  line-height: 24px;
+  line-height: 22px;
   font-size: 1rem;
   color: #464646;
   list-style-type: disc;
@@ -873,7 +873,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   width: 90%;
   height: 90%;
   border: 1px #fff solid;
-  border-radius: 5rem 0;
+  border-radius: 4rem 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1329,13 +1329,13 @@ video:focus {
 }
 
 .av-ce-header .av-title-text {
-  line-height: 43.2px;
+  line-height: 39.6px;
 }
 
 @media (min-width: 768px) {
   .av-ce-header .av-title-text {
     font-size: 3.5rem;
-    line-height: 60px;
+    line-height: 55px;
   }
 }
 

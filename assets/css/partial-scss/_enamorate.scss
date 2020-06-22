@@ -1,90 +1,86 @@
 .av-en-title{
     height: 10rem;
-    margin-bottom: 22rem;
+    width: 100%;
     padding: 0rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
     @media (min-width:$media-1){
-        height: 50vh;
+        height: 60vh;
         margin-bottom: 5rem;
     }
-    @media (min-width:$media-2){
-        height: 50vh;
+}
+.av-en-wrapper{
+    position: relative;
+    padding: 2.2rem;
+    left: 0%;
+    width: 98%;
+    background-color: $color-white;
+
+    @media (min-width:$media-1) {
+        position: absolute;
+        bottom: 0rem;
+        padding: 2.5rem;
+        width: 60%;
+    }
+    @media (min-width:$media-2) {
+        left: 7%;
+        padding: 3rem 4rem 0rem 4rem;
     }
     @media (min-width:$media-3){
-        height: 60vh;
+        max-width: 35rem;
     }
-    .av-en-wrapper{
-        position: relative;
-        align-self: flex-start;
-        padding: 2.2rem;
-        left: 0%;
-        top: 26rem;
-        width: 98%;
-        @media (min-width:$media-1) {
-            top: 6vh;
-            background-color: $color-white;
-            padding: 2.5rem;
-            width: 55%;
+    .av-title-text {
+        @include titile-mixin($color-dark);
+        font-size: $size-text*2.1;
+        text-align: left;
+        margin-bottom: $size-text;
+        @media (min-width:$media-0) {
+            font-size: $size-text*2.9;
         }
-        @media (min-width:$media-2) {
-            top: 0;
-            left: 7%;
-            padding: 2.5rem 4rem 0rem 4rem;
-        }
-        @media (min-width:$media-3){
-            max-width: 40rem;
-        }
-        .av-title-text {
-            @include titile-mixin($color-dark);
-            font-size: $size-text*2.1;
-            text-align: left;
-            margin-bottom: $size-text;
-            @media (min-width:$media-0) {
-                font-size: $size-text*2.9;
-            }
-        }
-        .av-en-controls {
-            position: absolute;
-            top: -3rem;
-            right: 0;
+    }
+    .av-en-controls {
+        position: absolute;
+        top: -2rem;
+        right: 0;
 
-            @media (min-width:$media-1){
-                right: -4rem;
-                top: unset;
-            }
-            
-            > a {
-                text-decoration: none;
-                padding: 1rem;
-                background-color: $color-dark;
-                color: $color-white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.4s;
-                &:hover {
-                    background-color: $color-dark-light;
-                }
-                @media (min-width:$media-1) {
-                    padding: 1.5rem;
-                }
-            }
+        @media (min-width:$media-1){
+            right: -4rem;
+            top: unset;
         }
-        .av-indicators{
+        
+        > a {
+            text-decoration: none;
+            padding: 1rem;
+            background-color: $color-dark;
+            color: $color-white;
             display: flex;
-            justify-content: space-around;
-            width: 30%;
-            > div {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                border: 1px $color-text solid;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.4s;
+            &:hover {
+                background-color: $color-dark-light;
             }
-            .active {
-                background-color: $color-text;
+            @media (min-width:$media-1) {
+                padding: 1.5rem;
             }
         }
-    }   
+    }
+    .av-indicators{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        > div {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px $color-text solid;
+        }
+        .active {
+            background-color: $color-text;
+        }
+    }
 }
 
 .av-cta {
@@ -236,9 +232,9 @@
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-rows: repeat(6,230px);
+    grid-template-rows: repeat(3,190px);
     grid-template-columns: repeat(2,50%);
-    grid-gap: 0.6rem;
+    grid-gap: 0.5rem;
     padding: 0 0.5rem;
     @media (min-width:$media-1) {
         grid-template-rows: 300px 40px 300px;
@@ -278,7 +274,7 @@
     }
 }
 .en-card-3 {
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 1/1;
     @include en-card(3);
     @media (min-width:$media-1) {
@@ -287,8 +283,8 @@
     }
 }
 .en-card-4 {
-    grid-row: 4/5;
-    grid-column: 1/1;
+    grid-row: 2/3;
+    grid-column: 2/3;
     @include en-card(4);
     @media (min-width:$media-1) {
         grid-row: 3/4;
@@ -296,7 +292,7 @@
     }
 }
 .en-card-5 {
-    grid-row: 5/6;
+    grid-row: 3/4;
     grid-column: 1/1;
     @include en-card(5);
     @media (min-width:$media-1) {
@@ -305,8 +301,8 @@
     }
 }
 .en-card-6 {
-    grid-row: 6/7;
-    grid-column: 1/1;
+    grid-row: 3/4;
+    grid-column: 2/3;
     @include en-card(6);
     @media (min-width:$media-1) {
         grid-row: 3/4;
@@ -349,6 +345,9 @@
 }
 
 .p-relative {
+    position: relative;
+}
+.book-wrapper {
     position: relative;
     height: 40vh;
 }
