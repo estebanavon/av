@@ -2234,7 +2234,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 .av-en-title {
   height: 10rem;
-  margin-bottom: 30rem;
+  margin-bottom: 22rem;
   padding: 0rem;
 }
 
@@ -2263,7 +2263,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
       align-self: flex-start;
   padding: 2.2rem;
   left: 0%;
-  top: 24rem;
+  top: 26rem;
   width: 98%;
 }
 
@@ -2324,7 +2324,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 .av-en-title .av-en-wrapper .av-en-controls > a {
   text-decoration: none;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: #464646;
   color: #fff;
   display: -webkit-box;
@@ -2342,6 +2342,12 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 .av-en-title .av-en-wrapper .av-en-controls > a:hover {
   background-color: #666666;
+}
+
+@media (min-width: 768px) {
+  .av-en-title .av-en-wrapper .av-en-controls > a {
+    padding: 1.5rem;
+  }
 }
 
 .av-en-title .av-en-wrapper .av-indicators {
@@ -2592,10 +2598,10 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   display: grid;
   -ms-grid-rows: (230px)[6];
       grid-template-rows: repeat(6, 230px);
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  grid-gap: 1.4rem;
-  padding: 0 1rem;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  grid-gap: 0.6rem;
+  padding: 0 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -2604,6 +2610,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
         grid-template-rows: 300px 40px 300px;
     -ms-grid-columns: 45% 27% 27%;
         grid-template-columns: 45% 27% 27%;
+    grid-gap: 1.4rem;
     padding: 0;
   }
 }
@@ -2637,11 +2644,11 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-2 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
-  grid-column: 1/1;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 .en-card-2 .av-card {

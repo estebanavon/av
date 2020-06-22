@@ -1,6 +1,6 @@
 .av-en-title{
     height: 10rem;
-    margin-bottom: 30rem;
+    margin-bottom: 22rem;
     padding: 0rem;
     
     @media (min-width:$media-1){
@@ -18,7 +18,7 @@
         align-self: flex-start;
         padding: 2.2rem;
         left: 0%;
-        top: 24rem;
+        top: 26rem;
         width: 98%;
         @media (min-width:$media-1) {
             top: 6vh;
@@ -55,7 +55,7 @@
             
             > a {
                 text-decoration: none;
-                padding: 1.5rem;
+                padding: 1rem;
                 background-color: $color-dark;
                 color: $color-white;
                 display: flex;
@@ -64,6 +64,9 @@
                 transition: all 0.4s;
                 &:hover {
                     background-color: $color-dark-light;
+                }
+                @media (min-width:$media-1) {
+                    padding: 1.5rem;
                 }
             }
         }
@@ -234,12 +237,13 @@
     height: auto;
     display: grid;
     grid-template-rows: repeat(6,230px);
-    grid-template-columns: 100%;
-    grid-gap: 1.4rem;
-    padding: 0 1rem;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 0.6rem;
+    padding: 0 0.5rem;
     @media (min-width:$media-1) {
         grid-template-rows: 300px 40px 300px;
         grid-template-columns: 45% 27% 27%;
+        grid-gap: 1.4rem;
         padding: 0;
     }
 }
@@ -265,8 +269,8 @@
     }
 }
 .en-card-2 {
-    grid-row: 2/3;
-    grid-column: 1/1;
+    grid-row: 1/1;
+    grid-column: 2/3;
     @include en-card(2);
     @media (min-width:$media-1) {
         grid-row: 1/1;
