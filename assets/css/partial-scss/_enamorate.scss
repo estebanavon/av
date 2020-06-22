@@ -1,19 +1,23 @@
 .av-en-title{
     height: 10rem;
     width: 100%;
-    padding: 0rem;
+    padding: 1rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     @media (min-width:$media-1){
-        height: 60vh;
+        height: 55vh;
         margin-bottom: 5rem;
     }
 }
 .av-en-wrapper{
     position: relative;
-    padding: 2.2rem;
+    padding: 2rem;
     left: 0%;
     width: 98%;
     background-color: $color-white;
@@ -156,7 +160,7 @@
 }
 .av-en-controls {
     .av-card {
-        height: 250px;
+        height: 230px;
         @media (min-width:$media-1){
             height: 300px;
         }
