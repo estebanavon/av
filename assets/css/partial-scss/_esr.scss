@@ -1,0 +1,44 @@
+
+@mixin avEsr($number) {
+    .av-esr-#{$number}{
+        background-image: url('#{$route-images}/esr-#{$number}.jpg');
+    }   
+}
+@include avEsr(1);
+@include avEsr(2);
+@include avEsr(3);
+@include avEsr(4);
+.av-esr-grid {
+    [class^="col-"]{
+        min-height: 15rem;
+    }
+    @mixin avEsrGrid($number) {
+        > div:nth-child(#{$number}) .av-card {
+            background-image: url('#{$route-images}/esr-#{$number + 4}.jpg');
+        }   
+    }
+    @include avEsrGrid(1);
+    @include avEsrGrid(2);
+    @include avEsrGrid(3);
+    @include avEsrGrid(5);
+    @include avEsrGrid(8);
+    @include avEsrGrid(9);
+    @include avEsrGrid(10);
+}
+.esr-purple {
+    width: 100%;
+    height: 100%;
+    background-color: $color-gradient-1;
+    padding: 0rem 3rem;
+    display: flex;
+    align-items: center;
+    h3 {
+        font-size: 1.5rem;
+        font-family: $light-monts;
+        text-align: right;
+        color: $color-white;
+        @media (min-width:$media-1){
+            font-size: 1.8rem;
+        }
+    }
+}
