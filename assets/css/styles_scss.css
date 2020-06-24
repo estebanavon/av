@@ -2984,11 +2984,13 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 .av-esr-3 .av-title-support {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
   .av-esr-3 .av-title-support {
     font-size: 2rem;
+    text-align: right;
   }
 }
 /*# sourceMappingURL=styles_scss.css.map */
