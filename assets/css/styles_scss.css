@@ -500,7 +500,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 @media (min-width: 768px) {
   .av-title-container .av-title-support {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 
@@ -2928,7 +2928,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   width: 100%;
   height: 100%;
   background-color: #9113B0;
-  padding: 0rem 3rem;
+  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2947,6 +2947,48 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 @media (min-width: 768px) {
   .esr-purple h3 {
     font-size: 1.8rem;
+  }
+}
+
+.av-esr-3 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .av-esr-3 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.av-esr-3 .av-title-text {
+  font-size: 2.31rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .av-esr-3 .av-title-text {
+    text-align: right;
+    font-size: 3.3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .av-esr-3 .av-title-text {
+    font-size: 4.4rem;
+  }
+}
+
+.av-esr-3 .av-title-support {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .av-esr-3 .av-title-support {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=styles_scss.css.map */

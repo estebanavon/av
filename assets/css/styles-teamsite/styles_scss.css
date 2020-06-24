@@ -500,7 +500,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 @media (min-width: 768px) {
   .av-title-container .av-title-support {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 
