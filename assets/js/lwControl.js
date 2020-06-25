@@ -66,11 +66,11 @@ const vacationsSection2019 = [
         file: 'select',
     },
     {
-        name: 'slLista Ganadoras Bloque C 2019ec',
+        name: 'Lista Ganadoras Bloque C 2019',
         file: 'select',
     },
     {
-        name: 'Apuéstale a tus vacaciones C4 y C8´2019',
+        name: 'Apuéstale a tus vacaciones C4 y C8 2019',
         file: 'select',
     },
     {

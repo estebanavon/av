@@ -38,11 +38,8 @@
     @include button-basic();
     @include button-basic-fill(2);
     border: 1px solid $color-white;
-    width: 50%; 
     transition: all 1.5s;
-    &:after {
-        content: 'Ir';
-    }
+    
 }
 .av-button-gradient {
     @include button-basic();

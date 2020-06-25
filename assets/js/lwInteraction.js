@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     $('.av-section-select').click(function(){
         if (guideVar){
-            $(this).append('<div id="guideB" class="av-guide"><p>02/03</p><h4>Selecciona previsualizar o descargar tu archivo</h4></div>');
+            $(this).append('<div id="guideB" class="av-guide"><p>02/03</p><h4>Previsualiza o descarga tu archivo con estas opciones</h4></div>');
             $('#guideB').show('slow');
             $('#guideA').hide().remove();
             $('.av-button-back').hide();
@@ -75,7 +75,7 @@ $(document).ready(function(){
     });
     $('.av-doc-container').click(function(){
         if (guideVar){
-            $(this).append('<div id="guideC" class="av-guide"><p>03/03</p><h4>Siempre puedes regresar al menú principal.</h4><h4>!Así de fácil!</h4></div>');
+            $(this).append('<div id="guideC" class="av-guide"><p>03/03</p><h4>¡Listo! Regresa al menú principal.</h4><h4>!Así de sencillo!</h4></div>');
             $('#guideC').show('slow');
             $('#guideB').hide().remove();
             $('.av-button-back').show();

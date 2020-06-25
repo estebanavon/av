@@ -1008,7 +1008,6 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   border: 1px solid #fff;
-  width: 50%;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
@@ -1019,10 +1018,6 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-button-secondary.negative {
   color: #fff;
-}
-
-.av-button-secondary:after {
-  content: 'Ir';
 }
 
 .av-button-gradient {

@@ -176,7 +176,6 @@ section.av-lw {
 }
 .av-guide{
     display: none;
-    color: $color-text;
     font-family: $regular-monts;
     padding: 2rem;
     background-color: $color-white;
@@ -187,7 +186,16 @@ section.av-lw {
     animation-name: avGuide;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
-   
+    p {
+        font-size: $size-text;
+        color: $color-primary;
+        margin-bottom: 0.4rem;
+    }
+    h4 {
+        font-size: $size-text + 0.3rem;
+        color: $color-text;
+        margin-bottom: 0.4rem;
+    }
 
     &::after {
         content: "";
