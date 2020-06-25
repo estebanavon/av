@@ -30,6 +30,7 @@ section.av-lw {
         flex: 1;
         z-index: 20;
         display: none;
+        
         .av-intro {
             min-height: 70vh;
             background-image: url('./../../img/lw-i.jpg');
@@ -43,6 +44,7 @@ section.av-lw {
            
         }
         .av-recent{
+            height: 30vh;
             padding: 2rem;
             background-image: linear-gradient(130deg,#D0709F,#B3276D 40%);
             
@@ -182,7 +184,7 @@ section.av-lw {
     position: absolute;
     z-index: 100;
     animation-name: avGuide;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
    
 
@@ -199,15 +201,15 @@ section.av-lw {
 }
 #guideA{
     top: 2%;
-    left: -50%;
+    left: -40%;
 }
 #guideB {
-    top: 12%;
-    right: 21%;
+    top: 7%;
+    right: 20%;
 }
 #guideC {
     top: 10%;
-    left: -22%;
+    left: -16%;
     &::after{
         top: unset;
         left: 50%;

@@ -206,6 +206,9 @@
                 flex: 1;
             }
         }
+        &.noactive{
+            display: none;
+        }
     }
     .av-list-title {
         font-size: $size-text - 0.1rem;

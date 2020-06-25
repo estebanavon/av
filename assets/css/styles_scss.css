@@ -690,6 +690,10 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
           flex: 1;
 }
 
+.av-list.av-list-doc.noactive {
+  display: none;
+}
+
 .av-list .av-list-title {
   font-size: 1rem;
   font-family: zona-pro-bold, Helvetica, sans-serif;

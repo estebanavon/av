@@ -690,6 +690,10 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
           flex: 1;
 }
 
+.av-list.av-list-doc.noactive {
+  display: none;
+}
+
 .av-list .av-list-title {
   font-size: 0.9rem;
   font-family: zona-pro-bold, Helvetica, sans-serif;
@@ -1681,6 +1685,7 @@ section.av-lw aside .av-intro {
 }
 
 section.av-lw aside .av-recent {
+  height: 30vh;
   padding: 2rem;
   background-image: linear-gradient(130deg, #D0709F, #B3276D 40%);
 }
@@ -1871,8 +1876,8 @@ section.av-lw article.av-section-container .av-section .av-doc-container.unable 
   z-index: 100;
   -webkit-animation-name: avGuide;
           animation-name: avGuide;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -1890,17 +1895,17 @@ section.av-lw article.av-section-container .av-section .av-doc-container.unable 
 
 #guideA {
   top: 2%;
-  left: -50%;
+  left: -40%;
 }
 
 #guideB {
-  top: 12%;
-  right: 21%;
+  top: 7%;
+  right: 20%;
 }
 
 #guideC {
   top: 10%;
-  left: -22%;
+  left: -16%;
 }
 
 #guideC::after {
