@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     const transtionSpeed = 900 ;
-    var tuto = false;
+    var guideVar = false;
 
     $(".av-section").click(function(){
         let avdata =$(this).attr("avdata");
@@ -12,6 +12,7 @@ $(document).ready(function(){
         // Global DOM Manipulations
         $(".av-section-container").addClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $(".av-button-back").addClass("unable");
+        $('#guideStart').hide();
 
         // Documents append
         if (once[avdata]==="true"){
@@ -44,30 +45,41 @@ $(document).ready(function(){
         // Global DOM Manipulations
         $(".av-section-container").removeClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $(this).removeClass("unable");
-        if (tuto){
-            $('#guide3').hide();
-            tuto = false;
+        $('#guideStart').show();
+        if (guideVar){
+            $('#guideC').hide().remove();
+            $('#guideStart').show('slow');
+            guideVar = false;
         }
     });
     
     $('.av-tabs').children().click(function(){
         $(this).addClass('active').siblings().removeClass('active');
     });
+    
+    $('#guideStart').click(function(){
+        guideVar = true;
+        $('#guide1').append('<div id="guideA" class="av-guide"><p>01/03</p><h4>Selecciona alguna opción de tu menú</h4></div>');
+        $('#guideA').show('slow');
+        $(this).hide();
+    });
+
     $('.av-section-select').click(function(){
-        if (tuto){
-            $('#guide1').hide().next().show('slow');
+        if (guideVar){
+            $(this).append('<div id="guideB" class="av-guide"><p>02/03</p><h4>Selecciona previsualizar o descargar tu archivo</h4></div>');
+            $('#guideB').show('slow');
+            $('#guideA').hide().remove();
+            $('.av-button-back').hide();
         }
     });
     $('.av-doc-container').click(function(){
-        if (tuto){
-            $('#guide2').hide().next().show('slow');
+        if (guideVar){
+            $(this).append('<div id="guideC" class="av-guide"><p>03/03</p><h4>Siempre puedes regresar al menú principal.</h4><h4>!Así de fácil!</h4></div>');
+            $('#guideC').show('slow');
+            $('#guideB').hide().remove();
+            $('.av-button-back').show();
         }
     });
-    $('.av-intro').click(function(){
-        tuto = true;
-        $('#guide1').show('slow');
-    });
-    // 
 
     const imssSection2020 = [
         {
