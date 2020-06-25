@@ -33,13 +33,14 @@ section.av-lw {
         
         .av-intro {
             min-height: 70vh;
+            padding: 2rem;
             background-image: url('./../../img/lw-i.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             transition: all $transition-speed - 0.5s;
            
         }

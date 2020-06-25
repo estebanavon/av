@@ -1667,6 +1667,7 @@ section.av-lw aside {
 
 section.av-lw aside .av-intro {
   min-height: 70vh;
+  padding: 2rem;
   background-image: url("./../../img/lw-i.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1677,9 +1678,9 @@ section.av-lw aside .av-intro {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
