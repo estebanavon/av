@@ -40,10 +40,12 @@ section.av-lw {
             justify-content: center;
             align-items: center;
             transition: all $transition-speed - 0.5s;
+           
         }
         .av-recent{
             padding: 2rem;
             background-image: linear-gradient(130deg,#D0709F,#B3276D 40%);
+            
         }
         @media (min-width:$media-1){
             display: block;
@@ -167,4 +169,35 @@ section.av-lw {
             background-color: $color-light-white;
         }
     }
+}
+.av-guide{
+    display: none;
+    color: $color-text;
+    padding: 2rem;
+    background-color: $color-white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    position: fixed;   
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent $color-white;
+      }
+}
+#guide1{
+    top: 8%;
+    left: 22%;
+}
+#guide2 {
+    top: 17%;
+    right: 16%;
+}
+#guide3 {
+    top: 11%;
+    left: 18%;
 }

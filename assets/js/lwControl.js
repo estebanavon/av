@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     const transtionSpeed = 900 ;
+    var tuto = false;
 
     $(".av-section").click(function(){
         let avdata =$(this).attr("avdata");
@@ -31,7 +32,8 @@ $(document).ready(function(){
                 $(this).find('.av-doc-container').append(avArrayPrint);
              }
         } 
-         once[avdata] = "false";
+        once[avdata] = "false";
+        
     });
     $(".av-button-back").click(function(){
         let img = "url('./../img/lw-i.jpg')"; 
@@ -42,12 +44,30 @@ $(document).ready(function(){
         // Global DOM Manipulations
         $(".av-section-container").removeClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $(this).removeClass("unable");
+        if (tuto){
+            $('#guide3').hide();
+            tuto = false;
+        }
     });
     
     $('.av-tabs').children().click(function(){
         $(this).addClass('active').siblings().removeClass('active');
     });
-
+    $('.av-section-select').click(function(){
+        if (tuto){
+            $('#guide1').hide().next().show('slow');
+        }
+    });
+    $('.av-doc-container').click(function(){
+        if (tuto){
+            $('#guide2').hide().next().show('slow');
+        }
+    });
+    $('.av-intro').click(function(){
+        tuto = true;
+        $('#guide1').show('slow');
+    });
+    // 
 
     const imssSection2020 = [
         {
