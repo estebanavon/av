@@ -1830,6 +1830,12 @@ section.av-lw article.av-section-container .av-section .av-doc-container.unable 
   opacity: 1;
 }
 
+section.av-lw article.av-section-container .av-section .av-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .av-tabs {
   width: 100%;
   display: -webkit-box;
