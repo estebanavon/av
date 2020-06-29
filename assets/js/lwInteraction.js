@@ -48,7 +48,6 @@ $(document).ready(function(){
         $('#guideStart').show();
         if (guideVar){
             $('#guideC').hide().remove();
-            $('#guideStart').show('slow');
             guideVar = false;
         }
     });

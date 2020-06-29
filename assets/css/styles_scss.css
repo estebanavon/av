@@ -1010,6 +1010,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: 1px solid #fff;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
+  width: 50%;
 }
 
 .av-button-secondary:active, .av-button-secondary:focus {
@@ -2821,13 +2822,13 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .book1a {
-  width: 60%;
-  left: 10%;
+  width: 70%;
+  left: 20%;
 }
 
 .book1b {
   width: 70%;
-  left: 15%;
+  left: 10%;
 }
 
 .animationbook {

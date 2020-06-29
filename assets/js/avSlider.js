@@ -105,7 +105,7 @@ $(document).ready(function(){
 
     bookFunction()
     function bookFunction(){
-        $('.p-relative').find('.animationbook').removeClass('animationbook').siblings().addClass('animationbook');
+        $('.book-wrapper').find('.animationbook').removeClass('animationbook').siblings().addClass('animationbook');
         setTimeout(function(){
             $('.animationbook').css("zIndex","5").siblings().css("zIndex","1");
         },500);

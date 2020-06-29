@@ -39,7 +39,7 @@
     @include button-basic-fill(2);
     border: 1px solid $color-white;
     transition: all 1.5s;
-    
+    width: 50%;
 }
 .av-button-gradient {
     @include button-basic();

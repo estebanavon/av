@@ -1010,6 +1010,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: 1px solid #fff;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
+  width: 50%;
 }
 
 .av-button-secondary:active, .av-button-secondary:focus {
