@@ -4,7 +4,7 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
-    font-size: $size-text;
+    font-size: 1rem;
 
     &:active,
     &:focus {
@@ -19,6 +19,7 @@
     padding: ($size-text / $padding) $size-text * 1.8;
     text-align: center;
     font-family: $regular-monts;
+    transition: all 1s;
 }
 
 
@@ -31,7 +32,8 @@
     background-color: $color-primary;
     display: inline-block;
     &:hover {
-        background-color: scale-color($color-primary, $lightness: -15%);
+        background-color: scale-color($color-primary, $lightness: -20%);
+        padding: ($size-text) $size-text * 2.4;
     }
 }
 .av-button-secondary {
@@ -56,7 +58,7 @@
     @include button-basic();
     padding: 0.6rem;
     &:hover {
-        background-color: $color-dark-10;   
+        background-color: $color-dark-30;
     }
 }
 .av-link {

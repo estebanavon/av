@@ -186,7 +186,7 @@
         margin-bottom: $size-text / 2.5;
     }
     
-    &.av-list-doc {
+    &.av-list-item {
         padding-left: 0;
         li {
             padding: 0 0.5rem;
@@ -200,7 +200,7 @@
                 color: $color-primary;
             }
             &:hover:not(.av-list-divider) {
-                background-color: $color-light-white;
+                background-color: $color-dark-10;
             }
             .av-list-spacer{
                 flex: 1;
@@ -208,8 +208,9 @@
         }
         &.noactive{
             display: none;
-        }
+        }   
     }
+    @include negative(right);
     .av-list-title {
         font-size: $size-text - 0.1rem;
         font-family: $bold-zona;

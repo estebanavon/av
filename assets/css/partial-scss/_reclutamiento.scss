@@ -1,7 +1,6 @@
 .av-en-title{
-    height: 10rem;
+    height: 13rem;
     width: 100%;
-    padding: 1rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +18,7 @@
     position: relative;
     padding: 2rem;
     left: 0%;
-    width: 98%;
+    width: 100%;
     background-color: $color-white;
 
     @media (min-width:$media-1) {
@@ -63,6 +62,8 @@
             justify-content: center;
             align-items: center;
             transition: all 0.4s;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
             &:hover {
                 background-color: $color-dark-light;
             }
@@ -100,11 +101,11 @@
     text-decoration: none;
     &:hover{
         .av-overlay {
-            width: 95%;
-            height: 95%;
+            width: 97%;
+            height: 97%;
         }
         .av-button-secondary {
-            width: 40%;
+            width: 54%;
         }
     }
     @media (min-width:$media-1){
