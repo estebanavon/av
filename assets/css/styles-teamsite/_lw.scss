@@ -6,6 +6,7 @@ section.av-lw {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin: 0 auto;
     @media (min-width:$media-3){
         width: 900px; 
     }
@@ -49,7 +50,7 @@ section.av-lw {
         width: 100%;
         transition: all 0.7s;
         position: relative;
-        background-color: $color-dark-10;
+        background-color: $color-light-white;
         @media (min-width:$media-1){
             width: 65%;
         }
@@ -175,7 +176,7 @@ section.av-lw {
             border-bottom-color: $color-text;
         }
         &:hover {
-            background-color: $color-light-white;
+            background-color: $color-dark-10;
         }
     }
 }

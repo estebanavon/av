@@ -1166,6 +1166,10 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #fff;
 }
 
+.av-link.negative {
+  color: #fff;
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;

@@ -88,4 +88,7 @@
         color: $color-primary;
         @include button-basic();
     }
+    &.negative {
+        color: $color-white;
+    }
 }

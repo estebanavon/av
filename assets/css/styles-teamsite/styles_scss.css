@@ -1166,6 +1166,10 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #fff;
 }
 
+.av-link.negative {
+  color: #fff;
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -1695,6 +1699,7 @@ section.av-lw {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
@@ -1754,7 +1759,7 @@ section.av-lw section.av-section-container {
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
   position: relative;
-  background-color: rgba(200, 200, 200, 0.1);
+  background-color: #fafafa;
 }
 
 @media (min-width: 768px) {
@@ -1918,7 +1923,7 @@ section.av-lw section.av-section-container .av-section .av-iframe {
 }
 
 .av-tabs .av-tabs-items:hover {
-  background-color: #fafafa;
+  background-color: rgba(200, 200, 200, 0.1);
 }
 
 .av-guide {
