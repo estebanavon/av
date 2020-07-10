@@ -1,7 +1,7 @@
 
 @mixin avEsr($number) {
     .av-esr-#{$number}{
-        background-image: url('#{$route-images}/esr-#{$number}.jpg');
+        background-image: url('#{$route-images}/responsabilidad-social/esr-#{$number}.jpg');
     }   
 }
 @include avEsr(1);
@@ -14,7 +14,7 @@
     }
     @mixin avEsrGrid($number) {
         > div:nth-child(#{$number}) .av-card {
-            background-image: url('#{$route-images}/esr-#{$number + 4}.jpg');
+            background-image: url('#{$route-images}/responsabilidad-social/esr-#{$number + 4}.jpg');
         }   
     }
     @include avEsrGrid(1);
@@ -43,13 +43,8 @@
     }
 }
 .av-esr-3{
-    align-items: flex-start;
-    @media (min-width:$media-1) {
-        align-items: flex-end;
-    }
     .av-title-text {
         font-size: $size-text*2.1;
-        text-align: left;
         @media (min-width:$media-1) {
             text-align: right;
             font-size: $size-text * 3;
@@ -67,3 +62,4 @@
         }
     }
 }
+

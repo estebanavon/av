@@ -5,10 +5,11 @@ $dev-images: './../img';
 
 // Utilizar esta ruta si el objetivo es Produccion
 
-$route-prod-font: './../fonts';
-$route-prod-images: './../images';
+$prod-font: './../fonts';
+$prod-images: './../images';
+//$prod-images: '/dam/avon-mx/static/images';
 
 //Configuración de rutas sin condicionante
 
-$route-images: $dev-images;
-$route-font: $dev-font;
+$route-images: $prod-images;
+$route-font: $prod-font;

@@ -10,6 +10,7 @@
     background-image: url('#{$route-images}/circulo_estelar/ce-header.jpg');
     height: 45vh;
     margin-bottom: 0;
+    margin: 0 -0.599rem;
     .av-title-text {
         line-height: $line-height * 1.8;
         @media (min-width:$media-1) {
@@ -112,6 +113,17 @@
 @include card-image(8);
 @include card-image(9);
 @include card-image(10);
+@include card-image(11);
+@include card-image(12);
+@include card-image(13);
+@include card-image(14);
+.av-card-11,
+.av-card-12,
+.av-card-13,
+.av-card-14{
+    min-height: 18rem;
+}
+
 
 .av-scroll-wrapper {
     width: 100%;

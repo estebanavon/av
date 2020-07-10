@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     $(".av-section").click(function(){
         let avdata = $(this).attr("data-av");
-        let img = "url('./../img/lw-"+ avdata +".jpg')"; 
+        let img = "url('../images/liderazgo_web/lw-"+ avdata +".jpg')"; 
         $(this).children(".av-section-select").removeClass("unable").siblings().addClass("unable");
         $(this).siblings(':not(.av-button-back)').hide(1000);
         

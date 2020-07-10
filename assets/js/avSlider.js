@@ -1,45 +1,21 @@
 $(document).ready(function(){
-    var campaignSwitch = true;
     var avhContent = [
         {
-            image:'example.jpg',
-            title:'Title two, an a robust one',
-            description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
+            image:'slider-home.jpg',
+            title:'Círculo estelar',
+            description:'Programa de reconocimiento y entrenamiento.<br /> ¡Cónocelo!',
             target:'self',
-            url: 'https://www.example.com',
+            url: '/REPSuite/circulo_estelar.page',
         },
         {
-            image:'example.jpg',
+            image:'slider-home.jpg',
             title:'Title three, an a robust one',
             description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
             target:'self',
             url: 'https://www.example.com',
         },
         {
-            image:'example.jpg',
-            title:'Title one, an a robust one',
-            description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
-            target:'self',
-            url: 'https://www.example.com',
-        },
-    ]
-    var avhContentDuplicate = [
-        {
-            image:'example.jpg',
-            title:'Title one, an a robust one',
-            description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
-            target:'self',
-            url: 'https://www.example.com',
-        },
-        {
-            image:'example.jpg',
-            title:'Title one, an a robust one',
-            description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
-            target:'self',
-            url: 'https://www.example.com',
-        },
-        {
-            image:'example.jpg',
+            image:'esr-2.jpg',
             title:'Title one, an a robust one',
             description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
             target:'self',
@@ -52,7 +28,7 @@ $(document).ready(function(){
 
     
 
-    var avSliderContructor= [avhContent,avhContentDuplicate];
+    var avSliderContructor= [avhContent];
     var slideIndex = 2;
     var timeOut;
     
@@ -84,23 +60,15 @@ $(document).ready(function(){
    
     var i;
     var e = 0;
-    var avhPrint = ["",""];
-    while (e<2){
-        for (i = 0; i < 3; i++) {
-            avhPrint[e] += '<div class="avh-slider-item">' +
-                '<div class="avh-slider-image"><img src="' + avSliderContructor[e][i].image +'" alt="Algo no salió como esperado, disculpa las molestias" /></div>' +
-                '<div class="avh-slider-text"><div class="wrapper"><h3 class="avh-slider-title">' + avSliderContructor[e][i].title +'</h3><p class="avh-slider-desc">' + avSliderContructor[e][i].description +'</p></div>' +
-                '<a href="'+ avSliderContructor[e][i].url +'" target="_'+ avSliderContructor[e][i].target +'" class="avh-slider-button">ir</a>' +
-                '</div></div>'
-        }
-        e++;
+    var avhPrint = [""];
+    for (i = 0; i < 3; i++) {
+        avhPrint[e] += '<div class="av-slider-item">' +
+            '<div class="av-slider-image"><a href="'+ avSliderContructor[e][i].url +'" target="_'+ avSliderContructor[e][i].target +'"><img src="/REPSuite/web/static/home_2018/img/' + avSliderContructor[e][i].image +'" alt="Algo no salió como esperado, disculpa las molestias" /></a></div>' +
+            '<div class="av-slider-text"><h3 class="av-slider-title">' + avSliderContructor[e][i].title +'</h3><p>' + avSliderContructor[e][i].description +'</p>' +
+            '<span></span><a href="'+ avSliderContructor[e][i].url +'" target="_'+ avSliderContructor[e][i].target +'" class="av-slider-link">ir</a>' +
+            '</div></div>'
     }
-    
-    if (campaignSwitch){
-        $("#avData").append(avhPrint[0]);
-    } else {
-        $("#avData").append(avhPrint[1]);
-    }
+    $("#avData").append(avhPrint[0]);
     $("#avData").children().eq(0).addClass("active");
 
     bookFunction()

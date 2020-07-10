@@ -60,7 +60,7 @@ section.av-container {
 
 @mixin card-pair($direction:left) {
     .av-pair-text {
-        $card-padding: 7rem;
+        $card-padding: 3rem;
         flex: 1;
         padding: $card-padding/1.9 0em;
         transition: all 1s;
@@ -84,10 +84,9 @@ section.av-container {
 
 .av-pair-container {
     @include main-containers();
-    &.av-card-small {
+    &.av-pair-small {
         @include main-containers(4rem);
     }
-    //&.horizontal {
         .av-pair-content {
             display: flex;
             flex-direction: column-reverse;

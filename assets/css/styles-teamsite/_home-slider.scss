@@ -1,29 +1,53 @@
 
 
-.avh-slider-container{
+.av-slider{
     box-sizing: border-box;
-    margin: 0;
+    margin-bottom: 0.6rem;
     width: 100%;
     position: relative;
-    .avh-slider-content {
-        width: 100%;
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    .av-slider-control {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 4rem;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+        color: $color-text;
+        cursor: pointer;
+        &:active{
+            background-color: $color-dark-10;
+        }
+        &:focus{
+            outline: none;
+            border: none;
+        }
+        &:first-child {
+            left: 0;
+        }
+        &:last-child {
+            right: 0;
+        }
+    }
+    .av-slider-content {
+        box-sizing: border-box;
+        margin: 0;
         overflow: hidden;
-        .avh-slider-item {
+        
+        .av-slider-item {
             width: 100%;
             height: 100%;
             display: none;
             opacity: 0;
+
             animation-name: avSliderFade;
-            animation-duration: 1.5s;
+            animation-duration: 2s;
             animation-fill-mode: forwards;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+
+            @media (min-width:$media-2){
+                flex-direction: row;
+            }
             @keyframes avSliderFade{
                 from {opacity:0.2}
                 to {opacity:1}
@@ -32,34 +56,61 @@
             &.active {
                 display: flex;
             }
-            .avh-slider-image {
-                min-width: 45%;
-                height: 100%;
+
+
+            .av-slider-image {
+                flex: 1 0 auto;
                 overflow: hidden;
-                background-color: $color-dark-light;
+                
+                @media (min-width:$media-2) {
+                    flex: 1 0 500px;
+                    max-width: 500px;
+                    max-height: 250px;
+                }
+                @media (min-width:$media-3) {
+                    flex: 1 0 460px;
+                    max-width: 460px;
+                }
+                img {
+                    width: 100%;
+                }
+                
             }
-            .avh-slider-text {
-                flex-grow: 1;
-                height: 100%;
-                padding: 5%;
+            .av-slider-text {
+                padding: 4% 5%;
+                color: $color-text;
+                font-family: $regular-monts;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                background-color: $color-white;
+                flex: 1;
 
-
-                .avh-slider-title{
-                    font-family: $semi-bold-zona;
+                span {
+                    flex-grow: 1;
                 }
-                .avh-slider-desc {
-                    font-family: $regular-monts;
+                .av-slider-title{
+                    font-size: 2rem;
+                    margin-bottom: 0.6rem;
+                    text-align: left;
+                    padding: 0;
                 }
-                .avh-slider-button {
+                p{
+                    max-height: 50%;
+                    overflow: hidden;
+                    text-align: left;
+                    font-size: 1.4rem;
+                }
+                .av-slider-link {
                     text-decoration: none;
                     color: $color-primary;
                     font-family: $semi-bold-monts;
                     text-transform: uppercase;
-                    margin: 0.5rem 0;
+                    padding: 0;
                     display: block;
+                    font-size: 1.5rem !important;
+                    &:hover{
+                        color: scale-color($color-primary, $lightness: 50%);
+                    }
                 }
             }
         }

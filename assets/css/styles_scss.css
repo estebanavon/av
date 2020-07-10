@@ -176,7 +176,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   }
 }
 
-.av-pair-container.av-card-small {
+.av-pair-container.av-pair-small {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 4rem;
@@ -186,7 +186,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 @media (min-width: 768px) {
-  .av-pair-container.av-card-small {
+  .av-pair-container.av-pair-small {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 6rem;
@@ -195,14 +195,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 @media (min-width: 1024px) {
-  .av-pair-container.av-card-small {
+  .av-pair-container.av-pair-small {
     padding-left: 0.92308rem;
     padding-right: 0.92308rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .av-pair-container.av-card-small {
+  .av-pair-container.av-pair-small {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -232,27 +232,27 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 3.68421rem 0em;
+  padding: 1.57895rem 0em;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 @media (min-width: 768px) {
   .av-pair-container .av-pair-content .av-pair-text {
-    padding: 4.66667rem;
+    padding: 2rem;
     padding-left: 0rem;
   }
 }
 
 @media (min-width: 992px) {
   .av-pair-container .av-pair-content .av-pair-text {
-    padding: 7rem 4.66667rem;
+    padding: 3rem 2rem;
     padding-left: 2rem;
   }
 }
 
 .av-pair-container .av-pair-content .av-pair-text.expand {
-  padding: 7rem 0rem;
+  padding: 3rem 0rem;
 }
 
 .av-pair-container .av-pair-content.reverse {
@@ -275,27 +275,27 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 3.68421rem 0em;
+  padding: 1.57895rem 0em;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 @media (min-width: 768px) {
   .av-pair-container .av-pair-content.reverse .av-pair-text {
-    padding: 4.66667rem;
+    padding: 2rem;
     padding-right: 0rem;
   }
 }
 
 @media (min-width: 992px) {
   .av-pair-container .av-pair-content.reverse .av-pair-text {
-    padding: 7rem 4.66667rem;
+    padding: 3rem 2rem;
     padding-right: 2rem;
   }
 }
 
 .av-pair-container .av-pair-content.reverse .av-pair-text.expand {
-  padding: 7rem 0rem;
+  padding: 3rem 0rem;
 }
 
 .av-pair-container .av-pair-content [class^="av-pair"] {
@@ -1271,7 +1271,7 @@ video:focus {
 }
 
 .av-img-higiene {
-  background-image: url("./../img/folletos/hg-1.jpg");
+  background-image: url("./../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1429,7 +1429,7 @@ video:focus {
 }
 
 .av-ec-header {
-  background-image: url("./../img/etica-cumplimiento/avon-office.jpg");
+  background-image: url("./../images/etica-cumplimiento/avon-office.jpg");
 }
 
 .av-ec-values p {
@@ -1450,35 +1450,35 @@ video:focus {
 }
 
 .av-card-1 {
-  background-image: url("./../img/etica-cumplimiento/banner-ec-1.jpg");
+  background-image: url("./../images/etica-cumplimiento/banner-ec-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-2 {
-  background-image: url("./../img/etica-cumplimiento/banner-ec-2.jpg");
+  background-image: url("./../images/etica-cumplimiento/banner-ec-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-3 {
-  background-image: url("./../img/etica-cumplimiento/banner-ec-3.jpg");
+  background-image: url("./../images/etica-cumplimiento/banner-ec-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-4 {
-  background-image: url("./../img/etica-cumplimiento/banner-ec-4.jpg");
+  background-image: url("./../images/etica-cumplimiento/banner-ec-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-5 {
-  background-image: url("./../img/etica-cumplimiento/banner-ec-5.jpg");
+  background-image: url("./../images/etica-cumplimiento/banner-ec-5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1507,11 +1507,11 @@ video:focus {
 }
 
 .av-conv-header {
-  background-image: url("./../img/responsabilidad-social/violence-woman.jpg");
+  background-image: url("./../images/responsabilidad-social/violence-woman.jpg");
 }
 
 .av-conv-1 {
-  background-image: url("./../img/responsabilidad-social/violence-banner-1.jpg");
+  background-image: url("./../images/responsabilidad-social/violence-banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1519,7 +1519,7 @@ video:focus {
 }
 
 .av-conv-2 {
-  background-image: url("./../img/responsabilidad-social/violence-banner-2.jpg");
+  background-image: url("./../images/responsabilidad-social/violence-banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1527,7 +1527,7 @@ video:focus {
 }
 
 .av-conv-3 {
-  background-image: url("./../img/responsabilidad-social/violence-banner-3.jpg");
+  background-image: url("./../images/responsabilidad-social/violence-banner-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2125,7 +2125,7 @@ section.av-nosolas-main {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-image: url("./../img/responsabilidad-social/woman_manifiesto.jpg");
+  background-image: url("./../images/responsabilidad-social/woman_manifiesto.jpg");
   background-position: 25% top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2287,7 +2287,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url("./../img/responsabilidad-social/not-alone-title.jpg");
+  background-image: url("./../images/responsabilidad-social/not-alone-title.jpg");
 }
 
 .av-nosolas-title .av-title-stroke {
@@ -2295,23 +2295,23 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-nosolas-title .av-title-text:nth-child(2), .av-nosolas-title .av-title-support {
-  background-image: url("./../img/avon-gradient.jpg");
+  background-image: url("./../images/avon-gradient.jpg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .av-nosolas-banner-1 {
-  background-image: url("./../img/responsabilidad-social/not-alone-banner-1.jpg");
+  background-image: url("./../images/responsabilidad-social/not-alone-banner-1.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-3 {
-  background-image: url("./../img/responsabilidad-social/not-alone-banner-3.jpg");
+  background-image: url("./../images/responsabilidad-social/not-alone-banner-3.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-2 {
-  background-image: url("./../img/responsabilidad-social/not-alone-banner-2.jpg");
+  background-image: url("./../images/responsabilidad-social/not-alone-banner-2.jpg");
   background-size: cover;
   height: 300px;
 }
@@ -2584,15 +2584,15 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-cta-1 {
-  background-image: url("./../img/en-cta-1.jpg");
+  background-image: url("./../images/en-cta-1.jpg");
 }
 
 .av-cta-2 {
-  background-image: url("./../img/en-cta-2.jpg");
+  background-image: url("./../images/en-cta-2.jpg");
 }
 
 .av-cta-3 {
-  background-image: url("./../img/en-cta-3.jpg");
+  background-image: url("./../images/en-cta-3.jpg");
 }
 
 .av-en-controls .av-card {
@@ -2644,7 +2644,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-1 .av-card {
-  background-image: url("./../img/en-products-1.jpg");
+  background-image: url("./../images/en-products-1.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2666,7 +2666,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-2 .av-card {
-  background-image: url("./../img/en-products-2.jpg");
+  background-image: url("./../images/en-products-2.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2688,7 +2688,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-3 .av-card {
-  background-image: url("./../img/en-products-3.jpg");
+  background-image: url("./../images/en-products-3.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2712,7 +2712,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-4 .av-card {
-  background-image: url("./../img/en-products-4.jpg");
+  background-image: url("./../images/en-products-4.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2734,7 +2734,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-5 .av-card {
-  background-image: url("./../img/en-products-5.jpg");
+  background-image: url("./../images/en-products-5.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2758,7 +2758,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-6 .av-card {
-  background-image: url("./../img/en-products-6.jpg");
+  background-image: url("./../images/en-products-6.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2773,57 +2773,57 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-kit-1 {
-  background-image: url("./../img/en-kit-1.jpg") !important;
+  background-image: url("./../images/en-kit-1.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-2 {
-  background-image: url("./../img/en-kit-2.jpg") !important;
+  background-image: url("./../images/en-kit-2.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-3 {
-  background-image: url("./../img/en-kit-3.jpg") !important;
+  background-image: url("./../images/en-kit-3.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-4 {
-  background-image: url("./../img/en-kit-4.jpg") !important;
+  background-image: url("./../images/en-kit-4.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-5 {
-  background-image: url("./../img/en-kit-5.jpg") !important;
+  background-image: url("./../images/en-kit-5.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-6 {
-  background-image: url("./../img/en-kit-6.jpg") !important;
+  background-image: url("./../images/en-kit-6.jpg") !important;
   min-height: 12rem;
 }
 
 .en-woman-1 {
-  background-image: url("./../img/en-woman-1.jpg") !important;
+  background-image: url("./../images/en-woman-1.jpg") !important;
 }
 
 .en-woman-2 {
-  background-image: url("./../img/en-woman-2.jpg") !important;
+  background-image: url("./../images/en-woman-2.jpg") !important;
 }
 
 .en-woman-3 {
-  background-image: url("./../img/en-woman-3.jpg") !important;
+  background-image: url("./../images/en-woman-3.jpg") !important;
 }
 
 .en-woman-4 {
-  background-image: url("./../img/en-woman-4.jpg") !important;
+  background-image: url("./../images/en-woman-4.jpg") !important;
 }
 
 .en-team-1 {
-  background-image: url("./../img/en-team-1.jpg");
+  background-image: url("./../images/en-team-1.jpg");
 }
 
 .en-device-1 {
-  background-image: url("./../img/en-device-1.jpg");
+  background-image: url("./../images/en-device-1.jpg");
 }
 
 .p-relative {
@@ -2896,19 +2896,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-1 {
-  background-image: url("./../img/esr-1.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-1.jpg");
 }
 
 .av-esr-2 {
-  background-image: url("./../img/esr-2.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-2.jpg");
 }
 
 .av-esr-3 {
-  background-image: url("./../img/esr-3.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-3.jpg");
 }
 
 .av-esr-4 {
-  background-image: url("./../img/esr-4.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-4.jpg");
 }
 
 .av-esr-grid [class^="col-"] {
@@ -2916,31 +2916,31 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-grid > div:nth-child(1) .av-card {
-  background-image: url("./../img/esr-5.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-5.jpg");
 }
 
 .av-esr-grid > div:nth-child(2) .av-card {
-  background-image: url("./../img/esr-6.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-6.jpg");
 }
 
 .av-esr-grid > div:nth-child(3) .av-card {
-  background-image: url("./../img/esr-7.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-7.jpg");
 }
 
 .av-esr-grid > div:nth-child(5) .av-card {
-  background-image: url("./../img/esr-9.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-9.jpg");
 }
 
 .av-esr-grid > div:nth-child(8) .av-card {
-  background-image: url("./../img/esr-12.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-12.jpg");
 }
 
 .av-esr-grid > div:nth-child(9) .av-card {
-  background-image: url("./../img/esr-13.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-13.jpg");
 }
 
 .av-esr-grid > div:nth-child(10) .av-card {
-  background-image: url("./../img/esr-14.jpg");
+  background-image: url("./../images/responsabilidad-social/esr-14.jpg");
 }
 
 .esr-purple {
@@ -2969,23 +2969,8 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   }
 }
 
-.av-esr-3 {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media (min-width: 768px) {
-  .av-esr-3 {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-}
-
 .av-esr-3 .av-title-text {
   font-size: 2.31rem;
-  text-align: left;
 }
 
 @media (min-width: 768px) {
