@@ -709,12 +709,11 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-size: 1rem;
   font-family: zona-pro-bold, Helvetica, sans-serif;
   padding: 1.1rem 0rem !important;
-  background-color: #fff;
   color: #464646;
 }
 
 .av-list .av-list-title:hover {
-  background-color: #fff !important;
+  background-color: unset !important;
 }
 
 .av-hashtag {

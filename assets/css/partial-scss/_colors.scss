@@ -4,7 +4,6 @@
 $color-white : #fff;
 $color-light-white: #fafafa;
 $color-dark-lighter: scale-color($color-white, $lightness: -6%);
-$color-dark-50: scale-color($color-white, $lightness: -50%);
 $color-dark-light: scale-color($color-white, $lightness: -60%);
 $color-dark: #464646;
 $color-dark-50: scale-color($color-white, $lightness: -50%);

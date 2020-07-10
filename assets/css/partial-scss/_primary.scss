@@ -215,10 +215,10 @@
         font-size: $size-text - 0.1rem;
         font-family: $bold-zona;
         padding: $size-text 0rem !important;
-        background-color: $color-white;
+        //background-color: $color-white;
         color: $color-text;
         &:hover{
-            background-color: $color-white !important;
+            background-color: unset !important;
         }
     }
 }
