@@ -26,11 +26,19 @@ section.av-lw {
             background-size: cover;
             background-position: center;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
             transition: background-image 1s;
             background-color: $color-dark-30;
-           
+           .av-hover {
+              display: none;
+              width: 80%;
+              &.active{
+                  display: block;
+                  text-align: center;
+              }
+           }
         }
         .av-recent{
             padding: 2rem;

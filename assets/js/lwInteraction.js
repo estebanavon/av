@@ -1,6 +1,4 @@
-$(document).ready(function(){
-
-    
+$(document).ready(function(){ 
     var guideVar = false;
 
     $(".av-section").click(function(){
@@ -51,6 +49,32 @@ $(document).ready(function(){
             guideVar = false;
         }
     });
+    $('.av-section').each(function(){
+        
+        $(this).mouseenter(function(){
+            let avdata = $(this).attr("data-av");
+            let hover = 0;
+            if(avdata <= 2){
+                hover = 0;
+            } else if (avdata >= 3 && avdata <= 5){
+                hover = 1;
+            } else if(avdata = 7){
+                hover = 2;
+            } else if(avdata = 8){
+                hover = 3;
+            } else if(avdata = 9){
+                hover = 4;
+            }
+            $('#hoverText').children().eq(hover).addClass('active');
+        });
+
+        $(this).mouseleave(function(){
+            $('#hoverText').children('.active').removeClass('active');
+        });
+    });
+    
+    
+    
     
     $('.av-tabs').children().click(function(){
         $(this).addClass('active').siblings().removeClass('active');
