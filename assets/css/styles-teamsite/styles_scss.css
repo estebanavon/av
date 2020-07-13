@@ -1727,7 +1727,7 @@ section.av-lw aside {
 section.av-lw aside .av-intro {
   min-height: 70vh;
   padding: 2rem;
-  background-image: url("./../images/liderazgo_web/lw-i.jpg");
+  background-image: url("./../../img/lw-i.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1751,7 +1751,7 @@ section.av-lw aside .av-intro {
 
 section.av-lw aside .av-intro .av-hover {
   display: none;
-  width: 80%;
+  width: 100%;
 }
 
 section.av-lw aside .av-intro .av-hover.active {
@@ -1915,6 +1915,10 @@ section.av-lw section.av-section-container .av-section .av-iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+section.av-lw .disable {
+  visibility: hidden;
 }
 
 .av-tabs {

@@ -1,16 +1,18 @@
 $(document).ready(function(){ 
     var guideVar = false;
+    //const imgRoute = "../images/liderazgo_web";
+    const imgRoute = "./../img";
 
     $(".av-section").click(function(){
         let avdata = $(this).attr("data-av");
-        let img = "url('../images/liderazgo_web/lw-"+ avdata +".jpg')"; 
+        let img = "url('"+ imgRoute +"/lw-"+ avdata +".jpg')"; 
         $(this).children(".av-section-select").removeClass("unable").siblings().addClass("unable");
         $(this).siblings(':not(.av-button-back)').hide(1000);
         
         // Global DOM Manipulations
         $(".av-section-container").addClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $(".av-button-back").addClass("unable");
-        $('.hide').hide();
+        $("#tooltipText, #guideStart").addClass('disable');
 
         // Documents append
         if (once[avdata]==="true"){
@@ -35,44 +37,55 @@ $(document).ready(function(){
         
     });
     $(".av-button-back").click(function(){
-        let img = "url('./../img/lw-i.jpg')"; 
+        let img = "url('"+ imgRoute +"/lw-i.jpg')"; 
         $(".av-section-select").addClass("unable");
         $(".av-list-content").removeClass("unable");
         $(this).siblings().show();
 
         // Global DOM Manipulations
         $(".av-section-container").removeClass("expand").siblings().children().eq(0).css("backgroundImage",img);
+        $("#tooltipText, #guideStart").removeClass('disable');
         $(this).removeClass("unable");
-        $('.hide').show();
+        
         if (guideVar){
             $('#guideC').hide().remove();
             guideVar = false;
         }
     });
-    $('.av-section').each(function(){
-        
-        $(this).mouseenter(function(){
-            let avdata = $(this).attr("data-av");
-            let hover = 0;
-            if(avdata <= 2){
-                hover = 0;
-            } else if (avdata >= 3 && avdata <= 5){
-                hover = 1;
-            } else if(avdata = 7){
-                hover = 2;
-            } else if(avdata = 8){
-                hover = 3;
-            } else if(avdata = 9){
-                hover = 4;
-            }
-            $('#hoverText').children().eq(hover).addClass('active');
-        });
-
-        $(this).mouseleave(function(){
-            $('#hoverText').children('.active').removeClass('active');
-        });
+    $('.av-section-select.unable').mouseenter(function(){
+        let avdata = $(this).parent().attr("data-av");
+        let hoverIndex;
+        switch (avdata){
+            case "0":
+            case "1":
+            case "2":
+                hoverIndex = 0;
+            break;
+            case "3":
+            case "4":
+            case "5":
+                hoverIndex = 1;
+            break;
+            case "6":
+                hoverIndex = 4;
+            break;
+            case "7":
+                hoverIndex = 2;
+            break;
+            case "8":
+                hoverIndex = 3;
+            break;
+            case "9":
+                hoverIndex = 5;
+            break;
+            
+        }
+        $('#tooltipText').children().eq(hoverIndex).addClass('active');
     });
-    
+
+    $('.av-section').mouseleave(function(){
+        $('#tooltipText').children('.active').removeClass('active');
+    });
     
     
     
