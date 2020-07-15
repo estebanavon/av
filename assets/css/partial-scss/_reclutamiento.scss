@@ -88,77 +88,6 @@
     }
 }
 
-.av-cta {
-    display: block;
-    min-height: 12rem;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-decoration: none;
-    &:hover{
-        .av-overlay {
-            width: 97%;
-            height: 97%;
-        }
-        .av-button-secondary {
-            width: 54%;
-        }
-    }
-    @media (min-width:$media-1){
-        min-height: 16rem;
-    }
-
-    .av-overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        left: 0;
-        transition: all 1.5s;
-        background-color: rgba(30,30,30,0.8);
-        z-index: 1;
-        
-    }
-    .av-cta-content {
-        padding: 1.5rem;
-        color: $color-white;
-        z-index: 5;
-        position: relative;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        @media (min-width:$media-1){
-            padding: 3rem;
-        }
-        .av-subtitle {
-            @include subtitle(1.4rem);
-            @include negative(left);
-            font-family: $light-monts;
-            width: 100%;
-            
-            @media (min-width:$media-1){
-                width: 60%;
-            }
-        }
-    }
-    &-1{
-        background-image: url('#{$route-images}/en-cta-1.jpg');
-    }
-    
-    &-2{
-        background-image: url('#{$route-images}/en-cta-2.jpg');
-    }
-    
-    &-3{
-        background-image: url('#{$route-images}/en-cta-3.jpg');
-    }
-    
-}
 .av-en-controls {
     .av-card {
         height: 230px;
@@ -167,6 +96,7 @@
         }
     }
 }
+
 
 .av-grid {
     width: 100%;
@@ -177,7 +107,7 @@
     grid-gap: 0.5rem;
     padding: 0 0.5rem;
     @media (min-width:$media-1) {
-        grid-template-rows: 300px 40px 300px;
+        grid-template-rows: 250px 40px 250px;
         grid-template-columns: 45% 27% 27%;
         grid-gap: 1.4rem;
         padding: 0;

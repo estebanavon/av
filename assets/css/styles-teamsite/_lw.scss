@@ -20,8 +20,8 @@ section.av-lw {
         .av-intro {
             min-height: 70vh;
             padding: 2rem;
-            //background-image: url('./../images/liderazgo_web/lw-i.jpg');
-            background-image: url('./../../img/lw-i.jpg');
+            background-image: url('./../images/liderazgo_web/lw-i.jpg');
+            //background-image: url('./../../img/lw-i.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -187,9 +187,6 @@ section.av-lw {
         cursor: pointer;
         &.active{
             border-bottom-color: $color-text;
-        }
-        &:hover {
-            background-color: $color-dark-10;
         }
     }
 }

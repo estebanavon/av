@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
     var guideVar = false;
-    //const imgRoute = "../images/liderazgo_web";
-    const imgRoute = "./../img";
+    const imgRoute = "/FLDSuite/static/images/liderazgo_web";
+    //const imgRoute = "./../img";
 
     $(".av-section").click(function(){
         let avdata = $(this).attr("data-av");

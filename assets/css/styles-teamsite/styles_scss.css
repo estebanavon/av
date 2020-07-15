@@ -754,6 +754,21 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   background-color: #f0f0f0;
 }
 
+.av-card.av-card-unable {
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.av-card.av-card-unable:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
 .av-card.av-card-holder {
   min-height: 250px;
 }
@@ -790,14 +805,13 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 @media (min-width: 1024px) {
   .av-card .av-card-image {
-    height: 13rem;
+    height: 14rem;
   }
 }
 
 .av-card .av-card-text {
   padding: 1.4rem;
   background-color: #fafafa;
-  min-height: 180px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1023,7 +1037,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-decoration: none;
   font-size: 1rem;
   color: #fff;
-  padding: 0.5rem 1.8rem;
+  padding: 1rem 1.8rem;
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
@@ -1727,7 +1741,7 @@ section.av-lw aside {
 section.av-lw aside .av-intro {
   min-height: 70vh;
   padding: 2rem;
-  background-image: url("./../../img/lw-i.jpg");
+  background-image: url("./../images/liderazgo_web/lw-i.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1944,10 +1958,6 @@ section.av-lw .disable {
 
 .av-tabs .av-tabs-items.active {
   border-bottom-color: #464646;
-}
-
-.av-tabs .av-tabs-items:hover {
-  background-color: rgba(200, 200, 200, 0.1);
 }
 
 .av-guide {

@@ -14,9 +14,9 @@
         color: $color-white;
     }
 }
-@mixin button-basic-fill($padding:1) {
+@mixin button-basic-fill() {
     color: $color-white;
-    padding: ($size-text / $padding) $size-text * 1.8;
+    padding: 1rem $size-text * 1.8;
     text-align: center;
     font-family: $regular-monts;
     transition: all 1s;
@@ -33,12 +33,12 @@
     display: inline-block;
     &:hover {
         background-color: scale-color($color-primary, $lightness: -20%);
-        padding: ($size-text) $size-text * 2.4;
+        padding: 1rem ($size-text * 2.4);
     }
 }
 .av-button-secondary {
     @include button-basic();
-    @include button-basic-fill(2);
+    @include button-basic-fill();
     border: 1px solid $color-white;
     transition: all 1.5s;
     width: 50%;

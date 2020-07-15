@@ -60,7 +60,6 @@ section.av-container {
 
 @mixin card-pair($direction:left) {
     .av-pair-text {
-        $card-padding: 3rem;
         flex: 1;
         padding: $card-padding/1.9 0em;
         transition: all 1s;
