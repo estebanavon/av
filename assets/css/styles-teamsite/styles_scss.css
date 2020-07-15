@@ -799,14 +799,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-card .av-card-image {
-  height: 10rem;
   overflow: hidden;
-}
-
-@media (min-width: 1024px) {
-  .av-card .av-card-image {
-    height: 14rem;
-  }
 }
 
 .av-card .av-card-text {
