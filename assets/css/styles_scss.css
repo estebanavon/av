@@ -811,6 +811,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-card .av-card-text {
   padding: 1.4rem;
+  padding-bottom: 3rem;
   background-color: #fafafa;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1291,6 +1292,10 @@ video:focus {
 
 .multimedia-layout-wrapper .video-text-item h3.left {
   text-align: left;
+}
+
+a {
+  text-decoration: none;
 }
 
 .av-img-higiene {
