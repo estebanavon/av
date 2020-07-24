@@ -4,7 +4,7 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: $size-text;
 
     &:active,
     &:focus {
@@ -32,7 +32,7 @@
     background-color: $color-primary;
     display: inline-block;
     &:hover {
-        background-color: scale-color($color-primary, $lightness: -20%);
+        background-color: $color-primary-dark;
         padding: 1rem ($size-text * 2.4);
     }
 }
@@ -62,7 +62,7 @@
     }
 }
 .av-link {
-    $size-padding: $size-text * 1.5;
+    $size-padding: $size-text;
     font-family: $regular-monts;
     font-size: $size-text;
     color: $color-primary;

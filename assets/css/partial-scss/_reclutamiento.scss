@@ -32,7 +32,7 @@
         padding: 3rem 4rem 0rem 4rem;
     }
     @media (min-width:$media-3){
-        max-width: 35rem;
+        max-width: 50%;
     }
     .av-title-text {
         @include titile-mixin($color-dark);
@@ -121,7 +121,7 @@
 }
 @mixin en-card($number){
     .av-card{
-        background-image: url('#{$route-images}/en-products-#{$number}.jpg');
+        background-image: url('#{$route-images}/reclutamiento/en-products-#{$number}.jpg');
     }
     
 }
@@ -183,7 +183,7 @@
 @mixin av-kit($number){
     .av-kit-{
         &#{$number} {
-            background-image: url('#{$route-images}/en-kit-#{$number}.jpg') !important;
+            background-image: url('#{$route-images}/reclutamiento/en-kit-#{$number}.jpg') !important;
             min-height: 12rem;
         }
     }
@@ -198,7 +198,7 @@
 @mixin en-woman($number){
     .en-woman-{
         &#{$number} {
-            background-image: url('#{$route-images}/en-woman-#{$number}.jpg') !important;
+            background-image: url('#{$route-images}/reclutamiento/en-woman-#{$number}.jpg') !important;
         }
     }
 }
@@ -208,10 +208,10 @@
 @include en-woman(4);
 
 .en-team-1 {
-    background-image: url('#{$route-images}/en-team-1.jpg');
+    background-image: url('#{$route-images}/reclutamiento/en-team-1.jpg');
 }
 .en-device-1 {
-    background-image: url('#{$route-images}/en-device-1.jpg');
+    background-image: url('#{$route-images}/reclutamiento/en-device-1.jpg');
 }
 
 .p-relative {

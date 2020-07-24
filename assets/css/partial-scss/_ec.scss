@@ -33,22 +33,3 @@
 @include card-image(4);
 @include card-image(5);
 
-.av-parallax-container {
-    position: relative;
-    overflow: hidden;
-    .av-parallax-content {
-        background-image: url('./imgTst/ce-10.jpg');
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 160%;
-        z-index: 1;
-    }
-    .row {
-        position: relative;
-        z-index: 2;
-        background-color: transparent !important;
-    }
-}

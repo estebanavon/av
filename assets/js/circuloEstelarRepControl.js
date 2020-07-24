@@ -3,41 +3,165 @@ $(document).ready(function () {
   
     var avFiles0 = [
         {
-            name: 'Portada de facebook 1',
-            file: 'ce-portada-1.png',
+            name: '¡Kit de bienvenida! (gif)',
+            file: 'KITSDEBIENVENIDA.gif',
+            develop: false, 
         },
         {
-            name: 'Portada de facebook 2',
-            file: 'ce-portada-2.png',
+            name: 'Bienvenida (video)',
+            file: 'Bienvenida.mp4',
+            develop: false,
         },
         {
-            name: 'Portada de facebook 3',
-            file: 'ce-portada-3.png',
+            name: 'Conoce círculo estelar (video)',
+            file: 'ConoceCE.mp4',
+            develop: false,
         },
         {
-            name: 'Portada de facebook 4',
-            file: 'ce-portada-4.png',
+            name: 'Guía de nombramientos (pdf)',
+            file: 'GuiadeNombramientos.pdf',
+            develop: false,
         },
         {
-            name: 'Foto de perfil de facebook',
-            file: 'ce-foto-perfil.png',
+            name: 'Guía, kits de bienvenida (pdf)',
+            file: 'GuiaKitsdeBienvenida.pdf',
+            develop: false,
         },
         {
-            name: 'Kits onboarding, gif',
-            file: 'ce-kitsOnboarding',
+            name: 'Línea Círculo Estelar (pdf)',
+            file: 'LineaCE.pdf',
+            develop: false,
         },
         {
-            name: 'Listas de surtido, video',
-            file: 'ce-lista-surtido.mp4',
+            name: 'Sé Círculo Estelar (gif)',
+            file: 'SeCirculoEstelar.gif',
+            develop: true,
         },
         {
-            name: 'Caja de pedido, video',
-            file: 'ce-caja-pedido.mp4',
+            name: 'Foto de portada Facebook (jpg)',
+            file: 'FotodeportadFB2.jpg',
+            develop: true,
         },
         {
-            name: 'Panorama, png',
-            file: 'ce-panorama.jpeg',
+            name: 'Post Facebook (jpg)',
+            file: 'PostFB.jpg',
+            develop: true,
         },
+        {
+            name: 'Post Facebook 1 (jpg)',
+            file: 'PostFB1.jpg',
+            develop: true,
+        },
+        {
+            name: 'Post Facebook 2 (jpg)',
+            file: 'PostFB2.jpg',
+            develop: true,
+        },
+    ];
+    var avFiles1 = [
+        {
+            name: '¿Qué es panorama? (jpeg)',
+            file: 'QueEsPanorama.jpeg',
+            develop: false,
+        },
+        {
+            name: '¿Qué es un VEA? (jpeg)',
+            file: 'QueEsUnVEA.jpeg',
+            develop: false,
+        },
+        {
+            name: 'Tips de venta (jpg)',
+            file: 'TipsdeVenta.jpg',
+            develop: false,
+        },
+        {
+            name: 'Camino al éxito (mp4)',
+            file: 'CaminoAlExito.mp4',
+            develop: false,
+        },
+        {
+            name: 'Conoce tu caja (mp4)',
+            file: 'ConoceTuCaja.mp4',
+            develop: false,
+        },
+        {
+            name: 'Conoce tu lista de Surtido (mp4)',
+            file: 'ConoceTuListadeSurtido.mp4',
+            develop: false,
+        },
+        {
+            name: 'Guía al éxito (pdf)',
+            file: 'GuiaAlExito.pdf',
+            develop: false,
+        },
+        {
+            name: 'Comparte en Facebook (jpg)',
+            file: 'ComparteEnFacebook.jpg',
+            develop: true,
+        },
+        {
+            name: 'Pago en línea (mp4)',
+            file: 'PagoenLinea.mp4',
+            develop: true,
+        },
+        {
+            name: 'Redes sociales Círculo Estelar (mp4)',
+            file: 'RedesSocialesCE.mp4',
+            develop: true,
+        },
+        {
+            name: 'Nombra fácil 2 (png)',
+            file: 'NombraFacil2.png',
+            develop: true,
+        },
+    ];
+    var avFiles2 = [
+        {
+            name: 'Tips de venta (jpg)',
+            file: 'TipsdeVenta.jpg',
+            develop: false,
+        },
+        {
+            name: 'Aprendiendo con AVON (mp4)',
+            file: 'AprendiendoconAVON.mp4',
+            develop: false,
+        },
+        {
+            name: 'Conoce nuestras causas sociales (mp4)',
+            file: 'ConocenuestrasCausasSociales.mp4',
+            develop: false,
+        },
+        {
+            name: 'Tipo de clientes (mp4)',
+            file: 'TipodeClientes.mp4',
+            develop: false,
+        },
+        {
+            name: 'Comparte en Facebook 2 (jpg)',
+            file: 'ComparteenFacebook2.jpg',
+            develop: true,
+        },
+        {
+            name: 'Comparte en Facebook 3 (jpg)',
+            file: 'ComparteenFacebook33.jpg',
+            develop: true,
+        },
+        {
+            name: 'Recuerda pagar (jpg)',
+            file: 'recuerdaPagar.jpg',
+            develop: true,
+        },
+        {
+            name: 'Nombra Fácil (png)',
+            file: 'NombraFacil.png',
+            develop: true,
+        },
+        {
+            name: 'Pago (png)',
+            file: 'Pago.png',
+            develop: true,
+        },
+        
     ];
     
     const avNumber = $('.optionControl').attr('value');
@@ -58,21 +182,40 @@ $(document).ready(function () {
         $('.optionControl').append(avLoaOptions[i-1]);
     }
     
+    const avFilesConstructor = [avFiles0,avFiles1,avFiles2];
+    var e = 0;
     var i;
-    var avArrayPrintContent = ["","","","","","","","","","",""];
+    var avArrayPrintContent = [];
+    var avArrayPrintTrue = ["","",""];
+    var avArrayPrintFalse = ["","",""];
     
-    for (i = 0; i < avFiles0.length; i++) {
-        avArrayPrintContent[0] += '<li>' +
-            '<span>' + avFiles0[i].name + '</span>' +
-            '<span class="av-list-spacer"></span>' +
-            '<a class="av-button-icon av-tooltip" href="/REPSuite/static/images/training/' + avFiles0[i].file + '" target="_blank"><span class="material-icons">visibility</span><span class="tooltiptext">Previsualizar</span></a>' +
-            '<a class="av-button-icon av-tooltip" href="/REPSuite/static/images/training/' + avFiles0[i].file + '" download><span class="material-icons">cloud_download</span><span class="tooltiptext">Descargar</span></a>'+
-            '</li>';
+    while (e < avFilesConstructor.length) {
+        for (i = 0; i < avFilesConstructor[e].length; i++) {
+            if (avFilesConstructor[e][i].develop){
+                avArrayPrintTrue[e] += '<li>' +
+                '<span>' + avFilesConstructor[e][i].name + '</span>' +
+                '<span class="av-list-spacer"></span>' +
+                '<a class="av-button-icon av-tooltip" href="/FLDSuite/static/pdf/circulo_estelar_documents/' + avFilesConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span><span class="tooltiptext">Previsualizar</span></a>' +
+                '<a class="av-button-icon av-tooltip" href="/FLDSuite/static/pdf/circulo_estelar_documents/' + avFilesConstructor[e][i].file + '" download ><span class="material-icons">cloud_download</span><span class="tooltiptext">Descargar</span></a>'+
+                '</li>';
+            } else {
+                avArrayPrintFalse[e] += '<li>' +
+                '<span>' + avFilesConstructor[e][i].name + '</span>' +
+                '<span class="av-list-spacer"></span>' +
+                '<a class="av-button-icon av-tooltip" href="/FLDSuite/static/pdf/circulo_estelar_documents/' + avFilesConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span><span class="tooltiptext">Previsualizar</span></a>' +
+                '<a class="av-button-icon av-tooltip" href="/FLDSuite/static/pdf/circulo_estelar_documents/' + avFilesConstructor[e][i].file + '" download ><span class="material-icons">cloud_download</span><span class="tooltiptext">Descargar</span></a>'+
+                '</li>';
+            }
+        }
+        
+        e++;
     }
-    
+    for (i=0;i<avArrayPrintTrue.length;i++) {
+        avArrayPrintContent[i] =  avArrayPrintFalse[i] +'<li class="av-list-title">Desarrolla tu negocio digital</li>'+ avArrayPrintTrue[i];
+    }
     var avArrayPrint = "";
     for (i=0; i<avNumber;i++){
-        avArrayPrint += '<div class="av-list-container"><ol class="av-list av-list-doc">'+ avArrayPrintContent[i] +'</ol></div>'  
+        avArrayPrint += '<div class="av-list-container"><ol class="av-list av-list-item">'+ avArrayPrintContent[i] +'</ol></div>'  
     }
     $('.optionDisplay').append(avArrayPrint);
     $('.optionDisplay').children().eq(1).addClass('active');

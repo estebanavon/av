@@ -1,13 +1,13 @@
 $(document).ready(function(){ 
     var guideVar = false;
-    const imgRoute = "/FLDSuite/static/images/liderazgo_web";
-    //const imgRoute = "./../img";
+    var imgRoute = "/FLDSuite/static/images/liderazgo_web";
+    imgRoute = "./../img";
 
     $(".av-section").click(function(){
         let avdata = $(this).attr("data-av");
         let img = "url('"+ imgRoute +"/lw-"+ avdata +".jpg')"; 
         $(this).children(".av-section-select").removeClass("unable").siblings().addClass("unable");
-        $(this).siblings(':not(.av-button-back)').hide(1000);
+        $(this).siblings(':not(.av-button-back)').hide();
         
         // Global DOM Manipulations
         $(".av-section-container").addClass("expand").siblings().children().eq(0).css("backgroundImage",img);
@@ -59,32 +59,35 @@ $(document).ready(function(){
             case "0":
             case "1":
             case "2":
-                hoverIndex = 0;
+                hoverIndex = 1;
             break;
             case "3":
             case "4":
             case "5":
-                hoverIndex = 1;
-            break;
-            case "6":
-                hoverIndex = 4;
-            break;
-            case "7":
                 hoverIndex = 2;
             break;
-            case "8":
+            case "6":
+                hoverIndex = 5;
+            break;
+            case "7":
                 hoverIndex = 3;
+            break;
+            case "8":
+                hoverIndex = 4;
             break;
             case "9":
                 hoverIndex = 5;
             break;
-            
+            default: 
+                hoverIndex = 0;
         }
+        $('#tooltipText').children('.active').removeClass('active');
         $('#tooltipText').children().eq(hoverIndex).addClass('active');
     });
 
     $('.av-section').mouseleave(function(){
         $('#tooltipText').children('.active').removeClass('active');
+        $('#tooltipText').children().eq(0).addClass('active');
     });
     
     

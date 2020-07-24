@@ -1,0 +1,139 @@
+.av-brochures-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1rem;
+    &:nth-child(4),
+    &:nth-child(5){
+        display: none;
+    }
+    .av-brochure-item{
+        width: 150px;
+        height: 210px;
+        margin: 15px 5px;
+        
+        .av-brochure-image {
+            width: 100%;
+            height: 160px;
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+            background-color: $color-dark-30;
+            border-radius: 6px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.4);
+            z-index: 20;
+            transition: box-shadow 0.5s;
+            cursor: pointer;
+
+            &:hover,
+            &:active,
+            &:focus {
+                z-index: 30;
+                box-shadow: 0 0 20px rgba(0,0,0,0.6);
+                
+                .av-overlay {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            .av-overlay {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.8);
+                color: $color-white;
+                visibility: hidden;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 32;
+                border-radius: 6px;
+                font-size: 11px;
+                font-family: $regular-monts;
+                .material-icons {
+                    font-size: 38px;
+                }
+            }
+            .av-copy {
+                padding: 11px;
+                border-radius: 50%;
+                cursor: pointer;
+                color: $color-white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-primary;
+                z-index: 35;
+                box-shadow: 0 2px 7px rgba(0,0,0,0.7);
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                transition: transform 0.3s;
+                .material-icons {
+                    font-size: 20px;
+                }
+                &:hover{
+                    transform: translateY(-1px);
+                }
+                &:active{
+                    background-color: $color-primary-dark;
+                }
+            }
+            
+        }
+        .av-brochure-text {
+            display: flex;
+            justify-content: space-between;
+            z-index: 10;
+            max-width: 100%;
+            .av-brochure-title {
+                max-width: 70%;
+                color: $color-text;
+                font-family: $regular-monts;
+                font-size: $size-text;
+                padding-top: 5px;
+            }
+            .av-type {
+                padding: 10px;
+                background-color: $color-dark-10;
+                color: $color-white;
+                font-family: $semi-bold-monts;
+                position: relative;
+                top: -3px;
+                right: -5px;
+                max-height: 40px;
+                border-radius: 0 0 6px 6px;
+                z-index: 15;
+                &.contigo{
+                    background-color: $color-gradient-1;
+                }
+                &.bazar{
+                    background-color: $color-gradient-2;
+                }
+                &.imb{
+                    background-color: $color-gradient-3;
+                }
+            }
+        }
+    }
+    .av-hidden {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    .av-type {
+        padding: 0.6rem;
+        margin-right: 10px;
+        &.contigo{
+            background-color: red;
+        }
+        &.bazar{
+            background-color: blue;
+        }
+        &.imb{
+            background-color: green;
+        }
+    }
+}

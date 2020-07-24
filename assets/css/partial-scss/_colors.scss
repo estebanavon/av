@@ -15,8 +15,7 @@ $color-text: $color-dark;
 // Main color
 $color-primary: #ED288A;
 $color-primary-light: #EF4D94;
-$color-primary-lighter: #F06798;
-$color-primary-lightest: #F49AC1;
+$color-primary-dark: scale-color($color-primary, $lightness: -20%);
 
 //Secondary color
 $color-secondary: #EE3129;

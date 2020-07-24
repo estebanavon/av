@@ -6,7 +6,7 @@ section.av-lw {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 0 auto;
+    min-height: 74vh;
     @media (min-width:$media-3){
         width: 900px; 
     }
@@ -18,10 +18,9 @@ section.av-lw {
         box-shadow: 10px 0px 20px rgba(0,0,0,0.3);
         
         .av-intro {
-            min-height: 70vh;
+            height: 72%;
             padding: 2rem;
             background-image: url('./../images/liderazgo_web/lw-i.jpg');
-            //background-image: url('./../../img/lw-i.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -31,7 +30,11 @@ section.av-lw {
             align-items: center;
             transition: background-image 1s;
             background-color: $color-dark-30;
-            
+            .lw-logo {
+                display: block;
+                margin: 0 auto;
+                width: 160px !important;
+            }
            .av-hover {
               display: none;
               width: 100%;
@@ -42,6 +45,8 @@ section.av-lw {
            }
         }
         .av-recent{
+            height: 28%;
+            overflow: hidden;
             padding: 2rem;
             background-image: linear-gradient(130deg,#D0709F,#B3276D 40%);
             .av-subtitle {
@@ -154,9 +159,9 @@ section.av-lw {
                 opacity: 0;
                 margin-left: 14%;
                 margin-right: 10%;
-                transition: all 0.5s;
+                //transition: all 0.5s;
                 &.unable {
-                    height: 100vh;
+                    height: 90%;
                     opacity: 1;
                 }
                 
@@ -225,16 +230,16 @@ section.av-lw {
       }
 }
 #guideA{
-    top: 2%;
-    left: -40%;
+    top: 0;
+    left: -46%;
 }
 #guideB {
-    top: 7%;
+    top: 4%;
     right: 20%;
 }
 #guideC {
-    top: 10%;
-    left: -16%;
+    top: 7%;
+    left: -23%;
     &::after{
         top: unset;
         left: 50%;

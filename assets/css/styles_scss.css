@@ -464,21 +464,21 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: right;
 }
 
 @media (min-width: 768px) {
   .av-title-container .av-title-text {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 57.2px;
   }
 }
 
 @media (min-width: 992px) {
   .av-title-container .av-title-text {
-    font-size: 5rem;
-    line-height: 70.4px;
+    font-size: 7rem;
+    line-height: 88px;
   }
 }
 
@@ -494,7 +494,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-size: 1rem;
   font-family: zona-pro-semi-bold, Helvetica, sans-serif;
   text-align: right;
-  line-height: 1.1rem;
+  line-height: 1.6rem;
   font-style: normal;
 }
 
@@ -509,14 +509,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #fff;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 1.43rem;
+  font-size: 2.08rem;
   letter-spacing: 16px;
   font-weight: 300;
 }
 
 @media (min-width: 768px) {
   .av-title-container .av-title-brand {
-    margin-top: 1.1rem;
+    margin-top: 1.6rem;
     width: 160px;
   }
 }
@@ -528,20 +528,20 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-align: center;
   margin-bottom: 1.4rem;
   margin-top: 0rem;
-  font-size: 1.6rem;
+  font-size: 2.52rem;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle {
-    font-size: 1.7rem;
+    font-size: 2.62rem;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle {
-    font-size: 1.8rem;
+    font-size: 2.72rem;
   }
 }
 
@@ -567,20 +567,20 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-align: center;
   margin-bottom: 1.4rem;
   margin-top: 0rem;
-  font-size: 0.9rem;
+  font-size: 2.2rem;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle-support {
-    font-size: 1rem;
+    font-size: 2.3rem;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle-support {
-    font-size: 1.1rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -602,9 +602,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 .av-text {
   color: #464646;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 22px;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.3rem;
 }
 
 .av-text.negative {
@@ -623,16 +623,16 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-text.av-text-small {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 20px;
 }
 
 .av-text.av-text-small p {
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.6rem;
 }
 
 .av-text.av-text-large {
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   line-height: 25px;
 }
 
@@ -642,9 +642,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-list {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  padding-left: 1.1rem;
+  padding-left: 1.6rem;
   line-height: 22px;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: #464646;
   list-style-type: disc;
 }
@@ -654,7 +654,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-list li {
-  margin-bottom: 0.44rem;
+  margin-bottom: 0.64rem;
 }
 
 .av-list.av-list-item {
@@ -706,9 +706,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-list .av-list-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: zona-pro-bold, Helvetica, sans-serif;
-  padding: 1.1rem 0rem !important;
+  padding: 4.8rem 0rem 1.6rem 0rem !important;
   color: #464646;
 }
 
@@ -720,7 +720,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-family: zona-pro-light, Helvetica, sans-serif;
   margin: 1rem 0;
   color: #464646;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .av-card {
@@ -833,7 +833,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-table-container .av-table thead tr td {
-  padding: 1.87rem;
+  padding: 2.72rem;
   color: #fff;
   font-weight: bolder;
 }
@@ -843,7 +843,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-table-container .av-table td {
-  padding: 1.1rem 1.98rem;
+  padding: 1.6rem 2.88rem;
   font-family: montserrat-light, Helvetica, sans-serif;
 }
 
@@ -899,7 +899,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   visibility: hidden;
   width: auto;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   background-color: #464646;
   color: #fff;
   text-align: center;
@@ -910,6 +910,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   top: -70%;
   left: -70%;
   white-space: nowrap;
+  z-index: 100;
 }
 
 .av-tooltip:hover .tooltiptext {
@@ -920,7 +921,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #464646;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 1.43rem;
+  font-size: 2.08rem;
   letter-spacing: 0px;
   font-weight: 300;
 }
@@ -963,6 +964,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 .av-prllx-container .av-prllx-image {
   width: 100%;
   height: 150%;
+  background-image: url("./../img/anew-protinol/prtnl-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1000,9 +1002,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #fff;
-  padding: 1rem 1.98rem;
+  padding: 1rem 2.88rem;
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
@@ -1021,7 +1023,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-button-primary:hover {
   background-color: #cc116e;
-  padding: 1rem 2.64rem;
+  padding: 1rem 3.84rem;
 }
 
 .av-button-secondary {
@@ -1029,9 +1031,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #fff;
-  padding: 1rem 1.98rem;
+  padding: 1rem 2.88rem;
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
@@ -1055,14 +1057,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #fff;
-  padding: 1rem 1.98rem;
+  padding: 1rem 2.88rem;
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
   transition: all 1s;
-  padding: 1.32rem 0rem;
+  padding: 1.92rem 0rem;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
@@ -1084,7 +1086,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 0.6rem;
 }
 
@@ -1102,15 +1104,15 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-link {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: #ED288A;
-  padding: 1.65rem 1.65rem 1.65rem 0rem;
+  padding: 1.6rem 1.6rem 1.6rem 0rem;
   display: block;
   background-color: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .av-link:active, .av-link:focus {
@@ -1125,13 +1127,13 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  padding: 1.1rem;
+  padding: 1.6rem;
   color: #666666;
   background-color: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .av-link-icon:active, .av-link-icon:focus {
@@ -1146,13 +1148,13 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  padding: 1.1rem;
+  padding: 1.6rem;
   color: #ED288A;
   background-color: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .av-link-icon.primary:active, .av-link-icon.primary:focus {
@@ -1169,7 +1171,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .av-link-inline:active, .av-link-inline:focus {
@@ -1405,27 +1407,27 @@ a {
 }
 
 .av-slide-container .av-slide-product .av-slide-description .av-slide-description-price {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #ED288A;
   font-family: montserrat-regular, Helvetica, sans-serif;
   display: block;
 }
 
 .av-slide-container .av-slide-product .av-slide-code {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-family: montserrat-regular, Helvetica, sans-serif;
   margin-bottom: 0rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text {
-  padding: 1.1rem 1.3rem;
+  padding: 1.6rem 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-text-item:first-child {
-  padding-right: 1.1rem;
+  padding-right: 1.6rem;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -1436,13 +1438,13 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 1.1rem;
+  padding-left: 1.6rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-title {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 1.45455rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-title p {
@@ -1505,28 +1507,6 @@ a {
   background-position: center;
 }
 
-.av-parallax-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.av-parallax-container .av-parallax-content {
-  background-image: url("./imgTst/ce-10.jpg");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 160%;
-  z-index: 1;
-}
-
-.av-parallax-container .row {
-  position: relative;
-  z-index: 2;
-  background-color: transparent !important;
-}
-
 .av-conv-header {
   background-image: url("./../img/responsabilidad-social/violence-woman.jpg");
 }
@@ -1556,12 +1536,12 @@ a {
 }
 
 .av-conv-row .w-100 {
-  height: 2.2rem;
+  height: 3.2rem;
 }
 
 @media (min-width: 992px) {
   .av-conv-row .w-100 {
-    height: 4.4rem;
+    height: 6.4rem;
   }
 }
 
@@ -1700,7 +1680,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #061E3F;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -1721,14 +1701,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title {
-    font-size: 3.08rem;
+    font-size: 4.48rem;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title {
-    font-size: 3.3rem;
+    font-size: 4.8rem;
     line-height: 55px;
   }
 }
@@ -1738,7 +1718,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -1762,14 +1742,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title.secondary {
-    font-size: 3.08rem;
+    font-size: 4.48rem;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title.secondary {
-    font-size: 3.3rem;
+    font-size: 4.8rem;
     line-height: 55px;
   }
 }
@@ -1825,7 +1805,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -1846,14 +1826,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title.negative {
-    font-size: 3.08rem;
+    font-size: 4.48rem;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title.negative {
-    font-size: 3.3rem;
+    font-size: 4.8rem;
     line-height: 55px;
   }
 }
@@ -1880,7 +1860,7 @@ a {
 @media (min-width: 768px) {
   .av-prtnl-subtitle {
     width: 115%;
-    padding: 1.1rem 2.2rem;
+    padding: 1.6rem 3.2rem;
     background-color: #061E3F;
     color: #fff;
   }
@@ -1931,9 +1911,9 @@ a {
 .av-prtnl-text {
   color: #464646;
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 22px;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.3rem;
 }
 
 .av-prtnl-text.negative {
@@ -2021,18 +2001,18 @@ a {
 
 .av-prtnl-studio-text span:nth-child(1) {
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
 }
 
 .av-prtnl-studio-text span:nth-child(2) {
   font-family: gotham-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 6.6rem;
+  font-size: 9.6rem;
   margin: 0 0.3rem;
 }
 
 .av-prtnl-studio-text span:nth-child(3) {
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -2340,11 +2320,11 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 .av-nosolas-brands {
   width: 80px;
   display: block;
-  margin: 1.1rem auto;
+  margin: 1.6rem auto;
 }
 
 .av-nosolas-letter .av-list {
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.7rem;
 }
 
 .av-nosolas-letter .av-list li {
@@ -2407,7 +2387,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 1024px) {
   .av-en-wrapper {
-    max-width: 35rem;
+    max-width: 50%;
   }
 }
 
@@ -2419,14 +2399,14 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
-  font-size: 2.31rem;
+  font-size: 3.36rem;
   text-align: left;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.6rem;
 }
 
 @media (min-width: 576px) {
   .av-en-wrapper .av-title-text {
-    font-size: 3.19rem;
+    font-size: 4.64rem;
   }
 }
 
@@ -2528,7 +2508,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-number {
-  font-size: 4.4rem;
+  font-size: 6.4rem;
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   color: #464646;
   margin-right: 1rem;
@@ -2542,7 +2522,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-1 .av-card {
-  background-image: url("./../img/en-products-1.jpg");
+  background-image: url("./../img/reclutamiento/en-products-1.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2564,7 +2544,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-2 .av-card {
-  background-image: url("./../img/en-products-2.jpg");
+  background-image: url("./../img/reclutamiento/en-products-2.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2586,7 +2566,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-3 .av-card {
-  background-image: url("./../img/en-products-3.jpg");
+  background-image: url("./../img/reclutamiento/en-products-3.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2610,7 +2590,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-4 .av-card {
-  background-image: url("./../img/en-products-4.jpg");
+  background-image: url("./../img/reclutamiento/en-products-4.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2632,7 +2612,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-5 .av-card {
-  background-image: url("./../img/en-products-5.jpg");
+  background-image: url("./../img/reclutamiento/en-products-5.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2656,7 +2636,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-6 .av-card {
-  background-image: url("./../img/en-products-6.jpg");
+  background-image: url("./../img/reclutamiento/en-products-6.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2671,57 +2651,57 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-kit-1 {
-  background-image: url("./../img/en-kit-1.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-kit-1.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-2 {
-  background-image: url("./../img/en-kit-2.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-kit-2.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-3 {
-  background-image: url("./../img/en-kit-3.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-kit-3.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-4 {
-  background-image: url("./../img/en-kit-4.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-kit-4.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-5 {
-  background-image: url("./../img/en-kit-5.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-kit-5.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-6 {
-  background-image: url("./../img/en-kit-6.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-kit-6.jpg") !important;
   min-height: 12rem;
 }
 
 .en-woman-1 {
-  background-image: url("./../img/en-woman-1.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-woman-1.jpg") !important;
 }
 
 .en-woman-2 {
-  background-image: url("./../img/en-woman-2.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-woman-2.jpg") !important;
 }
 
 .en-woman-3 {
-  background-image: url("./../img/en-woman-3.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-woman-3.jpg") !important;
 }
 
 .en-woman-4 {
-  background-image: url("./../img/en-woman-4.jpg") !important;
+  background-image: url("./../img/reclutamiento/en-woman-4.jpg") !important;
 }
 
 .en-team-1 {
-  background-image: url("./../img/en-team-1.jpg");
+  background-image: url("./../img/reclutamiento/en-team-1.jpg");
 }
 
 .en-device-1 {
-  background-image: url("./../img/en-device-1.jpg");
+  background-image: url("./../img/reclutamiento/en-device-1.jpg");
 }
 
 .p-relative {
@@ -2868,19 +2848,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-3 .av-title-text {
-  font-size: 2.31rem;
+  font-size: 3.36rem;
 }
 
 @media (min-width: 768px) {
   .av-esr-3 .av-title-text {
     text-align: right;
-    font-size: 3.3rem;
+    font-size: 4.8rem;
   }
 }
 
 @media (min-width: 992px) {
   .av-esr-3 .av-title-text {
-    font-size: 4.4rem;
+    font-size: 6.4rem;
   }
 }
 

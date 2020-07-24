@@ -31,18 +31,6 @@ const vacationsSection2020 = [
         name: 'Bases Vacaciones Tercera Edición Bloque A',
         file: 'BloqueA_Vacaciones.pdf',
     },
-    {
-        name: 'Bases Vacaciones Tercera Edición Bloque B',
-        file: 'BloqueB_Vacaciones.pdf',
-    },
-    {
-        name: 'Bases Vacaciones Tercera Edición Bloque C',
-        file: 'BloqueC_Vacaciones.pdf',
-    },
-    {
-        name: 'Anuncio Tercera Edición Vacaciones con Liderazgo Avon',
-        file: 'Vacaciones_2020.pdf',
-    },
 ];
 const vacationsSection2019 = [
     {
@@ -187,10 +175,6 @@ const prospectionSection = [
         file: 'Diptico_liderazgo_F.pdf',
     },
     {
-        name: 'Calendario de pagos 2020',
-        file: 'Calendario_L2020.pdf',
-    },
-    {
         name: 'Lona Fortaleza',
         file: 'lona_liderazgo_FORTALEZA.jpg',
     },
@@ -205,6 +189,10 @@ const prospectionSection = [
     {
         name: 'Lona Perseverancia, 150cms x 100cms',
         file: 'lona_liderazgo_perseverancia.tif',
+    },
+    {
+        name: 'ROA',
+        file: 'roa',
     },
     {
         name: 'Flyers Prospectar Empresarias a Color versión 1',
@@ -307,7 +295,7 @@ while (e < avConstructor.length){
             '<span>' + avConstructor[e][i].name + '</span>' +
             '<span class="av-list-spacer"></span>' +
             '<a class="av-button-icon av-tooltip" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span><span class="tooltiptext">Previsualizar</span></a>' +
-            '<a class="av-button-icon av-tooltip" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download><span class="material-icons">cloud_download</span><span class="tooltiptext">Descargar</span></a>'+
+            '<a class="av-button-icon av-tooltip" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download="'+ avConstructor[e][i].file +'"><span class="material-icons">cloud_download</span><span class="tooltiptext">Descargar</span></a>'+
             '</li>';
     }
     e++    
