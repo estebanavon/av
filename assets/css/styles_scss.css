@@ -494,7 +494,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-size: 1rem;
   font-family: zona-pro-semi-bold, Helvetica, sans-serif;
   text-align: right;
-  line-height: 1.2rem;
+  line-height: 1.6rem;
   font-style: normal;
 }
 
@@ -509,14 +509,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #fff;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 1.56rem;
+  font-size: 2.08rem;
   letter-spacing: 16px;
   font-weight: 300;
 }
 
 @media (min-width: 768px) {
   .av-title-container .av-title-brand {
-    margin-top: 1.2rem;
+    margin-top: 1.6rem;
     width: 160px;
   }
 }
@@ -528,20 +528,20 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-align: center;
   margin-bottom: 1.4rem;
   margin-top: 0rem;
-  font-size: 1.84rem;
+  font-size: 2.52rem;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle {
-    font-size: 1.94rem;
+    font-size: 2.62rem;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle {
-    font-size: 2.04rem;
+    font-size: 2.72rem;
   }
 }
 
@@ -567,20 +567,20 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-align: center;
   margin-bottom: 1.4rem;
   margin-top: 0rem;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle-support {
-    font-size: 1.7rem;
+    font-size: 2.3rem;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle-support {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -602,9 +602,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 .av-text {
   color: #464646;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 22px;
-  margin-bottom: 1.9rem;
+  margin-bottom: 2.3rem;
 }
 
 .av-text.negative {
@@ -623,16 +623,16 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-text.av-text-small {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 20px;
 }
 
 .av-text.av-text-small p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .av-text.av-text-large {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   line-height: 25px;
 }
 
@@ -642,9 +642,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-list {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  padding-left: 1.2rem;
+  padding-left: 1.6rem;
   line-height: 22px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #464646;
   list-style-type: disc;
 }
@@ -654,7 +654,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-list li {
-  margin-bottom: 0.48rem;
+  margin-bottom: 0.64rem;
 }
 
 .av-list.av-list-item {
@@ -706,9 +706,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-list .av-list-title {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-family: zona-pro-bold, Helvetica, sans-serif;
-  padding: 3.6rem 0rem 1.2rem 0rem !important;
+  padding: 4.8rem 0rem 1.6rem 0rem !important;
   color: #464646;
 }
 
@@ -720,7 +720,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-family: zona-pro-light, Helvetica, sans-serif;
   margin: 1rem 0;
   color: #464646;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 .av-card {
@@ -833,7 +833,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-table-container .av-table thead tr td {
-  padding: 2.04rem;
+  padding: 2.72rem;
   color: #fff;
   font-weight: bolder;
 }
@@ -843,7 +843,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-table-container .av-table td {
-  padding: 1.2rem 2.16rem;
+  padding: 1.6rem 2.88rem;
   font-family: montserrat-light, Helvetica, sans-serif;
 }
 
@@ -899,7 +899,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   visibility: hidden;
   width: auto;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.4rem;
   background-color: #464646;
   color: #fff;
   text-align: center;
@@ -921,7 +921,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   color: #464646;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 1.56rem;
+  font-size: 2.08rem;
   letter-spacing: 0px;
   font-weight: 300;
 }
@@ -1002,9 +1002,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #fff;
-  padding: 1rem 2.16rem;
+  padding: 1rem 2.88rem;
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
@@ -1023,7 +1023,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-button-primary:hover {
   background-color: #cc116e;
-  padding: 1rem 2.88rem;
+  padding: 1rem 3.84rem;
 }
 
 .av-button-secondary {
@@ -1031,9 +1031,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #fff;
-  padding: 1rem 2.16rem;
+  padding: 1rem 2.88rem;
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
@@ -1057,14 +1057,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #fff;
-  padding: 1rem 2.16rem;
+  padding: 1rem 2.88rem;
   text-align: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
   transition: all 1s;
-  padding: 1.44rem 0rem;
+  padding: 1.92rem 0rem;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
@@ -1086,7 +1086,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 0.6rem;
 }
 
@@ -1104,15 +1104,15 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-link {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #ED288A;
-  padding: 1.2rem 1.2rem 1.2rem 0rem;
+  padding: 1.6rem 1.6rem 1.6rem 0rem;
   display: block;
   background-color: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .av-link:active, .av-link:focus {
@@ -1127,13 +1127,13 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  padding: 1.2rem;
+  padding: 1.6rem;
   color: #666666;
   background-color: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .av-link-icon:active, .av-link-icon:focus {
@@ -1148,13 +1148,13 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  padding: 1.2rem;
+  padding: 1.6rem;
   color: #ED288A;
   background-color: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .av-link-icon.primary:active, .av-link-icon.primary:focus {
@@ -1171,7 +1171,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .av-link-inline:active, .av-link-inline:focus {
@@ -1407,27 +1407,27 @@ a {
 }
 
 .av-slide-container .av-slide-product .av-slide-description .av-slide-description-price {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #ED288A;
   font-family: montserrat-regular, Helvetica, sans-serif;
   display: block;
 }
 
 .av-slide-container .av-slide-product .av-slide-code {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-family: montserrat-regular, Helvetica, sans-serif;
   margin-bottom: 0rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text {
-  padding: 1.2rem 1.4rem;
+  padding: 1.6rem 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-text-item:first-child {
-  padding-right: 1.2rem;
+  padding-right: 1.6rem;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -1438,13 +1438,13 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 1.2rem;
+  padding-left: 1.6rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-title {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  margin-bottom: 1.09091rem;
+  margin-bottom: 1.45455rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-title p {
@@ -1511,6 +1511,14 @@ a {
   background-image: url("/assets/img/responsabilidad-social/violence-woman.jpg");
 }
 
+.av-cm-header {
+  background-image: url("/assets/img/responsabilidad-social/cm-ganadores.jpg");
+}
+
+.av-cm-convocatoria {
+  background-image: url("/assets/img/responsabilidad-social/cm-convocatoria.jpg");
+}
+
 .av-conv-1 {
   background-image: url("/assets/img/responsabilidad-social/violence-banner-1.jpg");
   background-size: cover;
@@ -1536,12 +1544,12 @@ a {
 }
 
 .av-conv-row .w-100 {
-  height: 2.4rem;
+  height: 3.2rem;
 }
 
 @media (min-width: 992px) {
   .av-conv-row .w-100 {
-    height: 4.8rem;
+    height: 6.4rem;
   }
 }
 
@@ -1680,7 +1688,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #061E3F;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -1701,14 +1709,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title {
-    font-size: 3.36rem;
+    font-size: 4.48rem;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title {
-    font-size: 3.6rem;
+    font-size: 4.8rem;
     line-height: 55px;
   }
 }
@@ -1718,7 +1726,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -1742,14 +1750,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title.secondary {
-    font-size: 3.36rem;
+    font-size: 4.48rem;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title.secondary {
-    font-size: 3.6rem;
+    font-size: 4.8rem;
     line-height: 55px;
   }
 }
@@ -1805,7 +1813,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -1826,14 +1834,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title.negative {
-    font-size: 3.36rem;
+    font-size: 4.48rem;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title.negative {
-    font-size: 3.6rem;
+    font-size: 4.8rem;
     line-height: 55px;
   }
 }
@@ -1860,7 +1868,7 @@ a {
 @media (min-width: 768px) {
   .av-prtnl-subtitle {
     width: 115%;
-    padding: 1.2rem 2.4rem;
+    padding: 1.6rem 3.2rem;
     background-color: #061E3F;
     color: #fff;
   }
@@ -1911,9 +1919,9 @@ a {
 .av-prtnl-text {
   color: #464646;
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 22px;
-  margin-bottom: 1.9rem;
+  margin-bottom: 2.3rem;
 }
 
 .av-prtnl-text.negative {
@@ -2001,18 +2009,18 @@ a {
 
 .av-prtnl-studio-text span:nth-child(1) {
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .av-prtnl-studio-text span:nth-child(2) {
   font-family: gotham-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 7.2rem;
+  font-size: 9.6rem;
   margin: 0 0.3rem;
 }
 
 .av-prtnl-studio-text span:nth-child(3) {
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -2320,11 +2328,11 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 .av-nosolas-brands {
   width: 80px;
   display: block;
-  margin: 1.2rem auto;
+  margin: 1.6rem auto;
 }
 
 .av-nosolas-letter .av-list {
-  margin-bottom: 2.3rem;
+  margin-bottom: 2.7rem;
 }
 
 .av-nosolas-letter .av-list li {
@@ -2399,14 +2407,14 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
-  font-size: 2.52rem;
+  font-size: 3.36rem;
   text-align: left;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 @media (min-width: 576px) {
   .av-en-wrapper .av-title-text {
-    font-size: 3.48rem;
+    font-size: 4.64rem;
   }
 }
 
@@ -2508,7 +2516,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-number {
-  font-size: 4.8rem;
+  font-size: 6.4rem;
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   color: #464646;
   margin-right: 1rem;
@@ -2848,19 +2856,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-3 .av-title-text {
-  font-size: 2.52rem;
+  font-size: 3.36rem;
 }
 
 @media (min-width: 768px) {
   .av-esr-3 .av-title-text {
     text-align: right;
-    font-size: 3.6rem;
+    font-size: 4.8rem;
   }
 }
 
 @media (min-width: 992px) {
   .av-esr-3 .av-title-text {
-    font-size: 4.8rem;
+    font-size: 6.4rem;
   }
 }
 

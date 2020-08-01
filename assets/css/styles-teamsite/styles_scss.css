@@ -1499,16 +1499,6 @@ a {
   font-size: 1.4rem;
 }
 
-.av-pink {
-  color: #ED288A;
-}
-
-.av-pink.ce-text-1 {
-  font-size: 1.2rem;
-  font-family: zona-pro-regular, Helvetica, sans-serif;
-  line-height: 25px;
-}
-
 .av-ce-option h4 {
   display: -webkit-box;
   display: -ms-flexbox;

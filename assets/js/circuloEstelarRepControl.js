@@ -33,6 +33,16 @@ $(document).ready(function () {
             develop: false,
         },
         {
+            name: 'Guía al éxito (video)',
+            file: 'GuiaAlExitob.mp4',
+            develop: false,
+        },
+        {
+            name: 'Guía de productos gratis (video)',
+            file: 'GuiaProductosGratis.mp4',
+            develop: false,
+        },
+        {
             name: 'Sé Círculo Estelar (gif)',
             file: 'SeCirculoEstelar.gif',
             develop: true,
@@ -163,8 +173,66 @@ $(document).ready(function () {
         },
         
     ];
-    
-    const avNumber = $('.optionControl').attr('value');
+    var avFiles3 = [
+        {
+            name: 'Calcula tu oportunidad de ganancia (video)',
+            file: 'CalculaTuOportunidadDeGanancia.mp4',
+            develop: false,
+        },
+        {
+            name: 'Testimonio causa social (video)',
+            file: 'TestimonioCausaSocial.mp4',
+            develop: false,
+        },
+        {
+            name: 'Ampolletas Protinol (video)',
+            file: 'AmpolletasProtinol.mp4',
+            develop: false,
+        },
+        {
+            name: 'Foto de perfil Círculo Estelar (jpg)',
+            file: 'FotoDePerfilCE.jpg',
+            develop: true,
+        },
+        {
+            name: 'Foto de portada FB (jpg)',
+            file: 'FotoDePortadaFB.jpg',
+            develop: true,
+        },
+        {
+            name: 'Prospectación digital (jpg)',
+            file: 'ProspectacionDigital.jpg',
+            develop: true,
+        },
+        {
+            name: 'Post Círculo Estelar - Categorias (jpg)',
+            file: 'postCE_categorias.jpg',
+            develop: true,
+        },
+        {
+            name: 'Post Círculo Estelar - Paga desde casa (jpg)',
+            file: 'postCE_pagaDesdeCasa.jpg',
+            develop: true,
+        },
+    ];
+  var avFiles4 = [
+        {
+            name: 'Tips de venta (jpg)',
+            file: 'TipsdeVenta.jpg',
+            develop: false,
+        },
+        {
+            name: 'Causas sociales (mp4)',
+            file: 'CausasSociales.mp4',
+            develop: false,
+        },
+        {
+            name: 'Foto de perfil FB (jpg)',
+            file: 'FotodeperfilFB.jpg',
+            develop: true,
+        },
+    ];
+    const avNumber = $('.optionControl').attr('value'); 
  
   
     var avLoaOptions = [
@@ -182,12 +250,12 @@ $(document).ready(function () {
         $('.optionControl').append(avLoaOptions[i-1]);
     }
     
-    const avFilesConstructor = [avFiles0,avFiles1,avFiles2];
+    const avFilesConstructor = [avFiles0,avFiles1,avFiles2,avFiles3,avFiles4];
     var e = 0;
     var i;
     var avArrayPrintContent = [];
-    var avArrayPrintTrue = ["","",""];
-    var avArrayPrintFalse = ["","",""];
+    var avArrayPrintTrue = ["","","","",""];
+    var avArrayPrintFalse = ["","","","",""];
     
     while (e < avFilesConstructor.length) {
         for (i = 0; i < avFilesConstructor[e].length; i++) {

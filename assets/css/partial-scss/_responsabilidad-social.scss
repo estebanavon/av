@@ -2,6 +2,12 @@
 .av-conv-header {
     background-image: url('#{$route-images}/responsabilidad-social/violence-woman.jpg');
 }
+.av-cm-header {
+    background-image: url('#{$route-images}/responsabilidad-social/cm-ganadores.jpg');
+}
+.av-cm-convocatoria {
+    background-image: url('#{$route-images}/responsabilidad-social/cm-convocatoria.jpg');
+}
 @mixin image-placer($number){
     .av-conv-#{$number} {
         background-image: url('#{$route-images}/responsabilidad-social/violence-banner-#{$number}.jpg');
