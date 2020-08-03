@@ -2259,14 +2259,16 @@ section.av-lw .disable {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   cursor: pointer;
 }
 
 .av-filtros div {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 6px;
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
-  margin-right: 0.2rem;
+  margin-right: 0.1rem;
   fill: #fff;
   color: #fff;
   display: -webkit-box;
@@ -2278,6 +2280,13 @@ section.av-lw .disable {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .av-filtros div {
+    padding: 0.5rem 1.5rem;
+    margin-right: 0.2rem;
+  }
 }
 
 .av-filtros div.filter-all {
@@ -2327,23 +2336,48 @@ h3.av-brochures-subtitle svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2.5rem 0rem;
+  padding: 2.5rem 1rem;
 }
 
-.av-share div {
+.av-share > div {
   margin: 10px 0px;
 }
 
 .av-share i {
-  margin: 0 0.8rem;
+  margin-right: 1rem;
   font-size: 24px;
   color: #464646;
 }
 
+.av-map {
+  padding: 0.5rem 2.5rem;
+}
+
+.av-map div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.av-map div svg {
+  margin-right: 1rem;
+}
+
 .av-brochure-item {
-  width: 150px;
-  height: 210px;
+  width: 130px;
+  height: 200px;
   margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .av-brochure-item {
+    width: 150px;
+    height: 210px;
+  }
 }
 
 .av-brochure-item.av-brochure-main {
@@ -2358,7 +2392,7 @@ h3.av-brochures-subtitle svg {
 
 .av-brochure-item .av-brochure-image {
   width: 100%;
-  height: 160px;
+  height: 150px;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2373,6 +2407,12 @@ h3.av-brochures-subtitle svg {
   transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .av-brochure-item .av-brochure-image {
+    height: 160px;
+  }
 }
 
 .av-brochure-item .av-brochure-image:hover, .av-brochure-item .av-brochure-image:active, .av-brochure-item .av-brochure-image:focus {
@@ -2454,6 +2494,11 @@ h3.av-brochures-subtitle svg {
 
 .av-brochure-item .av-brochure-image .av-copy:active {
   background-color: #cc116e;
+  outline: none;
+}
+
+.av-brochure-item .av-brochure-image .av-copy:active, .av-brochure-item .av-brochure-image .av-copy:focus {
+  outline: none;
 }
 
 .av-brochure-item .av-brochure-text {
@@ -2491,6 +2536,13 @@ h3.av-brochures-subtitle svg {
   opacity: 0;
   position: absolute;
   z-index: -1;
+  background-color: transparent;
+  color: transparent;
+}
+
+.av-hidden:active, .av-hidden:focus {
+  outline: none;
+  background-color: transparent;
 }
 
 .av-type {

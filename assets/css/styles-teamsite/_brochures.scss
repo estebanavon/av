@@ -19,18 +19,23 @@ $color-bazar: #00CE15;
     padding: 0 1rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     cursor: pointer;
     
     div {
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 0.7rem;
         border-radius: 6px;
         font-family: $semi-bold-monts;
-        margin-right: 0.2rem;
+        margin-right: 0.1rem;
         fill: $color-white;
         color: $color-white;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width:$media-1) {
+            padding: 0.5rem 1.5rem;
+            margin-right: 0.2rem;
+        }
         &.filter-all {
             background-color: $color-text;
         }
@@ -64,20 +69,36 @@ h3.av-brochures-subtitle {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2.5rem 0rem;
-    div {
+    padding: 2.5rem 1rem;
+    > div {
         margin: 10px 0px;
     }
      i{
-         margin: 0 0.8rem;
+         margin-right: 1rem;
          font-size: 24px;
          color: $color-text;
      }
 }
+.av-map {
+    padding: 0.5rem 2.5rem;
+    div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        svg {
+            margin-right: 1rem;
+        }
+    }
+}
+
 .av-brochure-item {
-    width: 150px;
-    height: 210px;
+    width: 130px;
+    height: 200px;
     margin: 5px;
+    @media (min-width:$media-1){
+        width: 150px;
+        height: 210px;
+    }
     &.av-brochure-main {
         width: 100%;
         height: 300px;
@@ -89,7 +110,7 @@ h3.av-brochures-subtitle {
     
     .av-brochure-image {
         width: 100%;
-        height: 160px;
+        height: 150px;
         background-position: top left;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -100,6 +121,9 @@ h3.av-brochures-subtitle {
         z-index: 20;
         transition: box-shadow 0.5s;
         cursor: pointer;
+        @media (min-width:$media-1){
+            height: 160px;
+         }
 
         &:hover,
         &:active,
@@ -154,6 +178,10 @@ h3.av-brochures-subtitle {
             }
             &:active{
                 background-color: $color-primary-dark;
+                outline: none;
+            }
+            &:active,&:focus {
+                outline: none;
             }
         }
         
@@ -187,6 +215,12 @@ h3.av-brochures-subtitle {
     opacity: 0;
     position: absolute;
     z-index: -1;
+    background-color: transparent;
+    color: transparent;
+    &:active,&:focus {
+        outline: none;
+        background-color: transparent;
+    }
 }
 .av-type {
     padding: 0.6rem;

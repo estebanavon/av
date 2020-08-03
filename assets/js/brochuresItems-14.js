@@ -21,7 +21,7 @@ const brochures14 = [
         type: 'imb',
     },
     {
-        title: 'Contigo',
+        title: 'Avon Contigo',
         file: 'avon_contigo_c1420.pdf',
         type: 'contigo',
     },
