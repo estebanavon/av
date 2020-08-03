@@ -372,14 +372,23 @@
         background-color: $color-dark;
         color: $color-white;
         text-align: center;
-        padding: 7px;
+        padding: 7px 10px;
         border-radius: 6px;
         position: absolute;
         z-index: 1;
-        top: -70%;
-        left: -70%;
+        top: -80%;
         white-space: nowrap;
         z-index: 100;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $color-dark transparent transparent transparent;
+          }
       }
       &:hover .tooltiptext {
         visibility: visible;

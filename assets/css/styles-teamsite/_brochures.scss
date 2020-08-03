@@ -1,3 +1,10 @@
+
+// Color
+$color-flyer: #DC05FF;
+$color-contigo: #FB8F00;
+$color-imb: #0057FF;
+$color-bazar: #00CE15;
+
 .av-brochures-container {
     display: flex;
     flex-wrap: wrap;
@@ -7,133 +14,195 @@
     &:nth-child(5){
         display: none;
     }
-    .av-brochure-item{
-        width: 150px;
-        height: 210px;
-        margin: 15px 5px;
-        
+}
+.av-filtros {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+    div {
+        padding: 0.5rem 1.5rem;
+        border-radius: 6px;
+        font-family: $semi-bold-monts;
+        margin-right: 0.2rem;
+        fill: $color-white;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.filter-all {
+            background-color: $color-text;
+        }
+        &.no-active {
+            background-color: transparent;
+            fill: $color-text;
+            color: $color-text;
+        }
+    }
+    
+}
+h2.av-brochure-title {
+    padding: 3rem 1rem 1rem 1rem;
+    font-size: $size-text * 2;
+    font-family: $semi-bold-monts;
+    text-align: center;
+}
+h3.av-brochures-subtitle {
+    display: flex;
+    margin-bottom: 1rem;
+    svg {
+        margin-right: 0.5rem;
+    }
+}
+.av-brochure-button {
+    display: block;
+    margin: 0 auto;
+}
+.av-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 0rem;
+    div {
+        margin: 10px 0px;
+    }
+     i{
+         margin: 0 0.8rem;
+         font-size: 24px;
+         color: $color-text;
+     }
+}
+.av-brochure-item {
+    width: 150px;
+    height: 210px;
+    margin: 5px;
+    &.av-brochure-main {
+        width: 100%;
+        height: 300px;
+        margin: 0;
         .av-brochure-image {
-            width: 100%;
-            height: 160px;
-            background-position: top left;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            position: relative;
-            background-color: $color-dark-30;
-            border-radius: 6px;
-            box-shadow: 0 0 3px rgba(0,0,0,0.4);
-            z-index: 20;
-            transition: box-shadow 0.5s;
-            cursor: pointer;
+            height: 257px;
+        }
+    }
+    
+    .av-brochure-image {
+        width: 100%;
+        height: 160px;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        background-color: $color-dark-30;
+        border-radius: 6px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.4);
+        z-index: 20;
+        transition: box-shadow 0.5s;
+        cursor: pointer;
 
-            &:hover,
-            &:active,
-            &:focus {
-                z-index: 30;
-                box-shadow: 0 0 20px rgba(0,0,0,0.6);
-                
-                .av-overlay {
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
-            .av-overlay {
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0,0,0,0.8);
-                color: $color-white;
-                visibility: hidden;
-                opacity: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                z-index: 32;
-                border-radius: 6px;
-                font-size: 11px;
-                font-family: $regular-monts;
-                .material-icons {
-                    font-size: 38px;
-                }
-            }
-            .av-copy {
-                padding: 11px;
-                border-radius: 50%;
-                cursor: pointer;
-                color: $color-white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: $color-primary;
-                z-index: 35;
-                box-shadow: 0 2px 7px rgba(0,0,0,0.7);
-                position: absolute;
-                top: 8px;
-                right: 8px;
-                transition: transform 0.3s;
-                .material-icons {
-                    font-size: 20px;
-                }
-                &:hover{
-                    transform: translateY(-1px);
-                }
-                &:active{
-                    background-color: $color-primary-dark;
-                }
-            }
+        &:hover,
+        &:active,
+        &:focus {
+            z-index: 30;
+            box-shadow: 0 0 20px rgba(0,0,0,0.9);
             
+            .av-overlay {
+                visibility: visible;
+                opacity: 1;
+            }
         }
-        .av-brochure-text {
+        .av-overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            color: $color-white;
+            visibility: hidden;
+            opacity: 0;
             display: flex;
-            justify-content: space-between;
-            z-index: 10;
-            max-width: 100%;
-            .av-brochure-title {
-                max-width: 70%;
-                color: $color-text;
-                font-family: $regular-monts;
-                font-size: $size-text;
-                padding-top: 5px;
-            }
-            .av-type {
-                padding: 10px;
-                background-color: $color-dark-10;
-                color: $color-white;
-                font-family: $semi-bold-monts;
-                position: relative;
-                top: -3px;
-                right: -5px;
-                max-height: 40px;
-                border-radius: 0 0 6px 6px;
-                z-index: 15;
-                &.contigo{
-                    background-color: $color-gradient-1;
-                }
-                &.bazar{
-                    background-color: $color-gradient-2;
-                }
-                &.imb{
-                    background-color: $color-gradient-3;
-                }
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 32;
+            border-radius: 6px;
+            font-size: 11px;
+            font-family: $regular-monts;
+            .material-icons {
+                font-size: 38px;
             }
         }
-    }
-    .av-hidden {
-        opacity: 0;
-        position: absolute;
-        z-index: -1;
-    }
-    .av-type {
-        padding: 0.6rem;
-        margin-right: 10px;
-        &.contigo{
-            background-color: red;
+        .av-copy {
+            padding: 11px;
+            border-radius: 50%;
+            cursor: pointer;
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-primary;
+            z-index: 35;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.7);
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            transition: transform 0.3s;
+            .material-icons {
+                font-size: 20px;
+            }
+            &:hover{
+                transform: translateY(-1px);
+            }
+            &:active{
+                background-color: $color-primary-dark;
+            }
         }
-        &.bazar{
-            background-color: blue;
+        
+    }
+    .av-brochure-text {
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        max-width: 100%;
+        .av-brochure-title {
+            max-width: 70%;
+            color: $color-text;
+            font-family: $regular-monts;
+            font-size: $size-text;
+            padding-top: 5px;
         }
-        &.imb{
-            background-color: green;
+        .av-type {
+            padding: 10px;
+            color: $color-white;
+            font-family: $semi-bold-monts;
+            position: relative;
+            top: -3px;
+            right: -5px;
+            max-height: 40px;
+            border-radius: 0 0 6px 6px;
+            z-index: 15;
         }
     }
 }
+.av-hidden {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.av-type {
+    padding: 0.6rem;
+    margin-right: 10px;
+}
+.contigo{
+    background-color: $color-contigo;
+}
+.bazar{
+    background-color: $color-bazar;
+}
+.imb{
+    background-color: $color-imb;
+}
+.flyer{
+    background-color: $color-flyer;
+}
+
+

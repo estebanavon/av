@@ -903,14 +903,24 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   background-color: #464646;
   color: #fff;
   text-align: center;
-  padding: 7px;
+  padding: 7px 10px;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  top: -70%;
-  left: -70%;
+  top: -80%;
   white-space: nowrap;
   z-index: 100;
+}
+
+.av-tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #464646 transparent transparent transparent;
 }
 
 .av-tooltip:hover .tooltiptext {
@@ -1197,6 +1207,7 @@ body {
   display: block;
   margin: 0 auto;
   overflow-x: hidden;
+  font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 @media (min-width: 576px) {

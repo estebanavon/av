@@ -1,0 +1,33 @@
+
+const brochures15 = [
+    {
+        title: 'Belleza',
+        file: '1',
+        type: 'imb',
+    },
+    {
+        title: 'Fashion & Home',
+        file: '2',
+        type: 'imb',
+    },
+    {
+        title: 'Bazar',
+        file: 'avon_contigo_c1420.pdf',
+        type: 'bazar',
+    },
+    {
+        title: 'Salón en casa',
+        file: '4',
+        type: 'imb',
+    },
+    {
+        title: 'Contigo',
+        file: 'avon_contigo_c1420.pdf',
+        type: 'contigo',
+    },
+    {
+        title: 'Flyer',
+        file: 'avon_contigo_c1420.pdf',
+        type: 'flyer',
+    },
+]
