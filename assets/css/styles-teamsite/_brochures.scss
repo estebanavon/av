@@ -113,11 +113,11 @@ h3.av-brochures-subtitle {
         height: 150px;
         background-position: top left;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% auto;
         position: relative;
         background-color: $color-dark-30;
-        border-radius: 6px;
-        box-shadow: 0 0 3px rgba(0,0,0,0.4);
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.4);
         z-index: 20;
         transition: box-shadow 0.5s;
         cursor: pointer;
@@ -195,7 +195,7 @@ h3.av-brochures-subtitle {
             max-width: 70%;
             color: $color-text;
             font-family: $regular-monts;
-            font-size: $size-text;
+            font-size: $size-text - 0.1rem;
             padding-top: 5px;
         }
         .av-type {

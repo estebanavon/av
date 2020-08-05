@@ -11,9 +11,9 @@ const brochures14 = [
         type: 'imb',
     },
     {
-        title: 'Bazar',
-        file: 'avon_contigo_c1420.pdf',
-        type: 'bazar',
+        title: 'Electro',
+        file: '3',
+        type: 'imb',
     },
     {
         title: 'Salón en casa',
@@ -21,13 +21,30 @@ const brochures14 = [
         type: 'imb',
     },
     {
-        title: 'Avon Contigo',
-        file: 'avon_contigo_c1420.pdf',
+        title: 'Rutinas Anew',
+        file: '5',
+        type: 'imb',
+    },
+    {
+        title: 'Limpieza facial',
+        file: '6',
+        type: 'imb',
+    },
+    {
+        title: 'Flyer Especial',
+        file: 'pdf.pdf',
+        type: 'flyer',
+        img: 'flyer.jpg',
+    },
+
+    // Constante
+
+    {
+        title: 'Avon Contigo',  
         type: 'contigo',
     },
     {
-        title: 'Flyer',
-        file: 'avon_contigo_c1420.pdf',
-        type: 'flyer',
+        title: 'Bazar',
+        type: 'bazar',
     },
 ]

@@ -294,8 +294,8 @@ while (e < avConstructor.length){
         avArrayPrintContent[e] += '<li>' +
             '<span>' + avConstructor[e][i].name + '</span>' +
             '<span class="av-list-spacer"></span>' +
-            '<a class="av-button-icon av-tooltip" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span><span class="tooltiptext">Previsualizar</span></a>' +
-            '<a class="av-button-icon av-tooltip" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download="'+ avConstructor[e][i].file +'"><span class="material-icons">cloud_download</span><span class="tooltiptext">Descargar</span></a>'+
+            '<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span></a>' +
+            '<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download="'+ avConstructor[e][i].file +'"><span class="material-icons">cloud_download</span></a>'+
             '</li>';
     }
     e++    

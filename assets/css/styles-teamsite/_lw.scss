@@ -6,7 +6,7 @@ section.av-lw {
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 74vh;
+    min-height: 80vh;
     @media (min-width:$media-3){
         width: 900px; 
     }
@@ -18,6 +18,7 @@ section.av-lw {
         box-shadow: 10px 0px 20px rgba(0,0,0,0.3);
         
         .av-intro {
+            flex: 3;
             height: 72%;
             padding: 2rem;
             background-image: url('./../images/liderazgo_web/lw-i.jpg');
@@ -28,7 +29,6 @@ section.av-lw {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            transition: background-image 1s;
             background-color: $color-dark-30;
             .lw-logo {
                 display: block;
@@ -45,9 +45,8 @@ section.av-lw {
            }
         }
         .av-recent{
-            height: 28%;
-            overflow: hidden;
-            padding: 2rem;
+            flex: 1;
+            padding: 1.5rem;
             background-image: linear-gradient(130deg,#D0709F,#B3276D 40%);
             .av-subtitle {
                 font-size: 1.3rem;
@@ -55,6 +54,8 @@ section.av-lw {
         }
         @media (min-width:$media-1){
             display: block;
+            display: flex;
+            flex-direction: column;
         }
     }
 

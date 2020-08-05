@@ -2,48 +2,82 @@ $(document).ready(function(){
     
     const campaignCurrent = 14;
 
-    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15];
+    const campaignPast = campaignCurrent - 1;
+    const campaignOld = campaignCurrent - 2;
+    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14];
     const brochureSelector = $('#brochureContainer,#brochureContainerPast,#brochureList ul');
-    var brochuresConstructor = [brochuresWrapper[(campaignCurrent-1)],brochuresWrapper[(campaignCurrent-2)],brochuresWrapper[(campaignCurrent-3)]];
-    var brochurePrint = ["","",""];
+    var brochuresConstructor = [brochuresWrapper[(campaignPast)],brochuresWrapper[campaignOld],brochuresWrapper[(campaignCurrent-3)]];
+    var brochurePrint = ["","","",""];
 
 
-    function url(type,e){
-        let url;
-        if (type == 'imb'){
-            if (e == 0){
-                url = 'https://catalogo.avon.mx/'+ campaignCurrent +'/2020'+ campaignCurrent + '_0' + brochuresConstructor[e][i].file +'/#/'    
-            } else if (e == 1) {
-                url = 'https://catalogo.avon.mx/'+ (campaignCurrent - 1) +'/2020'+ (campaignCurrent - 1) + '_0' + brochuresConstructor[e][i].file +'/#/' 
-            } else {
-                url = 'https://catalogo.avon.mx/'+ (campaignCurrent - 2) +'/2020'+ (campaignCurrent - 2) + '_0' + brochuresConstructor[e][i].file +'/#/'    
-            }
-            
-        } else {
-            url = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/'
-        }
-        
-        return url
-    }
-    function imgUrl(type){
-        let imgUrl;
-        if (type == 'imb'){
-            imgUrl = '/assets/img/20_C14_01.jpg'
-        } else {
-            imgUrl = '/assets/img/20_C14_02.jpg'
-        }
-        return imgUrl
-    }
+
+
     function campaign(e){
         let campaign;
+        
         if (e == 0){
             campaign = campaignCurrent;
+        } else if (e == 1){
+            campaign = campaignPast;
         } else {
-            campaign = campaignCurrent-1;
+            campaign = campaignOld;
         }
         return campaign;
     }
+
+    function urlFile(type,e,file){
+        let urlFile;
+        switch (type){
+            case "imb":
+                urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/2020'+ campaign(e) + '_0' + file +'/#/'    
+                break
+            case "contigo":
+                urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/avon_contigo_c'+ campaign(e) +'20.pdf'  
+                break
+            default:
+                urlFile = file;
+            ;
+        }
+        
+        return urlFile
+    }
     
+    function imgUrl(type,file,img){
+        let imgUrl;
+        switch (type){
+            case "imb":
+                if (file < 3){
+                    imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_0'+ file +'_cover_medium.jpg';
+                }
+                break
+            case "contigo":
+                imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_05_cover_medium.jpg';
+                break
+            case "bazar":
+                imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_07_cover_medium.jpg';
+                break
+            default:
+                imgUrl = '/REPSuite/web/static/images/ebrochure/C' + img
+        }
+        return imgUrl
+    }
+
+    function copyText(type){
+        let copyText;
+        switch (type){
+            case "imb":
+                copyText = 'Copiar texto';
+                break
+            case "contigo":
+            case "bazar":
+            case "flyer":
+                copyText = '¡Recuerda que es solo para ti!';
+                break
+            default:;
+        }
+        return copyText
+    }
+
     var e = 0;
     var i;
     while (e < brochuresConstructor.length) {
@@ -52,10 +86,10 @@ $(document).ready(function(){
             case 1:
                 for (i=0;i<brochuresConstructor[e].length;i++){
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
-                    '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[e][i].type) +'\')" class="av-brochure-image">' +
-                        '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">Copiar link</div></div>' +
-                        '<input type="text" class="av-hidden" value="'+ url(brochuresConstructor[e][i].type,e) + brochuresConstructor[e][i].file +'" />' +
-                        '<a class="av-overlay" href="'+ url(brochuresConstructor[e][i].type,e) + brochuresConstructor[e][i].file +'" target="_blank">' +
+                    '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file,brochuresConstructor[e][i].img) +'\')" class="av-brochure-image">' +
+                        '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
+                        '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" />' +
+                        '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" target="_blank">' +
                         '<p class="material-icons">visibility</p><p>Ver</p></a></div>' +
                         '<div class="av-brochure-text">' +
                         '<h3 class="av-brochure-title">'+ brochuresConstructor[e][i].title +'</h3>' +
@@ -65,24 +99,35 @@ $(document).ready(function(){
             case 2:
                 for (i=0;i<brochuresConstructor[e].length;i++){
                     brochurePrint[2] += '<li data-type="'+ brochuresConstructor[e][i].type  +'"><span class="av-type '+  brochuresConstructor[e][i].type  +'"></span>' +
-                    '<span>'+ brochuresConstructor[e][i].title + ' C'+ (campaignCurrent-2) +'</span>' +
+                    '<span>'+ brochuresConstructor[e][i].title + ' C'+ campaignOld +'</span>' +
                     '<span class="av-list-spacer"></span>' +
-                    '<a class="av-button-icon" href="'+ url(brochuresConstructor[e][i].type,e) + brochuresConstructor[e][i].file +'" target="_blank">' +
+                    '<a class="av-button-icon" href="'+ urlFile(brochuresConstructor[e][i].type,2,brochuresConstructor[e][i].file) +'" target="_blank">' +
                     '<span class="material-icons">visibility</span></a>' +
                     '<div class="av-button-icon av-copy"><span class="material-icons">content_copy</span></div>' +
-                    '<input type="text" class="av-hidden" value="'+ url(brochuresConstructor[e][i].type,e) + brochuresConstructor[e][i].file +'" />' +
+                    '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,2,brochuresConstructor[e][i].file) +'" />' +
                     '</li>'
                 }
                 break;
         }
         e++
     };
+    brochurePrint[3] = '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
+    '<div style="background-image:url(\'/REPSuite/web/static/images/brochures/'+ imgUrl(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file,brochuresConstructor[0][0].img) +'\')" class="av-brochure-image">' +
+        '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">Copiar link</div></div>' +
+        '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[0][0].type,e,brochuresConstructor[0][0].file) + '" />' +
+        '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[0][0].type,0,brochuresConstructor[0][0].file) + '" target="_blank">' +
+        '<p class="material-icons">visibility</p><p>Ver</p></a></div>' +
+        '<div class="av-brochure-text">' +
+        '<h3 class="av-brochure-title">'+ brochuresConstructor[0][0].title +'</h3>' +
+        '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ campaign(0) +'</div></div></div>';
+
+    $('#brochureAside').prepend(brochurePrint[3]);
     $('#brochureContainer').prepend(brochurePrint[0]).next().append(brochurePrint[1]).next().children().eq(1).append(brochurePrint[2]);
 
 
     $('#viewMore').click(function(){
-        $('#brochureContainerPast').css('display','flex').children().eq(0).append(campaignCurrent-1);
-        $('#brochureList').css('display','flex').children().eq(0).append(campaignCurrent-2);
+        $('#brochureContainerPast').css('display','flex').children().eq(0).append(campaignPast);
+        $('#brochureList').css('display','flex').children().eq(0).append(campaignOld);
         $(this).hide();
         avCopy();
     });
@@ -111,3 +156,4 @@ $(document).ready(function(){
         } 
     });
 })
+

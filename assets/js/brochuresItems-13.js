@@ -11,23 +11,20 @@ const brochures13 = [
         type: 'imb',
     },
     {
-        title: 'Bazar',
-        file: 'avon_contigo_c1420.pdf',
-        type: 'bazar',
-    },
-    {
-        title: 'Salón en casa',
-        file: '4',
+        title: 'Especial Home',
+        file: '3',
         type: 'imb',
     },
+
+
+    // Constantes
+
     {
         title: 'Avon Contigo',
-        file: 'avon_contigo_c1420.pdf',
         type: 'contigo',
     },
     {
-        title: 'Flyer',
-        file: 'avon_contigo_c1420.pdf',
-        type: 'flyer',
+        title: 'Bazar',
+        type: 'bazar',
     },
 ]
