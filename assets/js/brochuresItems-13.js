@@ -11,8 +11,23 @@ const brochures13 = [
         type: 'imb',
     },
     {
-        title: 'Especial Home',
+        title: 'Rutinas Anew',
         file: '3',
+        type: 'imb',
+    },
+    {
+        title: 'Electrodomésticos',
+        file: '4',
+        type: 'imb',
+    },
+    {
+        title: 'Salón en casa',
+        file: '5',
+        type: 'imb',
+    },
+    {
+        title: 'SuperFoods',
+        file: '6',
         type: 'imb',
     },
 
@@ -28,3 +43,4 @@ const brochures13 = [
         type: 'bazar',
     },
 ]
+

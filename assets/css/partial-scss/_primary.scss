@@ -129,11 +129,11 @@
     }
 }
 .av-subtitle {
-    @include subtitle($size-text * 1.7);
+    @include subtitle($size-text * 1.9);
     @include negative();
 
     &-support {
-        @include subtitle($size-text * 1.5);
+        @include subtitle($size-text * 1.6);
         @include negative();
     }
     
@@ -169,7 +169,9 @@
         margin-bottom: $margin-none;
     }
 }
-
+.av-pink {
+    color: $color-primary;
+}
 
 // LISTS
 
@@ -279,7 +281,7 @@
            margin-bottom: 0px; 
         }
         small {
-            font-size: 0.9rem;
+            font-size: $color-text - 0.3rem;
         }
     }
     .av-card-image {
@@ -291,7 +293,7 @@
         background-color: $color-light-white;
         flex-grow: 1;
         .av-card-title {
-            font-size: 1.2rem;
+            font-size: $size-text;
             font-family: $regular-monts;
             margin-bottom: 1rem;
             color: $color-text;

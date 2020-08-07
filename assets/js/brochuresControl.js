@@ -19,8 +19,10 @@ $(document).ready(function(){
             campaign = campaignCurrent;
         } else if (e == 1){
             campaign = campaignPast;
-        } else {
+        } else if (e == 1) {
             campaign = campaignOld;
+        } else {
+            campaign = campaignCurrent;
         }
         return campaign;
     }
@@ -48,6 +50,8 @@ $(document).ready(function(){
             case "imb":
                 if (file < 3){
                     imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_0'+ file +'_cover_medium.jpg';
+                } else {
+                    imgUrl = '/FLDSuite/web/static/images/mis_folletos/IMB'+ file +'-cover-mx-c'+ campaign(e) +'.jpg';
                 }
                 break
             case "contigo":
@@ -57,7 +61,7 @@ $(document).ready(function(){
                 imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_07_cover_medium.jpg';
                 break
             default:
-                imgUrl = '/REPSuite/web/static/images/ebrochure/C' + img
+                imgUrl = '/FLDSuite/web/static/images/mis_folletos/' + img
         }
         return imgUrl
     }
@@ -112,7 +116,7 @@ $(document).ready(function(){
         e++
     };
     brochurePrint[3] = '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
-    '<div style="background-image:url(\'/REPSuite/web/static/images/brochures/'+ imgUrl(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file,brochuresConstructor[0][0].img) +'\')" class="av-brochure-image">' +
+    '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file,brochuresConstructor[0][0].img) +'\')" class="av-brochure-image">' +
         '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">Copiar link</div></div>' +
         '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[0][0].type,e,brochuresConstructor[0][0].file) + '" />' +
         '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[0][0].type,0,brochuresConstructor[0][0].file) + '" target="_blank">' +

@@ -9,7 +9,7 @@ $color-bazar: #00CE15;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     &:nth-child(4),
     &:nth-child(5){
         display: none;
@@ -23,6 +23,7 @@ $color-bazar: #00CE15;
     cursor: pointer;
     
     div {
+        font-size: 1rem;
         padding: 0.5rem 0.7rem;
         border-radius: 6px;
         font-family: $semi-bold-monts;
@@ -56,13 +57,18 @@ h2.av-brochure-title {
 h3.av-brochures-subtitle {
     display: flex;
     margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family: $regular-monts;
+    margin-bottom: 1rem;
     svg {
-        margin-right: 0.5rem;
+        margin-right: 1rem;
+        fill: $color-text;
     }
 }
 .av-brochure-button {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
 }
 .av-share {
     display: flex;
@@ -70,6 +76,7 @@ h3.av-brochures-subtitle {
     align-items: center;
     flex-direction: column;
     padding: 2.5rem 1rem;
+    font-size: $size-text;
     > div {
         margin: 10px 0px;
     }
@@ -81,6 +88,7 @@ h3.av-brochures-subtitle {
 }
 .av-map {
     padding: 0.5rem 2.5rem;
+    font-size: $size-text;
     div{
         display: flex;
         align-items: center;
@@ -92,13 +100,10 @@ h3.av-brochures-subtitle {
 }
 
 .av-brochure-item {
-    width: 130px;
+    width: 132px;
     height: 200px;
-    margin: 5px;
-    @media (min-width:$media-1){
-        width: 150px;
-        height: 210px;
-    }
+    margin: 10px;
+    
     &.av-brochure-main {
         width: 100%;
         height: 300px;
@@ -121,10 +126,7 @@ h3.av-brochures-subtitle {
         z-index: 20;
         transition: box-shadow 0.5s;
         cursor: pointer;
-        @media (min-width:$media-1){
-            height: 160px;
-         }
-
+        
         &:hover,
         &:active,
         &:focus {
