@@ -36,10 +36,12 @@ const brochures13 = [
 
     {
         title: 'Avon Contigo',
+        file: 'minifolleto_electrodomesticos_c1520.pdf',
         type: 'contigo',
     },
     {
         title: 'Bazar',
+        file: 'minifolleto_bundlesQ3_c1520.pdf',
         type: 'bazar',
     },
 ]

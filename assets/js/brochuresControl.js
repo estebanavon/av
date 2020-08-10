@@ -36,12 +36,9 @@ $(document).ready(function(){
             case "contigo":
                 urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/avon_contigo_c'+ campaign(e) +'20.pdf'  
                 break
-            case "flyer":
-            case "bazar":
-                urlFile = '/assets/pdf/' + file
-                break
             default:
-                urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
+                //urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
+                urlFile = '/assets/pdf/' + file
         }
         
         return urlFile
@@ -79,6 +76,8 @@ $(document).ready(function(){
         } else {
             avCanvasLet = ''
         }
+        canvasID = '#avCanvas' + canvasIdNumber;
+        showPDF('/assets/pdf/'+ brochuresConstructor[e][i].file +'',canvasID,brochuresConstructor[e][i].type);
         return avCanvasLet
     }
 
@@ -141,7 +140,7 @@ $(document).ready(function(){
     while (e < brochuresConstructor.length) {
         switch (e){
             case 0:
-            //case 1:
+            case 1:
                 for (i=0;i<brochuresConstructor[e].length;i++){
                     canvasIdNumber = campaign(e) + '_' +i;
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
@@ -154,8 +153,7 @@ $(document).ready(function(){
                         '<div class="av-brochure-text">' +
                         '<h3 class="av-brochure-title">'+ brochuresConstructor[e][i].title +'</h3>' +
                         '<div class="av-type '+ brochuresConstructor[e][i].type +'">'+ campaign(e) +'</div></div></div>'
-                        canvasID = '#avCanvas' + canvasIdNumber;
-                        showPDF('/assets/pdf/'+ brochuresConstructor[e][i].file +'',canvasID,brochuresConstructor[e][i].type);
+                        
                 }
                 break;
             case 2:
