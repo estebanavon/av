@@ -36,61 +36,117 @@ $(document).ready(function(){
             case "contigo":
                 urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/avon_contigo_c'+ campaign(e) +'20.pdf'  
                 break
+            case "flyer":
+            case "bazar":
+                urlFile = '/assets/pdf/' + file
+                break
             default:
-                urlFile = file;
-            ;
+                urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
         }
         
         return urlFile
     }
     
-    function imgUrl(type,file,img){
+    function imgUrl(type,file){
         let imgUrl;
-        switch (type){
-            case "imb":
-                if (file < 3){
-                    imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_0'+ file +'_cover_medium.jpg';
-                } else {
-                    imgUrl = '/FLDSuite/web/static/images/mis_folletos/IMB'+ file +'-cover-mx-c'+ campaign(e) +'.jpg';
-                }
-                break
-            case "contigo":
-                imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_05_cover_medium.jpg';
-                break
-            case "bazar":
-                imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_07_cover_medium.jpg';
-                break
-            default:
-                imgUrl = '/FLDSuite/web/static/images/mis_folletos/' + img
+        if (type = 'imb'){
+            if (file < 3) {
+                imgUrl = '/REPSuite/web/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_0'+ file +'_cover_medium.jpg';
+            } else {
+                imgUrl = '/FLDSuite/web/static/images/mis_folletos/IMB'+ file +'-cover-mx-c'+ campaign(e) +'.jpg';
+            }
+        } else {
+            imgUrl = 'pdfCover';
         }
         return imgUrl
     }
 
     function copyText(type){
         let copyText;
-        switch (type){
-            case "imb":
-                copyText = 'Copiar texto';
-                break
-            case "contigo":
-            case "bazar":
-            case "flyer":
-                copyText = '¡Recuerda que es solo para ti!';
-                break
-            default:;
+        if (type == "imb"){
+            copyText = 'Copiar texto';
+        } else {
+            copyText = '¡Recuerda que es solo para ti!';
         }
         return copyText
     }
+    var canvasIdNumber,canvasID;
 
+    function pdfImg(type){
+        let avCanvasLet;
+        if (type != 'imb'){
+            avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
+        } else {
+            avCanvasLet = ''
+        }
+        return avCanvasLet
+    }
+
+    var _PDF_DOC;
+
+    // initialize and load the PDF
+    async function showPDF(pdf_url,canvasID,type) {
+        if (type != 'imb'){
+            // get handle of pdf document
+            try {
+                _PDF_DOC = await pdfjsLib.getDocument({ url: pdf_url });
+            }
+            catch(error) {
+                alert(error.message);
+            }
+            // show the first page
+            showPage(canvasID);
+        }
+    }
+
+    // load and render specific page of the PDF
+    async function showPage(canvasID) {
+
+        // get handle of page
+        try {
+            var page = await _PDF_DOC.getPage(1);
+        }
+        catch(error) {
+            alert(error.message);
+        }
+
+        var pdf_original_width = page.getViewport(1).width;
+        var scale_required = 132 / pdf_original_width;
+
+        // get viewport to render the page at required scale
+        var viewport = page.getViewport(scale_required);
+
+        // set canvas height same as viewport height
+        //_CANVAS.height = viewport.height;
+
+        // page is rendered on <canvas> element
+        var render_context = {
+            canvasContext: document.querySelector(canvasID).getContext('2d'),
+            viewport: viewport
+        };
+            
+        // render the page contents in the canvas
+        try {
+            await page.render(render_context);
+        }
+        catch(error) {
+            alert(error.message);
+        }
+
+
+    }
+    
     var e = 0;
     var i;
     while (e < brochuresConstructor.length) {
         switch (e){
             case 0:
-            case 1:
+            //case 1:
                 for (i=0;i<brochuresConstructor[e].length;i++){
+                    canvasIdNumber = campaign(e) + '_' +i;
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
-                    '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file,brochuresConstructor[e][i].img) +'\')" class="av-brochure-image">' +
+                    '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) +'\')" class="av-brochure-image">' +
+                        pdfImg(brochuresConstructor[e][i].type) +
                         '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
                         '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" />' +
                         '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" target="_blank">' +
@@ -98,6 +154,8 @@ $(document).ready(function(){
                         '<div class="av-brochure-text">' +
                         '<h3 class="av-brochure-title">'+ brochuresConstructor[e][i].title +'</h3>' +
                         '<div class="av-type '+ brochuresConstructor[e][i].type +'">'+ campaign(e) +'</div></div></div>'
+                        canvasID = '#avCanvas' + canvasIdNumber;
+                        showPDF('/assets/pdf/'+ brochuresConstructor[e][i].file +'',canvasID,brochuresConstructor[e][i].type);
                 }
                 break;
             case 2:
@@ -115,16 +173,7 @@ $(document).ready(function(){
         }
         e++
     };
-    brochurePrint[3] = '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
-    '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file,brochuresConstructor[0][0].img) +'\')" class="av-brochure-image">' +
-        '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">Copiar link</div></div>' +
-        '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[0][0].type,e,brochuresConstructor[0][0].file) + '" />' +
-        '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[0][0].type,0,brochuresConstructor[0][0].file) + '" target="_blank">' +
-        '<p class="material-icons">visibility</p><p>Ver</p></a></div>' +
-        '<div class="av-brochure-text">' +
-        '<h3 class="av-brochure-title">'+ brochuresConstructor[0][0].title +'</h3>' +
-        '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ campaign(0) +'</div></div></div>';
-
+    console.log(canvasID)
     $('#brochureAside').prepend(brochurePrint[3]);
     $('#brochureContainer').prepend(brochurePrint[0]).next().append(brochurePrint[1]).next().children().eq(1).append(brochurePrint[2]);
 
@@ -155,9 +204,13 @@ $(document).ready(function(){
 
         $(this).removeClass('no-active').siblings().addClass('no-active');
         brochureSelector.children().show();
-        if (avFilter == "all"){} else {
+        if (avFilter != "all"){
             brochureSelector.children(':not([data-type="'+ avFilter +'"])').hide();
-        } 
+        }
     });
+
+
+
+
 })
 
