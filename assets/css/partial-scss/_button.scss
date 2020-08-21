@@ -5,10 +5,11 @@
     cursor: pointer;
     text-decoration: none;
     font-size: $size-text;
-
+    &:hover,
     &:active,
     &:focus {
         outline: none;
+        text-decoration: none !important;
     }
     &.negative {
         color: $color-white;
@@ -34,6 +35,7 @@
     &:hover {
         background-color: $color-primary-dark;
         padding: 1rem ($size-text * 2.4);
+        color: $color-white;
     }
 }
 .av-button-secondary {
@@ -57,6 +59,9 @@
 .av-button-icon {
     @include button-basic();
     padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
         background-color: $color-dark-30;
     }
@@ -70,15 +75,13 @@
     display: block;
     @include button-basic();
     @mixin icons-button($color){
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        padding: $size-text;
         color: $color;   
     }
     &-icon {
         @include icons-button($color-dark-light);
-        @include button-basic(); 
+        @include button-basic();
+        display: inline-flex;
+        justify-content: center;
     }
     &-icon.primary {
         @include icons-button($color-primary);

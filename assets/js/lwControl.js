@@ -83,6 +83,7 @@ const vacationsSection2019 = [
     },
 ];
 
+
 const videosSection = [
     {
         name: 'Convocatoria - Historias de Éxito Empresarias 2018',
@@ -90,23 +91,23 @@ const videosSection = [
     },
     {
         name: 'Entrevistas PATD Caballete',
-        file: 'avon_historias_exito_-9.zip',
+        file: 'avon_historias_exito_1.mp4',
     },
     {
         name: 'Entrevistas PATD Nombramiento',
-        file: 'avon_historias_exito_-8.zip',
+        file: 'avon_historias_exito_2.mp4',
     },
     {
         name: 'Entrevistas PATD Prospectar',
-        file: 'avon_historias_exito_-7.zip',
+        file: 'avon_historias_exito_3.mp4',
     },
     {
         name: 'Entrevistas PATD Terceros Pasos',
-        file: 'avon_historias_exito_-4.zip',
+        file: 'avon_historias_exito_4.mp4',
     },
     {
         name: 'Sesión de fotos Liderazgo Avon 2017',
-        file: 'sesion_fotos_2017.zip',
+        file: 'sesionFotos2017.mp4',
     },
 ];
 const generalToolsSection = [
@@ -306,8 +307,8 @@ while (e < avConstructor.length){
         avArrayPrintContent[e] += '<li>' +
             '<span>' + avConstructor[e][i].name + '</span>' +
             '<span class="av-list-spacer"></span>' +
-            '<a class="av-button-icon av-tooltip" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span><span class="tooltiptext">Previsualizar</span></a>' +
-            '<a class="av-button-icon av-tooltip" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download><span class="material-icons">cloud_download</span><span class="tooltiptext">Descargar</span></a>'+
+            '<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span></a>' +
+            '<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download><span class="material-icons">cloud_download</span></a>'+
             '</li>';
     }
     e++    

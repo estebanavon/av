@@ -78,23 +78,23 @@ const videosSection = [
     },
     {
         name: 'Entrevistas PATD Caballete',
-        file: 'avon_historias_exito_-9.zip',
+        file: 'avon_historias_exito_1.mp4',
     },
     {
         name: 'Entrevistas PATD Nombramiento',
-        file: 'avon_historias_exito_-8.zip',
+        file: 'avon_historias_exito_2.mp4',
     },
     {
         name: 'Entrevistas PATD Prospectar',
-        file: 'avon_historias_exito_-7.zip',
+        file: 'avon_historias_exito_3.mp4',
     },
     {
         name: 'Entrevistas PATD Terceros Pasos',
-        file: 'avon_historias_exito_-4.zip',
+        file: 'avon_historias_exito_4.mp4',
     },
     {
         name: 'Sesión de fotos Liderazgo Avon 2017',
-        file: 'sesion_fotos_2017.zip',
+        file: 'sesionFotos2017.mp4',
     },
 ];
 const generalToolsSection = [

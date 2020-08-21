@@ -9,18 +9,20 @@ $color-dark: #464646;
 $color-dark-50: scale-color($color-white, $lightness: -50%);
 $color-dark-10: rgba(200,200,200,0.1);
 $color-dark-30: rgba(200,200,200,0.3);
+$color-overlay: rgba(0,0,0,0.7);
 
 $color-text: $color-dark;
 
 // Main color
-$color-primary: #ED288A;
-$color-primary-light: #EF4D94;
+$color-primary: #7F28C4;
+$color-primary-light: scale-color($color-primary, $lightness: 20%);
 $color-primary-dark: scale-color($color-primary, $lightness: -20%);
 
 //Secondary color
 $color-secondary: #EE3129;
 $color-secondary-dark: #EE2F4E;
 $color-secondary-light: #F9B5B2;
+
 
 //Gradient color
 $color-gradient-1: #9113B0;

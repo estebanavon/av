@@ -6,7 +6,7 @@ section.av-lw {
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 80vh;
+    min-height: 96vh;
     @media (min-width:$media-3){
         width: 900px; 
     }
@@ -15,7 +15,7 @@ section.av-lw {
         flex: 1;
         z-index: 20;
         display: none;
-        box-shadow: 10px 0px 20px rgba(0,0,0,0.3);
+        box-shadow: 6px 0px 10px rgba(0,0,0,0.2);
         
         .av-intro {
             flex: 3;

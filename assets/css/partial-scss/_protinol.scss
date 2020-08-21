@@ -306,7 +306,9 @@ $paddingLeftTitle: $paddingLeft;
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 }
-
+.av-prtnl-prllx {
+    background-image: url('#{$route-images}/anew-protinol/prtnl-background.jpg');
+}
 .h40vh {
     height: 20vh;
     @media (min-width:$media-1) {

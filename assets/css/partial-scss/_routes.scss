@@ -4,11 +4,15 @@ $dev-images: '/assets/img';
 
 // Utilizar esta ruta si el objetivo es Produccion
 
-$prod-font: './../fonts';
-$prod-images: './../images';
+// $prod-font: '/FLDSuite/static/fonts';
+// $prod-images: '/FLDSuite/static/images';
+$prod-font: '../fonts';
+$prod-images: '../images';
 //$prod-images: '/dam/avon-mx/static/images';
 
 //Configuración de rutas sin condicionante
 
-$route-images: $dev-images;
-$route-font: $dev-font;
+$route-images: $prod-images;
+$route-font: $prod-font;
+
+

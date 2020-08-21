@@ -50,11 +50,11 @@
 
         @media (min-width:$media-1) {
             font-size: 5rem;
-            line-height: $line-height * 2.6;
+            line-height: $line-height * 2;
         }
         @media (min-width:$media-2) {
             font-size: 7rem;
-            line-height: $line-height * 4;
+            line-height: $line-height * 2.7;
         }
 
         .av-title-stroke {
@@ -68,14 +68,15 @@
 
     .av-title-support {
         color: white;
-        font-size: 1rem;
+        font-size: $size-text;
         font-family: $semi-bold-zona;
         text-align: right;
         line-height: $size-text;
         font-style: normal;
 
         @media (min-width:$media-1) {
-            font-size: 1.4rem;
+            margin: 2rem 0;
+            font-size: 3rem;
         }
     }
 
@@ -216,7 +217,7 @@
     .av-list-title {
         font-size: $size-text - 0.1rem;
         font-family: $bold-zona;
-        padding: ($size-text * 3) 0rem $size-text 0rem !important;
+        padding: ($size-text * 2) 0rem $size-text 0rem !important;
         color: $color-text;
         &:hover{
             background-color: unset !important;
@@ -364,6 +365,34 @@
    } 
 }
 
+// LOADER
+
+.av-loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: $color-overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .av-loader-content{
+        width: 90%;
+        height: 40vh;
+        background-image: $color-gradient;
+        padding: 5%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+        text-align: center;
+        @media (min-width:$media-2){
+            width: 60%;
+        }
+    }
+}
+
+
 .av-tooltip {
     position: relative;
     .tooltiptext {
@@ -427,7 +456,6 @@
     .av-prllx-image {
         width: 100%;
         height: 150%;
-        background-image: url('#{$route-images}/anew-protinol/prtnl-background.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

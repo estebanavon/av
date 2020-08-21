@@ -1,55 +1,55 @@
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Black.otf");
+  src: url("../fonts/ZonaPro-Black.otf");
   font-family: zona-pro-black;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Light.otf");
+  src: url("../fonts/ZonaPro-Light.otf");
   font-family: zona-pro-light;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Bold.otf");
+  src: url("../fonts/ZonaPro-Bold.otf");
   font-family: zona-pro-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Regular.otf");
+  src: url("../fonts/ZonaPro-Regular.otf");
   font-family: zona-pro-regular;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-SemiBold.otf");
+  src: url("../fonts/ZonaPro-SemiBold.otf");
   font-family: zona-pro-semi-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Thin.otf");
+  src: url("../fonts/ZonaPro-Thin.otf");
   font-family: ZonaProThin;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-regular.ttf");
+  src: url("../fonts/Montserrat-regular.ttf");
   font-family: montserrat-regular;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-Light.ttf");
+  src: url("../fonts/Montserrat-Light.ttf");
   font-family: montserrat-light;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-SemiBold.ttf");
+  src: url("../fonts/Montserrat-SemiBold.ttf");
   font-family: montserrat-semi-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Gotham-Bold.otf");
+  src: url("../fonts/Gotham-Bold.otf");
   font-family: gotham-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Gotham-Book.otf");
+  src: url("../fonts/Gotham-Book.otf");
   font-family: gotham-book;
 }
 
@@ -432,7 +432,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
           justify-content: flex-end;
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
-  background-color: #ED288A;
+  background-color: #7F28C4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -471,14 +471,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 @media (min-width: 768px) {
   .av-title-container .av-title-text {
     font-size: 5rem;
-    line-height: 57.2px;
+    line-height: 44px;
   }
 }
 
 @media (min-width: 992px) {
   .av-title-container .av-title-text {
     font-size: 7rem;
-    line-height: 88px;
+    line-height: 59.4px;
   }
 }
 
@@ -491,7 +491,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 .av-title-container .av-title-support {
   color: white;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-family: zona-pro-semi-bold, Helvetica, sans-serif;
   text-align: right;
   line-height: 1.6rem;
@@ -500,7 +500,8 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 
 @media (min-width: 768px) {
   .av-title-container .av-title-support {
-    font-size: 1.4rem;
+    margin: 2rem 0;
+    font-size: 3rem;
   }
 }
 
@@ -641,7 +642,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-pink {
-  color: #ED288A;
+  color: #7F28C4;
 }
 
 .av-list {
@@ -681,7 +682,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-list.av-list-item li [class^='material-icons'] {
-  color: #ED288A;
+  color: #7F28C4;
 }
 
 .av-list.av-list-item li:hover:not(.av-list-divider) {
@@ -712,7 +713,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 .av-list .av-list-title {
   font-size: 1.5rem;
   font-family: zona-pro-bold, Helvetica, sans-serif;
-  padding: 4.8rem 0rem 1.6rem 0rem !important;
+  padding: 3.2rem 0rem 1.6rem 0rem !important;
   color: #464646;
 }
 
@@ -895,6 +896,43 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-size: 1rem;
 }
 
+.av-loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.av-loader .av-loader-content {
+  width: 90%;
+  height: 40vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
+  background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
+  padding: 5%;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .av-loader .av-loader-content {
+    width: 60%;
+  }
+}
+
 .av-tooltip {
   position: relative;
 }
@@ -978,7 +1016,6 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 .av-prllx-container .av-prllx-image {
   width: 100%;
   height: 150%;
-  background-image: url("/assets/img/anew-protinol/prtnl-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1023,12 +1060,13 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-family: montserrat-regular, Helvetica, sans-serif;
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-color: #ED288A;
+  background-color: #7F28C4;
   display: inline-block;
 }
 
-.av-button-primary:active, .av-button-primary:focus {
+.av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-button-primary.negative {
@@ -1036,8 +1074,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-button-primary:hover {
-  background-color: #cc116e;
+  background-color: #66209d;
   padding: 1rem 3.84rem;
+  color: #fff;
 }
 
 .av-button-secondary {
@@ -1058,8 +1097,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   width: 50%;
 }
 
-.av-button-secondary:active, .av-button-secondary:focus {
+.av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-button-secondary.negative {
@@ -1082,13 +1122,14 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
-  background-color: #ED288A;
+  background-color: #7F28C4;
   display: block;
   width: 100%;
 }
 
-.av-button-gradient:active, .av-button-gradient:focus {
+.av-button-gradient:hover, .av-button-gradient:active, .av-button-gradient:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-button-gradient.negative {
@@ -1102,10 +1143,20 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   text-decoration: none;
   font-size: 1.6rem;
   padding: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.av-button-icon:active, .av-button-icon:focus {
+.av-button-icon:hover, .av-button-icon:active, .av-button-icon:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-button-icon.negative {
@@ -1119,7 +1170,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 .av-link {
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 1.6rem;
-  color: #ED288A;
+  color: #7F28C4;
   padding: 1.6rem 1.6rem 1.6rem 0rem;
   display: block;
   background-color: transparent;
@@ -1129,8 +1180,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-size: 1.6rem;
 }
 
-.av-link:active, .av-link:focus {
+.av-link:hover, .av-link:active, .av-link:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-link.negative {
@@ -1138,20 +1190,23 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-link-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding: 1.6rem;
   color: #666666;
   background-color: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.6rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.av-link-icon:active, .av-link-icon:focus {
+.av-link-icon:hover, .av-link-icon:active, .av-link-icon:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-link-icon.negative {
@@ -1159,11 +1214,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-link-icon.primary {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding: 1.6rem;
-  color: #ED288A;
+  color: #7F28C4;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1171,8 +1222,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-size: 1.6rem;
 }
 
-.av-link-icon.primary:active, .av-link-icon.primary:focus {
+.av-link-icon.primary:hover, .av-link-icon.primary:active, .av-link-icon.primary:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-link-icon.primary.negative {
@@ -1180,7 +1232,7 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 .av-link-inline {
-  color: #ED288A;
+  color: #7F28C4;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1188,8 +1240,9 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
   font-size: 1.6rem;
 }
 
-.av-link-inline:active, .av-link-inline:focus {
+.av-link-inline:hover, .av-link-inline:active, .av-link-inline:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .av-link-inline.negative {
@@ -1309,7 +1362,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("/assets/img/folletos/hg-1.jpg");
+  background-image: url("../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1423,7 +1476,7 @@ a {
 
 .av-slide-container .av-slide-product .av-slide-description .av-slide-description-price {
   font-size: 1.8rem;
-  color: #ED288A;
+  color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   display: block;
 }
@@ -1467,7 +1520,7 @@ a {
 }
 
 .av-ec-header {
-  background-image: url("/assets/img/etica-cumplimiento/avon-office.jpg");
+  background-image: url("../images/etica-cumplimiento/avon-office.jpg");
 }
 
 .av-ec-values p {
@@ -1488,54 +1541,54 @@ a {
 }
 
 .av-card-1 {
-  background-image: url("/assets/img/etica-cumplimiento/banner-ec-1.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-2 {
-  background-image: url("/assets/img/etica-cumplimiento/banner-ec-2.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-3 {
-  background-image: url("/assets/img/etica-cumplimiento/banner-ec-3.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-4 {
-  background-image: url("/assets/img/etica-cumplimiento/banner-ec-4.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-5 {
-  background-image: url("/assets/img/etica-cumplimiento/banner-ec-5.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-conv-header {
-  background-image: url("/assets/img/responsabilidad-social/violence-woman.jpg");
+  background-image: url("../images/responsabilidad-social/violence-woman.jpg");
 }
 
 .av-cm-header {
-  background-image: url("/assets/img/responsabilidad-social/cm-ganadores.jpg");
+  background-image: url("../images/responsabilidad-social/cm-ganadores.jpg");
 }
 
 .av-cm-convocatoria {
-  background-image: url("/assets/img/responsabilidad-social/cm-convocatoria.jpg");
+  background-image: url("../images/responsabilidad-social/cm-convocatoria.jpg");
 }
 
 .av-conv-1 {
-  background-image: url("/assets/img/responsabilidad-social/violence-banner-1.jpg");
+  background-image: url("../images/responsabilidad-social/violence-banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1543,7 +1596,7 @@ a {
 }
 
 .av-conv-2 {
-  background-image: url("/assets/img/responsabilidad-social/violence-banner-2.jpg");
+  background-image: url("../images/responsabilidad-social/violence-banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1551,7 +1604,7 @@ a {
 }
 
 .av-conv-3 {
-  background-image: url("/assets/img/responsabilidad-social/violence-banner-3.jpg");
+  background-image: url("../images/responsabilidad-social/violence-banner-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2128,6 +2181,10 @@ a {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.av-prtnl-prllx {
+  background-image: url("../images/anew-protinol/prtnl-background.jpg");
+}
+
 .h40vh {
   height: 20vh;
 }
@@ -2149,7 +2206,7 @@ section.av-nosolas-main {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-image: url("/assets/img/responsabilidad-social/woman_manifiesto.jpg");
+  background-image: url("../images/responsabilidad-social/woman_manifiesto.jpg");
   background-position: 25% top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2311,7 +2368,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url("/assets/img/responsabilidad-social/not-alone-title.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-title.jpg");
 }
 
 .av-nosolas-title .av-title-stroke {
@@ -2319,23 +2376,23 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-nosolas-title .av-title-text:nth-child(2), .av-nosolas-title .av-title-support {
-  background-image: url("/assets/img/avon-gradient.jpg");
+  background-image: url("../images/avon-gradient.jpg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .av-nosolas-banner-1 {
-  background-image: url("/assets/img/responsabilidad-social/not-alone-banner-1.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-banner-1.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-3 {
-  background-image: url("/assets/img/responsabilidad-social/not-alone-banner-3.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-banner-3.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-2 {
-  background-image: url("/assets/img/responsabilidad-social/not-alone-banner-2.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-banner-2.jpg");
   background-size: cover;
   height: 300px;
 }
@@ -2549,7 +2606,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-1 .av-card {
-  background-image: url("/assets/img/reclutamiento/en-products-1.jpg");
+  background-image: url("../images/reclutamiento/en-products-1.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2571,7 +2628,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-2 .av-card {
-  background-image: url("/assets/img/reclutamiento/en-products-2.jpg");
+  background-image: url("../images/reclutamiento/en-products-2.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2593,7 +2650,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-3 .av-card {
-  background-image: url("/assets/img/reclutamiento/en-products-3.jpg");
+  background-image: url("../images/reclutamiento/en-products-3.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2617,7 +2674,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-4 .av-card {
-  background-image: url("/assets/img/reclutamiento/en-products-4.jpg");
+  background-image: url("../images/reclutamiento/en-products-4.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2639,7 +2696,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-5 .av-card {
-  background-image: url("/assets/img/reclutamiento/en-products-5.jpg");
+  background-image: url("../images/reclutamiento/en-products-5.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2663,7 +2720,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .en-card-6 .av-card {
-  background-image: url("/assets/img/reclutamiento/en-products-6.jpg");
+  background-image: url("../images/reclutamiento/en-products-6.jpg");
 }
 
 @media (min-width: 768px) {
@@ -2678,57 +2735,57 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-kit-1 {
-  background-image: url("/assets/img/reclutamiento/en-kit-1.jpg") !important;
+  background-image: url("../images/reclutamiento/en-kit-1.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-2 {
-  background-image: url("/assets/img/reclutamiento/en-kit-2.jpg") !important;
+  background-image: url("../images/reclutamiento/en-kit-2.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-3 {
-  background-image: url("/assets/img/reclutamiento/en-kit-3.jpg") !important;
+  background-image: url("../images/reclutamiento/en-kit-3.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-4 {
-  background-image: url("/assets/img/reclutamiento/en-kit-4.jpg") !important;
+  background-image: url("../images/reclutamiento/en-kit-4.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-5 {
-  background-image: url("/assets/img/reclutamiento/en-kit-5.jpg") !important;
+  background-image: url("../images/reclutamiento/en-kit-5.jpg") !important;
   min-height: 12rem;
 }
 
 .av-kit-6 {
-  background-image: url("/assets/img/reclutamiento/en-kit-6.jpg") !important;
+  background-image: url("../images/reclutamiento/en-kit-6.jpg") !important;
   min-height: 12rem;
 }
 
 .en-woman-1 {
-  background-image: url("/assets/img/reclutamiento/en-woman-1.jpg") !important;
+  background-image: url("../images/reclutamiento/en-woman-1.jpg") !important;
 }
 
 .en-woman-2 {
-  background-image: url("/assets/img/reclutamiento/en-woman-2.jpg") !important;
+  background-image: url("../images/reclutamiento/en-woman-2.jpg") !important;
 }
 
 .en-woman-3 {
-  background-image: url("/assets/img/reclutamiento/en-woman-3.jpg") !important;
+  background-image: url("../images/reclutamiento/en-woman-3.jpg") !important;
 }
 
 .en-woman-4 {
-  background-image: url("/assets/img/reclutamiento/en-woman-4.jpg") !important;
+  background-image: url("../images/reclutamiento/en-woman-4.jpg") !important;
 }
 
 .en-team-1 {
-  background-image: url("/assets/img/reclutamiento/en-team-1.jpg");
+  background-image: url("../images/reclutamiento/en-team-1.jpg");
 }
 
 .en-device-1 {
-  background-image: url("/assets/img/reclutamiento/en-device-1.jpg");
+  background-image: url("../images/reclutamiento/en-device-1.jpg");
 }
 
 .p-relative {
@@ -2801,19 +2858,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-1 {
-  background-image: url("/assets/img/responsabilidad-social/esr-1.jpg");
+  background-image: url("../images/responsabilidad-social/esr-1.jpg");
 }
 
 .av-esr-2 {
-  background-image: url("/assets/img/responsabilidad-social/esr-2.jpg");
+  background-image: url("../images/responsabilidad-social/esr-2.jpg");
 }
 
 .av-esr-3 {
-  background-image: url("/assets/img/responsabilidad-social/esr-3.jpg");
+  background-image: url("../images/responsabilidad-social/esr-3.jpg");
 }
 
 .av-esr-4 {
-  background-image: url("/assets/img/responsabilidad-social/esr-4.jpg");
+  background-image: url("../images/responsabilidad-social/esr-4.jpg");
 }
 
 .av-esr-grid [class^="col-"] {
@@ -2821,38 +2878,38 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-grid > div:nth-child(1) .av-card {
-  background-image: url("/assets/img/responsabilidad-social/esr-5.jpg");
+  background-image: url("../images/responsabilidad-social/esr-5.jpg");
 }
 
 .av-esr-grid > div:nth-child(2) .av-card {
-  background-image: url("/assets/img/responsabilidad-social/esr-6.jpg");
+  background-image: url("../images/responsabilidad-social/esr-6.jpg");
 }
 
 .av-esr-grid > div:nth-child(3) .av-card {
-  background-image: url("/assets/img/responsabilidad-social/esr-7.jpg");
+  background-image: url("../images/responsabilidad-social/esr-7.jpg");
 }
 
 .av-esr-grid > div:nth-child(5) .av-card {
-  background-image: url("/assets/img/responsabilidad-social/esr-9.jpg");
+  background-image: url("../images/responsabilidad-social/esr-9.jpg");
 }
 
 .av-esr-grid > div:nth-child(8) .av-card {
-  background-image: url("/assets/img/responsabilidad-social/esr-12.jpg");
+  background-image: url("../images/responsabilidad-social/esr-12.jpg");
 }
 
 .av-esr-grid > div:nth-child(9) .av-card {
-  background-image: url("/assets/img/responsabilidad-social/esr-13.jpg");
+  background-image: url("../images/responsabilidad-social/esr-13.jpg");
 }
 
 .av-esr-grid > div:nth-child(10) .av-card {
-  background-image: url("/assets/img/responsabilidad-social/esr-14.jpg");
+  background-image: url("../images/responsabilidad-social/esr-14.jpg");
 }
 
 .esr-purple {
   width: 100%;
   height: 100%;
   background-color: #9113B0;
-  padding: 3rem;
+  padding: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2862,7 +2919,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .esr-purple h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: montserrat-light, Helvetica, sans-serif;
   text-align: right;
   color: #fff;
@@ -2870,35 +2927,22 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 768px) {
   .esr-purple h3 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
-}
-
-.av-esr-3 .av-title-text {
-  font-size: 3.36rem;
 }
 
 @media (min-width: 768px) {
   .av-esr-3 .av-title-text {
     text-align: right;
-    font-size: 4.8rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .av-esr-3 .av-title-text {
-    font-size: 6.4rem;
   }
 }
 
 .av-esr-3 .av-title-support {
-  font-size: 1.5rem;
   text-align: left;
 }
 
 @media (min-width: 768px) {
   .av-esr-3 .av-title-support {
-    font-size: 2rem;
     text-align: right;
   }
 }

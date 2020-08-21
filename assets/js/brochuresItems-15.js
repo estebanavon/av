@@ -11,9 +11,9 @@ const brochures15 = [
         type: 'imb',
     },
     {
-        title: 'Bazar',
-        file: 'avon_contigo_c1420.pdf',
-        type: 'bazar',
+        title: 'Electrodomésticos',
+        file: '3',
+        type: 'imb',
     },
     {
         title: 'Salón en casa',
@@ -22,12 +22,21 @@ const brochures15 = [
     },
     {
         title: 'Avon Contigo',
-        file: 'avon_contigo_c1420.pdf',
         type: 'contigo',
     },
     {
-        title: 'Flyer',
-        file: 'avon_contigo_c1420.pdf',
+        title: 'Flyer Imperdible',
+        file: 'flyer_Imperdible_c1520.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Flyer M&M',
+        file: 'flyer_Mm_c1520.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Mini Brochure',
+        file: 'minifolleto_miniBrochure_c1520.pdf',
         type: 'flyer',
     },
 ]
