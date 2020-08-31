@@ -1,5 +1,24 @@
 .scrolltst {
-    height: 50vh;
+    height: 80vh;
+    background-color: $color-white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    h4 {
+        color: $color-primary;
+        font-size: 2rem;
+    }
+}
+.tstCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    font-size: 2rem;
+    height: 80vh;
+    margin: 0;
 }
 .av-header {
     width: 100%;

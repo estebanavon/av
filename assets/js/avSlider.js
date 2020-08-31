@@ -80,14 +80,7 @@ $(document).ready(function(){
         setTimeout(function(){bookFunction();},5500);
     }
     
-    $(window).scroll(function(){
-        let documentScroll = $(document).scrollTop();
-        if (documentScroll > 50){
-            $(".av-header").addClass("av-header-white");
-        } else {
-            $(".av-header").removeClass("av-header-white");
-        }
-    });
+    
 });
 
 

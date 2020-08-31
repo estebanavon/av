@@ -1260,7 +1260,6 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 body {
-  max-width: 1600px;
   display: block;
   margin: 0 auto;
   overflow-x: hidden;

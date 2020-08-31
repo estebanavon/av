@@ -1260,7 +1260,6 @@ section.av-container .av-row-thin [class^="col"]:first-child, section.av-contain
 }
 
 body {
-  max-width: 1600px;
   display: block;
   margin: 0 auto;
   overflow-x: hidden;
@@ -2507,7 +2506,40 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .scrolltst {
-  height: 50vh;
+  height: 80vh;
+  background-color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.scrolltst h4 {
+  color: #7F28C4;
+  font-size: 2rem;
+}
+
+.tstCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  height: 80vh;
+  margin: 0;
 }
 
 .av-header {
