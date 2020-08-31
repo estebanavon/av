@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     const campaignPast = campaignCurrent - 1;
     const campaignOld = campaignCurrent - 2;
-    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15];
+    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15,brochures16];
     
     var brochuresConstructor = [brochuresWrapper[(campaignPast)],brochuresWrapper[campaignOld],brochuresWrapper[(campaignCurrent-3)]];
     var brochurePrint = ["","","",""];
@@ -56,9 +56,6 @@ $(document).ready(function(){
             case "imb":
                 urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/2020'+ campaign(e) + '_0' + file +'/#/'
                 break
-            case "contigo":
-                urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/avon_contigo_c'+ campaign(e) +'20.pdf'  
-                break
             default:
                 urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
         }
@@ -76,10 +73,6 @@ $(document).ready(function(){
                     imgUrl = '/FLDSuite/static/images/mis_folletos/IMB'+ file +'-cover-mx-c'+ campaign(e) +'.jpg';
                 }
                 break
-            case 'contigo':
-                imgUrl = '/FLDSuite/static/images/mis_folletos/IMB15-cover-mx-c'+ campaign(e) +'.jpg';
-                //imgUrl = '/REPSuite/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_05_cover_medium.jpg';
-                break
             case 'bazar':
                 imgUrl = '/REPSuite/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_07_cover_medium.jpg';
                 break
@@ -93,9 +86,8 @@ $(document).ready(function(){
 
     function pdfImg(type,canvasIdNumber){
         let avCanvasLet;
-        if (type == "flyer"){
+        if (type == "flyer" || type == 'contigo'){
             avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
-         
             canvasID = '#avCanvas' + canvasIdNumber;
             showPDF('/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);   
         } else {
@@ -136,34 +128,6 @@ $(document).ready(function(){
         }
 
     }
-    var filterChecker = [
-        {
-            contigo: false,
-            bazar: false,
-            flyer: false,
-        },
-        {
-            contigo: false,
-            bazar: false,
-            flyer: false,
-        },
-        {
-            contigo: false,
-            bazar: false,
-            flyer: false,
-        },
-    ]
-     
-    function filterCheckerFunc(type,e){
-       if (type == 'contigo' && filterChecker[e].contigo == false){
-        filterChecker[e].contigo = true;
-       } else if (type == 'bazar' && filterChecker[e].bazar == false){
-        filterChecker[e].bazar = true;
-       } else if (type == 'flyer' && filterChecker[e].flyer == false){
-        filterChecker[e].flyer = true;
-       }
-       return filterChecker;
-    }
     
     var e = 0;
     var i;
@@ -173,7 +137,7 @@ $(document).ready(function(){
             case 1:
                 for (i=0;i<brochuresConstructor[e].length;i++){
                     canvasIdNumber = campaign(e) + '_' +i;
-                    filterCheckerFunc(brochuresConstructor[e][i].type,e);
+                    
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
                         '<div class="av-brochure-image" style="background-image:url(\''+ imgUrl(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file,e) +'\')">' +
                             pdfImg(brochuresConstructor[e][i].type,canvasIdNumber) +
@@ -188,7 +152,7 @@ $(document).ready(function(){
                 break;
             case 2:
                 for (i=0;i<brochuresConstructor[e].length;i++){
-                    filterCheckerFunc(brochuresConstructor[e][i].type,e);
+                    
                     brochurePrint[e] += '<li data-type="'+ brochuresConstructor[e][i].type  +'"><span class="av-type '+  brochuresConstructor[e][i].type  +'"></span>' +
                     '<span>'+ brochuresConstructor[e][i].title + ' C'+ campaignOld +'</span>' +
                     '<span class="av-list-spacer"></span>' +
