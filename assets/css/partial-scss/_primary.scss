@@ -185,6 +185,7 @@
     color: $color-text;
     list-style-type: disc;
     @include highlight();
+    
     li {
         margin-bottom: $size-text / 2.5;
     }
@@ -213,7 +214,7 @@
             display: none;
         }   
     }
-    @include negative(right);
+    
     .av-list-title {
         font-size: $size-text - 0.1rem;
         font-family: $bold-zona;
@@ -221,6 +222,15 @@
         color: $color-text;
         &:hover{
             background-color: unset !important;
+        }
+    }
+    &.av-footer-list {
+        list-style-type: none;
+        li a {
+            color: $color-white;
+        }
+        .av-list-title {
+            color: $color-white;
         }
     }
 }
@@ -480,4 +490,90 @@
 }
 .flex-1{
     flex-grow: 1;
+}
+
+.av-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.78);
+    &-content {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 12px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        max-width: 650px;
+        margin: auto;
+        border-radius: 4px;
+    }
+    &-close {
+        font-size: 30px;
+        float: right;
+        margin-top: -10px;
+        color: $color-text;
+        cursor: pointer;
+        width: auto;
+    }
+    &-footer {
+        padding: 12px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.av-scroll-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        font-family: $regular-monts;
+        margin: 0 1rem;
+    }
+    i,svg {
+        animation-name: scrollAnimation;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+}
+@keyframes scrollAnimation {
+    0%{
+        transform: translateY(-15px);
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        transform: translateY(10px);
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+.av-footer {
+    padding: 10rem;
+    background-color: $color-dark-footer;
+    color: $color-white;
+    a {
+        color: $color-white;
+    }
+    svg {
+        fill: $color-white;
+    }
 }

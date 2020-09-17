@@ -35,6 +35,10 @@
     src: url('#{$route-font}/Montserrat-SemiBold.ttf');
     font-family: montserrat-semi-bold;
 }
+@font-face {
+    src: url('#{$route-font}/Montserrat-Bold.ttf');
+    font-family: montserrat-bold;
+}
 
 @font-face {
     src: url('#{$route-font}/Gotham-Bold.otf');
@@ -59,6 +63,7 @@ $thin : ZonaProThin, $safe-font;
 $regular-monts: montserrat-regular, $safe-font;
 $light-monts: montserrat-light, $safe-font;
 $semi-bold-monts: montserrat-semi-bold, $safe-font;
+$bold-monts: montserrat-bold, $safe-font-bold;
 
 $bold-gotham: gotham-bold, $safe-font-bold;
 $book-gotham: gotham-book, $safe-font;

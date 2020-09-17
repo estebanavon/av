@@ -14,17 +14,67 @@
     
     <script src="./../js/circuloEstelarRepControl.js"></script>
     <script src="./../js/circuloEstelarControl.js"></script>
+    <style>
+        .sinfi-test{
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20em;
+            background-color: #FAFAFA;
+        }
+        .sinfi-wrapper {
+            position: relative;
+        }
+        .sinfi-wrapper div:nth-child(1){
+            width: 310px;
+            height: 230px;
+            border-radius: 20px;
+            box-shadow: 1px -1px 20px rgba(0,0,0,0.5);
+            position: absolute;
+            bottom: -40px;
+            left: -100px;
+            z-index: 10;
+            background-color: white;
+        }
+        .sinfi-wrapper div:nth-child(2){
+            width: 340px;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 1px -1px 20px rgba(0,0,0,0.5);
+            background-image: url('./../img/sinfi-model-2.jpg');
+            
+        }
+        .sinfi-text {
+            width: 40%;
+        }
+        .sinfi-text h4{
+            font-size: 50px;
+        }
+    </style>
 </head>
 <body>
     <div class="row">
         <div class="col-sm-4">
             <h4 class="av-list-title">Elige entre tus campañas</h4>
-            <div class="av-ce-option optionControl" value="5">
+            <div class="av-ce-option optionControl" value="8">
             </div>
         </div>
         <div class="col-sm-8 optionDisplay">
             <div class="d-flex justify-content-between align-items-center"><h4 class="av-list-title">Documentos</h4><span class="av-list-title">Previsualizar / Descargar</span></div>
         </div>
+    </div>
+    <div class="sinfi-test">
+        <div class="sinfi-text">
+            <h4>Vende lo que
+                quieras, desde
+                donde quieras.</h4>
+        </div>
+        <div class="sinfi-wrapper">
+            <div></div>
+            <div></div>
+        </div>
+        
     </div>
 </body>
 

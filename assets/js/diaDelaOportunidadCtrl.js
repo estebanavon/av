@@ -1,23 +1,94 @@
+   
+const files16 = [
+    {
+        title: 'Infografía Día de la oportunidad',
+        file: 'Infografia_DOP_ZM.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Guía DOP',
+        file: 'Guia_DOP_ZM.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Invitación DOP Whatsapp',
+        file: 'Invitacion_Dia_oportunidad_Whatsapp.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Infografía REP',
+        file: 'Infografia_DOP_REP.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Guía DOP REP',
+        file: 'Guia_DOP_REP.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Día de la oportunidad Whatsapp',
+        file: 'Dia_oportunidad_Whatsapp.pdf',
+        type: 'flyer',
+    },
+    
+    {
+        title: 'Fondo DOP Avon',
+        file: 'avonback.jpg',
+        type: 'imb',
+    },
+    {
+        title: 'Fondo DOP rojo',
+        file: 'avonback_rojo.jpg',
+        type: 'imb',
+    },
+    {
+        title: 'Fondo DOP verde',
+        file: 'avonback_verde.jpg',
+        type: 'imb',
+    },
+    {
+        title: 'Fondo DOP blanco',
+        file: 'avonback_blanco.jpg',
+        type: 'imb',
+    },
+    {
+        title: 'Video guía DOP REP',
+        file: 'guia_DOP_REP.mp4',
+        type: 'imb',
+    },
+    {
+        title: 'Video guía DOP GZ',
+        file: 'guia_DOP_ZM.mp4',
+        type: 'imb',
+    },
+    {
+        title: 'Incentivos DOP c17 y c18',
+        file: 'Incentivos_DOP_C17-18.mp4',
+        type: 'imb',
+    },
+    {
+        title: 'Incentivos DOP c19 y c20',
+        file: 'Incentivos_DOP_C19-20.mp4',
+        type: 'imb',
+    },
+]
+
+
 $(document).ready(function(){
     
-    
-    
+
+
     
     const campaignCurrent = 16;
 
 
 
 
-
-
-
-
-
     const campaignPast = campaignCurrent - 1;
     const campaignOld = campaignCurrent - 2;
-    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15,brochures16];
+    const brochuresWrapper = [files16];
     
-    var brochuresConstructor = [brochuresWrapper[(campaignPast)],brochuresWrapper[campaignOld],brochuresWrapper[(campaignCurrent-3)]];
+    var brochuresConstructor = [brochuresWrapper[0]];
     var brochurePrint = ["","","",""];
 
 
@@ -44,37 +115,19 @@ $(document).ready(function(){
         if (type == "imb"){
             copyText = 'Copiar link';
         } else {
-            copyText = '¡Recuerda que es solo para ti!';
+            copyText = 'Copiar link';
         }
         return copyText
     }
 
 
-    function urlFile(type,e,file){
-        let urlFile;
-        switch (type){
-            case "imb":
-                urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/2020'+ campaign(e) + '_0' + file +'/#/'
-                break
-            default:
-                urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
-        }
-        
-        return urlFile
-    }
+    
     
     function imgUrl(type,file,e){
         let imgUrl;
         switch (type){
             case 'imb':
-                if (file < 3) {
-                    imgUrl = '/REPSuite/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_0'+ file +'_cover_medium.jpg';
-                } else {
-                    imgUrl = '/FLDSuite/static/images/mis_folletos/IMB'+ file +'-cover-mx-c'+ campaign(e) +'.jpg';
-                }
-                break
-            case 'bazar':
-                imgUrl = '/REPSuite/static/images/ebrochure/C'+ campaign(e) +'/es_MX_C'+ campaign(e) +'_20_07_cover_medium.jpg';
+                imgUrl = '/ZMSuite/static/pdf/dia_de_la_oportunidad/'+ file +'.jpg' ;
                 break
             default:
                 imgUrl = '';
@@ -89,7 +142,7 @@ $(document).ready(function(){
         if (type == "flyer" || type == 'contigo'){
             avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
             canvasID = '#avCanvas' + canvasIdNumber;
-            showPDF('/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);   
+            showPDF('/ZMSuite/static/pdf/dia_de_la_oportunidad/'+ brochuresConstructor[e][i].file +'',canvasID);   
         } else {
             avCanvasLet = ''
         }
@@ -139,11 +192,11 @@ $(document).ready(function(){
                     canvasIdNumber = campaign(e) + '_' +i;
                     
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
-                        '<div class="av-brochure-image" style="background-image:url(\''+ imgUrl(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file,e) +'\')">' +
+                        '<div class="av-brochure-image" style="background-image:url(\'/ZMSuite/static/pdf/dia_de_la_oportunidad/' + brochuresConstructor[e][i].file +'.jpg\')">' +
                             pdfImg(brochuresConstructor[e][i].type,canvasIdNumber) +
                             '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
-                            '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" />' +
-                            '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
+                            '<input type="text" class="av-hidden" value="https://www.mx.avon.com/ZMSuite/static/pdf/dia_de_la_oportunidad/' + brochuresConstructor[e][i].file + '" />' +
+                            '<a class="av-overlay" href="https://www.mx.avon.com/ZMSuite/static/pdf/dia_de_la_oportunidad/' + brochuresConstructor[e][i].file + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
                             '<div class="av-type '+ brochuresConstructor[e][i].type +'">'+ campaign(e) +'</div>' +
                         '</div>' +
                         '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[e][i].title +'</h3></div>'+
@@ -152,31 +205,30 @@ $(document).ready(function(){
                 break;
             case 2:
                 for (i=0;i<brochuresConstructor[e].length;i++){
-                    
                     brochurePrint[e] += '<li data-type="'+ brochuresConstructor[e][i].type  +'"><span class="av-type '+  brochuresConstructor[e][i].type  +'"></span>' +
                     '<span>'+ brochuresConstructor[e][i].title + ' C'+ campaignOld +'</span>' +
                     '<span class="av-list-spacer"></span>' +
-                    '<a class="av-button-icon av-tooltip" href="'+ urlFile(brochuresConstructor[e][i].type,2,brochuresConstructor[e][i].file) +'" target="_blank">' +
+                    '<a class="av-button-icon av-tooltip" href="https://www.mx.avon.com/ZMSuite/static/pdf/dia_de_la_oportunidad/' + brochuresConstructor[e][i].file +'" target="_blank">' +
                     '<span class="material-icons">visibility</span><div class="tooltiptext">Ver</div></a>' +
                     '<div class="av-button-icon av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
-                    '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,2,brochuresConstructor[e][i].file) +'" />' +
+                    '<input type="text" class="av-hidden" value="https://www.mx.avon.com/ZMSuite/static/pdf/dia_de_la_oportunidad/' + brochuresConstructor[e][i].file +'" />' +
                     '</li>'
                 }
                 break;
         }
         e++
     };
-    brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[1][0].type +'">'+
-                            '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[1][0].type,brochuresConstructor[1][0].file,1) +'\')" class="av-brochure-image">' +
-                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[1][0].type,1,brochuresConstructor[1][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                                '<div class="av-type '+ brochuresConstructor[1][0].type +'">'+ campaign(1) +'</div>' +
+    brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][2].type +'">'+
+                            '<div style="background-image:url(\'/FLDSuite/static/images/mis_folletos/dopMaster.jpg\')" class="av-brochure-image">' +
+                                '<a class="av-overlay" href="https://www.mx.avon.com/ZMSuite/static/pdf/dia_de_la_oportunidad/' + brochuresConstructor[0][2].file + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
+                                '<div class="av-type '+ brochuresConstructor[0][2].type +'">'+ campaign(0) +'</div>' +
                             '</div>' +
-                            '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[1][0].title +'</h3></div>' +
+                            '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[0][2].title +'</h3></div>' +
                         '</div>'
     
     $('#brochureContainer').prepend(brochurePrint[0]);
-    $('#brochureContainerPast').append(brochurePrint[1]);
-    $('#brochureList ul').append(brochurePrint[2]);
+    // $('#brochureContainerPast').append(brochurePrint[1]);
+    // $('#brochureList ul').append(brochurePrint[2]);
     $('#brochureAside').prepend(brochurePrint[3]);
 
     $('#viewMore').click(function(){

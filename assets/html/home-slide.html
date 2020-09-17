@@ -7,6 +7,49 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script>
+                var avhContent = [
+        {
+            image:'slider-home.jpg',
+            title:'Círculo estelar',
+            description:'Programa de reconocimiento y entrenamiento.<br /> ¡Cónocelo!',
+            target:'self',
+            url: '/REPSuite/circulo_estelar.page',
+        },
+        {
+            image:'slider-home.jpg',
+            title:'Title three, an a robust one',
+            description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
+            target:'self',
+            url: 'https://www.example.com',
+        },
+        {
+            image:'esr-2.jpg',
+            title:'Title one, an a robust one',
+            description:'Muchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para poder darle estilos a esta nueva innovacion en el home del mxMuchos texto de prueba para',
+            target:'self',
+            url: 'https://www.example.com',
+        },
+    ]
+
+    // Termina la seccion editable
+    // Customize section ends
+
+    
+
+    var avSliderContructor= [avhContent];
+            var i;
+            var e = 0;
+            var avhPrint = [""];
+            for (i = 0; i < 3; i++) {
+                avhPrint[e] += '<div class="av-slider-item">' +
+                    '<div class="av-slider-image"><a href="'+ avSliderContructor[e][i].url +'" target="_'+ avSliderContructor[e][i].target +'"><img src="/REPSuite/web/static/home_2018/img/' + avSliderContructor[e][i].image +'" alt="Algo no salió como esperado, disculpa las molestias" /></a></div>' +
+                    '<div class="av-slider-text"><h3 class="av-slider-title">' + avSliderContructor[e][i].title +'</h3><p>' + avSliderContructor[e][i].description +'</p>' +
+                    '<span></span><a href="'+ avSliderContructor[e][i].url +'" target="_'+ avSliderContructor[e][i].target +'" class="av-slider-link">ir</a>' +
+                    '</div></div>'
+            }
+            $("#avData").append(avhPrint[0]);
+        </script>
         <script src="./../js/avSlider.js"></script>
 </head>
 <body>
@@ -16,204 +59,5 @@
         </div>
         <button id="avDataFw" class="av-slider-control material-icons">keyboard_arrow_right</button>
     </div> 
-
-    <div class="container-fluid" style="display: block;">
-        <div class="row">
-            <div class="col">
-                <a href="/REPSuite/avon-on-evoluciona.page">
-                    <img class="img-responsive" src="/REPSuite/static/home_2018/img/Gi3_SlideHome_738x182px.png" />
-                </a>
-            </div>
-        </div>
-
-        <!-- IMBrochures -->
-
-
-        <div class="row d-flex" id="div_5f9f_0">
-            <div class="col">
-                <div id="div_5f9f_1" class="">
-                    <p id="p_5f9f_0">Belleza C16</p>
-                    <p id="p_5f9f_1">Mascara Avon Shula</p>
-                    <img src="/REPSuite/web/static/home_2018/img/20_C15_01.jpg" class="w-100" />
-                </div>
-                <div id="div_5f9f_2" class="">
-                    <a href="https://catalogo.avon.mx/16/202016_01/#/" target="_blank" id="a_5f9f_0">
-                        <button type="button" class="btn btn-avon " id="button_5f9f_0">Ver Folleto</button>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-
-                <div id="div_5f9f_3" class="">
-                    <p id="p_5f9f_2">Fashion & Home C16</p>
-                    <p id="p_5f9f_3">Limpiador facial</p>
-                    <img src="/REPSuite/web/static/home_2018/img/20_C15_02.jpg" class="w-100" />
-                </div>
-                <div id="div_5f9f_4">
-                    <a href="https://catalogo.avon.mx/16/202016_02/#/" target="_blank">
-                        <button type="button" class="btn btn-avon btn-fill-color">Ver Folleto</button>
-                    </a>
-
-                </div>
-
-            </div>
-            <div class="col">
-                <div id="div_5f9f_5">
-                    <p id="p_5f9f_4">Descarga</p>
-                    <p id="p_5f9f_5">Mi Negocio Digital</p>
-                    <img src="/FLDSuite/static/images/tus_consultas/home_avonsiemprecontigo.jpg" alt="" class="w-100" />
-                </div>
-                <div id="div_5f9f_6">
-                    <a href="https://www.mx.avon.com/REPSuite/tus_consultas.page?utm_source=home&utm_medium=bucket&utm_campaign=avon-siempre-contigo&utm_term=avon-siempre-contigo-empresarias&utm_content=entra-aqui"
-                        id="a_5f9f_2">
-                        <button type="button" class="btn btn-avon btn-fill-color" id="button_5f9f_2">Entra aquí</button>
-                    </a>
-                </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col-5 mx-auto">
-                <a href="/REPSuite/trainingCategories.page" target="_self" class="btn btn-avon btn-fill-color"
-                    style="width: 95%; color: white; margin-top: 15%; margin-bottom: 10%; padding-top: 6px; background-color: #17a2b8; text-align: center;">
-                    Ver todos los folletos
-                </a>
-            </div>
-
-        </div>
-
-
-
-        <!-- Text de Bienvenida  -->
-
-        <div class="row">
-            <div class="col">
-                <div id="div_5f9f_7">
-                    <p id="p_5f9f_6">Bienvenida <span id="span_5f9f_0">
-                            <variable name='firstname'></variable>
-                        </span>, estás en <span id="span_5f9f_1">Campaña <variable name='currcampnr'></variable></span>
-                    </p>
-                    <div id="div_5f9f_8">
-                        <p id="p_5f9f_7">Consulta tu fecha de reparto <a
-                                href="/REPSuite/orderDeliveryDetails.page"><span id="span_5f9f_2">aquí</span> </p></a>
-                        <p id="p_5f9f_8">y los puntos de pago más cercanos <a
-                                href="https://www.avon.mx/avon-mx/como-pagar.html" target="_blank"><span
-                                    id="span_5f9f_3"> aquí</span>.</p></a>
-                    </div>
-                    <p id="p_5f9f_9">Llámanos para tus dudas o consultas:</p>
-                </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-            
-                <div id="div_5f9f_9">
-                    <span id="span_5f9f_4">―――――――</span>
-                    <a data-toggle="collapse" data-target="#collapseHome" class="collapsed" aria-expanded="false" id="a_5f9f_3">
-                        <span>Contáctanos</span>
-                        <svg version="1.1" id="play"
-                            xmlns="http: //www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            height="100px" width="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                            xml:space="preserve">
-                            <path class="stroke-solid" fill="#ec008c" stroke="#ec008c"
-                                d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5">
-                            </path>
-                            <path class="icon" fill="white"
-                                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z">
-                            </path>
-                        </svg>
-                    </a>
-                    <span id="span_5f9f_5">―――――――</span>
-                </div>
-                <div id="collapseHome" class="collapse">
-                    <table class="table"  id="div_5f9f_10">
-                        <tbody>
-                            <tr>
-                                <td>Enviar una Orden: <span style="color:#ec008c">(55) 3988
-                                        9768.</span><br>Servicio con cargo de $10.</td>
-                            </tr>
-                            <tr>
-                                <td>Consulta de saldos y dígitos para pago: <span style="color:#ec008c">(55)
-                                        1882 5878.</span></td>
-                            </tr>
-                            <tr>
-                                <td>Reporte de Incidentes en Reparto:<span style="color:#ec008c"> (55) 6172
-                                        2288.</span></td>
-                            </tr>
-                            <tr>
-                                <td>Validación de prospectos, zonificación, apoyo para Nombramientos fuera
-                                    de la zona: <span style="color:#ec008c">(55) 3988 1768.</span></td>
-                            </tr>
-                            <tr>
-                                <td>Escríbenos sobre el Modelo de Liderazgo a<br><span
-                                        style="color:#ec008c">contacto.empresarias.mexico@avon.com.</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Encuentra en línea todos nuestros servicios <a
-                                        href="https://bit.ly/2qn84Sq" target="_blank"><span
-                                            style="color:#ec008c">aquí.</span></a></td>
-                            </tr>
-                            <tr>
-                                <td>Llámanos al <span style="color:#ec008c">(55) 1000 2866 </span>desde
-                                    cualquier parte del país para todas tus consultas.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                    
-             
-            </div>
-        </div>
-        <!-- Collapse  -->
-
-
-        <!--Circulo estelar test-->
-        <codelet name="circulo_estelar_access"></codelet>
-
-        <!--SLIDER   -->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="https://survey.eu.qualtrics.com/jfe/form/SV_aYjaleyKkfVbaqp" target="_blank">
-                        <img src="/REPSuite/web/static/home_2018/img/popEnc-slide-2.jpg" alt="Contesta nuestra encuesta" class="d-block w-100" />
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://avon.co1.qualtrics.com/jfe/form/SV_erqttxhFW50R6NT" target="_blank">
-                        <img width="740" src="/REPSuite/web/static/home_2018/img/popEnc-slide-3.jpg" alt="Encuesta Representantes AVON" class="d-block w-100" />
-                    </a>
-                </div>
-        
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        
-
-
-        <!--[if IE]>
-        
-        <style>
-            
-        #div_5f9f_17{ display:none !important;    } 
-        #Layer_1{  display:none !important;     } 
-        #firefix1{display:none !important ;    } 
-        #firesvgDance{ display:none; } 
-        #fireSineSvg{   display:none;     } 
-        #Layer_1{ display:none;}
-        #div_5f9f_14{border-left: none; }  
-        #span_5f9f_9{ display: none;} 
-        
-        </style>
-        <![endif]-->
-
-
-
-    </div>
-
 </body>
 </html>

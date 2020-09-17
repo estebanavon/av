@@ -115,38 +115,3 @@
     min-height: 18rem;
 }
 
-
-.av-scroll-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $color-white;
-    span {
-        font-family: $light-zona;
-    }
-    i {
-        animation-name: scrollAnimation;
-        animation-duration: 1.6s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-out;
-        opacity: 0;
-    }
-}
-@keyframes scrollAnimation {
-    0%{
-        transform: translateY(-10px);
-    }
-    10%{
-        opacity: 1;
-    }
-    90%{
-        transform: translateY(10px);
-    }
-    95%{
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(-5px);
-    }
-}

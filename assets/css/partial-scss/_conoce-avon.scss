@@ -1,32 +1,191 @@
-.scrolltst {
-    height: 80vh;
+.av-ca-hero {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-image: $color-gradient;
+    background-color: $color-primary;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    @media (min-width:$media-1){
+        padding: 5rem;
+    }
+    @media (min-width:$media-5){
+        padding: 10rem;
+    }
+
+
+    @mixin caTitle($color) {
+        .av-title-text{
+            @include titile-mixin($color);
+            font-size: 4rem;
+            text-align: left;
+            margin-bottom: 22px;
+            
+            @media (min-width:$media-3) {
+                font-size: 5rem;
+                line-height: $line-height * 2.5;
+            }
+            @media (min-width:$media-5) {
+                font-size: 6rem;
+                line-height: $line-height * 3;
+            }
+    
+            .av-title-stroke {
+                @supports (-webkit-text-stroke: 1px black) {
+                    -webkit-text-stroke: 1px $color;
+                    -webkit-text-fill-color: transparent;
+                  }
+            }
+            
+        }
+        .av-title-support {
+            color: $color;
+            width: 50%;
+        }
+    }
+    
+    .av-anew {
+        @include caTitle($color-conoce-avon1);
+    }
+    .av-mark {
+        @include caTitle($color-white);
+    }
+    .av-eau {
+        @include caTitle($color-conoce-avon2);
+    }
+    &:nth-child(1){
+        background-image: url('#{$route-images}/conoce-avon/ca-products-1.jpg');
+    }
+    &:nth-child(2){
+        background-image: url('#{$route-images}/conoce-avon/ca-products-2.jpg');
+    }
+    &:nth-child(3){
+        background-image: url('#{$route-images}/conoce-avon/ca-products-3.jpg');
+    }
+}
+.av-ca.av-scroll-wrapper {
+    position: absolute;
+    bottom: 4rem;
+}
+.av-ca-row {    
+    min-height: 40vh;
     background-color: $color-white;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-    h4 {
-        color: $color-primary;
-        font-size: 2rem;
+    
+    $caPadding:8rem;
+    $caPaddingSmall: 4rem;
+    @mixin caPadding($child1,$child2){
+    
+        &:#{$child1}-child {
+            padding: 0 ($caPadding * 0.2);
+        }
+        &:#{$child2}-child {
+            padding: 0 ($caPadding * 0.2);
+        }
+        @media (min-width:$media-3){
+            &:#{$child1}-child {
+                padding-left: $caPadding;
+                padding-right: $caPaddingSmall - $caPaddingSmall;
+            }
+            &:#{$child2}-child {
+                padding-right: $caPadding;
+                padding-left: $caPaddingSmall - $caPaddingSmall;
+            }
+        }
+        @media (min-width:$media-4){
+            &:#{$child1}-child {
+                padding-left: $caPadding * 2;
+            }
+            &:#{$child2}-child {
+                padding-right: $caPadding * 2;
+            }
+        }
+        @media (min-width:$media-5){
+            &:#{$child1}-child {
+                padding-left: $caPadding * 2.7;
+            }
+            &:#{$child2}-child {
+                padding-right: $caPadding * 2.7;
+            }
+        }
+    }
+    .av-ca-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        @include caPadding(first,last);
+
+        &:first-child:not(.noBack){
+            background-color: $color-light-white;
+            padding-right: $caPaddingSmall;
+        }
+        @media (min-width:$media-1){
+            width: 50%;
+        }    
+
+    }
+    @media (min-width:$media-1){
+        flex-direction: row;
+        &.reverse { 
+            flex-direction: row-reverse;
+        }
+        
+    }
+    &.reverse {
+        .av-ca-col{
+            @include caPadding(last,first);
+            &:first-child {
+                padding-left: $caPaddingSmall;
+            }
+        }
     }
 }
-.tstCont {
+.av-cta {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $color-white;
-    font-size: 2rem;
-    height: 80vh;
-    margin: 0;
+    min-height: 80vh;
+    text-align: center;
+    div { 
+        width: 300px;
+    }
+}
+.av-explore-card {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px $color-dark-30;
+    border-radius: 4px;
+    div{
+        &:first-child {
+            padding: 3rem;
+        }
+        &:last-child {
+            width: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 }
 .av-header {
     width: 100%;
+    height: 76.78px;
     background-color: transparent;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 5rem;
+    padding: 0.2rem 3rem;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -34,16 +193,32 @@
     left: 0;
     transition: all 0.5s;
     z-index: 100;
+    @media (min-width:$media-4) {
+        padding: 0.2rem 5rem;
+        justify-content: center;
+    }
     a {
         color: $color-white;
+        font-size: $size-text;
+        text-align: center;
+    }
+    svg {
+        fill: $color-white;
     }
     
-
+    .av-header-mobile {
+        @media (min-width:$media-4) {
+            display: none;
+        }
+    }
     .av-header-link {
-        display: flex;
         justify-content: space-between;
+        display: none;
+        @media (min-width:$media-4) {
+            display: flex;
+        }
         a {
-            padding: 1.4rem 3rem;
+            padding: 1.4rem 1.4rem;
         }
     }
     .av-header-line {
@@ -61,9 +236,23 @@
         a {
             color: $color-text;
         }
+        svg {
+            fill: $color-text;
+        }
         .av-header-line {
             background-image: $color-gradient;
         }
     }
-    
+}
+.av-product-12{
+    background-image: url('#{$route-images}/conoce-avon/ca-products-12.jpg');
+}
+.av-product-14{
+    background-image: url('#{$route-images}/conoce-avon/ca-products-14.jpg');
+}
+.av-product-4-2 {
+    background-image: url('#{$route-images}/conoce-avon/ca-products-4.2.jpg');
+}
+.av-explore-1{
+    background-image: url('#{$route-images}/conoce-avon/ca-people-6.jpg');
 }

@@ -2,10 +2,12 @@
 
 //Basic colors
 $color-white : #fff;
-$color-light-white: #fafafa;
+$color-light-white: #F7F7F7;
 $color-dark-lighter: scale-color($color-white, $lightness: -6%);
 $color-dark-light: scale-color($color-white, $lightness: -60%);
-$color-dark: #464646;
+$color-dark: #181818;
+$color-dark-footer: #293132;
+$color-darker-footer: #192228;
 $color-dark-50: scale-color($color-white, $lightness: -50%);
 $color-dark-10: rgba(200,200,200,0.1);
 $color-dark-30: rgba(200,200,200,0.3);
@@ -29,6 +31,9 @@ $color-gradient-1: #9113B0;
 $color-gradient-2: #C1047E;
 $color-gradient-3: #E23679;
 $color-gradient: linear-gradient(to right, $color-gradient-1, $color-gradient-2, $color-gradient-3);
+
+$color-conoce-avon1: #042E4F;
+$color-conoce-avon2: #79366D;
 
 $color-nosolas-primary: #F68B23;
 $color-nosolas-secondary: #0C3E65;

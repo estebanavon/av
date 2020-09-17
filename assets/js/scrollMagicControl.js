@@ -3,18 +3,11 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     var pinScene = new ScrollMagic.Scene({
-        triggerElement: '.tstCont',
+        triggerElement: '.avHero',
         triggerHook: 0,
-        duration:'100%',
+        duration:'70%',
     })
-    .setPin('.tstCont', {pushFollowers:false})
-    .addTo(controller);
-    var pinScene2 = new ScrollMagic.Scene({
-        triggerElement: '.tstCont2',
-        triggerHook: 0,
-        duration:'60%',
-    })
-    .setPin('.tstCont2', {pushFollowers:false})
+    .setPin('.avHero', {pushFollowers:false})
     .addTo(controller);
 
     $(".av-fade,.av-fade-reverse").each(function(){
@@ -40,7 +33,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         let documentScroll = $(document).scrollTop();
-        if (documentScroll > 500){
+        if (documentScroll > 200){
             $(".av-header").addClass("av-header-white");
         } else {
             $(".av-header").removeClass("av-header-white");
@@ -48,3 +41,5 @@ $(document).ready(function(){
     });
 
 });
+
+

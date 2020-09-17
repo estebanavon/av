@@ -8,7 +8,7 @@ $(document).ready(function () {
             develop: false, 
         },
         {
-            name: 'Bienvenida (video)',
+            name: '¡Bienvenida! (video)',
             file: 'Bienvenida.mp4',
             develop: false,
         },
@@ -33,13 +33,13 @@ $(document).ready(function () {
             develop: false,
         },
         {
-            name: 'Guía al éxito (video)',
-            file: 'GuiaAlExitob.mp4',
+            name: 'Guía de productos gratis (video)',
+            file: 'GuiaProductosGratis.mp4',
             develop: false,
         },
         {
-            name: 'Guía de productos gratis (video)',
-            file: 'GuiaProductosGratis.mp4',
+            name: 'COD (jpg)',
+            file: 'COD.jpg',
             develop: false,
         },
         {
@@ -75,13 +75,13 @@ $(document).ready(function () {
             develop: false,
         },
         {
-            name: '¿Qué es un VEA? (jpeg)',
-            file: 'QueEsUnVEA.jpeg',
+            name: 'Tips de venta (jpg)',
+            file: 'TipsdeVenta.jpg',
             develop: false,
         },
         {
-            name: 'Tips de venta (jpg)',
-            file: 'TipsdeVenta.jpg',
+            name: 'Guía al éxito (video)',
+            file: 'GuiaAlExitob.mp4',
             develop: false,
         },
         {
@@ -131,11 +131,7 @@ $(document).ready(function () {
             file: 'TipsdeVenta.jpg',
             develop: false,
         },
-        {
-            name: 'Aprendiendo con AVON (mp4)',
-            file: 'AprendiendoconAVON.mp4',
-            develop: false,
-        },
+        
         {
             name: 'Conoce nuestras causas sociales (mp4)',
             file: 'ConocenuestrasCausasSociales.mp4',
@@ -180,8 +176,8 @@ $(document).ready(function () {
             develop: false,
         },
         {
-            name: 'Testimonio causa social (video)',
-            file: 'TestimonioCausaSocial.mp4',
+            name: 'Muchas felicidades (png)',
+            file: 'MuchasFelicidades.png',
             develop: false,
         },
         {
@@ -215,10 +211,12 @@ $(document).ready(function () {
             develop: true,
         },
     ];
-  var avFiles4 = [
+  
+    var avFiles4 = [
+        
         {
-            name: 'Tips de venta (jpg)',
-            file: 'TipsdeVenta.jpg',
+            name: 'Conoce Universo Estelar (png)',
+            file: 'ConoceUniversoEstelar.png',
             develop: false,
         },
         {
@@ -227,8 +225,159 @@ $(document).ready(function () {
             develop: false,
         },
         {
+            name: 'No al maltrato animal (mp4)',
+            file: 'NoalMaltratoAnimal.mp4',
+            develop: false,
+        },
+        {
+            name: 'Perfilar clientes (mp4)',
+            file: 'PerfilarClientes.mp4',
+            develop: false,
+        },
+        {
+            name: 'Tips de venta (jpg)',
+            file: 'TipsdeVenta.jpg',
+            develop: false,
+        },
+        {
+            name: 'Test a ciegas (mp4)',
+            file: 'TestACiegas.mp4',
+            develop: false,
+        },
+        {
+            name: 'Test a ciegas (jpg)',
+            file: 'TestACiegas.jpg',
+            develop: false,
+        },
+        {
             name: 'Foto de perfil FB (jpg)',
             file: 'FotodeperfilFB.jpg',
+            develop: true,
+        },
+        {
+            name: 'Post 3 (png)',
+            file: 'Post_3.png',
+            develop: true,
+        },
+        {
+            name: 'Post 4 (png)',
+            file: 'Post_4.png',
+            develop: true,
+        },
+        
+    ];
+    var avFiles5 = [
+        {
+            name: 'Tips de venta (jpg)',
+            file: 'TipsdeVenta.jpg',
+            develop: false,
+        },
+        {
+            name: 'Avon Postear (mp4)',
+            file: 'AvonPostear.mp4',
+            develop: false,
+        },
+        {
+            name: 'Avon On (mp4)',
+            file: 'AvonOn.mp4',
+            develop: true,
+        },
+        {
+            name: 'Descarga Avon On (mp4)',
+            file: 'DescargaAvonOn.mp4',
+            develop: true,
+        },
+    ];
+    var avFiles6 = [
+        {
+            name: 'Éxito sin límites (pdf)',
+            file: 'ExitoSinLimites.pdf',
+            develop: false,
+        },
+        {
+            name: 'Ingresos (jpg)',
+            file: 'ingresos.jpg',
+            develop: false,
+        },
+        {
+            name: 'Tips de venta (jpg)',
+            file: 'TipsdeVenta.jpg',
+            develop: false,
+        },
+        {
+            name: 'FB, Soy Representante Círculo Estelar (jpg)',
+            file: 'fb_soyRepreCE.jpg',
+            develop: true,
+        },
+        {
+            name: 'FB, Pregúntame Círculo Estelar (jpg)',
+            file: 'perfilFB_preguntameCE.jpg',
+            develop: true,
+        },
+    ];
+    var avFiles7 = [
+        {
+            name: 'Lealtad (jpg)',
+            file: 'lealtad.jpg',
+            develop: false,
+        },
+        {
+            name: 'Cobrar a mis clientes (video)',
+            file: 'cobrarClientes.mp4',
+            develop: false,
+        },
+        {
+            name: 'FB, Soy Dueña de mis horarios (jpg)',
+            file: 'fb_soyDuenaCE.jpg',
+            develop: true,
+        },
+        {
+            name: 'FB, Soy Representante Círculo Estelar (jpg)',
+            file: 'perfilFB_soyRepreCE_foto.jpg',
+            develop: true,
+        },
+    ];
+    var avFiles8 = [
+        {
+            name: 'Carta de Presentación (jpg)',
+            file: 'CartadePresentacion.jpg',
+            develop: false,
+        },
+        {
+            name: 'Utiliza rutinas AVON (jpg)',
+            file: 'UtilizaRutinas.jpg',
+            develop: false,
+        },
+        {
+            name: 'FB, Soy Representante Círculo Estelar (jpg)',
+            file: 'fb_soyRepreCE_foto.jpg',
+            develop: true,
+        },
+        {
+            name: 'FB Perfil, Soy Representante Círculo Estelar (jpg)',
+            file: 'perfilFB_soyRepreCE.jpg',
+            develop: true,
+        },
+    ];
+    var avFiles9 = [
+        {
+            name: 'Felicidades (jpg)',
+            file: 'Felicidades.jpg',
+            develop: false,
+        },
+        {
+            name: 'Forma parte de Universo Estelar (jpg)',
+            file: 'FormapartedeUniversoEstelar.png',
+            develop: false,
+        },
+        {
+            name: 'FB, Pregúntame (jpg)',
+            file: 'fb_preguntameCE.jpg',
+            develop: true,
+        },
+        {
+            name: 'FB, Soy dueña de mis horarios (jpg)',
+            file: 'perfilFB_soyDuenaCE.jpg',
             develop: true,
         },
     ];
@@ -250,12 +399,12 @@ $(document).ready(function () {
         $('.optionControl').append(avLoaOptions[i-1]);
     }
     
-    const avFilesConstructor = [avFiles0,avFiles1,avFiles2,avFiles3,avFiles4];
+    const avFilesConstructor = [avFiles0,avFiles1,avFiles2,avFiles3,avFiles4,avFiles5,avFiles6,avFiles7,avFiles8,avFiles9];
     var e = 0;
     var i;
     var avArrayPrintContent = [];
-    var avArrayPrintTrue = ["","","","",""];
-    var avArrayPrintFalse = ["","","","",""];
+    var avArrayPrintTrue = ["","","","","","","","","","","","",""];
+    var avArrayPrintFalse = ["","","","","","","","","","","",""];
     
     while (e < avFilesConstructor.length) {
         for (i = 0; i < avFilesConstructor[e].length; i++) {
