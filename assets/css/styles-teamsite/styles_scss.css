@@ -1124,7 +1124,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-footer {
-  padding: 10rem;
+  padding: 2rem;
   background-color: #293132;
   color: #fff;
 }
@@ -1135,6 +1135,39 @@ section.av-container.av-container-small .av-row {
 
 .av-footer svg {
   fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-footer {
+    padding: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .av-footer {
+    padding: 10rem;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .av-button-primary {

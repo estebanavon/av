@@ -567,7 +567,7 @@
     }
 }
 .av-footer {
-    padding: 10rem;
+    padding: 2rem;
     background-color: $color-dark-footer;
     color: $color-white;
     a {
@@ -576,4 +576,30 @@
     svg {
         fill: $color-white;
     }
+    @media (min-width:$media-1) {
+        padding: 7rem;    
+    }
+    @media (min-width:$media-2) {
+        padding: 10rem;
+    }
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    opacity: 0;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

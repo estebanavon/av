@@ -45,7 +45,10 @@
         }
         .av-title-support {
             color: $color;
-            width: 50%;
+            width: 100%;
+            @media (min-width:$media-1) {
+                width: 50%;
+            }
         }
     }
     
@@ -77,7 +80,7 @@
     background-color: $color-white;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     
     $caPadding:8rem;
@@ -85,10 +88,10 @@
     @mixin caPadding($child1,$child2){
     
         &:#{$child1}-child {
-            padding: 0 ($caPadding * 0.2);
+            padding: 0 ($caPadding * 0.5);
         }
         &:#{$child2}-child {
-            padding: 0 ($caPadding * 0.2);
+            padding: 0 ($caPadding * 0.5);
         }
         @media (min-width:$media-3){
             &:#{$child1}-child {
@@ -125,27 +128,33 @@
         position: relative;
         @include caPadding(first,last);
 
-        &:first-child:not(.noBack){
-            background-color: $color-light-white;
-            padding-right: $caPaddingSmall;
-        }
         @media (min-width:$media-1){
             width: 50%;
+            &:first-child:not(.noBack){
+                background-color: $color-light-white;
+                padding-right: $caPaddingSmall;
+            }
         }    
-
+        @media (max-width:$media-1) {
+            margin-bottom: 3rem;
+            .av-card {
+                min-height: 16rem;
+            }
+        }
     }
     @media (min-width:$media-1){
         flex-direction: row;
         &.reverse { 
             flex-direction: row-reverse;
         }
-        
     }
     &.reverse {
         .av-ca-col{
             @include caPadding(last,first);
-            &:first-child {
-                padding-left: $caPaddingSmall;
+            @media (min-width:$media-1){
+                &:first-child {
+                    padding-left: $caPaddingSmall;
+                }
             }
         }
     }
@@ -156,12 +165,19 @@
     align-items: center;
     min-height: 80vh;
     text-align: center;
+    flex-direction: column;
+    padding: 8rem;
     div { 
         width: 300px;
+        margin-bottom: 3rem;
+    }
+    @media (min-width:$media-1){
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 .av-explore-card {
-    width: 60%;
+    width: 95%;
     display: flex;
     margin: 0 auto;
     box-shadow: 0px 0px 4px $color-dark-30;
@@ -176,6 +192,9 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+    }
+    @media (min-width:$media-1){
+        width: 60%;
     }
 }
 .av-header {
