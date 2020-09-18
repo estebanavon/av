@@ -504,6 +504,7 @@ section.av-container.av-container-small .av-row {
 .av-subtitle.negative {
   color: #fff;
   text-align: center;
+  fill: #fff;
 }
 
 @media (min-width: 768px) {
@@ -543,6 +544,7 @@ section.av-container.av-container-small .av-row {
 .av-subtitle-support.negative {
   color: #fff;
   text-align: center;
+  fill: #fff;
 }
 
 @media (min-width: 768px) {
@@ -562,6 +564,7 @@ section.av-container.av-container-small .av-row {
 .av-text.negative {
   color: #fff;
   text-align: center;
+  fill: #fff;
 }
 
 @media (min-width: 768px) {
@@ -1062,6 +1065,18 @@ section.av-container.av-container-small .av-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.av-scroll-wrapper.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-scroll-wrapper.negative {
+    text-align: left;
+  }
 }
 
 .av-scroll-wrapper span {

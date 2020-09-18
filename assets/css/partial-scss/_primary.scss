@@ -97,6 +97,7 @@
     &.negative {
         color: $color-white;
         text-align: $align;
+        fill: $color-white;
         @media (min-width:$media-1) {
             text-align: left;
         }
@@ -537,6 +538,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include negative();
     span {
         font-family: $regular-monts;
         margin: 0 1rem;

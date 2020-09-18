@@ -31,14 +31,7 @@ $(document).ready(function(){
         .addTo(controller);
     });
 
-    $(window).scroll(function(){
-        let documentScroll = $(document).scrollTop();
-        if (documentScroll > 200){
-            $(".av-header").addClass("av-header-white");
-        } else {
-            $(".av-header").removeClass("av-header-white");
-        }
-    });
+    
 
 });
 

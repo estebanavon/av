@@ -40,7 +40,7 @@
         text-align: left;
         margin-bottom: $size-text;
         @media (min-width:$media-0) {
-            font-size: $size-text*2.9;
+            font-size: $size-text * 2.9;
         }
     }
     .av-en-controls {
@@ -218,38 +218,4 @@
 
 .p-relative {
     position: relative;
-}
-.book-wrapper {
-    position: relative;
-    height: 40vh;
-}
-.book1a,.book1b {
-    position: absolute;
-    z-index: 1;
-}
-.book1a {
-    width: 70%;
-    left: 20%;
-}
-.book1b {
-    width: 70%;
-    left: 10%;
-}
-.animationbook{
-    animation-name: animationBook;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-@keyframes animationBook{
-    0%{
-        transform: translateX(0px);
-        transform: translateZ(1);
-    }
-    50%{
-        transform: translateX(90%);
-    }
-    100%{
-        transform: translateX(0px);
-    }
 }
