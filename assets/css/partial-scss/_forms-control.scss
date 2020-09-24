@@ -1,10 +1,16 @@
 .layout.layout-canvas-a {
     background-image: $color-gradient !important;
 }
-.header {
-    width: 50% !important;
-    padding: 10%;
+.section {
+    height: 100vh;
+    padding: 8% 13%;
     background-color: $color-white;
+    @media (min-width:$media-2) {
+        width: 50% !important;
+    }
+    .av-button-primary {
+        width: 100%;
+    }
 }
 .av-controls {
     margin-bottom: 8px;
