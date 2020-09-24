@@ -1562,6 +1562,16 @@ section.av-container.av-container-small .av-row {
   color: #c08de8;
 }
 
+.layout.layout-canvas-a {
+  background-color: linear-gradient(to right, #9113B0, #C1047E, #E23679);
+}
+
+.header {
+  width: 50%;
+  padding: 10%;
+  background-color: #fff;
+}
+
 .av-controls {
   margin-bottom: 8px;
 }
@@ -1582,7 +1592,8 @@ section.av-container.av-container-small .av-row {
   z-index: 1;
 }
 
-.av-controls div.sc-formfield-label.activeLabel {
+.av-controls div.sc-formfield-label.activeLabel,
+.av-controls div.sc-formfield-label.activeLabel label {
   -webkit-transform: translate(5px, 0px);
           transform: translate(5px, 0px);
   text-transform: uppercase;
@@ -1601,6 +1612,7 @@ section.av-container.av-container-small .av-row {
   border: none;
   border-bottom: 1px solid #181818;
   font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 .av-controls div.sc-formfield-input input:active, .av-controls div.sc-formfield-input input:focus {
@@ -1615,6 +1627,8 @@ section.av-container.av-container-small .av-row {
 
 .av-controls-date div.sc-formfield-label {
   font-family: montserrat-regular, Helvetica, sans-serif;
+  -webkit-transform: translate(5px, 0px);
+          transform: translate(5px, 0px);
 }
 
 .av-controls-date div.sc-formfield-input select {
@@ -1622,6 +1636,8 @@ section.av-container.av-container-small .av-row {
   border-bottom: 1px solid black;
   padding-bottom: 1px;
   width: 80px;
+  margin: 10px 5px;
+  font-size: 16px;
 }
 
 .av-controls-date div.sc-formfield-input select:active, .av-controls-date div.sc-formfield-input select:focus {
