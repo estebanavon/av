@@ -1563,11 +1563,11 @@ section.av-container.av-container-small .av-row {
 }
 
 .layout.layout-canvas-a {
-  background-color: linear-gradient(to right, #9113B0, #C1047E, #E23679);
+  background-color: linear-gradient(to right, #9113B0, #C1047E, #E23679) !important;
 }
 
 .header {
-  width: 50%;
+  width: 50% !important;
   padding: 10%;
   background-color: #fff;
 }
