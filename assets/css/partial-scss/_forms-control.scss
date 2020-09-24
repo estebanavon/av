@@ -12,12 +12,13 @@
         width: 312px;
     }
 }
-#smartcapture-block-q1bx28bwof.smartcapture-submit-button-wrapper {
-    text-align: left;
+.smartcapture-submit-button-wrapper {
+    text-align: left !important;
     margin-top: 25px;
 }
 .av-controls {
     margin-bottom: 8px;
+    height: 60px;
     div.sc-formfield-label{
         font-family: $regular-monts;
         transform: translate(8px,23px);
