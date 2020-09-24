@@ -5,7 +5,7 @@ $(document).ready(function(){
     var pinScene = new ScrollMagic.Scene({
         triggerElement: '.avHero',
         triggerHook: 0,
-        duration:'70%',
+        duration:'100%',
     })
     .setPin('.avHero', {pushFollowers:false})
     .addTo(controller);

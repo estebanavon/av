@@ -61,7 +61,7 @@
         padding: 0.5rem;
         padding-right: 2rem;
         font-size: $size-text;
-        font-family: $light-zona;
+        font-family: $regular-monts;
         color: $color-dark-light;
         transition: all 0.2s;
         cursor: pointer;
@@ -70,7 +70,7 @@
         }
         &.active{
             color: $color-primary;
-            font-family: $regular-zona;
+            font-family: $regular-monts;
             i{
                 color: $color-primary;
                 display: inline-block;

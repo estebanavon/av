@@ -3,7 +3,7 @@ $(document).ready(function(){
     
     
     
-    const campaignCurrent = 16;
+    const campaignCurrent = 17;
 
 
 
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     const campaignPast = campaignCurrent - 1;
     const campaignOld = campaignCurrent - 2;
-    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15,brochures16];
+    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15,brochures16,brochures17];
     
     var brochuresConstructor = [brochuresWrapper[(campaignPast)],brochuresWrapper[campaignOld],brochuresWrapper[(campaignCurrent-3)]];
     var brochurePrint = ["","","",""];
@@ -166,12 +166,12 @@ $(document).ready(function(){
         }
         e++
     };
-    brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[1][0].type +'">'+
-                            '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[1][0].type,brochuresConstructor[1][0].file,1) +'\')" class="av-brochure-image">' +
-                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[1][0].type,1,brochuresConstructor[1][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                                '<div class="av-type '+ brochuresConstructor[1][0].type +'">'+ campaign(1) +'</div>' +
+    brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[2][0].type +'">'+
+                            '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[2][0].type,brochuresConstructor[2][0].file,2) +'\')" class="av-brochure-image">' +
+                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[2][0].type,2,brochuresConstructor[2][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
+                                '<div class="av-type '+ brochuresConstructor[2][0].type +'">'+ campaign(1) +'</div>' +
                             '</div>' +
-                            '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[1][0].title +'</h3></div>' +
+                            '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[2][0].title +'</h3></div>' +
                         '</div>'
     
     $('#brochureContainer').prepend(brochurePrint[0]);

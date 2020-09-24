@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
   
@@ -170,6 +171,11 @@ $(document).ready(function () {
         
     ];
     var avFiles3 = [
+        {
+            name: 'Conoce Universo Estelar (mp4)',
+            file: 'ConoceUniversoEstelar.mp4',
+            develop: false,
+        },
         {
             name: 'Calcula tu oportunidad de ganancia (video)',
             file: 'CalculaTuOportunidadDeGanancia.mp4',
@@ -394,6 +400,7 @@ $(document).ready(function () {
         '<h4 value="7">Septima campaña<span class="material-icons">keyboard_arrow_right</span></h4>',
         '<h4 value="8">Octava campaña<span class="material-icons">keyboard_arrow_right</span></h4>',
         '<h4 value="9">Novena campaña<span class="material-icons">keyboard_arrow_right</span></h4>',
+        '<h4 value="10">Decima campaña<span class="material-icons">keyboard_arrow_right</span></h4>',
     ];
     for (i=0; i <= avNumber; i++){
         $('.optionControl').append(avLoaOptions[i-1]);

@@ -54,7 +54,7 @@ $(document).ready(function(){
     $('#avMenuClose').hide();
     $(window).scroll(function(){
         let documentScroll = $(document).scrollTop();
-        if (documentScroll > 200){
+        if (documentScroll > 500){
             $(".av-header").addClass("av-header-white");
         } else {
             $(".av-header").removeClass("av-header-white");

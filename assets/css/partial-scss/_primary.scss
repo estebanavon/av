@@ -106,7 +106,7 @@
 
 @mixin subtitle($size) {
     color: $color-text;
-    font-family: $semi-bold-zona;
+    font-family: $bold-monts;
     font-weight: 300;
     text-align: center;
     margin-bottom: 1.4rem;
@@ -131,11 +131,11 @@
     }
 }
 .av-subtitle {
-    @include subtitle($size-text * 1.9);
+    @include subtitle($size-text * 1.7);
     @include negative();
 
     &-support {
-        @include subtitle($size-text * 1.6);
+        @include subtitle($size-text * 1.5);
         @include negative();
     }
     
@@ -218,7 +218,7 @@
     
     .av-list-title {
         font-size: $size-text - 0.1rem;
-        font-family: $bold-zona;
+        font-family: $bold-monts;
         padding: ($size-text * 2) 0rem $size-text 0rem !important;
         color: $color-text;
         &:hover{
@@ -264,7 +264,7 @@
         background-position: center right;
         .av-card-wrapper {
             width: 100%;
-            background-color: $color-dark-lighter;
+            background-color: $color-primary;
         }
     }
     &.av-card-unable{
@@ -285,10 +285,11 @@
         position: absolute;
         bottom: -1px;
         left: 0;
-        background-color: $color-light-white;
+        background-color: $color-secondary;
         padding: 0.9rem;
         width: 90%;
         transition: all 0.7s;
+        z-index: 10;
         .av-text { 
            margin-bottom: 0px; 
         }
@@ -541,7 +542,8 @@
     @include negative();
     span {
         font-family: $regular-monts;
-        margin: 0 1rem;
+        margin: 0 3rem;
+        font-size: $size-text;
     }
     i,svg {
         animation-name: scrollAnimation;
@@ -569,7 +571,7 @@
     }
 }
 .av-footer {
-    padding: 2rem;
+    padding: 6rem 4rem;
     background-color: $color-dark-footer;
     color: $color-white;
     a {

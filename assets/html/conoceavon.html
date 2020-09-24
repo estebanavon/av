@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@2.4.1/css/grid.min.css" />
+
 
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,8 +28,8 @@
         <div class="av-header-mobile" id="avMenuButton"><svg width="26px" height="24.4px"><use xlink:href="#menu"></use></svg></div>
         <div class="av-header-mobile" id="avMenuClose"><svg width="20px" height="20.0014px"><use xlink:href="#close"></use></svg></div>
         <div class="av-header-link mr-auto">
-            <a href="./conoce-avon.html" class="">Nuestros productos</a>
-            <a href="" class="active">Únete a Avon</a>
+            <a class="active">Nuestros productos</a>
+            <a href="./conoceavon-unete.html">Únete a Avon</a>
         </div>
         <a href="https://www.avon.mx/avon-mx/">
             <svg width="154.2px" height="30px">
@@ -46,12 +47,11 @@
         </div>
         <a class="av-header-mobile" href="https://www.avon.mx/avon-mx/becomeARep.html"><svg width="24" height="26.663"><use xlink:href="#register"></use></svg></a>
         <div class="av-header-line"></div>
-        <div class="w-100"></div>
     </div>
     <div class="avMenu">
         <a href="https://www.avon.mx/avon-mx/">Avon mx</a>
-        <a href="./conoce-avon.html" class="">Nuestros productos</a>
-        <a href="./conoce-avon-unete.html" class="active">Únete a Avon</a>
+        <a href="./conoceavon.html" class="">Nuestros productos</a>
+        <a href="./conoceavon-unete.html" class="active">Únete a Avon</a>
         <a href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a>
         <a href="https://www.avon.mx/avon-mx/becomeARep.html" class="av-button-tertiary">Registrate ahora</a>
     </div>
@@ -59,38 +59,35 @@
         <div class="av-slider avHero">
             <!-- <button id="avDataBk" class="av-slider-control material-icons">keyboard_arrow_left</button> -->
             <div class="av-slider-content avData">
-                <div class="av-slider-item av-ca-hero active people">
+                <div class="av-slider-item av-ca-hero active productos">
                     <div class="av-wrapper av-anew">
-                        <h1 class="av-title-text av-fade"><span class="av-title-stroke">únete</span></h1>
-                        <h1 class="av-title-text av-fade-reverse">a avon</h1>
-                        <h2 class="av-title-support av-fade">Forma parte de una de las corporaciones de belleza más grandes del mundo</h2>
-                        <br>
-                        <h2 class="av-title-support av-fade">Tú eres tu propia jefa + Tú decides cómo y cuándo.</h2>
+                        <h1 class="av-title-text av-fade"><span class="av-title-stroke">nuestros</span></h1>
+                        <h1 class="av-title-text av-fade-reverse">productos</h1>
+                        <h2 class="av-title-support av-fade">Con más de 130 años de existencia, AVON es parte de una de
+                            las corporaciones de belleza más grandes del mundo.</h2>
                     </div>
                 </div>
 
-                <div class="av-slider-item av-ca-hero people">
-                    <div class="av-wrapper av-anew">
-                        <h1 class="av-title-text av-fade"><span class="av-title-stroke">únete</span></h1>
-                        <h1 class="av-title-text av-fade-reverse">a avon</h1>
-                        <h2 class="av-title-support av-fade">Forma parte de una de las corporaciones de belleza más grandes del mundo</h2>
-                        <br>
-                        <h2 class="av-title-support av-fade">Tú eres tu propia jefa + Tú decides cómo y cuándo.</h2>
+                <div class="av-slider-item av-ca-hero productos">
+                    <div class="av-wrapper av-eau">
+                        <h1 class="av-title-text"><span class="av-title-stroke">nuestros</span></h1>
+                        <h1 class="av-title-text">productos</h1>
+                        <h2 class="av-title-support">Con más de 130 años de existencia, AVON es parte de una de las
+                            corporaciones de belleza más grandes del mundo.</h2>
                     </div>
                 </div>
 
-                <div class="av-slider-item av-ca-hero people">
-                    <div class="av-wrapper av-anew">
-                        <h1 class="av-title-text av-fade"><span class="av-title-stroke">únete</span></h1>
-                        <h1 class="av-title-text av-fade-reverse">a avon</h1>
-                        <h2 class="av-title-support av-fade">Forma parte de una de las corporaciones de belleza más grandes del mundo</h2>
-                        <br>
-                        <h2 class="av-title-support av-fade">Tú eres tu propia jefa + Tú decides cómo y cuándo.</h2>
+                <div class="av-slider-item av-ca-hero productos">
+                    <div class="av-wrapper av-mark">
+                        <h1 class="av-title-text"><span class="av-title-stroke">nuestros</span></h1>
+                        <h1 class="av-title-text">productos</h1>
+                        <h2 class="av-title-support">Con más de 130 años de existencia, AVON es parte de una de las
+                            corporaciones de belleza más grandes del mundo.</h2>
                     </div>
                 </div>
                 
             </div>
-            <div class="av-scroll-wrapper av-ca negative">
+            <div class="av-scroll-wrapper av-ca">
                 <svg width="30px" height="17.5px" >
                     <use xlink:href="#arrow"></use>
                 </svg>
@@ -101,83 +98,88 @@
             <!-- <button id="avDataFw" class="av-slider-control material-icons">keyboard_arrow_right</button> -->
         </div>
         <div class="av-wrapper">
-            <div class="av-ca-row pt-10 reverse">
+            <div class="av-ca-row pt-10">
                 <div class="av-ca-col noBack">
-                    <h3 class="av-subtitle left">Inicia un negocio diseñado por ti</h3>
+                    <h3 class="av-subtitle left">Fragancias</h3>
                     <div class="av-text">
-                        En AVON hay dos formas de obtener ingresos: Por tu venta personal como <span class="av-highlight">Representante o por la venta de tus grupos como Empresaria en el Programa Liderazgo AVON.</span>
+                        Creadas por las Casas Perfumistas más prestigiosas del mundo, con hermosas botellas y aromas de
+                        larga duración.
                     </div>
-                    <a target="self" href="https://www.avon.mx/avon-mx/becomeARep.html" class="av-button-primary">Iniciar ahora</a>
+                    <a target="self" href="https://www.avon.mx/avon-mx/fragrance.html" class="av-button-tertiary"><svg viewBox="0 0 26 18.2">
+                            <use xlink:href="#view"></use>
+                        </svg>Ver más</a>
                 </div>
                 <div class="av-ca-col">
-                    <div class="book-wrapper">
-                        <img src="./../img/conoce-avon/ca-book-1a.png" class="book1a">
-                        <img src="./../img/conoce-avon/ca-book-1b.png" class="book1b animationbook">
-                    </div>
-                </div>
-            </div>
-            <div class="av-ca-row">
-                <div class="av-slider">
-                    <div class="av-spacer"></div>
-                    <div class="av-spacer"></div>
-                    <button id="avDataBk" class="av-slider-control material-icons">keyboard_arrow_left</button>
-                    <div class="av-slider-content avData">
-                        <div class="av-slider-item active">
-                            <div class="av-ca-container">
-                                <div class="av-ca-earn">
-                                    <h3 class="av-subtitle left negative">Oportunidad de ganancia de 20%</h3>
-                                    <p class="av-text negative">En los catálogos de Moda y Hogar</p>
-                                </div>
-                                <img class="av-fade" src="./../img/conoce-avon/book2.png">
+                    <div class="av-slider">
+                        <div class="av-slider-content avData">
+                            <div class="av-slider-item active">
+                                <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-4.png" class="w-100">
+                            </div>
+                            <div class="av-slider-item">
+                                <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-6.png" class="w-100">
+                            </div>
+                            <div class="av-slider-item">
+                                <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-4.png" class="w-100">
                             </div>
                         </div>
-                        <div class="av-slider-item">
-                            <div class="av-ca-container">
-                                <div class="av-ca-earn">
-                                    <h3 class="av-subtitle left negative">30% de oportunidad de ganacia</h3>
-                                    <p class="av-text negative">En los catálogos de Cosméticos y Belleza</p>
-                                </div>
-                                <img class="av-fade" src="./../img/conoce-avon/book1.png">
-                            </div>
-                        </div>
-                        <div class="av-slider-item">
-                            <div class="av-ca-container">
-                                <div class="av-ca-earn">
-                                    <h3 class="av-subtitle left negative">Hasta 100% de ganancia</h3>
-                                    <p class="av-text negative">En rutinas de Anew y ofertas seleccionadas en la revista "Avon Contigo"</p>
-                                </div>
-                                <img class="av-fade" src="./../img/conoce-avon/book3.png">
-                            </div>
-                        </div>
-                    </div>
-                    <button id="avDataFw" class="av-slider-control material-icons">keyboard_arrow_right</button>
-                </div>
-                
-            </div>
-            <div class="av-spacer"></div>
-            <div class="av-spacer"></div>
-            <div class="av-ca-row">
-                <div class="av-ca-col">
-                    <h3 class="av-subtitle left">Organiza reuniones físicas o virtuales</h3>
-                    <div class="av-text">
-                        Haz demostraciones de producto o encuentra interesadas para formar tu propio grupo de negocio y participa en el <span class="av-highlight">Programa de Liderazgo.</span>
-                    </div>
-                </div>
-                <div class="av-ca-col">
-                    <div class="av-card av-people-7">
-                        <div class="av-frame"></div>
                     </div>
                 </div>
             </div>
             <div class="av-ca-row reverse">
-                <div class="av-ca-col">
-                    <h3 class="av-subtitle left">Herramientas digitales y redes sociales</h3>
+                <div class="av-ca-col noBack">
+                    <h3 class="av-subtitle left">Maquillaje</h3>
                     <div class="av-text">
-                        Envía los catálogos digitales a todos tus contactos y compártelos por Facebook o WhatsApp.
+                        Productos innovadores en tonos de moda que se mantienen impecables durante todo el día.
                     </div>
+                    <a target="self" href="https://www.avon.mx/avon-mx/color.html" class="av-button-tertiary"><svg viewBox="0 0 26 18.2">
+                            <use xlink:href="#view"></use>
+                        </svg>Ver más</a>
                 </div>
                 <div class="av-ca-col">
-                    <div class="av-card av-people-9">
+                    <div class="av-slider">
+                        <div class="av-slider-content avData">
+                            <div class="av-slider-item active">
+                                <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-5.png" class="w-100">
+                            </div>
+                            <div class="av-slider-item">
+                                <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-7.png" class="w-100">
+                            </div>
+                            <div class="av-slider-item">
+                                <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-7.png" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="av-ca-row">
+                <div class="av-ca-col">
+                    <h3 class="av-subtitle left">Cuidado de la piel</h3>
+                    <div class="av-text">
+                        ANEW tiene una <span class="av-highlight">marca para cada edad</span> y tratamientos
+                        especializados
+                        de Alta Tecnología, que se combinan para formar la rutina ideal.
+                    </div>
+                    <a target="self" href="https://www.avon.mx/avon-mx/skincare.html" class="av-button-tertiary"><svg viewBox="0 0 26 18.2">
+                            <use xlink:href="#view"></use>
+                        </svg>Ver más</a>
+                </div>
+                <div class="av-ca-col">
+                    <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-9.jpg" class="w-100">
+                </div>
+            </div>
+            <div class="av-ca-row reverse">
+                <div class="av-ca-col">
+                    <h3 class="av-subtitle left">Cuidado personal</h3>
+                    <div class="av-text">
+                        Avon te consiente cuidando de ti y tu familia, de pies a cabeza, con productos efectivos de alta
+                        calidad.
+                    </div>
+                    <a target="self" href="https://www.avon.mx/avon-mx/personalcare.html" class="av-button-tertiary"><svg viewBox="0 0 26 18.2">
+                            <use xlink:href="#view"></use>
+                        </svg>Ver más</a>
+                </div>
+                <div class="av-ca-col">
+                    <div class="av-card av-product-14">
                         <div class="av-frame"></div>
                     </div>
                 </div>
@@ -185,76 +187,88 @@
             </div>
             <div class="av-ca-row">
                 <div class="av-ca-col">
-                    <h3 class="av-subtitle left">En Avon ganas desde tu primera campaña</h3>
+                    <h3 class="av-subtitle left">Higiénicos</h3>
                     <div class="av-text">
-                        ¡Disfruta de kits de productos gratis en tus primeras campañas ganas y mucho más!
+                        Avon cuida de ti para que tú cuides de los tuyos con productos de primera necesidad.
                     </div>
-                    <a target="self" href="https://www.avon.mx/avon-mx/becomeARep.html" class="av-button-secondary">Inicia ahora</a>
+                    <a target="self" href="https://www.avon.mx/avon-mx/marcas/avon-care.html" class="av-button-tertiary">
+                        <svg viewBox="0 0 26 18.2">
+                            <use xlink:href="#view"></use>
+                        </svg>Ver más</a>
                 </div>
                 <div class="av-ca-col">
-                    <img src="./../img/conoce-avon/ca-products-16.jpg" class="w-100">
-                </div>
-            </div>
-            <div class="av-spacer"></div>
-            <div class="av-row row">
-                <div class="col">
-                    <h3 class="av-subtitle">Además contarás con</h3>
-                    <img src="./../img/conoce-avon/ca-icon-group.png" class="w-75 mx-auto d-block">
-                </div>
-            </div>
-            <div class="av-spacer"></div>
-            <div class="av-spacer"></div>
-            <div class="av-ca-row av-people">
-                <div class="av-card av-people-1">
-                </div>
-                <div class="av-wrapper">
-                    <h2>PARA LAS QUE</h2>
-                    <h2>SUEÑAN, PARA LAS QUE CREEN.</h2>
-                </div>
-            </div>
-            <div class="av-spacer"></div>
-            <div class="av-ca-row">
-                <div class="av-ca-col">
-                    <h3 class="av-subtitle left">Por más de 130 años</h3>
-                    <div class="av-text">
-                        AVON ha compartido El Poder de la belleza para lograr sueños, independencia económica, conocimiento y bienestar, transformando así la vida de millones de mujeres en el mundo.
-                        Hoy, MILLONES de Representantes comparten AVON, en más de 50 países. 
-                    </div>
-                </div>
-                <div class="av-ca-col">
-                    <div class="av-card av-people-2">
-                        <div class="av-frame"></div>
-                    </div>
+                    <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-12.jpg" class="h-100">
                 </div>
             </div>
             <div class="av-ca-row reverse">
                 <div class="av-ca-col">
-                    <h3 class="av-subtitle left">"AVON me ha dado la estabilidad que necesitaba.</h3>
+                    <h3 class="av-subtitle left">Moda y Hogar</h3>
                     <div class="av-text">
-                        Puedo manejar mi negocio desde casa, con la facilidad de cerrar ventas digitalmente, sin necesidad de interrumpir los momentos más felices de mi vida en familia”.
+                        Nuestra compañía está presente también en el hogar de la mujer y su familia, con moda, lencería,
+                        joyería, artículos de bienestar y hogar.
                     </div>
+                    <a target="self" href="https://www.avon.mx/avon-mx/fashion.html" class="av-button-tertiary"><svg viewBox="0 0 26 18.2">
+                            <use xlink:href="#view"></use>
+                        </svg>Ver más</a>
                 </div>
                 <div class="av-ca-col">
-                    <div class="av-card av-people-8">
+                    <div class="av-card av-product-4-2">
                         <div class="av-frame"></div>
                     </div>
                 </div>
+
             </div>
         </div>
+        <div class="av-cta">
+            <div class="">
+                <svg width="110.4646" height="93.25" >
+                    <use xlink:href="#ebro"></use>
+                </svg>
+                <p class="av-text">Consulta nuestros catálogos digitales</p>
+                <a class="av-button-tertiary" href="https://www.avon.mx/avon-mx/catalogo-avon-movil.html">consultar</a>
+            </div>
+            <div class="">
+                <svg width="103.1325" height="101.3493">
+                    <use xlink:href="#findRep"></use>
+                </svg>
+                <p class="av-text">Encuentra a tu representante</p>
+                <a class="av-button-primary" href="https://www.avon.mx/avon-mx/findARep.html">buscar</a>
+            </div>
+            <div class="">
+                <svg width="125" height="113.1986" >
+                    <use xlink:href="#onlineStore"></use>
+                </svg>
+                <p class="av-text">Visita nuestra tienda en línea</p>
+                <a class="av-button-tertiary" href="https://tienda.mercadolibre.com.mx/avon">visitar</a>
+            </div>
+        </div>
+        <div class="av-ca-row reverse">
+            <div class="av-ca-col noBack">
+                <h3 class="av-subtitle left">AVON ES INNOVACIÓN Y TECNOLOGÍA EN BELLEZA</h3>
+                <p class="av-text">AVON desarrolla más de 500 productos nuevos al año, con los más altos estándares de calidad.</p>
+                <p class="av-text">Su principal centro de investigación y Desarrollo está en Suffern, Nueva York y cuenta con otros Centros de Desarrollo en México, Sudamérica, Europa y Asia.</p>
+            </div>
+            <div class="av-ca-col">
+                <img src="/dam/avon-mx/static/images/conoce-avon/ca-products-8.png" class="w-100">
+            </div>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="av-spacer"></div>
         <div class="row av-row">
             <div class="col">
                 <h3 class="av-subtitle">Sigue explorando</h3>
                 <div class="av-explore-card">
                     <div class="av-wrapper">
                         <h3 class="av-subtitle-support left">02</h3>
-                        <h3 class="av-subtitle-support left">Nuestros a Productos</h3>
-                        <a href="./conoce-avon.html" class="av-button-tertiary">ver más</a>
+                        <h3 class="av-subtitle-support left">Únete a Avon</h3>
+                        <a href="./conoceavon-unete.html" class="av-button-tertiary">ver más</a>
                     </div>
-                    <div class="av-wrapper av-explore-1"></div>
+                    <div class="av-wrapper av-explore-2"></div>
                 </div>
             </div>
         </div>
-
+        <div class="av-spacer"></div>
+        <div class="av-spacer"></div>
         <footer class="av-footer">
             <div class="row">
                 <div class="col-auto mx-auto">
@@ -294,13 +308,13 @@
                     <ul class="av-list av-footer-list">
                         <li class="av-list-title">Cómo comprar</li>
                         <li>
-                            <a href="">Encuentra a tu representante</a>
+                            <a href="https://www.avon.mx/avon-mx/findARep.html">Encuentra a tu representante</a>
                         </li>
                         <li>
-                            <a href="">Catálogo AVON Móvil</a>
+                            <a href="https://www.avon.mx/avon-mx/catalogo-avon-movil.html">Catálogo AVON Móvil</a>
                         </li>
                         <li>
-                            <a href="">Tienda en línea</a>
+                            <a href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a>
                         </li>
                     </ul>
                 </div>
@@ -328,8 +342,8 @@
                 <div class="av-spacer"></div>
                 <div class="col">
                     <div class="d-flex justify-content-around w-100 flex-wrap">
-                        <a href="./conoce-avon.html">Nuestros productos</a>
-                        <a href="./conoce-avon-unete.html">Únete a Avon</a>
+                        <a href="./conoceavon.html" >Nuestros productos</a>
+                        <a href="./conoceavon-unete.html">Únete a Avon</a>
                         <a href="https://www.avon.mx/avon-mx/">Inicio</a>
                         <a href="https://tienda.mercadolibre.com.mx/avon">
                             Tienda en línea
@@ -529,7 +543,64 @@
         </defs>
         
     </svg>
+<table>
+    <tr>
+        <td>
+            <a href="https://www.facebook.com/AvonMexico/">
+                <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="173.9px" height="84px" viewBox="0 0 173.9 84" style="enable-background:new 0 0 173.9 84;"
+                xml:space="preserve">
+           <path d="M97.8,43l1.1-7.2h-6.9V31c0-2,1-3.9,4.1-3.9h3.2v-6.2c0,0-2.9-0.5-5.6-0.5c-5.7,0-9.5,3.5-9.5,9.7v5.5h-6.4V43h6.4v17.5h7.8
+               V43H97.8z"/>
+           </svg> 
 
+</a>
+        </td>
+        <td>
+            <a href="https://www.instagram.com/avonmexico">
+                <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="108.6px" height="50px" viewBox="0 0 108.6 50" style="enable-background:new 0 0 108.6 50;"
+	 xml:space="preserve">
+<rect style="fill:#FFFFFF;" width="108.6" height="50"/>
+<path d="M53.3,16.5c-4.3,0-7.7,3.4-7.7,7.7s3.4,7.7,7.7,7.7s7.7-3.4,7.7-7.7S57.6,16.5,53.3,16.5z M53.3,29.2c-2.8,0-5-2.2-5-5
+	s2.2-5,5-5s5,2.2,5,5S56.1,29.2,53.3,29.2L53.3,29.2z M63.1,16.2c0,1-0.8,1.8-1.8,1.8c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8
+	S63.1,15.2,63.1,16.2z M68.2,18c-0.1-2.4-0.7-4.5-2.4-6.3C64,10,61.9,9.4,59.5,9.3c-2.5-0.1-9.9-0.1-12.4,0
+	c-2.4,0.1-4.5,0.7-6.3,2.4c-1.8,1.8-2.3,3.9-2.4,6.3c-0.1,2.5-0.1,9.9,0,12.4c0.1,2.4,0.7,4.5,2.4,6.3c1.8,1.8,3.9,2.3,6.3,2.4
+	c2.5,0.1,9.9,0.1,12.4,0c2.4-0.1,4.5-0.7,6.3-2.4c1.8-1.8,2.3-3.9,2.4-6.3C68.4,27.9,68.4,20.5,68.2,18L68.2,18z M65,33
+	c-0.5,1.3-1.5,2.3-2.9,2.9c-2,0.8-6.7,0.6-8.8,0.6c-2.2,0-6.9,0.2-8.8-0.6c-1.3-0.5-2.3-1.5-2.9-2.9c-0.8-2-0.6-6.7-0.6-8.8
+	s-0.2-6.9,0.6-8.8c0.5-1.3,1.5-2.3,2.9-2.9c2-0.8,6.7-0.6,8.8-0.6c2.2,0,6.9-0.2,8.8,0.6c1.3,0.5,2.3,1.5,2.9,2.9
+	c0.8,2,0.6,6.7,0.6,8.8S65.8,31.1,65,33z"/>
+</svg>
+</a>
+        </td>
+        <td>
+            <a href="https://twitter.com/AvonMexico">
+                <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="108.6px" height="50px" viewBox="0 0 108.6 50" style="enable-background:new 0 0 108.6 50;"
+                xml:space="preserve">
+           <rect style="fill:#FFFFFF;" width="108.6" height="50"/>
+           <path d="M68,16.2c0,0.3,0,0.6,0,0.9c0,9.3-7.1,20.1-20.1,20.1c-4,0-7.7-1.2-10.8-3.2c0.6,0.1,1.1,0.1,1.7,0.1c3.3,0,6.3-1.1,8.8-3
+               C44.5,31,41.9,29,41,26.2c0.4,0.1,0.9,0.1,1.3,0.1c0.6,0,1.3-0.1,1.9-0.2c-3.2-0.7-5.7-3.5-5.7-6.9V19c0.9,0.5,2,0.9,3.2,0.9
+               c-1.9-1.3-3.1-3.4-3.1-5.9c0-1.3,0.3-2.5,1-3.6c3.5,4.3,8.7,7.1,14.6,7.4c-0.1-0.5-0.2-1.1-0.2-1.6c0-3.9,3.1-7.1,7.1-7.1
+               c2,0,3.9,0.9,5.2,2.2c1.6-0.3,3.1-0.9,4.5-1.7c-0.5,1.6-1.6,3-3.1,3.9c1.4-0.2,2.8-0.5,4.1-1.1C70.6,13.9,69.4,15.2,68,16.2L68,16.2
+               z"/>
+           </svg>
+    </a>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/avonmexico">
+                <svg version="1.1" id="" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="108.6px" height="50px" viewBox="0 0 108.6 50" style="enable-background:new 0 0 108.6 50;"
+                xml:space="preserve">
+           <rect style="fill:#FFFFFF;" width="108.6" height="50"/>
+           <path d="M71,16.1c-0.4-1.5-1.5-2.6-3-3c-2.7-0.7-13.3-0.7-13.3-0.7s-10.7,0-13.3,0.7c-1.5,0.4-2.6,1.6-3,3c-0.7,2.7-0.7,8.3-0.7,8.3
+               s0,5.6,0.7,8.3c0.4,1.5,1.5,2.6,3,3c2.7,0.7,13.3,0.7,13.3,0.7s10.7,0,13.3-0.7c1.5-0.4,2.6-1.5,3-3c0.7-2.7,0.7-8.3,0.7-8.3
+               S71.7,18.8,71,16.1z M51.1,29.4V19.3l8.9,5.1L51.1,29.4L51.1,29.4z"/>
+           </svg>
+    </a>
+        </td>
+    </tr>
+</table>
 
 </body>
 

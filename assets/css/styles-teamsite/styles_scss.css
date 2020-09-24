@@ -1,60 +1,55 @@
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Black.otf");
+  src: url("../fonts/ZonaPro-Black.otf");
   font-family: zona-pro-black;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Light.otf");
+  src: url("../fonts/ZonaPro-Light.otf");
   font-family: zona-pro-light;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Bold.otf");
-  font-family: zona-pro-bold;
-}
-
-@font-face {
-  src: url("/assets/fonts/ZonaPro-Regular.otf");
+  src: url("../fonts/ZonaPro-Regular.otf");
   font-family: zona-pro-regular;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-SemiBold.otf");
+  src: url("../fonts/ZonaPro-SemiBold.otf");
   font-family: zona-pro-semi-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Thin.otf");
+  src: url("../fonts/ZonaPro-Thin.otf");
   font-family: ZonaProThin;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-regular.ttf");
+  src: url("../fonts/Montserrat-Regular.ttf");
   font-family: montserrat-regular;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-Light.ttf");
+  src: url("../fonts/Montserrat-Light.ttf");
   font-family: montserrat-light;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-SemiBold.ttf");
+  src: url("../fonts/Montserrat-SemiBold.ttf");
   font-family: montserrat-semi-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat-Bold.ttf");
   font-family: montserrat-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Gotham-Bold.otf");
+  src: url("../fonts/Gotham-Bold.otf");
   font-family: gotham-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Gotham-Book.otf");
+  src: url("../fonts/Gotham-Book.otf");
   font-family: gotham-book;
 }
 
@@ -475,25 +470,25 @@ section.av-container.av-container-small .av-row {
 
 .av-subtitle {
   color: #181818;
-  font-family: zona-pro-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 1.4rem;
   margin-top: 0rem;
-  font-size: 1.89rem;
+  font-size: 1.67rem;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle {
-    font-size: 1.99rem;
+    font-size: 1.77rem;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle {
-    font-size: 2.09rem;
+    font-size: 1.87rem;
   }
 }
 
@@ -515,25 +510,25 @@ section.av-container.av-container-small .av-row {
 
 .av-subtitle-support {
   color: #181818;
-  font-family: zona-pro-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 1.4rem;
   margin-top: 0rem;
-  font-size: 1.56rem;
+  font-size: 1.45rem;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle-support {
-    font-size: 1.66rem;
+    font-size: 1.55rem;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle-support {
-    font-size: 1.76rem;
+    font-size: 1.65rem;
   }
 }
 
@@ -655,7 +650,7 @@ section.av-container.av-container-small .av-row {
 
 .av-list .av-list-title {
   font-size: 1rem;
-  font-family: zona-pro-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   padding: 2.2rem 0rem 1.1rem 0rem !important;
   color: #181818;
 }
@@ -711,7 +706,7 @@ section.av-container.av-container-small .av-row {
 
 .av-card.av-card-select:hover .av-card-wrapper {
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #7F28C4;
 }
 
 .av-card.av-card-unable {
@@ -743,11 +738,12 @@ section.av-container.av-container-small .av-row {
   position: absolute;
   bottom: -1px;
   left: 0;
-  background-color: #F7F7F7;
+  background-color: #FF49A3;
   padding: 0.9rem;
   width: 90%;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
+  z-index: 10;
 }
 
 .av-card .av-card-wrapper .av-text {
@@ -1081,7 +1077,8 @@ section.av-container.av-container-small .av-row {
 
 .av-scroll-wrapper span {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  margin: 0 1rem;
+  margin: 0 3rem;
+  font-size: 1.1rem;
 }
 
 .av-scroll-wrapper i, .av-scroll-wrapper svg {
@@ -1139,7 +1136,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-footer {
-  padding: 2rem;
+  padding: 6rem 4rem;
   background-color: #293132;
   color: #fff;
 }
@@ -1213,6 +1210,10 @@ section.av-container.av-container-small .av-row {
   color: #fff;
 }
 
+.av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
+  color: #fff;
+}
+
 .av-button-secondary {
   background-color: transparent;
   border: none;
@@ -1236,6 +1237,10 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-button-secondary.negative {
+  color: #fff;
+}
+
+.av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
   color: #fff;
 }
 
@@ -1570,6 +1575,11 @@ body {
   font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
+body .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 @media (min-width: 576px) {
   body .container {
     max-width: 100%;
@@ -1604,7 +1614,7 @@ video:focus {
 
 .multimedia-title h2 {
   color: #181818;
-  font-family: zona-pro-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 1.4rem;
@@ -1633,7 +1643,7 @@ video:focus {
 
 .multimedia-layout-wrapper .video-text-item h3 {
   color: #181818;
-  font-family: zona-pro-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 1.4rem;
@@ -1665,7 +1675,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("/assets/img/folletos/hg-1.jpg");
+  background-image: url("../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1821,7 +1831,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("/assets/img/circulo_estelar/ce-header.jpg");
+  background-image: url("../images/circulo_estelar/ce-header.jpg");
   height: 45vh;
   margin-bottom: 0;
   margin: 0 -0.599rem;
@@ -1883,7 +1893,7 @@ a {
   padding: 0.5rem;
   padding-right: 2rem;
   font-size: 1.1rem;
-  font-family: zona-pro-light, Helvetica, sans-serif;
+  font-family: montserrat-regular, Helvetica, sans-serif;
   color: #666666;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1896,7 +1906,7 @@ a {
 
 .av-ce-option h4.active {
   color: #7F28C4;
-  font-family: zona-pro-regular, Helvetica, sans-serif;
+  font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 .av-ce-option h4.active i {
@@ -1919,70 +1929,70 @@ a {
 }
 
 .av-card-default {
-  background-image: url("/assets/img/circulo_estelar/ce-default.jpg");
+  background-image: url("../images/circulo_estelar/ce-default.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-6 {
-  background-image: url("/assets/img/circulo_estelar/ce-6.jpg");
+  background-image: url("../images/circulo_estelar/ce-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-7 {
-  background-image: url("/assets/img/circulo_estelar/ce-7.jpg");
+  background-image: url("../images/circulo_estelar/ce-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-8 {
-  background-image: url("/assets/img/circulo_estelar/ce-8.jpg");
+  background-image: url("../images/circulo_estelar/ce-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-9 {
-  background-image: url("/assets/img/circulo_estelar/ce-9.jpg");
+  background-image: url("../images/circulo_estelar/ce-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-10 {
-  background-image: url("/assets/img/circulo_estelar/ce-10.jpg");
+  background-image: url("../images/circulo_estelar/ce-10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-11 {
-  background-image: url("/assets/img/circulo_estelar/ce-11.jpg");
+  background-image: url("../images/circulo_estelar/ce-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-12 {
-  background-image: url("/assets/img/circulo_estelar/ce-12.jpg");
+  background-image: url("../images/circulo_estelar/ce-12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-13 {
-  background-image: url("/assets/img/circulo_estelar/ce-13.jpg");
+  background-image: url("../images/circulo_estelar/ce-13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-14 {
-  background-image: url("/assets/img/circulo_estelar/ce-14.jpg");
+  background-image: url("../images/circulo_estelar/ce-14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2357,7 +2367,7 @@ section.av-lw .disable {
 }
 
 .av-brochure-aside {
-  background-image: url("/assets/img/mis_folletos/bm-1.jpg");
+  background-image: url("../images/mis_folletos/bm-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

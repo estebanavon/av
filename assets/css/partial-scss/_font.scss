@@ -7,10 +7,7 @@
     src: url('#{$route-font}/ZonaPro-Light.otf');
     font-family: zona-pro-light;
 } 
-@font-face {
-    src: url('#{$route-font}/ZonaPro-Bold.otf');
-    font-family: zona-pro-bold;
-}
+
 @font-face {
     src: url('#{$route-font}/ZonaPro-Regular.otf');
     font-family: zona-pro-regular;
@@ -24,7 +21,7 @@
     font-family: ZonaProThin;
 }
 @font-face {
-    src: url('#{$route-font}/Montserrat-regular.ttf');
+    src: url('#{$route-font}/Montserrat-Regular.ttf');
     font-family: montserrat-regular;
 }
 @font-face {
@@ -55,7 +52,6 @@ $safe-font-bold: "Arial Black", Gadget, sans-serif;
 
 $black-zona : zona-pro-black, $safe-font-bold;
 $light-zona : zona-pro-light, $safe-font;
-$bold-zona : zona-pro-bold, $safe-font;
 $regular-zona : zona-pro-regular, $safe-font;
 $semi-bold-zona : zona-pro-semi-bold, $safe-font;
 $thin : ZonaProThin, $safe-font;

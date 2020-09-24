@@ -1,0 +1,50 @@
+.av-controls {
+    margin-bottom: 8px;
+    div.sc-formfield-label{
+        font-family: $regular-monts;
+        transform: translate(8px,23px);
+        transition: transform 0.5s;
+        display: inline-block;
+        z-index: 1;
+        label {
+            z-index: 1;
+        }
+    }
+    div.sc-formfield-input {
+        z-index: 2;
+        input {
+            z-index: 2;
+            width: 312px;
+            padding: 6px;
+            border: none;
+            border-bottom: 1px solid $color-text;
+            font-family: $regular-monts;
+            &:active,
+            &:focus {
+                outline: none;
+                border: none;
+                border-bottom: 1px solid $color-primary;
+            }
+        }
+    }
+}
+.av-controls-date {
+    margin-bottom: 8px;
+    div.sc-formfield-label{
+        font-family: $regular-monts;
+    }
+    div.sc-formfield-input {
+        select {
+            border: none;
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+            width: 80px;
+            &:active,
+            &:focus {
+                outline: none;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+}
