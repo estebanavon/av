@@ -9,12 +9,18 @@
         label {
             z-index: 1;
         }
+        &.activeLabel {
+            transform:translate(5px,0px);
+            text-transform: uppercase;
+            font-size:12px !important;
+            color:#7F28C4 !important;
+        }
     }
     div.sc-formfield-input {
         z-index: 2;
         input {
             z-index: 2;
-            width: 312px;
+            min-width: 312px;
             padding: 6px;
             border: none;
             border-bottom: 1px solid $color-text;
