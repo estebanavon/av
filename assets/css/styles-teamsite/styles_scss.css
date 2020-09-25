@@ -508,6 +508,10 @@ section.av-container.av-container-small .av-row {
   }
 }
 
+.av-subtitle.negative [class^='material-icons'] {
+  color: #fff;
+}
+
 .av-subtitle-support {
   color: #181818;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
@@ -548,6 +552,10 @@ section.av-container.av-container-small .av-row {
   }
 }
 
+.av-subtitle-support.negative [class^='material-icons'] {
+  color: #fff;
+}
+
 .av-text {
   color: #181818;
   font-family: montserrat-regular, Helvetica, sans-serif;
@@ -566,6 +574,10 @@ section.av-container.av-container-small .av-row {
   .av-text.negative {
     text-align: left;
   }
+}
+
+.av-text.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-text .av-highlight {
@@ -613,6 +625,22 @@ section.av-container.av-container-small .av-row {
 
 .av-list.av-list-item {
   padding-left: 0;
+}
+
+.av-list.av-list-item.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-list.av-list-item.negative {
+    text-align: left;
+  }
+}
+
+.av-list.av-list-item.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-list.av-list-item li {
@@ -1073,6 +1101,10 @@ section.av-container.av-container-small .av-row {
   .av-scroll-wrapper.negative {
     text-align: left;
   }
+}
+
+.av-scroll-wrapper.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-scroll-wrapper span {
@@ -2087,6 +2119,15 @@ section.av-lw aside .av-recent {
   background-image: linear-gradient(130deg, #D0709F, #B3276D 40%);
 }
 
+section.av-lw aside .av-recent.disable {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 section.av-lw aside .av-recent .av-subtitle {
   font-size: 1.3rem;
 }
@@ -2137,7 +2178,7 @@ section.av-lw section.av-section-container .av-button-back {
   transition: all 1s;
   overflow: hidden;
   width: 0;
-  padding: 2em;
+  padding: 3em;
 }
 
 section.av-lw section.av-section-container .av-button-back:active {
@@ -2245,6 +2286,10 @@ section.av-lw section.av-section-container .av-section .av-iframe {
   border: none;
 }
 
+section.av-lw section.av-section-container .av-section:last-child {
+  margin-bottom: 3em;
+}
+
 section.av-lw .disable {
   visibility: hidden;
 }
@@ -2320,13 +2365,13 @@ section.av-lw .disable {
 }
 
 #guideB {
-  top: 4%;
+  top: 13%;
   right: 20%;
 }
 
 #guideC {
-  top: 7%;
-  left: -23%;
+  top: 8%;
+  left: -21%;
 }
 
 #guideC::after {

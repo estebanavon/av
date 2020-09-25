@@ -1,23 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://www.avon.mx/dam/avon-mx/static/css/styles_scss.css" /> -->
-    <link rel="stylesheet" href="../css/styles_scss.css" />
+
+    <link rel="stylesheet" type="text/css" href="/FLDSuite/web/static/css/styles_scss.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="../js/primary.js"></script>
-</head>
-<body>
-    <div class="smartcapture-controls av-controls">
-        <div class="sc-formfield-label">
-            <label for="emailAddress">Correo electrónico</label>
-        </div>
-        <div class="sc-formfield-input">
-            <input type="email" name="emailAddress" data-field-type="EmailAddress" data-validation="email">
-        </div>
-    </div>
-</body>
-</html>
+    <script src="/FLDSuite/web/static/js/lwControlSl.js"></script>
+    <script src="/FLDSuite/web/static/js/lwInteraction.js"></script>
+
+
+    <section class="av-lw">
+        <aside>
+            <div class="av-intro">
+                <span class="flex-1"></span>
+                <div class="av-wrapper" id="tooltipText">
+                    <img src="/FLDSuite/web/static/images/liderazgo_web/lw-logo.png" alt="liderazgo Web" class="lw-logo av-hover active" />
+                    <span class="av-hover av-text negative">Aquí puedes encontrar los materiales indispensables para hacer crecer tu negocio.</span>
+                    <span class="av-hover av-text negative">Conoce los programas que tenemos para ti en las diferente campañas.</span>
+                    <span class="av-hover av-text negative">Conoce todos los detalles para lograr este  Beneficio</span>
+                    <span class="av-hover av-text negative">Conoce todo sobre la segunda y tercera ediciones de Vacaciones con Liderazgo Avon</span>
+                    <span class="av-hover av-text negative">Videos para conocer más sobre el negocio.</span>
+                    <span class="av-hover av-text negative">Realiza solicitudes de materiales para tu negocio en esta sección.</span>
+                </div>
+                <span class="flex-1"></span>
+                <button id="guideStart" class="av-link negative">Empezar tutorial</button>
+            </div>
+            <div class="av-recent">
+                <h3 class="av-subtitle negative">Documentos populares</h3>
+                <ol class="av-list av-list-item negative">
+                    <li><span>Díptico Fase 1</span><span class="av-list-spacer"></span><a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/Diptico_2020.pdf"  target="_blank"><span class="material-icons">visibility</span></a>
+                    </li>
+                    <li><span>Planograma</span><span class="av-list-spacer"></span><a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/Planograma_Actualizado_2020.pdf" target="_blank"><span class="material-icons">visibility</span></a>
+                    </li>
+
+                </ol>
+            </div>
+        </aside>
+
+
+
+        <section class="av-section-container">
+            <span class="av-button-back">
+                <i class="material-icons av-lg-icons">arrow_back</i>
+            </span>
+
+
+            <div class="av-section-title">
+                <i class="material-icons av-lg-icons">work_outline</i>
+                <span>Herramientas para tu negocio</span>
+            </div>
+            <div class="av-section" data-av="0">
+                <div class="av-section-select sub unable" id="guide1">
+                    <span>Herramientas generales</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content"></div>
+            </div>
+            <div class="av-section" data-av="1">
+                <div class="av-section-select sub unable">
+                    <span>Comunicados</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content"></div>
+            </div>
+            <div class="av-section" data-av="2">
+                <div class="av-section-select sub unable">
+                    <span>Prospección</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content"></div>
+            </div>
+            <div class="av-divider"></div>
+            <div class="av-section-title">
+                <i class="material-icons av-lg-icons">description</i>
+                <span>Apoyos de temporada</span>
+            </div>
+            <div class="av-section" data-av="3">
+                <div class="av-section-select sub unable">
+                    <span>Conversiones y certificaciones</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content"></div>
+            </div>
+            <div class="av-section" data-av="4">
+                <div class="av-section-select sub unable">
+                    <span>Celaya</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content"></div>
+            </div>
+            <div class="av-section" data-av="5">
+                <div class="av-section-select sub unable">
+                    <span>Retención</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content"></div>
+            </div>
+            <div class="av-divider"></div>
+            <div class="av-section" data-av="7">
+                <div class="av-section-select unable">
+                    <i class="material-icons av-lg-icons">local_hospital</i>
+                    <span>Programa IMSS</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content">
+                </div>
+            </div>
+            <div class="av-section" data-av="8">
+                <div class="av-section-select unable">
+                    <i class="material-icons av-lg-icons">card_travel</i>
+                    <span>Vacaciones con Liderazgo</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content">
+                </div>
+            </div>
+            <div class="av-section" data-av="6">
+                <div class="av-section-select unable" id="videosSection">
+                    <i class="material-icons av-lg-icons">movie_creation</i>
+                    <span>Videos</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content"></div>
+            </div>
+            <div class="av-section" data-av="9">
+                <div class="av-section-select unable">
+                    <i class="material-icons av-lg-icons">article</i>
+                    <span>Solicitud de materiales</span>
+                    <span class="av-selection-spacer"></span>
+                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
+                </div>
+                <div class="av-list-content">
+                    <iframe class="av-iframe" src="https://avon.co1.qualtrics.com/jfe/form/SV_9t7GZnEPgURIEjH"></iframe>
+                </div>
+            </div>
+            <div class="av-section">
+                <a href="/SLSuite/vendorLinksOne.page?linkid=44" target="_blank" class="av-section-select unable">
+                    <i class="material-icons av-lg-icons">arrow_forward</i>
+                    <span>Acompáñame</span>
+                </a>
+            </div>
+            <div class="av-section">
+                <a href="" target="_self" class="av-section-select unable">
+                    <i class="material-icons av-lg-icons">insert_drive_file</i>
+                    <span>Entrenamiento</span>
+                </a>
+            </div>
+        </section>
+    </section>

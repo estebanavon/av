@@ -101,6 +101,9 @@
         @media (min-width:$media-1) {
             text-align: left;
         }
+        [class^='material-icons'] {
+            color: $color-white;
+        }
     }
 }
 
@@ -193,6 +196,7 @@
     
     &.av-list-item {
         padding-left: 0;
+        @include negative();
         li {
             padding: 0 0.5rem;
             border-bottom: 1px $color-dark-lighter solid;

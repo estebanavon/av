@@ -171,7 +171,7 @@ const prospectionSection = [
         file: 'AnuncioLiderazgo.pdf',
     },
     {
-        name: 'Díptico Liderazgo 60-10',
+    name: 'Díptico Liderazgo 60-10',
         file: 'Diptico_liderazgo_F.pdf',
     },
     {

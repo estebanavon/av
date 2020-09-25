@@ -508,6 +508,10 @@ section.av-container.av-container-small .av-row {
   }
 }
 
+.av-subtitle.negative [class^='material-icons'] {
+  color: #fff;
+}
+
 .av-subtitle-support {
   color: #181818;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
@@ -548,6 +552,10 @@ section.av-container.av-container-small .av-row {
   }
 }
 
+.av-subtitle-support.negative [class^='material-icons'] {
+  color: #fff;
+}
+
 .av-text {
   color: #181818;
   font-family: montserrat-regular, Helvetica, sans-serif;
@@ -566,6 +574,10 @@ section.av-container.av-container-small .av-row {
   .av-text.negative {
     text-align: left;
   }
+}
+
+.av-text.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-text .av-highlight {
@@ -613,6 +625,22 @@ section.av-container.av-container-small .av-row {
 
 .av-list.av-list-item {
   padding-left: 0;
+}
+
+.av-list.av-list-item.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-list.av-list-item.negative {
+    text-align: left;
+  }
+}
+
+.av-list.av-list-item.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-list.av-list-item li {
@@ -1073,6 +1101,10 @@ section.av-container.av-container-small .av-row {
   .av-scroll-wrapper.negative {
     text-align: left;
   }
+}
+
+.av-scroll-wrapper.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-scroll-wrapper span {
@@ -1563,8 +1595,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .layout.layout-canvas-a {
-  background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679)) !important;
-  background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679) !important;
+  background-image: url("./../../img/conoce-avon/ca-people-5.jpg");
 }
 
 .section {
@@ -2399,6 +2430,10 @@ a {
   }
 }
 
+.av-prtnl-subtitle.secondary.negative [class^='material-icons'] {
+  color: #fff;
+}
+
 .av-prtnl-text {
   color: #181818;
   font-family: gotham-book, Helvetica, sans-serif;
@@ -2417,6 +2452,10 @@ a {
   .av-prtnl-text.negative {
     text-align: left;
   }
+}
+
+.av-prtnl-text.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-prtnl-img-wrapper {

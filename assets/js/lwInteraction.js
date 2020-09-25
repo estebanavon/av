@@ -1,9 +1,9 @@
 $(document).ready(function(){ 
     var guideVar = false;
-    var imgRoute = "/FLDSuite/static/images/liderazgo_web";
-    imgRoute = "./../img";
+    const imgRoute = "/FLDSuite/static/images/liderazgo_web";
+    //const imgRoute = "./../img";
 
-    $(".av-section").click(function(){
+    $(".av-section:not(.vendorLiks)").click(function(){
         let avdata = $(this).attr("data-av");
         let img = "url('"+ imgRoute +"/lw-"+ avdata +".jpg')"; 
         $(this).children(".av-section-select").removeClass("unable").siblings().addClass("unable");
@@ -12,26 +12,15 @@ $(document).ready(function(){
         // Global DOM Manipulations
         $(".av-section-container").addClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $(".av-button-back").addClass("unable");
+        $(".av-recent").addClass('disable');
         $("#tooltipText, #guideStart").addClass('disable');
 
         // Documents append
         if (once[avdata]==="true"){
-            if(avdata < 7){
-                let avArrayPrint = "";
-                avArrayPrint += '<ol class="av-list av-list-item"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[avdata] +'</ol>'
-                
-                $(this).find('.av-list-content').append(avArrayPrint);
-             } else if (avdata == 7){
-                let avArrayPrint = "";
-                avArrayPrint += '<ol class="av-list av-list-item"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[7] +'</ol>'+
-                '<ol class="av-list av-list-item noactive"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[8] +'</ol>';
-                $(this).find('.av-list-content').append(avArrayPrint);
-             } else if (avdata == 8) {
-                let avArrayPrint = "";
-                avArrayPrint += '<ol class="av-list av-list-item"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[9] +'</ol>'+
-                '<ol class="av-list av-list-item noactive"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[10] +'</ol>';
-                $(this).find('.av-list-content').append(avArrayPrint);
-             }
+            let avArrayPrint = "";
+            avArrayPrint += '<ol class="av-list av-list-item"><li class="av-list-title"><span>Documentos</span><span>Previsualizar / Descargar</span></li>'+ avArrayPrintContent[avdata] +'</ol>'
+            
+            $(this).find('.av-list-content').append(avArrayPrint);
         } 
         once[avdata] = "false";
         
@@ -40,6 +29,7 @@ $(document).ready(function(){
         let img = "url('"+ imgRoute +"/lw-i.jpg')"; 
         $(".av-section-select").addClass("unable");
         $(".av-list-content").removeClass("unable");
+        $(".av-recent").removeClass('disable');
         $(this).siblings().show();
 
         // Global DOM Manipulations
@@ -91,11 +81,6 @@ $(document).ready(function(){
     });
     
     
-    
-    $('.av-tabs').children().click(function(){
-        $(this).addClass('active').siblings().removeClass('active');
-        $(this).parent().siblings('.noactive').removeClass('noactive').siblings().addClass('noactive');
-    });
     
     $('#guideStart').click(function(){
         guideVar = true;
