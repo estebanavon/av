@@ -1,6 +1,6 @@
 .layout.layout-canvas-a {
     background-image: url('https://estebanavon.github.io/av/assets/img/conoce-avon/ca-people-5.jpg');
-    background-position: top right;
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -8,6 +8,7 @@
     height: 100vh;
     padding: 8% 13%;
     background-color: $color-white;
+    margin: 0px;
     @media (min-width:$media-2) {
         width: 50% !important;
     }
