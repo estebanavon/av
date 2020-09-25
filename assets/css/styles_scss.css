@@ -1606,6 +1606,7 @@ section.av-container.av-container-small .av-row {
   padding: 8% 13%;
   background-color: #fff;
   margin: 0px !important;
+  overflow-y: auto !important;
 }
 
 @media (min-width: 768px) {

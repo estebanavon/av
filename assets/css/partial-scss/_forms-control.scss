@@ -9,6 +9,7 @@
     padding: 8% 13%;
     background-color: $color-white;
     margin: 0px !important;
+    overflow-y: auto !important;
     @media (min-width:$media-1) {
         width: 50% !important;
         min-width: 600px;
