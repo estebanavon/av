@@ -8,9 +8,10 @@
     height: 100vh;
     padding: 8% 13%;
     background-color: $color-white;
-    margin: 0px;
-    @media (min-width:$media-2) {
+    margin: 0px !important;
+    @media (min-width:$media-1) {
         width: 50% !important;
+        min-width: 600px;
     }
     .av-button-primary {
         width: 312px;

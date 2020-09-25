@@ -1605,12 +1605,13 @@ section.av-container.av-container-small .av-row {
   height: 100vh;
   padding: 8% 13%;
   background-color: #fff;
-  margin: 0px;
+  margin: 0px !important;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .section {
     width: 50% !important;
+    min-width: 600px;
   }
 }
 
