@@ -1596,16 +1596,16 @@ section.av-container.av-container-small .av-row {
 
 .layout.layout-canvas-a {
   background-image: url("https://estebanavon.github.io/av/assets/img/avConciertoBackground.jpg");
-  background-position: top right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fff;
   margin: 0px !important;
-  overflow-y: auto !important;
+  padding: 7% 9%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1639,15 +1639,13 @@ section.av-container.av-container-small .av-row {
 .section .av-decorator {
   display: none;
   position: fixed;
-  bottom: 0%;
-  right: 5%;
+  bottom: 7%;
+  right: 3%;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
-  -webkit-text-decoration: uppercase;
-          text-decoration: uppercase;
+  text-transform: uppercase;
   color: #fff;
-  opacity: 0.2;
+  opacity: 0.1;
   font-size: 110px;
-  width: 40%;
   line-height: 80px;
 }
 
@@ -1655,6 +1653,34 @@ section.av-container.av-container-small .av-row {
   .section .av-decorator {
     display: block;
   }
+}
+
+.section .av-form-title {
+  color: #181818;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  margin-top: 0rem;
+  font-size: 1.3rem;
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  .section .av-form-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section .av-form-title {
+    font-size: 1.5rem;
+  }
+}
+
+.section .av-form-title.left {
+  text-align: left;
 }
 
 .smartcapture-submit-button-wrapper {

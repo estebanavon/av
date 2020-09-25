@@ -1,14 +1,14 @@
 .layout.layout-canvas-a {
     background-image: url('https://estebanavon.github.io/av/assets/img/avConciertoBackground.jpg');
-    background-position: top right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
 }
 .section {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $color-white;
     margin: 0px !important;
-    overflow-y: auto !important;
+    padding: 7% 9%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,18 +26,20 @@
     .av-decorator {
         display: none;
         position: fixed;
-        bottom: 0%;
-        right: 5%;
+        bottom: 7%;
+        right: 3%;
         font-family: $black-zona;
-        text-decoration: uppercase;
+        text-transform: uppercase;
         color: $color-white;
-        opacity: 0.2;
+        opacity: 0.1;
         font-size: 110px;
-        width: 40%;
         line-height: 80px;
         @media (min-width:$media-2) {
             display: block;
         }
+    }
+    .av-form-title{
+        @include subtitle(1.5rem);
     }
 }
 .smartcapture-submit-button-wrapper {
