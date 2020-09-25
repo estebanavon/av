@@ -1596,6 +1596,7 @@ section.av-container.av-container-small .av-row {
 
 .layout.layout-canvas-a {
   background-image: url("https://estebanavon.github.io/av/assets/img/avConciertoBackground.jpg");
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
