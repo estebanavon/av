@@ -13,6 +13,7 @@ $(document).ready(function(){
         $(this).find('input').focus().attr('placeholder', ''+avPlaceHolder+'').css('borderBottomColor','#7F28C4');
         $(this).find('.sc-formfield-label').addClass('activeLabel');
     });
-    $('.section').prepend('<h3 class="av-subtitle left">Subtitulo</h3>');
+    $('.section').prepend('<h3 class="av-subtitle left">Registro al concierto Avon</h3>');
+    $('.section').prepend('<h3 class="av-decorator">Avon Siempre Contigo</h3>');
 
 });

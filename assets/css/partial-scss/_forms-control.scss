@@ -6,16 +6,38 @@
 }
 .section {
     height: 100vh;
-    padding: 8% 13%;
     background-color: $color-white;
     margin: 0px !important;
     overflow-y: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     @media (min-width:$media-1) {
         width: 50% !important;
         min-width: 600px;
     }
     .av-button-primary {
         width: 312px;
+    }
+    > .columns {
+        width: auto !important;
+    }
+    .av-decorator {
+        display: none;
+        position: fixed;
+        bottom: 0%;
+        right: 5%;
+        font-family: $black-zona;
+        text-decoration: uppercase;
+        color: $color-white;
+        opacity: 0.2;
+        font-size: 110px;
+        width: 40%;
+        line-height: 80px;
+        @media (min-width:$media-2) {
+            display: block;
+        }
     }
 }
 .smartcapture-submit-button-wrapper {
