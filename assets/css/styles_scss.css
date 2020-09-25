@@ -1595,8 +1595,8 @@ section.av-container.av-container-small .av-row {
 }
 
 .layout.layout-canvas-a {
-  background-image: url("https://estebanavon.github.io/av/assets/img/conoce-avon/ca-people-5.jpg");
-  background-position: top left;
+  background-image: url("https://estebanavon.github.io/av/assets/img/avConciertoBackground.jpg");
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
 }
