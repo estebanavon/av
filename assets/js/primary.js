@@ -14,6 +14,5 @@ $(document).ready(function(){
         $(this).find('.sc-formfield-label').addClass('activeLabel');
     });
     $('.section').prepend('<h3 class="av-form-title">Registro al concierto Avon</h3>');
-    $('.section').prepend('<h3 class="av-decorator">Avon<br />Siempre<br />Contigo</h3>');
 
 });
