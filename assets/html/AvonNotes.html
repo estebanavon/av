@@ -1,157 +1,300 @@
 
-    <link rel="stylesheet" type="text/css" href="/FLDSuite/web/static/css/styles_scss.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="/FLDSuite/web/static/js/lwControlSl.js"></script>
-    <script src="/FLDSuite/web/static/js/lwInteraction.js"></script>
+<head>
+    <link rel="stylesheet" href="/dam/avon-mx/static/css/styles_scss.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@2.4.1/css/grid.min.css" />
+</head>
 
-
-    <section class="av-lw">
-        <aside>
-            <div class="av-intro">
-                <span class="flex-1"></span>
-                <div class="av-wrapper" id="tooltipText">
-                    <img src="/FLDSuite/web/static/images/liderazgo_web/lw-logo.png" alt="liderazgo Web" class="lw-logo av-hover active" />
-                    <span class="av-hover av-text negative">Aquí puedes encontrar los materiales indispensables para hacer crecer tu negocio.</span>
-                    <span class="av-hover av-text negative">Conoce los programas que tenemos para ti en las diferente campañas.</span>
-                    <span class="av-hover av-text negative">Conoce todos los detalles para lograr este  Beneficio</span>
-                    <span class="av-hover av-text negative">Conoce todo sobre la segunda y tercera ediciones de Vacaciones con Liderazgo Avon</span>
-                    <span class="av-hover av-text negative">Videos para conocer más sobre el negocio.</span>
-                    <span class="av-hover av-text negative">Realiza solicitudes de materiales para tu negocio en esta sección.</span>
-                </div>
-                <span class="flex-1"></span>
-                <button id="guideStart" class="av-link negative">Empezar tutorial</button>
-            </div>
-            <div class="av-recent">
-                <h3 class="av-subtitle negative">Documentos populares</h3>
-                <ol class="av-list av-list-item negative">
-                    <li><span>Díptico Fase 1</span><span class="av-list-spacer"></span><a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/Diptico_2020.pdf"  target="_blank"><span class="material-icons">visibility</span></a>
-                    </li>
-                    <li><span>Planograma</span><span class="av-list-spacer"></span><a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/Planograma_Actualizado_2020.pdf" target="_blank"><span class="material-icons">visibility</span></a>
-                    </li>
-
-                </ol>
-            </div>
-        </aside>
-
-
-
-        <section class="av-section-container">
-            <span class="av-button-back">
-                <i class="material-icons av-lg-icons">arrow_back</i>
-            </span>
-
-
-            <div class="av-section-title">
-                <i class="material-icons av-lg-icons">work_outline</i>
-                <span>Herramientas para tu negocio</span>
-            </div>
-            <div class="av-section" data-av="0">
-                <div class="av-section-select sub unable" id="guide1">
-                    <span>Herramientas generales</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content"></div>
-            </div>
-            <div class="av-section" data-av="1">
-                <div class="av-section-select sub unable">
-                    <span>Comunicados</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content"></div>
-            </div>
-            <div class="av-section" data-av="2">
-                <div class="av-section-select sub unable">
-                    <span>Prospección</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content"></div>
-            </div>
-            <div class="av-divider"></div>
-            <div class="av-section-title">
-                <i class="material-icons av-lg-icons">description</i>
-                <span>Apoyos de temporada</span>
-            </div>
-            <div class="av-section" data-av="3">
-                <div class="av-section-select sub unable">
-                    <span>Conversiones y certificaciones</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content"></div>
-            </div>
-            <div class="av-section" data-av="4">
-                <div class="av-section-select sub unable">
-                    <span>Celaya</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content"></div>
-            </div>
-            <div class="av-section" data-av="5">
-                <div class="av-section-select sub unable">
-                    <span>Retención</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content"></div>
-            </div>
-            <div class="av-divider"></div>
-            <div class="av-section" data-av="7">
-                <div class="av-section-select unable">
-                    <i class="material-icons av-lg-icons">local_hospital</i>
-                    <span>Programa IMSS</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content">
-                </div>
-            </div>
-            <div class="av-section" data-av="8">
-                <div class="av-section-select unable">
-                    <i class="material-icons av-lg-icons">card_travel</i>
-                    <span>Vacaciones con Liderazgo</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content">
-                </div>
-            </div>
-            <div class="av-section" data-av="6">
-                <div class="av-section-select unable" id="videosSection">
-                    <i class="material-icons av-lg-icons">movie_creation</i>
-                    <span>Videos</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content"></div>
-            </div>
-            <div class="av-section" data-av="9">
-                <div class="av-section-select unable">
-                    <i class="material-icons av-lg-icons">article</i>
-                    <span>Solicitud de materiales</span>
-                    <span class="av-selection-spacer"></span>
-                    <i class="material-icons av-lg-icons">keyboard_arrow_right</i>
-                </div>
-                <div class="av-list-content">
-                    <iframe class="av-iframe" src="https://avon.co1.qualtrics.com/jfe/form/SV_9t7GZnEPgURIEjH"></iframe>
-                </div>
-            </div>
-            <div class="av-section">
-                <a href="/SLSuite/vendorLinksOne.page?linkid=44" target="_blank" class="av-section-select unable">
-                    <i class="material-icons av-lg-icons">arrow_forward</i>
-                    <span>Acompáñame</span>
-                </a>
-            </div>
-            <div class="av-section">
-                <a href="" target="_self" class="av-section-select unable">
-                    <i class="material-icons av-lg-icons">insert_drive_file</i>
-                    <span>Entrenamiento</span>
-                </a>
-            </div>
-        </section>
+<section class="av-container">
+    <section class="av-title-container">
+        <h2 class="av-title-text">Términos y condiciones<br>Nombra Fácil</h2>
+        <div class="av-spacer"></div>
     </section>
+    <div class="row av-row" style="text-align: justify;">
+        <div class="col">
+            <h3 class="av-subtitle">CLAÚSULAS</h3>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">PRIMERA. - DEFINICIONES. </h3>
+            <div class="av-text">
+                <span class="av-highlight">CAMPAÑA</span>
+                - Significa el periodo durante el cual la REPRESENTANTE podrá comprar los PRODUCTOS que aparezcan en el CATÁLOGO correspondiente. En cada CATÁLOGO aparecerá el periodo durante el cual estarán a la venta los PRODUCTOS en él contenidos. 
+            </div>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <p class="av-text">
+                <span class="av-highlight">CATÁLOGO.</span> - Significan las publicaciones que en cada CAMPAÑA realiza AVON para la comercialización de sus PRO-DUCTOS, promociones y ofertas de los mismos. Dichas publicaciones pueden ser impresas o virtuales, e incluyen de manera enunciativa, folletos, volantes, mini folletos o cualquier otra publicación realizada periódicamente por AVON. Cuyo costo será pagado por la REPRESENTANTE. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">DEMOS.</span> - Significan los PRODUCTOS nuevos que AVON introduce en el mercado en forma anticipada a su comercialización normal y a un precio distinto del PRECIO DE VENTA SUGERIDO y del PRECIO DE VENTA PREFERENTE y que la REPRESENTANTE podrá adquirir para sí o para la demostración de los mismos en su actividad de reventa, cuando ella decida desarrollar esta actividad. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">DEVOLUCIÓN DE PEDIDO COMPLETO.</span> - Es cuando la REPRESENTANTE, por causas imputables a ella, NO recibe en la fecha y términos convenidos con AVON, el pedido de PRODUCTOS cuya orden realizó con anterioridad y por ello los PRODUCTOS son devueltos a AVON. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">FECHA DE VENCIMIENTO.</span> - Significa la fecha límite en que la REPRESENTANTE debe pagar el precio de los PRODUC-TOS solicitados. Esta fecha será determinada por AVON, quién podrá modificarla de tiempo en tiempo, lo que dará a conocer a la REPRESENTANTE por los medios acordados en este contrato; la fecha referida aparece en la LISTA DE SURTIDO O ESTADO DE CUENTA bajo el rubro “FECHA DE VENCIMIENTO”. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">NOMBRAMIENTO.</span> - Significa el documento que contiene los datos generales de la REPRESENTANTE y que es llenado simultáneamente a la firma del presente contrato; la REPRESENTANTE ratifica con la firma del presente Contrato que los datos generales correspondientes a su persona son verídicos y los comprueba con los documentos que anexa al presente Contrato. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">ÓRDEN DE COMPRA.</span> - Significa la solicitud de compra de los PRODUCTOS que elaboran y entregan las REPRESEN-TANTES a AVON, en los formatos que de forma electrónica, en papel, vía telefónica, o cualquier otro medio que AVON ponga a disposición de la REPRESENTANTE. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">LISTA DE SURTIDO O ESTADO DE CUENTA.</span> - Significa el documento en papel o a través de medios electrónicos que contiene el detalle de los PRODUCTOS solicitados por la REPRESENTANTE en la ÓRDEN DE COMPRA y el monto total de su adeudo por esa compra y demás conceptos detallados en este Contrato. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">PRECIO DE VENTA PREFERENTE.</span> - Significa el precio al que AVON vende los PRODUCTOS a la REPRESENTANTE, y que será inferior al PRECIO DE VENTA SUGERIDO, una vez descontado del impuesto al valor agregado de hasta en un treinta por ciento (30%) tratándose de cosméticos, fragancias, productos para el cuidado de la piel y la higiene personal, joyería y lencería y hasta en un veinte por ciento (20%) del PRECIO DE VENTA SUGERIDO, en los demás productos del CATÁLOGO denominado Moda y Hogar. En las ofertas y promociones, y solo cuando la REPRESENTANTE cumpla con los requisitos de estas, pagará a AVON como PRECIO DE VENTA PREFERENTE el menor del que aparezca referido para los PRODUCTOS de esas ofertas y promociones en los CATÁLOGOS correspondientes. 
+            </p>
+            <p class="av-text">
+                Asimismo, AVON podrá determinar de tiempo en tiempo, para los PRODUCTOS en general, por línea, por volumen de compra, por periodos de tiempo específicos, o dirigidos a un público consumidor en especial, variaciones a los porcentajes referidos en esta definición. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">PRECIO DE VENTA SUGERIDO.</span> - Significa el precio de los PRODUCTOS al cual AVON sugiere a la REPRESENTANTE en caso de revender los PRODUCTOS a terceros, si así lo decidiera la REPRESENTANTE y que aparece en los CATÁLOGOS. El PRECIO DE VENTA SUGERIDO incluye el impuesto al valor agregado y demás contribuciones que deban trasladarse por la venta de los PRODUCTOS de la REPRESENTANTE a sus propios clientes. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">PRECIO DE REFERENCIA.</span> - Significa el precio que aparece en la LISTA DE SURTIDO o ESTADO DE CUENTA y que será utilizado por AVON para realizar el cálculo de los beneficios derivados de los programas de incentivos, Club de Privilegios y demás programas que AVON determine periódicamente. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">PRODUCTOS.</span> - Significan los cosméticos, productos de belleza, fragancias, productos para la higiene y el cuidado personal, ropa, joyería, accesorios, artículos para el hogar y demás bienes contenidos en los CATÁLOGOS, que AVON comercializa y que ostentan las Marcas. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">SISTEMA DE VENTA DIRECTA.</span> - Significa el sistema de ventas fuera de un local comercial, en el que el ofrecimiento de bienes y/o servicios a los consumidores finales o clientes de casa en casa, de persona a persona, mediante una explicación o demostración de los PRODUCTOS contenidos en los CATÁLOGOS. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">TERRITORIO.</span> - Significan los Estados Unidos Mexicanos. 
+            </p>
+            <p class="av-text">
+                <span class="av-highlight">TRANSPORTISTA.</span> - Significa la empresa de transporte contratada por AVON para hacer la entrega de los PRODUC-TOS en el domicilio de la REPRESENTANTE. 
+            </p>
+            <p class="av-text">
+                Los términos Datos Personales, Tratamiento y Responsable tendrán el significado que les confiere la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (“LFPD”). 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                SEGUNDA. - OBJETO. 
+            </h3>
+            <p class="av-text">
+                AVON en este acto conviene en suministrar a la REPRESENTANTE los PRODUCTOS que ésta le solicite mediante las ÓRDENES DE COMPRA a un PRECIO DE VENTA PREFERENTE, que podrá ser pagado por la REPRESENTANTE en forma diferida en o antes de la FECHA DE VENCIMIENTO, y que la REPRESENTANTE adquiera para su consumo personal o si así lo decide, para reventa exclusivamente bajo el SISTEMA DE VENTA DIRECTA, utilizando para ello los CATÁLOGOS de AVON en el TERRITORIO. La emisión de ÓRDENES DE COMPRA por la REPRESENTANTE será considerada como la aceptación de los términos y condiciones de este Contrato. AVON no autoriza la reventa de los PRODUCTOS, en locales comerciales abiertos al público, en la vía pública, sea en los denominados “tianguis” y/o en puestos conocidos como “comercio ambulante” o “informal”. La REPRESENTANTE no tiene obligación de comprar cantidad alguna de PRODUCTOS a AVON. En el supuesto de que la REPRESENTANTE decida revender a terceros los PRODUCTOS que compre de AVON, ambas partes reconocen que esa actividad de reventa será una actividad comercial totalmente independiente y propia, la realizará bajo su administración, con sus propios medios y tiempos y de exclusiva responsabilidad de la REPRESENTANTE. La celebración del presente Contrato tiene por objeto regular la compraventa periódica de los PRODUCTOS entre AVON y la REPRESENTANTE, por lo que la REPRESENTANTE no prestará ni tendrá obligación de prestar servicio alguno a AVON por lo que ésta no está subordinada ni tiene obligación alguna de obediencia, dependencia y/o exclusividad con AVON, pudiendo dedicarse a comprar y/o revender los PRODUCTOS el tiempo que ella decida y considere conveniente utilizando sus propios medios, pudiendo vender, simultáneamente cualquier otro tipo de productos de otras empresas, incluyendo aquéllos que sean similares a los PRODUCTOS y/o realizar cualquier otro tipo de actividad o negociación mercantil o de cualquier otra naturaleza. 
+            </p>
+            <p class="av-text">
+                Como contraprestación por los NOMBRAMIENTOS EFECTIVOS que realice la REPRESENTANTE, AVON  le entregará a ésta los premios y/o regalos y/o apoyos económicos, que en su caso estén vigentes en la fecha del nombramiento efectivo si se cumplen totalmente los requisitos del NOMBRAMIENTO EFECTIVO; adicionalmente pagará a la REPRESENTANTE las comisiones variables indicadas en el CONTRATO, cuando las NUEVAS REPRESENTANTES lleven a cabo la compra de los PRODUCTOS en los términos y condiciones existentes en el momento de compra y establecidos por AVON.
+            </p>
+            <p class="av-text">
+                El precio al cual la REPRESENTANTE pagará a AVON los PRODUCTOS que compre, será el PRECIO DE VENTA PREFERENTE, mismo que deberá ser pagado por la REPRESENTANTE en forma diferida a más tardar en los plazos señalados en la cláusula QUINTA del presente. 
+            </p>
+            <p class="av-text">
+                Los porcentajes referidos en la definición del PRECIO DE VENTA PREFERENTE, y los demás términos y condiciones de este contrato, podrán ser modificados periódicamente por AVON, señalando la modificación de que se trate, en el CATÁLOGO, o notificando dicha modificación a la REPRESENTANTE, directamente mediante aviso por escrito; en este último caso, las modificaciones podrán ser enviadas en la sección de avisos del resumen del ESTADO DE CUENTA o factura que en su caso AVON le entregue o expida a la REPRESENTANTE con los PRODUCTOS comprados o por cualquier otro medio indubitable, como la página de AVON en Internet avon.mx y www.mx.avon.com. Se entenderá expresamente aceptada la modificación de que se trate, cuando la REPRESENTANTE realice ÓRDENES DE COMPRA con posterioridad a la notificación que AVON le hubiere enviado o notificado en los términos referidos.
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <div class="av-subtitle left">
+                TERCERA. - MECANISMO DE COMPRAVENTA DE LOS PRODUCTOS. 
+            </div>
+            <p class="av-text">
+                La REPRESENTANTE para comprar los PRODUCTOS deberá entregar a AVON por cualquier medio escrito o electrónico autorizado por AVON, incluyendo de manera enunciativa pero no limitativa, formato en papel, correo electrónico, mensaje telefónico, o en las páginas, avon.mx y www.mx.avon.com las ÓRDENES DE COMPRA dentro de los plazos establecidos para ello por AVON en cada CAMPAÑA; AVON podrá poner a disposición de la REPRESENTANTE nuevas alternativas electrónicas, sitios de Internet o páginas en redes sociales para realizar su ORDEN DE COMPRA, notificando la disponibilidad de las mismas en las formas referidas en la CLAUSULA SEGUNDA anterior. La REPRESENTANTE reconoce que será responsable del uso que realice de las herramientas electrónicas que AVON ponga a su disposición, así como de los contenidos que ingrese a las redes sociales, por lo que se obliga a mantener a AVON en paz y a salvo de cualquier acción, procedimiento o litigio relacionado o derivado de dicho uso. Así mismo, la REPRESENTANTE acepta que cualquier información que ella incorpore a los sitios electrónicos o redes sociales que AVON pone a su disposición quedará en propiedad de AVON. 
+            </p>
+            <p class="av-text">
+                Para el cumplimiento de los derechos y obligaciones derivados de este contrato, así como la administración, registro y seguimiento de las operaciones de compra de productos que realice la REPRESENTANTE, AVON le asignará a la REPRESENTANTE un número de registro, el cual estará visible en la LISTA DE SURTIDO y al cual deberá hacer referencia para colocar el pedido y en general para atender cualquier solicitud relativa al cumplimiento del objeto de este Contrato. 
+            </p>
+            <p class="av-text">
+                AVON entregará a la REPRESENTANTE por conducto del TRANSPORTISTA los PRODUCTOS en el domicilio de esta última en las fechas que para tal efecto tenga establecidas en el calendario operativo de AVON y que de tiempo en tiempo dará a conocer a la REPRESENTANTE. Si por causas ajenas a AVON, caso fortuito o por fuerza mayor, la REPRE-SENTANTE no recibe los PRODUCTOS en las fechas originalmente establecidas por AVON, ambas partes acuerdan que AVON podrá entregarlos dentro de los cuarenta y cinco (45) días de calendario siguientes a la fecha inicial programada de entrega. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE reconoce y acepta que puede optar por revender los PRODUCTOS que adquiere en propiedad, los DEMOS son una herramienta efectiva para el desarrollo de su actividad empresarial/comercial independiente y que le permiten promocionar los PRODUCTOS; por lo tanto, la REPRESENTANTE podrá adquirir los DEMOS en los términos y condiciones de pago que AVON establezca para cada caso y se obliga a pagar a AVON el precio de los DEMOS que haya solicitado, en las fechas que para tal efecto se establezcan. 
+            </p>
+            <p class="av-text">
+                AVON se reserva el derecho de no entregar los PRODUCTOS a la REPRESENTANTE, sin responsabilidad de ninguna naturaleza para AVON, especialmente cuando: 1. La REPRESENTANTE no haya cubierto el pago del pedido anterior o tenga un adeudo vencido con AVON. 2. Los PRODUCTOS solicitados estén agotados en los inventarios de AVON, 
+            </p>
+            <p class="av-text">
+                3. Caso Fortuito o Fuerza Mayor. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE otorga en este acto a AVON, su consentimiento expreso para el caso de que el PRODUCTO solicitado en la ORDEN DE COMPRA este agotado, AVON lo pueda sustituir por otro de características de aplicación, uso, resultado, calidad, cantidad, precio, etc., similares al originalmente solicitado. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE reconoce que AVON incurre en diversos gastos administrativos relacionados con el manejo y administración de su cuenta y entiende que dichos gastos pueden variar dependiendo del monto de la ÓRDEN DE COMPRA. La REPRESENTANTE se obliga a pagar a AVON la cantidad correspondiente por concepto de gastos administrativos y manejo de cuenta de la REPRESENTANTE, al momento de pagar cada ÓRDEN DE COMPRA. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">CUARTA. - GASTOS.</h3>
+            <p class="av-text">
+                En caso de que el importe de la compra total de la REPRESENTANTE sea menor a $850.00 (OCHOCIENTOS CINCUENTA PESOS 00/100 M.N.) del PRECIO DE VENTA PREFERENTE, (monto que no incluye DEMOS, ayudas y ventas de liquidación) en cualquier CAMPAÑA, la REPRESENTANTE se obliga a pagar a AVON una cantidad de $65.00 (SESENTA Y CINCO PESOS 00/100 M.N.) más el impuesto al valor agregado y demás contribuciones que se causen por concepto de gastos de transportación, envío y manejo de los PRODUCTOS que hubiera solicitado. 
+            </p>
+            <p class="av-text">
+                Esta cantidad podrá ser modificada por AVON de tiempo en tiempo, mediante aviso a la REPRESENTANTE en la forma y términos de la cláusula SEGUNDA. 
+            </p>
+            <p class="av-text">
+                Así mismo, La REPRESENTANTE, acepta que en caso de DEVOLUCIÓN de PEDIDO COMPLETO por causas no imputables a AVON, se obliga a pagar a AVON gastos de devolución, que serán determinados por AVON de tiempo en tiempo y que oportunamente le comunicará a la REPRESENTANTE en la forma y términos establecidos en la cláusula SEGUNDA. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE acepta que todas las ÓRDENES DE COMPRA estarán sujetas a la aprobación de AVON y se surtirán de acuerdo a sus inventarios o hasta agotar existencias, sin responsabilidad para AVON conforme lo establecido en la cláusula TERCERA. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <!--Cheked-->
+        <div class="col">
+            <h3 class="av-subtitle left">QUINTA. - FORMA DE PAGO DE LOS PRODUCTOS.</h3>
+            <p class="av-text">
+                Todas las operaciones de compra venta derivadas de este contrato serán bajo la modalidad de pago diferido; el plazo para el pago será determinado por AVON y será al menos de una CAMPAÑA, por lo que la REPRESENTANTE se obliga a realizar a AVON el pago en efectivo de cada ÓRDEN DE COMPRA en su totalidad, a más tardar en la FECHA DE VENCIMIENTO; sin embargo e independientemente de la FECHA DE VENCIMIENTO, la entrega de los PRODUCTOS correspondientes a la ÓRDEN DE COMPRA inmediata posterior, sólo se hará si la REPRESENTANTE realizó el pago de la ORDEN DE COMPRA inmediata anterior y o cualquier otra obligaciones de pago inherentes a este Contrato antes de la fecha de entrega de la siguiente ORDEN DE COMPRA. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE podrá participar en programas y sistemas de compra, con plazos de pago diferentes al antes referido, que AVON implemente periódicamente; lo anterior, siempre que la REPRESENTANTE cumpla con las bases y requisitos establecidos por AVON en cada programa. Los programas mencionados pueden ser de manera enunciativa pero no limitativa, de pagos a plazos, sistemas de apartado, pago anticipado, etc. Los programas referidos serán puestos a disposición de la REPRESENTANTE a través del CATALOGO y/o AVON CONTIGO y/o el sitio de internet de AVON www.mx.avon.com o avon.mx, o cualquier otro medio que AVON considere conveniente y notifique a la REPRESENTANTE en términos de lo establecido en la cláusula SEGUNDA. En todo caso, la REPRESENTANTE deberá consultar las bases de cada programa en el sitio de internet antes mencionado, o en cualquier otro que AVON le indique. Todas las ÓRDENES DE COMPRA que la REPRESENTANTE realice al amparo de cualquier programa, cumpliendo con los requisitos y bases del mismo, la obligarán en los términos y condiciones del programa respectivo. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE realizará el pago del PRECIO DE VENTA PREFERENTE y demás cargos detallados en la LISTA DE SURTIDO a AVON en las sucursales bancarias o en cualquier otro establecimiento o medio de recepción de pagos o por cualquier otro medio que AVON tenga autorizados para tal efecto o pueda autorizar en el futuro, que dará a conocer a la REPRESENTANTE en la forma y términos referidos en la cláusula SEGUNDA. En su caso, la REPRESENTANTE podrá realizar el pago de los PRODUCTOS comprados a AVON por cualquier vía o medio electrónico que AVON ponga a su disposición y que le comunique oportunamente. 
+            </p>
+            <p class="av-text">
+                Cualquier pago de los PRODUCTOS efectuado por la REPRESENTANTE por un medio o persona diferentes a las seña-ladas en esta cláusula, no será reconocido por AVON. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE está de acuerdo en pagar a AVON con cada ORDEN DE COMPRA que realice, el costo de uno o diversos paquetes de CATALOGOS impresos de las CAMPAÑAS subsecuentes, los cuales serán entregados por Avon con los PRODUCTOS solicitados, lo cual le permitirá conocer los PRODUCTOS que AVON comercializará en dichas CAMPAÑAS. El costo de los CATÁLOGOS será determinado por AVON de tiempo en tiempo y deberá ser pagado por la REPRESENTANTE al momento de realizar el pago de los PRODUCTOS recibidos a más tardar en la FECHA DE VENCI-MIENTO y el cual se verá reflejado en la LISTA DE SURTIDO de la campaña. 
+            </p>
+            <p class="av-text">
+                En caso de que la REPRESENTANTE no realice ÓRDEN DE COMPRA posterior, no reciba los PRODUCTOS solicitados en su última ORDEN DE COMPRA por falta de pago de las ORDENES DE COMPRA o por cualquier saldo pendiente de pago o este contrato se dé por terminado, la REPRESENTANTE se obliga a pagar a AVON el saldo total del monto adeudado, de forma inmediata, más los intereses moratorios que se devenguen; a partir de la FECHA DE VENCIMIENTO del adeudo correspondiente a una tasa anual equivalente a la TIIE (Tasa de Interés Interbancario Exchange) a 28 días más 20 (veinte) puntos porcentuales. Adicionalmente, La REPRESENTANTE pagará a AVON los gastos administrativos de cobranza en que incurra AVON, para hacer efectivo el pago de la obligación contenida en esta cláusula, en el entendido que los mismos podrán ser de hasta el Treinta y Cinco por ciento (35%) del monto total adeudado. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <p class="av-subtitle left">SEXTA. - AVISO DE PRIVACIDAD E INFORMACIÓN.</p>
+            <p class="av-text">
+                AVISO DE PRIVACIDAD: Avon Cosmetics, S. de R. L. de C.V. (AVON) con domicilio en Boulevard Manuel Ávila Camacho Número 32, Piso 10, Colonia Lomas de Chapultepec, C.P. 11000, Delegación Miguel Hidalgo, Ciudad de México, es responsable de la obtención, uso, tratamiento y protección de tus datos personales a través de su departamento de Servicio a la Representante, y al respecto te informa lo siguiente: 
+            </p>
+            <p class="av-text">
+                Al proporcionar tus Datos Personales, autorizas a AVON a tratarlos directamente o a través de sus controladoras, filiales, subsidiarias, empleados o terceros, para las finalidades necesarias y no necesarias que se detallan a continuación. 
+            </p>
+            <p class="av-text">
+                Finalidades necesarias. Los datos personales que nos proporcionas serán utilizados para las siguientes finalidades necesarias para el cumplimiento del objeto y obligaciones establecidas en el contrato mercantil que celebraste con AVON: 1) Procesamiento de tu solicitud de pedido, 2) Para realizar ajustes, complementos o modificaciones a tus pedidos de cada campaña, 3) Entrega de los productos que solicitas y promocionales en cada campaña, 4) Proporcionarte elementos o herramientas que promuevan el desarrollo y mejora de tu negocio, 5) Informarte sobre promociones, ofertas y descuentos, el lanzamiento de nuevos productos, cambios de precios, disponibilidad de productos, condiciones, formas de pago y beneficios en los productos, 6) Administración de tu cuenta, que incluye el almacenamiento y actualización de documentación y datos, 7) Procesamiento de pagos y gestión de cobranza, 8) Proporcionar tus datos a terceros para dar cumplimiento a todas las obligaciones antes mencionadas y para ponerte en contacto con posible clientes, 9) Proporcionarte servicios de atención a clientes, 10) Programas de lealtad y recompensas, 11) Aclaraciones e investigaciones, 12) Notificación de retiro de productos y aspectos de seguridad y 13) Tus datos también serán utilizados con fines mercadotécnicos, publicitarios y de prospección comercial, envío de ofertas personalizadas y recomendaciones de productos. 
+            </p>
+            <p class="av-text">
+                Finalidades no necesarias. Asimismo, utilizaremos tus datos personales para diversas finalidades que no son necesarias para cumplir con las obligaciones derivadas del contrato mercantil que celebras con AVON, pero que nos permiten ofrecerte mejores productos y servicios de acuerdo con tus preferencias y necesidades, que incluyen: 1) Analizar tu comportamiento comercial, 2) Realizar consultas y estudios de mercado, estadísticos y de mercadotecnia, 3) Elaborar tu perfil de consumo 4) Invitarte a convertirte en Empresaria, darte a conocer el modelo de liderazgo de AVON y 4) Invitarte y participar en eventos especiales. Si no deseas que tus datos personales sean tratados para estos fines adicionales puedes informárnoslo al momento de firmar el contrato, marcando con una X en el espacio que aparece al final del clausulado del mismo y firmar en el espacio indicado, también podrás hacerlo ingresando a nuestros sitios avon.mx y www.mx.avon.com, en la sección “da click aquí” proporcionando tus datos e informándonos tu negativa, sin que ello afecte tu relación comercial con AVON. 
+            </p>
+            <p class="av-text">
+                Si requieres mayor información acerca del tratamiento de tus datos personales, de los terceros a quienes compartimos tu información y de la forma en que puedes ejercer tus derechos ARCO (acceso, rectificación, cancelación y oposición) puedes ingresar a nuestro aviso de privacidad integral a través de nuestros sitios avon.mx y www.mx.avon.com para visualizarlo. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE reconoce y acepta que sus datos personales que aparecen en este Contrato son veraces y correctos, lo que comprueba con los originales de los documentos que en copia simple se anexan al presente, que los proporcionó voluntariamente para la celebración del presente Contrato; asimismo que la firma que aparece de su puño y letra en el Nombramiento y en el Contrato es la que usa en todos los documentos públicos y privados y con ella manifiesta libre y de manera expresa su voluntad de celebrar el presente Contrato y que no existen vicios del consentimiento en la celebración del Contrato y Nombramiento, en la entrega de sus datos personales y los documentos que los acreditan. 
+            </p>
+            <p class="av-text">
+                En esa virtud, en términos del artículo 28 de la Ley para Regular las Sociedades de Información Crediticia y el artículo 8 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, la REPRESENTANTE en este acto expresamente autoriza a AVON, a realizar por ella o por conducto de terceros que contrate para tal efecto, las investigaciones que al respecto considere necesarias, incluyendo la solicitud de información ante Sociedades de Información Crediticia para verificar su historial crediticio durante el tiempo de vigencia de este contrato, así como el Tratamiento de Datos Personales en los términos del aviso de privacidad integral de AVON. AVON se obliga a mantener absoluta confidencialidad del contenido de los reportes de crédito que reciba, así como de los Datos Personales de la REPRESENTANTE y a tomar las medidas de seguridad que sean necesarias para limitar el uso o divulgación de los Datos Personales. 
+            </p>
+            <p class="av-text">
+                Así mismo, la REPRESENTANTE declara que conoce la naturaleza y alcance de la información que AVON solicitará, del uso que AVON hará de tal información y de que AVON podrá realizar consultas periódicas de su historial crediticio, consintiendo que esta autorización se encuentre vigente por un periodo de tres (3) años contados a partir de la fecha de su expedición y en todo caso durante el tiempo que se mantenga vigente la relación comercial derivada del presente. 
+            </p>
+            <p class="av-text">
+                La REPRESENTANTE acepta que un original de este contrato quede en poder de AVON y/o de la Sociedad de Información Crediticia consultada para efectos de control y cumplimiento del artículo 28 de la Ley para Regular las Sociedades de Información Crediticia o bajo la custodia de un Tercero. 
+            </p>
+            <p class="av-text">
+                La Representante se obliga a notificar a AVON inmediatamente en caso de que cambie de domicilio, así como de cualquier cambio en los datos personales que proporcionó a Avon con motivo de la celebración de este Contrato; la representante acepta y reconoce que libera de cualquier responsabilidad legal a Avon por el incumplimiento a esta obligación. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                SÉPTIMA. - USO DE IMAGEN Y NOMBRE. 
+            </h3>
+            <p class="av-text">
+                La Representante otorga a Avon y/o sus Partes relacionadas, el derecho de usar en cualquier parte del mundo, su nombre, imagen, fotografías, videos, retrato o voz, así como declaraciones por escrito o cualquier testimonio que haya emitido de los productos, servicios de AVON en medios de electrónicos, escrito y/o visuales y que AVON tenga de ella por eventos, foros, o programas en los que haya participado de manera presencial o mediante medios electrónicos o escritos con motivo de la relación mercantil que tiene con AVON por su estatus de Representante; este uso se otorga, en forma permanente, indefinida y gratuita, por lo que renuncia a cualquier indemnización o contraprestación por el derecho de uso que confiere a Avon, en cualquier medio material y/o de difusión que AVON decida, bajo un marco de legalidad y respeto a la vida privada, buenas costumbres y las leyes de las materias correspondientes . A la firma del presente la Representante reconoce y acepta que cualquier publicidad de AVON que incluya su imagen o retrato, cuenta con la debida autorización y, por lo tanto no incurre en ningún incumplimiento o responsabilidad alguna por el uso de la misma. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                OCTAVA. - OTROS PROGRAMAS. 
+            </h3>
+            <p class="av-text">
+                La REPRESENTANTE podrá solicitar o aceptar la invitación de AVON para incorporarse a cualesquiera de los programas de comercialización de PRODUCTOS que AVON tiene establecidos o que pueda establecer en el futuro, tales como programa de liderazgo, multinivel, prospectación, etc., debiendo para ello cumplir con los requerimientos que AVON tenga establecidos y en su caso firmar los contratos o documentos necesarios para ello. 
+            </p>
+            <p class="av-text">
+                AVON podrá establecer de tiempo en tiempo, programas de premios e incentivos por las compras ordenadas y realizadas por la REPRESENTANTE, los que estarán sujetos a los términos que AVON establezca y que notifique a la REPRESEN-TANTE en los medios referidos en este contrato; los bienes y/o productos que se ofrezcan en tal concepto, podrán ser sustituidos por otros de valor y/o características similares a los originalmente ofertados, mediando únicamente el aviso o notificación que Avon haga a la REPRESENTANTE, de forma previa o simultánea a la fecha de entrega de los mismos. 
+            </p>
+            <p class="av-text">
+                Para calcular los beneficios que en su caso correspondan a la REPRESENTANTE por los programas de incentivos que en su caso establezca AVON durante la vigencia del Contrato, incluyendo de manera enunciativa pero no limitativa el denominado Club de Privilegios, se considerará el PRECIO DE REFERENCIA, así como los términos y condiciones establecidos en cada programa por AVON. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                NOVENA. - GARANTIA DE LOS PRODUCTOS.
+            </h3>
+            <p class="av-text">
+                Las garantías de los PRODUCTOS serán las que establezca AVON en el CATÁLOGO, o en su defecto el fabricante de los mismos. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                DÉCIMA- DURACIÓN. 
+            </h3>
+            <p class="av-text">
+                El presente contrato tendrá una duración indefinida, pero cualquiera de las partes podrá darlo por terminado en cualquier momento mediante aviso por escrito a la otra parte sin incurrir en responsabilidad alguna. También se dará por terminado el presente contrato, sin necesidad de aviso previo y sin responsabilidad para AVON o para la REPRESENTANTE, cuando la REPRESENTANTE deje de comprar los PRODUCTOS, o bien tenga saldos vencidos pendientes de pago. El hecho de dar por terminado el presente contrato no liberará a ninguna de las partes del cumplimiento de las obligaciones pendientes a su cargo, incluyendo el pago de cualquier cantidad que la REPRESENTANTE adeude en los términos del presente. La terminación del Contrato no dará lugar a pago alguno entre las Partes por concepto de compensación, indemnización, daños o perjuicios de ningún tipo ni por los gastos, inversiones o compromisos realizados en relación con este Contrato. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                DECIMA PRIMERA. IMPUESTOS. 
+            </h3>
+            <p class="av-text">
+                Todos los impuestos y demás contribuciones que se causen y deban pagarse con motivo de las obligaciones contenidas en el presente contrato, serán por cuenta de la parte a quien correspondan en los términos de la legislación fiscal aplicable. Los impuestos y demás contribuciones que se causen por los ingresos que obtenga la REPRESENTANTE por la reventa de los PRODUCTOS son responsabilidad exclusiva de la REPRESENTANTE. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                DÉCIMA SEGUNDA. JURISDICCIÓN. 
+            </h3>
+            <p class="av-text">
+                El presente Contrato es de naturaleza mercantil y se regirá en lo que no estuviere pactado por las disposiciones aplicables del Código de Comercio y no genera relaciones de subordinación ni dirección entre AVON y la REPRESENTANTE por tratarse de relaciones de tipo mercantil. Para el caso de cualquier controversia derivada de la aplicación de éste contrato y los términos y condiciones en él establecidos, las partes convienen en someterse a un procedimiento de mediación ante el Centro de Justicia Alternativa del Tribunal Superior de Justicia de la Ciudad de México, sólo en caso de que no se resuelva la controversia, convienen expresamente en someterse a la Jurisdicción de los Tribunales competentes en la Ciudad de México, por lo que renuncian a cualquier otro fuero o competencia que pudiera corresponderles en razón de sus domicilios presentes o futuros o por cualquier otra causa. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                DÉCIMA TERCERA. - TOTALIDAD DEL CONTRATO. 
+            </h3>
+            <p class="av-text">
+                Este contrato constituye la totalidad del acuerdo celebrado entre AVON y la REPRESENTANTE y deja sin efecto cualquier contrato o convenio que regule la compraventa de los PRODUCTOS, que hubieran firmado con anterioridad. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                DÉCIMA CUARTA. - MARCAS. 
+            </h3>
+            <p class="av-text">
+                La REPRESENTANTE reconoce, además, que no tiene ni adquirirá ningún derecho o interés en las marcas que sean propiedad o de las que sea licenciataria AVON, sus subsidiarias, filiales o controladoras (las “Marcas”). La REPRESENTANTE reconoce que el uso que en su caso realice de las Marcas será exclusivamente en los términos y condiciones que AVON le indique periódicamente, y redundará en el exclusivo beneficio de AVON o del titular de las Marcas. La REPRESENTANTE reconoce que la firma de este contrato no le otorga derecho alguno o licencia para el uso de las Marcas. 
+            </p>
+        </div>
+        <div class="av-spacer"></div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h3 class="av-subtitle left">
+                DÉCIMA QUINTA. - NOTIFICACIONES. 
+            </h3>
+            <p class="av-text">
+                Las partes convienen que todas las notificaciones que se realicen derivadas de, o relacionadas con este Contrato (Acuerdo) serán realizadas por escrito y podrán ser transmitidas por cualquier medio, incluyendo de manera enunciativa pero no limitativa, correo electrónico, mensaje de texto, documentos impresos, a través de la Gerente de Zona, del sitio de AVON avon.mx o www.mx.avon.com o por cualquier otro medio por el que las partes convengan en comunicarse. 
+            </p>
+        </div>
+    </div>
+</section>
