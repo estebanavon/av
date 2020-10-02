@@ -1,21 +1,15 @@
 $(document).ready(function(){
     
     
-    
-    
-    const campaignCurrent = 17;
-
-
-
-
-
-
+    var c = AvonAnalyticsObjex.Profile.campaignInfo;
+    const campaignCurrent = c.slice(6);
+    const yearCurrent = c.slice(0,4);
 
 
 
     const campaignPast = campaignCurrent - 1;
     const campaignOld = campaignCurrent - 2;
-    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15,brochures16,brochures17];
+    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15,brochures16,brochures17,brochures18];
     
     var brochuresConstructor = [brochuresWrapper[(campaignPast)],brochuresWrapper[campaignOld],brochuresWrapper[(campaignCurrent-3)]];
     var brochurePrint = ["","","",""];
@@ -54,7 +48,7 @@ $(document).ready(function(){
         let urlFile;
         switch (type){
             case "imb":
-                urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/2020'+ campaign(e) + '_0' + file +'/#/'
+                urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/'+ yearCurrent +''+ campaign(e) + '_0' + file +'/#/'
                 break
             default:
                 urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
@@ -166,12 +160,12 @@ $(document).ready(function(){
         }
         e++
     };
-    brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[2][0].type +'">'+
-                            '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[2][0].type,brochuresConstructor[2][0].file,2) +'\')" class="av-brochure-image">' +
-                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[2][0].type,2,brochuresConstructor[2][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                                '<div class="av-type '+ brochuresConstructor[2][0].type +'">'+ campaign(1) +'</div>' +
+    brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
+                            '<div style="background-image:url(\''+ imgUrl(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file,0) +'\')" class="av-brochure-image">' +
+                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[0][0].type,0,brochuresConstructor[0][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
+                                '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ campaign(0) +'</div>' +
                             '</div>' +
-                            '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[2][0].title +'</h3></div>' +
+                            '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[0][0].title +'</h3></div>' +
                         '</div>'
     
     $('#brochureContainer').prepend(brochurePrint[0]);

@@ -1167,6 +1167,12 @@ section.av-container.av-container-small .av-row {
   }
 }
 
+.av-defs {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .av-footer {
   padding: 6rem 4rem;
   background-color: #293132;
@@ -1625,7 +1631,6 @@ section.av-container.av-container-small .av-row {
 @media (min-width: 768px) {
   .section {
     width: 50% !important;
-    min-width: 600px;
   }
 }
 
@@ -1657,31 +1662,8 @@ section.av-container.av-container-small .av-row {
 }
 
 .section .av-form-title {
-  color: #181818;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 1.4rem;
-  margin-top: 0rem;
-  font-size: 1.3rem;
-  display: block;
-  padding: 0;
-}
-
-@media (min-width: 576px) {
-  .section .av-form-title {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .section .av-form-title {
-    font-size: 1.5rem;
-  }
-}
-
-.section .av-form-title.left {
-  text-align: left;
+  font-size: 24px;
+  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
 }
 
 .smartcapture-submit-button-wrapper {
