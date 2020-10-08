@@ -1,49 +1,23 @@
-const imssSection2020 = [
+const imssSection = [
     {
         name: 'Programa IMSS periodo A 2020 (C2 a C6)',
         file: 'IMSS_PERIODO_2020.pdf',
     },
-];
-const imssSection2019 = [
     {
-        name: 'Programa IMSS periodo C 2019',
-        file: 'C15_IMSS_PERIODO_C_2019.pdf',
+        name: 'Flyer IMSS Periodo C 2020',
+        file: 'Flyer_IMSS_Periodo_C_2020.pdf',
     },
     {
-        name: 'Ganadoras de periodo B 2019',
-        file: 'Ganadoras_Periodo_B.pdf',
-    },
-    {
-        name: 'Programa IMSS Periodo B 2019',
-        file: 'Triptico_IMSS_Periodo_B.pdf',
-    },
-    {
-        name: 'Programa IMSS Periodo A 2019',
-        file: 'Programa_IMSS_Periodo_A_2019_VF.pdf',
-    },
-    {
-        name: 'Flyer IMSS para Empresarias periodo C',
-        file: 'flyer_IMSS_empresarias_periodo_C.pdf',
+        name: 'IMSS C9 a C13',
+        file: 'IMSS_C9-C13.pdf',
     },
 ];
-const vacationsSection2020 = [
+
+
+const vacationsSection = [
     {
-        name: 'Bases Vacaciones Tercera Edición Bloque A',
-        file: 'BloqueA_Vacaciones.pdf',
-    },
-];
-const vacationsSection2019 = [
-    {
-        name: 'Guía de Viaje para Ganadoras Bloque A',
-        file: 'GuiaVacaciones_BloqueA.pdf',
-    },
-    {
-        name: 'Guía de Viaje para Ganadoras Bloque B',
-        file: 'GuiaVacaciones_BloqueB.pdf',
-    },
-    {
-        name: 'Guía de Viaje para Ganadoras Bloque C',
-        file: 'GuiaVacaciones_BloqueC.pdf',
+        name: 'Bases Cambio de Vacaciones por Dinero en efectivo',
+        file: 'BASES_VACACIONES_2019_ADDENDUM.pdf',
     },
     {
         name: 'Lista Ganadoras Bloque A 2019',
@@ -71,33 +45,42 @@ const vacationsSection2019 = [
     },
 ];
 
+
 const videosSection = [
     {
-        name: 'Convocatoria - Historias de Éxito Empresarias 2018',
-        file: 'convocatoria_historias_exito_Empresarias_2018.pdf',
+        name: 'Ofrece 60/10',
+        file: 'Ofrece_60_10.mp4',
     },
     {
-        name: 'Entrevistas PATD Caballete',
-        file: 'avon_historias_exito_1.mp4',
+        name: 'Coreografía Vacaciones',
+        file: 'CoreografiaVacaciones.mp4',
     },
     {
-        name: 'Entrevistas PATD Nombramiento',
-        file: 'avon_historias_exito_2.mp4',
+        name: 'Video Institucional',
+        file: 'VideoInstitucional.mp4',
     },
     {
-        name: 'Entrevistas PATD Prospectar',
-        file: 'avon_historias_exito_3.mp4',
+        name: 'Vacaciones 2019',
+        file: 'Vacaciones2019.mp4',
     },
     {
-        name: 'Entrevistas PATD Terceros Pasos',
-        file: 'avon_historias_exito_4.mp4',
-    },
-    {
-        name: 'Sesión de fotos Liderazgo Avon 2017',
-        file: 'sesionFotos2017.mp4',
+        name: '12vo Encuentro de Empresarias',
+        file: '12EncuentroEmpresarias.mp4',
     },
 ];
 const generalToolsSection = [
+    {
+        name: 'Anuncio para prospección en periódicos',
+        file: 'AnuncioLiderazgo.pdf',
+    },
+    {
+        name: 'Bases 60/15 C-11 A C-14 2020',
+        file: 'BASES_60-15_C11_C14_2020.pdf',
+    },
+    {
+        name: 'ADDENDUM BONO TL',
+        file: 'ADDENDUM_BONO_TL.pdf',
+    },
     {
         name: 'Díptico Fase 1 Actualizado 2020',
         file: 'Diptico_2020.pdf',
@@ -118,9 +101,16 @@ const generalToolsSection = [
         name: 'Acuerdo TL',
         file: 'Avon_Acuerdo_Empresaria_TL.pdf',
     },
+
+
+
     {
-        name: 'Check List ROA',
-        file: 'check_list_roa.pdf',
+        name: 'Presentación 60/10',
+        file: 'LIDERAZGO_60_10.pdf',
+    },
+    {
+        name: 'ROA',
+        file: 'Avon_ROA_2017.pdf',
     },
     {
         name: 'Formato de Oportunidad de Ganancia Certificada',
@@ -131,26 +121,30 @@ const generalToolsSection = [
         file: 'hoja_retroalimentacion.pdf',
     },
     {
-        name: 'Flyer Acompáñame',
-        file: 'C14_Acompaname.pdf',
-    },
-    {
-        name: 'Cambios en Orden Mínima',
-        file: 'select',
-    },
-    {
-        name: 'Comunicado: Revisa el Correcto llenado de tus Nombramientos',
-        file: 'select',
-    },
-    {
         name: 'Hoja de oportunidad de ganancia',
         file: 'select',
     },
 ];
 const messagesToolsSection = [
     {
-        name: 'ADDENDUM BONO TL',
-        file: 'ADDENDUM_BONO_TL.pdf',
+        name: 'Flyer Acompáñame',
+        file: 'C14_Acompaname.pdf',
+    },
+    {
+        name: 'Alta de Cuentas Clabes',
+        file: 'flyerDigital_CuentaClabe.jpg',
+    },
+    {
+        name: 'Cambios en Orden Mínima',
+        file: 'C15_Orden_Minima.pdf',
+    },
+    {
+        name: 'Nuevo Calendario Liderazgo',
+        file: 'N_Calendario_Liderazgo2020.pdf',
+    },
+    {
+        name: 'Apoyo especial Empresarias TL que están por debajo de Ordenes Base',
+        file: 'Bases_de_Apoyo_especial.pdf',
     },
     {
         name: 'Prácticas Comerciales No Aceptadas por Avon ',
@@ -167,12 +161,28 @@ const messagesToolsSection = [
 ];
 const prospectionSection = [
     {
+        name: 'Plan 60-10 Digital',
+        file: 'Plan_60-10_Digital.pdf',
+    },
+    {
+        name: 'Plan 60-15 Digital',
+        file: 'Plan_60-15_Digital.pdf',
+    },
+    {
+        name: 'Check List ROA',
+        file: 'check_list_roa.pdf',
+    },
+    {
         name: 'Anuncio Prospección Liderazgo',
         file: 'AnuncioLiderazgo.pdf',
     },
     {
-    name: 'Díptico Liderazgo 60-10',
+        name: 'Díptico Liderazgo 60-10',
         file: 'Diptico_liderazgo_F.pdf',
+    },
+    {
+        name: 'Calendario de pagos 2020',
+        file: 'Calendario_L2020.pdf',
     },
     {
         name: 'Lona Fortaleza',
@@ -189,10 +199,6 @@ const prospectionSection = [
     {
         name: 'Lona Perseverancia, 150cms x 100cms',
         file: 'lona_liderazgo_perseverancia.tif',
-    },
-    {
-        name: 'ROA',
-        file: 'roa',
     },
     {
         name: 'Flyers Prospectar Empresarias a Color versión 1',
@@ -217,50 +223,14 @@ const prospectionSection = [
 ];
 const conversionsSection = [
     {
-        name: 'Cruzada de Certificaciones TL y PM C-5 a C-9',
-        file: 'Cruzada.pdf',
-    },
-    {
-        name: 'Conversiones Empresarias Mamá C-5 a C-9',
-        file: 'Conversiones_M.pdf',
-    },
-    {
-        name: 'Conversiones Empresarias PM C-5 a C-9',
-        file: 'Conversiones_P.pdf',
-    },
-    {
-        name: 'C2 a C4-2020 Conversiones PM',
-        file: 'CONVERSIONES_PM.pdf',
-    },
-    {
-        name: 'C2 a C4-2020 Conversiones Empresarias Mamá',
-        file: 'CONVERSIONES_EMPRESARIAS.pdf',
-    },
-    {
-        name: 'C2 a C3-2020 Cruzada de certificaciones',
-        file: 'CRUZADA_DE_CERTIFICACIONES.pdf',
-    },
-    {
-        name: 'C2 a C4-2020 Ejemplo Conversiones PM',
-        file: 'EJ_CONVERSIONES_PM.pdf',
-    },
-    {
-        name: 'C2 a C4-2020 Ejemplo Conversiones Empresarias Mamá',
-        file: 'EJ_CONVERSIONES_EMPRESARIAS.pdf',
-    },
-    {
-        name: 'C2 a C3-2020 Refuerzo Cruzada de cerficaciónes',
-        file: 'REFUERZO_CRUZADA.pdf',
-    },
-    {
-        name: 'Bono Navideño C-1 2020',
-        file: 'BASES_BONO_NAVIDENO.pdf',
+        name: 'Apoyo de Verano C-13 y C-14 2020',
+        file: 'Apoyo_verano_C13_C14.pdf',
     },
 ];
 const retentionSection = [
     {
-        name:'Apoyo por retención C-1 y C-2 2020',
-        file: 'Apoyo_retencion.pdf'
+        name:'.',
+        file: ''
     },
 ];
 const celayaSection = [
@@ -282,7 +252,7 @@ const celayaSection = [
     },
 ];
 
-var avConstructor = [generalToolsSection,messagesToolsSection,prospectionSection,conversionsSection,celayaSection,retentionSection,videosSection,imssSection2020,imssSection2019,vacationsSection2020,vacationsSection2019];
+var avConstructor = [generalToolsSection,messagesToolsSection,prospectionSection,conversionsSection,celayaSection,retentionSection,videosSection,imssSection,vacationsSection];
 var once = ["true","true","true","true","true","true","true","true","true","true"];
 
 var e = 0;
@@ -295,7 +265,7 @@ while (e < avConstructor.length){
             '<span>' + avConstructor[e][i].name + '</span>' +
             '<span class="av-list-spacer"></span>' +
             '<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span></a>' +
-            '<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download="'+ avConstructor[e][i].file +'"><span class="material-icons">cloud_download</span></a>'+
+            '<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" download><span class="material-icons">cloud_download</span></a>'+
             '</li>';
     }
     e++    

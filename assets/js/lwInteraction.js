@@ -1,5 +1,7 @@
 $(document).ready(function(){ 
     var guideVar = false;
+    var guideVar2 = false;
+    var guideVar3 = false;
     const imgRoute = "/FLDSuite/static/images/liderazgo_web";
     //const imgRoute = "./../img";
 
@@ -36,11 +38,8 @@ $(document).ready(function(){
         $(".av-section-container").removeClass("expand").siblings().children().eq(0).css("backgroundImage",img);
         $("#tooltipText, #guideStart").removeClass('disable');
         $(this).removeClass("unable");
+        $('.av-guide.last').hide().remove();
         
-        if (guideVar){
-            $('#guideC').hide().remove();
-            guideVar = false;
-        }
     });
     $('.av-section-select.unable').mouseenter(function(){
         let avdata = $(this).parent().attr("data-av");
@@ -82,28 +81,50 @@ $(document).ready(function(){
     
     
     
+
     $('#guideStart').click(function(){
         guideVar = true;
-        $('#guide1').append('<div id="guideA" class="av-guide"><p>01/03</p><h4>Selecciona alguna opción de tu menú</h4></div>');
-        $('#guideA').show('slow');
+        guideVar3 = true;
+        $('[data-av="0"]').append('<div class="av-guide 1"><p>01/03</p><h4>Selecciona alguna opción de tu menú</h4><br /><div class="av-button-tertiary">Siguiente</div></div>');
+        $('.av-guide.1').show('slow').css({
+            'top':'0%',
+            'left':'-46%',
+        });
         $(this).hide();
     });
-
-    $('.av-section-select').click(function(){
-        if (guideVar){
-            $(this).append('<div id="guideB" class="av-guide"><p>02/03</p><h4>Previsualiza o descarga tu archivo con estas opciones</h4></div>');
-            $('#guideB').show('slow');
-            $('#guideA').hide().remove();
+    $('[data-av="0"]').click(function(){
+        if (guideVar && guideVar3){
+            $(this).append('<div class="av-guide 2"><p>02/03</p><h4>Previsualiza o descarga tu archivo con estas opciones</h4><br /><div class="av-button-tertiary">Siguiente</div></div>');
+            $('.av-guide.2').show('slow').css({
+                'top':'13%',
+                'right':'26%',
+            });
+            $('.av-guide.1').hide().remove();
             $('.av-button-back').hide();
-        }
-    });
-    $('.av-list-content').click(function(){
-        if (guideVar){
-            $(this).append('<div id="guideC" class="av-guide"><p>03/03</p><h4>¡Listo! Regresa al menú principal.</h4><h4>!Así de sencillo!</h4></div>');
-            $('#guideC').show('slow');
-            $('#guideB').hide().remove();
+            guideVar3 = false
+            guideVar2 = true
+        } else if (guideVar && guideVar2){
+            $(this).append('<div class="av-guide last"><p>03/03</p><h4>¡Listo! Regresa al menú principal.</h4><h4>!Así de sencillo!</h4><br /><div class="av-button-tertiary">Terminar</div></div>');
+            $('.av-guide.last').show('slow').css({
+                'top':'8%',
+                'right':'68%',
+            });
+            $('.av-guide.2').hide().remove();
             $('.av-button-back').show();
+            guideVar = false;
+            guideVar3 = true;
+        } else if(guideVar2 && guideVar3) {
+            $('.av-guide.last').hide().remove();
+            let img = "url('"+ imgRoute +"/lw-i.jpg')"; 
+            $(".av-section-select").addClass("unable");
+            $(".av-list-content").removeClass("unable");
+            $(".av-recent").removeClass('disable');
+            $(this).siblings().show();
+            $(".av-section-container").removeClass("expand").siblings().children().eq(0).css("backgroundImage",img);
+            $("#tooltipText, #guideStart").removeClass('disable');
+            $(".av-button-back").removeClass("unable");
+            guideVar2 = false;
+            guideVar3 = false;
         }
     });
-
 });

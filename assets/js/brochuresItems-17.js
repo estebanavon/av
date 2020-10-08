@@ -20,6 +20,16 @@ const brochures17 = [
         file: '4',
         type: 'imb',
     },
+    {
+        title: 'Flyer preventa navidad 2020',
+        file: 'flyerPreventaXMAS2020.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Mini Folleto bicampañal',
+        file: 'minibrochureBicampanal.pdf',
+        type: 'flyer',
+    },
 
     // Constantes
 

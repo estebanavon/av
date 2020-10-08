@@ -864,7 +864,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .av-lg-icons {
