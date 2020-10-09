@@ -1613,6 +1613,9 @@ section.av-container.av-container-small .av-row {
   width: 100%;
   height: 100vh;
   margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .avLoaderMJ > div {

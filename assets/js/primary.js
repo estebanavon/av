@@ -13,5 +13,4 @@ $(document).ready(function(){
     //     $(this).find('input').focus().attr('placeholder', ''+avPlaceHolder+'').css('borderBottomColor','#7F28C4');
     //     $(this).find('.sc-formfield-label').addClass('activeLabel');
     // });
-    debbuger
 });
