@@ -1600,150 +1600,22 @@ section.av-container.av-container-small .av-row {
   color: #c08de8;
 }
 
-.layout.layout-canvas-a {
-  background-image: url("https://estebanavon.github.io/av/assets/img/avConciertoBackground.jpg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-}
-
-.section {
-  min-height: 100vh;
-  background-color: #fff;
-  margin: 0px !important;
-  padding: 7% 9%;
+.avLoaderMJ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (min-width: 768px) {
-  .section {
-    width: 50% !important;
-  }
-}
-
-.section .av-button-primary {
-  width: 312px;
-}
-
-.section > .columns {
-  width: auto !important;
-}
-
-.section .av-decorator {
-  display: none;
-  position: fixed;
-  bottom: 7%;
-  right: 3%;
-  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  opacity: 0.1;
-  font-size: 110px;
-  line-height: 80px;
-}
-
-@media (min-width: 992px) {
-  .section .av-decorator {
-    display: block;
-  }
-}
-
-.section .av-form-title {
-  font-size: 24px;
-  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
-}
-
-.smartcapture-submit-button-wrapper {
-  text-align: left !important;
-  margin-top: 25px;
-}
-
-.av-controls {
-  margin-bottom: 8px;
-  height: 60px;
-}
-
-.av-controls div.sc-formfield-label {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  -webkit-transform: translate(8px, 23px);
-          transform: translate(8px, 23px);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  display: inline-block;
-  z-index: 1;
-}
-
-.av-controls div.sc-formfield-label label {
-  z-index: 1;
-}
-
-.av-controls div.sc-formfield-label.activeLabel,
-.av-controls div.sc-formfield-label.activeLabel label {
-  -webkit-transform: translate(5px, 0px);
-          transform: translate(5px, 0px);
-  text-transform: uppercase;
-  font-size: 12px !important;
-  color: #7F28C4 !important;
-}
-
-.av-controls div.sc-formfield-input {
-  z-index: 2;
-}
-
-.av-controls div.sc-formfield-input input {
-  z-index: 2;
-  min-width: 312px;
-  padding: 6px;
-  border: none;
-  border-bottom: 1px solid #181818;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 16px;
-}
-
-.av-controls div.sc-formfield-input input:active, .av-controls div.sc-formfield-input input:focus {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #7F28C4;
-}
-
-.av-controls-date {
-  margin-bottom: 8px;
-}
-
-.av-controls-date div.sc-formfield-label {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  -webkit-transform: translate(5px, 0px);
-          transform: translate(5px, 0px);
-}
-
-.av-controls-date div.sc-formfield-input select {
-  border: none;
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-  width: 26%;
-  margin: 10px 5px;
-  font-size: 16px;
-}
-
-.av-controls-date div.sc-formfield-input select:active, .av-controls-date div.sc-formfield-input select:focus {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid black;
+.avLoaderMJ div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 * {

@@ -1,111 +1,121 @@
-.layout.layout-canvas-a {
-    background-image: url('https://estebanavon.github.io/av/assets/img/avConciertoBackground.jpg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-}
-.section {
-    min-height: 100vh;
-    background-color: $color-white;
-    margin: 0px !important;
-    padding: 7% 9%;
+// .layout.layout-canvas-a {
+//     background-image: url('https://estebanavon.github.io/av/assets/img/avConciertoBackground.jpg');
+//     background-position: top right;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-attachment: fixed;
+// }
+// .section {
+//     min-height: 100vh;
+//     background-color: $color-white;
+//     margin: 0px !important;
+//     padding: 7% 9%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     @media (min-width:$media-1) {
+//         width: 50% !important;
+//     }
+//     .av-button-primary {
+//         width: 312px;
+//     }
+//     > .columns {
+//         width: auto !important;
+//     }
+//     .av-decorator {
+//         display: none;
+//         position: fixed;
+//         bottom: 7%;
+//         right: 3%;
+//         font-family: $black-zona;
+//         text-transform: uppercase;
+//         color: $color-white;
+//         opacity: 0.1;
+//         font-size: 110px;
+//         line-height: 80px;
+//         @media (min-width:$media-2) {
+//             display: block;
+//         }
+//     }
+//     .av-form-title{
+//         font-size: 24px;
+//         font-family: $black-zona;
+//     }
+// }
+// .smartcapture-submit-button-wrapper {
+//     text-align: left !important;
+//     margin-top: 25px;
+// }
+// .av-controls {
+//     margin-bottom: 8px;
+//     height: 60px;
+//     div.sc-formfield-label{
+//         font-family: $regular-monts;
+//         transform: translate(8px,23px);
+//         transition: transform 0.5s;
+//         display: inline-block;
+//         z-index: 1;
+//         label {
+//             z-index: 1;
+//         }
+//         &.activeLabel, 
+//         &.activeLabel label {
+//             transform:translate(5px,0px);
+//             text-transform: uppercase;
+//             font-size:12px !important;
+//             color:#7F28C4 !important;
+//         }
+//     }
+//     div.sc-formfield-input {
+//         z-index: 2;
+//         input {
+//             z-index: 2;
+//             min-width: 312px;
+//             padding: 6px;
+//             border: none;
+//             border-bottom: 1px solid $color-text;
+//             font-family: $regular-monts;
+//             font-size: 16px;
+//             &:active,
+//             &:focus {
+//                 outline: none;
+//                 border: none;
+//                 border-bottom: 1px solid $color-primary;
+//             }
+//         }
+//     }
+// }
+// .av-controls-date {
+//     margin-bottom: 8px;
+//     div.sc-formfield-label{
+//         font-family: $regular-monts;
+//         transform: translate(5px,0px);
+//     }
+//     div.sc-formfield-input {
+//         select {
+//             border: none;
+//             border-bottom: 1px solid black;
+//             padding-bottom: 1px;
+//             width: 26%;
+//             margin: 10px 5px;
+//             font-size: 16px;
+//             &:active,
+//             &:focus {
+//                 outline: none;
+//                 border: none;
+//                 border-bottom: 1px solid black;
+//             }
+//         }
+//     }
+// }
+
+
+.avLoaderMJ {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    @media (min-width:$media-1) {
-        width: 50% !important;
-    }
-    .av-button-primary {
-        width: 312px;
-    }
-    > .columns {
-        width: auto !important;
-    }
-    .av-decorator {
-        display: none;
-        position: fixed;
-        bottom: 7%;
-        right: 3%;
-        font-family: $black-zona;
-        text-transform: uppercase;
-        color: $color-white;
-        opacity: 0.1;
-        font-size: 110px;
-        line-height: 80px;
-        @media (min-width:$media-2) {
-            display: block;
-        }
-    }
-    .av-form-title{
-        font-size: 24px;
-        font-family: $black-zona;
-    }
-}
-.smartcapture-submit-button-wrapper {
-    text-align: left !important;
-    margin-top: 25px;
-}
-.av-controls {
-    margin-bottom: 8px;
-    height: 60px;
-    div.sc-formfield-label{
-        font-family: $regular-monts;
-        transform: translate(8px,23px);
-        transition: transform 0.5s;
-        display: inline-block;
-        z-index: 1;
-        label {
-            z-index: 1;
-        }
-        &.activeLabel, 
-        &.activeLabel label {
-            transform:translate(5px,0px);
-            text-transform: uppercase;
-            font-size:12px !important;
-            color:#7F28C4 !important;
-        }
-    }
-    div.sc-formfield-input {
-        z-index: 2;
-        input {
-            z-index: 2;
-            min-width: 312px;
-            padding: 6px;
-            border: none;
-            border-bottom: 1px solid $color-text;
-            font-family: $regular-monts;
-            font-size: 16px;
-            &:active,
-            &:focus {
-                outline: none;
-                border: none;
-                border-bottom: 1px solid $color-primary;
-            }
-        }
-    }
-}
-.av-controls-date {
-    margin-bottom: 8px;
-    div.sc-formfield-label{
-        font-family: $regular-monts;
-        transform: translate(5px,0px);
-    }
-    div.sc-formfield-input {
-        select {
-            border: none;
-            border-bottom: 1px solid black;
-            padding-bottom: 1px;
-            width: 26%;
-            margin: 10px 5px;
-            font-size: 16px;
-            &:active,
-            &:focus {
-                outline: none;
-                border: none;
-                border-bottom: 1px solid black;
-            }
-        }
+    align-items: center;
+    div {
+        flex: 1;
     }
 }
