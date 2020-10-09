@@ -113,6 +113,7 @@
 
 .avLoaderMJ {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -134,10 +135,10 @@
                 width:50%;
             }
             @media (min-width:$media-2) {
-                width:40%;
+                width: 45%;
             }
             @media (min-width:$media-4) {
-                width:30%;
+                width:40%;
             }
             .av-text {
                 font-size: 20px;

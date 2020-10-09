@@ -1604,6 +1604,10 @@ section.av-container.av-container-small .av-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1648,13 +1652,13 @@ section.av-container.av-container-small .av-row {
 
 @media (min-width: 992px) {
   .avLoaderMJ > div.avLoaderText {
-    width: 40%;
+    width: 45%;
   }
 }
 
 @media (min-width: 1200px) {
   .avLoaderMJ > div.avLoaderText {
-    width: 30%;
+    width: 40%;
   }
 }
 
