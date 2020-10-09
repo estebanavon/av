@@ -118,12 +118,87 @@
     width: 100%;
     height: 100vh;
     margin: 0;
-    div {
-        &:first-child {
-            width: 30%;
+    > div {
+        height: 100%;
+        &.avLoaderText {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 18% 25px;
+            @media (min-width:$media-1) {
+                width:50%;
+            }
+            @media (min-width:$media-2) {
+                width:40%;
+            }
+            @media (min-width:$media-4) {
+                width:30%;
+            }
+            .av-text {
+                font-size: 20px;
+                color: #ea2887;
+                text-align: center;
+            }
+            .avLoader {
+                width: 50%;
+                height: 5px;
+                display: block;
+                overflow: hidden;
+                margin: 50px 0px;
+                position: relative;
+                > div {
+                    position: absolute;
+                    height: 40px;
+                    width: 80px;
+                    background-color: #7F28C4;
+                    top: -6px;
+                    left: -100px;
+                    transform: translateX(-100px);
+                    opacity: 0;
+                    animation-name: avLoader;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                }
+            }
+            img{
+                width: 55%;
+                display: block;
+            }
         }
-        &:last-child {
+        &.avLoaderImage {
             flex: 1;
+            background-image: url('https://estebanavon.github.io/av/assets/img/avConciertoBackgroundLoader.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: none;
+            @media (min-width:$media-1) {
+                display: block;
+            }
         }
+    }
+}
+@keyframes avLoader {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    40% {
+        width: 200px;
+    }
+
+    99% {
+        transform: translateX(600px);
+        opacity: 1;
+        width: 150px;
+    }
+    100%{
+        transform: translateX(-100px);
+        opacity: 0;
     }
 }

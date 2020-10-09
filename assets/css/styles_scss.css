@@ -1615,14 +1615,150 @@ section.av-container.av-container-small .av-row {
   margin: 0;
 }
 
-.avLoaderMJ div:first-child {
-  width: 30%;
+.avLoaderMJ > div {
+  height: 100%;
 }
 
-.avLoaderMJ div:last-child {
+.avLoaderMJ > div.avLoaderText {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 18% 25px;
+}
+
+@media (min-width: 768px) {
+  .avLoaderMJ > div.avLoaderText {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .avLoaderMJ > div.avLoaderText {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .avLoaderMJ > div.avLoaderText {
+    width: 30%;
+  }
+}
+
+.avLoaderMJ > div.avLoaderText .av-text {
+  font-size: 20px;
+  color: #ea2887;
+  text-align: center;
+}
+
+.avLoaderMJ > div.avLoaderText .avLoader {
+  width: 50%;
+  height: 5px;
+  display: block;
+  overflow: hidden;
+  margin: 50px 0px;
+  position: relative;
+}
+
+.avLoaderMJ > div.avLoaderText .avLoader > div {
+  position: absolute;
+  height: 40px;
+  width: 80px;
+  background-color: #7F28C4;
+  top: -6px;
+  left: -100px;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-animation-name: avLoader;
+          animation-name: avLoader;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.avLoaderMJ > div.avLoaderText img {
+  width: 55%;
+  display: block;
+}
+
+.avLoaderMJ > div.avLoaderImage {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background-image: url("https://estebanavon.github.io/av/assets/img/avConciertoBackgroundLoader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .avLoaderMJ > div.avLoaderImage {
+    display: block;
+  }
+}
+
+@-webkit-keyframes avLoader {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    width: 200px;
+  }
+  99% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    opacity: 1;
+    width: 150px;
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes avLoader {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    width: 200px;
+  }
+  99% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    opacity: 1;
+    width: 150px;
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
 }
 
 * {
