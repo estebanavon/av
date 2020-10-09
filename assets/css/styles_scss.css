@@ -1674,6 +1674,7 @@ section.av-container.av-container-small .av-row {
   display: block;
   overflow: hidden;
   margin: 50px 0px;
+  background-color: #f1f1f1;
   position: relative;
 }
 
@@ -1689,8 +1690,8 @@ section.av-container.av-container-small .av-row {
   opacity: 0;
   -webkit-animation-name: avLoader;
           animation-name: avLoader;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -1734,7 +1735,7 @@ section.av-container.av-container-small .av-row {
     -webkit-transform: translateX(600px);
             transform: translateX(600px);
     opacity: 1;
-    width: 150px;
+    width: 50px;
   }
   100% {
     -webkit-transform: translateX(-100px);
@@ -1759,7 +1760,7 @@ section.av-container.av-container-small .av-row {
     -webkit-transform: translateX(600px);
             transform: translateX(600px);
     opacity: 1;
-    width: 150px;
+    width: 50px;
   }
   100% {
     -webkit-transform: translateX(-100px);

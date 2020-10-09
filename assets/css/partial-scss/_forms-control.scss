@@ -151,6 +151,7 @@
                 display: block;
                 overflow: hidden;
                 margin: 50px 0px;
+                background-color: #f1f1f1;
                 position: relative;
                 > div {
                     position: absolute;
@@ -162,7 +163,7 @@
                     transform: translateX(-100px);
                     opacity: 0;
                     animation-name: avLoader;
-                    animation-duration: 2s;
+                    animation-duration: 2.5s;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
                 }
@@ -199,7 +200,7 @@
     99% {
         transform: translateX(600px);
         opacity: 1;
-        width: 150px;
+        width: 50px;
     }
     100%{
         transform: translateX(-100px);
