@@ -166,9 +166,10 @@ section.av-lw {
                 opacity: 0;
                 margin-left: 14%;
                 margin-right: 10%;
-                //transition: all 0.5s;
+                
                 &.unable {
-                    height: 90%;
+                    height: auto;
+                    padding-bottom: 40px;
                     opacity: 1;
                 }
                 

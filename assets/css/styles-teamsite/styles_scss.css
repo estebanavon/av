@@ -2334,7 +2334,8 @@ section.av-lw section.av-section-container .av-section .av-list-content {
 }
 
 section.av-lw section.av-section-container .av-section .av-list-content.unable {
-  height: 90%;
+  height: auto;
+  padding-bottom: 40px;
   opacity: 1;
 }
 

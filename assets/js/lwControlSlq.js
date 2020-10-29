@@ -165,11 +165,11 @@ const messagesToolsSection = [
 ];
 const prospectionSection = [
     {
-        name: 'Fase 1 2020.pdf',
+        name: 'Fase 1 2020',
         file: 'Fase_1_2020.pdf',
     },
     {
-        name: 'Fase 2 2020.pdf',
+        name: 'Fase 2 2020',
         file: 'Fase_2_2020.pdf',
     },
     {
