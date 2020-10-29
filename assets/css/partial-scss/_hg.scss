@@ -7,18 +7,18 @@
     width: 80%;
     height: 500px;
     position: relative;
-    top: -11rem;
+    top: -40px;
     display: none;
     @media (min-width:$media-1){
         display: block;
     }
 }
 .av-subtitle-altern {
-    font-size: 2rem;
+    font-size: $size-text * 2;
     text-transform: uppercase;
     color: $color-hg-primary;
     font-family: $black-zona;
-    margin-bottom: 1rem;
+    margin-bottom: $size-text;
     &.negative {
         color: $color-white;
         text-align: center;
@@ -51,7 +51,7 @@
         background-color: $color-white;
         flex: 1;
         transition: all 0.4s;
-        margin: 0.4rem;
+        margin: $size-text / 0.5;
         box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
         position: relative;
         
@@ -70,19 +70,19 @@
             font-family: $light-monts;
 
             .av-slide-description-price {
-                font-size: $size-text + 0.2rem;
+                font-size: $size-text;
                 color: $color-primary;
                 font-family: $regular-monts;
                 display: block;
             }
         }
         .av-slide-code {
-            font-size: $size-text+0.1rem;
+            font-size: $size-text;
             font-family: $regular-monts;
             margin-bottom: $margin-none;
         }
         .av-slide-text { 
-            padding: $size-text ($size-text+0.2rem);
+            padding: $size-text;
             display: flex;
 
             .av-slide-text-item:first-child{
@@ -96,7 +96,7 @@
             }
             
             .av-slide-title{
-                font-size: $size-text+0.1rem;
+                font-size: $size-text * 1.2;
                 font-family: $light-zona;
                 margin-bottom: $size-text / 1.1;
                 p {

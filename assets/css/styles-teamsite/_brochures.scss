@@ -5,12 +5,7 @@ $color-contigo: #FB8F00;
 $color-imb: #0057FF;
 $color-bazar: #00CE15;
 
-.av-brochure-aside {
-    background-image: url('#{$route-images}/mis_folletos/bm-1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 .av-brochures-container {
     display: flex;
     flex-wrap: wrap;

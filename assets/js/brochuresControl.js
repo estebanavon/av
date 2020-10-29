@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     const campaignPast = campaignCurrent - 1;
     const campaignOld = campaignCurrent - 2;
-    const brochuresWrapper = ["","","","","","","","","","","",brochures12,brochures13,brochures14,brochures15,brochures16,brochures17,brochures18];
+    const brochuresWrapper = [brochures1,brochures2,brochures3,brochures4,brochures5,brochures6,brochures7,brochures8,brochures9,brochures10,brochures11,brochures12,brochures13,brochures14,brochures15,brochures16,brochures17,brochures18,brochures19,brochures20];
     
     var brochuresConstructor = [brochuresWrapper[(campaignPast)],brochuresWrapper[campaignOld],brochuresWrapper[(campaignCurrent-3)]];
     var brochurePrint = ["","","",""];
@@ -80,7 +80,7 @@ $(document).ready(function(){
 
     function pdfImg(type,canvasIdNumber){
         let avCanvasLet;
-        if (type == "flyer" || type == 'contigo'){
+        if (type == "flyer" || type == 'contigo' || type == 'bazar'){
             avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
             canvasID = '#avCanvas' + canvasIdNumber;
             showPDF('/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);   

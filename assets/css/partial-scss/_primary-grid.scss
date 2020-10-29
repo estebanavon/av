@@ -1,5 +1,5 @@
 
-@mixin main-containers($variant:0rem,$variantPlus:0rem) {
+@mixin main-containers($variant:0,$variantPlus:0) {
     
     padding-left: $margin-default;
     padding-right: $margin-default;
@@ -49,7 +49,7 @@ section.av-container {
     }
     &.av-container-small {
         .av-row {
-            @include main-containers(4rem);
+            @include main-containers(30px);
         }
     }
 }
@@ -72,7 +72,7 @@ section.av-container {
         }
 
         &.expand {
-            padding: $card-padding 0rem;
+            padding: $card-padding 0;
         }    
     }
 }
@@ -114,7 +114,7 @@ section.av-container {
         }
     
 }
-@mixin pLeftRight ($variant:0rem,$direction:left) {
+@mixin pLeftRight ($variant:0,$direction:left) {
     padding-left: $margin-sm + $variant;
     padding-right: $margin-sm + $variant;
     margin-right: $margin-none;
@@ -132,15 +132,15 @@ section.av-container {
 }
 .av-p {
     &left{
-        @include pLeftRight(0rem,left);
+        @include pLeftRight(0,left);
         &.av-pleft-variant {
-            @include pLeftRight(2rem,left);
+            @include pLeftRight(40px,left);
         }
     }
     &right{
-        @include pLeftRight(0rem,right);
+        @include pLeftRight(0,right);
         &.av-pright-variant {
-            @include pLeftRight(2rem,right);
+            @include pLeftRight(40px,right);
         }
     }
 }

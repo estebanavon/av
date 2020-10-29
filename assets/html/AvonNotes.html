@@ -1,27 +1,12 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/styles_scss.css">
-</head>
-<body>
-  <section class="avLoaderMJ">
-    <div class="avLoaderText">
-      <div class="flex-1"></div>
-      <img src="http://image.avon-mx.com/lib/fe4315707564057b771670/m/1/73257f2c-765b-4e7a-9a20-ed8cf40dbd91.jpg" />
-      <div class="avLoader">
-        <div class="avLoaderBar"></div>
-      </div>
-      <div class="flex-1"></div>
-      <p class="av-text">Cargando...</p>
-      
-    </div>
-    <div class="avLoaderImage">
-      
-    </div>
-  </section>  
-</body>
-</html>
+<script>
+  jQuery(".av-section-select").addEventListener('click', pusherFunction());
+    function pusherFunction(e){
+      var lwprofile = $(this).find("p").attr("data-profile");
+      var lwSection = $(this).find("p").text();
+      dataLayer.push({
+        event: 'lwLayerEvent',
+        lwSectionText: lwSection,
+        lwProfile: lwprofile,
+      });
+    };
+</script>

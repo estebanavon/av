@@ -1,4 +1,5 @@
 var z = AvonAnalyticsObjex.Profile.zone;
+var profile = AvonAnalyticsObjex.Profile.acctType
 
 $(document).ready(function(){
     switch (z){
@@ -44,8 +45,14 @@ $(document).ready(function(){
             $('#uberBannerByZone').show();
             $('#uberBannerByZone').find('.uberByZoneLink').attr('href','https://redeem.uber.com/public/optin/8WmGpAYuorCV');
         break;
-        
         default:
-            $('#uberBannerByZone').hide();      
+            $('#uberBannerByZone').find('img').attr('src','/REPSuite/static/home_2018/img/vanityLink.jpg');
+            if (profile == "REP"){
+                $('#uberBannerByZone').find('.uberByZoneLink').attr('href','/REPSuite/vendorLinksOne.page?linkid=42');
+            } else {
+                $('#uberBannerByZone').find('.uberByZoneLink').attr('href','/SLSuite/vendorLinksOne.page?linkid=45');
+            }
+            
+            $('#uberBannerByZone').show();
     };
 });

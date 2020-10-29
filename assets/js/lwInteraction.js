@@ -113,7 +113,7 @@ $(document).ready(function(){
             $('.av-button-back').show();
             guideVar = false;
             guideVar3 = true;
-        } else if(guideVar2 && guideVar3) {
+        } else if (guideVar2 && guideVar3) {
             $('.av-guide.last').hide().remove();
             let img = "url('"+ imgRoute +"/lw-i.jpg')"; 
             $(".av-section-select").addClass("unable");

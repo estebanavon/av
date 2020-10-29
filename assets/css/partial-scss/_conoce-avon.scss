@@ -17,31 +17,26 @@
     @media (min-width:$media-2){
         padding: 100px;
     }
-    @media (min-width:$media-3){
-        padding: 150px;
-    }
+    
     
 
 
     @mixin caTitle($color) {
+        $LetSize: 43px;
         .av-title-text{
             @include titile-mixin($color);
             text-align: left;
-            font-size: 43px;
-            line-height: 43px;
-            margin-bottom: 22px;
+            font-size: $LetSize;
+            line-height: $LetSize;
+            margin-bottom: $LetSize / 2;
             
             @media (min-width:$media-0) {
-                font-size: 76px;
-                line-height: 52px;
+                font-size: $LetSize * 1.8;
+                line-height: $LetSize * 1.6;
             }
             @media (min-width:$media-3) {
-                font-size: 86px;
-                line-height: 55px;
-            }
-            @media (min-width:$media-5) {
-                font-size: 90px;
-                line-height: 65.4px;
+                font-size: $LetSize * 2.1;
+                line-height: $LetSize * 2;
             }
     
             .av-title-stroke {
@@ -99,11 +94,23 @@
             background-image: url('#{$route-images}/conoce-avon/ca-people-3.jpg');
         }
     }
+    &.liderazgo{
+        @include caTitle($color-white);
+        &:nth-child(1){
+            background-image: url('#{$route-images}/conoce-avon/ConoceAvonHeaderLiderazgo.jpg');
+        }
+        &:nth-child(2){
+            background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo13.jpg');
+        }
+        &:nth-child(3){
+            background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo14.jpg');
+        }
+    }
     
 }
 .av-ca.av-scroll-wrapper {
     position: absolute;
-    bottom: 11rem;
+    bottom: 100px;
 }
 .av-ca-row {    
     min-height: 40vh;
@@ -113,8 +120,8 @@
     flex-direction: column-reverse;
     justify-content: center;
     
-    $caPadding: 16rem;
-    $caPaddingSmall: 6rem;
+    $caPadding: 110px;
+    $caPaddingSmall: 5%;
     @mixin caPadding($child1,$child2){
     
         &:#{$child1}-child, &:#{$child2}-child {
@@ -123,11 +130,11 @@
         }
         @media (min-width:$media-1){
             &:#{$child1}-child {
-                padding-left: $caPadding * 0.7;
+                padding-left: $caPadding * 0.3;
                 padding-right: $caPaddingSmall - $caPaddingSmall;
             }
             &:#{$child2}-child {
-                padding-right: $caPadding * 0.7;
+                padding-right: $caPadding * 0.3;
                 padding-left: $caPaddingSmall - $caPaddingSmall;
             }
         }
@@ -143,10 +150,10 @@
         }
         @media (min-width:$media-4){
             &:#{$child1}-child {
-                padding-left: $caPadding * 1.5;
+                padding-left: $caPadding * 1.3;
             }
             &:#{$child2}-child {
-                padding-right: $caPadding * 1.5;
+                padding-right: $caPadding * 1.3;
             }
         }
         @media (min-width:$media-5){
@@ -159,9 +166,9 @@
         }
     }
     &.pt-10 {
-        padding-top: 5rem;
+        padding-top: 50px;
         @media (min-width:$media-1){
-            padding-top: 50px;
+            padding-top: 130px;
         }
     }
     .av-ca-col {
@@ -175,14 +182,17 @@
         @media (min-width:$media-1){
             width: 50%;
             &:first-child:not(.noBack){
-                background-color: $color-light-white;
-                padding-right: $caPaddingSmall;
-                padding-top: 5rem;
-                padding-bottom: 5rem;
+                padding-top: 100px;
+                padding-bottom: 100px;
             }
-        }    
+        }
+        @media (min-width:$media-2){
+            &:first-child:not(.noBack){
+                padding-right: $caPaddingSmall;
+            }
+        }
         @media (max-width:$media-1) {
-            margin-bottom: 6rem;
+            margin-bottom: 60px;
             .av-card {
                 min-height: 270px;
             }
@@ -241,7 +251,7 @@
             background-size: cover;
         }
     }
-    @media (min-width:$media-1){
+    @media (min-width:$media-2){
         width: 45%;
         min-height: 25rem;
     }
@@ -253,7 +263,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 25px;
+    padding: 7px 14px;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -261,12 +271,9 @@
     left: 0;
     transition: all 0.5s;
     z-index: 110;
-    @media (min-width:$media-4) {
-        padding: 20px 60px;
+    @media (min-width:$media-3) {
         justify-content: center;
-    }
-    @media (min-width:$media-5) {
-        padding: 20px 90px;
+        padding: 30px 0px 10px 0px;
     }
     
     svg {
@@ -276,27 +283,31 @@
     .av-header-mobile {
         padding: 20px 15px;
         cursor: pointer;
-        @media (min-width:$media-4) {
+        @media (min-width:$media-3) {
             display: none;
         }
     }
     .av-header-link {
         justify-content: space-between;
         display: none;
-        @media (min-width:$media-4) {
+        @media (min-width:$media-3) {
             display: flex;
         }
         a {
-            padding: 1rem 3rem;
+            padding: 15px 25px 5px 25px;
             color: $color-white;
-            font-size: 17px;
+            font-size: 15px;
+            text-transform: uppercase;
             text-align: center;
-            border-radius: 4px;
-            font-family: $semi-bold-monts;
+            border-bottom: 3px solid transparent;
+            font-family: $bold-monts;
             &.active {
-                background-color: rgba(255,255,255,0.1);
+                border-bottom: 3px solid rgba(255,255,255,0.5);
             }
         }
+    }
+    .av-ca-brand {
+        margin-bottom: 10px;
     }
     .av-header-line {
         position: absolute;
@@ -351,11 +362,14 @@
     display: flex;
     div {
         @media (min-width:$media-1){
-            width: 50%;
+            flex: 1;
         }
         &:first-child {
             height: auto;
             min-height: 300px;
+            @media (min-width:$media-1){
+                width: 45%;
+            }
         }
         &:last-child {
             background-color: $color-secondary;
@@ -365,21 +379,29 @@
             align-items: flex-start;
             color: $color-white;
             font-family: $black-zona;
-            
-            padding: 4rem;
+            padding: 60px;
             @media (min-width:$media-1){
-                padding: 10rem;
+                padding: 8%;
             }
+            $LetSize: 35px;
             h2 {
                 color: $color-white;
-                font-size: 4.5rem;
+                font-size: $LetSize;
+                line-height: $LetSize;
                 font-family: $black-zona;
                 font-style: normal;
-                margin-bottom: 1rem;
+                @media (min-width:$media-1){
+                    font-size: $LetSize * 1.6;
+                    line-height: $LetSize * 1.6;
+                }
             }
             h2:first-child{
                 color: $color-white;
-                font-size: 4rem;
+                font-size: $LetSize;
+                margin-bottom: 5px;
+                @media (min-width:$media-1){
+                    font-size: $LetSize * 1.2;
+                }
             }
         }
     }
@@ -497,6 +519,24 @@
 }
 .av-product-14{
     background-image: url('#{$route-images}/conoce-avon/ca-products-14.jpg');
+}
+.av-people-15{
+    background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo7.jpg');
+}
+.av-people-15{
+    background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo7.jpg');
+}
+.av-people-16{
+    background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo6.jpg');
+}
+.av-people-17{
+    background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo8.jpg');
+}
+.av-people-18{
+    background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo9.jpg');
+}
+.av-people-19{
+    background-image: url('#{$route-images}/conoce-avon/ConoceAvonLiderazgo10.jpg');
 }
 .av-product-4-2 {
     background-image: url('#{$route-images}/conoce-avon/ca-products-4.2.jpg');

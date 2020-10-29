@@ -42,7 +42,7 @@ section.av-nosolas-main {
         height: 100%;
         min-height: 100vh;
         background-color: rgba(12,62,101,0.91);
-        padding-bottom: 3rem;
+        padding-bottom: 40px;
 
         .av-nosolas-title {
 
@@ -54,7 +54,7 @@ section.av-nosolas-main {
             left: -5px;
 
             &.primary{
-                margin-top: 0.6rem;
+                margin-top: 12px;
                 font-size: 460%;
                 @media (min-width:768px) {
                     font-size: 570%;
@@ -65,7 +65,7 @@ section.av-nosolas-main {
             }
             &.secondary{
                 font-size: 300%;
-                margin-top: -0.3rem;
+                margin-top: -5px;
                 color: $color-nosolas-primary;
                 @media (min-width:768px) {
                     font-size: 440%;
@@ -150,10 +150,10 @@ section.av-nosolas-main {
 }
 .av-nosolas-letter {
     .av-list {
-        margin-bottom: $size-text + 1.1rem;
+        margin-bottom: $size-text;
         li {
             text-align: justify;
-            margin-bottom: 1.4rem;
+            margin-bottom: 20px;
         }
     }
     .av-text:not(:nth-child(1)),.av-text:not(:nth-child(2)) {

@@ -1,4 +1,9 @@
-
+.av-concierto {
+    background-image: url('#{$route-images}/conciertoBasesHeaderMobile.jpg');
+    @media (min-width:$media-2) {
+        background-image: url('#{$route-images}/conciertoBasesHeader.jpg');
+    }
+}
 .av-ec-header {
     background-image: url('#{$route-images}/etica-cumplimiento/avon-office.jpg');
 }
