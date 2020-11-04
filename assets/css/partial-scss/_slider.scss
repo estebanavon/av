@@ -29,26 +29,46 @@
     .av-slider-content {
         box-sizing: border-box;
         margin: 0;
+        width: 100%;
         overflow: hidden;
+        display: flex;
+        z-index: 0;
         
         .av-slider-item {
-            width: 100%;
+            opacity: 0;
             display: none;
-            opacity: 1;
-
-            //animation-name: avSliderFade;
-            animation-duration: 1.5s;
-            animation-fill-mode: forwards;
-
-            @keyframes avSliderFade{
-                from {opacity:0}
-                to {opacity:1}
-            }
+            transition: transform 0.5s;
+            z-index: 1;
+            min-width: 100%;
             
-            &.active {
+            &.lastOne {
+                opacity: 0;
+                z-index: 2;
                 display: flex;
+                transform: translateX(0);
+            }
+            &.active {
+                opacity: 1;
+                display: flex;
+                z-index: 3;
+                //animation-name: slideInwards;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
             }
 
+            @keyframes slideInwards {
+                0%{
+                    opacity: 0;
+                    transform: translateX(400px);
+                }
+                10%{
+                    opacity: 1;
+                }
+                100%{
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
 
             .av-slider-image {
                 flex: 1 0 auto;

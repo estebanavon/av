@@ -1,15 +1,20 @@
-$(document).ready(function(){
-  var dataLayer = [];
-  $(".av-section-select").on('click', function(e) {
-    var lwprofile = $(this).find("p").attr("data-profile");
-    var lwSection = $(this).find("p").text();
-    dataLayer.push({
-      event: 'lwLayerEvent',
-      lwSectionText: lwSection,
-      lwProfile: lwprofile,
-    });
-    console.log(dataLayer[0]);
-  });
-  
-});
+function myDisplayer(some) {
+       document.getElementById("demo").innerHTML = some;
+}
+     
+let myPromise = new Promise(function(myResolve, myReject) {
+       let x = 0;
 
+       // some code (try to change x to 5)
+
+       if (x == 0) {
+              myResolve("OK");
+       } else {
+              myReject("Error");
+}
+});
+     
+myPromise.then(
+       function(response) {myDisplayer(response);},
+       function(error) {myDisplayer(error);}
+);

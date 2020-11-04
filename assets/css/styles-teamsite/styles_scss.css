@@ -378,7 +378,7 @@ section.av-container.av-container-small .av-row {
           justify-content: flex-end;
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
-  background-color: #7F28C4;
+  background-color: #FF49A3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -603,7 +603,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-pink {
-  color: #7F28C4;
+  color: #FF49A3;
 }
 
 .av-list {
@@ -659,7 +659,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-list.av-list-item li [class^='material-icons'] {
-  color: #7F28C4;
+  color: #FF49A3;
 }
 
 .av-list.av-list-item li:hover:not(.av-list-divider) {
@@ -734,7 +734,7 @@ section.av-container.av-container-small .av-row {
 
 .av-card.av-card-select:hover .av-card-wrapper {
   width: 100%;
-  background-color: #7F28C4;
+  background-color: #FF49A3;
 }
 
 .av-card.av-card-unable {
@@ -1318,7 +1318,7 @@ section.av-container.av-container-small .av-row {
   -webkit-transition: all 1s;
   transition: all 1s;
   border-radius: 4px;
-  background-color: #7F28C4;
+  background-color: #FF49A3;
 }
 
 .av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
@@ -1348,7 +1348,7 @@ section.av-container.av-container-small .av-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #7F28C4;
+  color: #FF49A3;
 }
 
 .av-button-tertiary:hover, .av-button-tertiary:active, .av-button-tertiary:focus {
@@ -1361,7 +1361,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-button-tertiary svg {
-  fill: #7F28C4;
+  fill: #FF49A3;
   width: 26px;
   height: 26px;
   margin: 0 10px;
@@ -1403,7 +1403,7 @@ section.av-container.av-container-small .av-row {
 .av-link {
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 1.1rem;
-  color: #7F28C4;
+  color: #FF49A3;
   padding: 1.1rem 1.1rem 1.1rem 0rem;
   display: block;
   background-color: transparent;
@@ -1451,7 +1451,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-link-icon.primary {
-  color: #7F28C4;
+  color: #FF49A3;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1471,7 +1471,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-link-inline {
-  color: #7F28C4;
+  color: #FF49A3;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1534,41 +1534,77 @@ section.av-container.av-container-small .av-row {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
 }
 
 .av-slider .av-slider-content .av-slider-item {
-  width: 100%;
+  opacity: 0;
   display: none;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  z-index: 1;
+  min-width: 100%;
+}
+
+.av-slider .av-slider-content .av-slider-item.lastOne {
+  opacity: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.av-slider .av-slider-content .av-slider-item.active {
   opacity: 1;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes avSliderFade {
-  from {
+@-webkit-keyframes slideInwards {
+  0% {
     opacity: 0;
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
   }
-  to {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 
-@keyframes avSliderFade {
-  from {
+@keyframes slideInwards {
+  0% {
     opacity: 0;
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
   }
-  to {
+  10% {
     opacity: 1;
   }
-}
-
-.av-slider .av-slider-content .av-slider-item.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .av-slider .av-slider-content .av-slider-item .av-slider-image {
@@ -1640,7 +1676,7 @@ section.av-container.av-container-small .av-row {
 
 .av-slider .av-slider-content .av-slider-item .av-slider-text .av-slider-link {
   text-decoration: none;
-  color: #7F28C4;
+  color: #FF49A3;
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 0;
@@ -1649,7 +1685,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-slider .av-slider-content .av-slider-item .av-slider-text .av-slider-link:hover {
-  color: #c08de8;
+  color: #ffa4d1;
 }
 
 * {
@@ -1764,8 +1800,177 @@ a {
   text-decoration: none;
 }
 
+.avLoaderMJ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.avLoaderMJ > div {
+  height: 100%;
+}
+
+.avLoaderMJ > div.avLoaderText {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 18% 25px;
+}
+
+@media (min-width: 768px) {
+  .avLoaderMJ > div.avLoaderText {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .avLoaderMJ > div.avLoaderText {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .avLoaderMJ > div.avLoaderText {
+    width: 40%;
+  }
+}
+
+.avLoaderMJ > div.avLoaderText .av-text {
+  font-size: 20px;
+  color: #ea2887;
+  text-align: center;
+}
+
+.avLoaderMJ > div.avLoaderText img {
+  width: 55%;
+  display: block;
+}
+
+.avLoaderMJ > div.avLoaderImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url("https://estebanavon.github.io/av/assets/img/avConciertoBackgroundLoader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .avLoaderMJ > div.avLoaderImage {
+    display: block;
+  }
+}
+
+.avLoader {
+  width: 50%;
+  height: 5px;
+  display: block;
+  overflow: hidden;
+  margin: 50px 0px;
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+.avLoader > div {
+  position: absolute;
+  height: 40px;
+  width: 80px;
+  background-color: #7F28C4;
+  top: -6px;
+  left: -100px;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-animation-name: avLoader;
+          animation-name: avLoader;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes avLoader {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    width: 200px;
+  }
+  99% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    opacity: 1;
+    width: 50px;
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes avLoader {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    width: 200px;
+  }
+  99% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    opacity: 1;
+    width: 50px;
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
 .av-img-higiene {
-  background-image: url("/assets/img/folletos/hg-1.jpg");
+  background-image: url("../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1904,7 +2109,7 @@ a {
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-description .av-slide-description-price {
   font-size: 2.1rem;
-  color: #7F28C4;
+  color: #FF49A3;
   font-weight: bolder;
   display: block;
 }
@@ -1921,7 +2126,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("/assets/img/circulo_estelar/ce-header.jpg");
+  background-image: url("../images/circulo_estelar/ce-header.jpg");
   height: 45vh;
   margin-bottom: 0;
   margin: 0 -0.599rem;
@@ -1962,7 +2167,7 @@ a {
 .ce-onboarding div h4 {
   font-size: 1.4rem;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  color: #7F28C4;
+  color: #FF49A3;
   text-align: left;
 }
 
@@ -1995,12 +2200,12 @@ a {
 }
 
 .av-ce-option h4.active {
-  color: #7F28C4;
+  color: #FF49A3;
   font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 .av-ce-option h4.active i {
-  color: #7F28C4;
+  color: #FF49A3;
   display: inline-block;
 }
 
@@ -2019,70 +2224,70 @@ a {
 }
 
 .av-card-default {
-  background-image: url("/assets/img/circulo_estelar/ce-default.jpg");
+  background-image: url("../images/circulo_estelar/ce-default.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-6 {
-  background-image: url("/assets/img/circulo_estelar/ce-6.jpg");
+  background-image: url("../images/circulo_estelar/ce-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-7 {
-  background-image: url("/assets/img/circulo_estelar/ce-7.jpg");
+  background-image: url("../images/circulo_estelar/ce-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-8 {
-  background-image: url("/assets/img/circulo_estelar/ce-8.jpg");
+  background-image: url("../images/circulo_estelar/ce-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-9 {
-  background-image: url("/assets/img/circulo_estelar/ce-9.jpg");
+  background-image: url("../images/circulo_estelar/ce-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-10 {
-  background-image: url("/assets/img/circulo_estelar/ce-10.jpg");
+  background-image: url("../images/circulo_estelar/ce-10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-11 {
-  background-image: url("/assets/img/circulo_estelar/ce-11.jpg");
+  background-image: url("../images/circulo_estelar/ce-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-12 {
-  background-image: url("/assets/img/circulo_estelar/ce-12.jpg");
+  background-image: url("../images/circulo_estelar/ce-12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-13 {
-  background-image: url("/assets/img/circulo_estelar/ce-13.jpg");
+  background-image: url("../images/circulo_estelar/ce-13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-14 {
-  background-image: url("/assets/img/circulo_estelar/ce-14.jpg");
+  background-image: url("../images/circulo_estelar/ce-14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2257,7 +2462,7 @@ section.av-lw section.av-section-container .av-divider {
 
 section.av-lw section.av-section-container .av-section-title i:nth-child(1), section.av-lw section.av-section-container .av-section-select i:nth-child(1) {
   margin-right: 1rem;
-  color: #7F28C4;
+  color: #FF49A3;
 }
 
 section.av-lw section.av-section-container .av-section-title {
@@ -2372,7 +2577,7 @@ section.av-lw .disable {
 
 .av-guide p {
   font-size: 1.1rem;
-  color: #7F28C4;
+  color: #FF49A3;
   margin-bottom: 0.7rem;
 }
 
@@ -2678,7 +2883,7 @@ h3.av-brochures-subtitle svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #7F28C4;
+  background-color: #FF49A3;
   z-index: 35;
   -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
           box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
@@ -2701,7 +2906,7 @@ h3.av-brochures-subtitle svg {
 }
 
 .av-brochure-item .av-brochure-image .av-copy:active {
-  background-color: #66209d;
+  background-color: #ff0782;
   outline: none;
 }
 

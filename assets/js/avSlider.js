@@ -2,14 +2,15 @@ $(document).ready(function(){
 
     var slideIndex = 2;
     var timeOut;
+
     avShowSlide(2,0,true);
     
 
-    function avShowSlide(n,e,s){ 
-        if (slideIndex == n){
-            slideIndex = e;
+    function avShowSlide(initial,initialSupport,forwardOrBackward){ 
+        if (slideIndex == initial){
+            slideIndex = initialSupport;
         } else {
-            if(s){
+            if(forwardOrBackward){
                 slideIndex++;
             } else {
                 slideIndex--;
@@ -18,6 +19,7 @@ $(document).ready(function(){
         
         $('.avData').each(function(){
             $(this).children().eq(slideIndex).addClass("active").siblings().removeClass("active");
+            //$(this).children().eq(slideIndex - 1).addClass("lastOne").siblings().removeClass("lastOne");
         })
         timeOut = setTimeout(function(){avShowSlide(2,0,true);},5500);
     }

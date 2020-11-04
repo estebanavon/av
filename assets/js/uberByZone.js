@@ -1,5 +1,5 @@
 var z = AvonAnalyticsObjex.Profile.zone;
-var profile = AvonAnalyticsObjex.Profile.acctType
+var profile = AvonAnalyticsObjex.Profile.acctType;
 
 $(document).ready(function(){
     switch (z){
