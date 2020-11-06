@@ -1,20 +1,25 @@
-function myDisplayer(some) {
-       document.getElementById("demo").innerHTML = some;
-}
-     
-let myPromise = new Promise(function(myResolve, myReject) {
-       let x = 0;
 
-       // some code (try to change x to 5)
-
-       if (x == 0) {
-              myResolve("OK");
-       } else {
-              myReject("Error");
-}
-});
-     
-myPromise.then(
-       function(response) {myDisplayer(response);},
-       function(error) {myDisplayer(error);}
-);
+const brochures20 = [
+       {
+           title: 'Belleza',
+           file: '1',
+           type: 'imb',
+       },
+       {
+           title: 'Fashion & Home',
+           file: '2',
+           type: 'imb',
+       },
+       {
+           title: 'Cuidar de ti',
+           file: '3',
+           type: 'imb',
+       },
+       {
+           title: 'Cucina Donna',
+           file: '4',
+           type: 'imb',
+       },
+   ]
+   
+   

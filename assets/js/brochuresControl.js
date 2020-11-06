@@ -83,7 +83,12 @@ $(document).ready(function(){
         if (type == "flyer" || type == 'contigo' || type == 'bazar'){
             avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
             canvasID = '#avCanvas' + canvasIdNumber;
-            showPDF('/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);   
+            if (type == 'contigo'){
+                showPDF('/FLDSuite/static/pdf/incentivos2019/'+ brochuresConstructor[e][i].file +'',canvasID);   
+            } else {
+                showPDF('/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);   
+            }
+            
         } else {
             avCanvasLet = ''
         }

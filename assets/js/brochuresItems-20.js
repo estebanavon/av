@@ -10,5 +10,20 @@ const brochures20 = [
         file: '2',
         type: 'imb',
     },
+    {
+        title: 'Cuidar de ti',
+        file: '3',
+        type: 'imb',
+    },
+    {
+        title: 'Cucina Donna',
+        file: '4',
+        type: 'imb',
+    },
+    {
+        title: 'Avon Contigo',
+        file: 'avon_contigo_c2020.pdf',
+        type: 'contigo',
+    },
 ]
 

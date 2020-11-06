@@ -223,7 +223,7 @@ h3.av-brochures-subtitle {
             overflow: hidden;
             color: $color-text;
             font-family: $regular-monts;
-            font-size: $size-text - 0.1rem;
+            font-size: $size-text * 0.9;
             padding-top: 8px;
             text-align: left;
         }

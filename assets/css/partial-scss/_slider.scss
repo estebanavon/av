@@ -38,19 +38,19 @@
             opacity: 0;
             display: none;
             transition: transform 0.5s;
-            z-index: 1;
+            //z-index: 1;
             min-width: 100%;
             
-            &.lastOne {
-                opacity: 0;
-                z-index: 2;
-                display: flex;
-                transform: translateX(0);
-            }
+            // &.lastOne {
+            //     opacity: 0;
+            //     z-index: 2;
+            //     display: flex;
+            //     transform: translateX(0);
+            // }
             &.active {
                 opacity: 1;
                 display: flex;
-                z-index: 3;
+                //z-index: 3;
                 //animation-name: slideInwards;
                 animation-duration: 0.5s;
                 animation-fill-mode: forwards;
@@ -67,62 +67,6 @@
                 100%{
                     transform: translateX(0);
                     opacity: 1;
-                }
-            }
-
-            .av-slider-image {
-                flex: 1 0 auto;
-                overflow: hidden;
-                
-                @media (min-width:$media-2) {
-                    flex: 1 0 500px;
-                    max-width: 500px;
-                    max-height: 250px;
-                }
-                @media (min-width:$media-3) {
-                    flex: 1 0 460px;
-                    max-width: 460px;
-                }
-                img {
-                    width: 100%;
-                }
-                
-            }
-            .av-slider-text {
-                padding: 4% 5%;
-                color: $color-text;
-                font-family: $regular-monts;
-                display: flex;
-                flex-direction: column;
-                background-color: $color-dark-10;
-                flex: 1;
-
-                span {
-                    flex-grow: 1;
-                }
-                .av-slider-title{
-                    font-size: 2rem;
-                    margin-bottom: 0.6rem;
-                    text-align: left;
-                    padding: 0;
-                }
-                p{
-                    max-height: 50%;
-                    overflow: hidden;
-                    text-align: left;
-                    font-size: 1.4rem;
-                }
-                .av-slider-link {
-                    text-decoration: none;
-                    color: $color-primary;
-                    font-family: $semi-bold-monts;
-                    text-transform: uppercase;
-                    padding: 0;
-                    display: block;
-                    font-size: 1.5rem !important;
-                    &:hover{
-                        color: scale-color($color-primary, $lightness: 50%);
-                    }
                 }
             }
         }

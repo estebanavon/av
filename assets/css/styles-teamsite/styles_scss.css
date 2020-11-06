@@ -378,7 +378,7 @@ section.av-container.av-container-small .av-row {
           justify-content: flex-end;
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
-  background-color: #FF49A3;
+  background-color: #7F28C4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -398,7 +398,7 @@ section.av-container.av-container-small .av-row {
 
 @media (min-width: 992px) {
   .av-title-container {
-    padding: 20px;
+    padding: 30px;
   }
 }
 
@@ -437,10 +437,10 @@ section.av-container.av-container-small .av-row {
 
 .av-title-container .av-title-support {
   color: white;
-  font-size: 1.1rem;
+  font-size: 17px;
   font-family: zona-pro-semi-bold, Helvetica, sans-serif;
   text-align: right;
-  line-height: 1.1rem;
+  line-height: 17px;
   font-style: normal;
 }
 
@@ -456,14 +456,14 @@ section.av-container.av-container-small .av-row {
   color: #fff;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 1.43rem;
+  font-size: 22.1px;
   letter-spacing: 16px;
   font-weight: 300;
 }
 
 @media (min-width: 768px) {
   .av-title-container .av-title-brand {
-    margin-top: 1.1rem;
+    margin-top: 17px;
     width: 160px;
   }
 }
@@ -475,20 +475,20 @@ section.av-container.av-container-small .av-row {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 1.87rem;
+  font-size: 27.2px;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle {
-    font-size: -0.13rem;
+    font-size: 25.2px;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle {
-    font-size: 1.87rem;
+    font-size: 27.2px;
   }
 }
 
@@ -519,20 +519,20 @@ section.av-container.av-container-small .av-row {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 1.65rem;
+  font-size: 25.5px;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle-support {
-    font-size: -0.35rem;
+    font-size: 23.5px;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle-support {
-    font-size: 1.65rem;
+    font-size: 25.5px;
   }
 }
 
@@ -559,9 +559,9 @@ section.av-container.av-container-small .av-row {
 .av-text {
   color: #181818;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 17px;
   line-height: 26px;
-  margin-bottom: 1.65rem;
+  margin-bottom: 25.5px;
 }
 
 .av-text.negative {
@@ -585,16 +585,16 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-text.av-text-small {
-  font-size: -0.9rem;
+  font-size: 15px;
   line-height: 20px;
 }
 
 .av-text.av-text-small p {
-  margin-bottom: 1.1rem;
+  margin-bottom: 17px;
 }
 
 .av-text.av-text-large {
-  font-size: 6.1rem;
+  font-size: 22px;
   line-height: 25px;
 }
 
@@ -603,14 +603,14 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-pink {
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-list {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  padding-left: 1.1rem;
+  padding-left: 17px;
   line-height: 26px;
-  font-size: 1.1rem;
+  font-size: 17px;
   color: #181818;
   list-style-type: disc;
 }
@@ -620,7 +620,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-list li {
-  margin-bottom: 0.44rem;
+  margin-bottom: 6.8px;
 }
 
 .av-list.av-list-item {
@@ -659,7 +659,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-list.av-list-item li [class^='material-icons'] {
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-list.av-list-item li:hover:not(.av-list-divider) {
@@ -677,10 +677,11 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-list .av-list-title {
-  font-size: 0.1rem;
+  font-size: 17px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  padding: 2.2rem 0rem 1.1rem 0rem !important;
+  padding: 34px 0rem 17px 0rem !important;
   color: #181818;
+  display: block;
 }
 
 .av-list .av-list-title:hover {
@@ -703,7 +704,7 @@ section.av-container.av-container-small .av-row {
   font-family: zona-pro-light, Helvetica, sans-serif;
   margin: 1rem 0;
   color: #181818;
-  font-size: 3.1rem;
+  font-size: 19px;
 }
 
 .av-card {
@@ -734,7 +735,7 @@ section.av-container.av-container-small .av-row {
 
 .av-card.av-card-select:hover .av-card-wrapper {
   width: 100%;
-  background-color: #FF49A3;
+  background-color: #7F28C4;
 }
 
 .av-card.av-card-unable {
@@ -767,7 +768,7 @@ section.av-container.av-container-small .av-row {
   bottom: -1px;
   left: 0;
   background-color: #FF49A3;
-  padding: 0.9rem;
+  padding: 20px;
   width: 90%;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
@@ -796,8 +797,8 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-card .av-card-text .av-card-title {
-  font-size: 1.1rem;
-  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 25.5px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   margin-bottom: 1rem;
   color: #181818;
 }
@@ -817,10 +818,10 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-table-container .av-table thead tr td {
-  padding: 1.87rem;
+  padding: 28.9px;
   color: #fff;
   font-weight: bolder;
-  font-size: 1.1rem;
+  font-size: 17px;
 }
 
 .av-table-container .av-table tr:nth-child(even) {
@@ -828,9 +829,9 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-table-container .av-table td {
-  padding: 1.1rem 1.98rem;
+  padding: 17px 30.6px;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 17px;
 }
 
 .av-brand {
@@ -925,7 +926,7 @@ section.av-container.av-container-small .av-row {
       -ms-flex-align: center;
           align-items: center;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 1.32rem;
+  font-size: 20.4px;
   padding: 30px 20px 7px 20px;
   border-bottom: 1px solid #666666;
   cursor: pointer;
@@ -936,7 +937,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-panel .av-panel-title i {
-  font-size: 1.32rem;
+  font-size: 20.4px;
 }
 
 .av-panel .av-panel-title .active {
@@ -945,7 +946,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-panel .av-panel-title h4 {
-  font-size: 1.32rem;
+  font-size: 20.4px;
 }
 
 .av-panel .av-panel-content {
@@ -971,7 +972,7 @@ section.av-container.av-container-small .av-row {
   visibility: hidden;
   width: auto;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: -0.9rem;
+  font-size: 15px;
   background-color: #181818;
   color: #fff;
   text-align: center;
@@ -1003,7 +1004,7 @@ section.av-container.av-container-small .av-row {
   color: #181818;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 1.43rem;
+  font-size: 22.1px;
   letter-spacing: 0px;
   font-weight: 300;
 }
@@ -1101,7 +1102,6 @@ section.av-container.av-container-small .av-row {
 .av-modal-content {
   background-color: #ffffff;
   width: 100%;
-  padding: 12px;
   overflow: hidden;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1109,15 +1109,26 @@ section.av-container.av-container-small .av-row {
   max-width: 650px;
   margin: auto;
   border-radius: 4px;
+  position: relative;
 }
 
 .av-modal-close {
   font-size: 30px;
-  float: right;
-  margin-top: -10px;
-  color: #181818;
+  color: #fff;
+  background-color: #7F28C4;
   cursor: pointer;
   width: auto;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.av-modal-close:hover {
+  color: #7F28C4;
+  background-color: #fff;
 }
 
 .av-modal-footer {
@@ -1161,7 +1172,7 @@ section.av-container.av-container-small .av-row {
 .av-scroll-wrapper span {
   font-family: montserrat-regular, Helvetica, sans-serif;
   margin: 0 20px;
-  font-size: 1.1rem;
+  font-size: 17px;
 }
 
 .av-scroll-wrapper i, .av-scroll-wrapper svg {
@@ -1281,7 +1292,7 @@ section.av-container.av-container-small .av-row {
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  padding: 1rem 1.98rem;
+  padding: 22.1px 32.3px;
   text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1302,6 +1313,9 @@ section.av-container.av-container-small .av-row {
 
 .av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
   color: #fff;
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .av-button-secondary {
@@ -1313,12 +1327,12 @@ section.av-container.av-container-small .av-row {
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  padding: 1rem 1.98rem;
+  padding: 22.1px 32.3px;
   text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
   border-radius: 4px;
-  background-color: #FF49A3;
+  background-color: #7F28C4;
 }
 
 .av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
@@ -1332,6 +1346,9 @@ section.av-container.av-container-small .av-row {
 
 .av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
   color: #fff;
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .av-button-tertiary {
@@ -1348,7 +1365,7 @@ section.av-container.av-container-small .av-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-button-tertiary:hover, .av-button-tertiary:active, .av-button-tertiary:focus {
@@ -1361,10 +1378,14 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-button-tertiary svg {
-  fill: #FF49A3;
+  fill: #7F28C4;
   width: 26px;
   height: 26px;
   margin: 0 10px;
+}
+
+.av-button-tertiary:hover, .av-button-tertiary:active, .av-button-tertiary:focus {
+  color: #7F28C4;
 }
 
 .av-button-icon {
@@ -1402,9 +1423,9 @@ section.av-container.av-container-small .av-row {
 
 .av-link {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.1rem;
-  color: #FF49A3;
-  padding: 1.1rem 1.1rem 1.1rem 0rem;
+  font-size: 17px;
+  color: #7F28C4;
+  padding: 17px 17px 17px 0rem;
   display: block;
   background-color: transparent;
   border: none;
@@ -1451,7 +1472,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-link-icon.primary {
-  color: #FF49A3;
+  color: #7F28C4;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1471,7 +1492,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-link-inline {
-  color: #FF49A3;
+  color: #7F28C4;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1549,18 +1570,7 @@ section.av-container.av-container-small .av-row {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  z-index: 1;
   min-width: 100%;
-}
-
-.av-slider .av-slider-content .av-slider-item.lastOne {
-  opacity: 0;
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 .av-slider .av-slider-content .av-slider-item.active {
@@ -1568,7 +1578,6 @@ section.av-container.av-container-small .av-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 3;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -1605,87 +1614,6 @@ section.av-container.av-container-small .av-row {
             transform: translateX(0);
     opacity: 1;
   }
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  overflow: hidden;
-}
-
-@media (min-width: 992px) {
-  .av-slider .av-slider-content .av-slider-item .av-slider-image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 500px;
-            flex: 1 0 500px;
-    max-width: 500px;
-    max-height: 250px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .av-slider .av-slider-content .av-slider-item .av-slider-image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 460px;
-            flex: 1 0 460px;
-    max-width: 460px;
-  }
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-image img {
-  width: 100%;
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-text {
-  padding: 4% 5%;
-  color: #181818;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: rgba(200, 200, 200, 0.1);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-text span {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-text .av-slider-title {
-  font-size: 2rem;
-  margin-bottom: 0.6rem;
-  text-align: left;
-  padding: 0;
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-text p {
-  max-height: 50%;
-  overflow: hidden;
-  text-align: left;
-  font-size: 1.4rem;
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-text .av-slider-link {
-  text-decoration: none;
-  color: #FF49A3;
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
-  text-transform: uppercase;
-  padding: 0;
-  display: block;
-  font-size: 1.5rem !important;
-}
-
-.av-slider .av-slider-content .av-slider-item .av-slider-text .av-slider-link:hover {
-  color: #ffa4d1;
 }
 
 * {
@@ -2066,7 +1994,7 @@ a {
 }
 
 .av-slide-container .av-slide-product .av-slide-text {
-  padding: 1.1rem 1.3rem;
+  padding: 17px 22.1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2089,14 +2017,14 @@ a {
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-code {
-  font-size: 1.5rem;
+  font-size: 22.1px;
   margin-bottom: 0rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-title {
-  font-size: 1.7rem;
+  font-size: 27.2px;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 15.45455px;
   font-weight: bolder;
   font-style: normal;
   padding: 0;
@@ -2108,8 +2036,8 @@ a {
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-description .av-slide-description-price {
-  font-size: 2.1rem;
-  color: #FF49A3;
+  font-size: 34px;
+  color: #7F28C4;
   font-weight: bolder;
   display: block;
 }
@@ -2117,6 +2045,7 @@ a {
 .av-ce-container {
   width: 100%;
   min-width: 100%;
+  margin: 0 -10px;
 }
 
 @media (min-width: 768px) {
@@ -2167,7 +2096,7 @@ a {
 .ce-onboarding div h4 {
   font-size: 1.4rem;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  color: #FF49A3;
+  color: #7F28C4;
   text-align: left;
 }
 
@@ -2187,7 +2116,7 @@ a {
           justify-content: space-between;
   padding: 0.5rem;
   padding-right: 2rem;
-  font-size: 1.1rem;
+  font-size: 17px;
   font-family: montserrat-regular, Helvetica, sans-serif;
   color: #666666;
   -webkit-transition: all 0.2s;
@@ -2200,12 +2129,12 @@ a {
 }
 
 .av-ce-option h4.active {
-  color: #FF49A3;
+  color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 .av-ce-option h4.active i {
-  color: #FF49A3;
+  color: #7F28C4;
   display: inline-block;
 }
 
@@ -2281,13 +2210,6 @@ a {
 
 .av-card-13 {
   background-image: url("../images/circulo_estelar/ce-13.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.av-card-14 {
-  background-image: url("../images/circulo_estelar/ce-14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2462,15 +2384,15 @@ section.av-lw section.av-section-container .av-divider {
 
 section.av-lw section.av-section-container .av-section-title i:nth-child(1), section.av-lw section.av-section-container .av-section-select i:nth-child(1) {
   margin-right: 1rem;
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 section.av-lw section.av-section-container .av-section-title {
   padding: 2% 12%;
   color: #181818;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.1rem;
-  margin-top: 1.1rem;
+  font-size: 17px;
+  margin-top: 17px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2484,8 +2406,8 @@ section.av-lw section.av-section-container .av-section .av-section-select {
   padding: 2% 14%;
   color: #181818;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  margin-top: 1.1rem;
+  font-size: 22.1px;
+  margin-top: 17px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2498,14 +2420,14 @@ section.av-lw section.av-section-container .av-section .av-section-select {
 section.av-lw section.av-section-container .av-section .av-section-select.unable {
   cursor: pointer;
   margin-top: 0rem;
-  padding: 1.1rem 17% 1.1rem 12%;
+  padding: 17px 17% 17px 12%;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
 section.av-lw section.av-section-container .av-section .av-section-select.unable.sub {
-  padding: 0.8rem 17% 0.8rem 18%;
-  font-size: 1.3rem;
+  padding: 13px 17% 13px 18%;
+  font-size: 20.4px;
 }
 
 section.av-lw section.av-section-container .av-section .av-section-select.unable:hover {
@@ -2576,13 +2498,13 @@ section.av-lw .disable {
 }
 
 .av-guide p {
-  font-size: 1.1rem;
-  color: #FF49A3;
+  font-size: 17px;
+  color: #7F28C4;
   margin-bottom: 0.7rem;
 }
 
 .av-guide h4 {
-  font-size: 1.4rem;
+  font-size: 22.1px;
   color: #181818;
   margin-bottom: 0.4rem;
 }
@@ -2706,7 +2628,7 @@ section.av-lw .disable {
 
 h2.av-brochure-title {
   padding: 3rem 2.5rem 2rem 2.5rem;
-  font-size: 2.2rem;
+  font-size: 34px;
   color: #181818;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
@@ -2758,7 +2680,7 @@ h3.av-brochures-subtitle svg {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2.5rem 1rem;
-  font-size: 1.1rem;
+  font-size: 17px;
 }
 
 .av-share > div {
@@ -2883,7 +2805,7 @@ h3.av-brochures-subtitle svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FF49A3;
+  background-color: #7F28C4;
   z-index: 35;
   -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
           box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
@@ -2906,7 +2828,7 @@ h3.av-brochures-subtitle svg {
 }
 
 .av-brochure-item .av-brochure-image .av-copy:active {
-  background-color: #ff0782;
+  background-color: #66209d;
   outline: none;
 }
 
@@ -2942,7 +2864,7 @@ h3.av-brochures-subtitle svg {
   overflow: hidden;
   color: #181818;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 15.3px;
   padding-top: 8px;
   text-align: left;
 }

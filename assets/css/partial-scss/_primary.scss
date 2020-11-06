@@ -40,7 +40,7 @@
         height: 60vh;
     }
     @media (min-width:$media-2) {
-        padding: $margin-md;
+        padding: $margin-lg;
     }
     .av-title-text{
         
@@ -134,7 +134,7 @@
     }
 }
 .av-subtitle {
-    @include subtitle($size-text * 1.7);
+    @include subtitle($size-text * 1.6);
     @include negative();
 
     &-support {
@@ -221,10 +221,11 @@
     }
     
     .av-list-title {
-        font-size: $size-text - 1;
+        font-size: $size-text;
         font-family: $bold-monts;
         padding: ($size-text * 2) 0rem $size-text 0rem !important;
         color: $color-text;
+        display: block;
         &:hover{
             background-color: unset !important;
         }
@@ -290,7 +291,7 @@
         bottom: -1px;
         left: 0;
         background-color: $color-secondary;
-        padding: 0.9rem;
+        padding: 20px;
         width: 90%;
         transition: all 0.7s;
         z-index: 10;
@@ -310,8 +311,8 @@
         background-color: $color-light-white;
         flex-grow: 1;
         .av-card-title {
-            font-size: $size-text;
-            font-family: $regular-monts;
+            font-size: $size-text * 1.5;
+            font-family: $bold-monts;
             margin-bottom: 1rem;
             color: $color-text;
         }
@@ -552,21 +553,29 @@
     &-content {
         background-color: #ffffff;
         width: 100%;
-        padding: 12px;
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
         max-width: 650px;
         margin: auto;
         border-radius: 4px;
+        position: relative;
     }
     &-close {
         font-size: 30px;
-        float: right;
-        margin-top: -10px;
-        color: $color-text;
+        color: $color-white;
+        background-color: $color-primary;
         cursor: pointer;
         width: auto;
+        padding: 10px 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.4s;
+        &:hover {
+            color: $color-primary;
+            background-color: $color-white;
+        }
     }
     &-footer {
         padding: 12px;
