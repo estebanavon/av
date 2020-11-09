@@ -1,25 +1,14 @@
 
-const brochures20 = [
-       {
-           title: 'Belleza',
-           file: '1',
-           type: 'imb',
-       },
-       {
-           title: 'Fashion & Home',
-           file: '2',
-           type: 'imb',
-       },
-       {
-           title: 'Cuidar de ti',
-           file: '3',
-           type: 'imb',
-       },
-       {
-           title: 'Cucina Donna',
-           file: '4',
-           type: 'imb',
-       },
-   ]
-   
-   
+  $(document).ready(function(){
+    var dataLayer = [];
+    $(".av-section-select").on('click', function(e) {
+        var lwprofile = $(this).find("p").attr("data-profile");
+        var lwSection = $(this).find("p").text();
+      dataLayer.push({
+          event: 'lwLayerEvent',
+          lwSectionText: lwSection,
+          lwProfile: lwprofile,
+        });
+        console.log(dataLayer);
+      });
+  });

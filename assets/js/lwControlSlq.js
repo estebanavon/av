@@ -19,38 +19,14 @@ const vacationsSection = [
         name: 'Bases Vacaciones Liderazgo Avon 2020',
         file: 'Bases_vacaciones_2020.pdf',
     },
-    {
-        name: 'Bases Cambio de Vacaciones por Dinero en efectivo',
-        file: 'BASES_VACACIONES_2019_ADDENDUM.pdf',
-    },
-    {
-        name: 'Lista Ganadoras Bloque A 2019',
-        file: 'Ganadoras_BloqueA.pdf',
-    },
-    {
-        name: 'Lista Ganadoras Bloque B 2019',
-        file: 'Ganadoras_BloqueB.pdf',
-    },
-    {
-        name: 'Lista Ganadoras Bloque C 2019',
-        file: 'Ganadoras_BloqueC.pdf',
-    },
-    {
-        name: 'Apuéstale a tus vacaciones C4 y C8 2019',
-        file: 'Bases_Apuestale.jpg',
-    },
-    {
-        name: 'Bases Apuéstale a tus Vacaciones C4 a C8',
-        file: 'Bases_Apuestale_a_tus_vacaciones_C4_A_C8.pdf',
-    },
-    {
-        name: 'Bases Generales Bloques Vacaciones con Liderazgo Avon 2019',
-        file: 'Bases_Generales_Bloques_20Vacaciones_con_Liderazgo_Avon.pdf',
-    },
 ];
 
 
 const videosSection = [
+    {
+        name: 'Jingle Circulo Estelar',
+        file: 'JingleCirculoEstelar.mp4',
+    },
     {
         name: 'Ofrece 60/10',
         file: 'Ofrece_60_10.mp4',
@@ -64,10 +40,6 @@ const videosSection = [
         file: 'VideoInstitucional.mp4',
     },
     {
-        name: 'Vacaciones 2019',
-        file: 'Vacaciones2019.mp4',
-    },
-    {
         name: '12vo Encuentro de Empresarias',
         file: '12EncuentroEmpresarias.mp4',
     },
@@ -76,18 +48,6 @@ const generalToolsSection = [
     {
         name: 'Anuncio para prospección en periódicos',
         file: 'AnuncioLiderazgo.pdf',
-    },
-    {
-        name: 'Bases 60/15 C-11 A C-14 2020',
-        file: 'BASES_60-15_C11_C14_2020.pdf',
-    },
-    {
-        name: 'ADDENDUM BONO TL',
-        file: 'ADDENDUM_BONO_TL.pdf',
-    },
-    {
-        name: 'Díptico Fase 1 Actualizado 2020',
-        file: 'Diptico_2020.pdf',
     },
     {
         name: 'Planograma Actualizado 2020',
@@ -191,10 +151,6 @@ const prospectionSection = [
     {
         name: 'Anuncio Prospección Liderazgo',
         file: 'AnuncioLiderazgo.pdf',
-    },
-    {
-        name: 'Calendario de pagos 2020',
-        file: 'Calendario_L2020.pdf',
     },
     {
         name: 'Lona Fortaleza',

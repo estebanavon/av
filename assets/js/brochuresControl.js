@@ -50,6 +50,9 @@ $(document).ready(function(){
             case "imb":
                 urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/'+ yearCurrent +''+ campaign(e) + '_0' + file +'/#/'
                 break
+            case "contigo":
+                urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
+                break
             default:
                 urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
         }
