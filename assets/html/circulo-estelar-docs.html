@@ -1,82 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@2.4.1/css/grid.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./../css/styles-teamsite/styles_scss.css" />
-    
-    <script src="./../js/circuloEstelarRepControl.js"></script>
-    <script src="./../js/circuloEstelarControl.js"></script>
-    <style>
-        .sinfi-test{
-            height: 100vh;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20em;
-            background-color: #FAFAFA;
-        }
-        .sinfi-wrapper {
-            position: relative;
-        }
-        .sinfi-wrapper div:nth-child(1){
-            width: 310px;
-            height: 230px;
-            border-radius: 20px;
-            box-shadow: 1px -1px 20px rgba(0,0,0,0.5);
-            position: absolute;
-            bottom: -40px;
-            left: -100px;
-            z-index: 10;
-            background-color: white;
-        }
-        .sinfi-wrapper div:nth-child(2){
-            width: 340px;
-            height: 500px;
-            border-radius: 20px;
-            box-shadow: 1px -1px 20px rgba(0,0,0,0.5);
-            background-image: url('./../img/sinfi-model-2.jpg');
+<div class="row av-row">
             
-        }
-        .sinfi-text {
-            width: 40%;
-        }
-        .sinfi-text h4{
-            font-size: 50px;
-        }
-    </style>
-</head>
-<body>
-    <div class="row">
-        <div class="col-sm-4">
-            <h4 class="av-list-title">Elige entre tus campañas</h4>
-            <div class="av-ce-option optionControl" value="8">
+    <div class="col-12 col-sm-auto mx-auto">
+        <div class="d-flex ce-onboarding">
+            <p class="mr-4">10</p>
+            <div class="div">
+                <h3>Tu décima</h3>
+                <h4>Campaña</h4>
+             </div>
+        </div>
+    </div>
+</div>
+<div class="row av-row my-3">
+    <div class="col">
+        <h3 class="av-subtitle">¿Cuál es tu oportunidad de <span class="av-pink">ganancia</span> en AVON?</h3>
+    </div>
+    <div class="w-100 mb-3"></div>
+    <div class="col-12 col-sm-4 av-fade-reverse">
+        <div class="av-card">
+            <div class="av-card-image">
+                <img class="w-100 av-fallback" src="/FLDSuite/web/static/images/circulo_estelar/ce-mini-2.png" alt="Comésticos" />
+            </div>
+            <div class="av-card-text">
+                <h4 class="av-card-title">Oportunidad de ganancia de 30%</h4>
+                <p class="av-text">En los catálogos de Cosméticos y Belleza.</p>
             </div>
         </div>
-        <div class="col-sm-8 optionDisplay">
-            <div class="d-flex justify-content-between align-items-center"><h4 class="av-list-title">Documentos</h4><span class="av-list-title">Previsualizar / Descargar</span></div>
+    </div>
+    <div class="col-12 col-sm-4 av-fade-reverse">
+        <div class="av-card">
+            <div class="av-card-image">
+                <img class="w-100 av-fallback" src="/FLDSuite/web/static/images/circulo_estelar/ce-mini-3.png" alt="Anew" />
+            </div>
+            <div class="av-card-text">
+                <h4 class="av-card-title">Hasta 100% de ganancia </h4>
+                <p class="av-text">En rutinas de Anew y ofertas seleccionadas en la revista "Avon Contigo"</p>
+            </div>
         </div>
     </div>
-    <div class="sinfi-test">
-        <div class="sinfi-text">
-            <h4>Vende lo que
-                quieras, desde
-                donde quieras.</h4>
+    
+    <div class="col-12 col-sm-4 av-fade-reverse">
+        <div class="av-card">
+            <div class="av-card-image">
+                <img class="w-100 av-fallback" src="/FLDSuite/web/static/images/circulo_estelar/ce-mini-1.png" alt="Moda y hogar" />
+            </div>
+            <div class="av-card-text">
+                <h4 class="av-card-title">Oportunidad de ganancia de 20%</h4>
+                <p class="av-text">En los catálogos de Moda y Hogar.</p>
+            </div>
         </div>
-        <div class="sinfi-wrapper">
-            <div></div>
-            <div></div>
-        </div>
-        
     </div>
-</body>
+</div>
 
-</html>
+<div class="row av-row">
+    <div class="col">
+        <h3 class="av-subtitle av-fade">Mi entrenamiento</h3>
+    </div>
+    <div class="w-100"></div>
+    
+<div class="col-sm-4">
+    <h4 class="av-list-title">Elige entre tus campañas</h4>
+    <div class="av-ce-option class optionControl" value="10">
+    </div>
+</div>
+<div class="col-sm-8 optionDisplay">
+    <div class="d-flex justify-content-between align-items-center"><h4 class="av-list-title">Documentos</h4><span class="av-list-title">Previsualizar / Descargar</span></div>
+</div>
 
+
+</div>

@@ -19,8 +19,8 @@ $(document).ready(function(){
         
         $('.avData').each(function(){
             $(this).children().eq(slideIndex).addClass("active").siblings().removeClass("active");
-            //$(this).children().eq(slideIndex - 1).addClass("lastOne").siblings().removeClass("lastOne");
         })
+        
         timeOut = setTimeout(function(){avShowSlide(2,0,true);},5500);
     }
 
@@ -57,6 +57,7 @@ $(document).ready(function(){
         $(this).hide();
     });
     $('#avMenuClose').hide();
+    
     $(window).scroll(function(){
         let documentScroll = $(document).scrollTop();
         if (documentScroll > 500){
@@ -118,6 +119,7 @@ $(document).ready(function(){
                                 '</div>'+
                             '</footer>';
     $('body').append(avFooterInsert);
+    $('header').css('opacity','0');
 });
 
 

@@ -57,6 +57,7 @@ h2.av-brochure-title {
     color: $color-text;
     font-family: $black-zona;
     text-transform: uppercase;
+    font-style: normal;
     .av-title-stroke {
         @supports (-webkit-text-stroke: 1px $color-text) {
             -webkit-text-stroke: 1px $color-text;
@@ -226,6 +227,7 @@ h3.av-brochures-subtitle {
             font-size: $size-text * 0.9;
             padding-top: 8px;
             text-align: left;
+            font-style: normal;
         }
         
     }

@@ -469,26 +469,26 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-subtitle {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 27.2px;
+  font-size: 32.3px;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle {
-    font-size: 25.2px;
+    font-size: 30.3px;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle {
-    font-size: 27.2px;
+    font-size: 32.3px;
   }
 }
 
@@ -513,26 +513,26 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-subtitle-support {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 25.5px;
+  font-size: 27.2px;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle-support {
-    font-size: 23.5px;
+    font-size: 25.2px;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle-support {
-    font-size: 25.5px;
+    font-size: 27.2px;
   }
 }
 
@@ -557,7 +557,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-text {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 26px;
@@ -611,7 +611,7 @@ section.av-container.av-container-small .av-row {
   padding-left: 17px;
   line-height: 26px;
   font-size: 17px;
-  color: #181818;
+  color: #3b4546;
   list-style-type: disc;
 }
 
@@ -680,7 +680,7 @@ section.av-container.av-container-small .av-row {
   font-size: 17px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   padding: 34px 0rem 17px 0rem !important;
-  color: #181818;
+  color: #3b4546;
   display: block;
 }
 
@@ -703,7 +703,7 @@ section.av-container.av-container-small .av-row {
 .av-hashtag {
   font-family: zona-pro-light, Helvetica, sans-serif;
   margin: 1rem 0;
-  color: #181818;
+  color: #3b4546;
   font-size: 19px;
 }
 
@@ -780,7 +780,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-card .av-card-wrapper small {
-  font-size: #181818;
+  font-size: #3b4546;
 }
 
 .av-card .av-card-image {
@@ -797,10 +797,10 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-card .av-card-text .av-card-title {
-  font-size: 25.5px;
+  font-size: 20.4px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   margin-bottom: 1rem;
-  color: #181818;
+  color: #3b4546;
 }
 
 .av-table-container {
@@ -973,7 +973,7 @@ section.av-container.av-container-small .av-row {
   width: auto;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 15px;
-  background-color: #181818;
+  background-color: #3b4546;
   color: #fff;
   text-align: center;
   padding: 7px 10px;
@@ -993,7 +993,7 @@ section.av-container.av-container-small .av-row {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #181818 transparent transparent transparent;
+  border-color: #3b4546 transparent transparent transparent;
 }
 
 .av-tooltip:hover .tooltiptext {
@@ -1001,7 +1001,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-fallback {
-  color: #181818;
+  color: #3b4546;
   font-family: Helvetica, sans-serif;
   text-align: center;
   font-size: 22.1px;
@@ -1292,7 +1292,7 @@ section.av-container.av-container-small .av-row {
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  padding: 22.1px 32.3px;
+  padding: 18.7px 32.3px;
   text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1314,8 +1314,8 @@ section.av-container.av-container-small .av-row {
 .av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
   color: #fff;
   z-index: 5;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .av-button-secondary {
@@ -1327,7 +1327,7 @@ section.av-container.av-container-small .av-row {
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  padding: 22.1px 32.3px;
+  padding: 18.7px 32.3px;
   text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1347,8 +1347,8 @@ section.av-container.av-container-small .av-row {
 .av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
   color: #fff;
   z-index: 5;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .av-button-tertiary {
@@ -1526,11 +1526,11 @@ section.av-container.av-container-small .av-row {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 4rem;
+  width: 200px;
   z-index: 10;
   border: none;
   background-color: transparent;
-  color: #181818;
+  color: #3b4546;
   cursor: pointer;
 }
 
@@ -1578,6 +1578,26 @@ section.av-container.av-container-small .av-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.av-slider .av-slider-content.slide .av-slider-item {
+  z-index: 1;
+}
+
+.av-slider .av-slider-content.slide .lastOne {
+  opacity: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.av-slider .av-slider-content.slide .av-slider-item {
+  z-index: 3;
+  -webkit-animation-name: slideInwards;
+          animation-name: slideInwards;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -1587,10 +1607,10 @@ section.av-container.av-container-small .av-row {
 @-webkit-keyframes slideInwards {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(400px);
-            transform: translateX(400px);
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
   }
-  10% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -1603,10 +1623,10 @@ section.av-container.av-container-small .av-row {
 @keyframes slideInwards {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(400px);
-            transform: translateX(400px);
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
   }
-  10% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -1667,7 +1687,7 @@ video:focus {
 }
 
 .multimedia-title h2 {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -1696,7 +1716,7 @@ video:focus {
 }
 
 .multimedia-layout-wrapper .video-text-item h3 {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -1898,7 +1918,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("../images/folletos/hg-1.jpg");
+  background-image: url("/assets/img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2055,7 +2075,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("../images/circulo_estelar/ce-header.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-header.jpg");
   height: 45vh;
   margin-bottom: 0;
   margin: 0 -0.599rem;
@@ -2139,7 +2159,7 @@ a {
 }
 
 .av-ce-option h4:hover:not(.active) {
-  color: #181818;
+  color: #3b4546;
 }
 
 .av-list-container {
@@ -2153,63 +2173,63 @@ a {
 }
 
 .av-card-default {
-  background-image: url("../images/circulo_estelar/ce-default.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-default.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-6 {
-  background-image: url("../images/circulo_estelar/ce-6.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-7 {
-  background-image: url("../images/circulo_estelar/ce-7.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-8 {
-  background-image: url("../images/circulo_estelar/ce-8.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-9 {
-  background-image: url("../images/circulo_estelar/ce-9.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-10 {
-  background-image: url("../images/circulo_estelar/ce-10.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-11 {
-  background-image: url("../images/circulo_estelar/ce-11.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-12 {
-  background-image: url("../images/circulo_estelar/ce-12.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-13 {
-  background-image: url("../images/circulo_estelar/ce-13.jpg");
+  background-image: url("/assets/img/circulo_estelar/ce-13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2389,7 +2409,7 @@ section.av-lw section.av-section-container .av-section-title i:nth-child(1), sec
 
 section.av-lw section.av-section-container .av-section-title {
   padding: 2% 12%;
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 17px;
   margin-top: 17px;
@@ -2404,7 +2424,7 @@ section.av-lw section.av-section-container .av-section-title {
 
 section.av-lw section.av-section-container .av-section .av-section-select {
   padding: 2% 14%;
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 22.1px;
   margin-top: 17px;
@@ -2462,6 +2482,7 @@ section.av-lw section.av-section-container .av-section .av-list-content {
 
 section.av-lw section.av-section-container .av-section .av-list-content.unable {
   height: auto;
+  min-height: 85vh;
   padding-bottom: 40px;
   opacity: 1;
 }
@@ -2505,7 +2526,7 @@ section.av-lw .disable {
 
 .av-guide h4 {
   font-size: 22.1px;
-  color: #181818;
+  color: #3b4546;
   margin-bottom: 0.4rem;
 }
 
@@ -2615,13 +2636,13 @@ section.av-lw .disable {
 }
 
 .av-filtros div.filter-all {
-  background-color: #181818;
+  background-color: #3b4546;
 }
 
 .av-filtros div.no-active {
   background-color: transparent;
-  fill: #181818;
-  color: #181818;
+  fill: #3b4546;
+  color: #3b4546;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -2629,14 +2650,15 @@ section.av-lw .disable {
 h2.av-brochure-title {
   padding: 3rem 2.5rem 2rem 2.5rem;
   font-size: 34px;
-  color: #181818;
+  color: #3b4546;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
+  font-style: normal;
 }
 
-@supports (-webkit-text-stroke: 1px #181818) {
+@supports (-webkit-text-stroke: 1px #3b4546) {
   h2.av-brochure-title .av-title-stroke {
-    -webkit-text-stroke: 1px #181818;
+    -webkit-text-stroke: 1px #3b4546;
     -webkit-text-fill-color: transparent;
   }
 }
@@ -2652,12 +2674,12 @@ h3.av-brochures-subtitle {
           justify-content: center;
   font-family: montserrat-regular, Helvetica, sans-serif;
   margin-bottom: 1rem;
-  color: #181818;
+  color: #3b4546;
 }
 
 h3.av-brochures-subtitle svg {
   margin-right: 1rem;
-  fill: #181818;
+  fill: #3b4546;
 }
 
 .av-brochure-button {
@@ -2690,7 +2712,7 @@ h3.av-brochures-subtitle svg {
 .av-share i {
   margin-right: 1rem;
   font-size: 24px;
-  color: #181818;
+  color: #3b4546;
 }
 
 .av-map {
@@ -2862,11 +2884,12 @@ h3.av-brochures-subtitle svg {
 
 .av-brochure-item .av-brochure-text .av-brochure-title {
   overflow: hidden;
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 15.3px;
   padding-top: 8px;
   text-align: left;
+  font-style: normal;
 }
 
 .av-brochure-item.av-brochure-main {

@@ -437,10 +437,10 @@ section.av-container.av-container-small .av-row {
 
 .av-title-container .av-title-support {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-family: zona-pro-semi-bold, Helvetica, sans-serif;
   text-align: right;
-  line-height: 22px;
+  line-height: 20px;
   font-style: normal;
 }
 
@@ -456,39 +456,39 @@ section.av-container.av-container-small .av-row {
   color: #fff;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 28.6px;
+  font-size: 26px;
   letter-spacing: 16px;
   font-weight: 300;
 }
 
 @media (min-width: 768px) {
   .av-title-container .av-title-brand {
-    margin-top: 22px;
+    margin-top: 20px;
     width: 160px;
   }
 }
 
 .av-subtitle {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 35.2px;
+  font-size: 38px;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle {
-    font-size: 33.2px;
+    font-size: 36px;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle {
-    font-size: 35.2px;
+    font-size: 38px;
   }
 }
 
@@ -513,26 +513,26 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-subtitle-support {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 33px;
+  font-size: 32px;
   display: block;
   padding: 0;
 }
 
 @media (min-width: 576px) {
   .av-subtitle-support {
-    font-size: 31px;
+    font-size: 30px;
   }
 }
 
 @media (min-width: 768px) {
   .av-subtitle-support {
-    font-size: 33px;
+    font-size: 32px;
   }
 }
 
@@ -557,11 +557,11 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-text {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .av-text.negative {
@@ -585,16 +585,16 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-text.av-text-small {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
 }
 
 .av-text.av-text-small p {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .av-text.av-text-large {
-  font-size: 27px;
+  font-size: 25px;
   line-height: 25px;
 }
 
@@ -608,10 +608,10 @@ section.av-container.av-container-small .av-row {
 
 .av-list {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  padding-left: 22px;
+  padding-left: 20px;
   line-height: 26px;
-  font-size: 22px;
-  color: #181818;
+  font-size: 20px;
+  color: #3b4546;
   list-style-type: disc;
 }
 
@@ -620,7 +620,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-list li {
-  margin-bottom: 8.8px;
+  margin-bottom: 8px;
 }
 
 .av-list.av-list-item {
@@ -677,10 +677,10 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-list .av-list-title {
-  font-size: 22px;
+  font-size: 20px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  padding: 44px 0rem 22px 0rem !important;
-  color: #181818;
+  padding: 40px 0rem 20px 0rem !important;
+  color: #3b4546;
   display: block;
 }
 
@@ -703,8 +703,8 @@ section.av-container.av-container-small .av-row {
 .av-hashtag {
   font-family: zona-pro-light, Helvetica, sans-serif;
   margin: 1rem 0;
-  color: #181818;
-  font-size: 24px;
+  color: #3b4546;
+  font-size: 22px;
 }
 
 .av-card {
@@ -780,7 +780,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-card .av-card-wrapper small {
-  font-size: #181818;
+  font-size: #3b4546;
 }
 
 .av-card .av-card-image {
@@ -797,10 +797,10 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-card .av-card-text .av-card-title {
-  font-size: 33px;
+  font-size: 24px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   margin-bottom: 1rem;
-  color: #181818;
+  color: #3b4546;
 }
 
 .av-table-container {
@@ -818,10 +818,10 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-table-container .av-table thead tr td {
-  padding: 37.4px;
+  padding: 34px;
   color: #fff;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .av-table-container .av-table tr:nth-child(even) {
@@ -829,9 +829,9 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-table-container .av-table td {
-  padding: 22px 39.6px;
+  padding: 20px 36px;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .av-brand {
@@ -926,7 +926,7 @@ section.av-container.av-container-small .av-row {
       -ms-flex-align: center;
           align-items: center;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 26.4px;
+  font-size: 24px;
   padding: 30px 20px 7px 20px;
   border-bottom: 1px solid #666666;
   cursor: pointer;
@@ -937,7 +937,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-panel .av-panel-title i {
-  font-size: 26.4px;
+  font-size: 24px;
 }
 
 .av-panel .av-panel-title .active {
@@ -946,7 +946,7 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-panel .av-panel-title h4 {
-  font-size: 26.4px;
+  font-size: 24px;
 }
 
 .av-panel .av-panel-content {
@@ -972,8 +972,8 @@ section.av-container.av-container-small .av-row {
   visibility: hidden;
   width: auto;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 20px;
-  background-color: #181818;
+  font-size: 18px;
+  background-color: #3b4546;
   color: #fff;
   text-align: center;
   padding: 7px 10px;
@@ -993,7 +993,7 @@ section.av-container.av-container-small .av-row {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #181818 transparent transparent transparent;
+  border-color: #3b4546 transparent transparent transparent;
 }
 
 .av-tooltip:hover .tooltiptext {
@@ -1001,10 +1001,10 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-fallback {
-  color: #181818;
+  color: #3b4546;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 28.6px;
+  font-size: 26px;
   letter-spacing: 0px;
   font-weight: 300;
 }
@@ -1172,7 +1172,7 @@ section.av-container.av-container-small .av-row {
 .av-scroll-wrapper span {
   font-family: montserrat-regular, Helvetica, sans-serif;
   margin: 0 20px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .av-scroll-wrapper i, .av-scroll-wrapper svg {
@@ -1292,7 +1292,7 @@ section.av-container.av-container-small .av-row {
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  padding: 28.6px 41.8px;
+  padding: 22px 38px;
   text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1314,8 +1314,8 @@ section.av-container.av-container-small .av-row {
 .av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
   color: #fff;
   z-index: 5;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .av-button-secondary {
@@ -1327,7 +1327,7 @@ section.av-container.av-container-small .av-row {
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  padding: 28.6px 41.8px;
+  padding: 22px 38px;
   text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1347,8 +1347,8 @@ section.av-container.av-container-small .av-row {
 .av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
   color: #fff;
   z-index: 5;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .av-button-tertiary {
@@ -1423,9 +1423,9 @@ section.av-container.av-container-small .av-row {
 
 .av-link {
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   color: #7F28C4;
-  padding: 22px 22px 22px 0rem;
+  padding: 20px 20px 20px 0rem;
   display: block;
   background-color: transparent;
   border: none;
@@ -1526,11 +1526,11 @@ section.av-container.av-container-small .av-row {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 4rem;
+  width: 200px;
   z-index: 10;
   border: none;
   background-color: transparent;
-  color: #181818;
+  color: #3b4546;
   cursor: pointer;
 }
 
@@ -1578,6 +1578,26 @@ section.av-container.av-container-small .av-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.av-slider .av-slider-content.slide .av-slider-item {
+  z-index: 1;
+}
+
+.av-slider .av-slider-content.slide .lastOne {
+  opacity: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.av-slider .av-slider-content.slide .av-slider-item {
+  z-index: 3;
+  -webkit-animation-name: slideInwards;
+          animation-name: slideInwards;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -1587,10 +1607,10 @@ section.av-container.av-container-small .av-row {
 @-webkit-keyframes slideInwards {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(400px);
-            transform: translateX(400px);
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
   }
-  10% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -1603,10 +1623,10 @@ section.av-container.av-container-small .av-row {
 @keyframes slideInwards {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(400px);
-            transform: translateX(400px);
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
   }
-  10% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -1836,7 +1856,7 @@ video:focus {
 }
 
 .multimedia-title h2 {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -1865,7 +1885,7 @@ video:focus {
 }
 
 .multimedia-layout-wrapper .video-text-item h3 {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -1898,7 +1918,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("../images/folletos/hg-1.jpg");
+  background-image: url("/assets/img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1916,11 +1936,11 @@ a {
 }
 
 .av-subtitle-altern {
-  font-size: 44px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #9113B0;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .av-subtitle-altern.negative {
@@ -1994,7 +2014,7 @@ a {
           flex: 1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  margin: 44px;
+  margin: 40px;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -2011,27 +2031,27 @@ a {
 }
 
 .av-slide-container .av-slide-product .av-slide-description .av-slide-description-price {
-  font-size: 22px;
+  font-size: 20px;
   color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   display: block;
 }
 
 .av-slide-container .av-slide-product .av-slide-code {
-  font-size: 22px;
+  font-size: 20px;
   font-family: montserrat-regular, Helvetica, sans-serif;
   margin-bottom: 0rem;
 }
 
 .av-slide-container .av-slide-product .av-slide-text {
-  padding: 22px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-text-item:first-child {
-  padding-right: 22px;
+  padding-right: 20px;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -2042,13 +2062,13 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-title {
-  font-size: 26.4px;
+  font-size: 24px;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 18.18182px;
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-title p {
@@ -2056,17 +2076,17 @@ a {
 }
 
 .av-concierto {
-  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
+  background-image: url("/assets/img/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../images/conciertoBasesHeader.jpg");
+    background-image: url("/assets/img/conciertoBasesHeader.jpg");
   }
 }
 
 .av-ec-header {
-  background-image: url("../images/etica-cumplimiento/avon-office.jpg");
+  background-image: url("/assets/img/etica-cumplimiento/avon-office.jpg");
 }
 
 .av-ec-values p {
@@ -2087,54 +2107,54 @@ a {
 }
 
 .av-card-1 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-1.jpg");
+  background-image: url("/assets/img/etica-cumplimiento/banner-ec-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-2 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-2.jpg");
+  background-image: url("/assets/img/etica-cumplimiento/banner-ec-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-3 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-3.jpg");
+  background-image: url("/assets/img/etica-cumplimiento/banner-ec-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-4 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-4.jpg");
+  background-image: url("/assets/img/etica-cumplimiento/banner-ec-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-5 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-5.jpg");
+  background-image: url("/assets/img/etica-cumplimiento/banner-ec-5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-conv-header {
-  background-image: url("../images/responsabilidad-social/violence-woman.jpg");
+  background-image: url("/assets/img/responsabilidad-social/violence-woman.jpg");
 }
 
 .av-cm-header {
-  background-image: url("../images/responsabilidad-social/cm-ganadores.jpg");
+  background-image: url("/assets/img/responsabilidad-social/cm-ganadores.jpg");
 }
 
 .av-cm-convocatoria {
-  background-image: url("../images/responsabilidad-social/cm-convocatoria.jpg");
+  background-image: url("/assets/img/responsabilidad-social/cm-convocatoria.jpg");
 }
 
 .av-conv-1 {
-  background-image: url("../images/responsabilidad-social/violence-banner-1.jpg");
+  background-image: url("/assets/img/responsabilidad-social/violence-banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2142,7 +2162,7 @@ a {
 }
 
 .av-conv-2 {
-  background-image: url("../images/responsabilidad-social/violence-banner-2.jpg");
+  background-image: url("/assets/img/responsabilidad-social/violence-banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2150,7 +2170,7 @@ a {
 }
 
 .av-conv-3 {
-  background-image: url("../images/responsabilidad-social/violence-banner-3.jpg");
+  background-image: url("/assets/img/responsabilidad-social/violence-banner-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2158,12 +2178,12 @@ a {
 }
 
 .av-conv-row .w-100 {
-  height: 44px;
+  height: 40px;
 }
 
 @media (min-width: 992px) {
   .av-conv-row .w-100 {
-    height: 88px;
+    height: 80px;
   }
 }
 
@@ -2302,7 +2322,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #061E3F;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -2323,14 +2343,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title {
-    font-size: 61.6px;
+    font-size: 56px;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title {
-    font-size: 66px;
+    font-size: 60px;
     line-height: 55px;
   }
 }
@@ -2340,7 +2360,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -2364,14 +2384,14 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title.secondary {
-    font-size: 61.6px;
+    font-size: 56px;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title.secondary {
-    font-size: 66px;
+    font-size: 60px;
     line-height: 55px;
   }
 }
@@ -2427,7 +2447,7 @@ a {
   text-align: left;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   color: #fff;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 30px;
   text-transform: uppercase;
   font-style: normal;
@@ -2448,20 +2468,20 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-title.negative {
-    font-size: 61.6px;
+    font-size: 56px;
     line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-prtnl-title.negative {
-    font-size: 66px;
+    font-size: 60px;
     line-height: 55px;
   }
 }
 
 .av-prtnl-subtitle {
-  color: #181818;
+  color: #3b4546;
   font-family: gotham-bold, "Arial Black", Gadget, sans-serif;
   padding-left: 2rem;
   width: 100%;
@@ -2482,14 +2502,14 @@ a {
 @media (min-width: 768px) {
   .av-prtnl-subtitle {
     width: 115%;
-    padding: 22px 44px;
+    padding: 20px 40px;
     background-color: #061E3F;
     color: #fff;
   }
 }
 
 .av-prtnl-subtitle.secondary {
-  color: #181818;
+  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -2536,11 +2556,11 @@ a {
 }
 
 .av-prtnl-text {
-  color: #181818;
+  color: #3b4546;
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .av-prtnl-text.negative {
@@ -2633,18 +2653,18 @@ a {
 
 .av-prtnl-studio-text span:nth-child(1) {
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .av-prtnl-studio-text span:nth-child(2) {
   font-family: gotham-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 132px;
+  font-size: 120px;
   margin: 0 0.3rem;
 }
 
 .av-prtnl-studio-text span:nth-child(3) {
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -2688,7 +2708,7 @@ a {
   text-align: left;
   min-height: 14rem;
   text-decoration: none;
-  color: #181818;
+  color: #3b4546;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 100%;
@@ -2738,7 +2758,7 @@ a {
 }
 
 .av-prtnl-prllx {
-  background-image: url("../images/anew-protinol/prtnl-background.jpg");
+  background-image: url("/assets/img/anew-protinol/prtnl-background.jpg");
 }
 
 .h40vh {
@@ -2762,7 +2782,7 @@ section.av-nosolas-main {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-image: url("../images/responsabilidad-social/woman_manifiesto.jpg");
+  background-image: url("/assets/img/responsabilidad-social/woman_manifiesto.jpg");
   background-position: 25% top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2924,7 +2944,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url("../images/responsabilidad-social/not-alone-title.jpg");
+  background-image: url("/assets/img/responsabilidad-social/not-alone-title.jpg");
 }
 
 .av-nosolas-title .av-title-stroke {
@@ -2932,23 +2952,23 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-nosolas-title .av-title-text:nth-child(2), .av-nosolas-title .av-title-support {
-  background-image: url("../images/avon-gradient.jpg");
+  background-image: url("/assets/img/avon-gradient.jpg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .av-nosolas-banner-1 {
-  background-image: url("../images/responsabilidad-social/not-alone-banner-1.jpg");
+  background-image: url("/assets/img/responsabilidad-social/not-alone-banner-1.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-3 {
-  background-image: url("../images/responsabilidad-social/not-alone-banner-3.jpg");
+  background-image: url("/assets/img/responsabilidad-social/not-alone-banner-3.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-2 {
-  background-image: url("../images/responsabilidad-social/not-alone-banner-2.jpg");
+  background-image: url("/assets/img/responsabilidad-social/not-alone-banner-2.jpg");
   background-size: cover;
   height: 300px;
 }
@@ -2956,11 +2976,11 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 .av-nosolas-brands {
   width: 80px;
   display: block;
-  margin: 22px auto;
+  margin: 20px auto;
 }
 
 .av-nosolas-letter .av-list {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .av-nosolas-letter .av-list li {
@@ -2973,19 +2993,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-1 {
-  background-image: url("../images/responsabilidad-social/esr-1.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-1.jpg");
 }
 
 .av-esr-2 {
-  background-image: url("../images/responsabilidad-social/esr-2.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-2.jpg");
 }
 
 .av-esr-3 {
-  background-image: url("../images/responsabilidad-social/esr-3.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-3.jpg");
 }
 
 .av-esr-4 {
-  background-image: url("../images/responsabilidad-social/esr-4.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-4.jpg");
 }
 
 .av-esr-grid [class^="col-"] {
@@ -2993,31 +3013,31 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-grid > div:nth-child(1) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-5.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-5.jpg");
 }
 
 .av-esr-grid > div:nth-child(2) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-6.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-6.jpg");
 }
 
 .av-esr-grid > div:nth-child(3) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-7.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-7.jpg");
 }
 
 .av-esr-grid > div:nth-child(5) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-9.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-9.jpg");
 }
 
 .av-esr-grid > div:nth-child(8) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-12.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-12.jpg");
 }
 
 .av-esr-grid > div:nth-child(9) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-13.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-13.jpg");
 }
 
 .av-esr-grid > div:nth-child(10) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-14.jpg");
+  background-image: url("/assets/img/responsabilidad-social/esr-14.jpg");
 }
 
 .esr-purple {
@@ -3088,7 +3108,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 992px) {
   .av-ca-hero {
-    padding: 100px;
+    padding: 120px;
   }
 }
 
@@ -3249,15 +3269,15 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.productos:nth-child(1) {
-  background-image: url("../images/conoce-avon/ca-products-1.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-products-1.jpg");
 }
 
 .av-ca-hero.productos:nth-child(2) {
-  background-image: url("../images/conoce-avon/ca-products-2.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-products-2.jpg");
 }
 
 .av-ca-hero.productos:nth-child(3) {
-  background-image: url("../images/conoce-avon/ca-products-3.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-products-3.jpg");
 }
 
 .av-ca-hero.people .av-title-text {
@@ -3313,15 +3333,15 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.people:nth-child(1) {
-  background-image: url("../images/conoce-avon/ca-people-5.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-people-5.jpg");
 }
 
 .av-ca-hero.people:nth-child(2) {
-  background-image: url("../images/conoce-avon/ca-people-4.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-people-4.jpg");
 }
 
 .av-ca-hero.people:nth-child(3) {
-  background-image: url("../images/conoce-avon/ca-people-3.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-people-3.jpg");
 }
 
 .av-ca-hero.liderazgo .av-title-text {
@@ -3377,15 +3397,15 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.liderazgo:nth-child(1) {
-  background-image: url("../images/conoce-avon/ConoceAvonHeaderLiderazgo.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-a.jpg");
 }
 
 .av-ca-hero.liderazgo:nth-child(2) {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo13.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-b.jpg");
 }
 
 .av-ca-hero.liderazgo:nth-child(3) {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo14.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-c.jpg");
 }
 
 .av-ca.av-scroll-wrapper {
@@ -3409,16 +3429,6 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
           justify-content: center;
 }
 
-.av-ca-row.pt-10 {
-  padding-top: 50px;
-}
-
-@media (min-width: 768px) {
-  .av-ca-row.pt-10 {
-    padding-top: 130px;
-  }
-}
-
 .av-ca-row .av-ca-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3437,47 +3447,56 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-row .av-ca-col:first-child, .av-ca-row .av-ca-col:last-child {
-  padding-left: 33px;
-  padding-right: 33px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-width: 768px) {
   .av-ca-row .av-ca-col:first-child {
-    padding-left: 33px;
+    padding-left: 30px;
     padding-right: 0%;
   }
   .av-ca-row .av-ca-col:last-child {
-    padding-right: 33px;
+    padding-right: 30px;
     padding-left: 0%;
   }
 }
 
 @media (min-width: 1024px) {
   .av-ca-row .av-ca-col:first-child {
-    padding-left: 110px;
+    padding-left: 100px;
     padding-right: 0%;
   }
   .av-ca-row .av-ca-col:last-child {
-    padding-right: 110px;
+    padding-right: 100px;
     padding-left: 0%;
   }
 }
 
 @media (min-width: 1200px) {
   .av-ca-row .av-ca-col:first-child {
-    padding-left: 143px;
+    padding-left: 190px;
   }
   .av-ca-row .av-ca-col:last-child {
-    padding-right: 143px;
+    padding-right: 190px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .av-ca-row .av-ca-col:first-child {
-    padding-left: 220px;
+    padding-left: 300px;
   }
   .av-ca-row .av-ca-col:last-child {
-    padding-right: 220px;
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .av-ca-row .av-ca-col:first-child {
+    padding-left: 340px;
+  }
+  .av-ca-row .av-ca-col:last-child {
+    padding-right: 340px;
   }
 }
 
@@ -3486,14 +3505,20 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
     width: 50%;
   }
   .av-ca-row .av-ca-col:first-child:not(.noBack) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: 992px) {
   .av-ca-row .av-ca-col:first-child:not(.noBack) {
     padding-right: 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .av-ca-row .av-ca-col:first-child:not(.noBack) {
+    background-color: #F7F7F7;
   }
 }
 
@@ -3522,47 +3547,56 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-row.reverse .av-ca-col:last-child, .av-ca-row.reverse .av-ca-col:first-child {
-  padding-left: 33px;
-  padding-right: 33px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-width: 768px) {
   .av-ca-row.reverse .av-ca-col:last-child {
-    padding-left: 33px;
+    padding-left: 30px;
     padding-right: 0%;
   }
   .av-ca-row.reverse .av-ca-col:first-child {
-    padding-right: 33px;
+    padding-right: 30px;
     padding-left: 0%;
   }
 }
 
 @media (min-width: 1024px) {
   .av-ca-row.reverse .av-ca-col:last-child {
-    padding-left: 110px;
+    padding-left: 100px;
     padding-right: 0%;
   }
   .av-ca-row.reverse .av-ca-col:first-child {
-    padding-right: 110px;
+    padding-right: 100px;
     padding-left: 0%;
   }
 }
 
 @media (min-width: 1200px) {
   .av-ca-row.reverse .av-ca-col:last-child {
-    padding-left: 143px;
+    padding-left: 190px;
   }
   .av-ca-row.reverse .av-ca-col:first-child {
-    padding-right: 143px;
+    padding-right: 190px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .av-ca-row.reverse .av-ca-col:last-child {
-    padding-left: 220px;
+    padding-left: 300px;
   }
   .av-ca-row.reverse .av-ca-col:first-child {
-    padding-right: 220px;
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .av-ca-row.reverse .av-ca-col:last-child {
+    padding-left: 340px;
+  }
+  .av-ca-row.reverse .av-ca-col:first-child {
+    padding-right: 340px;
   }
 }
 
@@ -3635,7 +3669,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 @media (min-width: 992px) {
   .av-explore-card {
     width: 45%;
-    min-height: 25rem;
+    min-height: 200px;
   }
 }
 
@@ -3659,8 +3693,8 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   top: 0;
   right: 0;
   left: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   z-index: 110;
 }
 
@@ -3706,11 +3740,16 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 .av-header .av-header-link a {
   padding: 15px 25px 5px 25px;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   border-bottom: 3px solid transparent;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  opacity: 0.8;
+}
+
+.av-header .av-header-link a:hover {
+  opacity: 1;
 }
 
 .av-header .av-header-link a.active {
@@ -3726,7 +3765,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background-color: transparent;
 }
 
@@ -3735,17 +3774,39 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   background-image: unset;
 }
 
-.av-header.av-header-white a {
-  color: #181818;
+.av-header.av-header-white a, .av-header.av-header-white svg {
+  color: #3b4546;
+  fill: #3b4546;
 }
 
-.av-header.av-header-white svg {
-  fill: #181818;
+.av-header.av-header-white a:hover, .av-header.av-header-white svg:hover {
+  color: #7F28C4;
+  fill: #7F28C4;
 }
 
 .av-header.av-header-white .av-header-line {
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
+}
+
+.pt-10 {
+  padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .pt-10 {
+    padding-top: 130px;
+  }
+}
+
+.pb-15 {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .pb-15 {
+    padding-bottom: 180px;
+  }
 }
 
 .avMenu {
@@ -3779,7 +3840,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 .avMenu a {
   padding: 0.8rem;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .av-people {
@@ -3885,6 +3946,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   margin: 0 auto;
+  min-height: 720px;
 }
 
 @media (min-width: 768px) {
@@ -3893,6 +3955,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    min-height: 500px;
   }
 }
 
@@ -3901,7 +3964,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   position: relative;
   top: -4.5rem;
   z-index: 0;
-  padding: 2rem;
+  padding: 30px;
   text-align: center;
 }
 
@@ -3909,7 +3972,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   .av-ca-container .av-ca-earn {
     padding: 4rem 20rem 4rem 4rem;
     top: 0;
-    left: 2%;
+    left: 12%;
   }
 }
 
@@ -3936,7 +3999,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 768px) {
   .av-ca-container .av-ca-earn + img {
-    right: 25%;
+    right: 15%;
     width: 500px;
   }
 }
@@ -4014,66 +4077,110 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-people-1 {
-  background-image: url("../images/conoce-avon/ca-people-1.jpg");
-}
-
-.av-people-9 {
-  background-image: url("../images/conoce-avon/ca-people-9.jpg");
-}
-
-.av-people-7 {
-  background-image: url("../images/conoce-avon/ca-people-7.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-people-1.jpg");
 }
 
 .av-people-2 {
-  background-image: url("../images/conoce-avon/ca-people-2.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-people-2.jpg");
+}
+
+.av-people-7 {
+  background-image: url("/assets/img/conoce-avon/ca-people-7.jpg");
 }
 
 .av-people-8 {
-  background-image: url("../images/conoce-avon/ca-people-8.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-people-8.jpg");
 }
 
-.av-product-12 {
-  background-image: url("../images/conoce-avon/ca-products-12.jpg");
+.av-people-9 {
+  background-image: url("/assets/img/conoce-avon/ca-people-9.jpg");
 }
 
-.av-product-14 {
-  background-image: url("../images/conoce-avon/ca-products-14.jpg");
+.av-people-12 {
+  background-image: url("/assets/img/conoce-avon/ca-people-12.jpg");
 }
 
-.av-people-15 {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo7.jpg");
+.av-people-13 {
+  background-image: url("/assets/img/conoce-avon/ca-people-13.jpg");
 }
 
-.av-people-15 {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo7.jpg");
+.av-products-9 {
+  background-image: url("/assets/img/conoce-avon/ca-products-9.jpg");
 }
 
-.av-people-16 {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo6.jpg");
+.av-products-12 {
+  background-image: url("/assets/img/conoce-avon/ca-products-12.jpg");
 }
 
-.av-people-17 {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo8.jpg");
+.av-products-14 {
+  background-image: url("/assets/img/conoce-avon/ca-products-14.jpg");
 }
 
-.av-people-18 {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo9.jpg");
-}
-
-.av-people-19 {
-  background-image: url("../images/conoce-avon/ConoceAvonLiderazgo10.jpg");
+.av-products-16 {
+  background-image: url("/assets/img/conoce-avon/ca-products-16.jpg");
 }
 
 .av-product-4-2 {
-  background-image: url("../images/conoce-avon/ca-products-4.2.jpg");
-}
-
-.av-explore-2 {
-  background-image: url("../images/conoce-avon/ca-people-6.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-products-4.2.jpg");
 }
 
 .av-explore-1 {
-  background-image: url("../images/conoce-avon/ca-products-15.jpg");
+  background-image: url("/assets/img/conoce-avon/ca-products-15.jpg");
+}
+
+.av-explore-2 {
+  background-image: url("/assets/img/conoce-avon/ca-people-6.jpg");
+}
+
+.av-liderazgo-1, .av-liderazgo-2, .av-liderazgo-3 {
+  height: 50vh;
+}
+
+.av-liderazgo-4, .av-liderazgo-5 {
+  height: 30vh;
+}
+
+.av-liderazgo-1 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-1.jpg");
+}
+
+.av-liderazgo-2 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-2.jpg");
+}
+
+.av-liderazgo-3 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-3.jpg");
+}
+
+.av-liderazgo-4 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-4.jpg");
+}
+
+.av-liderazgo-5 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-5.jpg");
+}
+
+.av-liderazgo-6 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-6.jpg");
+}
+
+.av-liderazgo-7 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-7.jpg");
+}
+
+.av-liderazgo-8 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-8.jpg");
+}
+
+.av-liderazgo-9 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-9.jpg");
+}
+
+.av-liderazgo-10 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-10.jpg");
+}
+
+.av-liderazgo-11 {
+  background-image: url("/assets/img/conoce-avon/ca-liderazgo-11.jpg");
 }
 /*# sourceMappingURL=styles_scss.css.map */

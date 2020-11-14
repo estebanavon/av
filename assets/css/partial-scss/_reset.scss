@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{ 
     
     display: block;
@@ -33,6 +34,9 @@ body{
         margin: 0;
     }
 }
+
+// Magnolia Exceptions
+
 video:focus {
     outline: none;
   }

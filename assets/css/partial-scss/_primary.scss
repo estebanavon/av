@@ -134,11 +134,11 @@
     }
 }
 .av-subtitle {
-    @include subtitle($size-text * 1.6);
+    @include subtitle($size-text * 1.9);
     @include negative();
 
     &-support {
-        @include subtitle($size-text * 1.5);
+        @include subtitle($size-text * 1.6);
         @include negative();
     }
     
@@ -311,7 +311,7 @@
         background-color: $color-light-white;
         flex-grow: 1;
         .av-card-title {
-            font-size: $size-text * 1.5;
+            font-size: $size-text * 1.2;
             font-family: $bold-monts;
             margin-bottom: 1rem;
             color: $color-text;

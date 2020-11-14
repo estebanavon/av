@@ -48,7 +48,11 @@ $(document).ready(function(){
         let urlFile;
         switch (type){
             case "imb":
-                urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/'+ yearCurrent +''+ campaign(e) + '_0' + file +'/#/'
+                if (file <= 9) {
+                    urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/'+ yearCurrent +''+ campaign(e) + '_0' + file +'/#/'
+                } else {
+                    urlFile = 'https://catalogo.avon.mx/'+ campaign(e) +'/'+ yearCurrent +''+ campaign(e) + '_' + file +'/#/'
+                }
                 break
             case "contigo":
                 urlFile = 'https://www.mx.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
@@ -209,9 +213,13 @@ $(document).ready(function(){
             brochureSelector.children(':not([data-type="'+ avFilter +'"])').hide();
         }
     });
-
-
-
-
+  	
+    $(window).scroll(function () {
+        const scrollPosition = $(document).scrollTop();
+        if (scrollPosition > 10) {
+            $(".av-brochure-aside").addClass('av-sticky').next().addClass('av-sticky');
+        } else {
+            $(".av-brochure-aside").removeClass('av-sticky').next().removeClass('av-sticky');
+        }
+    });
 })
-

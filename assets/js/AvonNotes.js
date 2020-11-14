@@ -1,6 +1,6 @@
 
   $(document).ready(function(){
-    var dataLayer = [];
+    
     $(".av-section-select").on('click', function(e) {
         var lwprofile = $(this).find("p").attr("data-profile");
         var lwSection = $(this).find("p").text();
@@ -9,6 +9,6 @@
           lwSectionText: lwSection,
           lwProfile: lwprofile,
         });
-        console.log(dataLayer);
+        
       });
   });
