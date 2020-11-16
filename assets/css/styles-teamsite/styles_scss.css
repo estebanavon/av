@@ -1,55 +1,55 @@
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Black.otf");
+  src: url("../fonts/ZonaPro-Black.otf");
   font-family: zona-pro-black;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Light.otf");
+  src: url("../fonts/ZonaPro-Light.otf");
   font-family: zona-pro-light;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Regular.otf");
+  src: url("../fonts/ZonaPro-Regular.otf");
   font-family: zona-pro-regular;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-SemiBold.otf");
+  src: url("../fonts/ZonaPro-SemiBold.otf");
   font-family: zona-pro-semi-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/ZonaPro-Thin.otf");
+  src: url("../fonts/ZonaPro-Thin.otf");
   font-family: ZonaProThin;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Regular.ttf");
   font-family: montserrat-regular;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-Light.ttf");
+  src: url("../fonts/Montserrat-Light.ttf");
   font-family: montserrat-light;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-SemiBold.ttf");
+  src: url("../fonts/Montserrat-SemiBold.ttf");
   font-family: montserrat-semi-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat-Bold.ttf");
   font-family: montserrat-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Gotham-Bold.otf");
+  src: url("../fonts/Gotham-Bold.otf");
   font-family: gotham-bold;
 }
 
 @font-face {
-  src: url("/assets/fonts/Gotham-Book.otf");
+  src: url("../fonts/Gotham-Book.otf");
   font-family: gotham-book;
 }
 
@@ -1918,7 +1918,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("/assets/img/folletos/hg-1.jpg");
+  background-image: url("../img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2075,7 +2075,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("/assets/img/circulo_estelar/ce-header.jpg");
+  background-image: url("../img/circulo_estelar/ce-header.jpg");
   height: 45vh;
   margin-bottom: 0;
   margin: 0 -0.599rem;
@@ -2173,63 +2173,63 @@ a {
 }
 
 .av-card-default {
-  background-image: url("/assets/img/circulo_estelar/ce-default.jpg");
+  background-image: url("../img/circulo_estelar/ce-default.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-6 {
-  background-image: url("/assets/img/circulo_estelar/ce-6.jpg");
+  background-image: url("../img/circulo_estelar/ce-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-7 {
-  background-image: url("/assets/img/circulo_estelar/ce-7.jpg");
+  background-image: url("../img/circulo_estelar/ce-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-8 {
-  background-image: url("/assets/img/circulo_estelar/ce-8.jpg");
+  background-image: url("../img/circulo_estelar/ce-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-9 {
-  background-image: url("/assets/img/circulo_estelar/ce-9.jpg");
+  background-image: url("../img/circulo_estelar/ce-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-10 {
-  background-image: url("/assets/img/circulo_estelar/ce-10.jpg");
+  background-image: url("../img/circulo_estelar/ce-10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-11 {
-  background-image: url("/assets/img/circulo_estelar/ce-11.jpg");
+  background-image: url("../img/circulo_estelar/ce-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-12 {
-  background-image: url("/assets/img/circulo_estelar/ce-12.jpg");
+  background-image: url("../img/circulo_estelar/ce-12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-13 {
-  background-image: url("/assets/img/circulo_estelar/ce-13.jpg");
+  background-image: url("../img/circulo_estelar/ce-13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
