@@ -3550,7 +3550,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1480px) {
   .av-ca-row .av-ca-col:first-child {
     padding-left: 340px;
   }
@@ -3650,7 +3650,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1480px) {
   .av-ca-row.reverse .av-ca-col:last-child {
     padding-left: 340px;
   }
@@ -3700,10 +3700,14 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-explore-card {
-  width: 95%;
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3729,6 +3733,10 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   .av-explore-card {
     width: 45%;
     min-height: 200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -3949,7 +3957,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
           align-items: flex-start;
   color: #fff;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
-  padding: 60px;
+  padding: 60px 40px;
 }
 
 @media (min-width: 768px) {
