@@ -22,13 +22,12 @@
 
 
     @mixin caTitle($color) {
-        @media (max-width:$media-1) {
-            position: relative;
-            top: -90px;    
-        }
-        
         $LetSize: 43px;
         .av-title-text{
+            @media (max-width:$media-1) {
+                position: relative;
+                top: -9%;    
+            }
             @include titile-mixin($color);
             text-align: left;
             font-size: $LetSize;
