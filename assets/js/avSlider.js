@@ -105,7 +105,7 @@ $(document).ready(function(){
                                         '<div class="d-flex justify-content-around w-100 flex-wrap">'+
                                             '<a href="./conoceavon.html" >Nuestros productos</a>'+
                                             '<a href="./conoceavon-unete.html">Únete a Avon</a>'+
-                                            '<a href="./conoceavon-liderazgo.html">Sé una empresaria</a>'+
+                                            '<a href="./conoceavon-empresarias.html">Sé una empresaria</a>'+
                                             '<a href="https://www.avon.mx/avon-mx/">Inicio</a>'+
                                             '<a href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a>'+
                                             '<a href="https://www.avon.mx/avon-mx/becomeARep.html" class="av-button-tertiary negative">Regístrate con nostros</a>'+

@@ -118,7 +118,7 @@
         }
     }
     &.liderazgo{
-        @include caTitle($color-white);
+        
         &:nth-child(1){
             background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-ab.jpg');
             @media (min-width:$media-1) {
@@ -198,10 +198,10 @@
         }
         @media (min-width:$media-6){
             &:#{$child1}-child {
-                padding-left: $caPadding * 3.4;
+                padding-left: $caPadding * 3.2;
             }
             &:#{$child2}-child {
-                padding-right: $caPadding * 3.4;
+                padding-right: $caPadding * 3.2;
             }
         }
     }
@@ -604,6 +604,9 @@
     }
     &-2{
         background-image: url('#{$route-images}/conoce-avon/ca-people-6.jpg');
+    }
+    &-3{
+        background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-a.jpg');
     }
 }
 

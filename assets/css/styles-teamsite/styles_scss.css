@@ -756,7 +756,7 @@ section.av-container.av-container-small .av-row {
   bottom: -1px;
   left: 0;
   background-color: #FF49A3;
-  padding: 20px;
+  padding: 10px;
   width: 90%;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
@@ -1894,7 +1894,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("../img/folletos/hg-1.jpg");
+  background-image: url("../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2051,7 +2051,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("../img/circulo_estelar/ce-header.jpg");
+  background-image: url("../images/circulo_estelar/ce-header.jpg");
   height: 45vh;
   margin-bottom: 0;
   margin: 0 -0.599rem;
@@ -2149,63 +2149,63 @@ a {
 }
 
 .av-card-default {
-  background-image: url("../img/circulo_estelar/ce-default.jpg");
+  background-image: url("../images/circulo_estelar/ce-default.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-6 {
-  background-image: url("../img/circulo_estelar/ce-6.jpg");
+  background-image: url("../images/circulo_estelar/ce-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-7 {
-  background-image: url("../img/circulo_estelar/ce-7.jpg");
+  background-image: url("../images/circulo_estelar/ce-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-8 {
-  background-image: url("../img/circulo_estelar/ce-8.jpg");
+  background-image: url("../images/circulo_estelar/ce-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-9 {
-  background-image: url("../img/circulo_estelar/ce-9.jpg");
+  background-image: url("../images/circulo_estelar/ce-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-10 {
-  background-image: url("../img/circulo_estelar/ce-10.jpg");
+  background-image: url("../images/circulo_estelar/ce-10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-11 {
-  background-image: url("../img/circulo_estelar/ce-11.jpg");
+  background-image: url("../images/circulo_estelar/ce-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-12 {
-  background-image: url("../img/circulo_estelar/ce-12.jpg");
+  background-image: url("../images/circulo_estelar/ce-12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-13 {
-  background-image: url("../img/circulo_estelar/ce-13.jpg");
+  background-image: url("../images/circulo_estelar/ce-13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,14 +1,14 @@
 
 $dev-font: '/assets/fonts';
-$dev-images: '/assets/img';
+//$dev-images: '/assets/img';
 
 // Utilizar esta ruta si el objetivo es Produccion
 
 $prod-font: '../fonts';
 $route-font: $prod-font;
 
-//$prod-images: '../images';
-$prod-images: '../img';
+$prod-images: '../images';
+$dev-images: '../img';
 
 
 //Configuración de rutas sin condicionante

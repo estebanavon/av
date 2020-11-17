@@ -756,7 +756,7 @@ section.av-container.av-container-small .av-row {
   bottom: -1px;
   left: 0;
   background-color: #FF49A3;
-  padding: 20px;
+  padding: 10px;
   width: 90%;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
@@ -1894,7 +1894,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("../img/folletos/hg-1.jpg");
+  background-image: url("../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2052,17 +2052,17 @@ a {
 }
 
 .av-concierto {
-  background-image: url("../img/conciertoBasesHeaderMobile.jpg");
+  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../img/conciertoBasesHeader.jpg");
+    background-image: url("../images/conciertoBasesHeader.jpg");
   }
 }
 
 .av-ec-header {
-  background-image: url("../img/etica-cumplimiento/avon-office.jpg");
+  background-image: url("../images/etica-cumplimiento/avon-office.jpg");
 }
 
 .av-ec-values p {
@@ -2083,54 +2083,54 @@ a {
 }
 
 .av-card-1 {
-  background-image: url("../img/etica-cumplimiento/banner-ec-1.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-2 {
-  background-image: url("../img/etica-cumplimiento/banner-ec-2.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-3 {
-  background-image: url("../img/etica-cumplimiento/banner-ec-3.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-4 {
-  background-image: url("../img/etica-cumplimiento/banner-ec-4.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-5 {
-  background-image: url("../img/etica-cumplimiento/banner-ec-5.jpg");
+  background-image: url("../images/etica-cumplimiento/banner-ec-5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-conv-header {
-  background-image: url("../img/responsabilidad-social/violence-woman.jpg");
+  background-image: url("../images/responsabilidad-social/violence-woman.jpg");
 }
 
 .av-cm-header {
-  background-image: url("../img/responsabilidad-social/cm-ganadores.jpg");
+  background-image: url("../images/responsabilidad-social/cm-ganadores.jpg");
 }
 
 .av-cm-convocatoria {
-  background-image: url("../img/responsabilidad-social/cm-convocatoria.jpg");
+  background-image: url("../images/responsabilidad-social/cm-convocatoria.jpg");
 }
 
 .av-conv-1 {
-  background-image: url("../img/responsabilidad-social/violence-banner-1.jpg");
+  background-image: url("../images/responsabilidad-social/violence-banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2138,7 +2138,7 @@ a {
 }
 
 .av-conv-2 {
-  background-image: url("../img/responsabilidad-social/violence-banner-2.jpg");
+  background-image: url("../images/responsabilidad-social/violence-banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2146,7 +2146,7 @@ a {
 }
 
 .av-conv-3 {
-  background-image: url("../img/responsabilidad-social/violence-banner-3.jpg");
+  background-image: url("../images/responsabilidad-social/violence-banner-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2728,7 +2728,7 @@ a {
 }
 
 .av-prtnl-prllx {
-  background-image: url("../img/anew-protinol/prtnl-background.jpg");
+  background-image: url("../images/anew-protinol/prtnl-background.jpg");
 }
 
 .h40vh {
@@ -2752,7 +2752,7 @@ section.av-nosolas-main {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-image: url("../img/responsabilidad-social/woman_manifiesto.jpg");
+  background-image: url("../images/responsabilidad-social/woman_manifiesto.jpg");
   background-position: 25% top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2914,7 +2914,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url("../img/responsabilidad-social/not-alone-title.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-title.jpg");
 }
 
 .av-nosolas-title .av-title-stroke {
@@ -2922,23 +2922,23 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-nosolas-title .av-title-text:nth-child(2), .av-nosolas-title .av-title-support {
-  background-image: url("../img/avon-gradient.jpg");
+  background-image: url("../images/avon-gradient.jpg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .av-nosolas-banner-1 {
-  background-image: url("../img/responsabilidad-social/not-alone-banner-1.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-banner-1.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-3 {
-  background-image: url("../img/responsabilidad-social/not-alone-banner-3.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-banner-3.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-2 {
-  background-image: url("../img/responsabilidad-social/not-alone-banner-2.jpg");
+  background-image: url("../images/responsabilidad-social/not-alone-banner-2.jpg");
   background-size: cover;
   height: 300px;
 }
@@ -2963,19 +2963,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-1 {
-  background-image: url("../img/responsabilidad-social/esr-1.jpg");
+  background-image: url("../images/responsabilidad-social/esr-1.jpg");
 }
 
 .av-esr-2 {
-  background-image: url("../img/responsabilidad-social/esr-2.jpg");
+  background-image: url("../images/responsabilidad-social/esr-2.jpg");
 }
 
 .av-esr-3 {
-  background-image: url("../img/responsabilidad-social/esr-3.jpg");
+  background-image: url("../images/responsabilidad-social/esr-3.jpg");
 }
 
 .av-esr-4 {
-  background-image: url("../img/responsabilidad-social/esr-4.jpg");
+  background-image: url("../images/responsabilidad-social/esr-4.jpg");
 }
 
 .av-esr-grid [class^="col-"] {
@@ -2983,31 +2983,31 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-grid > div:nth-child(1) .av-card {
-  background-image: url("../img/responsabilidad-social/esr-5.jpg");
+  background-image: url("../images/responsabilidad-social/esr-5.jpg");
 }
 
 .av-esr-grid > div:nth-child(2) .av-card {
-  background-image: url("../img/responsabilidad-social/esr-6.jpg");
+  background-image: url("../images/responsabilidad-social/esr-6.jpg");
 }
 
 .av-esr-grid > div:nth-child(3) .av-card {
-  background-image: url("../img/responsabilidad-social/esr-7.jpg");
+  background-image: url("../images/responsabilidad-social/esr-7.jpg");
 }
 
 .av-esr-grid > div:nth-child(5) .av-card {
-  background-image: url("../img/responsabilidad-social/esr-9.jpg");
+  background-image: url("../images/responsabilidad-social/esr-9.jpg");
 }
 
 .av-esr-grid > div:nth-child(8) .av-card {
-  background-image: url("../img/responsabilidad-social/esr-12.jpg");
+  background-image: url("../images/responsabilidad-social/esr-12.jpg");
 }
 
 .av-esr-grid > div:nth-child(9) .av-card {
-  background-image: url("../img/responsabilidad-social/esr-13.jpg");
+  background-image: url("../images/responsabilidad-social/esr-13.jpg");
 }
 
 .av-esr-grid > div:nth-child(10) .av-card {
-  background-image: url("../img/responsabilidad-social/esr-14.jpg");
+  background-image: url("../images/responsabilidad-social/esr-14.jpg");
 }
 
 .esr-purple {
@@ -3260,32 +3260,32 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.productos:nth-child(1) {
-  background-image: url("../img/conoce-avon/ca-products-1b.jpg");
+  background-image: url("../images/conoce-avon/ca-products-1b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.productos:nth-child(1) {
-    background-image: url("../img/conoce-avon/ca-products-1.jpg");
+    background-image: url("../images/conoce-avon/ca-products-1.jpg");
   }
 }
 
 .av-ca-hero.productos:nth-child(2) {
-  background-image: url("../img/conoce-avon/ca-products-2b.jpg");
+  background-image: url("../images/conoce-avon/ca-products-2b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.productos:nth-child(2) {
-    background-image: url("../img/conoce-avon/ca-products-2.jpg");
+    background-image: url("../images/conoce-avon/ca-products-2.jpg");
   }
 }
 
 .av-ca-hero.productos:nth-child(3) {
-  background-image: url("../img/conoce-avon/ca-products-3b.jpg");
+  background-image: url("../images/conoce-avon/ca-products-3b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.productos:nth-child(3) {
-    background-image: url("../img/conoce-avon/ca-products-3.jpg");
+    background-image: url("../images/conoce-avon/ca-products-3.jpg");
   }
 }
 
@@ -3349,121 +3349,62 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.people:nth-child(1) {
-  background-image: url("../img/conoce-avon/ca-people-5b.jpg");
+  background-image: url("../images/conoce-avon/ca-people-5b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.people:nth-child(1) {
-    background-image: url("../img/conoce-avon/ca-people-5.jpg");
+    background-image: url("../images/conoce-avon/ca-people-5.jpg");
   }
 }
 
 .av-ca-hero.people:nth-child(2) {
-  background-image: url("../img/conoce-avon/ca-people-4b.jpg");
+  background-image: url("../images/conoce-avon/ca-people-4b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.people:nth-child(2) {
-    background-image: url("../img/conoce-avon/ca-people-4.jpg");
+    background-image: url("../images/conoce-avon/ca-people-4.jpg");
   }
 }
 
 .av-ca-hero.people:nth-child(3) {
-  background-image: url("../img/conoce-avon/ca-people-3b.jpg");
+  background-image: url("../images/conoce-avon/ca-people-3b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.people:nth-child(3) {
-    background-image: url("../img/conoce-avon/ca-people-3.jpg");
-  }
-}
-
-@media (max-width: 768px) {
-  .av-ca-hero.liderazgo {
-    position: relative;
-    top: -15%;
-  }
-}
-
-.av-ca-hero.liderazgo .av-title-text {
-  color: #fff;
-  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
-  text-transform: uppercase;
-  line-height: 52px;
-  font-style: normal;
-  word-break: break-word;
-  margin: 0rem;
-  text-align: left;
-  font-size: 45px;
-  line-height: 45px;
-  margin-bottom: 22.5px;
-}
-
-@media (min-width: 576px) {
-  .av-ca-hero.liderazgo .av-title-text {
-    font-size: 81px;
-    line-height: 72px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .av-ca-hero.liderazgo .av-title-text {
-    font-size: 94.5px;
-    line-height: 90px;
-  }
-}
-
-@supports (-webkit-text-stroke: 1px black) {
-  .av-ca-hero.liderazgo .av-title-text .av-title-stroke {
-    -webkit-text-stroke: 1px #fff;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
-.av-ca-hero.liderazgo .av-title-support {
-  color: #fff;
-  width: 100%;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-@media (min-width: 1024px) {
-  .av-ca-hero.liderazgo .av-title-support {
-    width: 47%;
-    font-size: 25px;
-    line-height: 27px;
+    background-image: url("../images/conoce-avon/ca-people-3.jpg");
   }
 }
 
 .av-ca-hero.liderazgo:nth-child(1) {
-  background-image: url("../img/conoce-avon/ca-liderazgo-ab.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-ab.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.liderazgo:nth-child(1) {
-    background-image: url("../img/conoce-avon/ca-liderazgo-a.jpg");
+    background-image: url("../images/conoce-avon/ca-liderazgo-a.jpg");
   }
 }
 
 .av-ca-hero.liderazgo:nth-child(2) {
-  background-image: url("../img/conoce-avon/ca-liderazgo-bb.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-bb.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.liderazgo:nth-child(2) {
-    background-image: url("../img/conoce-avon/ca-liderazgo-b.jpg");
+    background-image: url("../images/conoce-avon/ca-liderazgo-b.jpg");
   }
 }
 
 .av-ca-hero.liderazgo:nth-child(3) {
-  background-image: url("../img/conoce-avon/ca-liderazgo-cb.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-cb.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.liderazgo:nth-child(3) {
-    background-image: url("../img/conoce-avon/ca-liderazgo-c.jpg");
+    background-image: url("../images/conoce-avon/ca-liderazgo-c.jpg");
   }
 }
 
@@ -3552,10 +3493,10 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 1480px) {
   .av-ca-row .av-ca-col:first-child {
-    padding-left: 340px;
+    padding-left: 320px;
   }
   .av-ca-row .av-ca-col:last-child {
-    padding-right: 340px;
+    padding-right: 320px;
   }
 }
 
@@ -3652,10 +3593,10 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 1480px) {
   .av-ca-row.reverse .av-ca-col:last-child {
-    padding-left: 340px;
+    padding-left: 320px;
   }
   .av-ca-row.reverse .av-ca-col:first-child {
-    padding-right: 340px;
+    padding-right: 320px;
   }
 }
 
@@ -4148,59 +4089,63 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-people-1 {
-  background-image: url("../img/conoce-avon/ca-people-1.jpg");
+  background-image: url("../images/conoce-avon/ca-people-1.jpg");
 }
 
 .av-people-2 {
-  background-image: url("../img/conoce-avon/ca-people-2.jpg");
+  background-image: url("../images/conoce-avon/ca-people-2.jpg");
 }
 
 .av-people-7 {
-  background-image: url("../img/conoce-avon/ca-people-7.jpg");
+  background-image: url("../images/conoce-avon/ca-people-7.jpg");
 }
 
 .av-people-8 {
-  background-image: url("../img/conoce-avon/ca-people-8.jpg");
+  background-image: url("../images/conoce-avon/ca-people-8.jpg");
 }
 
 .av-people-9 {
-  background-image: url("../img/conoce-avon/ca-people-9.jpg");
+  background-image: url("../images/conoce-avon/ca-people-9.jpg");
 }
 
 .av-people-12 {
-  background-image: url("../img/conoce-avon/ca-people-12.jpg");
+  background-image: url("../images/conoce-avon/ca-people-12.jpg");
 }
 
 .av-people-13 {
-  background-image: url("../img/conoce-avon/ca-people-13.jpg");
+  background-image: url("../images/conoce-avon/ca-people-13.jpg");
 }
 
 .av-products-9 {
-  background-image: url("../img/conoce-avon/ca-products-9.jpg");
+  background-image: url("../images/conoce-avon/ca-products-9.jpg");
 }
 
 .av-products-12 {
-  background-image: url("../img/conoce-avon/ca-products-12.jpg");
+  background-image: url("../images/conoce-avon/ca-products-12.jpg");
 }
 
 .av-products-14 {
-  background-image: url("../img/conoce-avon/ca-products-14.jpg");
+  background-image: url("../images/conoce-avon/ca-products-14.jpg");
 }
 
 .av-products-16 {
-  background-image: url("../img/conoce-avon/ca-products-16.jpg");
+  background-image: url("../images/conoce-avon/ca-products-16.jpg");
 }
 
 .av-product-4-2 {
-  background-image: url("../img/conoce-avon/ca-products-4.2.jpg");
+  background-image: url("../images/conoce-avon/ca-products-4.2.jpg");
 }
 
 .av-explore-1 {
-  background-image: url("../img/conoce-avon/ca-products-15.jpg");
+  background-image: url("../images/conoce-avon/ca-products-15.jpg");
 }
 
 .av-explore-2 {
-  background-image: url("../img/conoce-avon/ca-people-6.jpg");
+  background-image: url("../images/conoce-avon/ca-people-6.jpg");
+}
+
+.av-explore-3 {
+  background-image: url("../images/conoce-avon/ca-liderazgo-a.jpg");
 }
 
 .av-liderazgo-1, .av-liderazgo-2, .av-liderazgo-3 {
@@ -4212,46 +4157,46 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-liderazgo-1 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-1.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-1.jpg");
 }
 
 .av-liderazgo-2 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-2.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-2.jpg");
 }
 
 .av-liderazgo-3 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-3.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-3.jpg");
 }
 
 .av-liderazgo-4 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-4.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-4.jpg");
 }
 
 .av-liderazgo-5 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-5.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-5.jpg");
 }
 
 .av-liderazgo-6 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-6.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-6.jpg");
 }
 
 .av-liderazgo-7 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-7.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-7.jpg");
 }
 
 .av-liderazgo-8 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-8.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-8.jpg");
 }
 
 .av-liderazgo-9 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-9.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-9.jpg");
 }
 
 .av-liderazgo-10 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-10.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-10.jpg");
 }
 
 .av-liderazgo-11 {
-  background-image: url("../img/conoce-avon/ca-liderazgo-11.jpg");
+  background-image: url("../images/conoce-avon/ca-liderazgo-11.jpg");
 }
 /*# sourceMappingURL=styles_scss.css.map */
