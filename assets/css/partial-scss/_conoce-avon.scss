@@ -22,10 +22,10 @@
 
 
     @mixin caTitle($color) {
-        $LetSize: 44px;
+        $LetSize: 45px;
         @media (max-width:$media-1) {
             position: relative;
-            top: -10%;    
+            top: -15%;    
         }
         .av-title-text{
             
@@ -120,13 +120,22 @@
     &.liderazgo{
         @include caTitle($color-white);
         &:nth-child(1){
-            background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-a.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-ab.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-a.jpg');
+            }
         }
         &:nth-child(2){
-            background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-b.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-bb.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-b.jpg');
+            }
         }
         &:nth-child(3){
-            background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-c.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-cb.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-liderazgo-c.jpg');
+            }
         }
     }
     
