@@ -3112,6 +3112,13 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   }
 }
 
+@media (max-width: 768px) {
+  .av-ca-hero .av-anew {
+    position: relative;
+    top: -90px;
+  }
+}
+
 .av-ca-hero .av-anew .av-title-text {
   color: #042E4F;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
@@ -3164,6 +3171,13 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   }
 }
 
+@media (max-width: 768px) {
+  .av-ca-hero .av-mark {
+    position: relative;
+    top: -90px;
+  }
+}
+
 .av-ca-hero .av-mark .av-title-text {
   color: #fff;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
@@ -3213,6 +3227,13 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
     width: 47%;
     font-size: 25px;
     line-height: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .av-ca-hero .av-eau {
+    position: relative;
+    top: -90px;
   }
 }
 
@@ -3269,15 +3290,40 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.productos:nth-child(1) {
-  background-image: url("../img/conoce-avon/ca-products-1.jpg");
+  background-image: url("../img/conoce-avon/ca-products-1b.jpg");
+}
+
+@media (min-width: 768px) {
+  .av-ca-hero.productos:nth-child(1) {
+    background-image: url("../img/conoce-avon/ca-products-1.jpg");
+  }
 }
 
 .av-ca-hero.productos:nth-child(2) {
-  background-image: url("../img/conoce-avon/ca-products-2.jpg");
+  background-image: url("../img/conoce-avon/ca-products-2b.jpg");
+}
+
+@media (min-width: 768px) {
+  .av-ca-hero.productos:nth-child(2) {
+    background-image: url("../img/conoce-avon/ca-products-2.jpg");
+  }
 }
 
 .av-ca-hero.productos:nth-child(3) {
-  background-image: url("../img/conoce-avon/ca-products-3.jpg");
+  background-image: url("../img/conoce-avon/ca-products-3b.jpg");
+}
+
+@media (min-width: 768px) {
+  .av-ca-hero.productos:nth-child(3) {
+    background-image: url("../img/conoce-avon/ca-products-3.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  .av-ca-hero.people {
+    position: relative;
+    top: -90px;
+  }
 }
 
 .av-ca-hero.people .av-title-text {
@@ -3333,15 +3379,40 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.people:nth-child(1) {
-  background-image: url("../img/conoce-avon/ca-people-5.jpg");
+  background-image: url("../img/conoce-avon/ca-people-5b.jpg");
+}
+
+@media (min-width: 768px) {
+  .av-ca-hero.people:nth-child(1) {
+    background-image: url("../img/conoce-avon/ca-people-5.jpg");
+  }
 }
 
 .av-ca-hero.people:nth-child(2) {
-  background-image: url("../img/conoce-avon/ca-people-4.jpg");
+  background-image: url("../img/conoce-avon/ca-people-4b.jpg");
+}
+
+@media (min-width: 768px) {
+  .av-ca-hero.people:nth-child(2) {
+    background-image: url("../img/conoce-avon/ca-people-4.jpg");
+  }
 }
 
 .av-ca-hero.people:nth-child(3) {
-  background-image: url("../img/conoce-avon/ca-people-3.jpg");
+  background-image: url("../img/conoce-avon/ca-people-3b.jpg");
+}
+
+@media (min-width: 768px) {
+  .av-ca-hero.people:nth-child(3) {
+    background-image: url("../img/conoce-avon/ca-people-3.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  .av-ca-hero.liderazgo {
+    position: relative;
+    top: -90px;
+  }
 }
 
 .av-ca-hero.liderazgo .av-title-text {
@@ -3720,6 +3791,10 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   .av-header .av-header-mobile {
     display: none;
   }
+}
+
+.av-header .av-header-mobile.mobile-close {
+  display: none;
 }
 
 .av-header .av-header-link {

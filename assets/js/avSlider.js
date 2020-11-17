@@ -56,7 +56,6 @@ $(document).ready(function(){
         $('#avMenuButton').show();
         $(this).hide();
     });
-    $('#avMenuClose').hide();
     
     $(window).scroll(function(){
         let documentScroll = $(document).scrollTop();

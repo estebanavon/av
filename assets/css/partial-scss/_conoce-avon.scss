@@ -22,6 +22,11 @@
 
 
     @mixin caTitle($color) {
+        @media (max-width:$media-1) {
+            position: relative;
+            top: -90px;    
+        }
+        
         $LetSize: 43px;
         .av-title-text{
             @include titile-mixin($color);
@@ -73,25 +78,43 @@
     }
     &.productos{
         &:nth-child(1){
-            background-image: url('#{$route-images}/conoce-avon/ca-products-1.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-products-1b.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-products-1.jpg');
+            }
         }
         &:nth-child(2){
-            background-image: url('#{$route-images}/conoce-avon/ca-products-2.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-products-2b.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-products-2.jpg');
+            }
         }
         &:nth-child(3){
-            background-image: url('#{$route-images}/conoce-avon/ca-products-3.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-products-3b.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-products-3.jpg');
+            }
         }
     }
     &.people{
         @include caTitle($color-white);
         &:nth-child(1){
-            background-image: url('#{$route-images}/conoce-avon/ca-people-5.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-people-5b.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-people-5.jpg');
+            }
         }
         &:nth-child(2){
-            background-image: url('#{$route-images}/conoce-avon/ca-people-4.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-people-4b.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-people-4.jpg');
+            }
         }
         &:nth-child(3){
-            background-image: url('#{$route-images}/conoce-avon/ca-people-3.jpg');
+            background-image: url('#{$route-images}/conoce-avon/ca-people-3b.jpg');
+            @media (min-width:$media-1) {
+                background-image: url('#{$route-images}/conoce-avon/ca-people-3.jpg');
+            }
         }
     }
     &.liderazgo{
@@ -291,6 +314,9 @@
         padding: 20px 15px;
         cursor: pointer;
         @media (min-width:$media-3) {
+            display: none;
+        }
+        &.mobile-close {
             display: none;
         }
     }
