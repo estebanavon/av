@@ -114,13 +114,10 @@
     text-align: center;
     margin-bottom: 20px;
     margin-top: 0;
-    font-size: $size;
+    font-size: $size - 1;
     display: block;
     padding: 0;
     
-    @media (min-width:$media-0){
-        font-size: $size - 2;
-    }
     @media (min-width:$media-1){
         font-size: $size;
     }

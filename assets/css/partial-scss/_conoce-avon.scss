@@ -22,7 +22,7 @@
 
 
     @mixin caTitle($color) {
-        $LetSize: 43px;
+        $LetSize: 44px;
         @media (max-width:$media-1) {
             position: relative;
             top: -10%;    
@@ -57,7 +57,7 @@
             width: 100%;
             font-family: $regular-monts;
             font-style: normal;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 20px;
             @media (min-width:$media-3) {
                 width: 47%;
