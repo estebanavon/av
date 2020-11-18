@@ -3,16 +3,14 @@
     
     padding-left: $margin-default;
     padding-right: $margin-default;
-    padding-top: $margin-md;
-    padding-bottom: $margin-md;
+    padding-top: $margin-lg;
+    padding-bottom: $margin-lg;
     margin-right: $margin-none;
     margin-left: $margin-none;
     
     @media (min-width:$media-1){
         padding-left: $margin-sm;
         padding-right: $margin-sm;
-        padding-top: $margin-lg;
-        padding-bottom: $margin-lg;
     }
     @media (min-width:$media-3){
         padding-left: $margin-md - ($variant/1.3);
@@ -48,7 +46,7 @@ section.av-container {
         @include main-containers();
     }
     &.av-container-small {
-        .av-row {
+        .av-row, .av-pair-container {
             @include main-containers(30px);
         }
     }
@@ -80,40 +78,36 @@ section.av-container {
 
 .av-pair-container {
     @include main-containers();
-    
-        .av-pair-content {
-            width: 100%;
-            display: flex;
-            flex-direction: column-reverse;
-            padding: 0 $margin-default;
+    .av-pair-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
 
-            @media (min-width:$media-1) {
-                flex-direction: row;
-            }
-            @include card-pair(left);
-
-            &.reverse {
-                flex-direction: column-reverse;
-                @media (min-width:$media-1) {
-                    flex-direction: row-reverse;
-                }    
-                @include card-pair(right);
-            }
-            
-            [class^="av-pair"] {
-                width: 100%;
-                @media (min-width:$media-1) {
-                    flex-basis: 50%;
-                }
-            }
-            .av-pair-image {
-                min-height: 200px;
-            }
-
-            
+        @media (min-width:$media-1) {
+            flex-direction: row;
         }
-    
+        @include card-pair(left);
+
+        &.reverse {
+            flex-direction: column-reverse;
+            @media (min-width:$media-1) {
+                flex-direction: row-reverse;
+            }    
+            @include card-pair(right);
+        }
+        
+        [class^="av-pair"] {
+            width: 100%;
+            @media (min-width:$media-1) {
+                flex-basis: 50%;
+            }
+        }
+        .av-pair-image {
+            min-height: 200px;
+        }
+    }
 }
+
 @mixin pLeftRight ($variant:0,$direction:left) {
     padding-left: $margin-sm + $variant;
     padding-right: $margin-sm + $variant;

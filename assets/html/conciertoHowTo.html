@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@2.4.1/css/grid.min.css" />
+
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/styles_scss.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <script src="./../js/TweenMax.min.js"></script>
+    <script src="./../js/ScrollMagic.min.js"></script>
+    
+    <script src="./../js/animation.gsap.min.js"></script>
+    <script src="/dam/avon-mx/static/js/TweenMax.min.js"></script>
+    <script src="/dam/avon-mx/static/js/ScrollMagic.min.js"></script>
+    <script src="/dam/avon-mx/static/js/animation.gsap.min.js"></script>
+  
+    <script >
+        $(document).ready(function(){
+
+            var controller = new ScrollMagic.Controller();
+
+
+            var pinSceneHowTo = new ScrollMagic.Scene({
+                triggerElement: '.steper',
+                triggerHook: 0.1,
+                duration:'95%',
+            })
+            .setPin('.steper', {pushFollowers:true})
+            .addTo(controller);
+              
+            $(window).scroll(function(){
+                const scrollPosition = $(document).scrollTop();
+                var avViewport =  window.innerHeight;
+                if( scrollPosition > avViewport/2 && scrollPosition <  avViewport){
+                    $(".step1").addClass('d-fade').siblings().removeClass('d-fade');
+                } else if (scrollPosition >  avViewport &&  scrollPosition < avViewport + avViewport/2) {
+                    $('.step2').addClass('d-fade').siblings().removeClass('d-fade');
+                } else if (scrollPosition > avViewport + avViewport/2) {
+                    $('.step3').addClass('d-fade').siblings().removeClass('d-fade');
+                }
+            });
+        });
+
+    </script>
+    
+    <style>
+        .test {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .steper {
+            background-color: gray;
+        }
+        [class^="step"] {
+            display: none;
+        }
+        .d-fade {
+            animation-name: avFadeConcert;
+            animation-duration: 1s;
+            display: block;
+        }
+        @keyframes avFadeConcert {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="av-container">
+        <section class="av-title-container av-concierto">
+        </section>
+    </section>
+    <section class="test steper">
+        <h2 class="step1">1 Entra</h2>
+        <h2 class="step2">2 Ubica e ingresa</h2>
+        <h2 class="step3">3 Disfruta</h2>
+    </section>
+    <section class="test">
+        <h2 class="">Otras consideraciones</h2>
+    </section>
+    <section class="test">
+    </section>
+</body>
+</html>

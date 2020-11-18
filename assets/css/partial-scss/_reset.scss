@@ -41,11 +41,11 @@ video:focus {
     outline: none;
   }
 .multimedia-title h2 {
-    @include subtitle(1.4rem);
+    @include subtitle($size-text * 1.9);
     margin: 2rem;
 }
 .multimedia-layout-wrapper .video-text-item h3 {
-    @include subtitle(1.2rem);
+    @include subtitle($size-text);
     margin: 2rem;
 }
 a {

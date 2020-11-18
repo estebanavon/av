@@ -11,6 +11,8 @@
         border: none;
         background-color: transparent;
         color: $color-text;
+        display: none;
+        font-size: 6rem;
         cursor: pointer;
         &:active{
             background-color: $color-dark-10;
@@ -25,19 +27,22 @@
         &:last-child {
             right: 0;
         }
+        @media (min-width:$media-1){
+            display: block;
+        }
     }
     .av-slider-content {
         box-sizing: border-box;
         margin: 0;
         width: 100%;
         overflow: hidden;
-        display: flex;
         z-index: 0;
-        
+        display: flex;
+        position: relative;
+
         .av-slider-item {
             opacity: 0;
             display: none;
-            transition: transform 0.5s;
             min-width: 100%;
             
             &.active {
@@ -50,29 +55,33 @@
                 z-index: 1;
             }
             .lastOne {
-                opacity: 0;
                 z-index: 2;
                 display: flex;
-                transform: translateX(0);
+                opacity: 1;
             }
-            .av-slider-item {
+            .active {
                 z-index: 3;
+                position: absolute;
                 animation-name: slideInwards;
-                animation-duration: 0.5s;
+                animation-duration: 5.5s;
                 animation-fill-mode: forwards;
             }
         }
         @keyframes slideInwards {
             0%{
                 opacity: 0;
-                transform: translateX(600px);
+                transform: translateX(1200px);
+                display: flex;
             }
-            30%{
+            5%{
                 opacity: 1;
+            }
+            15% {
+                transform: translateX(0);
             }
             100%{
-                transform: translateX(0);
                 opacity: 1;
+                
             }
         }
     }

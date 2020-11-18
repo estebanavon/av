@@ -171,7 +171,7 @@ $paddingLeftTitle: $paddingLeft;
     }
 
     &.secondary {
-        @include subtitle(1.4rem);
+        @include subtitle($size-text);
         text-align: left;
         background-color: transparent;
         @include negative(left);

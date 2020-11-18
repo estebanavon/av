@@ -190,20 +190,21 @@
         }
         @media (min-width:$media-5){
             &:#{$child1}-child {
+                padding-left: $caPadding * 2.8;
+            }
+            &:#{$child2}-child {
+                padding-right: $caPadding * 2.8;
+            }
+        }
+        @media (min-width:$media-6){
+            &:#{$child1}-child {
                 padding-left: $caPadding * 3;
             }
             &:#{$child2}-child {
                 padding-right: $caPadding * 3;
             }
         }
-        @media (min-width:$media-6){
-            &:#{$child1}-child {
-                padding-left: $caPadding * 3.2;
-            }
-            &:#{$child2}-child {
-                padding-right: $caPadding * 3.2;
-            }
-        }
+        
     }
     .av-ca-col {
         display: flex;
@@ -269,6 +270,25 @@
     @media (min-width:$media-1){
         flex-direction: row;
         flex-wrap: wrap;
+    }
+}
+a.p-fix {
+    display:inline-block;
+    margin: 0;
+    @media (min-width:$media-1) {
+        margin: 0 80px;
+    }
+}
+h3.p-fix {
+    padding-top: 40px !important;
+    @media (min-width:$media-1) {
+        padding-top: 80px !important;
+    }
+}
+div.p-fix, h3.p-fix {
+    padding: 0;
+    @media (min-width:$media-1) {
+        padding: 0 80px;
     }
 }
 .av-explore-card {
@@ -421,7 +441,7 @@
     }
 }
 .av-people {
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     div {
         @media (min-width:$media-1){
@@ -530,12 +550,17 @@
 .book-wrapper {
     min-height: 40vh;
 }
+
+.bookPin {
+    height: 100vh;
+    z-index: 0;
+}
 .book1a,.book1b {
     position: absolute;
     width: 55%;
     max-width: 38rem;
     min-width: 20rem;
-    z-index: 1;
+    z-index: 0;
 }
 @media (min-width:$media-1){
     .book1a {
@@ -639,3 +664,5 @@
         
     }
 }
+
+

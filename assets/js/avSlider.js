@@ -19,6 +19,7 @@ $(document).ready(function(){
         
         $('.avData').each(function(){
             $(this).children().eq(slideIndex).addClass("active").siblings().removeClass("active");
+            $(this).children().eq(slideIndex - 1).addClass("lastOne").siblings().removeClass('lastOne');
         })
         
         timeOut = setTimeout(function(){avShowSlide(2,0,true);},5500);
@@ -38,7 +39,7 @@ $(document).ready(function(){
     function bookFunction(){
         $('.book-wrapper').find('.animationbook').removeClass('animationbook').siblings().addClass('animationbook');
         setTimeout(function(){
-            $('.animationbook').css("zIndex","5").siblings().css("zIndex","1");
+            $('.animationbook').css("zIndex","1").siblings().css("zIndex","0");
         },500);
         setTimeout(function(){bookFunction();},4000);
     }
@@ -73,42 +74,42 @@ $(document).ready(function(){
                                     '<div class="col-12 col-md">'+
                                         '<ul class="av-list av-footer-list">'+
                                             '<li class="av-list-title">Acerca de AVON</li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/nuestra-compania.html">Nuestra Compañía</a></li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/venta-de-vehiculos-falsa.html">Avisos Importantes</a></li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/empleos.html">Empleos</a></li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/responsabilidad-social.html">Nuestras causas</a></li>'+
-                                            '<li><a href="http://www.amvd.org.mx/">Asociación Mexicana de Venta Directa</a></li>'+
-                                            '<li><a href="http://www.canipec.org.mx/woo/">Cámara Nacional de la Industria de Productos Cosméticos (CANIPEC)</a></li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/belleza-por-un-proposito.html">Belleza por un Propósito Avon, una compañía global</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/nuestra-compania.html">Nuestra Compañía</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/venta-de-vehiculos-falsa.html">Avisos Importantes</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/empleos.html">Empleos</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/responsabilidad-social.html">Nuestras causas</a></li>'+
+                                            '<li><a target="_self" href="http://www.amvd.org.mx/">Asociación Mexicana de Venta Directa</a></li>'+
+                                            '<li><a target="_self" href="http://www.canipec.org.mx/woo/">Cámara Nacional de la Industria de Productos Cosméticos (CANIPEC)</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/belleza-por-un-proposito.html">Belleza por un Propósito Avon, una compañía global</a></li>'+
                                         '</ul>'+
                                     '</div>'+
                                     '<div class="col-12 col-md">'+
                                         '<ul class="av-list av-footer-list">'+
                                             '<li class="av-list-title">Cómo comprar</li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/findARep.html">Encuentra a tu representante</a></li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/catalogo-avon-movil.html">Catálogo AVON Móvil</a></li>'+
-                                            '<li><a href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/findARep.html">Encuentra a tu representante</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/catalogo-avon-movil.html">Catálogo AVON Móvil</a></li>'+
+                                            '<li><a target="_self" href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a></li>'+
                                         '</ul>'+
                                     '</div>'+
                                     '<div class="col-12 col-md">'+
                                         '<ul class="av-list av-footer-list">'+
                                             '<li class="av-list-title">Políticas</li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/privacidad-y-seguridad.html">Aviso de Privacidad y Seguridad</a></li>'+
-                                            '<li><a href="https://www.avon.mx/avon-mx/terminos-y-condiciones.html">Términos y Condiciones</a></li>'+
-                                            '<li><a href="Código de Conducta">Código de Conducta</a></li>'+
-                                            '<li><a href="Cómo Pagar">Cómo Pagar</a></li>'+
-                                            '<li><a href="Contrato de Suministro Integral">Contrato de Suministro Integral</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/privacidad-y-seguridad.html">Aviso de Privacidad y Seguridad</a></li>'+
+                                            '<li><a target="_self" href="https://www.avon.mx/avon-mx/terminos-y-condiciones.html">Términos y Condiciones</a></li>'+
+                                            '<li><a target="_self" href="Código de Conducta">Código de Conducta</a></li>'+
+                                            '<li><a target="_self" href="Cómo Pagar">Cómo Pagar</a></li>'+
+                                            '<li><a target="_self" href="Contrato de Suministro Integral">Contrato de Suministro Integral</a></li>'+
                                         '</ul>'+
                                     '</div>'+
                                     '<div class="w-100"></div><div class="av-spacer"></div>'+
                                     '<div class="col">'+
-                                        '<div class="d-flex justify-content-around w-100 flex-wrap">'+
-                                            '<a href="./conoceavon.html" >Nuestros productos</a>'+
-                                            '<a href="./conoceavon-unete.html">Únete a Avon</a>'+
-                                            '<a href="./conoceavon-empresarias.html">Sé una empresaria</a>'+
-                                            '<a href="https://www.avon.mx/avon-mx/">Inicio</a>'+
-                                            '<a href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a>'+
-                                            '<a href="https://www.avon.mx/avon-mx/becomeARep.html" class="av-button-tertiary negative">Regístrate con nostros</a>'+
+                                        '<div class="d-flex flex-column flex-sm-row justify-content-around w-100 flex-wrap">'+
+                                            '<a target="_self" href="./conoceavon.html" >Nuestros productos</a>'+
+                                            '<a target="_self" href="./conoceavon-unete.html">Únete a Avon</a>'+
+                                            '<a target="_self" href="./conoceavon-empresarias.html">Sé una empresaria</a>'+
+                                            '<a target="_self" href="https://www.avon.mx/avon-mx/">Inicio</a>'+
+                                            '<a target="_self" href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a>'+
+                                            '<a target="_self" href="https://www.avon.mx/avon-mx/becomeARep.html" class="av-button-tertiary negative">Regístrate con nostros</a>'+
                                         '</div>'+
                                         '<div class="av-spacer"></div>'+
                                         '<div class="w-100">'+

@@ -9,6 +9,15 @@ $(document).ready(function(){
     })
     .setPin('.avHero', {pushFollowers:false})
     .addTo(controller);
+    
+    var pinSceneHowTo = new ScrollMagic.Scene({
+        triggerElement: '.howTest',
+        triggerHook: 0.1,
+        duration:'200%',
+    })
+    .setPin('.howTest', {pushFollowers:false})
+    .addTo(controller);
+    
 
     $(".av-fade,.av-fade-reverse").each(function(){
         var scene = new ScrollMagic.Scene({

@@ -60,8 +60,8 @@ section.av-container {
 section.av-container .av-row {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-right: 0rem;
   margin-left: 0rem;
 }
@@ -70,62 +70,58 @@ section.av-container .av-row {
   section.av-container .av-row {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 1024px) {
-  section.av-container .av-row {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
   section.av-container .av-row {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
-section.av-container.av-container-small .av-row {
+@media (min-width: 1200px) {
+  section.av-container .av-row {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+section.av-container.av-container-small .av-row, section.av-container.av-container-small .av-pair-container {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-right: 0rem;
   margin-left: 0rem;
 }
 
 @media (min-width: 768px) {
-  section.av-container.av-container-small .av-row {
+  section.av-container.av-container-small .av-row, section.av-container.av-container-small .av-pair-container {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 1024px) {
-  section.av-container.av-container-small .av-row {
-    padding-left: -3.07692px;
-    padding-right: -3.07692px;
+  section.av-container.av-container-small .av-row, section.av-container.av-container-small .av-pair-container {
+    padding-left: 6.92308px;
+    padding-right: 6.92308px;
   }
 }
 
 @media (min-width: 1200px) {
-  section.av-container.av-container-small .av-row {
-    padding-left: 0px;
-    padding-right: 0px;
+  section.av-container.av-container-small .av-row, section.av-container.av-container-small .av-pair-container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .av-pair-container {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-right: 0rem;
   margin-left: 0rem;
 }
@@ -134,22 +130,20 @@ section.av-container.av-container-small .av-row {
   .av-pair-container {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 1024px) {
   .av-pair-container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .av-pair-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -162,7 +156,6 @@ section.av-container.av-container-small .av-row {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  padding: 0 20px;
 }
 
 @media (min-width: 768px) {
@@ -274,13 +267,13 @@ section.av-container.av-container-small .av-row {
 
 @media (min-width: 1024px) {
   .av-pleft {
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .av-pleft {
-    padding-left: 30px;
+    padding-left: 50px;
   }
 }
 
@@ -299,13 +292,13 @@ section.av-container.av-container-small .av-row {
 
 @media (min-width: 1024px) {
   .av-pleft.av-pleft-variant {
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .av-pleft.av-pleft-variant {
-    padding-left: 30px;
+    padding-left: 50px;
   }
 }
 
@@ -324,13 +317,13 @@ section.av-container.av-container-small .av-row {
 
 @media (min-width: 1024px) {
   .av-pright {
-    padding-right: 20px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .av-pright {
-    padding-right: 30px;
+    padding-right: 50px;
   }
 }
 
@@ -349,13 +342,13 @@ section.av-container.av-container-small .av-row {
 
 @media (min-width: 1024px) {
   .av-pright.av-pright-variant {
-    padding-right: 20px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .av-pright.av-pright-variant {
-    padding-right: 30px;
+    padding-right: 50px;
   }
 }
 
@@ -385,20 +378,19 @@ section.av-container.av-container-small .av-row {
   margin-bottom: 1rem;
   -webkit-transition: all 1s;
   transition: all 1s;
-  margin: 0 -20px;
 }
 
 @media (min-width: 768px) {
   .av-title-container {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     height: 60vh;
   }
 }
 
 @media (min-width: 992px) {
   .av-title-container {
-    padding: 30px;
+    padding: 50px;
   }
 }
 
@@ -609,6 +601,7 @@ section.av-container.av-container-small .av-row {
 
 .av-list li {
   margin-bottom: 8px;
+  display: block;
 }
 
 .av-list.av-list-item {
@@ -765,6 +758,7 @@ section.av-container.av-container-small .av-row {
 
 .av-card .av-card-wrapper .av-text {
   margin-bottom: 0px;
+  color: #fff;
 }
 
 .av-card .av-card-wrapper small {
@@ -1043,8 +1037,8 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-prllx-container .av-prllx-content {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   z-index: 2;
   position: relative;
 }
@@ -1519,6 +1513,8 @@ section.av-container.av-container-small .av-row {
   border: none;
   background-color: transparent;
   color: #3b4546;
+  display: none;
+  font-size: 6rem;
   cursor: pointer;
 }
 
@@ -1539,25 +1535,28 @@ section.av-container.av-container-small .av-row {
   right: 0;
 }
 
+@media (min-width: 768px) {
+  .av-slider .av-slider-control {
+    display: block;
+  }
+}
+
 .av-slider .av-slider-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   width: 100%;
   overflow: hidden;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 0;
+  position: relative;
 }
 
 .av-slider .av-slider-content .av-slider-item {
   opacity: 0;
   display: none;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
   min-width: 100%;
 }
 
@@ -1573,21 +1572,20 @@ section.av-container.av-container-small .av-row {
 }
 
 .av-slider .av-slider-content.slide .lastOne {
-  opacity: 0;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  opacity: 1;
 }
 
-.av-slider .av-slider-content.slide .av-slider-item {
+.av-slider .av-slider-content.slide .active {
   z-index: 3;
+  position: absolute;
   -webkit-animation-name: slideInwards;
           animation-name: slideInwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1595,15 +1593,19 @@ section.av-container.av-container-small .av-row {
 @-webkit-keyframes slideInwards {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(600px);
-            transform: translateX(600px);
+    -webkit-transform: translateX(1200px);
+            transform: translateX(1200px);
+    display: -webkit-box;
+    display: flex;
   }
-  30% {
+  5% {
     opacity: 1;
   }
-  100% {
+  15% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -1611,15 +1613,20 @@ section.av-container.av-container-small .av-row {
 @keyframes slideInwards {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(600px);
-            transform: translateX(600px);
+    -webkit-transform: translateX(1200px);
+            transform: translateX(1200px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  30% {
+  5% {
     opacity: 1;
   }
-  100% {
+  15% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -1850,7 +1857,7 @@ video:focus {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 0.4rem;
+  font-size: 37px;
   display: block;
   padding: 0;
   margin: 2rem;
@@ -1858,7 +1865,7 @@ video:focus {
 
 @media (min-width: 768px) {
   .multimedia-title h2 {
-    font-size: 1.4rem;
+    font-size: 38px;
   }
 }
 
@@ -1873,7 +1880,7 @@ video:focus {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 0.2rem;
+  font-size: 19px;
   display: block;
   padding: 0;
   margin: 2rem;
@@ -1881,7 +1888,7 @@ video:focus {
 
 @media (min-width: 768px) {
   .multimedia-layout-wrapper .video-text-item h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
   }
 }
 
@@ -1938,17 +1945,17 @@ a {
 .av-row-higiene [class^="col"]:first-child, .av-row-higiene [class^="col"]:last-child {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
   .av-row-higiene [class^="col"]:first-child, .av-row-higiene [class^="col"]:last-child {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 0rem;
   }
 }
@@ -1990,7 +1997,7 @@ a {
           flex: 1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  margin: 40px;
+  margin: 10px;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -2491,7 +2498,7 @@ a {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
-  font-size: 0.4rem;
+  font-size: 19px;
   display: block;
   padding: 0;
   text-align: left;
@@ -2501,7 +2508,7 @@ a {
 
 @media (min-width: 768px) {
   .av-prtnl-subtitle.secondary {
-    font-size: 1.4rem;
+    font-size: 20px;
   }
 }
 
@@ -2935,12 +2942,6 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 .av-nosolas-banner-3 {
   background-image: url("../images/responsabilidad-social/not-alone-banner-3.jpg");
   background-size: cover;
-}
-
-.av-nosolas-banner-2 {
-  background-image: url("../images/responsabilidad-social/not-alone-banner-2.jpg");
-  background-size: cover;
-  height: 300px;
 }
 
 .av-nosolas-brands {
@@ -3484,19 +3485,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 1400px) {
   .av-ca-row .av-ca-col:first-child {
-    padding-left: 300px;
+    padding-left: 280px;
   }
   .av-ca-row .av-ca-col:last-child {
-    padding-right: 300px;
+    padding-right: 280px;
   }
 }
 
 @media (min-width: 1480px) {
   .av-ca-row .av-ca-col:first-child {
-    padding-left: 320px;
+    padding-left: 300px;
   }
   .av-ca-row .av-ca-col:last-child {
-    padding-right: 320px;
+    padding-right: 300px;
   }
 }
 
@@ -3584,19 +3585,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 
 @media (min-width: 1400px) {
   .av-ca-row.reverse .av-ca-col:last-child {
-    padding-left: 300px;
+    padding-left: 280px;
   }
   .av-ca-row.reverse .av-ca-col:first-child {
-    padding-right: 300px;
+    padding-right: 280px;
   }
 }
 
 @media (min-width: 1480px) {
   .av-ca-row.reverse .av-ca-col:last-child {
-    padding-left: 320px;
+    padding-left: 300px;
   }
   .av-ca-row.reverse .av-ca-col:first-child {
-    padding-right: 320px;
+    padding-right: 300px;
   }
 }
 
@@ -3637,6 +3638,37 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+a.p-fix {
+  display: inline-block;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  a.p-fix {
+    margin: 0 80px;
+  }
+}
+
+h3.p-fix {
+  padding-top: 40px !important;
+}
+
+@media (min-width: 768px) {
+  h3.p-fix {
+    padding-top: 80px !important;
+  }
+}
+
+div.p-fix, h3.p-fix {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  div.p-fix, h3.p-fix {
+    padding: 0 80px;
   }
 }
 
@@ -3856,7 +3888,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-people {
-  min-height: 70vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4026,12 +4058,17 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   min-height: 40vh;
 }
 
+.bookPin {
+  height: 100vh;
+  z-index: 0;
+}
+
 .book1a, .book1b {
   position: absolute;
   width: 55%;
   max-width: 38rem;
   min-width: 20rem;
-  z-index: 1;
+  z-index: 0;
 }
 
 @media (min-width: 768px) {

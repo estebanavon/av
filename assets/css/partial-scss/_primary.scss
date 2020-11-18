@@ -32,11 +32,10 @@
     background-repeat: no-repeat;
     margin-bottom: 1rem;
     transition: all 1s;
-    margin: 0 (-$margin-default);
 
     @media (min-width:$media-1) {
         padding: $margin-sm;
-        margin-bottom: $margin-sm;
+        margin-bottom: $margin-lg;
         height: 60vh;
     }
     @media (min-width:$media-2) {
@@ -189,6 +188,7 @@
     
     li {
         margin-bottom: $size-text / 2.5;
+        display: block;
     }
     
     &.av-list-item {
@@ -293,7 +293,8 @@
         transition: all 0.7s;
         z-index: 10;
         .av-text { 
-           margin-bottom: 0px; 
+           margin-bottom: 0px;
+           color: $color-white;
         }
         small {
             font-size: $color-text - 0.3rem;
