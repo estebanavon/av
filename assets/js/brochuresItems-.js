@@ -1,13 +1,13 @@
 
-const brochures19 = [
+const brochures20 = [
     {
-        title: 'Buen fin Belleza',
-        file: '9',
+        title: 'Buen Fin CFT',
+        file: '5',
         type: 'imb',
     },
     {
-        title: 'Buen fin F&H',
-        file: '10',
+        title: 'Buen Fin F&H',
+        file: '7',
         type: 'imb',
     },
     {
@@ -21,54 +21,60 @@ const brochures19 = [
         type: 'imb',
     },
     {
-        title: 'Rutinas Anew',
-        file: '4',
-        type: 'imb',
-    },
-    {
-        title: 'F&H Blancos',
-        file: '5',
-        type: 'imb',
-    },
-    {
-        title: 'F&H Especial',
-        file: '6',
+        title: 'Cuidar de ti',
+        file: '3',
         type: 'imb',
     },
     {
         title: 'Cucina Donna',
-        file: '7',
+        file: '4',
         type: 'imb',
     },
     {
-        title: 'Pre Navideño',
-        file: '8',
+        title: 'Bienestar personal',
+        file: '6',
         type: 'imb',
+    },
+    {
+        title: 'Regalos Navideños',
+        file: '12',
+        type: 'imb',
+    },
+    
+    {
+        title: '3er del Concierto Avon',
+        file: '3erConcierto.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Adios 2020, Hola rebajas',
+        file: 'Adios2020HolaRebajas.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Flap Macadamia',
+        file: 'FlapMacadamia.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Las últimas y nos vamos',
+        file: 'LasUltimasNosVamos.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Minifolleto Kids Navideño',
+        file: 'MinifolletoKidsNavideno.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Ofertas navideñas, Ding Dong',
+        file: 'OfertasNavidenasDingDong.pdf',
+        type: 'flyer',
     },
     {
         title: 'Avon Contigo',
-        file: 'avon_contigo_c1920.pdf',
+        file: 'avon_contigo_c2020.pdf',
         type: 'contigo',
-    },
-    {
-        title: 'Minifolleto Cucina Donna',
-        file: 'MinifolletoCucinaDonna.pdf',
-        type: 'flyer',
-    },
-    {
-        title: 'Kids, Ofertas para los más pequeños',
-        file: 'KidsOfertasMasPeques.pdf',
-        type: 'flyer',
-    },
-    {
-        title: 'Flyer Anew',
-        file: 'FlyerVeaFisicoAnewq4.pdf',
-        type: 'flyer',
-    },
-    {
-        title: 'Flyer Concierto',
-        file: 'ConciertoAvon2daLlamada.pdf',
-        type: 'flyer',
     },
 ]
 
