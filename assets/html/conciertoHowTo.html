@@ -10,6 +10,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./../css/styles_scss.css" />
+    <link rel="stylesheet" href="/dam/avon-mx/static/css/styles_scss.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -31,7 +32,7 @@
             var pinSceneHowTo = new ScrollMagic.Scene({
                 triggerElement: '.steper',
                 triggerHook: 0.1,
-                duration:'95%',
+                duration:'120%',
             })
             .setPin('.steper', {pushFollowers:true})
             .addTo(controller);
@@ -39,6 +40,11 @@
             $(window).scroll(function(){
                 const scrollPosition = $(document).scrollTop();
                 var avViewport =  window.innerHeight;
+                if (scrollPosition > 400) {
+                    $('.steper').css('opacity','1');
+                } else {
+                    $('.steper').css('opacity','0');
+                }
                 if( scrollPosition > avViewport/2 && scrollPosition <  avViewport){
                     $(".step1").addClass('d-fade').siblings().removeClass('d-fade');
                 } else if (scrollPosition >  avViewport &&  scrollPosition < avViewport + avViewport/2) {
@@ -46,6 +52,7 @@
                 } else if (scrollPosition > avViewport + avViewport/2) {
                     $('.step3').addClass('d-fade').siblings().removeClass('d-fade');
                 }
+                
             });
         });
 
@@ -53,46 +60,116 @@
     
     <style>
         .test {
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            min-height: 80vh;
         }
         .steper {
-            background-color: gray;
+            background-color: #eeeeee;
+            min-height: 85vh;
+            opacity: 0;
+            transition: opacity 0.5s;
         }
         [class^="step"] {
             display: none;
+            padding: 30px 25% 60px 25%;
         }
         .d-fade {
             animation-name: avFadeConcert;
-            animation-duration: 1s;
+            animation-duration: 2s;
             display: block;
         }
         @keyframes avFadeConcert {
             0% {
                 opacity: 0;
+                transform: translateY(-80px);
             }
             100% {
                 opacity: 1;
+                transform: translateY(0px);
             }
+        }
+        .av-concert-subtitle {
+            color: #A11F1D;
+            font-size: 39px;
+            font-weight: 900;
+            line-height: 40px;
+            font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <section class="av-container">
-        <section class="av-title-container av-concierto">
+        <section class="av-title-container av-concert-1 mb-0">
+            <div class="av-scroll-wrapper av-ca negative">
+                <svg width="30px" height="17.5px" >
+                    <use xlink:href="#arrow"></use>
+                </svg>
+                <span>Deslízate</span>
+            </div>
+        </section>
+    
+        <section class="row no-gutters steper">
+            <div class="col-12 col-sm-6 av-concert-2 d-none d-sm-block">
+                
+            </div>
+            <div class="col-12 col-sm-6 d-flex flex-column justify-content-start align-items-center pt-5">
+                <img src="../img/logoConciertoBis.png" />
+                <div class="step1">
+                    <h2 class="av-concert-subtitle">Entra a la plataforma</h2>
+                    <p class="av-text">Da clic al link que recibiste de Avon para entrar a la plataforma.</p>
+                    <div class="av-spacer"></div>
+                    <div class="av-scroll-wrapper">
+                        <svg width="30px" height="17.5px" >
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Deslízate</span>
+                    </div>
+                </div>
+                <div class="step2">
+                    <h2 class="av-concert-subtitle">Ubica e ingresa</h2>
+                    <p class="av-text">Recibirás un código único que debes de ingresar.</p>
+                    <p class="av-text">Recuerda que este código es único y solo funcionara en un dispositivo</p>
+                    <div class="av-scroll-wrapper">
+                        <svg width="30px" height="17.5px" >
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Deslízate</span>
+                    </div>
+                </div>
+                <div class="step3">
+                    <h2 class="av-concert-subtitle">¡Disfruta!</h2>
+                    <p class="av-text">Si deseas participar en el chat, ingresa tu nombre de usario y acepta los términos y condiciones.</p>
+                    <div class="av-spacer"></div>
+                    <div class="av-scroll-wrapper">
+                        <svg width="30px" height="17.5px" >
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Deslízate</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="av-spacer"></div>
+        <section class="row">
+            <div class="col">
+                <h2 class="">Otras consideraciones</h2>
+            </div>
+            
+        </section>
+        <section class="test">
         </section>
     </section>
-    <section class="test steper">
-        <h2 class="step1">1 Entra</h2>
-        <h2 class="step2">2 Ubica e ingresa</h2>
-        <h2 class="step3">3 Disfruta</h2>
-    </section>
-    <section class="test">
-        <h2 class="">Otras consideraciones</h2>
-    </section>
-    <section class="test">
-    </section>
+    <svg>
+        <defs>
+            <g id="arrow">
+                <path d="M15,11.5c0.5-0.5,1.1-1.1,1.6-1.6c3-3,6.1-6.1,9.1-9.1c0.7-0.7,1.6-1,2.5-0.7c1,0.3,1.5,1,1.7,2c0.1,0.8,0,1.5-0.6,2
+                c-1.4,1.4-2.7,2.8-4.1,4.1c-2.8,2.8-5.6,5.6-8.4,8.4c-1.2,1.2-2.6,1.2-3.8,0C9,12.5,4.9,8.4,0.7,4.3C0.1,3.6-0.1,2.8,0.1,1.9
+                C0.3,0.9,1,0.3,1.9,0.1c0.8-0.2,1.6,0,2.2,0.6C5.6,2,7,3.5,8.4,4.9c2.1,2.1,4.3,4.3,6.4,6.4C14.9,11.3,14.9,11.4,15,11.5z"/>
+            </g>
+        </defs>
+    </svg>
 </body>
 </html>

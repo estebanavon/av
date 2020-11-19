@@ -4,6 +4,21 @@
         background-image: url('#{$route-images}/conciertoBasesHeader.jpg');
     }
 }
+
+.av-concert-2, .av-concert-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.av-concert-1 {
+    background-image: url('#{$route-images}/avConciertoHeader.jpg');
+}
+.av-concert-2 {
+    background-image: url('#{$route-images}/avConciertoBackground.jpg');
+}
+.av-concert-3 {
+    background-image: url('#{$route-images}/avConciertoBackgroundLoader.jpg');
+}
 .av-ec-header {
     background-image: url('#{$route-images}/etica-cumplimiento/avon-office.jpg');
 }
