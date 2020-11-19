@@ -1714,7 +1714,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .avLoaderMJ > div.avLoaderImage {
     display: block;
   }
