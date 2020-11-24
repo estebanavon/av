@@ -4,68 +4,70 @@ $(document).ready(function(){
     var c = AvonAnalyticsObjex.Profile.campaignInfo;
     const currentCampaign = c.slice(6);
     const currentYear = c.slice(2,4);
-    
 
     const avMarket = AvonAnalyticsObjex.Visitor.market;
     
-    var campaignTwo,campaignThree;
-    
-    otherCampaign(currentCampaign, true);
-    otherCampaign(currentCampaign, false);
-
     const brochuresWrapper = [brochures1,brochures2,brochures3,brochures4,brochures5,brochures6,brochures7,brochures8,brochures9,brochures10,brochures11,brochures12,brochures13,brochures14,brochures15,brochures16,brochures17,brochures18,brochures19,brochures20];
     
-    var brochuresConstructor = [brochuresWrapper[currentCampaign-1],brochuresWrapper[campaignTwo - 1],brochuresWrapper[campaignThree - 1]];
+    var brochuresConstructor = [brochuresWrapper[(currentCampaign-1)],brochuresWrapper[campaignSelector(currentCampaign,2,true)],brochuresWrapper[campaignSelector(currentCampaign,3,true)]];
     var brochurePrint = ["","","",""];
 
-    function otherCampaign(currentCampaign,boolean) {
-        if (boolean){
-            if (currentCampaign == 1 ){
-                campaignTwo = 20;
-            } else {
-                campaignTwo = currentCampaign - 1;
-            }
-            return campaignTwo
-        } else {
-            if (currentCampaign == 1){
-                campaignThree = 19;
-            } else if (currentCampaign == 2) {
-                campaignThree = 20;
-            } else {
-                campaignThree = currentCampaign - 2;
-            }
-            return campaignThree
-        }
-    }
-   
 
-    function otherYear(e){
-        let yearSelected;
-        if (currentCampaign <= 2 && e == 2){
-            yearSelected = currentYear - 1;
-        } else if (currentCampaign == 1 && e == 1){
-            yearSelected = currentYear - 1;
-        } else {
-            yearSelected = currentYear;
-        }
-        return yearSelected;
-    }
 
-    function campaignSelector(e){
+    function campaignSelector(n,i,withoutCycle){
         let campaignSelected;
-        switch (e) {
-            case 0:
-                campaignSelected = currentCampaign;
-                break
+
+        switch (n) {
             case 1:
-                campaignSelected = campaignTwo;
+                if (withoutCycle){
+                    if (i == 2){
+                        campaignSelected = 19;
+                    } else {
+                        campaignSelected = 18;
+                    }
+                } else {
+                    switch (i){
+                        case 1:
+                            campaignSelected = 20;
+                            break
+                        case 2:
+                            campaignSelected = 19;
+                            break
+                        default:
+                            campaignSelected = currentCampaign;
+                    }
+                }
+                
+                break
+            case 2: 
+                if (withoutCycle){
+                    if (i == 2){
+                        campaignSelected = 0;
+                    } else {
+                        campaignSelected = 19;
+                    }
+                } else {
+                    switch (i){
+                        case 1:
+                            campaignSelected = 01;
+                            break
+                        case 2:
+                            campaignSelected = 20;
+                            break
+                        default:
+                            campaignSelected = currentCampaign;
+                    }
+                }
                 break
             default:
-                campaignSelected = campaignThree;
+                campaignSelected = n - i;
         }
+        
         return campaignSelected
+
     }
     
+
     
     function copyText(type){
         let copyText;
@@ -82,10 +84,10 @@ $(document).ready(function(){
         let urlFile;
         switch (type){
             case "imb":
-                if (campaignSelector(e) <= 9) {
-                    urlFile = 'https://catalogo.avon.com.'+ avMarket.toLowerCase() +'/0'+ campaignSelector(e) +'/20'+ otherYear(e) +'0'+ campaignSelector(e) + '_0' + file +'/#/'
+                if (campaignSelector(currentCampaign,e) <= 9) {
+                    urlFile = 'https://catalogo.avon.com.'+ avMarket.toLowerCase() +'/0'+ campaignSelector(currentCampaign,e) +'/20'+ currentYear +'0'+ campaignSelector(currentCampaign,e) + '_0' + file +'/#/'
                 } else {
-                    urlFile = 'https://catalogo.avon.com.'+ avMarket.toLowerCase() +'/'+ campaignSelector(e) +'/20'+ otherYear(e) +''+ campaignSelector(e) + '_0' + file +'/#/'
+                    urlFile = 'https://catalogo.avon.com.'+ avMarket.toLowerCase() +'/'+ campaignSelector(currentCampaign,e) +'/20'+ currentYear +''+ campaignSelector(currentCampaign,e) + '_0' + file +'/#/'
                 }
                 break
             case "contigo":
@@ -116,18 +118,18 @@ $(document).ready(function(){
             if (currentCampaign == 1 && e == 1) {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
-                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/'+ avMarket.toLowerCase() +'/'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
+                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/'+ campaignSelector(currentCampaign,e) +'/20'+ currentYear +
+                '' + campaignSelector(currentCampaign,e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
             } else if (currentCampaign > 9) {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
-                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/'+ avMarket.toLowerCase() +'/'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
+                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/'+ campaignSelector(currentCampaign,e) +'/20'+ currentYear +
+                '' + campaignSelector(currentCampaign,e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
             } else {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
-                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/'+ avMarket.toLowerCase() +'/0'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '0' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
+                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/0'+ campaignSelector(currentCampaign,e) +'/20'+ currentYear +
+                '0' + campaignSelector(currentCampaign,e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
             }
             
         }
@@ -174,14 +176,14 @@ $(document).ready(function(){
             case 0:
             case 1:
                 for (i=0;i<brochuresConstructor[e].length;i++){
-                    canvasIdNumber = campaignSelector(e) + '_' +i;
+                    canvasIdNumber = campaignSelector(currentCampaign,e) + '_' +i;
                     
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
                         '<div class="av-brochure-image">' + pdfImg(brochuresConstructor[e][i].type,canvasIdNumber,brochuresConstructor[e][i].file,e) +
                             '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
                             '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" />' +
                             '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                            '<div class="av-type '+ brochuresConstructor[e][i].type +'">'+ campaignSelector(e) +'</div>' +
+                            '<div class="av-type '+ brochuresConstructor[e][i].type +'">'+ campaignSelector(currentCampaign,e) +'</div>' +
                         '</div>' +
                         '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[e][i].title +'</h3></div>'+
                     '</div>'
@@ -191,7 +193,7 @@ $(document).ready(function(){
                 for (i=0;i<brochuresConstructor[e].length;i++){
                     
                     brochurePrint[e] += '<li data-type="'+ brochuresConstructor[e][i].type  +'"><span class="av-type '+  brochuresConstructor[e][i].type  +'"></span>' +
-                    '<span>'+ brochuresConstructor[e][i].title + ' C'+ campaignSelector(2) +'</span>' +
+                    '<span>'+ brochuresConstructor[e][i].title + ' C'+ campaignSelector(currentCampaign,2) +'</span>' +
                     '<span class="av-list-spacer"></span>' +
                     '<a class="av-button-icon av-tooltip" href="'+ urlFile(brochuresConstructor[e][i].type,2,brochuresConstructor[e][i].file) +'" target="_blank">' +
                     '<span class="material-icons">visibility</span><div class="tooltiptext">Ver</div></a>' +
@@ -217,8 +219,8 @@ $(document).ready(function(){
     $('#brochureAside').prepend(brochurePrint[3]);
 
     $('#viewMore').click(function(){
-        $('#brochureContainerPast').css('display','flex').prev().css('display','flex').append(campaignTwo);
-        $('#brochureList').css('display','flex').prev().css('display','flex').append(campaignThree);
+        $('#brochureContainerPast').css('display','flex').prev().css('display','flex').append(campaignSelector(currentCampaign,1));
+        $('#brochureList').css('display','flex').prev().css('display','flex').append(campaignSelector(currentCampaign,2));
         $(this).hide();
         avCopy();
     });

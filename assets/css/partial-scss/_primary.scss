@@ -309,10 +309,11 @@
         background-color: $color-light-white;
         flex-grow: 1;
         .av-card-title {
-            font-size: $size-text * 1.2;
+            font-size: $size-text;
             font-family: $bold-monts;
-            margin-bottom: 1rem;
+            margin-bottom: 5px;
             color: $color-text;
+            padding: 0px;
         }
     }
 }

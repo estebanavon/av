@@ -1,10 +1,6 @@
 
 const brochures1 = [
-    {
-        title: 'Avon Contigo',
-        file: 'avon_contigo_c0121.pdf',
-        type: 'contigo',
-    },
+    
     {
         title: 'Belleza',
         file: '1',
@@ -19,6 +15,11 @@ const brochures1 = [
         title: 'Rutinas Anew',
         file: '3',
         type: 'imb',
+    },
+    {
+        title: 'Avon Contigo 1',
+        file: 'avon_contigo_c0121.pdf',
+        type: 'contigo',
     },
 ]
 
