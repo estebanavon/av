@@ -248,7 +248,7 @@ $(document).ready(function(){
   	
     $(window).scroll(function () {
         const scrollPosition = $(document).scrollTop();
-        if (scrollPosition > 50) {
+        if (scrollPosition > 20) {
             $(".av-brochure-aside").addClass('av-sticky').next().addClass('av-sticky');
         } else {
             $(".av-brochure-aside").removeClass('av-sticky').next().removeClass('av-sticky');
