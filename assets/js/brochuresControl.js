@@ -83,10 +83,14 @@ $(document).ready(function(){
         let urlFile;
         switch (type){
             case "imb":
-                if (campaignSelector(e) <= 9) {
+                if (campaignSelector(e) <= 9 && file <= 9) {
                     urlFile = 'https://catalogo.avon.mx/0'+ campaignSelector(e) +'/20'+ otherYear(e) +'0'+ campaignSelector(e) + '_0' + file +'/#/'
-                } else {
+                } else if (campaignSelector(e) > 9 && file <= 9){
                     urlFile = 'https://catalogo.avon.mx/'+ campaignSelector(e) +'/20'+ otherYear(e) +''+ campaignSelector(e) + '_0' + file +'/#/'
+                } else if (campaignSelector(e) <= 9 && file > 9){
+                    urlFile = 'https://catalogo.avon.mx/0'+ campaignSelector(e) +'/20'+ otherYear(e) +'0'+ campaignSelector(e) + '_' + file +'/#/'
+                } else if (campaignSelector(e) > 9 && file > 9){
+                    urlFile = 'https://catalogo.avon.mx/'+ campaignSelector(e) +'/20'+ otherYear(e) +''+ campaignSelector(e) + '_' + file +'/#/'
                 }
                 break
             case "contigo":
@@ -114,21 +118,26 @@ $(document).ready(function(){
             }
             
         } else {
-            if (currentCampaign == 1 && e == 1) {
+            if (campaignSelector(e) > 9 && file >= 10) {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
                 'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
-            } else if (currentCampaign > 9) {
+                '' + campaignSelector(e) + '_' + file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
+            } else if (campaignSelector(e) > 9 && file <= 9) {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
                 'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
+                '' + campaignSelector(e) + '_0' + file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
+            } else if (campaignSelector(e) <= 9 && file < 9) {
+                avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
+                '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
+                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/0'+ campaignSelector(e) +'/20'+ otherYear(e) +
+                '0' + campaignSelector(e) + '_0' + file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
             } else {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
                 'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/0'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '0' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
+                '0' + campaignSelector(e) + '_' + file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
             }
             
         }

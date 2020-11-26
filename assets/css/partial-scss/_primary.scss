@@ -382,6 +382,12 @@
     font-size: 1rem;
    } 
 }
+.text-center {
+    text-align: center !important;
+}
+.text-right {
+    text-align: right !important;
+}
 
 // LOADER
 
@@ -410,7 +416,9 @@
     }
 }
 
-// Panels
+
+// PANELS
+
 .av-panel {
     .av-panel-title {
         display: flex;
@@ -453,10 +461,10 @@
     .tooltiptext {
         visibility: hidden;
         width: auto;
-        font-family: $regular-monts;
+        font-family: $bold-monts;
         font-size: $size-text - 2;
-        background-color: $color-dark;
-        color: $color-white;
+        background-color: $color-white;
+        color: $color-text;
         text-align: center;
         padding: 7px 10px;
         border-radius: 6px;
@@ -465,6 +473,7 @@
         top: -80%;
         white-space: nowrap;
         z-index: 100;
+        box-shadow: 0 0 5px rgba(0,0,0,0.4);
         &::after {
             content: "";
             position: absolute;
@@ -473,7 +482,7 @@
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color: $color-dark transparent transparent transparent;
+            border-color: $color-white transparent transparent transparent;
           }
       }
       &:hover .tooltiptext {

@@ -54,7 +54,7 @@
     height: 5px;
     display: block;
     overflow: hidden;
-    margin: 50px 0px;
+    margin: 50px auto;
     background-color: #f1f1f1;
     position: relative;
     > div {
@@ -93,4 +93,82 @@
         transform: translateX(-100px);
         opacity: 0;
     }
+}
+.av-concert-subtitle {
+    color: #A11F1D;
+    font-size: 35px;
+    line-height: 32px;
+    font-family: $black-zona;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    @media (min-width:$media-2) {
+        font-size: 39px;
+        line-height: 40px;
+    }
+}
+.av-concert-title {
+    color: $color-text;
+    font-size: 40px;
+    font-family: $black-zona;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media (min-width:$media-2) {
+        font-size: 47px;
+    }
+}
+
+.steper-container {
+    display: flex;
+    .av-step-image {
+        display: none;
+        height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 2px 0px 20px rgba(0,0,0,0.7);
+        transition: background-image 1s;
+        @media (min-width:$media-2) {
+            width: 50%;
+            display: block;
+        }
+    }
+    .steps {
+        flex: 1;
+        [class^="step"]{
+            padding: 50px;
+            min-height: 60vh;
+            @media (min-width:$media-2) {
+                padding: 80px 100px;
+                min-height: 85vh;
+                
+            }
+        }
+    }
+    .concert-list {
+        font-size: $size-text * 1.5;
+        text-transform: uppercase;
+        font-family: $bold-monts;
+    }
+}
+
+
+.av-concierto {
+    background-image: url('#{$route-images}/conciertoBasesHeaderMobile.jpg');
+    @media (min-width:$media-2) {
+        background-image: url('#{$route-images}/conciertoBasesHeader.jpg');
+    }
+}
+
+.av-concert-1 {
+    background-image: url('#{$route-images}/avConciertoHeader.jpg');
+    height: 45vh;
+}
+.av-concert-2 {
+    background-image: url('#{$route-images}/avConciertoBackground.jpg');
+}
+.av-concert-3 {
+    background-image: url('#{$route-images}/avConciertoBackgroundLoader.jpg');
+}
+.av-concert-4 {
+    background-image: url('#{$route-images}/avConciertoHeader.jpg');
 }

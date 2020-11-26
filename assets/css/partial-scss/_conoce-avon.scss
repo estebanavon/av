@@ -22,13 +22,12 @@
 
 
     @mixin caTitle($color) {
-        $LetSize: 45px;
+        $LetSize: 43px;
         @media (max-width:$media-1) {
             position: relative;
             top: -15%;    
         }
         .av-title-text{
-            
             @include titile-mixin($color);
             text-align: left;
             font-size: $LetSize;
@@ -50,7 +49,6 @@
                     -webkit-text-fill-color: transparent;
                   }
             }
-            
         }
         .av-title-support {
             color: $color;
@@ -63,6 +61,22 @@
                 width: 47%;
                 font-size: 25px;
                 line-height: 27px;
+            }
+        }
+        .av-number {
+            font-size: 20px;
+            color: $color;
+            font-family: $regular-monts;
+            position: relative;
+            top: 30px;
+            @media (min-width:$media-1) {
+                top: 80px;
+            }
+            span {
+                font-size: 50px;
+                font-family: $bold-monts;
+                margin: 0 7px;
+                letter-spacing: -2px;
             }
         }
     }
@@ -141,8 +155,8 @@
     
 }
 .av-ca.av-scroll-wrapper {
-    position: absolute;
-    bottom: 100px;
+        position: absolute;
+        bottom: 100px;
 }
 .av-ca-row {    
     min-height: 40vh;
@@ -262,10 +276,10 @@
     min-height: 80vh;
     text-align: center;
     flex-direction: column;
-    padding: 21rem 16rem 5rem 16rem;
+    padding: 0 20%;
     div { 
-        width: 300px;
-        margin-bottom: 13rem;
+        width: 210px;
+        margin: 30px;
     }
     @media (min-width:$media-1){
         flex-direction: row;
@@ -440,6 +454,7 @@ div.p-fix, h3.p-fix {
         font-size: $size-text;
     }
 }
+
 .av-people {
     min-height: 80vh;
     display: flex;
@@ -546,11 +561,50 @@ div.p-fix, h3.p-fix {
         }
     }
 }
-
+.av-loader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: $color-gradient;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    svg {
+        fill: $color-white;
+        transform: scale(1.7);
+        animation-name: loaderFade;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+    div.w-25 {
+        animation-name: loaderFade;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+    @keyframes loaderFade{
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    &.loaderFadeOut {
+        animation-name: loaderFadeOut;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes loaderFadeOut{
+        from{opacity: 1;}
+        to{opacity: 0;}
+    }
+}
 .book-wrapper {
     min-height: 40vh;
 }
-
 .bookPin {
     height: 100vh;
     z-index: 0;

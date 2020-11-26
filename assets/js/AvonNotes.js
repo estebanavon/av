@@ -1,257 +1,83 @@
-$(document).ready(function(){
-    
-    
-    var c = AvonAnalyticsObjex.Profile.campaignInfo;
-    const currentCampaign = c.slice(6);
-    const currentYear = c.slice(2,4);
-    
+window.onload = function(){  
+  var norte = [
+    "362","363","364","365","366","367","368","369","370","371","445","446","447","448","449","453","454","457","460","461",
+    "462","465","466","469","470","471","643","645","647","650","654","661","662","663","664","665","666","667","677","678",
+    "679","675","682","802","803","804","805","806","807","808","809","810","811","816","819","820","821","822","828","829",
+    "831","668","669","670","854","855","856","857","858","859","860","861","862","863","866","873","874","200","201","202",
+    "203","204","205","208","636","637","638","640","641","646","648","649","651","652","207","209","210","903","905","906",
+    "907","908","911","912","913","914","917","918","919","921",
+  ]
 
-    const avMarket = AvonAnalyticsObjex.Visitor.market;
-    
-    var campaignTwo,campaignThree;
-    
-    otherCampaign(currentCampaign, true);
-    otherCampaign(currentCampaign, false);
 
-    const brochuresWrapper = [brochures1,brochures2,brochures3,brochures4,brochures5,brochures6,brochures7,brochures8,brochures9,brochures10,brochures11,brochures12,brochures13,brochures14,brochures15,brochures16,brochures17,brochures18,brochures19,brochures20];
-    
-    var brochuresConstructor = [brochuresWrapper[currentCampaign-1],brochuresWrapper[campaignTwo - 1],brochuresWrapper[campaignThree - 1]];
-    var brochurePrint = ["","","",""];
-
-    function otherCampaign(currentCampaign,boolean) {
-        if (boolean){
-            if (currentCampaign == 1 ){
-                campaignTwo = 20;
-            } else {
-                campaignTwo = currentCampaign - 1;
-            }
-            return campaignTwo
-        } else {
-            if (currentCampaign == 1){
-                campaignThree = 19;
-            } else if (currentCampaign == 2) {
-                campaignThree = 20;
-            } else {
-                campaignThree = currentCampaign - 2;
-            }
-            return campaignThree
-        }
-    }
+  var sur = [
+    "758","759","766","767","768","770","771","777","783","784","785","786","787","788","792","797","799","325","326",
+    "329","331","334","335","336","337","338","342","343","344","345","349","351","352","355","357","360","441","1515","150","152",
+    "155","156","158","159","160","161","162","163","164","165","166","171","172","190","437","440","15","16","19","50","51",
+    "54","58","59","60","61","62","63","64","67","68","69","70","71","72","73","74","75","1133","1137","1138","1139","1141","1142",
+    "1143","1430","1431","1432","1433","1434","1435","1436","1437","1438","1439","1440","1441","1442","1443","1700","1701","250","252",
+    "253","254","255","256","257","261","262","263","264","269","270","271","272","273","275","276",
+    "277","279","293",
+  ]
+  var centro = [
+    "1130","1131","1132","1134","1135","1136","1140","1144","1145","1600","1601","1602","1603","1604","1605",
+    "1606","1607","1608","1610","1611","1612","1613","1614","600","605","619","621","721","722","724","725","727","728","729",
+    "730","732","735","736","738","739","740","737","1230","1231","1232","1233","1234","1235","1236","1237","1238","1239",
+    "1242","1332","1333","1335","1336","1337","1338","1339","1340","1341","1342","1343","1344","602","607","622","624","627",
+    "1502","1510","1511","1513","1514","1516","1517","1518","1519","1520","1534","1536","1537","1538","372","373","374","375",
+    "376","379","380","381","382","467","468","603","604","606","608","609","614","615","629","90","93","99","100","101","102",
+    "103","104","105","107","108","109","113","114","115","116","117","1240","1241","1244","1609",
+  ]
+  var norEste = [
+    "400","401","402","403","404","405","406","407","408","409","410","411","412","413","414","415","416","418","419","424",
+    "434","442","2","3","4","5","10","11","12","13","14","20","21","22","25","27","28","33","37","138","139","141","142","143",
+    "148","881","882","883","884","888","890","894","895","896","897","898","950","951","958","959","960","961","962","964","965",
+    "969","980","34","36","543","544","545","546","547","548","549","550","551","553","556","560","561","562","563","567","570",
+    "572","131","132","133","134","1330","1331","1334","1444","1445","1702","1703","1704","1705","1706","1707","1708","1709","1710",
+    "1711","1712","1713","1714","211","212","213","214","480","481","482","483","486","488","489","490",
+    "491","495","496","538","892","893","953","954","955","956",
+  ]
    
+var zone = AvonAnalyticsObjex.Profile.zone;
+//var zone = "859";
+var zoneMaster = [norte,sur,centro,norEste];
+var slPool = ['norte','sur','centro','norEste'];
 
-    function otherYear(e){
-        let yearSelected;
-        if (currentCampaign <= 2 && e == 2){
-            yearSelected = currentYear - 1;
-        } else if (currentCampaign == 1 && e == 1){
-            yearSelected = currentYear - 1;
-        } else {
-            yearSelected = currentYear;
-        }
-        return yearSelected;
-    }
+var i,slZone,slPrint;
+var e = 0;
 
-    function campaignSelector(e){
-        let campaignSelected;
-        switch (e) {
-            case 0:
-                campaignSelected = currentCampaign;
-                break
-            case 1:
-                campaignSelected = campaignTwo;
-                break
-            default:
-                campaignSelected = campaignThree;
-        }
-        return campaignSelected
-    }
-    
+while (e < zoneMaster.length) {
+  for (i=0; i < zoneMaster[e].length; i++){
+    if (zone == zoneMaster[e][i]) {
+      slZone = slPool[e];
+    }  
+  }
+  e++
+}
 
-    
-    function copyText(type){
-        let copyText;
-        if (type == "imb"){
-            copyText = 'Copiar link';
-        } else {
-            copyText = '¡Recuerda que es solo para ti!';
-        }
-        return copyText
-    }
+switch (slZone) {
+  case "norte":
+  case "sur":
+    slPrint = 'NorteSur'
+    break
+  case "norEste":
+  case "centro":
+    slPrint = 'CentroNoreste'
+    break
+    default:
+    slPrint = 'NorteSur'
+}
 
+  document.getElementById('sinergiaBox').innerHTML +=
+  '<a class="sinergia_thumb sl_hover" href="/SLSuite/static/pdf/sinergia/sinergia_c19.pdf" target="_blank">'+
+  '<img class="img-thumb_SL" src="./static/images/sinergia/img/C19a_sinergia.jpg"/><h1>19</h1>'+
+  '</a>'
+  document.getElementById('sinergiaBox').innerHTML +=
+  '<a class="sinergia_thumb sl_hover" href="/SLSuite/static/pdf/sinergia/sinergia_c20.pdf" target="_blank">'+
+  '<img class="img-thumb_SL" src="./static/images/sinergia/img/C20a_sinergia.jpg"/><h1>20</h1>'+
+  '</a>'
+  document.getElementById('sinergiaBox').innerHTML +=
+  '<a class="sinergia_thumb sl_hover" href="/SLSuite/static/pdf/sinergia/sinergia_c01.pdf" target="_blank">'+
+  '<img class="img-thumb_SL" src="./static/images/sinergia/img/C01a_sinergia.jpg"/><h1>01</h1>'+
+  '</a>'
 
-    function urlFile(type,e,file){
-        let urlFile;
-        switch (type){
-            case "imb":
-                if (campaignSelector(e) <= 9) {
-                    urlFile = 'https://catalogo.avon.mx/0'+ campaignSelector(e) +'/20'+ otherYear(e) +'0'+ campaignSelector(e) + '_0' + file +'/#/'
-                } else {
-                    urlFile = 'https://catalogo.avon.mx/'+ campaignSelector(e) +'/20'+ otherYear(e) +''+ campaignSelector(e) + '_0' + file +'/#/'
-                }
-                break
-            case "contigo":
-                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
-                break
-            default:
-                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
-        }
-        
-        return urlFile
-    }
-    
-
-    var canvasIdNumber,canvasID,_PDF_DOC;
-
-    function pdfImg(type,canvasIdNumber,file,e){
-        let avCanvasLet;
-        if (type == "flyer" || type == 'contigo' || type == 'bazar'){
-            avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
-            canvasID = '#avCanvas' + canvasIdNumber;
-            if (type == 'contigo'){
-                showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/incentivos2019/'+ brochuresConstructor[e][i].file +'',canvasID);
-            } else {
-                showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);
-            }
-            
-        } else {
-            if (currentCampaign == 1 && e == 1) {
-                avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
-                '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
-                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
-            } else if (currentCampaign > 9) {
-                avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
-                '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
-                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
-            } else {
-                avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
-                '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
-                'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/0'+ campaignSelector(e) +'/20'+ otherYear(e) +
-                '0' + campaignSelector(e) + '_0' +file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
-            }
-            
-        }
-        return avCanvasLet
-    }
-
-
-    async function showPDF(pdf_url,canvasID) {
-        try {
-            _PDF_DOC = await pdfjsLib.getDocument({ url: pdf_url });
-        }
-        catch(error) {
-           // alert(error.message);
-        }
-        showPage(canvasID);
-    }
-    async function showPage(canvasID) {
-        try {
-            var page = await _PDF_DOC.getPage(1);
-        }
-        catch(error) {
-           // alert(error.message);
-        }
-        var pdf_original_width = page.getViewport(1).width;
-        var scale_required = 132 / pdf_original_width;
-        var viewport = page.getViewport(scale_required);
-        var render_context = {
-            canvasContext: document.querySelector(canvasID).getContext('2d'),
-            viewport: viewport
-        };
-        try {
-            await page.render(render_context);
-        }
-        catch(error) {
-            alert(error.message);
-        }
-
-    }
-    
-    var e = 0;
-    var i;
-    while (e < brochuresConstructor.length) {
-        switch (e){
-            case 0:
-            case 1:
-                for (i=0;i<brochuresConstructor[e].length;i++){
-                    canvasIdNumber = campaignSelector(e) + '_' +i;
-                    
-                    brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
-                        '<div class="av-brochure-image">' + pdfImg(brochuresConstructor[e][i].type,canvasIdNumber,brochuresConstructor[e][i].file,e) +
-                            '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
-                            '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" />' +
-                            '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                            '<div class="av-type '+ brochuresConstructor[e][i].type +'">'+ campaignSelector(e) +'</div>' +
-                        '</div>' +
-                        '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[e][i].title +'</h3></div>'+
-                    '</div>'
-                }
-                break;
-            case 2:
-                for (i=0;i<brochuresConstructor[e].length;i++){
-                    
-                    brochurePrint[e] += '<li data-type="'+ brochuresConstructor[e][i].type  +'"><span class="av-type '+  brochuresConstructor[e][i].type  +'"></span>' +
-                    '<span>'+ brochuresConstructor[e][i].title + ' C'+ campaignSelector(2) +'</span>' +
-                    '<span class="av-list-spacer"></span>' +
-                    '<a class="av-button-icon av-tooltip" href="'+ urlFile(brochuresConstructor[e][i].type,2,brochuresConstructor[e][i].file) +'" target="_blank">' +
-                    '<span class="material-icons">visibility</span><div class="tooltiptext">Ver</div></a>' +
-                    '<div class="av-button-icon av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
-                    '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,2,brochuresConstructor[e][i].file) +'" />' +
-                    '</li>'
-                }
-                break;
-        }
-        e++
-    };
-    brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
-                            '<div style="background-image:url(\'/FLDSuite/static/images/mis_folletos/IMB'+ brochuresConstructor[0][0].file +'-cover-mx-c'+ currentCampaign +'.jpg\')" class="av-brochure-image">' +
-                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[0][0].type,0,brochuresConstructor[0][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                                '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ currentCampaign +'</div>' +
-                            '</div>' +
-                            '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[0][0].title +'</h3></div>' +
-                        '</div>'
-    
-    $('#brochureContainer').prepend(brochurePrint[0]);
-    $('#brochureContainerPast').append(brochurePrint[1]);
-    $('#brochureList ul').append(brochurePrint[2]);
-    $('#brochureAside').prepend(brochurePrint[3]);
-
-    $('#viewMore').click(function(){
-        $('#brochureContainerPast').css('display','flex').prev().css('display','flex').append(campaignTwo);
-        $('#brochureList').css('display','flex').prev().css('display','flex').append(campaignThree);
-        $(this).hide();
-        avCopy();
-    });
-    avCopy();
-
-    function avCopy (){
-        $('.av-copy').click(function(){
-            $(this).next().select();
-            document.execCommand("copy");
-            $(this).find('.tooltiptext').text('¡Copiado al portapapeles!');
-            $(this).mouseleave(function(){
-                $(this).find('.tooltiptext').text('Copiar link');  
-            })
-        });
-    };
-
-    const brochureSelector = $('#brochureContainer,#brochureContainerPast,#brochureList ul');
-    $('#avFiltros').children().click(function(){
-        let avFilter = $(this).attr('data-filter');
-        $(this).removeClass('no-active').siblings().addClass('no-active');
-        brochureSelector.children().show();
-        if (avFilter != "all"){
-            brochureSelector.children(':not([data-type="'+ avFilter +'"])').hide();
-        }
-    });
-  	
-    $(window).scroll(function () {
-        const scrollPosition = $(document).scrollTop();
-        if (scrollPosition > 10) {
-            $(".av-brochure-aside").addClass('av-sticky').next().addClass('av-sticky');
-        } else {
-            $(".av-brochure-aside").removeClass('av-sticky').next().removeClass('av-sticky');
-        }
-    });
-})
+};

@@ -371,7 +371,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
           justify-content: flex-end;
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
-  background-color: #FF49A3;
+  background-color: #7F28C4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -583,7 +583,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-pink {
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-list {
@@ -640,7 +640,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-list.av-list-item li [class^='material-icons'] {
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-list.av-list-item li:hover:not(.av-list-divider) {
@@ -716,7 +716,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-card.av-card-select:hover .av-card-wrapper {
   width: 100%;
-  background-color: #FF49A3;
+  background-color: #7F28C4;
 }
 
 .av-card.av-card-unable {
@@ -861,6 +861,14 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   font-size: 1rem;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
 .av-loader {
   width: 100vw;
   height: 100vh;
@@ -954,10 +962,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-tooltip .tooltiptext {
   visibility: hidden;
   width: auto;
-  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 15px;
-  background-color: #3b4546;
-  color: #fff;
+  background-color: #fff;
+  color: #3b4546;
   text-align: center;
   padding: 7px 10px;
   border-radius: 6px;
@@ -966,6 +974,8 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   top: -80%;
   white-space: nowrap;
   z-index: 100;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .av-tooltip .tooltiptext::after {
@@ -976,7 +986,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #3b4546 transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
 }
 
 .av-tooltip:hover .tooltiptext {
@@ -1098,7 +1108,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-modal-close {
   font-size: 30px;
   color: #fff;
-  background-color: #FF49A3;
+  background-color: #7F28C4;
   cursor: pointer;
   width: auto;
   padding: 10px 20px;
@@ -1110,7 +1120,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-modal-close:hover {
-  color: #FF49A3;
+  color: #7F28C4;
   background-color: #fff;
 }
 
@@ -1322,7 +1332,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   -webkit-transition: all 1s;
   transition: all 1s;
   border-radius: 4px;
-  background-color: #FF49A3;
+  background-color: #7F28C4;
 }
 
 .av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
@@ -1361,7 +1371,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-button-tertiary:hover, .av-button-tertiary:active, .av-button-tertiary:focus {
@@ -1374,14 +1384,14 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-button-tertiary svg {
-  fill: #FF49A3;
+  fill: #7F28C4;
   width: 26px;
   height: 26px;
   margin: 0 10px;
 }
 
 .av-button-tertiary:hover, .av-button-tertiary:active, .av-button-tertiary:focus {
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-button-icon {
@@ -1427,7 +1437,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   text-align: center;
-  color: #FF49A3;
+  color: #7F28C4;
   padding: 20px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1438,7 +1448,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid 1px #FF49A3;
+  border: solid 1px #7F28C4;
 }
 
 .av-button-outline:hover, .av-button-outline:active, .av-button-outline:focus {
@@ -1453,7 +1463,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-button-outline:hover {
   background-color: rgba(200, 200, 200, 0.1);
   border: solid 1px transparent;
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 .av-button-outline.small {
@@ -1464,7 +1474,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-link {
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 17px;
-  color: #FF49A3;
+  color: #7F28C4;
   padding: 17px 17px 17px 0rem;
   display: block;
   background-color: transparent;
@@ -1514,7 +1524,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-link-icon.primary {
-  color: #FF49A3;
+  color: #7F28C4;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1535,7 +1545,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-link-inline {
-  color: #FF49A3;
+  color: #7F28C4;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1652,6 +1662,29 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
           animation-fill-mode: forwards;
 }
 
+.av-slider .av-slider-content.shade .av-slider-item {
+  z-index: 1;
+}
+
+.av-slider .av-slider-content.shade .lastOne {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.av-slider .av-slider-content.shade .active {
+  z-index: 3;
+  position: absolute;
+  -webkit-animation-name: fadeInwards;
+          animation-name: fadeInwards;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes slideInwards {
   0% {
     opacity: 0;
@@ -1693,10 +1726,43 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   }
 }
 
+@-webkit-keyframes fadeInwards {
+  0% {
+    opacity: 0;
+    display: -webkit-box;
+    display: flex;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInwards {
+  0% {
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1887,7 +1953,7 @@ a {
   height: 5px;
   display: block;
   overflow: hidden;
-  margin: 50px 0px;
+  margin: 50px auto;
   background-color: #f1f1f1;
   position: relative;
 }
@@ -1962,8 +2028,114 @@ a {
   }
 }
 
+.av-concert-subtitle {
+  color: #A11F1D;
+  font-size: 35px;
+  line-height: 32px;
+  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 992px) {
+  .av-concert-subtitle {
+    font-size: 39px;
+    line-height: 40px;
+  }
+}
+
+.av-concert-title {
+  color: #3b4546;
+  font-size: 40px;
+  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .av-concert-title {
+    font-size: 47px;
+  }
+}
+
+.steper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.steper-container .av-step-image {
+  display: none;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.7);
+  -webkit-transition: background-image 1s;
+  transition: background-image 1s;
+}
+
+@media (min-width: 992px) {
+  .steper-container .av-step-image {
+    width: 50%;
+    display: block;
+  }
+}
+
+.steper-container .steps {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.steper-container .steps [class^="step"] {
+  padding: 50px;
+  min-height: 60vh;
+}
+
+@media (min-width: 992px) {
+  .steper-container .steps [class^="step"] {
+    padding: 80px 100px;
+    min-height: 85vh;
+  }
+}
+
+.steper-container .concert-list {
+  font-size: 25.5px;
+  text-transform: uppercase;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+.av-concierto {
+  background-image: url("../img/conciertoBasesHeaderMobile.jpg");
+}
+
+@media (min-width: 992px) {
+  .av-concierto {
+    background-image: url("../img/conciertoBasesHeader.jpg");
+  }
+}
+
+.av-concert-1 {
+  background-image: url("../img/avConciertoHeader.jpg");
+  height: 45vh;
+}
+
+.av-concert-2 {
+  background-image: url("../img/avConciertoBackground.jpg");
+}
+
+.av-concert-3 {
+  background-image: url("../img/avConciertoBackgroundLoader.jpg");
+}
+
+.av-concert-4 {
+  background-image: url("../img/avConciertoHeader.jpg");
+}
+
 .av-img-higiene {
-  background-image: url("../images/folletos/hg-1.jpg");
+  background-image: url("../img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2102,7 +2274,7 @@ a {
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-description .av-slide-description-price {
   font-size: 34px;
-  color: #FF49A3;
+  color: #7F28C4;
   font-weight: bolder;
   display: block;
 }
@@ -2120,7 +2292,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("../images/circulo_estelar/ce-header.jpg");
+  background-image: url("../img/circulo_estelar/ce-header.jpg");
   height: 45vh;
   margin-bottom: 0;
   margin: 0 -0.599rem;
@@ -2161,7 +2333,7 @@ a {
 .ce-onboarding div h4 {
   font-size: 1.4rem;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  color: #FF49A3;
+  color: #7F28C4;
   text-align: left;
 }
 
@@ -2194,12 +2366,12 @@ a {
 }
 
 .av-ce-option h4.active {
-  color: #FF49A3;
+  color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 .av-ce-option h4.active i {
-  color: #FF49A3;
+  color: #7F28C4;
   display: inline-block;
 }
 
@@ -2218,63 +2390,63 @@ a {
 }
 
 .av-card-default {
-  background-image: url("../images/circulo_estelar/ce-default.jpg");
+  background-image: url("../img/circulo_estelar/ce-default.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-6 {
-  background-image: url("../images/circulo_estelar/ce-6.jpg");
+  background-image: url("../img/circulo_estelar/ce-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-7 {
-  background-image: url("../images/circulo_estelar/ce-7.jpg");
+  background-image: url("../img/circulo_estelar/ce-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-8 {
-  background-image: url("../images/circulo_estelar/ce-8.jpg");
+  background-image: url("../img/circulo_estelar/ce-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-9 {
-  background-image: url("../images/circulo_estelar/ce-9.jpg");
+  background-image: url("../img/circulo_estelar/ce-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-10 {
-  background-image: url("../images/circulo_estelar/ce-10.jpg");
+  background-image: url("../img/circulo_estelar/ce-10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-11 {
-  background-image: url("../images/circulo_estelar/ce-11.jpg");
+  background-image: url("../img/circulo_estelar/ce-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-12 {
-  background-image: url("../images/circulo_estelar/ce-12.jpg");
+  background-image: url("../img/circulo_estelar/ce-12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-13 {
-  background-image: url("../images/circulo_estelar/ce-13.jpg");
+  background-image: url("../img/circulo_estelar/ce-13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2449,7 +2621,7 @@ section.av-lw section.av-section-container .av-divider {
 
 section.av-lw section.av-section-container .av-section-title i:nth-child(1), section.av-lw section.av-section-container .av-section-select i:nth-child(1) {
   margin-right: 1rem;
-  color: #FF49A3;
+  color: #7F28C4;
 }
 
 section.av-lw section.av-section-container .av-section-title {
@@ -2565,7 +2737,7 @@ section.av-lw .disable {
 
 .av-guide p {
   font-size: 17px;
-  color: #FF49A3;
+  color: #7F28C4;
   margin-bottom: 0.7rem;
 }
 
@@ -2872,7 +3044,7 @@ h3.av-brochures-subtitle svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FF49A3;
+  background-color: #7F28C4;
   z-index: 35;
   -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
           box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
@@ -2895,7 +3067,7 @@ h3.av-brochures-subtitle svg {
 }
 
 .av-brochure-item .av-brochure-image .av-copy:active {
-  background-color: #ff0782;
+  background-color: #66209d;
   outline: none;
 }
 

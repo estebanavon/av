@@ -1,6 +1,11 @@
 
 const brochures20 = [
     {
+        title: 'Cyber Weekend',
+        file: '15',
+        type: 'imb',
+    },
+    {
         title: 'Belleza',
         file: '1',
         type: 'imb',
@@ -31,11 +36,15 @@ const brochures20 = [
         type: 'imb',
     },
     {
-        title: 'Premium',
+        title: 'Regalos Premium',
         file: '13',
         type: 'imb',
     },
-    
+    {
+        title: 'Salón en casa',
+        file: '14',
+        type: 'imb',
+    },
     {
         title: '3er del Concierto Avon',
         file: '3erConcierto.pdf',

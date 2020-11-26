@@ -66,7 +66,16 @@ $(document).ready(function(){
             $(".av-header").removeClass("av-header-white");
         }
     });
-    
+
+    const avLoader = '<div class="av-loader">'+
+            '<svg width="154.2px" height="30px">'+
+                '<use xlink:href="#brand"></use>'+
+            '</svg>'+
+            '<div class="w-25">'+
+                '<div class="avLoader">'+
+                '<div class="avLoaderBar"></div>'+
+            '</div></div></div>';
+
     const avFooterInsert = '<footer class="av-footer">'+
                                 '<div class="row">'+
                                     '<div class="col-auto mx-auto"><svg width="154.2px" height="30px" fill="#fff"><use xlink:href="#brand"></use></svg></div>'+
@@ -119,6 +128,17 @@ $(document).ready(function(){
                                 '</div>'+
                             '</footer>';
     $('body').append(avFooterInsert);
+    if (sessionStorage.getItem("loaderOnce") != 'true') {
+        $('body').append(avLoader).css('overflow-y','hidden');
+    }
+    setTimeout(function(){ 
+        $('.av-loader').addClass('loaderFadeOut');
+        sessionStorage.setItem('loaderOnce', 'true');
+     }, 3000);
+    setTimeout(function(){ 
+        $('body').css('overflow-y','auto');
+        $('.av-loader').remove();
+     }, 3900);
     $('header').css('opacity','0');
 });
 
