@@ -120,7 +120,9 @@
 .steper-container {
     display: flex;
     .av-step-image {
-        display: none;
+        opacity: 0;
+        width: 0;
+        overflow: hidden;
         height: 90vh;
         background-size: cover;
         background-repeat: no-repeat;
@@ -129,13 +131,14 @@
         transition: background-image 1s;
         @media (min-width:$media-2) {
             width: 50%;
+            opacity: 1;
             display: block;
         }
     }
     .steps {
         flex: 1;
         [class^="step"]{
-            padding: 50px;
+            padding: 25px;
             min-height: 60vh;
             @media (min-width:$media-2) {
                 padding: 80px 100px;
@@ -148,6 +151,14 @@
         font-size: $size-text * 1.5;
         text-transform: uppercase;
         font-family: $bold-monts;
+    }
+    .av-mobi-image {
+        height: 170px;
+        background-color: #eee;
+        margin-bottom: 10px;
+        @media (min-width:$media-2) {
+            display: none;   
+        }
     }
 }
 
