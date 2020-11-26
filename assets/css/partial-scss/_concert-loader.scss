@@ -142,7 +142,7 @@
         flex: 1;
         [class^="step"]{
             padding: 25px;
-            min-height: 60vh;
+            min-height: 80vh;
             @media (min-width:$media-1) {
                 padding: 50px;
                 min-height: 85vh;
@@ -152,9 +152,6 @@
                 
             }
         }
-        img {
-            margin-top: 30px;
-        }
     }
     .concert-list {
         font-size: $size-text * 1.5;
@@ -163,9 +160,9 @@
         padding: 0px;
     }
     .av-mobi-image {
-        height: 170px;
-        margin: 0 -25px;
-        box-shadow: 0 4px 11px rgba(0,0,0,0.5);
+        height: 180px;
+        margin: 30px -25px;
+        box-shadow: 0 0px 11px rgba(0,0,0,0.5);
         @media (min-width:$media-1) {
             display: none;   
         }
@@ -179,7 +176,7 @@
     height: 37vh;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     @media (min-width:$media-2) {
         height: 40vh;
         padding: 40px 100px;

@@ -2100,7 +2100,7 @@ a {
 
 .steper-container .steps [class^="step"] {
   padding: 25px;
-  min-height: 60vh;
+  min-height: 80vh;
 }
 
 @media (min-width: 768px) {
@@ -2116,10 +2116,6 @@ a {
   }
 }
 
-.steper-container .steps img {
-  margin-top: 30px;
-}
-
 .steper-container .concert-list {
   font-size: 25.5px;
   text-transform: uppercase;
@@ -2128,10 +2124,10 @@ a {
 }
 
 .steper-container .av-mobi-image {
-  height: 170px;
-  margin: 0 -25px;
-  -webkit-box-shadow: 0 4px 11px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 4px 11px rgba(0, 0, 0, 0.5);
+  height: 180px;
+  margin: 30px -25px;
+  -webkit-box-shadow: 0 0px 11px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0px 11px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {
@@ -2152,7 +2148,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 @media (min-width: 992px) {
