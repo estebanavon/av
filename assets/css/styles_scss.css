@@ -1056,7 +1056,8 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-frame {
   position: absolute;
-  top: 1rem;
+  top: 30px;
+  left: 30px;
   width: 90%;
   height: 90%;
   border: 1px #fff solid;
@@ -1965,20 +1966,25 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   width: 0;
   overflow: hidden;
   height: 90vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   -webkit-box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.7);
           box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.7);
   -webkit-transition: background-image 1s;
   transition: background-image 1s;
 }
 
+@media (min-width: 768px) {
+  .steper-container .av-step-image {
+    width: 45%;
+    height: 80vh;
+    opacity: 1;
+    display: block;
+  }
+}
+
 @media (min-width: 992px) {
   .steper-container .av-step-image {
     width: 50%;
-    opacity: 1;
-    display: block;
+    height: 85vh;
   }
 }
 
@@ -1993,28 +1999,76 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   min-height: 60vh;
 }
 
+@media (min-width: 768px) {
+  .steper-container .steps [class^="step"] {
+    padding: 50px;
+    min-height: 85vh;
+  }
+}
+
 @media (min-width: 992px) {
   .steper-container .steps [class^="step"] {
     padding: 80px 100px;
-    min-height: 85vh;
   }
+}
+
+.steper-container .steps img {
+  margin-top: 30px;
 }
 
 .steper-container .concert-list {
   font-size: 30px;
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  padding: 0px;
 }
 
 .steper-container .av-mobi-image {
   height: 170px;
-  background-color: #eee;
-  margin-bottom: 10px;
+  margin: 0 -25px;
+  -webkit-box-shadow: 0 4px 11px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 11px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .steper-container .av-mobi-image {
+    display: none;
+  }
+}
+
+.av-concert-banner {
+  background-image: url("../img/avConciertoHeader.jpg");
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 37vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
 }
 
 @media (min-width: 992px) {
-  .steper-container .av-mobi-image {
-    display: none;
+  .av-concert-banner {
+    height: 40vh;
+    padding: 40px 100px;
+  }
+}
+
+.av-concert-banner .av-concert-banner-text {
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (min-width: 992px) {
+  .av-concert-banner .av-concert-banner-text {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
@@ -2028,21 +2082,67 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   }
 }
 
-.av-concert-1 {
-  background-image: url("../img/avConciertoHeader.jpg");
-  height: 45vh;
+.av-concert1 {
+  background-image: url("../img/avConciertoHow1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.av-concert-2 {
-  background-image: url("../img/avConciertoBackground.jpg");
+.av-concert2 {
+  background-image: url("../img/avConciertoHow2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.av-concert-3 {
-  background-image: url("../img/avConciertoBackgroundLoader.jpg");
+.av-concert3 {
+  background-image: url("../img/avConciertoHow3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.av-concert-4 {
-  background-image: url("../img/avConciertoHeader.jpg");
+.av-concert4 {
+  background-image: url("../img/avConciertoHow4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.av-concert5 {
+  background-image: url("../img/avConciertoHow5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.av-concert6 {
+  background-image: url("../img/avConciertoHow6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.av-concert7 {
+  background-image: url("../img/avConciertoHow7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.av-concert8 {
+  background-image: url("../img/avConciertoHow8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.av-concert9 {
+  background-image: url("../img/avConciertoHow9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 * {
