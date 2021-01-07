@@ -68,16 +68,16 @@ switch (slZone) {
 }
 
   document.getElementById('sinergiaBox').innerHTML +=
-  '<a class="sinergia_thumb sl_hover" href="/SLSuite/static/pdf/sinergia/sinergia_c19.pdf" target="_blank">'+
-  '<img class="img-thumb_SL" src="./static/images/sinergia/img/C19a_sinergia.jpg"/><h1>19</h1>'+
-  '</a>'
-  document.getElementById('sinergiaBox').innerHTML +=
   '<a class="sinergia_thumb sl_hover" href="/SLSuite/static/pdf/sinergia/sinergia_c20.pdf" target="_blank">'+
   '<img class="img-thumb_SL" src="./static/images/sinergia/img/C20a_sinergia.jpg"/><h1>20</h1>'+
   '</a>'
   document.getElementById('sinergiaBox').innerHTML +=
   '<a class="sinergia_thumb sl_hover" href="/SLSuite/static/pdf/sinergia/sinergia_c01.pdf" target="_blank">'+
   '<img class="img-thumb_SL" src="./static/images/sinergia/img/C01a_sinergia.jpg"/><h1>01</h1>'+
+  '</a>'
+  document.getElementById('sinergiaBox').innerHTML +=
+  '<a class="sinergia_thumb sl_hover" href="/SLSuite/static/pdf/sinergia/sinergia_c03.pdf" target="_blank">'+
+  '<img class="img-thumb_SL" src="./static/images/sinergia/img/C03a_sinergia.jpg"/><h1>01</h1>'+
   '</a>'
 
 };

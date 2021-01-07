@@ -10,14 +10,6 @@ $(document).ready(function(){
     .setPin('.avHero', {pushFollowers:false})
     .addTo(controller);
     
-    var pinSceneHowTo = new ScrollMagic.Scene({
-        triggerElement: '.howTest',
-        triggerHook: 0.1,
-        duration:'200%',
-    })
-    .setPin('.howTest', {pushFollowers:false})
-    .addTo(controller);
-    
 
     $(".av-fade,.av-fade-reverse").each(function(){
         var scene = new ScrollMagic.Scene({
@@ -40,7 +32,48 @@ $(document).ready(function(){
         .addTo(controller);
     });
 
-    
+    var pinSceneConcert = new ScrollMagic.Scene({
+        triggerElement: '#avStepImage',
+        triggerHook: 0.15,
+        duration:'275%',
+    })
+    .setPin('#avStepImage', {pushFollowers:false})
+    .addTo(controller);
+    var pinSceneConcert2 = new ScrollMagic.Scene({
+        triggerElement: '#avStepImage',
+        triggerHook: 0.15,
+        duration:'15%',
+    })
+    .setPin('.step1', {pushFollowers:true})
+    .addTo(controller);
+    var sceneClass2 = new ScrollMagic.Scene({
+        triggerElement: '.step2',
+        triggerHook: 0.3,
+        duration:'85%',
+    })
+    .setClassToggle('#avStepImage','av-concert2')
+    .addTo(controller);
+    var sceneClass3 = new ScrollMagic.Scene({
+        triggerElement: '.step3',
+        triggerHook: 0.3,
+        duration:'67%',
+    })
+    .setClassToggle('#avStepImage','av-concert3')
+    .addTo(controller);
+    var sceneClass4 = new ScrollMagic.Scene({
+        triggerElement: '.step4',
+        triggerHook: 0.48,
+        duration:'150%',
+    })
+    .setClassToggle('#avStepImage','av-concert4')
+    .addTo(controller);
+    var pinSceneConcert3 = new ScrollMagic.Scene({
+        triggerElement: '#avStepImage2',
+        triggerHook: 0.15,
+        duration:'110%',
+    })
+    .setPin('#avStepImage2', {pushFollowers:false})
+    .addTo(controller);
 
 });
 

@@ -1,0 +1,27 @@
+ul.breadcrumb_line li a {
+    @include av-button-secondary;
+}
+ul.breadcrumb_line li.active a {
+    @include av-button-tertiary;
+}
+.buttonBg {
+    @include av-button-secondary;
+}
+.buttonBgpink {
+    @include av-button-tertiary;
+}
+.view a {
+    @include av-link;
+}
+.order_method_campaign {
+    @include subtitle(25px);
+}
+td.padding_3 a {
+    @include av-tabs;
+}
+table.border_rightstyle td.padding_3 {
+    
+}
+td.padding_3.active a {
+    @include av-tabs-active();
+}

@@ -4,6 +4,7 @@
 @import '../partial-scss/font';
 @import '../partial-scss/colors';
 @import '../partial-scss/variables';
+@import '../partial-scss/text';
 
 // Custom Variables
 $size-text: 17px;
@@ -19,6 +20,8 @@ $card-padding: 3rem;
 @import '../partial-scss/concert-loader';
 @import 'hg-team-site';
 @import 'circuloestelar';
+@import 'howto';
+@import 'home';
 
 @import 'lw';
 @import 'brochures';

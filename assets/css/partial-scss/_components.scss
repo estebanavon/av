@@ -1,0 +1,17 @@
+@mixin av-tabs-active {
+    font-family: $bold-monts;
+    border-bottom: 3px solid $color-primary;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@mixin av-tabs {
+    font-family: $regular-monts;
+    color: $color-text;
+    padding: 20px 0px;
+    border: 3px solid $color-dark-30;
+    font-size: $size-text - 2;
+    width: 100%;
+    &.active {
+        @include av-tabs-active();
+    }
+    
+}

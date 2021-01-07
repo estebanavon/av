@@ -1,5 +1,4 @@
-
-@mixin button-basic() {
+%button-basic {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -8,6 +7,8 @@
     text-transform: uppercase;
     font-family: $bold-monts;
     text-align: center;
+    font-style: normal;
+    
     &:hover,
     &:active,
     &:focus {
@@ -18,18 +19,18 @@
         color: $color-white;
     }
 }
-@mixin button-basic-fill() {
+%button-basic-fill {
     color: $color-white;
-    padding:  20px 30px;
+    padding:  13px 30px;
     text-align: center;
-    transition: all 1s;
     border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
     &:hover,
     &:active,
     &:focus {
         color: $color-white;
         z-index: 5;
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
     &.small {
         padding:  10px 20px;
@@ -39,22 +40,23 @@
 
 
 
-
-.av-button-primary {
-    @include button-basic();
-    @include button-basic-fill();
+@mixin av-button-primary {
+    @extend %button-basic;
+    @extend %button-basic-fill;
     background-image: $color-gradient;
     display: inline-block;
 }
-.av-button-secondary {
-    @include button-basic();
-    @include button-basic-fill();
+
+@mixin av-button-secondary{
+    @extend %button-basic;
+    @extend %button-basic-fill;
     background-color: $color-primary;
 }
-.av-button-tertiary {
-    @include button-basic();
-    display: inline-flex;
-    align-items: center;
+
+@mixin av-button-tertiary {
+    @extend %button-basic;
+    @extend %button-basic-fill;
+    
     color: $color-primary;
     svg {
         fill: $color-primary;
@@ -67,24 +69,33 @@
     &:focus {
         color: $color-primary;
     }
+    &.negative {
+        color: $color-white;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color-white;
+        }
+    }
 }
 .av-button-icon {
-    @include button-basic();
+    @extend %button-basic;
     padding: 12px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     &:hover {
         background-color: $color-dark-30;
     }
+    i, svg {
+        color: $color-primary;
+    }
 }
-.av-button-outline {
-    @include button-basic();
+@mixin av-button-outline {
+    @extend %button-basic;
+    @extend %button-basic-fill;
     color: $color-primary;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     border: solid 1px $color-primary;
     &:hover {
         background-color: $color-dark-10;
@@ -96,32 +107,65 @@
         font-size: 14px;
     }
 }
-.av-link {
-    $size-padding: $size-text;
-    font-family: $regular-monts;
-    font-size: $size-text;
+
+
+@mixin av-link() {
     color: $color-primary;
-    padding: $size-padding $size-padding $size-padding 0rem;
-    display: block;
-    @include button-basic();
-    @mixin icons-button($color){
-        color: $color;   
+    font-family: $regular-monts;
+    text-decoration: underline;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s;
+    &:hover {
+        background-color: $color-primary-light;
     }
-    &-icon {
-        @include icons-button($color-dark-light);
-        @include button-basic();
-        display: inline-flex;
-        justify-content: center;
+    &.visited {
+        color: $color-primary-dark;
     }
-    &-icon.primary {
-        @include icons-button($color-primary);
-        @include button-basic(); 
-    }
-    &-inline {
-        color: $color-primary;
-        @include button-basic();
-    }
-    &.negative {
-        color: $color-white;
+}
+
+
+
+.av-link {
+    @include av-link();
+}
+.av-button-primary {
+    @include av-button-primary;
+}
+.av-button-secondary {
+    @include av-button-secondary;
+}
+.av-button-tertiary {
+    @include av-button-tertiary;
+    padding: 10px 0px;
+}
+.av-button-outline {
+    @include av-button-outline;
+}
+
+
+
+
+
+
+
+@mixin av-input-text {
+    font-family: $regular-monts;
+    color: $color-text;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid $color-text;
+    background-color: $color-white;
+    box-shadow: none;
+    transition: border-bottom 1s;
+
+    height: 21px;
+    min-width: 42px;
+    width: auto;
+
+    &:focus {
+        border-bottom: 1px solid $color-primary;
+        outline: none;
     }
 }

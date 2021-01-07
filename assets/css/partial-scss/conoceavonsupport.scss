@@ -2,6 +2,8 @@ body {
     padding-top:0px;
     max-width: 100% !important;
     .container {
+        padding:0px !important;
+        max-width: 100% !important;
         @media (min-width: 1200px){
             max-width: 100% !important;
         }

@@ -13,7 +13,4 @@ $dev-images: '../img';
 
 //Configuración de rutas sin condicionante
 
-$route-images: $dev-images;
-
-
-
+$route-images: $prod-images;

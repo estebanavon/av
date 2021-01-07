@@ -1,0 +1,46 @@
+@mixin subtitle($size) {
+    color: $color-text;
+    font-family: $bold-monts;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: $size - 1;
+    display: block;
+    padding: 0;
+    
+    @media (min-width:$media-1){
+        font-size: $size;
+    }
+    &.left {
+        text-align: left;
+    }
+}
+@mixin highlight() {
+    .av-highlight {
+        font-family: $semi-bold-monts;
+    }
+}
+@mixin text-mixin($font:$regular-monts){
+    color: $color-text;
+    font-family: $font;
+    font-size: $size-text;
+    line-height: $line-height;
+    margin-bottom: $size-text * 1.1;
+    @media (min-width:$media-1) {
+        margin-bottom: $size-text * 1.5;
+    }
+}
+@mixin negative($align:center) {
+    &.negative {
+        color: $color-white;
+        text-align: $align;
+        fill: $color-white;
+        @media (min-width:$media-1) {
+            text-align: left;
+        }
+        [class^='material-icons'] {
+            color: $color-white;
+        }
+    }
+}
