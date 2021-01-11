@@ -4,14 +4,41 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @mixin av-tabs {
+    border: 1px solid $color-dark-30;
+    background-color: $color-white;
     font-family: $regular-monts;
     color: $color-text;
-    padding: 20px 0px;
-    border: 3px solid $color-dark-30;
-    font-size: $size-text - 2;
-    width: 100%;
+    padding: 15px 0px;
+    font-size: $size-text - 4;
+
     &.active {
         @include av-tabs-active();
     }
     
 }
+
+
+@mixin av-input-text {
+    font-family: $regular-monts;
+    color: $color-text;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid $color-text;
+    background-color: $color-white;
+    box-shadow: none;
+    transition: border-bottom 1s;
+    border-radius: 0px;
+    //height: 21px;
+    min-width: 42px;
+    width: auto;
+
+    &:hover {
+        border-bottom: 1px solid $color-dark-light;
+        outline: none;
+    }
+    &:focus {
+        border-bottom: 1px solid $color-primary;
+        outline: none;
+    }   
+}
+

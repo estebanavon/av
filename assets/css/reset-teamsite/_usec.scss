@@ -1966,11 +1966,9 @@ identifier line should to use the section theme colors */
     //   border-left: 10px solid #FFFFFF;
     //   border-bottom: 0px solid #FFFFFF;
     //   border-top: 0px solid #FFFFFF;
-    background: #FFFFFF;
-	//   width: 770px;
-	width: 100%;
-	//min-width: 500px;
-	//margin:0 auto;
+    //   background: #FFFFFF;
+	//	min-width: 500px;
+	//	margin:0 auto;
 
 }
 
@@ -2046,10 +2044,10 @@ display:none;
 }
 /*Added for Wave-E Style Guide Changes*/
 .clickImage {
-	cursor: pointer;
-	width: auto;
-	height: auto;
-	border: 0px;
+	// cursor: pointer;
+	// width: auto;
+	// height: auto;
+	// border: 0px;
 	//margin-left: 10px;  
 }
 .countryName {
@@ -2833,7 +2831,7 @@ a.ord_link {
 	text-align:left;
 	display: block; 
 	float: left;
-	width: 120px;
+	width: auto;
 	margin-right: 5px;
 }
 /*

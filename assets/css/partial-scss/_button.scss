@@ -149,23 +149,3 @@
 
 
 
-
-@mixin av-input-text {
-    font-family: $regular-monts;
-    color: $color-text;
-    padding: 6px;
-    border: none;
-    border-bottom: 1px solid $color-text;
-    background-color: $color-white;
-    box-shadow: none;
-    transition: border-bottom 1s;
-
-    height: 21px;
-    min-width: 42px;
-    width: auto;
-
-    &:focus {
-        border-bottom: 1px solid $color-primary;
-        outline: none;
-    }
-}

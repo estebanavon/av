@@ -448,9 +448,12 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   color: #fff;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 22.1px;
+  font-size: 15px;
   letter-spacing: 16px;
-  font-weight: 300;
+  min-height: 50px;
+  background-color: #cccccc;
+  border: none;
+  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -677,6 +680,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-list.av-footer-list {
   list-style-type: none;
+  text-align: left;
 }
 
 .av-list.av-footer-list li a {
@@ -776,12 +780,22 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-card .av-card-text {
-  padding: 1.4rem;
-  padding-bottom: 3rem;
+  padding: 25px;
   background-color: #F7F7F7;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
 }
 
 .av-card .av-card-text .av-card-title {
@@ -790,6 +804,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   margin-bottom: 5px;
   color: #3b4546;
   padding: 0px;
+}
+
+.av-card .av-card-text .av-button-tertiary {
+  margin-top: auto;
 }
 
 .av-table-container {
@@ -803,7 +821,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-table-container .av-table thead tr {
-  background-color: #666666;
+  background-color: #cccccc;
 }
 
 .av-table-container .av-table thead tr td {
@@ -925,7 +943,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 20.4px;
   padding: 30px 20px 7px 20px;
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid #cccccc;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -1003,9 +1021,12 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   color: #3b4546;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  font-size: 22.1px;
+  font-size: 15px;
   letter-spacing: 0px;
-  font-weight: 300;
+  min-height: 50px;
+  background-color: #cccccc;
+  border: none;
+  outline: none;
 }
 
 .av-fade {
@@ -1262,13 +1283,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 @media (min-width: 768px) {
   .av-footer {
-    padding: 80px;
-  }
-}
-
-@media (min-width: 992px) {
-  .av-footer {
-    padding: 130px;
+    padding: 8%;
   }
 }
 
@@ -2211,7 +2226,7 @@ a {
 }
 
 .av-slide-container .av-slide-product .av-slide-text .av-slide-description {
-  color: #666666;
+  color: #cccccc;
   display: block;
 }
 
@@ -2259,7 +2274,7 @@ a {
 .ce-onboarding > p {
   font-size: 8rem;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  color: #666666;
+  color: #cccccc;
   position: relative;
   top: -20px;
 }
@@ -2267,7 +2282,7 @@ a {
 .ce-onboarding div h3 {
   font-size: 1.7rem;
   font-family: zona-pro-light, Helvetica, sans-serif;
-  color: #666666;
+  color: #cccccc;
   text-transform: uppercase;
   text-align: left;
   padding: 0;
@@ -2298,7 +2313,7 @@ a {
   padding-right: 2rem;
   font-size: 17px;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  color: #666666;
+  color: #cccccc;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
@@ -2412,13 +2427,9 @@ a {
   left: 5%;
 }
 
-.avHome {
-  padding: 0 30px;
-}
-
 .avHome [data-slide="prev"] {
   width: 45px;
-  left: -40px;
+  left: 30px;
 }
 
 .avHome [data-slide="prev"] .carousel-control-prev-icon {
@@ -2427,22 +2438,30 @@ a {
 
 .avHome [data-slide="next"] {
   width: 45px;
-  right: -40px;
+  right: 30px;
 }
 
 .avHome [data-slide="next"] .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+.avHome-nav .av-button-tertiary {
+  font-size: 14px;
+  color: #3b4546;
+}
+
 .avHome-card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 15px;
-  -webkit-box-shadow: 0px 0px 7px gray;
-          box-shadow: 0px 0px 7px gray;
-  background-color: rgba(200, 200, 200, 0.1);
+  margin: 9px;
+  -webkit-box-shadow: 0px 0px 5px #cccccc;
+          box-shadow: 0px 0px 5px #cccccc;
   position: relative;
+  height: 200px;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2452,10 +2471,30 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 220px;
-  z-index: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+}
+
+.avHome-card:hover {
+  -webkit-box-shadow: 0px 0px 10px gray;
+          box-shadow: 0px 0px 10px gray;
+  z-index: 10;
+}
+
+.avHome-card:hover .avHome-overlay {
+  display: block;
+}
+
+.avHome-card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .avHome-card:first-child {
@@ -2467,7 +2506,7 @@ a {
 }
 
 .avHome-card img {
-  width: 90px;
+  width: 70px;
 }
 
 .avHome-card .avHome-overlay {
@@ -2475,12 +2514,6 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -2489,25 +2522,14 @@ a {
 
 .avHome-card .avHome-overlay ::before {
   content: 'visitar';
+  font-size: 17px;
   color: white;
   text-transform: uppercase;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
 }
 
-.avHome-card:hover {
-  -webkit-box-shadow: 0px 0px 16px gray;
-          box-shadow: 0px 0px 16px gray;
-  z-index: 10;
-}
-
-.avHome-card:hover .avHome-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .avHome-indicators {
-  bottom: -20px;
+  bottom: -25px;
   margin: 0;
 }
 
@@ -2516,8 +2538,8 @@ a {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   background-color: #7F28C4;
-  opacity: .3;
-  height: 3px;
+  opacity: .2;
+  height: 4px;
 }
 
 .wrapper {
@@ -2673,7 +2695,7 @@ section.av-lw section.av-section-container .av-button-back {
 }
 
 section.av-lw section.av-section-container .av-button-back:active {
-  background-color: #666666;
+  background-color: #cccccc;
 }
 
 section.av-lw section.av-section-container .av-button-back.unable {
@@ -2684,7 +2706,7 @@ section.av-lw section.av-section-container .av-button-back.unable {
 section.av-lw section.av-section-container .av-divider {
   width: 65%;
   height: 1px;
-  background-color: #666666;
+  background-color: #cccccc;
   margin: 0.4rem auto;
 }
 

@@ -1,18 +1,29 @@
-a.linkList {
-	@include av-link();
-}
+// a.linkList {
+// 	@include av-link();
+// }
 
-.linearFormInput, input[type="text"]:not(.searchBox){
-    @include av-input-text();
-}
+// .linearFormInput, input[type="text"]:not(.searchBox){
+//     @include av-input-text();
+// }
+// select {
+//     @include av-input-text;
+// }
+
+
+
+
 
 
 // CAM STYLES FIX
 
 
 #dashboardFrame {
-    min-width: 830px !important;
+    //min-width: 830px !important;
 }
+
+
+
+
 
 // HEADER STYLES
 
@@ -29,23 +40,12 @@ a.linkList {
     text-transform: uppercase;
     font-size: 14px !important;
     text-align: left;
-    padding-left: 20%;
 }
 .dueby_text {
     color: $color-text !important;
 }
-.searchBox {
-    background-color: $color-dark-30 !important;
-    border: none !important;
-    color: $color-text;
-    &::before {
-        content: "BUSCAR";
-    }
-}
-
-
 .topLinks {
-    color: $color-text;
+ color: $color-text;
 	font-weight: normal;
 	text-decoration: none;
 	font-size: 11px;
@@ -56,8 +56,10 @@ a.linkList {
         font-size: 0;
     }
 }
-
-
+.border {
+    background: #FFFFFF;
+    width: 100%;
+}
 table.border > tbody > tr > td > table > tbody {
 
     //MAIN HEADER
@@ -67,12 +69,12 @@ table.border > tbody > tr > td > table > tbody {
             display: flex;
             flex-direction: row-reverse;
             position: relative;
-            padding: 0px 30px 17px 30px;
+            padding: 0px 30px 12px 30px;
 
             > td:first-child {
-                width: 33.33%;
+                flex: 3;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 margin-right: auto;
 
                 table table tr:nth-child(3) img {
@@ -81,12 +83,14 @@ table.border > tbody > tr > td > table > tbody {
                 }
             }
             > td:last-child {
-                width: 33.3%;
+                flex: 2;
+                width: 500px;
+                
                 > table > tbody {
 
                     > tr:nth-child(1) {
                         position: absolute;
-                        top: 10px;
+                        top: 25px;
                         right: 30px;
                         tr[height="17px"] > td > table > tbody > tr {
                             display: flex;
@@ -102,9 +106,12 @@ table.border > tbody > tr > td > table > tbody {
                                 right: 40px;
                                 top: 45px;
                             }
-                            td[width="200"]{
-                                width: 323px;
+                            td[align="right"]{
+                                width: 60px;
                             }
+                            // td[width="200"]{
+                            //     width: 234px;
+                            // }
                         }
                     }
                 } 
@@ -116,47 +123,35 @@ table.border > tbody > tr > td > table > tbody {
     //MAIN MENU
 
     > tr:nth-child(2){
-        [name="homeNav"] table table {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
+        [name="homeNav"] {
+            border-bottom: 1px solid $color-primary;    
+            table table {
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+            }
         }
-        border-bottom: 1px solid $color-primary;
     }
 
-
     > tr:nth-child(3){
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        background-color: $color-dark-10;
+        display: table-cell;
+        background-color: $color-dark-light;
+        
         > td {
-            
-            width: 100%;
-
-            @media (min-width:$media-2) {
-                width: $media-2;
-            }
+            width: $media-2;
             @media (min-width:$media-3) {
                 width: $media-3;
             }
             @media (min-width:$media-4) {
                 width: $media-4;
             }
-
-
-
-            > table > tbody > tr {
-                > td:first-child {
-                    //width: auto;
-                }
-                > td:last-child {
-                    //padding: 15px 30px;
-                }
-            } 
         }
     }
 } 
+
+
+// LOG IN
+
 [name="homeNavParent"] > table {
     background-image: none;
     > tbody {

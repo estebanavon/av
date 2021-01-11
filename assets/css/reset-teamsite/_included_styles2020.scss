@@ -15,13 +15,14 @@ ul.breadcrumb_line li.active a {
 }
 .order_method_campaign {
     @include subtitle(25px);
+    text-align: left;
+    padding: 36px 40px;
 }
-td.padding_3 a {
-    @include av-tabs;
+.contentbackgroundcolor td.tbl_bgmid3 {
+    @include subtitle(25px);
+    text-align: left;
+    margin-bottom: 0;
 }
-table.border_rightstyle td.padding_3 {
-    
-}
-td.padding_3.active a {
-    @include av-tabs-active();
+.contentbackgroundcolor {
+    padding: 0px 20px;
 }
