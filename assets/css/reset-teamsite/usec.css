@@ -3635,18 +3635,94 @@ td > img {
   background-color: #ffffff;
 }
 
+a.linkList {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a.linkList:hover {
+  background-color: #f6effc;
+}
+
+a.linkList.visited {
+  color: #66209d;
+}
+
+.linearFormInput, input[type="text"]:not(.searchBox) {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  color: #3b4546;
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #3b4546;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+  border-radius: 0px;
+  min-width: 42px;
+  width: auto;
+}
+
+.linearFormInput:hover, input[type="text"]:not(.searchBox):hover {
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+}
+
+.linearFormInput:focus, input[type="text"]:not(.searchBox):focus {
+  border-bottom: 1px solid #7F28C4;
+  outline: none;
+}
+
+select {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  color: #3b4546;
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #3b4546;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+  border-radius: 0px;
+  min-width: 42px;
+  width: auto;
+}
+
+select:hover {
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+}
+
+select:focus {
+  border-bottom: 1px solid #7F28C4;
+  outline: none;
+}
+
+#dashboardFrame {
+  min-width: 830px !important;
+}
+
 .clickImage {
   display: block;
   margin: 30px auto 10px auto;
 }
 
-.accName_Text {
+.accName_Text, .ord_gray_txt {
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
   font-weight: bold;
   color: #3b4546;
   text-transform: uppercase;
   font-size: 14px !important;
   text-align: left;
+  padding-left: 100px;
 }
 
 .dueby_text {
@@ -3670,6 +3746,12 @@ td > img {
 .border {
   background: #FFFFFF;
   width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .border {
+    width: 700px;
+  }
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr {
@@ -3711,7 +3793,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(1) {
   position: absolute;
-  top: 25px;
+  top: 35px;
   right: 30px;
 }
 
@@ -3729,14 +3811,59 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
   width: 100%;
 }
 
-table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {
-  position: absolute;
-  right: 40px;
-  top: 45px;
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) td[colspan="3"] > table > tbody > tr > td:first-child {
+  width: 60px;
 }
 
-table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) td[align="right"] {
-  width: 60px;
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) td[colspan="3"] > table > tbody > tr > td:last-child {
+  padding-right: 100px;
+}
+
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {
+  width: 100%;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: #fff;
+}
+
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table {
+  -webkit-box-shadow: 0px 0px 4px #cccccc;
+          box-shadow: 0px 0px 4px #cccccc;
+  padding: 5px 50px 5px 10px;
+  text-align: right;
+  width: 280px;
+}
+
+@media (min-width: 1024px) {
+  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table {
+    width: 400px;
+  }
+}
+
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table > tbody > tr:nth-child(1) td {
+  font-size: 13px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  border-bottom: 1px solid #3b4546;
+}
+
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table > tbody .bg_lightpinkheader {
+  font-size: 12px;
+  padding: 4px;
+  background-color: #f0f0f0;
+}
+
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table > tbody .bg_lightpink {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  color: #7F28C4;
+  font-size: 12px;
+  padding: 3px;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(2) [name="homeNav"] {

@@ -26,3 +26,8 @@ ul.breadcrumb_line li.active a {
 .contentbackgroundcolor {
     padding: 0px 20px;
 }
+td.tbl_bgmid2 {
+    @include subtitle(25px);
+    text-align: left;
+    margin-bottom: 0;
+}
