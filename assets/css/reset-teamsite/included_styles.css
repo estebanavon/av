@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link {
+.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, td input.buttonBgorder {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,16 +66,16 @@
   white-space: nowrap;
 }
 
-.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus {
+.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, td input.buttonBgorder:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, td input.buttonBgorder:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, td input.buttonBgorder:focus {
   outline: none;
   text-decoration: none !important;
 }
 
-.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link {
+.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, td input.negative.buttonBgorder {
   color: #fff;
 }
 
-.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link {
+.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, td input.buttonBgorder {
   color: #fff;
   padding: 13px 30px;
   text-align: center;
@@ -88,12 +88,12 @@
           align-items: center;
 }
 
-.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus {
+.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, td input.buttonBgorder:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, td input.buttonBgorder:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, td input.buttonBgorder:focus {
   color: #fff;
   z-index: 5;
 }
 
-.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link {
+.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, td input.small.buttonBgorder {
   padding: 10px 20px;
   font-size: 14px;
 }
@@ -989,26 +989,6 @@ table .bor_right {
   font-size: 11px;
 }
 
-td input.buttonBgorder {
-  background-image: none;
-  border: 0;
-  height: 21px;
-  color: #ffffff;
-  font-size: 12px !important;
-  font-weight: normal;
-  cursor: pointer;
-  width: 84px;
-  margin-top: 0;
-  margin-left: 0;
-  background-color: #f00088;
-  font-family: "Helvetica Neue", sans-serif;
-  font-style: normal;
-  border-radius: 3px;
-  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-
 .font_cac9c9 a {
   color: #7f7d7d;
   font-weight: bold;
@@ -1189,13 +1169,6 @@ label {
   line-height: 20px;
   font-size: 12px;
   font-weight: bold;
-}
-
-.sub_heading1 {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #333333;
-  font-size: 18px;
-  line-height: 20px;
 }
 
 .dropshadow {
@@ -2834,14 +2807,6 @@ tr.tbl_header td.tbl_bgmid2 img {
   padding: 5px;
 }
 
-.sub_heading1 {
-  font-family: times;
-  color: #333333;
-  font-size: 20px;
-  line-height: 20px;
-  font-style: italic;
-}
-
 /*== END DEMOS STYLES ==*/
 /*== STEP 1 MAIN MENU STYLES ==*/
 td.bg2_f2f0f0.padding_3.active1 {
@@ -3036,6 +3001,34 @@ a.ord_link.negative:hover, a.ord_link.negative:active, a.ord_link.negative:focus
   text-align: left;
 }
 
+/*by GErber Barillas 12 enero 2021*/
+.sub_heading1 {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 19px;
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .sub_heading1 {
+    font-size: 20px;
+  }
+}
+
+.sub_heading1.left {
+  text-align: left;
+}
+
+td input.buttonBgorder {
+  background-color: #7F28C4;
+}
+
+/*by GErber Barillas 12 enero 2021*/
 td.tbl_header, .saved_customer_name {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;

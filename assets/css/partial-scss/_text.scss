@@ -1,4 +1,4 @@
-@mixin subtitle($size,$align:center) {
+@mixin subtitle($size: 25px,$align:center) {
     color: $color-text;
     font-family: $bold-monts;
     font-weight: 300;

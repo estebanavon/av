@@ -32,6 +32,14 @@ a.ord_link {
     @include subtitle(25px,left);
     padding: 36px 40px;
 }
+/*by GErber Barillas 12 enero 2021*/
+.sub_heading1{
+    @include subtitle(20px,left);
+}
+td input.buttonBgorder{
+    @include av-button-secondary;
+}
+/*by GErber Barillas 12 enero 2021*/
 td.tbl_header, .saved_customer_name{
     @include text-system($bold-monts)
 }
