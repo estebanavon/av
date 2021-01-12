@@ -51,41 +51,10 @@ table.border > tbody > tr > td > table > tbody {
                             } 
                             > td:first-child:not([colspan="3"]) {
                                 width: 100%;
-                                position: fixed;
+                                //position: fixed;
                                 right: 0px;
                                 bottom: 0px;
                                 background-color: $color-white;
-
-                                table.order_table {
-                                    box-shadow: 0px 0px 4px $color-dark-light;
-                                    padding: 5px 50px 5px 10px;
-                                    text-align: right;
-                                    width: 280px;
-                                    @media (min-width:$media-3){
-                                        width: 350px;
-                                    }
-                                    @media (min-width:$media-4){
-                                        width: 400px;
-                                    }
-                                    > tbody {
-                                        > tr:nth-child(1) td {
-                                            font-size: 13px;
-                                            font-family: $bold-monts;
-                                            border-bottom: 1px solid $color-text;
-                                        }
-                                        .bg_lightpinkheader {
-                                            font-size: 12px;
-                                            padding: 4px;
-                                            background-color: $color-dark-lighter;
-                                         }
-                                         .bg_lightpink {
-                                            font-family: $bold-monts;
-                                            color: $color-primary;
-                                            font-size: 12px;
-                                            padding: 3px;
-                                         }
-                                    }
-                                }
                             }
                             
                         }
@@ -109,6 +78,7 @@ table.border > tbody > tr > td > table > tbody {
         }
     }
 
+
     > tr:nth-child(3){
         display: table-cell;
         background-color: $color-dark-lighter;
@@ -125,7 +95,22 @@ table.border > tbody > tr > td > table > tbody {
     }
 } 
 
-
+table.border > tbody > tr {
+    
+    > td[height="440px"] {
+        margin: 0 auto;
+        display: block;
+        background-color: white;
+        height: 100%;
+        width: $media-2;
+        @media (min-width:$media-3) {
+            width: $media-3;
+        }
+        @media (min-width:$media-4) {
+            width: $media-4;
+        }
+    }
+} 
 // LOG IN
 
 [name="homeNavParent"] > table {

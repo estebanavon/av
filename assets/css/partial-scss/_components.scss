@@ -63,3 +63,34 @@
     }
 }
 
+
+table.order_table {
+    box-shadow: 0px 0px 4px $color-dark-light;
+    padding: 5px 10px;
+    text-align: right;
+    width: 280px;
+    @media (min-width:$media-3){
+        width: 350px;
+    }
+    @media (min-width:$media-4){
+        width: 400px;
+    }
+    > tbody {
+        > tr:nth-child(1) td {
+            font-size: 13px;
+            font-family: $bold-monts;
+            border-bottom: 1px solid $color-text;
+        }
+        .bg_lightpinkheader {
+            font-size: 12px;
+            padding: 4px;
+            background-color: $color-dark-lighter;
+         }
+         .bg_lightpink,.bg_lightpinklast {
+            font-family: $bold-monts;
+            color: $color-primary;
+            font-size: 12px;
+            padding: 3px;
+         }
+    }
+}

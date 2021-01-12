@@ -21,25 +21,29 @@ a.ord_link {
     padding: 0px 20px;
 }
 
-
 .contentbackgroundcolor td.tbl_bgmid3 {
-    @include subtitle(25px);
-    text-align: left;
-    margin-bottom: 0;
+    @include subtitle(25px,left);
+    white-space: nowrap
+}
+.contentbackgroundcolor table[width="745px"] {
+    width: 100%;
 }
 .order_method_campaign {
-    @include subtitle(25px);
-    text-align: left;
+    @include subtitle(25px,left);
     padding: 36px 40px;
 }
-td.tbl_header{
-    @include text-mixin($bold-monts)
+td.tbl_header, .saved_customer_name{
+    @include text-system($bold-monts)
 }
-td.tbl_bgmid2 {
-    @include subtitle(25px);
-    text-align: left;
-    margin-bottom: 0;
+.font_bold {
+    @include text-system($regular-monts);
+}
+.tbl_header_big {
+    @include subtitle(25px,left);
+    padding: 10px 0px;
 }
 .tbl_lineentry, .bg_fff9f9 {
     @include av-table;
 }
+
+

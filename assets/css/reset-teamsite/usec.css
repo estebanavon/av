@@ -189,6 +189,45 @@
   font-size: 14px;
 }
 
+table.order_table {
+  -webkit-box-shadow: 0px 0px 4px #cccccc;
+          box-shadow: 0px 0px 4px #cccccc;
+  padding: 5px 10px;
+  text-align: right;
+  width: 280px;
+}
+
+@media (min-width: 1024px) {
+  table.order_table {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  table.order_table {
+    width: 400px;
+  }
+}
+
+table.order_table > tbody > tr:nth-child(1) td {
+  font-size: 13px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  border-bottom: 1px solid #3b4546;
+}
+
+table.order_table > tbody .bg_lightpinkheader {
+  font-size: 12px;
+  padding: 4px;
+  background-color: #f0f0f0;
+}
+
+table.order_table > tbody .bg_lightpink, table.order_table > tbody .bg_lightpinklast {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  color: #7F28C4;
+  font-size: 12px;
+  padding: 3px;
+}
+
 /* CSS Document */
 /* <!-- Texto corrido tamaï¿½o adecuado */
 .texto_normal td, .texto_normal th {
@@ -855,24 +894,6 @@ A.linkList.visited {
   line-height: 16px;
 }
 
-A {
-  color: #D42987;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 11px;
-  font-family: Arial;
-}
-
-A.visited {
-  color: #D42987;
-  font-weight: normal;
-  text-decoration: underline;
-  font-size: 11px;
-  font-family: Arial;
-  line-height: 16px;
-  margin-bottom: 10px;
-}
-
 .lineColor {
   background-color: #E6D7D4;
   font-size: 11px;
@@ -1364,17 +1385,6 @@ A.bodyLink.visited {
   border: 1px solid #284279;
   width: 70px;
   text-align: left;
-}
-
-.smallfieldcellCR select {
-  font: 12px Arial;
-  background-color: #FFFFFF;
-  color: #666666;
-  border: 1px solid #e2e2e2;
-  width: 45px;
-  text-align: left;
-  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.08);
-          box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.08);
 }
 
 .smallfieldcellSearch1 select {
@@ -3812,49 +3822,9 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {
   width: 100%;
-  position: fixed;
   right: 0px;
   bottom: 0px;
   background-color: #fff;
-}
-
-table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table {
-  -webkit-box-shadow: 0px 0px 4px #cccccc;
-          box-shadow: 0px 0px 4px #cccccc;
-  padding: 5px 50px 5px 10px;
-  text-align: right;
-  width: 280px;
-}
-
-@media (min-width: 1024px) {
-  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table {
-    width: 350px;
-  }
-}
-
-@media (min-width: 1200px) {
-  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table {
-    width: 400px;
-  }
-}
-
-table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table > tbody > tr:nth-child(1) td {
-  font-size: 13px;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  border-bottom: 1px solid #3b4546;
-}
-
-table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table > tbody .bg_lightpinkheader {
-  font-size: 12px;
-  padding: 4px;
-  background-color: #f0f0f0;
-}
-
-table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) table.order_table > tbody .bg_lightpink {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  color: #7F28C4;
-  font-size: 12px;
-  padding: 3px;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(2) [name="homeNav"] {
@@ -3884,6 +3854,26 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 
 @media (min-width: 1200px) {
   table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
+    width: 1200px;
+  }
+}
+
+table.border > tbody > tr > td[height="440px"] {
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+  height: 100%;
+  width: 992px;
+}
+
+@media (min-width: 1024px) {
+  table.border > tbody > tr > td[height="440px"] {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  table.border > tbody > tr > td[height="440px"] {
     width: 1200px;
   }
 }

@@ -1,8 +1,8 @@
-@mixin subtitle($size) {
+@mixin subtitle($size,$align:center) {
     color: $color-text;
     font-family: $bold-monts;
     font-weight: 300;
-    text-align: center;
+    text-align: $align;
     margin-bottom: 20px;
     margin-top: 0;
     font-size: $size - 1;
@@ -30,6 +30,12 @@
     @media (min-width:$media-1) {
         margin-bottom: $size-text * 1.5;
     }
+}
+@mixin text-system($font:$regular-monts){
+    color: $color-text;
+    font-family: $font;
+    font-size: $size-text - 4;
+    line-height: $line-height;
 }
 @mixin negative($align:center) {
     &.negative {
