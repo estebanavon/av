@@ -1318,6 +1318,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   text-align: center;
   font-style: normal;
+  white-space: nowrap;
 }
 
 .av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus {

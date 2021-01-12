@@ -10,24 +10,36 @@ ul.breadcrumb_line li.active a {
 .buttonBgpink {
     @include av-button-tertiary;
 }
+a.ord_link {
+    @include av-button-tertiary;
+}
 .view a {
     @include av-link;
+}
+
+.contentbackgroundcolor {
+    padding: 0px 20px;
+}
+
+
+.contentbackgroundcolor td.tbl_bgmid3 {
+    @include subtitle(25px);
+    text-align: left;
+    margin-bottom: 0;
 }
 .order_method_campaign {
     @include subtitle(25px);
     text-align: left;
     padding: 36px 40px;
 }
-.contentbackgroundcolor td.tbl_bgmid3 {
-    @include subtitle(25px);
-    text-align: left;
-    margin-bottom: 0;
-}
-.contentbackgroundcolor {
-    padding: 0px 20px;
+td.tbl_header{
+    @include text-mixin($bold-monts)
 }
 td.tbl_bgmid2 {
     @include subtitle(25px);
     text-align: left;
     margin-bottom: 0;
+}
+.tbl_lineentry, .bg_fff9f9 {
+    @include av-table;
 }

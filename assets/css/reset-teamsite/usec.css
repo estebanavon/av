@@ -64,6 +64,7 @@
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   text-align: center;
   font-style: normal;
+  white-space: nowrap;
 }
 
 .av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus {
@@ -3354,22 +3355,6 @@ tr.menutopline {
   background-color: #E20984;
 }
 
-#div_0 table.bg_fff9f9 tbody tr:nth-child(odd) {
-  background-color: #FFFFFF;
-}
-
-#div_0 table.bg_fff9f9 tbody tr td.font_bold {
-  font-size: 12px;
-  border-bottom: 1px solid #e2e2e2;
-  background-color: #ffffff;
-  padding: 5px 5px !important;
-  text-align: center;
-}
-
-#div_0 table.bg_fff9f9 {
-  border: solid 1px #e2e2e2;
-}
-
 /*  	LOOK & FEEL 2015   YTO REPORT */
 tr.totalRowBg td {
   color: #fff;
@@ -3706,6 +3691,12 @@ select:focus {
   outline: none;
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+}
+
 #dashboardFrame {
   min-width: 830px !important;
 }
@@ -3750,7 +3741,7 @@ select:focus {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .border {
-    width: 700px;
+    width: 800px;
   }
 }
 
@@ -3878,7 +3869,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(2) [name="homeNav"
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(3) {
   display: table-cell;
-  background-color: #cccccc;
+  background-color: #f0f0f0;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {

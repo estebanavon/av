@@ -328,11 +328,11 @@ table.alt_rows td
 {
 	padding:2px;
 }
-table.alt_rows .tbl_header
-{
-	font-size: 12px !important;
-	font-weight: bold !important; vertical-align: bottom;
-}
+// table.alt_rows .tbl_header
+// {
+// 	font-size: 12px !important;
+// 	font-weight: bold !important; vertical-align: bottom;
+// }
 tr.tbl_header td.tbl_bgmid table.alt_rows td
 {
 	background-color: #FFFFFF;
@@ -342,25 +342,25 @@ tr.bgalt
 {
 	background-color:#f2f2f2;
 }
-.border_right
-{
-	border-right:solid 1px  #e1dfdf;
-}
-.border_left
-{
-	border-left:solid 1px  #e1dfdf;
-}
-.border_top
-{
-	border-top:solid 1px #b7b6b6;
-}
+// .border_right
+// {
+// 	border-right:solid 1px  #e1dfdf;
+// }
+// .border_left
+// {
+// 	border-left:solid 1px  #e1dfdf;
+// }
+// .border_top
+// {
+// 	border-top:solid 1px #b7b6b6;
+// }
 
 td.tbl_header
 {
-	font-weight: normal;
-	color: #333333;
-	font-size: 13px;
-	font-family: "helvetica neue", sans-serif;
+	// font-weight: normal;
+	// color: #333333;
+	// font-size: 13px;
+	// font-family: "helvetica neue", sans-serif;
 }
 .tbl_header_big
 {
@@ -552,30 +552,30 @@ padding:9px;
 height:17px;
 font-size:11px;
 }
-.tbl_header a
-{
-font-weight:bold;
-color:#000000;
-font-size:12px;
-text-decoration:underline;
-}
-.tbl_lineentry
-{
-text-align:center;
-}
-.bg_ebeaea td
-{
-background-color:#ebeaea;
-font-weight:bold;
-text-align:center;
-}
-.font_bold
-{
-	font-family:arial;
-	font-size:12px;
-	color:#000000;
-font-weight:bold;
-}
+// .tbl_header a
+// {
+// font-weight:bold;
+// color:#000000;
+// font-size:12px;
+// text-decoration:underline;
+// }
+// .tbl_lineentry
+// {
+// 	text-align:center;
+// }
+// .bg_ebeaea td
+// {
+// background-color:#ebeaea;
+// font-weight:bold;
+// text-align:center;
+// }
+// .font_bold
+// {
+// 	font-family:arial;
+// 	font-size:12px;
+// 	color:#000000;
+// font-weight:bold;
+// }
 
 td.tbl_bgleft2
 {
@@ -618,7 +618,7 @@ height:30px;
 }
 div.div_table
 {
-height:250px;
+height:290px;
 overflow-y:scroll;
 overflow-x:hidden;
 float:left;
@@ -722,18 +722,17 @@ input.buttonBgpinkcancel:hover {
 
 .bg_fff9f9
 {
-background-color:#fff9f9;
-border:solid 1px #979797;
-color: #FF7474;
-
+//background-color:#fff9f9;
+//border:solid 1px #979797;
+//color: #FF7474;
 }
-.bg_fff9f9 td{
-	color:#000000;
-	padding:3px !important;
-	font-family:arial;
-	font-size:11px;
-	background-color: #fff9f9;
-}
+// .bg_fff9f9 td{
+// 	color:#000000;
+// 	padding:3px !important;
+// 	font-family:arial;
+// 	font-size:11px;
+// 	background-color: #fff9f9;
+// }
 td.font_12
 {
 	font-size:12px;
@@ -1217,11 +1216,11 @@ label{
 line-height:10px;
 font:14px Arial, Helvetica, sans-serif;
 }
-a.ord_link{
-text-decoration:underline;
-color:#000000;
-font:12px Arial, Helvetica, sans-serif
-}
+// a.ord_link{
+// text-decoration:underline;
+// color:#000000;
+// font:12px Arial, Helvetica, sans-serif
+// }
 
 .margin_left10{
 margin-left:10px;
