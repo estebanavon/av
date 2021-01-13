@@ -192,7 +192,6 @@
 table.order_table {
   -webkit-box-shadow: 0px 0px 4px #cccccc;
           box-shadow: 0px 0px 4px #cccccc;
-  padding: 5px 10px;
   text-align: right;
   width: 280px;
 }
@@ -211,8 +210,10 @@ table.order_table {
 
 table.order_table > tbody > tr:nth-child(1) td {
   font-size: 13px;
+  padding: 10px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  border-bottom: 1px solid #3b4546;
+  background-color: #E23679;
+  color: #fff;
 }
 
 table.order_table > tbody .bg_lightpinkheader {
@@ -1394,15 +1395,6 @@ A.bodyLink.visited {
   border: 1px solid #284279;
   width: 158px;
   text-align: left;
-}
-
-.button {
-  font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
-  background-color: #f00088;
-  color: #FFFFFF;
-  margin-left: 12px;
-  margin-top: 3px;
-  margin-bottom: 2px;
 }
 
 .inputText input {
@@ -3821,10 +3813,11 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {
-  width: 100%;
-  right: 0px;
-  bottom: 0px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
   background-color: #fff;
+  z-index: 100;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(2) [name="homeNav"] {
@@ -3854,26 +3847,6 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 
 @media (min-width: 1200px) {
   table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
-    width: 1200px;
-  }
-}
-
-table.border > tbody > tr > td[height="440px"] {
-  margin: 0 auto;
-  display: block;
-  background-color: white;
-  height: 100%;
-  width: 992px;
-}
-
-@media (min-width: 1024px) {
-  table.border > tbody > tr > td[height="440px"] {
-    width: 1024px;
-  }
-}
-
-@media (min-width: 1200px) {
-  table.border > tbody > tr > td[height="440px"] {
     width: 1200px;
   }
 }

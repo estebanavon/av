@@ -56,3 +56,9 @@ input[type="checkbox"] {
         width: 800px;
      }
 }
+.success{
+    //@include alert-succes;
+}
+.error{
+    //@include alert-error;
+}

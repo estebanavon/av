@@ -50,11 +50,11 @@ table.border > tbody > tr > td > table > tbody {
 
                             } 
                             > td:first-child:not([colspan="3"]) {
-                                width: 100%;
-                                //position: fixed;
-                                right: 0px;
-                                bottom: 0px;
+                                position: absolute;
+                                right: 20px;
+                                top: 10px;
                                 background-color: $color-white;
+                                z-index: 100;
                             }
                             
                         }
@@ -95,22 +95,6 @@ table.border > tbody > tr > td > table > tbody {
     }
 } 
 
-table.border > tbody > tr {
-    
-    > td[height="440px"] {
-        margin: 0 auto;
-        display: block;
-        background-color: white;
-        height: 100%;
-        width: $media-2;
-        @media (min-width:$media-3) {
-            width: $media-3;
-        }
-        @media (min-width:$media-4) {
-            width: $media-4;
-        }
-    }
-} 
 // LOG IN
 
 [name="homeNavParent"] > table {
