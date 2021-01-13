@@ -3739,6 +3739,7 @@ input[type="checkbox"] {
 .border {
   background: #FFFFFF;
   width: 100%;
+  max-width: 1800px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
