@@ -587,12 +587,12 @@ font-size:11px;
 // {
 // background:none;
 // }
-td.tbl_bgright2
-{
-	background: none;
-	width: 26px;
-	height: 40px;
-}
+// td.tbl_bgright2
+// {
+// 	background: none;
+// 	width: 26px;
+// 	height: 40px;
+// }
 td.tbl_bgleft3
 {
 background:none;
@@ -618,10 +618,10 @@ height:30px;
 }
 div.div_table
 {
-height:290px;
+height:330px;
 overflow-y:scroll;
-overflow-x:hidden;
-float:left;
+//overflow-x:hidden;
+//float:left;
 width:100%;
 
 }
@@ -1786,8 +1786,14 @@ height:17px;
 .normal_orlink{text-decoration:underline;color:#000000; font-size:12px;}
 .popup_results_outrbrdr{border:solid 1px #979797;}
 .txtbox_txt{color:#7e7e80; font-size:11px;}
-.div_fst_ordrtable
-{height:230px;overflow-y:scroll;float:left;width:100%;}
+.div_fst_ordrtable {
+	height:300px;
+	overflow-y:scroll;
+	// float:left;
+	width:100%;
+	padding: 4px;
+	box-sizing: border-box;
+}
 /*-----31 march ----*/
 
 /* ------ Geeth ------------------ */
@@ -2604,14 +2610,14 @@ border-left:solid 1px  #000000;
 	border-left:solid 1px #d1d1d1;
 }
 
-.view_order a
-{
-      color:#c9181a;
-      text-decoration:underline;
-      font-weight:bold;
-      font-size: 13px;
-      vertical-align: middle;
-}
+// .view_order a
+// {
+//       color:#c9181a;
+//       text-decoration:underline;
+//       font-weight:bold;
+//       font-size: 13px;
+//       vertical-align: middle;
+// }
 
 
 .red
@@ -2777,13 +2783,13 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
 
 /*== DEMOS STYLES ==*/
 
-tr.tbl_header td.tbl_bgmid2 img {
+// tr.tbl_header td.tbl_bgmid2 img {
 
-    border: 1px solid #e2e2e2;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    padding: 5px;
-}
+//     border: 1px solid #e2e2e2;
+//     border-radius: 5px;
+//     background-color: #f9f9f9;
+//     padding: 5px;
+// }
 
 // .sub_heading1 {
 //     font-family: times;

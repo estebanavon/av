@@ -47,7 +47,7 @@
 
 %av-table {
     width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
     text-align:center;
     > tbody > tr:first-child > td, > thead > tr > td {
         font-family: $semi-bold-monts;
@@ -55,24 +55,40 @@
         color: $color-text;
         padding: 17px 0px;
         background-color: $color-dark-lighter;
+        //border-bottom: 2px solid $color-primary;
         text-align: center;
     }
     > tbody > tr:first-child {
         background-color: $color-dark-lighter;
+        //border-bottom: 2px solid $color-primary;
     }
 }
 @mixin av-table-dark {
     @extend %av-table;    
 }
-@mixin av-table-darker {
-    @extend %av-table;    
-    > tbody > tr:first-child > td, > thead > tr > td {
-        background-color: $color-primary-light;
-    }
-    > tbody > tr:first-child {
-        background-color: $color-primary-light;
-    }
+
+
+%message-alert {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: $color-white;
+    font-size: 16px;
+    font-family: $regular-monts;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 2px 16px;
+    text-decoration: none;
+    z-index: 1000;
 }
+@mixin alert-succes {
+    @extend %message-alert;
+    background-color: $color-positive;
+}
+@mixin alert-error {
+    @extend %message-alert;
+    background-color: $color-error;
+}
+
 
 
 table.order_table {
@@ -86,6 +102,7 @@ table.order_table {
         width: 400px;
     }
     > tbody {
+        
         > tr:nth-child(1) td {
             font-size: 13px;
             padding: 10px;
@@ -107,23 +124,26 @@ table.order_table {
     }
 }
 
-%message-alert {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    color: $color-white;
-    font-size: 16px;
-    font-family: $regular-monts;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 2px 16px;
-    text-decoration: none;
-    z-index: 1000;
-}
-@mixin alert-succes {
-    @extend %message-alert;
-    background-color: $color-positive;
-}
-@mixin alert-error {
-    @extend %message-alert;
-    background-color: $color-error;
+#frmCreateOrder > table {
+    width: 90%;
+    margin: 0 auto;
+    
+    > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
+        width: 100%;
+    }
+    .div_table, .div_fst_ordrtable{
+        table.body, table.tbl_lineentry {
+            > tbody {
+                > tr {
+                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+                    height: 55px;
+                    background-color: $color-white;
+                    
+                }
+            } 
+        }
+    } 
+    .tbl_outerline > tbody > tr:last-child tr {
+        display: flex;
+    }
 }

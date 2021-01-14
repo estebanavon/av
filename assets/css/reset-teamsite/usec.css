@@ -229,6 +229,28 @@ table.order_table > tbody .bg_lightpink, table.order_table > tbody .bg_lightpink
   padding: 3px;
 }
 
+#frmCreateOrder > table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#frmCreateOrder > table > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
+  width: 100%;
+}
+
+#frmCreateOrder > table .div_table table.body > tbody > tr, #frmCreateOrder > table .div_table table.tbl_lineentry > tbody > tr, #frmCreateOrder > table .div_fst_ordrtable table.body > tbody > tr, #frmCreateOrder > table .div_fst_ordrtable table.tbl_lineentry > tbody > tr {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  height: 55px;
+  background-color: #fff;
+}
+
+#frmCreateOrder > table .tbl_outerline > tbody > tr:last-child tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* CSS Document */
 /* <!-- Texto corrido tamaï¿½o adecuado */
 .texto_normal td, .texto_normal th {
@@ -991,15 +1013,6 @@ A.linkListBold.visited {
   font-weight: normal;
   color: #000000;
   line-height: 13px;
-}
-
-.articleHeader {
-  font-family: Times;
-  font-size: 21px;
-  font-weight: normal;
-  font-style: italic;
-  color: #000000;
-  line-height: 1;
 }
 
 .commentsArticleHeader {
@@ -3105,14 +3118,6 @@ a.ord_link {
   padding: 1px 0px 1px 3px;
 }
 
-.leftalign {
-  text-align: left;
-  display: block;
-  float: left;
-  width: auto;
-  margin-right: 5px;
-}
-
 /*
 leftalign.error { width: 250px; display: block; float: left; color: red; 
 padding-left: 10px; }
@@ -3736,6 +3741,11 @@ input[type="checkbox"] {
   font-size: 0;
 }
 
+.articleHeader {
+  background-color: #cccccc;
+  height: 200px;
+}
+
 .border {
   background: #FFFFFF;
   width: 100%;
@@ -3745,6 +3755,12 @@ input[type="checkbox"] {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .border {
     width: 800px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (min-width: 1200px), (-ms-high-contrast: none) and (min-width: 1200px) {
+  .border {
+    width: 1124px;
   }
 }
 
@@ -3791,6 +3807,12 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
   right: 30px;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(1) {
+    position: static;
+  }
+}
+
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(1) tr[height="17px"] > td > table > tbody > tr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3819,6 +3841,12 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
   top: 10px;
   background-color: #fff;
   z-index: 100;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {
+    position: static;
+  }
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(2) [name="homeNav"] {

@@ -1,3 +1,15 @@
+.border {
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 1800px;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        width: 800px;
+        @media (min-width:$media-4){
+            width: 1124px;
+        }
+    }
+}
+
 table.border > tbody > tr > td > table > tbody {
 
     //MAIN HEADER
@@ -30,6 +42,9 @@ table.border > tbody > tr > td > table > tbody {
                         position: absolute;
                         top: 35px;
                         right: 30px;
+                        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                            position: static;
+                        }
                         tr[height="17px"] > td > table > tbody > tr {
                             display: flex;
                             flex-direction: row-reverse;
@@ -50,6 +65,9 @@ table.border > tbody > tr > td > table > tbody {
 
                             } 
                             > td:first-child:not([colspan="3"]) {
+                                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                                    position: static;
+                                }
                                 position: absolute;
                                 right: 20px;
                                 top: 10px;

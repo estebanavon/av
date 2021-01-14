@@ -49,13 +49,10 @@ input[type="checkbox"] {
         font-size: 0;
     }
 }
-.border {
-    background: #FFFFFF;
-    width: 100%;
-    max-width: 1800px;
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        width: 800px;
-    }
+
+.articleHeader {
+    background-color: $color-dark-light;
+    height: 200px;
 }
 .success{
     //@include alert-succes;

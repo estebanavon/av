@@ -13,10 +13,12 @@ ul.breadcrumb_line li.active a {
 a.ord_link {
     @include av-button-tertiary;
 }
-.view a {
+.view a, .view_order a {
     @include av-link;
 }
-
+.tbl_header > a {
+    @include av-link;
+}
 .contentbackgroundcolor {
     padding: 0px 10px;
 }
@@ -32,6 +34,7 @@ a.ord_link {
     @include subtitle(25px,left);
     padding: 36px 40px;
 }
+
 /*by GErber Barillas 12 enero 2021*/
 .sub_heading1{
     @include subtitle(20px,left);
@@ -39,7 +42,12 @@ a.ord_link {
 td input.buttonBgorder{
     @include av-button-secondary;
 }
+.td_bot_border p {
+    @include text-system($regular-monts);
+}
 /*by GErber Barillas 12 enero 2021*/
+
+
 td.tbl_header, .saved_customer_name{
     @include text-system($bold-monts)
 }
