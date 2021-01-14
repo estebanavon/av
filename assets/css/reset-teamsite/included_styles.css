@@ -3049,6 +3049,18 @@ td input.buttonBgorder {
   background-color: #7F28C4;
 }
 
+td.td_bot_border p, td.td_bot_border div {
+  color: #3b4546;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+td.td_bot_border div:first-of-type {
+  height: 90px;
+  padding: 0 10px;
+}
+
 /*by GErber Barillas 12 enero 2021*/
 td.tbl_header, .saved_customer_name {
   color: #3b4546;

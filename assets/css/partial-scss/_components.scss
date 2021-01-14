@@ -127,3 +127,7 @@ table.order_table {
     @extend %message-alert;
     background-color: $color-error;
 }
+
+@mixin altura {
+    height: 90px;
+}

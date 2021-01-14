@@ -39,6 +39,15 @@ a.ord_link {
 td input.buttonBgorder{
     @include av-button-secondary;
 }
+
+td.td_bot_border p, td.td_bot_border div {
+    @include text-system($regular-monts);
+}
+
+td.td_bot_border div:first-of-type{
+    @include altura;
+ }
+
 /*by GErber Barillas 12 enero 2021*/
 td.tbl_header, .saved_customer_name{
     @include text-system($bold-monts)
