@@ -69,81 +69,18 @@
 
 
 %message-alert {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    color: $color-white;
+    text-transform: uppercase;
     font-size: 16px;
-    font-family: $regular-monts;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 2px 16px;
+    font-family: $bold-monts;
     text-decoration: none;
-    z-index: 1000;
 }
 @mixin alert-succes {
     @extend %message-alert;
-    background-color: $color-positive;
+    color: $color-positive !important;
 }
-@mixin alert-error {
+@mixin alert-warning {
     @extend %message-alert;
-    background-color: $color-error;
+    color: $color-warning !important;
 }
 
 
-
-table.order_table {
-    box-shadow: 0px 0px 4px $color-dark-light;
-    text-align: right;
-    width: 280px;
-    @media (min-width:$media-3){
-        width: 350px;
-    }
-    @media (min-width:$media-4){
-        width: 400px;
-    }
-    > tbody {
-        
-        > tr:nth-child(1) td {
-            font-size: 13px;
-            padding: 10px;
-            font-family: $bold-monts;
-            background-color: $color-gradient-3;
-            color: $color-white;
-        }
-        .bg_lightpinkheader {
-            font-size: 12px;
-            padding: 4px;
-            background-color: $color-dark-lighter;
-         }
-         .bg_lightpink,.bg_lightpinklast {
-            font-family: $bold-monts;
-            color: $color-primary;
-            font-size: 12px;
-            padding: 3px;
-         }
-    }
-}
-
-#frmCreateOrder > table {
-    width: 90%;
-    margin: 0 auto;
-    
-    > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
-        width: 100%;
-    }
-    .div_table, .div_fst_ordrtable{
-        table.body, table.tbl_lineentry {
-            > tbody {
-                > tr {
-                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-                    height: 55px;
-                    background-color: $color-white;
-                    
-                }
-            } 
-        }
-    } 
-    .tbl_outerline > tbody > tr:last-child tr {
-        display: flex;
-    }
-}

@@ -56,11 +56,13 @@ table.border > tbody > tr > td > table > tbody {
                         > tbody > tr:nth-child(4) {
                             td[colspan="3"] > table > tbody > tr {
                                 > td:first-child {
-                                    width: 60px;
+                                    width: 10px;
                                 }
                                 
                                 > td:last-child {
                                   padding-right: 100px;
+                                  font-size: 11px;
+                                  font-family: $regular-monts;
                                 }
 
                             } 

@@ -1,11 +1,6 @@
 
 const brochures4 = [
     {
-        title: 'Avon Contigo 4',
-        file: 'avon_contigo_c0121.pdf',
-        type: 'contigo',
-    },
-    {
         title: 'Belleza',
         file: '1',
         type: 'imb',
@@ -16,9 +11,39 @@ const brochures4 = [
         type: 'imb',
     },
     {
-        title: 'Rutinas Anew',
-        file: '3',
+        title: 'Limpieza Total',
+        file: '4',
         type: 'imb',
+    },
+    {
+        title: 'Home Fragances',
+        file: '6',
+        type: 'imb',
+    },
+    {
+        title: 'Anew',
+        file: '7',
+        type: 'imb',
+    },
+    {
+        title: 'Avon Contigo',
+        file: 'avon_contigo_c0421.pdf',
+        type: 'contigo',
+    },
+    {
+        title: 'Con carino para ti',
+        file: 'ConCarinoParaTi.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Cuidado covid flyer',
+        file: 'CuidadoCovidFlyer.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Flyer San Valentin',
+        file: 'FlyerSnValentinc04.pdf',
+        type: 'flyer',
     },
 ]
 
