@@ -127,7 +127,32 @@ table.order_table {
     @extend %message-alert;
     background-color: $color-error;
 }
+/* by Gerber Barillas */
 
-@mixin altura {
+@mixin demoDescription {
     height: 90px;
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
 }
+@mixin l-Price {
+    color: $color-primary !important;
+    border-bottom: 2px solid $color-secondary;
+    padding-bottom: 10px;
+}
+
+@mixin SalePrice{
+    font-weight: 600;
+    font-size: 22px !important;
+    color:$color-secondary !important;
+}
+
+@mixin borderSpace {
+    margin-bottom: 50px
+}
+
+@mixin gridDemos {
+    border: 2px dashed $color-dark-30;
+}
+
+/* by Gerber Barillas */

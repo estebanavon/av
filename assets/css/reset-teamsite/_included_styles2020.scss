@@ -40,13 +40,50 @@ td input.buttonBgorder{
     @include av-button-secondary;
 }
 
-td.td_bot_border p, td.td_bot_border div {
+td.td_bot_border > p, td.td_bot_border > div {
     @include text-system($regular-monts);
 }
 
-td.td_bot_border div:first-of-type{
-    @include altura;
- }
+td.td_bot_border > p, td.td_bot_border > div p{
+    width: 80%;
+    height: 40px;
+}
+
+[name="exForm"] td.td_bot_border > div:first-of-type{
+    @include demoDescription;
+}
+
+[name="exForm"] td.td_bot_border > div:nth-of-type(2) > span{
+    @include l-Price;
+}
+[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
+    @include SalePrice;
+}
+
+[name="exForm"] table tr td table tr td table:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(3),
+[name="exForm"] table tr td table tr td table:nth-of-type(4),
+[name="exForm"] table tr td table tr td table:nth-of-type(5),
+[name="exForm"] table tr td table tr td table:nth-of-type(6),
+[name="exForm"] table tr td table tr td table:nth-of-type(7),
+[name="exForm"] table tr td table tr td table:nth-of-type(8),
+[name="exForm"] table tr td table tr td table:nth-of-type(9),
+[name="exForm"] table tr td table tr td table:nth-of-type(10){
+    @include borderSpace;
+}
+
+[name="exForm"] table tr td table tr td table:nth-of-type(2) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td:nth-of-type(2){
+    @include gridDemos;
+}
+
 
 /*by GErber Barillas 12 enero 2021*/
 td.tbl_header, .saved_customer_name{
