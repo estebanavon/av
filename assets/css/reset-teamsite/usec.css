@@ -1,59 +1,60 @@
 @charset "UTF-8";
 @font-face {
-  src: url("../fonts/ZonaPro-Black.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Black.otf");
   font-family: zona-pro-black;
 }
 
 @font-face {
-  src: url("../fonts/ZonaPro-Light.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Light.otf");
   font-family: zona-pro-light;
 }
 
 @font-face {
-  src: url("../fonts/ZonaPro-Regular.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Regular.otf");
   font-family: zona-pro-regular;
 }
 
 @font-face {
-  src: url("../fonts/ZonaPro-SemiBold.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-SemiBold.otf");
   font-family: zona-pro-semi-bold;
 }
 
 @font-face {
-  src: url("../fonts/ZonaPro-Thin.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Thin.otf");
   font-family: ZonaProThin;
 }
 
 @font-face {
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-Regular.ttf");
   font-family: montserrat-regular;
 }
 
 @font-face {
-  src: url("../fonts/Montserrat-Light.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-Light.ttf");
   font-family: montserrat-light;
 }
 
 @font-face {
-  src: url("../fonts/Montserrat-SemiBold.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-SemiBold.ttf");
   font-family: montserrat-semi-bold;
 }
 
 @font-face {
-  src: url("../fonts/Montserrat-Bold.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-Bold.ttf");
   font-family: montserrat-bold;
 }
 
 @font-face {
-  src: url("../fonts/Gotham-Bold.otf");
+  src: url("/FLDSuite/static/fonts/Gotham-Bold.otf");
   font-family: gotham-bold;
 }
 
 @font-face {
-  src: url("../fonts/Gotham-Book.otf");
+  src: url("/FLDSuite/static/fonts/Gotham-Book.otf");
   font-family: gotham-book;
 }
 
+<<<<<<< HEAD
 .av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline {
   background-color: transparent;
   border: none;
@@ -253,6 +254,8 @@ table.order_table > tbody .bg_lightpink, table.order_table > tbody .bg_lightpink
   display: flex;
 }
 
+=======
+>>>>>>> f9945ee0e54f813a2dee43817dff71438e2fe34d
 /* CSS Document */
 /* <!-- Texto corrido tamaï¿½o adecuado */
 .texto_normal td, .texto_normal th {
@@ -624,24 +627,6 @@ A.footerText {
   font-size: 11px;
   font-family: Arial;
   line-height: 13px;
-}
-
-.error {
-  color: red;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 12px;
-  font-family: Arial;
-  background-color: transparent;
-  padding: 4px;
-}
-
-.success {
-  color: green;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 13px;
-  font-family: "helvetica neue",sans-serif;
 }
 
 A.error {
@@ -2102,7 +2087,8 @@ A.linkJob.visited {
  height:100%;
   width: 780px;
   margin:0 auto 0 auto;*/
-  .margins_popup_theme {
+ 
+.margins_popup_theme {
   margin-top: 15px;
   background-color: #ffffff;
 }
@@ -3059,10 +3045,6 @@ a.loginLinks {
   padding-right: 5px;
 }
 
-.font_12 {
-  font-size: 11px;
-}
-
 .padding_right10 {
   padding-right: 10px;
 }
@@ -3629,125 +3611,6 @@ td > img {
   background-color: #ffffff;
 }
 
-a.linkList {
-  color: #7F28C4;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  text-decoration: underline;
-  font-style: normal;
-  cursor: pointer;
-  font-size: 16px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-a.linkList:hover {
-  background-color: #f6effc;
-}
-
-a.linkList.visited {
-  color: #66209d;
-}
-
-.linearFormInput, input[type="text"]:not(.searchBox) {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  color: #3b4546;
-  padding: 6px;
-  border: none;
-  border-bottom: 1px solid #3b4546;
-  background-color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: border-bottom 1s;
-  transition: border-bottom 1s;
-  border-radius: 0px;
-  min-width: 42px;
-  width: auto;
-}
-
-.linearFormInput:hover, input[type="text"]:not(.searchBox):hover {
-  border-bottom: 1px solid #cccccc;
-  outline: none;
-}
-
-.linearFormInput:focus, input[type="text"]:not(.searchBox):focus {
-  border-bottom: 1px solid #7F28C4;
-  outline: none;
-}
-
-select {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  color: #3b4546;
-  padding: 6px;
-  border: none;
-  border-bottom: 1px solid #3b4546;
-  background-color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: border-bottom 1s;
-  transition: border-bottom 1s;
-  border-radius: 0px;
-  min-width: 42px;
-  width: auto;
-}
-
-select:hover {
-  border-bottom: 1px solid #cccccc;
-  outline: none;
-}
-
-select:focus {
-  border-bottom: 1px solid #7F28C4;
-  outline: none;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-  width: 17px;
-  height: 17px;
-}
-
-#dashboardFrame {
-  min-width: 830px !important;
-}
-
-.clickImage {
-  display: block;
-  margin: 30px auto 10px auto;
-}
-
-.accName_Text, .ord_gray_txt {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
-  font-weight: bold;
-  color: #3b4546;
-  text-transform: uppercase;
-  font-size: 14px !important;
-  text-align: left;
-  padding-left: 100px;
-}
-
-.dueby_text {
-  color: #3b4546 !important;
-}
-
-.topLinks {
-  color: #3b4546;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 11px;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  cursor: pointer;
-  padding: 0 7px;
-}
-
-.topLinks + .spacer {
-  font-size: 0;
-}
-
-.articleHeader {
-  background-color: #cccccc;
-  height: 200px;
-}
-
 .border {
   background: #FFFFFF;
   width: 100%;
@@ -3830,11 +3693,13 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) td[colspan="3"] > table > tbody > tr > td:first-child {
-  width: 60px;
+  width: 10px;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) td[colspan="3"] > table > tbody > tr > td:last-child {
   padding-right: 100px;
+  font-size: 11px;
+  font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {

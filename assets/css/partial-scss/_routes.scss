@@ -4,7 +4,7 @@ $dev-font: '/assets/fonts';
 
 // Utilizar esta ruta si el objetivo es Produccion
 
-$prod-font: '../fonts';
+$prod-font: '/FLDSuite/static/fonts';
 $route-font: $prod-font;
 
 $prod-images: '../images';
@@ -14,3 +14,4 @@ $dev-images: '../img';
 //Configuración de rutas sin condicionante
 
 $route-images: $prod-images;
+

@@ -4,8 +4,9 @@
 body{
 top:0;
 padding:0;
-font:12px Arial, Helvetica, sans-serif;
-background-color:#c0c0c0;
+margin: 0;
+// font:12px Arial, Helvetica, sans-serif;
+// background-color:#c0c0c0;
 }
 .wrapper
 {
@@ -374,12 +375,12 @@ td.tbl_header
 {
 
 }
-td h2
-{
-font-size:12px;
-font-weight:bold;
-padding:10px;
-}
+// td h2
+// {
+// font-size:12px;
+// font-weight:bold;
+// padding:10px;
+// }
 p.contentfirst{
 font-size:11px;
 padding:20px 10px 0 10px;
@@ -733,10 +734,10 @@ input.buttonBgpinkcancel:hover {
 // 	font-size:11px;
 // 	background-color: #fff9f9;
 // }
-td.font_12
-{
-	font-size:12px;
-}
+// td.font_12
+// {
+// 	font-size:12px;
+// }
 
 .border_bottomd7d1d1
 {
@@ -764,10 +765,10 @@ td h3 {
 {
 	font-variant:small-caps;
 }
-.tbl_orderpack td
-{
-	font-size:12px;
-}
+// .tbl_orderpack td
+// {
+// 	font-size:12px;
+// }
 
 /*--.view a
 {
@@ -894,10 +895,10 @@ color:#993300;
 border:solid 1px #b6b6b6;
 height:100px;
 }
-.tbl_bordergray
-{
-border:solid 1px #aaaaaa;
-}
+// .tbl_bordergray
+// {
+// border:solid 1px #aaaaaa;
+// }
 .bg_f5f3f4
 {
 background-color:#f5f3f4;
@@ -1541,13 +1542,13 @@ display:block;
 padding-top:10px;
 }
 /*  Indira Styles 03272009 */
-.pop_main_header_txt{ 
-	color:#000000;
-	 font-size:18px; 
-	 font-weight:bold;
-	 line-height:30px;
-	 font-family:Avant Garde Demi;
-	 }
+// .pop_main_header_txt{ 
+// 	color:#000000;
+// 	 font-size:18px; 
+// 	 font-weight:bold;
+// 	 line-height:30px;
+// 	 font-family:Avant Garde Demi;
+// 	 }
 .close_btn{position:absolute;right:10;top:2;}
 .pop_up_border{border:1px solid #666;}
 .pop_up_selectbox_border{border:1px solid #284279}
@@ -2499,10 +2500,10 @@ border-left:solid 1px #d1d1d1;
 .font_30{
 	font-size: 30px;
 }
-.font_12
-{
-	font-size:12px;
-}
+// .font_12
+// {
+// 	font-size:12px;
+// }
 .line_height_12{
 	line-height: 12px
 }
@@ -2839,9 +2840,9 @@ table.border_rightstyle td.padding_3:hover {
     background-color: #f8f8f8;
 }
 
-table.border_rightstyle.bg1_f2f0f0 {
-    margin: 12px 0;
-}
+// table.border_rightstyle.bg1_f2f0f0 {
+//     margin: 12px 0;
+// }
 
 
 
