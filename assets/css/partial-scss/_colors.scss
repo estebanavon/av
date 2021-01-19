@@ -24,10 +24,12 @@ $color-primary-dark: scale-color($color-primary, $lightness: -20%);
 //Secondary color
 $color-secondary: #FF49A3;
 $color-secondary-dark: #EE2F4E;
-$color-secondary-light: #F9B5B2;
+$color-secondary-light: scale-color($color-secondary, $lightness: 93%);
 
 $color-positive: #1A8282;
 $color-warning: #F09F87;
+
+$color-lightgay : #d3d3d3;
 
 
 //Gradient color
@@ -39,11 +41,12 @@ $color-gradient: linear-gradient(to right, $color-gradient-1, $color-gradient-2,
 $color-conoce-avon1: #042E4F;
 $color-conoce-avon2: #79366D;
 
+$color-table-border: 0 0 4px rgba(0, 0, 0, 0.19);
+$color-table-hover: 0 0 15px rgba(0, 0, 0, 0.25);
+
 $color-nosolas-primary: #F68B23;
 $color-nosolas-secondary: #0C3E65;
-
 $color-hg-primary: $color-gradient-1;
-
 $color-protinol: #061E3F;
 $color-protinol-secondary: #0E5781;
 $color-protinol-gold: #AA7B41;

@@ -9,7 +9,24 @@
         }
     }
 }
-
+@mixin bodyMixin {
+    display: table-cell;
+    background-color: $color-dark-lighter;
+        
+    > td {
+        display: block;
+        background-color: $color-white;
+        margin: 0 auto;
+        height: auto;
+        width: $media-2;
+        @media (min-width:$media-3) {
+            width: $media-3;
+        }
+        @media (min-width:$media-4) {
+            width: $media-4;
+        }
+    }
+}
 table.border > tbody > tr > td > table > tbody {
 
     //MAIN HEADER
@@ -60,7 +77,7 @@ table.border > tbody > tr > td > table > tbody {
                                 }
                                 
                                 > td:last-child {
-                                  padding-right: 100px;
+                                  padding-right: 70px;
                                   font-size: 11px;
                                   font-family: $regular-monts;
                                 }
@@ -100,23 +117,14 @@ table.border > tbody > tr > td > table > tbody {
 
 
     > tr:nth-child(3){
-        display: table-cell;
-        background-color: $color-dark-lighter;
-        
-        > td {
-            width: $media-2;
-            @media (min-width:$media-3) {
-                width: $media-3;
-            }
-            @media (min-width:$media-4) {
-                width: $media-4;
-            }
-        }
+        @include bodyMixin;
     }
 } 
-
 // LOG IN
-
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) {
+    @include bodyMixin;
+    padding: 0 60px;
+}
 [name="homeNavParent"] > table {
     background-image: none;
     > tbody {

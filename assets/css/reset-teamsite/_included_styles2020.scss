@@ -6,7 +6,7 @@ ul.breadcrumb_line li.active a {
     @include av-button-tertiary;
 }
 .buttonBg {
-    @include av-button-secondary;
+    @include av-button-primary;
 }
 
 .buttonBgpink {
@@ -27,30 +27,15 @@ a.ord_link {
 
 .contentbackgroundcolor td.tbl_bgmid3 {
     @include subtitle(25px,left);
-    white-space: nowrap
+    white-space: nowrap;
 }
-.contentbackgroundcolor table[width="745px"] {
-    width: 100%;
-}
+
 .order_method_campaign {
     @include subtitle(25px,left);
-    padding: 36px 40px;
+    padding: 35px 40px 15px 80px;
 }
 
-/*by GErber Barillas 12 enero 2021*/
-.sub_heading1{
-    @include subtitle(20px,left);
-}
-td input.buttonBgorder{
-    @include av-button-secondary;
-}
-.td_bot_border p {
-    @include text-system($regular-monts);
-}
-/*by GErber Barillas 12 enero 2021*/
-
-
-.font_12, .tbl_orderpack td, .font_bold {
+.font_12, .tbl_orderpack td, .font_bold, .box_action_text {
     @include text-system($regular-monts)
 }
 td.tbl_header, .saved_customer_name, td h2 {
@@ -61,14 +46,27 @@ td.tbl_header, .saved_customer_name, td h2 {
     @include subtitle(25px,left);
     padding: 10px 0px;
 }
-.tbl_lineentry, .bg_fff9f9 {
-    @include av-table-dark;
+
+
+
+.tbl_outerline {
+    box-shadow: $color-table-border;
+}
+.div_table {
+    .tbl_outerline {
+        box-shadow: none;
+    }
 }
 
-table .bg_f2f2f2 {
-    // padding: 40px 0px;
-    // border-top: 1px solid $color-dark;
+.tbl_lineentry {
+    @include av-table();
 }
+.bg_fff9f9 {
+    @include av-table();
+    box-shadow: $color-table-border;
+}
+
+
 
 .pop_main_header_txt {
     @include modal-title;
@@ -80,3 +78,89 @@ table .bg_f2f2f2 {
 .error{
     @include alert-warning;
 }
+
+a.linkList {
+	@include av-link();
+}
+
+.linearFormInput, input[type="text"]:not(.searchBox){
+    @include av-input-text();
+}
+select {
+    @include av-input-text;
+}
+input[type="checkbox"] {
+    @include av-input-checkbox;
+}
+
+
+
+
+/*by GErber Barillas 12 enero 2021*/
+.sub_heading1{
+    @include subtitle(20px,left);
+}
+td input.buttonBgorder{
+    @include av-button-secondary;
+    padding: 13px 30%;
+}
+
+
+td.td_bot_border > p, td.td_bot_border > div {
+    @include text-system($regular-monts);
+}
+
+td.td_bot_border > p, td.td_bot_border > div p{
+    width: 80%;
+}
+
+
+[name="exForm"] td.td_bot_border > div:first-of-type{
+    @include demoDescription;
+}
+
+[name="exForm"] td.td_bot_border > div:nth-of-type(2) > span{
+    @include l-Price;
+}
+[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
+    @include SalePrice;
+}
+
+[name="exForm"] table tr td table tr td table:nth-of-type(2),
+[name="exForm"] table tr td table tr td table:nth-of-type(3),
+[name="exForm"] table tr td table tr td table:nth-of-type(4),
+[name="exForm"] table tr td table tr td table:nth-of-type(5),
+[name="exForm"] table tr td table tr td table:nth-of-type(6),
+[name="exForm"] table tr td table tr td table:nth-of-type(7),
+[name="exForm"] table tr td table tr td table:nth-of-type(8),
+[name="exForm"] table tr td table tr td table:nth-of-type(9),
+[name="exForm"] table tr td table tr td table:nth-of-type(10){
+    @include borderSpace;
+}
+
+[name="exForm"] table tr td table tr td table:nth-of-type(2) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td{
+    @include gridDemos;
+}
+
+.td_bot_border p {
+    @include text-system($regular-monts);
+}
+
+[name="newIooffersForm"] table tr td table tr td,
+[name="newIooffersForm"] table tr td table tr td img {
+    @include step3;
+}
+
+
+
+
+/*by GErber Barillas 12 enero 2021*/
+

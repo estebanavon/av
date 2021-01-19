@@ -1231,13 +1231,6 @@ A.bodyLink.visited {
   width: auto;
 }
 
-.linearFormInput:focus, input[type="text"]:focus {
-  -webkit-box-shadow: 0 0 3px 2px rgba(240, 0, 136, 0.25);
-          box-shadow: 0 0 3px 2px rgba(240, 0, 136, 0.25);
-  border: 1px solid #eb70b5;
-  outline: none;
-}
-
 .linearFormInputCellNum {
   font: 11px Verdana, Arial, Helvetica, sans-serif;
   background-color: #ffffff;
@@ -3495,7 +3488,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) td[colspan="3"] > table > tbody > tr > td:last-child {
-  padding-right: 100px;
+  padding-right: 70px;
   font-size: 11px;
   font-family: montserrat-regular, Helvetica, sans-serif;
 }
@@ -3530,6 +3523,10 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) {
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
+  display: block;
+  background-color: #fff;
+  margin: 0 auto;
+  height: auto;
   width: 992px;
 }
 
@@ -3541,6 +3538,32 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 
 @media (min-width: 1200px) {
   table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
+    width: 1200px;
+  }
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) {
+  display: table-cell;
+  background-color: #f0f0f0;
+  padding: 0 60px;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td {
+  display: block;
+  background-color: #fff;
+  margin: 0 auto;
+  height: auto;
+  width: 992px;
+}
+
+@media (min-width: 1024px) {
+  [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td {
     width: 1200px;
   }
 }

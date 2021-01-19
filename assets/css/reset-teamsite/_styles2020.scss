@@ -1,24 +1,10 @@
-
-a.linkList {
-	@include av-link();
-}
-
-.linearFormInput, input[type="text"]:not(.searchBox){
-    @include av-input-text();
-}
-select {
-    @include av-input-text;
-}
-input[type="checkbox"] {
-    @include av-input-checkbox;
-}
-
-
 // CAM STYLES FIX
 #dashboardFrame {
-    min-width: 830px !important;
+    width: 100% !important;
+    @media (min-width:$media-2){
+        width: 900px !important;
+    }
 }
-
 
 // HEADER STYLES
 .clickImage {
@@ -56,12 +42,11 @@ input[type="checkbox"] {
     height: 200px;
 }
 
-
-table.border_rightstyle.bg1_f2f0f0 {
+table.border_rightstyle.bg1_f2f0f0{
     padding: 20px 45px;
 }
 
-
+// CONTADOR COLOCAR UNA ORDEN
 table.order_table {
     box-shadow: 0px 0px 4px $color-dark-light;
     text-align: right;
@@ -108,15 +93,25 @@ table.order_table {
     }
 }
 
+// STEPPER and STEP 1 Containers Padding
+
+.tbl_bgpink,
+[name="frmDemoBrochure"] > table,
+[name="exForm"] > table:first-of-type,
+#frmCreateOrder > table,
+#newIooffersForm > table,
+#clearanceoffersForm > table,
+.contentbackgroundcolor table[width="745px"] {
+    padding: 0px 60px;
+    width: 100%;
+}
+[name="frmSummary"] > table:first-of-type {
+    display: block;
+}
+// CREATE ORDER TABLES
 
 #frmCreateOrder > table {
-    width: 90%;
-    margin: 0 auto;
-    
-    > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
-        width: 100%;
-    }
-    .div_table, .div_fst_ordrtable{
+    .div_table, .div_fst_ordrtable {
         table.body, table.tbl_lineentry {
             > tbody {
                 > tr {
@@ -127,8 +122,117 @@ table.order_table {
                 }
             } 
         }
+    }
+    .div_fst_ordrtable table.tbl_lineentry > tbody > tr {
+        > td:nth-child(5), > td:nth-child(6), > td:nth-child(7), > td:nth-child(8){
+            background-color: $color-light-white;
+        }
+    } 
+    > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
+        width: 100%;
     } 
     .tbl_outerline > tbody > tr:last-child tr {
         display: flex;
+    } 
+}
+
+
+
+[onclick="winClose=false;"] > table {
+    width: 100%;
+}
+
+// MODALES
+[name="addDemoForm"], [name="addOffersForm"] {
+    padding: 0 30px;
+}
+
+// MODAL OFERTAS
+[name="addOffersForm"] .paddingleft_15 {
+    padding-left: 0px;
+    table.tbl_orderpack table {
+        width: 100%;
+    }
+    
+    table.tbl_orderpack > tbody {
+        > tr:nth-last-child(3) {
+            font-family: $semi-bold-monts;
+            background-color: $color-dark-lighter;
+        }
+        > tr:nth-last-child(7) td:last-child{
+            font-family: $semi-bold-monts;
+            padding: 10px 30px;
+        }
+        .scroll_promo {
+            min-height: 100px;
+        }
+    } 
+}
+
+
+// TABS
+table.border_rightstyle td.padding_3 {
+    color: $color-text;
+    background-color: #ffff;
+    text-align: center;
+    width: 15%;
+	border: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer; 
+
+    &:hover {
+        background-color: #f8f8f8;
+    }
+    &.active {
+        border-bottom: 5px solid $color-primary;
+    }
+}
+
+
+td.padding_3.active a, td.padding_3 a {
+    width: 100%;
+	padding: 15px 0;
+	font-family: $regular-monts;
+}
+
+
+td.bg2_f2f0f0.padding_3.active1 {
+    border-bottom: 5px solid $color-primary;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
+}
+.bg_f2f0f0 td.active a, .bg1_f2f0f0 a, .bg_f2f0f0 a {
+    color: $color-text;
+    font-family: $regular-monts;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 15px;
+    display: block;
+}
+
+
+// CLEARENCE OFFERS
+#displayArea1 > table{
+    border: none !important;
+    border-spacing: 15px 8px;
+    > tbody > tr:nth-child(odd) > td {
+        box-shadow: $color-table-border;
+        padding: 14px 10px;
+        transition: all 0.4s;
+        &:hover {
+            box-shadow: $color-table-hover;
+        }
+        > table {
+            border-spacing: 10px 0px;
+            div.offers_description {
+                width: 80%;
+                overflow: hidden;
+                margin-bottom: 5px;
+            }
+        }
+        .Io_table_header_bg img {
+            width: 100%;
+         }
     }
 }

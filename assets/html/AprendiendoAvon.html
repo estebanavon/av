@@ -17,7 +17,7 @@
 <body>
     <section class="av-container av-container-small" style="min-width:1000px;">
         <section class="av-title-apren" style="position: relative;">
-            <img src="../img/avAprender1.jpg" class="w-100" />
+            <img src="/REPSuite/web/static/images/fuse/avAprender1.jpg" class="w-100" />
             <svg class="av-fade-reverse" style="position: absolute;top: 30%;left: 10%;" width="346.69" height="75.55">
                 <use xlink:href="#title"></use>
             </svg>
@@ -27,7 +27,14 @@
                 <div class="av-pair-text pl-5">
                     <h3 class="av-subtitle left av-fade">Encuentra contenido</h3>
                     <p class="av-text">Materiales referentes a tu negocio, a cómo incrementar tus ganancias y a convertirte en una experta de belleza.</p>
-                    <div class="av-wrapper mt-5">
+                    <p class="av-text">Explora Aprendiendo con Avon: está enfocado a que el usuario conozca qué tiene la plataforma para él, cómo está constituida y los clics que debe dar para conocer o revisar el contenido.</p>
+                    <a class="av-button-tertiary mt-4 ml-3 videoOpens" style="display: inline-flex;">
+                        <svg>
+                            <use xlink:href="#play"></use>
+                        </svg>
+                         Ver video
+                    </a>
+                    <div class="av-wrapper mt-4">
                         <a class="av-button-secondary" href="/REPSuite/vendorLinksOne.page?linkid=41">
                             <svg width="19" height="16" class="mr-3">
                                 <use xlink:href="#arrow"></use>
@@ -35,15 +42,9 @@
                              Comenzar
                         </a>
                     </div>
-                    <!-- <a class="av-button-tertiary mt-4 ml-3" style="display: inline-flex;">
-                        <svg>
-                            <use xlink:href="#play"></use>
-                        </svg>
-                         Ver video
-                        </a> -->
                 </div>
                 <div class="av-pair-image text-center">
-                    <img width="90%" src="../img/avAprender2.jpg">
+                    <img width="90%" src="/REPSuite/web/static/images/fuse/avAprender2.jpg">
                 </div>
             </div>
             <div class="av-spacer"></div>
@@ -52,10 +53,16 @@
                     <h3 class="av-subtitle left av-fade-reverse">Desde cualquier lugar</h3>
                     <p class="av-text">Podrás aprender donde quiera que estés, en tu computadora, en un café internet.
                         Cualquier momento es ideal para conocer más de tu negocio y convertirte en una Embajadora de Belleza Avon.</p>
-                    <!-- <a class="av-button-tertiary" style="display: inline-flex;">Ver video</a> -->
+                    <p class="av-text"> Invita al usuario a generar mayor interacción con los contenidos, así como explotar las funcionalidades que tiene disponibles para generar contenido.</p>
+                    <a class="av-button-tertiary videoOpensSecond" style="display: inline-flex;">
+                        <svg>
+                            <use xlink:href="#play"></use>
+                        </svg>
+                        Ver segundo video
+                    </a>
                 </div>
                 <div class="av-pair-image text-center">
-                    <img width="75%" src="../img/avAprender3.jpg">
+                    <img width="75%" src="/REPSuite/web/static/images/fuse/avAprender3.jpg">
                 </div>
             </div>
             <div class="av-spacer"></div>
@@ -72,7 +79,7 @@
                     </p>
                 </div>
                 <div class="av-pair-image text-center">
-                    <img width="75%" src="../img/avAprender4.jpg">
+                    <img width="75%" src="/REPSuite/web/static/images/fuse/avAprender4.jpg">
                 </div>
             </div>
         </div>
@@ -80,7 +87,7 @@
             <div class="col-4">
                 <div class="av-card">
                     <div class="av-card-image">
-                        <img src="../img/avAprender7.jpg" class="w-100">
+                        <img src="/REPSuite/web/static/images/fuse/avAprender7.jpg" class="w-100">
                     </div>
                     <div class="av-card-text">
                         <h4 class="av-card-title">Aprende de forma fácil y divertida</h4>
@@ -91,7 +98,7 @@
             <div class="col-4">
                 <div class="av-card">
                     <div class="av-card-image">
-                        <img src="../img/avAprender6.jpg" class="w-100">
+                        <img src="/REPSuite/web/static/images/fuse/avAprender6.jpg" class="w-100">
                         </div>
                     <div class="av-card-text">
                         <h4 class="av-card-title">Más herramientas, más aprendizaje</h4>
@@ -107,7 +114,7 @@
             <div class="col-4">
                 <div class="av-card">
                     <div class="av-card-image">
-                        <img src="../img/avAprender5.jpg" class="w-100">
+                        <img src="/REPSuite/web/static/images/fuse/avAprender5.jpg" class="w-100">
                     </div>
                     <div class="av-card-text">
                         <h4 class="av-card-title">Mejores recomendaciones</h4>
@@ -118,7 +125,7 @@
         </div>
         <div class="av-row row">
             <div class="col-12 col-sm-4 mx-auto">
-                <img src="../img/avon-aprendiendo-horizontal.jpg" class="w-100 av-fade">
+                <img src="/REPSuite/web/static/images/fuse/avon-aprendiendo-horizontal.jpg" class="w-100 av-fade">
             </div>
             <div class="w-100"></div>
             <div class="av-spacer"></div>
@@ -187,5 +194,45 @@
             </g>
         </defs>
     </svg>
+    <script>
+
+
+        $(document).ready(function(){
+            $('.av-container').append('<div id="avOverlay" class="av-modal" style="display:none;">'+
+                '<div class="av-modal-background videoCloses" style="width: 100%;height: 100vh;background-color: rgba(84,98,100,0.8);position: fixed;top: 0;z-index: 9990;left: 0;"></div>' +
+                '<div style="z-index: 9999;">' +
+                '<div class="av-modal-content animated bounce" style="box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.14); overflow: visible;">' +
+                '<a class="videoCloses" style="font-size:20px;position: absolute;top: -35px;right: 19px;color:#fff;cursor: pointer;">&#10005;</a>' +
+                '<video id="avExploraVideo" class="avVideoCollapse" width="600" height="338" controls><source src="/REPSuite/web/static/videos/ExploraAprendiendoConAvon.mp4" type="video/mp4"></video>' +
+                '<video id="avAprendeVideo" class="avVideoCollapse"width="600" height="338" controls><source src="/REPSuite/web/static/videos/aprendiendoFunciones.mp4" type="video/mp4"></video>' +
+                '</div></div></div>');
+
+            var vid;
+            $(".videoOpens").click(function () {
+                vid = document.getElementById("avExploraVideo");
+                $('#avAprendeVideo').hide().siblings().show();;
+                playVid();
+                $('#avOverlay').show();
+            });
+            $(".videoOpensSecond").click(function () {
+                vid = document.getElementById("avAprendeVideo");
+                $('#avExploraVideo').hide().siblings().show();
+                playVid();
+                $('#avOverlay').show();
+            });
+            $(".videoCloses").click(function () {
+                $('#avOverlay').hide();
+                pauseVid();
+            });
+            function playVid() { 
+                vid.play(); 
+            } 
+            function pauseVid() { 
+                vid.pause();
+            } 
+            
+        });
+
+    </script>
 </body>
 </html>
