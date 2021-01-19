@@ -3058,6 +3058,7 @@ a.ord_link.negative:hover, a.ord_link.negative:active, a.ord_link.negative:focus
 
 td input.buttonBgorder {
   background-color: #7F28C4;
+  padding: 13px 30%;
 }
 
 td.td_bot_border > p, td.td_bot_border > div {
@@ -3069,14 +3070,11 @@ td.td_bot_border > p, td.td_bot_border > div {
 
 td.td_bot_border > p, td.td_bot_border > div p {
   width: 80%;
-  height: 40px;
 }
 
 [name="exForm"] td.td_bot_border > div:first-of-type {
-  height: 90px;
   width: 85%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 [name="exForm"] td.td_bot_border > div:nth-of-type(2) > span {
@@ -3100,19 +3098,22 @@ td.td_bot_border > p, td.td_bot_border > div p {
 [name="exForm"] table tr td table tr td table:nth-of-type(8),
 [name="exForm"] table tr td table tr td table:nth-of-type(9),
 [name="exForm"] table tr td table tr td table:nth-of-type(10) {
-  margin-bottom: 50px;
+  border-spacing: 20px 50px;
 }
 
-[name="exForm"] table tr td table tr td table:nth-of-type(2) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td:nth-of-type(2) {
-  border: 2px dashed rgba(200, 200, 200, 0.3);
+[name="exForm"] table tr td table tr td table:nth-of-type(2) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td {
+  -webkit-box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .td_bot_border p {
@@ -3120,6 +3121,11 @@ td.td_bot_border > p, td.td_bot_border > div p {
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 26px;
+}
+
+[name="newIooffersForm"] table tr td table tr td,
+[name="newIooffersForm"] table tr td table tr td img {
+  width: 100% !important;
 }
 
 /*by GErber Barillas 12 enero 2021*/

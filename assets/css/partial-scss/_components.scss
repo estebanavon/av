@@ -147,10 +147,8 @@ table.order_table {
 /* by Gerber Barillas */
 
 @mixin demoDescription {
-    height: 90px;
     width: 85%;
     margin: 0 auto;
-    overflow: hidden;
 }
 @mixin l-Price {
     color: $color-primary !important;
@@ -165,11 +163,16 @@ table.order_table {
 }
 
 @mixin borderSpace {
-    margin-bottom: 50px
+    border-spacing: 20px 50px;
 }
 
 @mixin gridDemos {
-    border: 2px dashed $color-dark-30;
+    box-shadow: 0 5px 20px 10px rgba(0,0,0,.1);
+    transition: 0.5s;
+}
+
+@mixin step3 {
+    width: 100% !important;
 }
 
 /* by Gerber Barillas */

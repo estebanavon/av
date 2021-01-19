@@ -41,6 +41,7 @@ a.ord_link {
 }
 td input.buttonBgorder{
     @include av-button-secondary;
+    padding: 13px 30%;
 }
 
 
@@ -50,8 +51,8 @@ td.td_bot_border > p, td.td_bot_border > div {
 
 td.td_bot_border > p, td.td_bot_border > div p{
     width: 80%;
-    height: 40px;
 }
+
 
 [name="exForm"] td.td_bot_border > div:first-of-type{
     @include demoDescription;
@@ -76,21 +77,29 @@ td.td_bot_border > p, td.td_bot_border > div p{
     @include borderSpace;
 }
 
-[name="exForm"] table tr td table tr td table:nth-of-type(2) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td:nth-of-type(2){
+[name="exForm"] table tr td table tr td table:nth-of-type(2) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td,
+[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td{
     @include gridDemos;
 }
 
 .td_bot_border p {
     @include text-system($regular-monts);
 }
+
+[name="newIooffersForm"] table tr td table tr td,
+[name="newIooffersForm"] table tr td table tr td img {
+    @include step3;
+}
+
+
+
 
 /*by GErber Barillas 12 enero 2021*/
 
