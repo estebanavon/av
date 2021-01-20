@@ -6,7 +6,7 @@ ul.breadcrumb_line li.active a {
     @include av-button-tertiary;
 }
 .buttonBg {
-    @include av-button-secondary;
+    @include av-button-primary;
 }
 
 .buttonBgpink {
@@ -27,15 +27,72 @@ a.ord_link {
 
 .contentbackgroundcolor td.tbl_bgmid3 {
     @include subtitle(25px,left);
-    white-space: nowrap
+    white-space: nowrap;
 }
-.contentbackgroundcolor table[width="745px"] {
-    width: 100%;
-}
+
 .order_method_campaign {
     @include subtitle(25px,left);
-    padding: 36px 40px;
+    padding: 35px 40px 15px 50px;
 }
+
+.font_12, .tbl_orderpack td, .font_bold, .box_action_text, td h3 {
+    @include text-system($regular-monts)
+}
+td.tbl_header, .saved_customer_name, td h2 {
+    @include text-system($bold-monts)
+}
+
+.tbl_header_big {
+    @include subtitle(25px,left);
+}
+
+
+
+.tbl_outerline {
+    box-shadow: $color-shadow-border;
+}
+.div_table {
+    .tbl_outerline {
+        box-shadow: none;
+    }
+}
+
+.tbl_lineentry {
+    @include av-table();
+}
+.bg_fff9f9 {
+    @include av-table();
+    box-shadow: $color-shadow-border;
+}
+
+.pop_main_header_txt {
+    @include modal-title;
+}
+
+.success{
+    @include alert-succes;
+}
+.error{
+    @include alert-warning;
+}
+
+a.linkList {
+	@include av-link();
+}
+
+.linearFormInput, input[type="text"]:not(.searchBox){
+    @include av-input-text();
+}
+select {
+    @include av-input-text();
+    background-color: transparent;
+}
+input[type="checkbox"] {
+    @include av-input-checkbox;
+}
+
+
+
 
 /*by GErber Barillas 12 enero 2021*/
 .sub_heading1{
@@ -43,7 +100,6 @@ a.ord_link {
 }
 td input.buttonBgorder{
     @include av-button-secondary;
-    padding: 13px 30%;
 }
 
 
@@ -112,34 +168,3 @@ td.td_bot_border > p, td.td_bot_border > div p{
 
 /*by GErber Barillas 12 enero 2021*/
 
-
-.font_12, .tbl_orderpack td, .font_bold {
-    @include text-system($regular-monts)
-}
-td.tbl_header, .saved_customer_name, td h2 {
-    @include text-system($bold-monts)
-}
-
-.tbl_header_big {
-    @include subtitle(25px,left);
-    padding: 10px 0px;
-}
-.tbl_lineentry, .bg_fff9f9 {
-    @include av-table-dark;
-}
-
-table .bg_f2f2f2 {
-    // padding: 40px 0px;
-    // border-top: 1px solid $color-dark;
-}
-
-.pop_main_header_txt {
-    @include modal-title;
-}
-
-.success{
-    @include alert-succes;
-}
-.error{
-    @include alert-warning;
-}

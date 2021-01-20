@@ -9,7 +9,24 @@
         }
     }
 }
-
+@mixin bodyMixin {
+    display: table-cell;
+    background-color: $color-dark-lighter;
+        
+    > td {
+        display: block;
+        background-color: $color-white;
+        margin: 0 auto;
+        height: auto;
+        width: $media-2;
+        @media (min-width:$media-3) {
+            width: $media-3;
+        }
+        @media (min-width:$media-4) {
+            width: $media-4;
+        }
+    }
+}
 table.border > tbody > tr > td > table > tbody {
 
     //MAIN HEADER
@@ -19,13 +36,12 @@ table.border > tbody > tr > td > table > tbody {
             display: flex;
             flex-direction: row-reverse;
             position: relative;
-            padding: 0px 30px 12px 30px;
+            padding: 0px 40px 12px 40px;
 
             > td:first-child {
                 flex: 3;
                 display: flex;
                 justify-content: flex-start;
-                margin-right: auto;
 
                 table table tr:nth-child(3) img {
                     height: 0;
@@ -34,7 +50,6 @@ table.border > tbody > tr > td > table > tbody {
             }
             > td:last-child {
                 flex: 2;
-                width: 500px;
                 
                 > table > tbody {
 
@@ -55,14 +70,12 @@ table.border > tbody > tr > td > table > tbody {
                         width: 100%;
                         > tbody > tr:nth-child(4) {
                             td[colspan="3"] > table > tbody > tr {
-                                > td:first-child {
-                                    width: 10px;
-                                }
-                                
+                                display: flex;
                                 > td:last-child {
-                                  padding-right: 100px;
-                                  font-size: 11px;
-                                  font-family: $regular-monts;
+                                    flex: 1;
+                                    padding-right: 70px;
+                                    font-size: 12px;
+                                    font-family: $regular-monts;
                                 }
 
                             } 
@@ -100,23 +113,14 @@ table.border > tbody > tr > td > table > tbody {
 
 
     > tr:nth-child(3){
-        display: table-cell;
-        background-color: $color-dark-lighter;
-        
-        > td {
-            width: $media-2;
-            @media (min-width:$media-3) {
-                width: $media-3;
-            }
-            @media (min-width:$media-4) {
-                width: $media-4;
-            }
-        }
+        @include bodyMixin;
     }
 } 
-
 // LOG IN
-
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) {
+    @include bodyMixin;
+    padding: 0 60px;
+}
 [name="homeNavParent"] > table {
     background-image: none;
     > tbody {

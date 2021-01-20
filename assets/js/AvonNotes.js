@@ -7,7 +7,7 @@
 $.browser.msie6 = $.browser.msie && /MSIE 6\.0/i.test(window.navigator.userAgent) && !/MSIE 7\.0/i.test(window.navigator.userAgent)
 && !/MSIE 8\.0/i.test(window.navigator.userAgent);
 
-var tb_pathToImage = "static/images/iom/loadingAnimation.gif";
+var tb_pathToImage = "static/images/iom/loadingAnimation.png";
 var imgLoader = null;
 /*!!!!!!!!!!!!!!!!! edit below this line at your own risk !!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -62,9 +62,9 @@ if(closeText=== "undefined")
 			imgLoader = new Image();// preload image
 			imgLoader.src = tb_pathToImage;
 		}
-		$("body").append("<div id='TB_load'><img src='"+imgLoader.src+"' /></div>");//add loader to the page
+		$("body").append("<div id='TB_load'><img src='"+imgLoader.src+"' class='animation-spin' /></div>");//add loader to the page
 		$('#TB_load').show();//show loader
-		
+		debugger
 		var baseURL;
 	   if(url.indexOf("?")!==-1){ //ff there is a query string involved
 			baseURL = url.substr(0, url.indexOf("?"));
@@ -198,7 +198,7 @@ if(closeText=== "undefined")
 			TB_WIDTH = (params['width']*1) + 30 || 630; //defaults to 630 if no paramaters were added to URL
 			TB_HEIGHT = (params['height']*1) + 40 || 440; //defaults to 440 if no paramaters were added to URL
 			ajaxContentW = TB_WIDTH - 30;
-			ajaxContentH = TB_HEIGHT - 30;
+			ajaxContentH = TB_HEIGHT - 45;
 			
 			if(url.indexOf('TB_iframe') != -1){// either iframe or ajax window		
 					urlNoQuery = url.split('TB_');
@@ -418,7 +418,7 @@ function AlphaFadeWithImage()
        lPanel.style.backgroundColor = "#eeeeee";
        lPanel.style.zIndex = "201";
        //var loadPWait = '<table border=0 bordercolor=666666 width=100% height=100% cellpadding=0 cellspacing=0><tr><td bgcolor=#666666 style="color:white;font-family:verdana;font-size:8pt;font-weight:600;" height=10>&nbsp;'+headerMessage+'</td></tr><tr><td style="color:#666666;font-family:verdana;font-size:8pt;" bgcolor=#ffffff align=center>'+processMessage+'</td></tr></table>';
-       var loadPWait = '<img src="static/images/iom/loadingAnimation.gif" alt="Animation" width="208" height="13">';
+       var loadPWait = '<img src="static/images/iom/loadingAnimation.png" alt="Animation">';
        lPanel.innerHTML = loadPWait;
        //  document.body.appendChild(transPanel);
        document.body.appendChild(lPanel);

@@ -46,6 +46,7 @@
     @extend %button-basic-fill;
     background-image: $color-gradient;
     display: inline-block;
+    min-width: 200px;
 }
 
 @mixin av-button-secondary{
