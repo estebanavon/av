@@ -212,10 +212,61 @@
   text-transform: uppercase;
   font-size: 16px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-<<<<<<< HEAD
+  text-decoration: none;
+}
+
+table.order_table {
+  -webkit-box-shadow: 0px 0px 4px #cccccc;
+          box-shadow: 0px 0px 4px #cccccc;
+  text-align: right;
+  width: 280px;
+}
+
+@media (min-width: 1024px) {
+  table.order_table {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  table.order_table {
+    width: 400px;
+  }
+}
+
+table.order_table > tbody > tr:nth-child(1) td {
+  font-size: 13px;
+  padding: 10px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  background-color: #E23679;
+  color: #fff;
+}
+
+table.order_table > tbody .bg_lightpinkheader {
+  font-size: 12px;
+  padding: 4px;
+  background-color: #f0f0f0;
+}
+
+table.order_table > tbody .bg_lightpink, table.order_table > tbody .bg_lightpinklast {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #7F28C4;
   font-size: 12px;
   padding: 3px;
+}
+
+.success, .error {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 2px 16px;
+          box-shadow: rgba(0, 0, 0, 0.9) 0px 2px 16px;
+  text-decoration: none;
+  z-index: 1000;
 }
 
 /* by Gerber Barillas */
@@ -240,9 +291,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
-  text-decoration: none;
->>>>>>> f9945ee0e54f813a2dee43817dff71438e2fe34d
 }
 
 /* CSS Document */
@@ -3205,8 +3253,8 @@ td input.buttonBgorder {
 td.td_bot_border > p, td.td_bot_border > div {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 td.td_bot_border > p, td.td_bot_border > div p {
@@ -3251,8 +3299,8 @@ td.td_bot_border > p, td.td_bot_border > div p {
 [name="exForm"] table tr td table tr td table:nth-of-type(8) tr td,
 [name="exForm"] table tr td table tr td table:nth-of-type(9) tr td,
 [name="exForm"] table tr td table tr td table:nth-of-type(10) tr td {
-  -webkit-box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 24px 3px rgba(59, 69, 70, 0.1);
+          box-shadow: 0px 0px 24px 3px rgba(59, 69, 70, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -3267,6 +3315,33 @@ td.td_bot_border > p, td.td_bot_border > div p {
 [name="newIooffersForm"] table tr td table tr td,
 [name="newIooffersForm"] table tr td table tr td img {
   width: 100% !important;
+}
+
+.statuslight {
+  width: 80%;
+}
+
+.titleStep4 {
+  padding: 10px 20px 50px 10px;
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 19px;
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .titleStep4 {
+    font-size: 20px;
+  }
+}
+
+.titleStep4.left {
+  text-align: left;
 }
 
 /*by GErber Barillas 12 enero 2021*/
@@ -3318,7 +3393,7 @@ td.tbl_header, .saved_customer_name, td h2 {
 }
 
 .success {
-  color: #1A8282 !important;
+  background-color: #1A8282;
 }
 
 .error {

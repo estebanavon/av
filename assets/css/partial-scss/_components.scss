@@ -169,6 +169,14 @@ table.order_table {
     width: 100% !important;
 }
 
+@mixin img_step4 {
+    width: 80%;   
+}
+
+@mixin title_step4 {
+    padding: 10px 20px 50px 10px;
+}
+
 /* by Gerber Barillas */
 
 #frmCreateOrder > table {

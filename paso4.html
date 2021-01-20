@@ -67,50 +67,66 @@
 </style>
 
 
-<div class="container all-width">
-	
-	<!-- INDICADORES DE PRODUCTOS -->
-	<div class="row mt20">
-		<div class="col-xs-12 col-sm-3">
-			<hr>
-		</div>
-		<div class="col-xs-12 col-sm-6 text-center">
-			<h1><small class="pink">DISPONIBILIDAD DE PRODUCTO</small></h1>
-		</div>
-		<div class="col-xs-12 col-sm-3">
-			<hr>
-		</div>
-	</div>
+<div class="container">
+    <!-- INDICADORES DE PRODUCTOS -->
 
-	<div class="row">
-		<div class="col-xs-12 text-center subtext mt20 mb20">
-			<p>Si aparece cualquiera de estos colores en tu orden, significan lo siguiente:</p>
-		</div>
-		<div class="col-xs-12 col-sm-3">
-			<img class="img-responsive" src="/REPSuite/web/static/images/banners/paso4_indicador_verde.jpg">
-			<p><strong class="subtitles">Producto Disponible<br>
-				Orden Completa</strong><br></p>
-				<p><strong><span class="green">Verde</span> o sin indicador,</strong> todos los productos están disponibles en la campaña</p>
-		</div>
-		<div class="col-xs-12 col-sm-3">
-			<img class="img-responsive" src="/REPSuite/web/static/images/banners/paso4_indicador_amarillo.jpg">
-			<p><strong class="subtitles">Producto<br>
-				por Agotarse<br></strong></p>
-				<p><strong class="yellow">Amarillo,</strong> hay pocas unidades, tal vez no se surta</p>
-		</div>
-		<div class="col-xs-12 col-sm-3">
-			<img class="img-responsive" src="/REPSuite/web/static/images/banners/paso4_indicador_rojo.jpg">
-			<p><strong class="subtitles">Producto llegará<br>
-				en la próxima Campaña</strong><br></p>
-				<p><strong class="red">Rojo,</strong> se factura y te llega en la siguiente campaña</p>
-		</div>
-		<div class="col-xs-12 col-sm-3">
-			<img class="img-responsive" src="/REPSuite/web/static/images/banners/paso4_indicador_gris.jpg">
-			<p><strong class="subtitles">Producto<br>
-				No Disponible</strong><br></p>
-				<p><strong class="gray">Gris,</strong> el producto se borra de tu orden y no será surtido</p>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-12 text-center titleStep4">
+            <h1>Disponibilidad de producto</h1>
+            <p>Si aparece cualquiera de estos colores en tu orden, significan lo siguiente:</p>
+        </div>
+
+        <div class="col-md-12">
+            <div class="col-md-3 text-center">
+                <img src="/REPSuite/static/images/banners/paso4_indicador_verde.jpg" alt="" class="statuslight">
+                <h4>Verde o sin dindicador</h4>
+                <p>
+                    <strong>Producto Disponible Orden Competa</strong>
+                    Todos los prodcutos están disponibles en campaña.
+                </p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="/REPSuite/static/images/banners/paso4_indicador_amarillo.jpg" alt="" class="statuslight"> 
+                <h4>Amarillo</h4>
+                <p>
+                    <strong>Producto por Agotarse</strong>
+                    Hay pocas unidades, tal vez no se surta.
+                </p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="/REPSuite/static/images/banners/paso4_indicador_rojo.jpg" alt="" class="statuslight">
+                <h4>Rojo</h4>
+                <p>
+                    <strong>Producto llegará en la próxima Campaña</strong>
+                    Se factura y rw llega en la siguiente campaña.
+                </p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="/REPSuite/static/images/banners/paso4_indicador_gris.jpg" alt="" class="statuslight">
+                <h4>Gris</h4>
+                <p>
+                    <strong>Producto No Disponible</strong>
+                    El prodcuto se borra de tu orden y no será surtido.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <img src="/REPSuite/static/images/banners/paso4_warning.png" alt="">
+            <p>A veces en los indicadores ROJO y GRIS te ofreceremos sustituciones. Si aceptas, 
+                el producto sustituto te será facturado y surtido en tu orden de campaña actual. 
+                En el caso del indicador ROJO, si aceptas el sustituto, ya no te llegará el producto 
+                anterior en la siguiente campaña.</p>
+        </div>
+    </div>
+
+	
+	
+
+
+	
 	
 	<div class="row mt40 mb40">
 		<div class="col-xs-12 col-sm-offset-2 col-sm-8 bkgray pads pt10 pb10">

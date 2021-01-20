@@ -101,7 +101,14 @@ td.td_bot_border > p, td.td_bot_border > div p{
 }
 
 
+.statuslight{
+    @include img_step4;
+}
 
+.titleStep4{
+    @include title_step4; 
+    @include subtitle(20px,center);
+}
 
 /*by GErber Barillas 12 enero 2021*/
 
