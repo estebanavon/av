@@ -25,10 +25,11 @@
 @mixin av-input-text {
     font-family: $regular-monts;
     color: $color-text;
+    border-radius: 4px;
     padding: 6px;
     border: none;
-    border-bottom: 1px solid $color-text;
-    background-color: $color-white;
+    border-bottom: 1px solid $color-dark;
+    background-color: $color-dark-lighter;
     box-shadow: none;
     transition: border-bottom 1s;
     border-radius: 0px;

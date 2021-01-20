@@ -46,6 +46,73 @@ table.border_rightstyle.bg1_f2f0f0{
     padding: 20px 45px;
 }
 
+
+
+.tbl_orderpack > tbody > tr:nth-child(6) table {
+    border-spacing: 0px 5px;
+    tr:first-child > td {
+        @include text-system($bold-monts);
+        background-color: $color-dark-lighter;
+        padding: 10px;
+        text-align: left;
+    }
+    tr td:nth-child(3){
+        padding: 0px 20px;
+    }
+}
+
+// STEPPER and STEP 1 Containers Padding
+
+.tbl_bgpink,
+[name="frmDemoBrochure"] > table,
+[name="exForm"] > table:first-of-type,
+[name="frmSummary"] > table:first-of-type,
+#frmCreateOrder > table,
+#newIooffersForm > table,
+#clearanceoffersForm > table,
+.contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
+    padding: 0px 40px;
+    width: 100%;
+    @media (min-width:$media-3) {
+        padding: 0px 60px;
+    }
+}
+[name="frmSummary"] > table:first-of-type, .tbl_bgpink {
+    display: block;
+}
+// CREATE ORDER TABLES
+
+#frmCreateOrder > table {
+    .div_table, .div_fst_ordrtable {
+        table.body, table.tbl_lineentry {
+            > tbody {
+                > tr {
+                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+                    height: 55px;
+                    background-color: $color-white;
+                    
+                }
+            } 
+        }
+    }
+    .div_fst_ordrtable table.tbl_lineentry > tbody > tr {
+        > td:nth-child(5), > td:nth-child(6), > td:nth-child(7), > td:nth-child(8){
+            background-color: $color-light-white;
+        }
+    } 
+    > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
+        width: 100%;
+    } 
+    .tbl_outerline > tbody > tr:last-child tr {
+        display: flex;
+    } 
+}
+
+//ORDEN GUARDADA
+
+#divOuter_1 + table.alt_rows {
+    margin: 50px 0px;
+} 
 // CONTADOR COLOCAR UNA ORDEN
 table.order_table {
     box-shadow: 0px 0px 4px $color-dark-light;
@@ -79,64 +146,60 @@ table.order_table {
          }
     }
 }
+// Brosura
 
-.tbl_orderpack > tbody > tr:nth-child(6) table {
-    border-spacing: 0px 5px;
-    tr:first-child > td {
-        @include text-system($bold-monts);
-        background-color: $color-dark-lighter;
-        padding: 10px;
-        text-align: left;
-    }
-    tr td:nth-child(3){
-        padding: 0px 20px;
-    }
+.contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
+    margin-top: 50px;
 }
-
-// STEPPER and STEP 1 Containers Padding
-
-.tbl_bgpink,
-[name="frmDemoBrochure"] > table,
-[name="exForm"] > table:first-of-type,
-#frmCreateOrder > table,
-#newIooffersForm > table,
-#clearanceoffersForm > table,
-.contentbackgroundcolor table[width="745px"] {
-    padding: 0px 60px;
+.contentbackgroundcolor table[width="745px"].bor_outer {
     width: 100%;
-}
-[name="frmSummary"] > table:first-of-type {
-    display: block;
-}
-// CREATE ORDER TABLES
-
-#frmCreateOrder > table {
-    .div_table, .div_fst_ordrtable {
-        table.body, table.tbl_lineentry {
-            > tbody {
-                > tr {
-                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-                    height: 55px;
-                    background-color: $color-white;
-                    
+    border-spacing: 20px 0px;
+    > tbody > tr > td {
+        vertical-align: top;
+        &:first-child > table {
+            min-height: 290px;
+            border-spacing: 0px 15px;
+            > tbody > tr {
+                box-shadow: $color-shadow-border;
+                > td {
+                    padding: 10px 40px;
                 }
-            } 
+                .border_bottomd7d1d1 {
+                    > table {
+                        width: 100%;
+                        td {
+                            text-align: right;
+                            @include text-system($bold-monts);
+                            color: $color-secondary;
+                        }
+                        div[align="center"] {
+                            text-align: left;
+                            @include text-system($bold-monts);
+                        }
+                    }
+                }
+            }
         }
+        &:last-child {
+            .tbl_orderpack > tbody {
+                display: flex;
+                flex-direction: column-reverse;
+                img[src^="static/images/offerImages"]{
+                    width: 100%;
+                    height: auto;
+                }
+                td h3 {
+                    padding: 10px;
+                }
+            }
+        }
+
     }
-    .div_fst_ordrtable table.tbl_lineentry > tbody > tr {
-        > td:nth-child(5), > td:nth-child(6), > td:nth-child(7), > td:nth-child(8){
-            background-color: $color-light-white;
-        }
-    } 
-    > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
-        width: 100%;
-    } 
-    .tbl_outerline > tbody > tr:last-child tr {
-        display: flex;
-    } 
+    
 }
 
 
+//Login
 
 [onclick="winClose=false;"] > table {
     width: 100%;
@@ -147,29 +210,21 @@ table.order_table {
     padding: 0 30px;
 }
 
-// MODAL OFERTAS
-[name="addOffersForm"] .paddingleft_15 {
-    padding-left: 0px;
-    table.tbl_orderpack table {
-        width: 100%;
+.div_table {
+    .tbl_outerline {
+        box-shadow: none;
+        td {
+            @include text-system($regular-monts)
+        }
+        .bg_f5f3f4 {
+            background-color:#f5f3f4;
+            height: 40px;
+        }
+        .bg_e8e4e3 {
+            height: 40px;
+        }
     }
-    
-    table.tbl_orderpack > tbody {
-        > tr:nth-last-child(3) {
-            font-family: $semi-bold-monts;
-            background-color: $color-dark-lighter;
-        }
-        > tr:nth-last-child(7) td:last-child{
-            font-family: $semi-bold-monts;
-            padding: 10px 30px;
-        }
-        .scroll_promo {
-            min-height: 100px;
-        }
-    } 
 }
-
-
 // TABS
 table.border_rightstyle td.padding_3 {
     color: $color-text;
@@ -213,26 +268,54 @@ td.bg2_f2f0f0.padding_3.active1 {
 
 
 // CLEARENCE OFFERS
-#displayArea1 > table{
-    border: none !important;
-    border-spacing: 15px 8px;
-    > tbody > tr:nth-child(odd) > td {
-        box-shadow: $color-table-border;
-        padding: 14px 10px;
-        transition: all 0.4s;
-        &:hover {
-            box-shadow: $color-table-hover;
-        }
-        > table {
-            border-spacing: 10px 0px;
-            div.offers_description {
-                width: 80%;
-                overflow: hidden;
-                margin-bottom: 5px;
+#clearanceoffersForm {
+    .Io_table_header_bg img {
+        width: 100%;
+     }
+     #displayArea1 > table{
+        border: none !important;
+        border-spacing: 15px 8px;
+        > tbody > tr:nth-child(odd) > td {
+            box-shadow: $color-shadow-border;
+            padding: 20px 10px;
+            transition: all 0.4s;
+            &:hover {
+                box-shadow: $color-shadow-hover;
+            }
+            > table {
+                border-spacing: 10px 0px;
+                div.offers_description {
+                    width: 80%;
+                    overflow: hidden;
+                    margin-bottom: 5px;
+                }
             }
         }
-        .Io_table_header_bg img {
-            width: 100%;
-         }
+        > tbody > tr:last-child > td {
+            box-shadow: none;
+            padding: 0px;
+        }
     }
+} 
+
+// MODAL OFERTAS
+[name="addOffersForm"] .paddingleft_15 {
+    padding-left: 0px;
+    table.tbl_orderpack table {
+        width: 100%;
+    }
+    
+    table.tbl_orderpack > tbody {
+        > tr:nth-last-child(3) {
+            font-family: $semi-bold-monts;
+            background-color: $color-dark-lighter;
+        }
+        > tr:nth-last-child(7) td:last-child{
+            font-family: $semi-bold-monts;
+            padding: 10px 30px;
+        }
+        .scroll_promo {
+            min-height: 100px;
+        }
+    } 
 }

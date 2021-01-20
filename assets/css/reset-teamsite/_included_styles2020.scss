@@ -32,10 +32,10 @@ a.ord_link {
 
 .order_method_campaign {
     @include subtitle(25px,left);
-    padding: 35px 40px 15px 80px;
+    padding: 35px 40px 15px 50px;
 }
 
-.font_12, .tbl_orderpack td, .font_bold, .box_action_text {
+.font_12, .tbl_orderpack td, .font_bold, .box_action_text, td h3 {
     @include text-system($regular-monts)
 }
 td.tbl_header, .saved_customer_name, td h2 {
@@ -44,13 +44,12 @@ td.tbl_header, .saved_customer_name, td h2 {
 
 .tbl_header_big {
     @include subtitle(25px,left);
-    padding: 10px 0px;
 }
 
 
 
 .tbl_outerline {
-    box-shadow: $color-table-border;
+    box-shadow: $color-shadow-border;
 }
 .div_table {
     .tbl_outerline {
@@ -63,10 +62,8 @@ td.tbl_header, .saved_customer_name, td h2 {
 }
 .bg_fff9f9 {
     @include av-table();
-    box-shadow: $color-table-border;
+    box-shadow: $color-shadow-border;
 }
-
-
 
 .pop_main_header_txt {
     @include modal-title;
@@ -87,7 +84,8 @@ a.linkList {
     @include av-input-text();
 }
 select {
-    @include av-input-text;
+    @include av-input-text();
+    background-color: transparent;
 }
 input[type="checkbox"] {
     @include av-input-checkbox;
@@ -102,7 +100,6 @@ input[type="checkbox"] {
 }
 td input.buttonBgorder{
     @include av-button-secondary;
-    padding: 13px 30%;
 }
 
 
