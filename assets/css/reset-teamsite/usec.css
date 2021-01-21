@@ -1030,16 +1030,6 @@ A.sublinks3 {
   cursor: hand;
 }
 
-.bodyR {
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: normal;
-  color: #646464;
-  text-align: right;
-  line-height: 13px;
-  padding-right: 12px;
-}
-
 A.bodyLink {
   font-family: Arial;
   font-size: 11px;
@@ -2822,10 +2812,6 @@ a.loginLinks {
 
 .td_top_border {
   border-top: 1px solid #bebdbd;
-}
-
-.td_bot_border {
-  border-bottom: 1px solid #bebdbd;
 }
 
 .padding_left5 {

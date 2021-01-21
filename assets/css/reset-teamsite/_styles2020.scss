@@ -6,7 +6,8 @@
     }
 }
 
-// HEADER STYLES
+/*------- HEADER FIX 2020 ------*/
+
 .clickImage {
     display: block;
     margin: 30px auto 10px auto;
@@ -61,12 +62,50 @@ table.border_rightstyle.bg1_f2f0f0{
     }
 }
 
-// STEPPER and STEP 1 Containers Padding
+/*------- STEP 0 2020 ------*/
+
+div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
+    padding-left: 0 !important;
+    img {
+        width: 100%;
+    }
+    
+}
+.table_bg {
+    box-shadow: $color-shadow-border;
+    width: 100%;
+}
+.td_subheader_bg {
+    text-align: left;
+    .sub_heading2 {
+        border-bottom: 1px solid $color-secondary;
+        text-align: left;
+        padding: 5px 10px;
+        display: block;
+    }
+}
+.place_an_order_tbl2 {
+    box-shadow: $color-shadow-border;
+    border-spacing: 7px 0px;
+    .tdcell_R.border_top_white > table > tbody {
+        display: flex;
+        align-items: center;
+        label strong {
+            white-space: nowrap;
+        }
+    }
+    label {
+        @include text-system($bold-monts);
+    }
+}
+
+/*------- PLACE N ORDER PADDING 2020 ------*/
 
 .tbl_bgpink,
+[name="frmPreviewOrder"] > table,
 [name="frmDemoBrochure"] > table,
 [name="exForm"] > table:first-of-type,
-[name="frmSummary"] > table:first-of-type,
+[name="frmSummary"] > table,
 #frmCreateOrder > table,
 #newIooffersForm > table,
 #clearanceoffersForm > table,
@@ -77,10 +116,28 @@ table.border_rightstyle.bg1_f2f0f0{
         padding: 0px 60px;
     }
 }
-[name="frmSummary"] > table:first-of-type, .tbl_bgpink {
+[name="frmSummary"] > table:first-of-type {
     display: block;
+    ~ table {
+        display: flex;
+        justify-content: flex-end;
+        @media (min-width:$media-3) {
+            padding: 0px 60px;
+        }
+        .buttonBgpink {
+            @include av-button-secondary;
+        }
+    } 
+    .bodyR {
+        color: $color-white;
+        padding: 10px;
+        background-color: $color-dark-lighter;
+    }
 }
-// CREATE ORDER TABLES
+
+
+/*------- CREATE ORDER TABLES 2020 ------*/
+
 
 #frmCreateOrder > table {
     .div_table, .div_fst_ordrtable {
@@ -108,12 +165,22 @@ table.border_rightstyle.bg1_f2f0f0{
     } 
 }
 
-//ORDEN GUARDADA
+/*------- SAVED ORDER TABLE 2020 ------*/
 
 #divOuter_1 + table.alt_rows {
-    margin: 50px 0px;
+    margin: 50px 0px;  
+    .bg_fff9f9 {
+        @include av-table($color-secondary,$color-white);
+        box-shadow: $color-shadow-border;
+        td:not(.bodyR) {
+            @include text-system($regular-monts);
+        }
+    }
 } 
-// CONTADOR COLOCAR UNA ORDEN
+
+
+/*------- PLACE N ORDER COUNTER 2020 ------*/
+
 table.order_table {
     box-shadow: 0px 0px 4px $color-dark-light;
     text-align: right;
@@ -140,13 +207,15 @@ table.order_table {
          }
          .bg_lightpink,.bg_lightpinklast {
             font-family: $bold-monts;
-            color: $color-primary;
+            color: $color-secondary;
             font-size: 12px;
             padding: 3px;
          }
     }
 }
-// Brosura
+
+
+/*------- BROSURA 2020 ------*/
 
 .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
     margin-top: 50px;
@@ -167,6 +236,10 @@ table.order_table {
                 .border_bottomd7d1d1 {
                     > table {
                         width: 100%;
+
+                        > tbody > tr:last-child {
+                            display: none;
+                        }
                         td {
                             text-align: right;
                             @include text-system($bold-monts);
@@ -198,17 +271,29 @@ table.order_table {
     
 }
 
+/*------- QUICK ORDER 2020 ------*/
 
-//Login
+.copyTextbox {
+    width: 100%;
+}
+.copyImage {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+
+/*------- LOGIN 2020 ------*/
 
 [onclick="winClose=false;"] > table {
     width: 100%;
 }
 
-// MODALES
+/*------- MODAL 2020 ------*/
 [name="addDemoForm"], [name="addOffersForm"] {
     padding: 0 30px;
 }
+
+/*------- TABLAS 2020 ------*/
 
 .div_table {
     .tbl_outerline {
@@ -217,7 +302,7 @@ table.order_table {
             @include text-system($regular-monts)
         }
         .bg_f5f3f4 {
-            background-color:#f5f3f4;
+            background-color: $color-dark-lighter;
             height: 40px;
         }
         .bg_e8e4e3 {
@@ -225,7 +310,9 @@ table.order_table {
         }
     }
 }
-// TABS
+
+/*------- TABS 2020 ------*/
+
 table.border_rightstyle td.padding_3 {
     color: $color-text;
     background-color: #ffff;
@@ -267,7 +354,9 @@ td.bg2_f2f0f0.padding_3.active1 {
 }
 
 
-// CLEARENCE OFFERS
+
+/*------- CLEARANCE OFFERS 2020 ------*/
+
 #clearanceoffersForm {
     .Io_table_header_bg img {
         width: 100%;
@@ -276,12 +365,9 @@ td.bg2_f2f0f0.padding_3.active1 {
         border: none !important;
         border-spacing: 15px 8px;
         > tbody > tr:nth-child(odd) > td {
-            box-shadow: $color-shadow-border;
+            @extend %borderShadow;
             padding: 20px 10px;
-            transition: all 0.4s;
-            &:hover {
-                box-shadow: $color-shadow-hover;
-            }
+            
             > table {
                 border-spacing: 10px 0px;
                 div.offers_description {
@@ -298,7 +384,8 @@ td.bg2_f2f0f0.padding_3.active1 {
     }
 } 
 
-// MODAL OFERTAS
+/*------- CLEARANCE OFFERS MODAL 2020 ------*/
+
 [name="addOffersForm"] .paddingleft_15 {
     padding-left: 0px;
     table.tbl_orderpack table {

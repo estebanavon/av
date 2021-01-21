@@ -758,7 +758,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   position: absolute;
   bottom: -1px;
   left: 0;
-  background-color: #FF49A3;
+  background-color: #E82F89;
   padding: 10px;
   width: 90%;
   -webkit-transition: all 0.7s;
@@ -4188,7 +4188,7 @@ div.p-fix, h3.p-fix {
 }
 
 .av-people div:last-child {
-  background-color: #FF49A3;
+  background-color: #E82F89;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4278,7 +4278,7 @@ div.p-fix, h3.p-fix {
 }
 
 .av-ca-container .av-ca-earn {
-  background-color: #FF49A3;
+  background-color: #E82F89;
   position: relative;
   top: -4.5rem;
   z-index: 0;

@@ -8,19 +8,29 @@ ul.breadcrumb_line li.active a {
 .buttonBg {
     @include av-button-primary;
 }
-
 .buttonBgpink {
     @include av-button-tertiary;
+}
+
+.tbl_outerline .buttonBgpink {
+    @include av-button-secondary;
+    margin: 0px 10px 10px 10px;
 }
 a.ord_link {
     @include av-button-tertiary;
 }
-.view a, .view_order a {
-    @include av-link;
+.view a:not(.ord_link), .view_order a {
+    @include av-button-tertiary;
 }
-.tbl_header > a {
-    @include av-link;
-}
+.view_order, .view {
+    ~ td {
+        > .buttonpink > .buttonBgpink {
+            @include av-button-outline;
+            margin: 0 10px;
+        }
+    }
+} 
+
 .contentbackgroundcolor {
     padding: 0px 10px;
 }
@@ -35,10 +45,19 @@ a.ord_link {
     padding: 35px 40px 15px 50px;
 }
 
-.font_12, .tbl_orderpack td, .font_bold, .box_action_text, td h3 {
+label,
+.font_12,
+.tbl_orderpack td,
+.font_bold,
+.box_action_text,
+td h3 {
     @include text-system($regular-monts)
 }
-td.tbl_header, .saved_customer_name, td h2 {
+
+.sub_heading2,
+td.tbl_header,
+.saved_customer_name,
+td h2 {
     @include text-system($bold-monts)
 }
 
@@ -60,10 +79,7 @@ td.tbl_header, .saved_customer_name, td h2 {
 .tbl_lineentry {
     @include av-table();
 }
-.bg_fff9f9 {
-    @include av-table();
-    box-shadow: $color-shadow-border;
-}
+
 
 .pop_main_header_txt {
     @include modal-title;
@@ -72,7 +88,7 @@ td.tbl_header, .saved_customer_name, td h2 {
 .success{
     @include alert-succes;
 }
-.error{
+.error, .red_txt2{
     @include alert-warning;
 }
 
