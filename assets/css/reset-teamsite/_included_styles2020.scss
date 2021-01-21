@@ -91,9 +91,6 @@ input[type="checkbox"] {
     @include av-input-checkbox;
 }
 
-
-
-
 /*by GErber Barillas 12 enero 2021*/
 .sub_heading1{
     @include subtitle(20px,left);
@@ -145,15 +142,38 @@ td.td_bot_border > p, td.td_bot_border > div p{
 [name="newIooffersForm"] table tr td table tr td img {
     @include step3;
 }
-.statuslight{
-    @include img_step4;
+.cont_title_step4{
+    @include cont_title_step4; 
 }
 .titleStep4{
-    @include title_step4; 
     @include subtitle(20px,center);
+    margin-bottom: 0px !important;
 }
 .textStep4{
     @include text-system($regular-monts);
 }
+.cont_mar_step4{
+    @include cont_mar_step4; 
+}
+.statuslight{
+    @include img_step4;
+}
+.cont_warning_Step4{
+    @include cont_warning_Step4;
+}
 
+.title_pink{
+    @include title_pink;
+}
+.Order_title_Step4{
+    @include subtitle(20px,left);
+}
+.divider{
+    @include divider;
+    @include cont_mar_step4; 
+}
+
+[name="frmSummary"] > table {
+    @include text-system($regular-monts);
+}
 /*by GErber Barillas 12 enero 2021*/
