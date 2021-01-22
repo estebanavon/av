@@ -223,11 +223,7 @@
 .success, .error, .red_txt2 {
   text-transform: uppercase;
   font-size: 16px;
-<<<<<<< HEAD
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-=======
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
->>>>>>> c57153e15a18dbf56e76e845e9563d9eabfa1ce2
   text-decoration: none;
 }
 
@@ -3522,7 +3518,6 @@ td.td_bot_border > p, td.td_bot_border > div p {
   text-align: left;
 }
 
-<<<<<<< HEAD
 .textStep4 {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
@@ -3544,7 +3539,7 @@ td.td_bot_border > p, td.td_bot_border > div p {
 }
 
 .title_pink {
-  color: #FF49A3;
+  color: #E82F89;
 }
 
 .Order_title_Step4 {
@@ -3570,19 +3565,69 @@ td.td_bot_border > p, td.td_bot_border > div p {
 }
 
 .divider {
-  border: 2px solid #FF49A3;
-  color: #FF49A3;
+  border: 2px solid #E82F89;
+  color: #E82F89;
   margin: 40px 0 40px 0;
 }
 
-[name="frmSummary"] > table {
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 17px;
+  margin-top: 50px;
 }
 
-=======
->>>>>>> c57153e15a18dbf56e76e845e9563d9eabfa1ce2
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) {
+  padding: 30px;
+}
+
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:first-of-type td,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:first-of-type td,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:first-of-type td {
+  position: relative;
+  top: 20px;
+}
+
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:first-of-type td:nth-of-type(2),
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:first-of-type td:nth-of-type(2),
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:first-of-type td:nth-of-type(2) {
+  position: relative;
+  left: -115px;
+  top: 0px;
+}
+
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td {
+  position: relative;
+  top: 20px;
+}
+
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td a,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td a,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td a {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td a:hover,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td a:hover,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td a:hover {
+  background-color: #f6effc;
+}
+
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td a.visited,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td a.visited,
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td a.visited {
+  color: #66209d;
+}
+
 /*by GErber Barillas 12 enero 2021*/
 /*# sourceMappingURL=included_styles.css.map */

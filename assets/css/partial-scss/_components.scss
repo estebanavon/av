@@ -143,6 +143,18 @@
     border: 2px solid $color-secondary;
     color:$color-secondary;
 }
+@mixin list_product_step4 {
+    margin-top:50px;
+}
+@mixin position {
+    position: relative;
+    top: 20px;
+}
+@mixin positionTop {
+    position: relative;
+    left: -115px;
+    top: 0px;
+}
 
 
 
