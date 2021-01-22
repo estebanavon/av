@@ -3630,12 +3630,11 @@ td.td_bot_border > p, td.td_bot_border > div p {
   width: 100% !important;
 }
 
-.statuslight {
-  width: 80%;
+.cont_title_step4 {
+  line-height: 40px;
 }
 
 .titleStep4 {
-  padding: 10px 20px 50px 10px;
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
@@ -3645,6 +3644,7 @@ td.td_bot_border > p, td.td_bot_border > div p {
   font-size: 19px;
   display: block;
   padding: 0;
+  margin-bottom: 0px !important;
 }
 
 @media (min-width: 768px) {
@@ -3655,6 +3655,65 @@ td.td_bot_border > p, td.td_bot_border > div p {
 
 .titleStep4.left {
   text-align: left;
+}
+
+.textStep4 {
+  color: #3b4546;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.cont_mar_step4 {
+  margin: 40px 0 40px 0;
+}
+
+.statuslight {
+  width: 70%;
+}
+
+.cont_warning_Step4 {
+  background-color: #F7F7F7;
+  padding: 40px;
+}
+
+.title_pink {
+  color: #E82F89;
+}
+
+.Order_title_Step4 {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 19px;
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .Order_title_Step4 {
+    font-size: 20px;
+  }
+}
+
+.Order_title_Step4.left {
+  text-align: left;
+}
+
+.divider {
+  border: 2px solid #E82F89;
+  color: #E82F89;
+  margin: 40px 0 40px 0;
+}
+
+[name="frmSummary"] > table {
+  color: #3b4546;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 /*by GErber Barillas 12 enero 2021*/

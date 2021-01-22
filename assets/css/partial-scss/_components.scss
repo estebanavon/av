@@ -126,12 +126,30 @@
 }
 
 @mixin img_step4 {
-    width: 80%;   
+    width: 70%;   
 }
 
-@mixin title_step4 {
-    padding: 10px 20px 50px 10px;
+@mixin cont_mar_step4 {
+    margin: 40px 0 40px 0;
 }
+@mixin cont_title_step4 {
+    line-height: 40px;
+}
+@mixin cont_warning_Step4{
+    background-color: $color-light-white;
+    padding: 40px;
+}
+
+@mixin title_pink {
+    color:$color-secondary;
+}
+
+@mixin divider {
+    border: 2px solid $color-secondary;
+    color:$color-secondary;
+}
+
+
 
 /* by Gerber Barillas */
 
