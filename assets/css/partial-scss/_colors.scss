@@ -3,6 +3,7 @@
 //Basic colors
 $color-white : #fff;
 $color-light-white: #F7F7F7;
+$color-white-lighter:rgba(255,255,255, 0.5);
 $color-dark-lighter: scale-color($color-white, $lightness: -6%);
 $color-dark-light: scale-color($color-white, $lightness: -20%);
 $color-dark: #3b4546;

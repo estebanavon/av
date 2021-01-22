@@ -22,27 +22,28 @@ a.ord_link {
 .view a:not(.ord_link), .view_order a {
     @include av-button-tertiary;
 }
-.view_order, .view {
-    ~ td {
-        > .buttonpink > .buttonBgpink {
-            @include av-button-outline;
-            margin: 0 10px;
-        }
-    }
-} 
+
 
 .contentbackgroundcolor {
     padding: 0px 10px;
 }
-
+.tbl_header_big, .contentbackgroundcolor td.tbl_bgmid3, .sub_heading1 {
+    @include title;
+}
 .contentbackgroundcolor td.tbl_bgmid3 {
-    @include subtitle(25px,left);
     white-space: nowrap;
 }
 
 .order_method_campaign {
-    @include subtitle(25px,left);
-    padding: 35px 40px 15px 50px;
+    @include titleRegular();
+    padding: 35px 0px 15px 50px;
+    height: auto;
+    + [width="55%"] {
+        padding-right: 40px;
+    }
+    @media (min-width:$media-3) {
+        padding-right: 60px;
+    }
 }
 
 label,
@@ -54,6 +55,7 @@ td h3 {
     @include text-system($regular-monts)
 }
 
+.sub_heading,
 .sub_heading2,
 td.tbl_header,
 .saved_customer_name,
@@ -61,13 +63,8 @@ td h2 {
     @include text-system($bold-monts)
 }
 
-.tbl_header_big {
-    @include subtitle(25px,left);
-}
 
-
-
-.tbl_outerline {
+.tbl_outerline, #returnForm > table {
     box-shadow: $color-shadow-border;
 }
 .div_table {
@@ -75,11 +72,14 @@ td h2 {
         box-shadow: none;
     }
 }
-
-.tbl_lineentry {
+.tbl_lineentry,
+#aaa.bor_outer,
+#returnForm > table > tbody > tr > td > table {
     @include av-table();
 }
-
+.tbl_outerline.bg_fff9f9 {
+    @include av-table($color-secondary,$color-white);
+}
 
 .pop_main_header_txt {
     @include modal-title;
@@ -88,15 +88,17 @@ td h2 {
 .success{
     @include alert-succes;
 }
-.error, .red_txt2{
+.error, .red_txt2, .totalQty {
     @include alert-warning;
 }
 
 a.linkList {
 	@include av-link();
 }
-
-.linearFormInput, input[type="text"]:not(.searchBox){
+.bg_f5f3f4 {
+    background-color: $color-light-white ;
+}
+.linearFormInput, input[type="text"]:not(.searchBox), input[type="password"] {
     @include av-input-text();
 }
 select {
@@ -106,11 +108,11 @@ select {
 input[type="checkbox"] {
     @include av-input-checkbox;
 }
+.bor_outer {
+    background-color: transparent
+}
 
 /*by GErber Barillas 12 enero 2021*/
-.sub_heading1{
-    @include subtitle(20px,left);
-}
 td input.buttonBgorder{
     @include av-button-secondary;
 }

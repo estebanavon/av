@@ -1,13 +1,23 @@
-@mixin subtitle($size: 25px,$align:center) {
+
+%titles {
     color: $color-text;
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 0;
+}
+@mixin titleRegular() {
+    @extend %titles;
+    font-family: $regular-monts;
+    font-size: 24px;
+}
+@mixin subtitle($size: 25px,$align:center) {
+    @extend %titles;
     font-family: $bold-monts;
     font-weight: 300;
     text-align: $align;
-    margin-bottom: 20px;
-    margin-top: 0;
     font-size: $size - 1;
-    display: block;
-    padding: 0;
     
     @media (min-width:$media-1){
         font-size: $size;
@@ -15,6 +25,11 @@
     &.left {
         text-align: left;
     }
+}
+@mixin title {
+    @extend %titles;
+    font-family: $light-monts;
+    font-size: 30px;
 }
 @mixin highlight() {
     .av-highlight {
