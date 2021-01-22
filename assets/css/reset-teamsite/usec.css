@@ -907,13 +907,6 @@ A.otherWhite {
   text-decoration: underline;
 }
 
-.body {
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: normal;
-  color: #000000;
-}
-
 A.body {
   font-family: Arial;
   font-size: 11px;
@@ -2741,15 +2734,6 @@ a.loginLinks {
   font-family: Arial, Helvetica, sans-serif;
   color: #CCCCCC;
   font-size: 11px;
-}
-
-.totalQty {
-  FONT-WEIGHT: bold;
-  FONT-SIZE: 11px;
-  COLOR: red;
-  LINE-HEIGHT: 13px;
-  FONT-FAMILY: Arial;
-  TEXT-DECORATION: none;
 }
 
 .HT_top_line {

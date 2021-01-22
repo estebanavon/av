@@ -39,8 +39,13 @@
 }
 
 .articleHeader {
-    background-color: $color-dark-light;
+    background-color: $color-dark-lighter;
     height: 200px;
+    overflow: hidden;
+    width: 100%;
+    > img {
+        width: 100%;
+    }
 }
 
 table.border_rightstyle.bg1_f2f0f0{
@@ -87,11 +92,15 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 .place_an_order_tbl2 {
     box-shadow: $color-shadow-border;
     border-spacing: 7px 0px;
+    background-color: $color-light-white;
+    margin-bottom: 20px;
+
     .tdcell_R.border_top_white > table > tbody {
         display: flex;
         align-items: center;
         label strong {
             white-space: nowrap;
+            @include text-system($regular-monts);
         }
     }
     label {
@@ -102,31 +111,33 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 /*------- PLACE N ORDER PADDING 2020 ------*/
 
 .tbl_bgpink,
-[name="frmPreviewOrder"] > table,
-[name="frmDemoBrochure"] > table,
-[name="exForm"] > table:first-of-type,
-[name="frmSummary"] > table,
-#frmCreateOrder > table,
-#newIooffersForm > table,
-#clearanceoffersForm > table,
+[name="frmPreviewOrder"],
+[name="frmDemoBrochure"],
+[name="exForm"],
+[name="frmSummary"],
+[name="frmConfirm"],
+#frmCreateOrder,
+#newIooffersForm,
+#clearanceoffersForm,
+#returnForm,
+#aaa.bor_outer,
 .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
     padding: 0px 40px;
+    box-sizing: border-box;
     width: 100%;
     @media (min-width:$media-3) {
         padding: 0px 60px;
     }
 }
-[name="frmSummary"] > table:first-of-type {
-    display: block;
-    ~ table {
-        display: flex;
-        justify-content: flex-end;
-        @media (min-width:$media-3) {
-            padding: 0px 60px;
-        }
-        .buttonBgpink {
-            @include av-button-secondary;
-        }
+#frmSelectCampaign {
+    padding: 0px 30px;
+}
+[name="frmSummary"] > table:last-child {
+    display: flex;
+    justify-content: flex-end;
+    
+    .buttonBgpink {
+        @include av-button-secondary;
     } 
     .bodyR {
         color: $color-white;
@@ -168,7 +179,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 /*------- SAVED ORDER TABLE 2020 ------*/
 
 #divOuter_1 + table.alt_rows {
-    margin: 50px 0px;  
+    margin: 50px 0px 25px 0px;  
     .bg_fff9f9 {
         @include av-table($color-secondary,$color-white);
         box-shadow: $color-shadow-border;
@@ -176,13 +187,30 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
             @include text-system($regular-monts);
         }
     }
-} 
-
+}
+#div_0 {
+    animation-name: avFadeTable;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes avFadeTable {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.border_left.border_right[style="border-bottom:1px solid #E1DFDF"] {
+    border-bottom: none !important;
+    margin-bottom: 55px;
+}
 
 /*------- PLACE N ORDER COUNTER 2020 ------*/
 
 table.order_table {
-    box-shadow: 0px 0px 4px $color-dark-light;
+    box-shadow: $color-shadow-border;
     text-align: right;
     width: 280px;
     @media (min-width:$media-3){
@@ -195,21 +223,15 @@ table.order_table {
         
         > tr:nth-child(1) td {
             font-size: 13px;
-            padding: 4px 30px;
-            font-family: $regular-monts;
-            background-color: $color-dark-light;
-            color: $color-text;
-        }
-        .bg_lightpinkheader {
-            font-size: 12px;
-            padding: 4px;
-            background-color: $color-dark-lighter;
-         }
-         .bg_lightpink,.bg_lightpinklast {
+            padding: 6px 30px;
             font-family: $bold-monts;
-            color: $color-secondary;
+            color: $color-white;
+            background-color: $color-secondary;
+        }
+        .bg_lightpinkheader, .bg_lightpink,.bg_lightpinklast {
             font-size: 12px;
-            padding: 3px;
+            padding-top: 2px;
+            background-color: $color-light-white;
          }
     }
 }
@@ -218,7 +240,7 @@ table.order_table {
 /*------- BROSURA 2020 ------*/
 
 .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
-    margin-top: 50px;
+    margin: 50px 0xp;
 }
 .contentbackgroundcolor table[width="745px"].bor_outer {
     width: 100%;
@@ -232,6 +254,7 @@ table.order_table {
                 box-shadow: $color-shadow-border;
                 > td {
                     padding: 10px 40px;
+                    background-color: $color-light-white;
                 }
                 .border_bottomd7d1d1 {
                     > table {
@@ -271,10 +294,20 @@ table.order_table {
     
 }
 
+#aaa.bor_outer {
+    margin-top: 30px;
+    + #replacementsTbl.bor_outer {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
 /*------- QUICK ORDER 2020 ------*/
 
 .copyTextbox {
     width: 100%;
+    display: block;
 }
 .copyImage {
     width: 100%;
@@ -353,7 +386,9 @@ td.bg2_f2f0f0.padding_3.active1 {
     display: block;
 }
 
-
+.margin_top10{
+    margin: 20px;
+}
 
 /*------- CLEARANCE OFFERS 2020 ------*/
 
@@ -405,4 +440,39 @@ td.bg2_f2f0f0.padding_3.active1 {
             min-height: 100px;
         }
     } 
+}
+
+/*------- SUBTOTAL 2020 ------*/
+
+td .font_bold.font_14.txt_fff {
+    @include subtitle(25px,center);
+    color: $color-secondary;
+    line-height: 29px;
+    padding-left: 70px;
+    background-color:$color-white;
+    display: table-cell;
+    ~ td.padding_10 {
+        @include text-system($regular-monts);
+        padding-right: 70px;
+    }
+}
+.body {
+    > img[src="/REPSuite/static/images/iom/banner_subtotal_text.gif"] {
+        width: 100%
+    }
+    em {
+        @include text-system($regular-monts);
+        padding-left: 70px;
+        color: $color-secondary;
+        
+    }
+} 
+
+/*------- SUBTOTAL 2020 ------*/
+.tableBorder [bgcolor="#EDEEEF"] {
+    background-color: transparent;
+}
+[name="frmConfirm"] [src="static/images/article_content/es_headIMG.jpg"]{
+    width: 342px;
+    height: auto;
 }

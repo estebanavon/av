@@ -58,7 +58,9 @@
 @mixin av-table($colorHeader:$color-dark-lighter,$color:$color-text) {
     width: 100%;
     text-align:center;
-    > tbody > tr:first-child.font_bold > td:not(.border_bottomgray), tbody > tr:first-child > td.font_bold {
+    > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+    > tbody > tr:first-child > td.font_bold,
+    > table > tbody > tr:first-child > td {
         font-family: $semi-bold-monts;
         font-size: 14px;
         color: $color;
@@ -66,10 +68,13 @@
         background-color: $colorHeader;
         text-align: center;
         line-height: 13px;
-        border-right: 1px solid white;
+        border-right: 1px solid $color-white-lighter;
     }
     td {
         @include text-system()
+    }
+    tr.bgaltwhite, tr.bgalt {
+        height: 30px;
     }
 }
 

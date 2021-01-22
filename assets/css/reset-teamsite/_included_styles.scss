@@ -899,10 +899,10 @@ height:100px;
 // {
 // border:solid 1px #aaaaaa;
 // }
-.bg_f5f3f4
-{
-background-color:#f5f3f4;
-}
+// .bg_f5f3f4
+// {
+// background-color:#f5f3f4;
+// }
 .padding_5
 {
 padding:5px;
@@ -1228,8 +1228,8 @@ margin-left:10px;
 }
 
 
-.inner_table_bg{
-}
+// .inner_table_bg{
+// }
 
 // .td_subheader_bg{
 //     width: 214px;
@@ -1241,13 +1241,13 @@ margin-left:10px;
 //     padding: 0 5px;
 // }
 
-.sub_heading{
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: #000000;
-    line-height: 20px;
-    font-size: 12px;
-	font-weight: bold;
-}
+// .sub_heading{
+//     font-family: Verdana, Arial, Helvetica, sans-serif;
+//     color: #000000;
+//     line-height: 20px;
+//     font-size: 12px;
+// 	font-weight: bold;
+// }
 
 
 // .sub_heading1{
@@ -1266,9 +1266,9 @@ margin-left:10px;
 			Strength=5);
 	
 }
-.hr_grey{
-border-bottom:1px solid #f00088;
-}
+// .hr_grey{
+// border-bottom:1px solid #f00088;
+// }
 
 #fast_order{
 background:url(../images/iom/green_arrow_ico.gif) no-repeat 10% 10%;
@@ -1470,9 +1470,9 @@ font-style:italic;
 color:#dc2021;
 }
 
-.margin_top10{
-margin-top:10px;
-}
+// .margin_top10{
+// margin: 20px;
+// }
 
 ul#dash_right_bar_list{
 margin:0px;
@@ -1884,10 +1884,10 @@ height:20px;
 
 #replacementsTbl{
 height:200px;
-overflow-y:scroll;
+overflow-y:auto;
 overflow-x:hidden;
-margin-right:5px;
-margin-left:4px;
+// margin-right:5px;
+// margin-left:4px;
 }
 .padding20{
 padding:20px 20px 20px 20px;
@@ -2230,7 +2230,7 @@ td.mouseOver_txt a:hover {
 //text-decoration: none;
 }
 
-td.mouseOut_cell {
+//td.mouseOut_cell {
 	//color: #f00088;
 	//background-color: #f9f9f9;
 	// font-size: 13px;
@@ -2239,18 +2239,18 @@ td.mouseOut_cell {
 	// width: 15%;
 	// font-family: "helvetica neue", sans-serif;
 	// border-bottom: 1px solid #e2e2e2;
-}
+//}
 
 .padding_dashboard
 {
 padding-left:5;
 padding-right:5;
 }
-tr.bgaltwhite
-{
-background-color:#ffffff;
+// tr.bgaltwhite
+// {
+// background-color:#ffffff;
 
-}
+// }
 /*Category_style*/
 
 
@@ -2850,12 +2850,12 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
                 
 /*== SUBTOTAL ==*/
 
-td .font_bold.font_14.txt_fff{
-    background-color:#ffffff;
-    font-size:20px;
-    line-height: 34px;
-    color: #FF00A2;
-}
+// td .font_bold.font_14.txt_fff{
+//     background-color:#ffffff;
+//     font-size:20px;
+//     line-height: 34px;
+//     color: #FF00A2;
+// }
                 
 /*== END SUBTOTAL ==*/
 
