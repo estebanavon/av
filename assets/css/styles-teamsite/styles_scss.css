@@ -53,6 +53,32 @@
   font-family: gotham-book;
 }
 
+.av-subtitle, .av-subtitle-support, .multimedia-title h2, .multimedia-layout-wrapper .video-text-item h3 {
+  color: #3b4546;
+  text-align: left;
+  margin: 0px;
+  margin-bottom: 20px;
+  display: block;
+  padding: 0;
+}
+
+.avHome-card {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+}
+
+.avHome-card:hover {
+  -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* by Gerber Barillas */
+/* by Gerber Barillas */
 section.av-container {
   overflow-x: hidden;
 }
@@ -464,15 +490,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-subtitle {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 31.3px;
-  display: block;
-  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -502,15 +523,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-subtitle-support {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 26.2px;
-  display: block;
-  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -799,7 +815,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-card .av-card-text .av-card-title {
-  font-size: 17px;
+  font-size: 18px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   margin-bottom: 5px;
   color: #3b4546;
@@ -1656,15 +1672,10 @@ video:focus {
 }
 
 .multimedia-title h2 {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 31.3px;
-  display: block;
-  padding: 0;
   margin: 2rem;
 }
 
@@ -1679,15 +1690,10 @@ video:focus {
 }
 
 .multimedia-layout-wrapper .video-text-item h3 {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 16px;
-  display: block;
-  padding: 0;
   margin: 2rem;
 }
 
@@ -2457,8 +2463,6 @@ a {
       -ms-flex: 1;
           flex: 1;
   margin: 9px;
-  -webkit-box-shadow: 0px 0px 5px #cccccc;
-          box-shadow: 0px 0px 5px #cccccc;
   position: relative;
   height: 200px;
   z-index: 1;
@@ -2475,12 +2479,6 @@ a {
           align-items: center;
 }
 
-.avHome-card:hover {
-  -webkit-box-shadow: 0px 0px 10px gray;
-          box-shadow: 0px 0px 10px gray;
-  z-index: 10;
-}
-
 .avHome-card:hover .avHome-overlay {
   display: block;
 }
@@ -2495,8 +2493,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
 
 .avHome-card:first-child {

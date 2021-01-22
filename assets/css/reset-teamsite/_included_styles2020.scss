@@ -27,14 +27,15 @@ a.ord_link {
 .contentbackgroundcolor {
     padding: 0px 10px;
 }
-
+.tbl_header_big, .contentbackgroundcolor td.tbl_bgmid3, .sub_heading1 {
+    @include title;
+}
 .contentbackgroundcolor td.tbl_bgmid3 {
-    @include subtitle(25px,left);
     white-space: nowrap;
 }
 
 .order_method_campaign {
-    @include subtitle(25px,left);
+    @include titleRegular();
     padding: 35px 0px 15px 50px;
     height: auto;
     + [width="55%"] {
@@ -62,9 +63,7 @@ td h2 {
     @include text-system($bold-monts)
 }
 
-.tbl_header_big{
-    @include subtitle(25px,left);
-}
+
 .tbl_outerline, #returnForm > table {
     box-shadow: $color-shadow-border;
 }
@@ -114,9 +113,6 @@ input[type="checkbox"] {
 }
 
 /*by GErber Barillas 12 enero 2021*/
-.sub_heading1{
-    @include subtitle(20px,left);
-}
 td input.buttonBgorder{
     @include av-button-secondary;
 }

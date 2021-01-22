@@ -226,7 +226,7 @@ table.order_table {
             padding: 6px 30px;
             font-family: $bold-monts;
             color: $color-white;
-            background-color: $color-secondary;
+            background-image: $color-gradient;
         }
         .bg_lightpinkheader, .bg_lightpink,.bg_lightpinklast {
             font-size: 12px;
@@ -240,7 +240,7 @@ table.order_table {
 /*------- BROSURA 2020 ------*/
 
 .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
-    margin: 50px 0xp;
+    margin: 50px 0px;
 }
 .contentbackgroundcolor table[width="745px"].bor_outer {
     width: 100%;
@@ -285,7 +285,7 @@ table.order_table {
                     height: auto;
                 }
                 td h3 {
-                    padding: 10px;
+                    padding: 0px 10px;
                 }
             }
         }
@@ -442,6 +442,10 @@ td.bg2_f2f0f0.padding_3.active1 {
     } 
 }
 
+.tbl_bgleft3 {
+    width: 0px;
+}
+
 /*------- SUBTOTAL 2020 ------*/
 
 td .font_bold.font_14.txt_fff {
@@ -475,4 +479,46 @@ td .font_bold.font_14.txt_fff {
 [name="frmConfirm"] [src="static/images/article_content/es_headIMG.jpg"]{
     width: 342px;
     height: auto;
+    margin-top: 30px;
+}
+.bg_f4f1f1 {
+    padding: 10px;
+    background-image: $color-gradient;
+    td {
+        color: $color-white !important;
+    }
+}
+.padding5.font_12 {
+    [src="/REPSuite/static/images/iom/confirmation_order_image.jpg"] {
+        position: relative;
+        top: -120px;
+    }
+}
+[valign="bottom"] > .alt_rows .tbl_bgmid3.tbl_header_big {
+    padding: 0 80px;
+}
+
+td.leftalign {
+    > table.bor_outer,
+    > table.padding10 {
+        padding: 0 80px;
+        display: block;
+        td:not(.orderbrochure_content) {
+            @include text-system;
+        }
+    }
+} 
+.orderbrochure_content {
+    @include subtitle(20px,left);
+}
+.tbl_bgleft3 + .tbl_bgmid3.tbl_header_big > font {
+    padding: 0 80px;
+}
+table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="top"] > td > table > tbody > tr > td > table {
+    padding: 0 80px;
+    width: 60%;
+    display: block;
+    td {
+        @include text-system;
+    }
 }

@@ -53,6 +53,15 @@
   font-family: gotham-book;
 }
 
+.av-subtitle, .av-subtitle-support, .multimedia-title h2, .multimedia-layout-wrapper .video-text-item h3, .av-prtnl-subtitle.secondary {
+  color: #3b4546;
+  text-align: left;
+  margin: 0px;
+  margin-bottom: 20px;
+  display: block;
+  padding: 0;
+}
+
 section.av-container {
   overflow-x: hidden;
 }
@@ -464,15 +473,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-subtitle {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 37px;
-  display: block;
-  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -502,15 +506,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-subtitle-support {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 31px;
-  display: block;
-  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -799,7 +798,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-card .av-card-text .av-card-title {
-  font-size: 20px;
+  font-size: 21px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   margin-bottom: 5px;
   color: #3b4546;
@@ -2045,15 +2044,10 @@ video:focus {
 }
 
 .multimedia-title h2 {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 37px;
-  display: block;
-  padding: 0;
   margin: 2rem;
 }
 
@@ -2068,15 +2062,10 @@ video:focus {
 }
 
 .multimedia-layout-wrapper .video-text-item h3 {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 19px;
-  display: block;
-  padding: 0;
   margin: 2rem;
 }
 
@@ -2676,15 +2665,10 @@ a {
 }
 
 .av-prtnl-subtitle.secondary {
-  color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
   font-size: 19px;
-  display: block;
-  padding: 0;
   text-align: left;
   background-color: transparent;
   font-family: gotham-bold, "Arial Black", Gadget, sans-serif;
