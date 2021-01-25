@@ -7,7 +7,7 @@ $(document).ready(function(){
     
 
     const avMarket = AvonAnalyticsObjex.Visitor.market;
-    
+
     var campaignTwo,campaignThree;
     
     otherCampaign(currentCampaign, true);
@@ -103,7 +103,16 @@ $(document).ready(function(){
         return urlFile
     }
     
-
+    function imgImg(type,file) {
+        let imgRoute;
+        if (type == 'img') {
+            imgRoute = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/'+ file;
+            return imgRoute
+        } else if (type == 'video'){
+            imgRoute = '/FLDSuite/static/images/mis_folletos/'+ file + '.jpg';
+            return imgRoute
+        }
+    }
     var canvasIdNumber,canvasID,_PDF_DOC;
 
     function pdfImg(type,canvasIdNumber,file,e){
@@ -117,7 +126,7 @@ $(document).ready(function(){
                 showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);
             }
             
-        } else {
+        } else if (type == 'imb') {
             if (campaignSelector(e) > 9 && file >= 10) {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
@@ -138,8 +147,9 @@ $(document).ready(function(){
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
                 'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/0'+ campaignSelector(e) +'/20'+ otherYear(e) +
                 '0' + campaignSelector(e) + '_' + file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
-            }
-            
+            }  
+        } else {
+            avCanvasLet = '';
         }
         return avCanvasLet
     }
@@ -187,7 +197,7 @@ $(document).ready(function(){
                     canvasIdNumber = campaignSelector(e) + '_' +i;
                     
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
-                        '<div class="av-brochure-image">' + pdfImg(brochuresConstructor[e][i].type,canvasIdNumber,brochuresConstructor[e][i].file,e) +
+                        '<div class="av-brochure-image" style="background-size: cover; background-image: url(\''+ imgImg(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) +'\');">' + pdfImg(brochuresConstructor[e][i].type,canvasIdNumber,brochuresConstructor[e][i].file,e) +
                             '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
                             '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" />' +
                             '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +

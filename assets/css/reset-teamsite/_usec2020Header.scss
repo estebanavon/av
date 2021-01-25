@@ -11,7 +11,7 @@
 }
 @mixin bodyMixin {
     display: table-cell;
-    background-color: $color-dark-lighter;
+    background-color: $color-light-white;
         
     > td {
         display: block;
@@ -36,7 +36,7 @@ table.border > tbody > tr > td > table > tbody {
             display: flex;
             flex-direction: row-reverse;
             position: relative;
-            padding: 0px 40px 12px 40px;
+            padding: 0px 40px 10px 40px;
 
             > td:first-child {
                 flex: 3;
@@ -56,14 +56,14 @@ table.border > tbody > tr > td > table > tbody {
                     > tr:nth-child(1) {
                         position: absolute;
                         top: 35px;
-                        right: 30px;
+                        right: 40px;
                         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                             position: static;
                         }
-                        tr[height="17px"] > td > table > tbody > tr {
-                            display: flex;
-                            flex-direction: row-reverse;
-                        }
+                        // tr[height="17px"] > td > table > tbody > tr {
+                        //     display: flex;
+                        //     flex-direction: row-reverse;
+                        // }
                     }
                     
                     > tr:nth-child(2) > td table {
@@ -73,18 +73,17 @@ table.border > tbody > tr > td > table > tbody {
                                 display: flex;
                                 > td:last-child {
                                     flex: 1;
-                                    padding-right: 70px;
+                                    padding-right: 80px;
                                     font-size: 12px;
                                     font-family: $regular-monts;
                                 }
-
                             } 
                             > td:first-child:not([colspan="3"]) {
                                 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                                     position: static;
                                 }
                                 position: absolute;
-                                right: 20px;
+                                right: 40px;
                                 top: 10px;
                                 background-color: $color-white;
                                 z-index: 100;
@@ -115,7 +114,44 @@ table.border > tbody > tr > td > table > tbody {
     > tr:nth-child(3){
         @include bodyMixin;
     }
-} 
+}
+.searchBox {
+    &::after {
+        content: 'BUSCAR';
+    }
+}
+.clickImage {
+    display: block;
+    margin: 25px auto 8px auto;
+}
+.dueby_text {
+    @include text-system($regular-monts);
+    font-size: 12px;
+    line-height: 12px;
+}
+.accName_Text,
+.ord_gray_txt {
+    @include text-system($bold-monts);
+    padding-left: 72px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+td .pink30_txt, .campaign_All{
+    font-size: 30px;
+    color:$color-secondary;
+    font-family: $bold-monts;
+}
+
+.pink12_txt, .daysLeft_text{
+    font-size: 14px;
+    color:$color-secondary;
+    ::before {
+        content: '/ ';
+    }
+}
+
+
 // LOG IN
 [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) {
     @include bodyMixin;

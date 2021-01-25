@@ -8,23 +8,8 @@
 
 /*------- HEADER FIX 2020 ------*/
 
-.clickImage {
-    display: block;
-    margin: 30px auto 10px auto;
-}
 
-.accName_Text, .ord_gray_txt {
-    font-family: $bold-monts !important;
-    font-weight: bold;
-    color: $color-text;
-    text-transform: uppercase;
-    font-size: 14px !important;
-    text-align: left;
-    padding-left: 100px;
-}
-.dueby_text {
-    color: $color-text !important;
-}
+
 .topLinks {
  color: $color-text;
 	font-weight: normal;
@@ -39,10 +24,10 @@
 }
 
 .articleHeader {
-    background-color: $color-dark-lighter;
     height: 200px;
     overflow: hidden;
     width: 100%;
+    @include title;
     > img {
         width: 100%;
     }
@@ -149,7 +134,13 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 
 /*------- CREATE ORDER TABLES 2020 ------*/
 
-
+.breadcrumb_line {
+    display: flex;
+    > li {
+        margin-right: 10px;
+        list-style-type:none;
+    }
+}
 #frmCreateOrder > table {
     .div_table, .div_fst_ordrtable {
         table.body, table.tbl_lineentry {
@@ -181,7 +172,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 #divOuter_1 + table.alt_rows {
     margin: 50px 0px 25px 0px;  
     .bg_fff9f9 {
-        @include av-table($color-secondary,$color-white);
+        @include av-table($color-dark-light,$color-text);
         box-shadow: $color-shadow-border;
         td:not(.bodyR) {
             @include text-system($regular-monts);
@@ -254,15 +245,11 @@ table.order_table {
                 box-shadow: $color-shadow-border;
                 > td {
                     padding: 10px 40px;
-                    background-color: $color-light-white;
                 }
                 .border_bottomd7d1d1 {
                     > table {
                         width: 100%;
 
-                        > tbody > tr:last-child {
-                            display: none;
-                        }
                         td {
                             text-align: right;
                             @include text-system($bold-monts);
