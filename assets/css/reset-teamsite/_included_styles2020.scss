@@ -5,6 +5,10 @@ ul.breadcrumb_line li a {
 ul.breadcrumb_line li.active a {
     @include av-button-tertiary;
 }
+ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
+    padding:  10px 20px;
+    font-size: 14px;
+}
 .buttonBg {
     @include av-button-primary;
 }
@@ -12,17 +16,23 @@ ul.breadcrumb_line li.active a {
     @include av-button-tertiary;
 }
 
-.tbl_outerline .buttonBgpink {
-    @include av-button-secondary;
-    margin: 0px 10px 10px 10px;
-}
 a.ord_link {
     @include av-button-tertiary;
 }
 .view a:not(.ord_link), .view_order a {
     @include av-button-tertiary;
 }
+.view, .view_order {
+    ~ td [onclick="ClearAllItems();"]{
+        @include av-button-outline;
+        margin-right: 7px;
+    }
+} 
 
+.tbl_outerline .buttonBgpink {
+    @include av-button-secondary;
+    margin: 0px 10px 10px 10px;
+}
 
 .contentbackgroundcolor {
     padding: 0px 10px;
@@ -33,7 +43,6 @@ a.ord_link {
 .contentbackgroundcolor td.tbl_bgmid3 {
     white-space: nowrap;
 }
-
 .order_method_campaign {
     @include titleRegular();
     padding: 35px 0px 15px 50px;
@@ -51,14 +60,14 @@ label,
 .tbl_orderpack td,
 .font_bold,
 .box_action_text,
+.saved_customer_name,
+td.tbl_header,
 td h3 {
     @include text-system($regular-monts)
 }
 
 .sub_heading,
 .sub_heading2,
-td.tbl_header,
-.saved_customer_name,
 td h2 {
     @include text-system($bold-monts)
 }
@@ -78,7 +87,7 @@ td h2 {
     @include av-table();
 }
 .tbl_outerline.bg_fff9f9 {
-    @include av-table($color-secondary,$color-white);
+    @include av-table($color-dark-light,$color-text);
 }
 
 .pop_main_header_txt {

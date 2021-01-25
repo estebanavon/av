@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, .tbl_outerline .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, td input.buttonBgorder {
+.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,16 +66,16 @@
   white-space: nowrap;
 }
 
-.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, td input.buttonBgorder:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, td input.buttonBgorder:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, td input.buttonBgorder:focus {
+.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
   outline: none;
   text-decoration: none !important;
 }
 
-.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, td input.negative.buttonBgorder {
+.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder {
   color: #fff;
 }
 
-.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, .tbl_outerline .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, td input.buttonBgorder {
+.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
   color: #fff;
   padding: 13px 30px;
   text-align: center;
@@ -88,12 +88,12 @@
           align-items: center;
 }
 
-.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, td input.buttonBgorder:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, td input.buttonBgorder:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, td input.buttonBgorder:focus {
+.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
   color: #fff;
   z-index: 5;
 }
 
-.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, td input.small.buttonBgorder {
+.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder {
   padding: 10px 20px;
   font-size: 14px;
 }
@@ -189,7 +189,7 @@
   font-size: 14px;
 }
 
-td .font_bold.font_14.txt_fff, .orderbrochure_content, .tbl_header_big, .contentbackgroundcolor td.tbl_bgmid3, .sub_heading1, .order_method_campaign, .titleStep4, .Order_title_Step4 {
+.articleHeader, td .font_bold.font_14.txt_fff, .orderbrochure_content, .tbl_header_big, .contentbackgroundcolor td.tbl_bgmid3, .sub_heading1, .order_method_campaign, .titleStep4, .Order_title_Step4 {
   color: #3b4546;
   text-align: left;
   margin: 0px;
@@ -300,16 +300,6 @@ td .padding_left30 {
 .ord_gray_txt11 {
   font: 11px;
   color: #8F8F8F;
-}
-
-td .pink30_txt {
-  font-size: 30px;
-  color: #FF3399;
-}
-
-.pink12_txt {
-  font: 12px;
-  color: #FF3399;
 }
 
 .blk_main_heading24 {
@@ -517,11 +507,6 @@ p.contentlast {
 
 /*------------------------------------------------------Line entry-------------------------------------------*/
 /*-----------------------------------------------lineentry----------------------------------*/
-ul.breadcrumb_line li {
-  list-style-type: none;
-  display: inline;
-}
-
 ul.nav_lineentry li a {
   float: left;
   padding: 0px 0px;
@@ -2179,32 +2164,6 @@ font:Arial;
 */
 /* Added Newly for Style Guide Issues*/
 /*************************** Calendar - Start ***************************************/
-.campaign_All {
-  font-family: futura, helvetica, arial, sans-serif;
-  font-weight: bold;
-  color: #ed008c;
-}
-
-.dueby_text {
-  font-family: arial, sans-serif;
-  font-weight: bold;
-  color: #000000;
-}
-
-.daysLeft_text {
-  font-family: arial, sans-serif;
-  font-weight: bold;
-  color: #ed008c;
-  font-size: 12px;
-}
-
-.accName_Text {
-  font-family: arial, sans-serif;
-  font-weight: bold;
-  color: #565656;
-  font-size: 12px;
-}
-
 .acc_info_text {
   font-family: arial, sans-serif;
   line-height: 12px;
@@ -2512,25 +2471,6 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
 }
 
 /*------- HEADER FIX 2020 ------*/
-.clickImage {
-  display: block;
-  margin: 30px auto 10px auto;
-}
-
-.accName_Text, .ord_gray_txt {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
-  font-weight: bold;
-  color: #3b4546;
-  text-transform: uppercase;
-  font-size: 14px !important;
-  text-align: left;
-  padding-left: 100px;
-}
-
-.dueby_text {
-  color: #3b4546 !important;
-}
-
 .topLinks {
   color: #3b4546;
   font-weight: normal;
@@ -2546,10 +2486,11 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
 }
 
 .articleHeader {
-  background-color: #f0f0f0;
   height: 200px;
   overflow: hidden;
   width: 100%;
+  font-family: montserrat-light, Helvetica, sans-serif;
+  font-size: 30px;
 }
 
 .articleHeader > img {
@@ -2696,6 +2637,17 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 }
 
 /*------- CREATE ORDER TABLES 2020 ------*/
+.breadcrumb_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumb_line > li {
+  margin-right: 10px;
+  list-style-type: none;
+}
+
 #frmCreateOrder > table .div_table table.body > tbody > tr, #frmCreateOrder > table .div_table table.tbl_lineentry > tbody > tr, #frmCreateOrder > table .div_fst_ordrtable table.body > tbody > tr, #frmCreateOrder > table .div_fst_ordrtable table.tbl_lineentry > tbody > tr {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
@@ -2734,9 +2686,9 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 #divOuter_1 + table.alt_rows .bg_fff9f9 > table > tbody > tr:first-child > td {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: #3b4546;
   padding: 17px 0px;
-  background-color: #E82F89;
+  background-color: #cccccc;
   text-align: center;
   line-height: 13px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
@@ -2854,15 +2806,10 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
 
 .contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr > td {
   padding: 10px 40px;
-  background-color: #F7F7F7;
 }
 
 .contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table {
   width: 100%;
-}
-
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table > tbody > tr:last-child {
-  display: none;
 }
 
 .contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table td {
@@ -3205,6 +3152,11 @@ ul.breadcrumb_line li.active a.negative:hover, ul.breadcrumb_line li.active a.ne
   color: #fff;
 }
 
+ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
 .buttonBg {
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
@@ -3233,11 +3185,6 @@ ul.breadcrumb_line li.active a.negative:hover, ul.breadcrumb_line li.active a.ne
 
 .buttonBgpink.negative:hover, .buttonBgpink.negative:active, .buttonBgpink.negative:focus {
   color: #fff;
-}
-
-.tbl_outerline .buttonBgpink {
-  background-color: #7F28C4;
-  margin: 0px 10px 10px 10px;
 }
 
 a.ord_link {
@@ -3286,6 +3233,28 @@ a.ord_link.negative:hover, a.ord_link.negative:active, a.ord_link.negative:focus
   color: #fff;
 }
 
+.view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"] {
+  color: #7F28C4;
+  border: solid 1px #7F28C4;
+  margin-right: 7px;
+}
+
+.view ~ td [onclick="ClearAllItems();"]:hover, .view_order ~ td [onclick="ClearAllItems();"]:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+  border: solid 1px transparent;
+  color: #7F28C4;
+}
+
+.view ~ td [onclick="ClearAllItems();"].small, .view_order ~ td [onclick="ClearAllItems();"].small {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.tbl_outerline .buttonBgpink {
+  background-color: #7F28C4;
+  margin: 0px 10px 10px 10px;
+}
+
 .contentbackgroundcolor {
   padding: 0px 10px;
 }
@@ -3321,6 +3290,8 @@ label,
 .tbl_orderpack td,
 .font_bold,
 .box_action_text,
+.saved_customer_name,
+td.tbl_header,
 td h3 {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
@@ -3330,8 +3301,6 @@ td h3 {
 
 .sub_heading,
 .sub_heading2,
-td.tbl_header,
-.saved_customer_name,
 td h2 {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
@@ -3402,9 +3371,9 @@ td h2 {
 .tbl_outerline.bg_fff9f9 > table > tbody > tr:first-child > td {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: #3b4546;
   padding: 17px 0px;
-  background-color: #E82F89;
+  background-color: #cccccc;
   text-align: center;
   line-height: 13px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
@@ -3469,7 +3438,7 @@ a.linkList.visited {
   padding: 6px;
   border: none;
   border-bottom: 1px solid #3b4546;
-  background-color: #f0f0f0;
+  background-color: #F7F7F7;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: border-bottom 1s;
@@ -3497,7 +3466,7 @@ select {
   padding: 6px;
   border: none;
   border-bottom: 1px solid #3b4546;
-  background-color: #f0f0f0;
+  background-color: #F7F7F7;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: border-bottom 1s;
