@@ -5,6 +5,7 @@
         box-shadow: $color-shadow-hover;
         z-index: 10;
     }
+    
 }
 @mixin av-tabs-active {
     font-family: $bold-monts;
@@ -37,7 +38,7 @@
     padding: 6px;
     border: none;
     border-bottom: 1px solid $color-dark;
-    background-color: $color-light-white;
+    background-color: $color-white-lighter !important;
     box-shadow: none;
     transition: border-bottom 1s;
     border-radius: 0px;
@@ -54,12 +55,22 @@
         outline: none;
     }   
 }
-
+@mixin av-textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: $regular-monts;
+    color: $color-text;
+    border-radius: 4px;
+    border: 2px solid #e2e2e2;
+    resize: none;
+}
 @mixin av-table($colorHeader:$color-dark-lighter,$color:$color-text) {
     width: 100%;
     text-align:center;
     > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
     > tbody > tr:first-child > td.font_bold,
+    > tbody > tr:first-child > td > div.font_bold,
     > table > tbody > tr:first-child > td {
         font-family: $semi-bold-monts;
         font-size: 14px;
@@ -70,8 +81,11 @@
         line-height: 13px;
         border-right: 1px solid $color-white-lighter;
     }
-    td {
-        @include text-system()
+    > tbody > tr:first-child > td > a.font_bold, 
+    > tbody > tr:first-child > td > a {
+        color: $color-primary;
+        white-space: nowrap;
+        text-decoration: none;
     }
     tr.bgaltwhite, tr.bgalt {
         height: 30px;
@@ -91,6 +105,13 @@
 @mixin alert-warning {
     @extend %message-alert;
     color: $color-warning !important;
+}
+
+@mixin img-full-screen {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
 }
 
 
@@ -130,14 +151,13 @@
 }
 
 @mixin cont_mar_step4 {
-    margin: 40px 0 40px 0;
+    padding: 40px 60px;
 }
 @mixin cont_title_step4 {
     line-height: 40px;
 }
 @mixin cont_warning_Step4{
     background-color: $color-light-white;
-    padding: 40px;
 }
 
 @mixin title_pink {
@@ -148,9 +168,7 @@
     border: 2px solid $color-secondary;
     color:$color-secondary;
 }
-@mixin list_product_step4 {
-    margin-top:50px;
-}
+
 @mixin position {
     position: relative;
     top: 20px;

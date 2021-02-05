@@ -3,15 +3,12 @@ section.av-lw {
     flex-direction: row;
     width: 100%;
     min-height: 96vh;
-    @media (min-width:$media-3){
-        width: 900px; 
-    }
 
     aside {
         flex: 1;
         z-index: 20;
         display: none;
-        box-shadow: 6px 0px 10px rgba(0,0,0,0.2);
+        box-shadow: 7px 0px 8px rgba(0,0,0,0.1);
         
         .av-intro {
             flex: 3;
@@ -67,7 +64,7 @@ section.av-lw {
         width: 100%;
         transition: all 0.7s;
         position: relative;
-        background-color: $color-light-white;
+        
         @media (min-width:$media-1){
             width: 65%;
         }

@@ -1,59 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  src: url("/FLDSuite/static/fonts/ZonaPro-Black.otf");
-  font-family: zona-pro-black;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/ZonaPro-Light.otf");
-  font-family: zona-pro-light;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/ZonaPro-Regular.otf");
-  font-family: zona-pro-regular;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/ZonaPro-SemiBold.otf");
-  font-family: zona-pro-semi-bold;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/ZonaPro-Thin.otf");
-  font-family: ZonaProThin;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/Montserrat-Regular.ttf");
-  font-family: montserrat-regular;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/Montserrat-Light.ttf");
-  font-family: montserrat-light;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/Montserrat-SemiBold.ttf");
-  font-family: montserrat-semi-bold;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/Montserrat-Bold.ttf");
-  font-family: montserrat-bold;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/Gotham-Bold.otf");
-  font-family: gotham-bold;
-}
-
-@font-face {
-  src: url("/FLDSuite/static/fonts/Gotham-Book.otf");
-  font-family: gotham-book;
-}
-
 /* CSS Document */
 /* <!-- Texto corrido tamaï¿½o adecuado */
 .texto_normal td, .texto_normal th {
@@ -330,24 +275,6 @@ A.footerText {
   width: 125px;
 }
 
-.pinkTBlogin {
-  color: #f00088;
-  height: auto;
-  font-family: Arial;
-  font-size: 9pt;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  min-height: 0px;
-  padding: 5px 8px;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e2e2;
-  text-align: left;
-}
-
 .pinkTBPhone {
   color: #646464;
   border-style: solid solid solid solid;
@@ -418,48 +345,12 @@ A.footerText {
   font-family: Arial;
 }
 
-.bodyCenter {
-  color: #646464;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 11px;
-  font-family: Arial;
-  line-height: 13px;
-}
-
 A.error {
   color: red;
   font-weight: normal;
   text-decoration: underline;
   font-size: 11px;
   font-family: Arial;
-}
-
-A.bodyCenter {
-  color: #646464;
-  font-weight: normal;
-  text-decoration: underline;
-  font-size: 11px;
-  font-family: Arial;
-  line-height: 13px;
-}
-
-A.bodyCenter.visisted {
-  color: #646464;
-  font-weight: normal;
-  text-decoration: underline;
-  font-size: 11px;
-  font-family: Arial;
-  line-height: 13px;
-}
-
-A.bodyBold {
-  color: #646464;
-  font-weight: bold;
-  text-decoration: underline;
-  font-size: 11px;
-  font-family: Arial;
-  line-height: 13px;
 }
 
 .body1 {
@@ -733,13 +624,6 @@ A.linkListBold.visited {
   font-family: Arial;
 }
 
-.tableBg1 {
-  background-color: #f9f9f9;
-  font-size: 11px;
-  font-family: Arial;
-  color: #000000;
-}
-
 .selectorLine {
   background-color: #646464;
 }
@@ -756,18 +640,6 @@ A.linkListBold.visited {
   SCROLLBAR-ARROW-COLOR: #000000;
   SCROLLBAR-TRACK-COLOR: #000000;
   SCROLLBAR-DARKSHADOW-COLOR: #000000;
-}
-
-.loginBoxBG {
-  background-color: #f1f0f0;
-  padding: 10px;
-  border-top: 1px solid #cccccc;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 .popupRowBG {
@@ -798,14 +670,6 @@ A.linkListBold.visited {
   font-weight: normal;
   color: #000000;
   line-height: 13px;
-}
-
-.commentsArticleHeader {
-  font-family: Arial;
-  font-size: 21px;
-  font-weight: normal;
-  color: #646464;
-  line-height: 25px;
 }
 
 .smallerArticleHeader {
@@ -904,14 +768,6 @@ A.otherWhite {
   color: #ffffff;
   text-align: left;
   line-height: 13px;
-  text-decoration: underline;
-}
-
-A.body {
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: normal;
-  color: #000000;
   text-decoration: underline;
 }
 
@@ -1115,17 +971,6 @@ A.bodyLink.visited {
   background-color: #D7E5F2;
   color: #102132;
   border: 1px solid #284279;
-}
-
-.smallfieldcell select {
-  font: 12px Arial;
-  background-color: #FFFFFF;
-  color: #666666;
-  border: 1px solid #e2e2e2;
-  width: 145px;
-  text-align: left;
-  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.08);
-          box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.08);
 }
 
 .smallfieldcellHome select {
@@ -1481,15 +1326,6 @@ A.menuItem.visited {
   border-bottom-width: 1px;
 }
 
-.bodyBold {
-  FONT-WEIGHT: bold;
-  FONT-SIZE: 11px;
-  COLOR: #646464;
-  LINE-HEIGHT: 13px;
-  FONT-FAMILY: Arial;
-  TEXT-DECORATION: none;
-}
-
 .contentHeaderBigBold {
   FONT-WEIGHT: bold;
   FONT-SIZE: 19px;
@@ -1573,15 +1409,6 @@ A.menuItem.visited {
   height: 24em;
   overflow: auto;
   scrollbar: yes;
-}
-
-.bodyBold {
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: bold;
-  color: #646464;
-  text-align: left;
-  line-height: 13px;
 }
 
 .flexTile {
@@ -3395,7 +3222,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   position: relative;
-  padding: 0px 40px 10px 40px;
+  padding: 0px 40px 14px 40px;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
@@ -3449,7 +3276,6 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
           flex: 1;
   padding-right: 80px;
   font-size: 12px;
-  font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {
@@ -3487,6 +3313,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
   margin: 0 auto;
   height: auto;
   width: 992px;
+  min-height: 75vh;
 }
 
 @media (min-width: 1024px) {
@@ -3511,29 +3338,8 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 }
 
 .dueby_text {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
   font-size: 12px;
   line-height: 12px;
-}
-
-.accName_Text,
-.ord_gray_txt {
-  color: #3b4546;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
-  padding-left: 72px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-td .pink30_txt, .campaign_All {
-  font-size: 30px;
-  color: #E82F89;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
 }
 
 .pink12_txt, .daysLeft_text {
@@ -3545,30 +3351,76 @@ td .pink30_txt, .campaign_All {
   content: '/ ';
 }
 
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) {
-  display: table-cell;
-  background-color: #F7F7F7;
-  padding: 0 60px;
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td {
-  display: block;
-  background-color: #fff;
-  margin: 0 auto;
-  height: auto;
-  width: 992px;
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
+  display: none;
 }
 
 @media (min-width: 1024px) {
-  [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td {
-    width: 1024px;
+  [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
+    display: table-cell;
+    height: 80vh;
   }
 }
 
-@media (min-width: 1200px) {
-  [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td {
-    width: 1200px;
-  }
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table {
+  width: 100%;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:last-child > td {
+  height: 0px;
+  overflow: hidden;
+  display: none;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv {
+  display: block !important;
+  width: 400px;
+  padding: 40px 50px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv > table > tbody > tr:first-child > td > img {
+  width: 100%;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv .loginBoxBG > table > tbody > tr > td > table {
+  width: 100%;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(4) tr, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(6) tr, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(8) tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 12px;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(4) tr input, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(6) tr input, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(8) tr input {
+  width: 100%;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(4) td:nth-child(2) {
+  margin: 10px 0px;
+}
+
+[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv a.bodyCenter {
+  margin: 5px 0px;
 }
 
 [name="homeNavParent"] > table {

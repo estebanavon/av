@@ -19,6 +19,8 @@
         margin: 0 auto;
         height: auto;
         width: $media-2;
+        min-height: 75vh;
+        
         @media (min-width:$media-3) {
             width: $media-3;
         }
@@ -36,7 +38,7 @@ table.border > tbody > tr > td > table > tbody {
             display: flex;
             flex-direction: row-reverse;
             position: relative;
-            padding: 0px 40px 10px 40px;
+            padding: 0px 40px 14px 40px;
 
             > td:first-child {
                 flex: 3;
@@ -60,10 +62,7 @@ table.border > tbody > tr > td > table > tbody {
                         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                             position: static;
                         }
-                        // tr[height="17px"] > td > table > tbody > tr {
-                        //     display: flex;
-                        //     flex-direction: row-reverse;
-                        // }
+                        
                     }
                     
                     > tr:nth-child(2) > td table {
@@ -75,7 +74,6 @@ table.border > tbody > tr > td > table > tbody {
                                     flex: 1;
                                     padding-right: 80px;
                                     font-size: 12px;
-                                    font-family: $regular-monts;
                                 }
                             } 
                             > td:first-child:not([colspan="3"]) {
@@ -125,23 +123,10 @@ table.border > tbody > tr > td > table > tbody {
     margin: 25px auto 8px auto;
 }
 .dueby_text {
-    @include text-system($regular-monts);
     font-size: 12px;
     line-height: 12px;
 }
-.accName_Text,
-.ord_gray_txt {
-    @include text-system($bold-monts);
-    padding-left: 72px;
-    text-transform: uppercase;
-    text-align: left;
-}
 
-td .pink30_txt, .campaign_All{
-    font-size: 30px;
-    color:$color-secondary;
-    font-family: $bold-monts;
-}
 
 .pink12_txt, .daysLeft_text{
     font-size: 14px;
@@ -154,8 +139,62 @@ td .pink30_txt, .campaign_All{
 
 // LOG IN
 [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) {
-    @include bodyMixin;
-    padding: 0 60px;
+    //@include bodyMixin;
+    > td > table > tbody > tr {
+        display: flex;
+        > td {
+            flex: 1;
+            &:first-child {
+                display: none;
+                @media (min-width:$media-3) {
+                    display: table-cell;
+                    height: 80vh;
+                }
+            }
+            &:last-child {
+                > table {
+                    width: 100%;
+                    > tbody > tr:last-child > td {
+                        height: 0px;
+                        overflow: hidden;
+                        display: none;
+                    }
+                }
+            }
+        }
+        #logindiv {
+            display: block !important;
+            width: 400px;
+            padding: 40px 50px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.15);
+            > table > tbody > tr:first-child > td > img {
+                width: 100%;
+            }
+            .loginBoxBG > table > tbody > tr > td > table {
+                width: 100%;
+            }
+            [name="loginForm"] ~ tr {
+                &:nth-last-child(4), &:nth-last-child(6), &:nth-last-child(8){
+                    tr {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 12px;
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+                &:nth-last-child(4) {
+                    td:nth-child(2) {
+                        margin: 10px 0px;
+                    }
+                }
+            }
+            a.bodyCenter {
+                margin: 5px 0px;
+            }
+        }
+    }
 }
 [name="homeNavParent"] > table {
     background-image: none;

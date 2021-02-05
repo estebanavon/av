@@ -5,31 +5,50 @@
         width: 900px !important;
     }
 }
-
+[name="dashboardInformationForm"] td[nowrap=""]{
+    white-space: normal !important;
+}
 /*------- HEADER FIX 2020 ------*/
 
 
-
-.topLinks {
- color: $color-text;
+%toplink {
+    color: $color-text;
 	font-weight: normal;
 	text-decoration: none;
-	font-size: 11px;
-	font-family:  $regular-monts;
+    font-size: 11px;
     cursor: pointer;
     padding: 0 7px;
     + .spacer {
         font-size: 0;
     }
 }
-
+.topLinks {
+    @extend %toplink;
+    font-family:  $regular-monts;
+}
+.topLinksBold {
+    @extend %toplink;
+    font-family:  $bold-monts;
+}
+.accName_Text,
+.ord_gray_txt {
+    @include text-system($bold-monts);
+    padding-left: 72px;
+    text-transform: uppercase;
+    text-align: left;
+}
+td .pink30_txt, .campaign_All{
+    font-size: 30px;
+    color:$color-secondary;
+    font-family: $bold-monts;
+}
 .articleHeader {
-    height: 200px;
-    overflow: hidden;
     width: 100%;
+    height: auto;
     @include title;
+    
     > img {
-        width: 100%;
+        @include img-full-screen();
     }
 }
 
@@ -57,7 +76,7 @@ table.border_rightstyle.bg1_f2f0f0{
 div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
     padding-left: 0 !important;
     img {
-        width: 100%;
+        @include img-full-screen;
     }
     
 }
@@ -85,7 +104,6 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
         align-items: center;
         label strong {
             white-space: nowrap;
-            @include text-system($regular-monts);
         }
     }
     label {
@@ -107,15 +125,26 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 #returnForm,
 #aaa.bor_outer,
 .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
-    padding: 0px 40px;
+    padding: 0px 30px;
     box-sizing: border-box;
     width: 100%;
     @media (min-width:$media-3) {
-        padding: 0px 60px;
+        padding: 0px 50px;
     }
 }
 #frmSelectCampaign {
     padding: 0px 30px;
+}
+
+.order_method_campaign + [width="55%"],
+.view ~ td:nth-child(4),
+.view_order ~ td:nth-child(4),
+tr.rightalign > td[valign="top"],
+tr[align="right"] > td[valign="top"] {
+    padding-right: 30px;
+    @media (min-width:$media-3) {
+        padding-right: 50px;
+    }
 }
 [name="frmSummary"] > table:last-child {
     display: flex;
@@ -142,6 +171,16 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
     }
 }
 #frmCreateOrder > table {
+    > tbody > tr > td > table[width="751"] {
+        display: block;
+        width: 100%;
+        > tbody > tr > td:first-child img {
+            @include img-full-screen;
+        }
+        img[width="361"] {
+            width: 0px;
+        }
+    }
     .div_table, .div_fst_ordrtable {
         table.body, table.tbl_lineentry {
             > tbody {
@@ -174,25 +213,13 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
     .bg_fff9f9 {
         @include av-table($color-dark-light,$color-text);
         box-shadow: $color-shadow-border;
-        td:not(.bodyR) {
-            @include text-system($regular-monts);
-        }
+    }
+    .openclose a {
+        @include av-link;
+        white-space: nowrap;
     }
 }
-#div_0 {
-    animation-name: avFadeTable;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-@keyframes avFadeTable {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
 .border_left.border_right[style="border-bottom:1px solid #E1DFDF"] {
     border-bottom: none !important;
     margin-bottom: 55px;
@@ -267,13 +294,17 @@ table.order_table {
             .tbl_orderpack > tbody {
                 display: flex;
                 flex-direction: column-reverse;
+                .bg_cecdcd {
+                    display: block;
+                    h3 {
+                        padding: 0px 10px;
+                        text-align: center;
+                    }
+                }
                 img[src^="static/images/offerImages"]{
-                    width: 100%;
-                    height: auto;
+                    @include img-full-screen;
                 }
-                td h3 {
-                    padding: 0px 10px;
-                }
+                
             }
         }
 
@@ -281,14 +312,9 @@ table.order_table {
     
 }
 
-#aaa.bor_outer {
-    margin-top: 30px;
-    + #replacementsTbl.bor_outer {
-        width: 90%;
-        margin: 0 auto;
-    }
+#searchForm p.button {
+    text-align: center;
 }
-
 
 /*------- QUICK ORDER 2020 ------*/
 
@@ -302,25 +328,37 @@ table.order_table {
     text-align: right;
 }
 
-/*------- LOGIN 2020 ------*/
+/*------- Ebrochure 2020 ------*/
 
 [onclick="winClose=false;"] > table {
     width: 100%;
 }
+/*------- LOGIN 2020 ------*/
 
-/*------- MODAL 2020 ------*/
-[name="addDemoForm"], [name="addOffersForm"] {
-    padding: 0 30px;
+[background="static/images/es_logo1.jpg"] {
+    background-image: none !important;
 }
 
+/*------- MODAL 2020 ------*/
+[name="addDemoForm"], [name="addOffersForm"], [name="addeditform"] {
+    padding: 0 30px;
+}
+[name="addeditform"] > table {
+    display: block;
+    width: 100%;
+}
+#displayCategoryForm table[width="85%"]{
+    width: 100%;
+}
+[src="static/images/headers/es_blue_divider770.jpg"] {
+    width: 0px;
+}
 /*------- TABLAS 2020 ------*/
 
 .div_table {
     .tbl_outerline {
         box-shadow: none;
-        td {
-            @include text-system($regular-monts)
-        }
+        
         .bg_f5f3f4 {
             background-color: $color-dark-lighter;
             height: 40px;
@@ -381,12 +419,12 @@ td.bg2_f2f0f0.padding_3.active1 {
 
 #clearanceoffersForm {
     .Io_table_header_bg img {
-        width: 100%;
+        @include img-full-screen;
      }
      #displayArea1 > table{
         border: none !important;
         border-spacing: 15px 8px;
-        > tbody > tr:nth-child(odd) > td {
+        > tbody > tr:nth-child(odd) > td[height="50%"] {
             @extend %borderShadow;
             padding: 20px 10px;
             
@@ -399,10 +437,7 @@ td.bg2_f2f0f0.padding_3.active1 {
                 }
             }
         }
-        > tbody > tr:last-child > td {
-            box-shadow: none;
-            padding: 0px;
-        }
+        
     }
 } 
 
@@ -443,23 +478,21 @@ td .font_bold.font_14.txt_fff {
     background-color:$color-white;
     display: table-cell;
     ~ td.padding_10 {
-        @include text-system($regular-monts);
         padding-right: 70px;
     }
 }
 .body {
     > img[src="/REPSuite/static/images/iom/banner_subtotal_text.gif"] {
-        width: 100%
+        @include img-full-screen
     }
     em {
-        @include text-system($regular-monts);
         padding-left: 70px;
-        color: $color-secondary;
-        
+        color: $color-secondary;       
     }
 } 
 
 /*------- SUBTOTAL 2020 ------*/
+
 .tableBorder [bgcolor="#EDEEEF"] {
     background-color: transparent;
 }
@@ -486,14 +519,29 @@ td .font_bold.font_14.txt_fff {
 }
 
 td.leftalign {
-    > table.bor_outer,
-    > table.padding10 {
-        padding: 0 80px;
-        display: block;
-        td:not(.orderbrochure_content) {
-            @include text-system;
+    > table.bor_outer {
+        &:not(.padding10) {
+            padding: 0 80px;
+            display: block;
+            .border_right {
+                padding-right: 60px;
+                border-right: 1px solid;
+                width: 500px;
+            }
+            .padding_left20 {
+                padding-left: 60px;
+            }
+            
+        }
+        &.padding10 {
+            padding: 0 50px;
+            display: block;
+            .leftalign {
+                width: 100%
+            }
         }
     }
+    
 } 
 .orderbrochure_content {
     @include subtitle(20px,left);
@@ -503,9 +551,179 @@ td.leftalign {
 }
 table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="top"] > td > table > tbody > tr > td > table {
     padding: 0 80px;
-    width: 60%;
+    width: 100%;
     display: block;
-    td {
-        @include text-system;
+}
+
+/*------- CAMBIOS 2020 ------*/
+#replacementsTbl {
+    img[border="1"]{
+        border: none !important;
     }
+}
+#aaa.bor_outer {
+    + #replacementsTbl.bor_outer {
+        width: 90%;
+        margin: 0 auto;   
+    }
+    
+}
+.content [src="/REPSuite/static/images/iom/banner_top_returns.jpg"] {
+    @include img-full-screen;
+}
+[src="/REPSuite/static/images/iom/returns_subtitle.jpg"] {
+    margin: 40px 0px;
+}
+.bg_efedee.padding_top10.padding_bottom10 {
+    table {
+        width: 100%;
+        img {
+            @include img-full-screen;
+            width: 90%;
+        }
+    }
+}
+.bg_f5f3f4 {
+    background-color: $color-light-white;
+}
+
+#returnForm > table > tbody > tr > td > table > tbody > tr > td {
+    @include av-table;
+}
+
+#folletos_virtuales_1 {
+    @include img-full-screen;
+}
+#orderTrackingForm table {
+        width: 100%;
+} 
+#profilePersonalForm {
+    .tableBg1 {
+        background-color: $color-light-white;
+        padding: 15px;
+    }
+    #Image1 {
+        width: auto !important;
+        height: auto !important;
+    }
+}
+[bgcolor="E6E9EE"] {
+    background-color: transparent !important;
+}
+.mtDropdownMenu .item td {
+    font: 11px Arial, Helvetica, sans-serif;
+}
+[name="frmConfirm"] .font_bold {
+    @include text-system($bold-monts);
+}
+table[width="700"] {
+    width: 100% !important;
+}
+#pagos_linea_ {
+    &1,&2,&3,&10 {
+        width: 100% !important;
+        height: auto;
+    }
+}
+#OfferStoreForm {
+    .horizontal_solid_line {
+        @extend %borderShadow;
+        display: block;
+        width: 98.5%;
+        max-width: 555px;
+        td.offer_prize_font_size table > tbody > tr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .offer_font_bold .offer_prize_font_size {
+            color: $color-secondary;
+        }
+    }
+    td:last-child > .horizontal_solid_line {
+        margin: 0 0 0 auto;
+    }
+    td:first-child > .horizontal_solid_line {
+        margin: 0 auto 0 0;
+    }
+} 
+.offer_action_header_txt, .offer_font_bold .offer_prize_font_size, .offer_decription {
+    @include text-system($bold-monts);
+    display: block;
+    margin-bottom: 10px;
+}
+.offer_action_text {
+    font-size: 13px;
+}
+
+[name="frmCustomer"] {
+    > div > table > tbody > tr:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        > td:first-child > img {
+            width: 100%;
+        }
+        .txt_black a {
+            @include av-button-tertiary;
+        }
+    }
+    #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table {
+        .txt_black a {
+            @include av-button-secondary
+        }
+    }
+}
+
+#search td.body > table > tbody {
+    display: flex;
+    flex-direction: column;
+    > tr > td[width="245"] {
+        width: 0px;
+    }
+    td.bodyBold {
+        text-align: left;
+    }
+    a {
+        @include av-link;
+        line-height: 30px;
+    }
+}
+#receivedMsgForm a {
+    @include av-link;
+}
+[name="changePasswordForm"],[name="sendMsgForm"] {
+    padding: 20px 0px;
+    table {
+        width: 100%;
+    }
+}
+img[height="14"], [type="image"][height="14"] {
+    height: auto !important;
+}
+.av-tc {
+    h2 {
+        @include title;
+        margin-bottom: 20px;
+    }
+    h4 {
+        @include text-system($bold-monts);
+        color: $color-dark-50;
+        margin-bottom: 20px;
+    }
+    p {
+        @include text-system;
+        color: $color-dark-50;
+        margin-bottom: 20px;  
+    }
+    ul {
+        list-style-type: circle;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        li {
+            @include text-system;
+            color: $color-dark-50;
+        }
+        
+    } 
 }

@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
+.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,16 +66,16 @@
   white-space: nowrap;
 }
 
-.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
+.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
   outline: none;
   text-decoration: none !important;
 }
 
-.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder {
+.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.negative, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder {
   color: #fff;
 }
 
-.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
+.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
   color: #fff;
   padding: 13px 30px;
   text-align: center;
@@ -88,12 +88,11 @@
           align-items: center;
 }
 
-.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
-  color: #fff;
+.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
   z-index: 5;
 }
 
-.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder {
+.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.small, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.small, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder {
   padding: 10px 20px;
   font-size: 14px;
 }
@@ -145,8 +144,16 @@
   min-width: 200px;
 }
 
+.av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
+  color: #fff;
+}
+
 .av-button-secondary {
   background-color: #7F28C4;
+}
+
+.av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
+  color: #fff;
 }
 
 .av-button-tertiary {
@@ -180,7 +187,6 @@
 
 .av-button-outline:hover {
   background-color: rgba(200, 200, 200, 0.1);
-  border: solid 1px transparent;
   color: #7F28C4;
 }
 
@@ -189,7 +195,10 @@
   font-size: 14px;
 }
 
-.articleHeader, td .font_bold.font_14.txt_fff, .orderbrochure_content, .tbl_header_big, .contentbackgroundcolor td.tbl_bgmid3, .sub_heading1, .order_method_campaign, .titleStep4, .Order_title_Step4 {
+.articleHeader, td .font_bold.font_14.txt_fff, .orderbrochure_content, .av-tc h2, .tbl_header_big,
+.contentbackgroundcolor td.tbl_bgmid3,
+.sub_heading1,
+.titleStep4, .order_method_campaign, h1 > em, .Order_title_Step4 {
   color: #3b4546;
   text-align: left;
   margin: 0px;
@@ -198,15 +207,7 @@
   padding: 0;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td,
-[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(3) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(4) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(5) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(6) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(7) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(8) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(9) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(10) tr td {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-box-shadow 0.4s;
@@ -215,21 +216,13 @@
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(3) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(4) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(5) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(6) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(7) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(8) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(9) tr td:hover,
-[name="exForm"] table tr td table tr td table:nth-of-type(10) tr td:hover {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(3) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(4) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(5) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(6) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(7) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(8) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(9) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(10) tr td:hover {
   -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
-.success, .error, .red_txt2, .totalQty {
+.success, .rtlBody > strong > font, .error, .red_txt2, .totalQty {
   text-transform: uppercase;
   font-size: 16px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
@@ -250,11 +243,6 @@ body {
   background-color: #FFFFFF;
 }
 
-td {
-  font: 11px Arial, Helvetica, sans-serif;
-  color: #040404;
-}
-
 div, p, h1, h2, h3, h4, h5, h6, span, form, input, ul, li, img, a {
   margin: 0;
   padding: 0;
@@ -262,10 +250,6 @@ div, p, h1, h2, h3, h4, h5, h6, span, form, input, ul, li, img, a {
 
 a img {
   border: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 a:hover {
@@ -341,10 +325,6 @@ td .padding_left30 {
 
 .radio_btn {
   height: 8px;
-}
-
-label {
-  line-height: 10px;
 }
 
 /*  ----  Form Element Styles ------ */
@@ -801,10 +781,6 @@ table .bor_right {
 .sort a:hover {
   color: #000;
   text-decoration: none;
-}
-
-.bg_efedee {
-  background-color: #efedee;
 }
 
 .bg_leftfff {
@@ -1292,10 +1268,6 @@ body#pop_add_to_order {
   font-size: 14px;
 }
 
-.grey_bg_table {
-  background-color: #f4f2f2;
-}
-
 .ord_gray_txt_dark {
   font-size: 12px;
   color: #636060;
@@ -1697,13 +1669,6 @@ a.returnsSearch {
   font-size: 11px;
 }
 
-.replacementDropBoxBlue {
-  width: 80%;
-  border: 1px solid #006699;
-  color: #444444;
-  font-size: 11px;
-}
-
 .replacementDropBoxBlueSmall {
   width: 70%;
   border: 1px solid #006699;
@@ -1796,11 +1761,6 @@ a.returnsSearch {
 
 .border_leftWhite {
   border-left: 2px solid #ffffff;
-}
-
-.ord_gray_txt10 {
-  font-size: 10px;
-  color: #555;
 }
 
 /*----------------divya-----------------*/
@@ -2071,7 +2031,7 @@ td.category_text {
   padding-right: 0px;
   padding-top: 1px;
   padding-bottom: 1px;
-  text-color: #000000;
+  color: #000000;
   font-size: 12px;
   text-decoration: none;
   font-family: Arial,Verdana,Sans-serif;
@@ -2195,13 +2155,6 @@ font:Arial;
 /*************************** Search - End  ****************************************/
 /*************************** Products Display - Start *************************************/
 /************************** Products Display - End **********************************/
-.saved_customer_name {
-  font-size: 12px;
-  font-family: arial;
-  color: #000000;
-  line-height: 21px;
-}
-
 .order_methods_active {
   font-family: Avant Garde Demi;
 }
@@ -2411,20 +2364,6 @@ td.tbl_header_pass02_text1 {
   text-align: center;
 }
 
-#copyTextArea {
-  resize: none;
-  width: 100%;
-  padding: 10px;
-  font-family: "helvetica neue", sans-serif;
-  font-size: 14px;
-  color: #333333;
-  border: 2px solid #e2e2e2;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
-  resize: none;
-}
-
 /* copy paste CR linenumber changes ends */
 /* Mich styles added*/
 .HT_bottom_line {
@@ -2470,31 +2409,61 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
   }
 }
 
+[name="dashboardInformationForm"] td[nowrap=""] {
+  white-space: normal !important;
+}
+
 /*------- HEADER FIX 2020 ------*/
-.topLinks {
+.topLinks, .topLinksBold {
   color: #3b4546;
   font-weight: normal;
   text-decoration: none;
   font-size: 11px;
-  font-family: montserrat-regular, Helvetica, sans-serif;
   cursor: pointer;
   padding: 0 7px;
 }
 
-.topLinks + .spacer {
+.topLinks + .spacer, .topLinksBold + .spacer {
   font-size: 0;
 }
 
+.topLinks {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+}
+
+.topLinksBold {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+.accName_Text,
+.ord_gray_txt {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  padding-left: 72px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+td .pink30_txt, .campaign_All {
+  font-size: 30px;
+  color: #E82F89;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
 .articleHeader {
-  height: 200px;
-  overflow: hidden;
   width: 100%;
+  height: auto;
   font-family: montserrat-light, Helvetica, sans-serif;
   font-size: 30px;
 }
 
 .articleHeader > img {
   width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
 
 table.border_rightstyle.bg1_f2f0f0 {
@@ -2526,6 +2495,9 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 
 div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
   width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
 
 .table_bg {
@@ -2564,10 +2536,6 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 
 .place_an_order_tbl2 .tdcell_R.border_top_white > table > tbody label strong {
   white-space: nowrap;
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
 }
 
 .place_an_order_tbl2 label {
@@ -2590,7 +2558,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 #returnForm,
 #aaa.bor_outer,
 .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
-  padding: 0px 40px;
+  padding: 0px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -2609,12 +2577,30 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
   #returnForm,
   #aaa.bor_outer,
   .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
-    padding: 0px 60px;
+    padding: 0px 50px;
   }
 }
 
 #frmSelectCampaign {
   padding: 0px 30px;
+}
+
+.order_method_campaign + [width="55%"],
+.view ~ td:nth-child(4),
+.view_order ~ td:nth-child(4),
+tr.rightalign > td[valign="top"],
+tr[align="right"] > td[valign="top"] {
+  padding-right: 30px;
+}
+
+@media (min-width: 1024px) {
+  .order_method_campaign + [width="55%"],
+  .view ~ td:nth-child(4),
+  .view_order ~ td:nth-child(4),
+  tr.rightalign > td[valign="top"],
+  tr[align="right"] > td[valign="top"] {
+    padding-right: 50px;
+  }
 }
 
 [name="frmSummary"] > table:last-child {
@@ -2628,6 +2614,10 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 
 [name="frmSummary"] > table:last-child .buttonBgpink {
   background-color: #7F28C4;
+}
+
+[name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmSummary"] > table:last-child .buttonBgpink:focus {
+  color: #fff;
 }
 
 [name="frmSummary"] > table:last-child .bodyR {
@@ -2646,6 +2636,22 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 .breadcrumb_line > li {
   margin-right: 10px;
   list-style-type: none;
+}
+
+#frmCreateOrder > table > tbody > tr > td > table[width="751"] {
+  display: block;
+  width: 100%;
+}
+
+#frmCreateOrder > table > tbody > tr > td > table[width="751"] > tbody > tr > td:first-child img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+#frmCreateOrder > table > tbody > tr > td > table[width="751"] img[width="361"] {
+  width: 0px;
 }
 
 #frmCreateOrder > table .div_table table.body > tbody > tr, #frmCreateOrder > table .div_table table.tbl_lineentry > tbody > tr, #frmCreateOrder > table .div_fst_ordrtable table.body > tbody > tr, #frmCreateOrder > table .div_fst_ordrtable table.tbl_lineentry > tbody > tr {
@@ -2683,6 +2689,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td.font_bold,
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > div.font_bold,
 #divOuter_1 + table.alt_rows .bg_fff9f9 > table > tbody > tr:first-child > td {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
@@ -2694,50 +2701,35 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-#divOuter_1 + table.alt_rows .bg_fff9f9 td {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > a.font_bold,
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 #divOuter_1 + table.alt_rows .bg_fff9f9 tr.bgaltwhite, #divOuter_1 + table.alt_rows .bg_fff9f9 tr.bgalt {
   height: 30px;
 }
 
-#divOuter_1 + table.alt_rows .bg_fff9f9 td:not(.bodyR) {
-  color: #3b4546;
+#divOuter_1 + table.alt_rows .openclose a {
+  color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  white-space: nowrap;
 }
 
-#div_0 {
-  -webkit-animation-name: avFadeTable;
-          animation-name: avFadeTable;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
+#divOuter_1 + table.alt_rows .openclose a:hover {
+  background-color: #f6effc;
 }
 
-@-webkit-keyframes avFadeTable {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes avFadeTable {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+#divOuter_1 + table.alt_rows .openclose a.visited {
+  color: #66209d;
 }
 
 .border_left.border_right[style="border-bottom:1px solid #E1DFDF"] {
@@ -2839,22 +2831,24 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
           flex-direction: column-reverse;
 }
 
+.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody .bg_cecdcd {
+  display: block;
+}
+
+.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody .bg_cecdcd h3 {
+  padding: 0px 10px;
+  text-align: center;
+}
+
 .contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody img[src^="static/images/offerImages"] {
   width: 100%;
+  display: block;
+  margin: 0 auto;
   height: auto;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody td h3 {
-  padding: 0px 10px;
-}
-
-#aaa.bor_outer {
-  margin-top: 30px;
-}
-
-#aaa.bor_outer + #replacementsTbl.bor_outer {
-  width: 90%;
-  margin: 0 auto;
+#searchForm p.button {
+  text-align: center;
 }
 
 /*------- QUICK ORDER 2020 ------*/
@@ -2869,27 +2863,38 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
   text-align: right;
 }
 
-/*------- LOGIN 2020 ------*/
+/*------- Ebrochure 2020 ------*/
 [onclick="winClose=false;"] > table {
   width: 100%;
 }
 
+/*------- LOGIN 2020 ------*/
+[background="static/images/es_logo1.jpg"] {
+  background-image: none !important;
+}
+
 /*------- MODAL 2020 ------*/
-[name="addDemoForm"], [name="addOffersForm"] {
+[name="addDemoForm"], [name="addOffersForm"], [name="addeditform"] {
   padding: 0 30px;
+}
+
+[name="addeditform"] > table {
+  display: block;
+  width: 100%;
+}
+
+#displayCategoryForm table[width="85%"] {
+  width: 100%;
+}
+
+[src="static/images/headers/es_blue_divider770.jpg"] {
+  width: 0px;
 }
 
 /*------- TABLAS 2020 ------*/
 .div_table .tbl_outerline {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.div_table .tbl_outerline td {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
 }
 
 .div_table .tbl_outerline .bg_f5f3f4 {
@@ -2949,6 +2954,9 @@ td.bg2_f2f0f0.padding_3.active1 {
 /*------- CLEARANCE OFFERS 2020 ------*/
 #clearanceoffersForm .Io_table_header_bg img {
   width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
 
 #clearanceoffersForm #displayArea1 > table {
@@ -2956,24 +2964,18 @@ td.bg2_f2f0f0.padding_3.active1 {
   border-spacing: 15px 8px;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"] {
   padding: 20px 10px;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td > table {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"] > table {
   border-spacing: 10px 0px;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td > table div.offers_description {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"] > table div.offers_description {
   width: 80%;
   overflow: hidden;
   margin-bottom: 5px;
-}
-
-#clearanceoffersForm #displayArea1 > table > tbody > tr:last-child > td {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  padding: 0px;
 }
 
 /*------- CLEARANCE OFFERS MODAL 2020 ------*/
@@ -3027,22 +3029,17 @@ td .font_bold.font_14.txt_fff.left {
 }
 
 td .font_bold.font_14.txt_fff ~ td.padding_10 {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
   padding-right: 70px;
 }
 
 .body > img[src="/REPSuite/static/images/iom/banner_subtotal_text.gif"] {
   width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
 
 .body em {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
   padding-left: 70px;
   color: #E82F89;
 }
@@ -3077,18 +3074,28 @@ td .font_bold.font_14.txt_fff ~ td.padding_10 {
   padding: 0 80px;
 }
 
-td.leftalign > table.bor_outer,
-td.leftalign > table.padding10 {
+td.leftalign > table.bor_outer:not(.padding10) {
   padding: 0 80px;
   display: block;
 }
 
-td.leftalign > table.bor_outer td:not(.orderbrochure_content),
-td.leftalign > table.padding10 td:not(.orderbrochure_content) {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+td.leftalign > table.bor_outer:not(.padding10) .border_right {
+  padding-right: 60px;
+  border-right: 1px solid;
+  width: 500px;
+}
+
+td.leftalign > table.bor_outer:not(.padding10) .padding_left20 {
+  padding-left: 60px;
+}
+
+td.leftalign > table.bor_outer.padding10 {
+  padding: 0 50px;
+  display: block;
+}
+
+td.leftalign > table.bor_outer.padding10 .leftalign {
+  width: 100%;
 }
 
 .orderbrochure_content {
@@ -3114,11 +3121,320 @@ td.leftalign > table.padding10 td:not(.orderbrochure_content) {
 
 table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="top"] > td > table > tbody > tr > td > table {
   padding: 0 80px;
-  width: 60%;
+  width: 100%;
   display: block;
 }
 
-table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="top"] > td > table > tbody > tr > td > table td {
+/*------- CAMBIOS 2020 ------*/
+#replacementsTbl img[border="1"] {
+  border: none !important;
+}
+
+#aaa.bor_outer + #replacementsTbl.bor_outer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content [src="/REPSuite/static/images/iom/banner_top_returns.jpg"] {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+[src="/REPSuite/static/images/iom/returns_subtitle.jpg"] {
+  margin: 40px 0px;
+}
+
+.bg_efedee.padding_top10.padding_bottom10 table {
+  width: 100%;
+}
+
+.bg_efedee.padding_top10.padding_bottom10 table img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 90%;
+}
+
+.bg_f5f3f4 {
+  background-color: #F7F7F7;
+}
+
+#returnForm > table > tbody > tr > td > table > tbody > tr > td {
+  width: 100%;
+  text-align: center;
+}
+
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td.font_bold,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > div.font_bold,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:first-child > td {
+  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #3b4546;
+  padding: 17px 0px;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > a.font_bold,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+#returnForm > table > tbody > tr > td > table > tbody > tr > td tr.bgaltwhite, #returnForm > table > tbody > tr > td > table > tbody > tr > td tr.bgalt {
+  height: 30px;
+}
+
+#folletos_virtuales_1 {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+#orderTrackingForm table {
+  width: 100%;
+}
+
+#profilePersonalForm .tableBg1 {
+  background-color: #F7F7F7;
+  padding: 15px;
+}
+
+#profilePersonalForm #Image1 {
+  width: auto !important;
+  height: auto !important;
+}
+
+[bgcolor="E6E9EE"] {
+  background-color: transparent !important;
+}
+
+.mtDropdownMenu .item td {
+  font: 11px Arial, Helvetica, sans-serif;
+}
+
+[name="frmConfirm"] .font_bold {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+table[width="700"] {
+  width: 100% !important;
+}
+
+#pagos_linea_1, #pagos_linea_2, #pagos_linea_3, #pagos_linea_10 {
+  width: 100% !important;
+  height: auto;
+}
+
+#OfferStoreForm .horizontal_solid_line {
+  display: block;
+  width: 98.5%;
+  max-width: 555px;
+}
+
+#OfferStoreForm .horizontal_solid_line td.offer_prize_font_size table > tbody > tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#OfferStoreForm .horizontal_solid_line .offer_font_bold .offer_prize_font_size {
+  color: #E82F89;
+}
+
+#OfferStoreForm td:last-child > .horizontal_solid_line {
+  margin: 0 0 0 auto;
+}
+
+#OfferStoreForm td:first-child > .horizontal_solid_line {
+  margin: 0 auto 0 0;
+}
+
+.offer_action_header_txt, .offer_font_bold .offer_prize_font_size, .offer_decription {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.offer_action_text {
+  font-size: 13px;
+}
+
+[name="frmCustomer"] > div > table > tbody > tr:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+[name="frmCustomer"] > div > table > tbody > tr:last-child > td:first-child > img {
+  width: 100%;
+}
+
+[name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a {
+  color: #7F28C4;
+}
+
+[name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a svg {
+  fill: #7F28C4;
+  width: 26px;
+  height: 26px;
+  margin: 0 10px;
+}
+
+[name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus {
+  color: #7F28C4;
+}
+
+[name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative {
+  color: #fff;
+}
+
+[name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative:focus {
+  color: #fff;
+}
+
+[name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a {
+  background-color: #7F28C4;
+}
+
+[name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus {
+  color: #fff;
+}
+
+#search td.body > table > tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#search td.body > table > tbody > tr > td[width="245"] {
+  width: 0px;
+}
+
+#search td.body > table > tbody td.bodyBold {
+  text-align: left;
+}
+
+#search td.body > table > tbody a {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  line-height: 30px;
+}
+
+#search td.body > table > tbody a:hover {
+  background-color: #f6effc;
+}
+
+#search td.body > table > tbody a.visited {
+  color: #66209d;
+}
+
+#receivedMsgForm a {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#receivedMsgForm a:hover {
+  background-color: #f6effc;
+}
+
+#receivedMsgForm a.visited {
+  color: #66209d;
+}
+
+[name="changePasswordForm"], [name="sendMsgForm"] {
+  padding: 20px 0px;
+}
+
+[name="changePasswordForm"] table, [name="sendMsgForm"] table {
+  width: 100%;
+}
+
+img[height="14"], [type="image"][height="14"] {
+  height: auto !important;
+}
+
+.av-tc h2 {
+  font-family: montserrat-light, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.av-tc h4 {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.av-tc p {
+  color: #3b4546;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.av-tc ul {
+  list-style-type: circle;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.av-tc ul li {
+  color: #3b4546;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: gray;
+}
+
+body, td {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 15px;
@@ -3127,6 +3443,10 @@ table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="to
 
 ul.breadcrumb_line li a {
   background-color: #7F28C4;
+}
+
+ul.breadcrumb_line li a:hover, ul.breadcrumb_line li a:active, ul.breadcrumb_line li a:focus {
+  color: #fff;
 }
 
 ul.breadcrumb_line li.active a {
@@ -3162,6 +3482,10 @@ ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
   display: inline-block;
   min-width: 200px;
+}
+
+.buttonBg:hover, .buttonBg:active, .buttonBg:focus {
+  color: #fff;
 }
 
 .buttonBgpink {
@@ -3210,6 +3534,10 @@ a.ord_link.negative:hover, a.ord_link.negative:active, a.ord_link.negative:focus
   color: #fff;
 }
 
+a.ord_link span br {
+  display: none;
+}
+
 .view a:not(.ord_link), .view_order a {
   color: #7F28C4;
 }
@@ -3241,7 +3569,6 @@ a.ord_link.negative:hover, a.ord_link.negative:active, a.ord_link.negative:focus
 
 .view ~ td [onclick="ClearAllItems();"]:hover, .view_order ~ td [onclick="ClearAllItems();"]:hover {
   background-color: rgba(200, 200, 200, 0.1);
-  border: solid 1px transparent;
   color: #7F28C4;
 }
 
@@ -3250,16 +3577,34 @@ a.ord_link.negative:hover, a.ord_link.negative:active, a.ord_link.negative:focus
   font-size: 14px;
 }
 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  color: #3b4546;
+  border-radius: 4px;
+  border: 2px solid #e2e2e2;
+  resize: none;
+}
+
 .tbl_outerline .buttonBgpink {
   background-color: #7F28C4;
   margin: 0px 10px 10px 10px;
 }
 
-.contentbackgroundcolor {
-  padding: 0px 10px;
+.tbl_outerline .buttonBgpink:hover, .tbl_outerline .buttonBgpink:active, .tbl_outerline .buttonBgpink:focus {
+  color: #fff;
 }
 
-.tbl_header_big, .contentbackgroundcolor td.tbl_bgmid3, .sub_heading1 {
+.contentbackgroundcolor {
+  padding: 0px 20px;
+}
+
+.tbl_header_big,
+.contentbackgroundcolor td.tbl_bgmid3,
+.sub_heading1,
+.titleStep4 {
   font-family: montserrat-light, Helvetica, sans-serif;
   font-size: 30px;
 }
@@ -3275,40 +3620,39 @@ a.ord_link.negative:hover, a.ord_link.negative:active, a.ord_link.negative:focus
   height: auto;
 }
 
-.order_method_campaign + [width="55%"] {
-  padding-right: 40px;
-}
-
-@media (min-width: 1024px) {
-  .order_method_campaign {
-    padding-right: 60px;
-  }
-}
-
-label,
-.font_12,
-.tbl_orderpack td,
-.font_bold,
-.box_action_text,
-.saved_customer_name,
-td.tbl_header,
-td h3 {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
-}
-
+.commentsArticleHeader,
 .sub_heading,
 .sub_heading2,
-td h2 {
+td h2,
+.bodyBold,
+#profilePersonalForm .rtlBody strong,
+.tableBg1 strong,
+tr.tableBg1 ~ tr strong {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 15px;
   line-height: 17px;
 }
 
-.tbl_outerline, #returnForm > table {
+h1 > em {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 19px;
+}
+
+@media (min-width: 768px) {
+  h1 > em {
+    font-size: 20px;
+  }
+}
+
+h1 > em.left {
+  text-align: left;
+}
+
+.tbl_outerline, #returnForm > table,
+#orderTrackingForm td[height="10"] > table.body {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
@@ -3320,20 +3664,33 @@ td h2 {
 
 .tbl_lineentry,
 #aaa.bor_outer,
-#returnForm > table > tbody > tr > td > table {
+#returnForm > table > tbody > tr > td > table,
+#orderTrackingForm td[height="10"],
+.my_customer {
   width: 100%;
   text-align: center;
 }
 
 .tbl_lineentry > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .tbl_lineentry > tbody > tr:first-child > td.font_bold,
+.tbl_lineentry > tbody > tr:first-child > td > div.font_bold,
 .tbl_lineentry > table > tbody > tr:first-child > td,
 #aaa.bor_outer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #aaa.bor_outer > tbody > tr:first-child > td.font_bold,
+#aaa.bor_outer > tbody > tr:first-child > td > div.font_bold,
 #aaa.bor_outer > table > tbody > tr:first-child > td,
 #returnForm > table > tbody > tr > td > table > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td.font_bold,
-#returnForm > table > tbody > tr > td > table > table > tbody > tr:first-child > td {
+#returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td > div.font_bold,
+#returnForm > table > tbody > tr > td > table > table > tbody > tr:first-child > td,
+#orderTrackingForm td[height="10"] > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+#orderTrackingForm td[height="10"] > tbody > tr:first-child > td.font_bold,
+#orderTrackingForm td[height="10"] > tbody > tr:first-child > td > div.font_bold,
+#orderTrackingForm td[height="10"] > table > tbody > tr:first-child > td,
+.my_customer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+.my_customer > tbody > tr:first-child > td.font_bold,
+.my_customer > tbody > tr:first-child > td > div.font_bold,
+.my_customer > table > tbody > tr:first-child > td {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
   color: #3b4546;
@@ -3344,20 +3701,30 @@ td h2 {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.tbl_lineentry td,
-#aaa.bor_outer td,
-#returnForm > table > tbody > tr > td > table td {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+.tbl_lineentry > tbody > tr:first-child > td > a.font_bold,
+.tbl_lineentry > tbody > tr:first-child > td > a,
+#aaa.bor_outer > tbody > tr:first-child > td > a.font_bold,
+#aaa.bor_outer > tbody > tr:first-child > td > a,
+#returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td > a.font_bold,
+#returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td > a,
+#orderTrackingForm td[height="10"] > tbody > tr:first-child > td > a.font_bold,
+#orderTrackingForm td[height="10"] > tbody > tr:first-child > td > a,
+.my_customer > tbody > tr:first-child > td > a.font_bold,
+.my_customer > tbody > tr:first-child > td > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .tbl_lineentry tr.bgaltwhite, .tbl_lineentry tr.bgalt,
 #aaa.bor_outer tr.bgaltwhite,
 #aaa.bor_outer tr.bgalt,
 #returnForm > table > tbody > tr > td > table tr.bgaltwhite,
-#returnForm > table > tbody > tr > td > table tr.bgalt {
+#returnForm > table > tbody > tr > td > table tr.bgalt,
+#orderTrackingForm td[height="10"] tr.bgaltwhite,
+#orderTrackingForm td[height="10"] tr.bgalt,
+.my_customer tr.bgaltwhite,
+.my_customer tr.bgalt {
   height: 30px;
 }
 
@@ -3368,6 +3735,7 @@ td h2 {
 
 .tbl_outerline.bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td.font_bold,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold,
 .tbl_outerline.bg_fff9f9 > table > tbody > tr:first-child > td {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
@@ -3379,11 +3747,11 @@ td h2 {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.tbl_outerline.bg_fff9f9 td {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > a.font_bold,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .tbl_outerline.bg_fff9f9 tr.bgaltwhite, .tbl_outerline.bg_fff9f9 tr.bgalt {
@@ -3400,7 +3768,7 @@ td h2 {
   display: block;
 }
 
-.success {
+.success, .rtlBody > strong > font {
   color: #1A8282 !important;
 }
 
@@ -3408,7 +3776,7 @@ td h2 {
   color: #F09F87 !important;
 }
 
-a.linkList {
+a.linkList, a.bodyCenter, a.bodyBold, a.body {
   color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   text-decoration: underline;
@@ -3419,16 +3787,12 @@ a.linkList {
   transition: all 0.5s;
 }
 
-a.linkList:hover {
+a.linkList:hover, a.bodyCenter:hover, a.bodyBold:hover, a.body:hover {
   background-color: #f6effc;
 }
 
-a.linkList.visited {
+a.linkList.visited, a.bodyCenter.visited, a.bodyBold.visited, a.body.visited {
   color: #66209d;
-}
-
-.bg_f5f3f4 {
-  background-color: #F7F7F7;
 }
 
 .linearFormInput, input[type="text"]:not(.searchBox), input[type="password"] {
@@ -3438,7 +3802,7 @@ a.linkList.visited {
   padding: 6px;
   border: none;
   border-bottom: 1px solid #3b4546;
-  background-color: #F7F7F7;
+  background-color: rgba(255, 255, 255, 0.5) !important;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: border-bottom 1s;
@@ -3466,7 +3830,7 @@ select {
   padding: 6px;
   border: none;
   border-bottom: 1px solid #3b4546;
-  background-color: #F7F7F7;
+  background-color: rgba(255, 255, 255, 0.5) !important;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: border-bottom 1s;
@@ -3503,11 +3867,8 @@ td input.buttonBgorder {
   background-color: #7F28C4;
 }
 
-td.td_bot_border > p, td.td_bot_border > div {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgorder:focus {
+  color: #fff;
 }
 
 td.td_bot_border > p, td.td_bot_border > div p {
@@ -3531,23 +3892,8 @@ td.td_bot_border > p, td.td_bot_border > div p {
   color: #E82F89 !important;
 }
 
-[name="exForm"] table tr td table tr td table:nth-of-type(2),
-[name="exForm"] table tr td table tr td table:nth-of-type(3),
-[name="exForm"] table tr td table tr td table:nth-of-type(4),
-[name="exForm"] table tr td table tr td table:nth-of-type(5),
-[name="exForm"] table tr td table tr td table:nth-of-type(6),
-[name="exForm"] table tr td table tr td table:nth-of-type(7),
-[name="exForm"] table tr td table tr td table:nth-of-type(8),
-[name="exForm"] table tr td table tr td table:nth-of-type(9),
-[name="exForm"] table tr td table tr td table:nth-of-type(10) {
+[name="exForm"] table tr td table tr td table:nth-of-type(2), [name="exForm"] table tr td table tr td table:nth-of-type(3), [name="exForm"] table tr td table tr td table:nth-of-type(4), [name="exForm"] table tr td table tr td table:nth-of-type(5), [name="exForm"] table tr td table tr td table:nth-of-type(6), [name="exForm"] table tr td table tr td table:nth-of-type(7), [name="exForm"] table tr td table tr td table:nth-of-type(8), [name="exForm"] table tr td table tr td table:nth-of-type(9), [name="exForm"] table tr td table tr td table:nth-of-type(10) {
   border-spacing: 20px 15px;
-}
-
-.td_bot_border p {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
 }
 
 [name="newIooffersForm"] table tr td table tr td,
@@ -3559,33 +3905,8 @@ td.td_bot_border > p, td.td_bot_border > div p {
   line-height: 40px;
 }
 
-.titleStep4 {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 19px;
-  margin-bottom: 0px !important;
-}
-
-@media (min-width: 768px) {
-  .titleStep4 {
-    font-size: 20px;
-  }
-}
-
-.titleStep4.left {
-  text-align: left;
-}
-
-.textStep4 {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
-}
-
 .cont_mar_step4 {
-  margin: 40px 0 40px 0;
+  padding: 40px 60px;
 }
 
 .statuslight {
@@ -3594,7 +3915,6 @@ td.td_bot_border > p, td.td_bot_border > div p {
 
 .cont_warning_Step4 {
   background-color: #F7F7F7;
-  padding: 40px;
 }
 
 .title_pink {
@@ -3621,15 +3941,6 @@ td.td_bot_border > p, td.td_bot_border > div p {
 .divider {
   border: 2px solid #E82F89;
   color: #E82F89;
-  margin: 40px 0 40px 0;
-}
-
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table {
-  color: #3b4546;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
-  margin-top: 50px;
 }
 
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) {

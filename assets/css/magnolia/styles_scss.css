@@ -1343,7 +1343,6 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus {
-  color: #fff;
   z-index: 5;
 }
 
@@ -1399,8 +1398,16 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   min-width: 200px;
 }
 
+.av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
+  color: #fff;
+}
+
 .av-button-secondary {
   background-color: #7F28C4;
+}
+
+.av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
+  color: #fff;
 }
 
 .av-button-tertiary {
@@ -1434,7 +1441,6 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-button-outline:hover {
   background-color: rgba(200, 200, 200, 0.1);
-  border: solid 1px transparent;
   color: #7F28C4;
 }
 

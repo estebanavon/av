@@ -30,7 +30,6 @@
     &:hover,
     &:active,
     &:focus {
-        color: $color-white;
         z-index: 5;
     }
     &.small {
@@ -47,12 +46,22 @@
     background-image: $color-gradient;
     display: inline-block;
     min-width: 200px;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-white;
+    }
 }
 
 @mixin av-button-secondary{
     @extend %button-basic;
     @extend %button-basic-fill;
     background-color: $color-primary;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-white;
+    }
 }
 
 @mixin av-button-tertiary {
@@ -93,15 +102,14 @@
         color: $color-primary;
     }
 }
+
 @mixin av-button-outline {
     @extend %button-basic;
     @extend %button-basic-fill;
     color: $color-primary;
-    
     border: solid 1px $color-primary;
     &:hover {
         background-color: $color-dark-10;
-        border: solid 1px transparent;
         color: $color-primary;
     } 
     &.small {
