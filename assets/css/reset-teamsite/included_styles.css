@@ -3880,12 +3880,6 @@ td.td_bot_border > p, td.td_bot_border > div p {
   margin: 0 auto;
 }
 
-[name="exForm"] td.td_bot_border > div:nth-of-type(2) > span {
-  color: #7F28C4 !important;
-  border-bottom: 2px solid #E82F89;
-  padding-bottom: 10px;
-}
-
 [name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
   font-weight: 600;
   font-size: 22px !important;

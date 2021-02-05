@@ -1,0 +1,377 @@
+página Mis ordenes paso 0 mis ordenes.
+
+ 
+
+Elementos de formulario.
+
+ 
+
+    1) Tabla 
+        hoja de estilo:  included_styles.css  
+        selector : class place_an_order_tbl2 línea 2143
+        selector padre: id="campaignSelect" 
+
+ 
+
+    2) td 
+        hoja de estilo:  included_styles.css 
+        etiqueta : td línea 15 
+        selector : class padding5 línea 1398
+        selector padre: id="campaignSelect" 
+        
+    3) Texto
+        hoja de estilo:  included_styles.css  
+        etiqueta : label  en línea 1216
+ 
+    4) input radio 
+        hoja de estilo:  included_styles.css  
+        selector : id="campaignSelected"
+        type : radio acceder a esto
+        Nota: tiene los estilos por defecto del navegador
+
+ 
+
+    5) input radio 2
+        hoja de estilo:  included_styles.css  
+        selector : id="orderTypeSelected"
+        type : radio acceder a esto
+        Nota: tiene los estilos por defecto del navegador
+
+ 
+
+    6) input select
+        hoja de estilo:  included_styles.css  
+        selector : id="customerSelected"
+        type : radio acceder a esto
+
+ 
+
+    7) input button
+        hoja de estilo:  included_styles.css 
+        selector : id="startOrder"
+        selector : class buttonBg CSS en documento
+
+ 
+
+página Mis ordenes paso 0 mis ordenes.
+
+ 
+
+    1) tabla 
+        hoja de estilo: included_styles.css
+        class: alt_rows línea 321
+
+ 
+
+    2) recomiendo cambiar por html css el botón morado 
+
+ 
+
+    3) título Demos de Campaña #
+        hoja de estilo: included_styles.css
+        etiqueta: span
+        class : sub_heading1 línea 2786
+        class padre : tbl_header línea 332
+
+ 
+
+    4) imagenes demo 
+        hoja de estilo: included_styles.css
+        etiqueta: img
+        class padre: td_bot_border td_left_border td_right_border
+        selector : tr.tbl_header td.tbl_bgmid2 img línea 2778
+
+ 
+
+    5) texto Demos
+        p  css en línea 
+        span p css en línea  
+        hoja de estilo: included_styles.css
+        precio: etiqueta p
+            class : padding_top10 línea 1541
+            etiqueta : span    
+                class : red_txt2  línea 
+        -input 
+            type :button
+            hoja de estilo: included_styles.css
+            class : buttonBgorder línea 1030
+            selector : td input.buttonBgorder
+
+ 
+
+    6) Tabla despliegue productos  
+        hoja de estilo: included_styles.css 
+        class: td_bot_border td_left_border td_right_border  
+        selector : .td_bot_border línea 1394
+        selector2 : .td_right_border 1319
+        selector3 : .td_left_border 1315
+
+ 
+
+    7) Botón regresar 
+        hoja de estilo: included_styles.css 
+        etiqueta: padding
+        class : buttonpink
+        selector: p.buttonpink línea 666
+            input 
+                type: button
+                class : buttonBgpink
+                selector: .buttonBgpink línea 681   
+
+ 
+
+    8) Botón continuar 
+        hoja de estilo: included_styles.css 
+        etiqueta : p 
+        class: button
+        selector :p.button línea 224
+            input 
+                type: button
+                class: buttonBg
+                selector : .buttonBg línea 263
+    
+    9) ventana modal seleccion  demo 
+        overlay
+            hoja de estilo: thickbox.css 
+            etiqueta : div
+            id : TB_overlay
+            selector : #TB_overlay línea 34
+            selector2: .TB_overlayBG línea 44
+            class : TB_overlayBG
+                contenedor
+                    etiqueta : div
+                    id : TB_window
+                    selector : #TB_window línea 56
+                    selector : #TB_window línea 11 (mismo selector)
+                        iframe 
+                        id : TB_iframeContent
+                        selector: #TB_iframeContent línea 167
+                            imagen 1 (demos)
+                                etiqueta : img
+                                    selector :  td > img línea 91
+                                    hoja de estilo: usec.css 
+                                título 
+                                    etiqueta: strong
+                            variantes   
+                                etiqueta: img
+                                    selector:   td > img línea 91
+                                    hoja de estilo: usec.css 
+                                textos
+                                    etiqueta: td
+                                    class: padding_top5
+                                    selector: .tbl_orderpack td
+                                    selector2:  .padding_top5
+                                    hoja de estilo: included_styles.css
+                                input 
+                                    class : input_border
+                                    selector: .linearFormInput, input[type="text"]                             
+                                    hoja de estilo: usec.css 
+                                    selector2: .input_border
+                                    hoja de estilo: included_styles.css 
+                                boton agregar
+                                etiqueta: p
+                                selector: p.button línea 224
+                                class: button
+                                    input type: botton
+                                    class: buttonBg 
+                                    selector: .buttonBg línea 263
+                                    hoja de estilo: included_styles.css 
+
+
+Paso No: 3
+
+    itiqueta: img
+    selector: td > img línea 2284
+    hoja de estilos: usec.css
+
+    botón colocar orden.
+    etiqueta: p 
+    class: buttonpink
+    selector: p.buttonpink línea 666
+    hoja de estilo: included_styles.css 
+        input
+        class: buttonBgpink
+        selector: .buttonBgpink línea 681
+        hoja de estilo: included_styles.css 
+
+    botón continuar: 
+    etiqueta: p 
+    class: button línea 224
+    selector : p.button
+    hoja de estilo: included_styles.css 
+        input 
+        class: buttonBg seleccion
+        selector: .buttonBg línea 263
+
+Paso 4:
+    url: http://ecm1.cms.avon.com/iw-mount/default/main/Global_Internet/Cluster_Latin_America/Nicaragua/WebE_FLD/WORKAREA/avon-ni/REPSuite/contentmanaged/webepages/core/rep_order_summary_landing/slots/paiInformation_content.html
+    título: 
+        etiqueta: h1 
+            etiqueta: small
+            class: pink
+            selector : pink línea (en documento)
+
+    imagen: 
+        etiqueta : img
+        class: img-responsive
+        nativo de bootstrap.
+
+    texto: 
+        etiqueta: p 
+            etiqueta: strong
+            class: subtitles
+            selector : .subtitles  (en documento) 
+            etiqueta: strong 
+                etiqueta : span
+                class: green (yellow,.red, .gray)
+                selector: .green (en documento) 
+    mensaje 
+        etiqueta: div
+        class: bkgray
+        selector: .bkgray
+        selector: .pads
+        class:  pads (en documento) 
+            imagen: 
+            class: img-center
+            selector:.img-center
+
+    Club premium 
+        título
+            etiqueta: h1 
+                etiqueta: samll 
+                class: pink
+        Revisa tu orden
+            etiqueta: h1 
+            etiqueta: small
+            class: pink
+        Teléfono:
+            etiqueta : stront 
+            class: pink 
+            class 2: highlight
+            selector: .highlight
+
+Revisa la lista de productos que has ordenado.
+
+    título: 
+        etiqueta padre: td
+        class: tbl_bgmid3 
+        selector: .contentbackgroundcolor td.tbl_bgmid3 línea 603
+        hoja de estilo: included_styles.css 
+        class2: tbl_header_big
+        selector: tbl_header_big línea 336 
+    tabla:
+        etiqueta padre: tr
+        class: bgalt
+        selector: tr.bgalt línea 342
+        hoja de estilo: included_styles.css 
+            etiqueta: td
+            class: border_left
+            selector: .border_left línea 350
+            hoja de estilo: included_styles.css 
+    tabla2: 
+        class: alt_rows
+        selector: table.alt_rows línea 321
+        hoja de estilo: included_styles.css 
+    títulos tabla: 
+        etiqueta: td
+        class: font_bold 
+        selector: .font_bold línea 573
+        hoja de estilo: included_styles.css 
+        class2: font_12
+        selector: td.font_12 línea 738
+            link
+            etiqueta padre: normal_blacklink
+            class: normal_blacklink   
+            selector: .normal_blacklink línea 1741 
+            hoja de estilo: included_styles.css 
+                etiqueta: a 
+                class:  normal_blacklink
+                selector : .normal_blacklink línea 1741
+        título: 
+            etiqueta padre: td
+            class: tbl_bgmid3 
+            selector: .contentbackgroundcolor td.tbl_bgmid3 línea 603
+            hoja de estilo: included_styles.css 
+            class2: tbl_header_big
+            selector: tbl_header_big línea 336 
+
+        Detalle productos: 
+            borrar: 
+            itiqueta padre: td 
+            class: tbl_bgmid2
+            selector: td.tbl_bgmid2 línea 588
+            hoja de estilo: included_styles.css 
+            class: tbl_header
+            selector: table.alt_rows .tbl_header línea 332
+            hoja de estilo: included_styles.css 
+
+        títulos tabla detalle 
+            etiqueta: td 
+            class: font_bold 
+            selector: .font_bold línea 574
+            hoja de estilo: included_styles.css 
+            class2: font_12
+            selector: td.font_12 línea 737
+
+        input Cantidad :
+            class: linearFormInputQty
+            selector:  input[type="text"] línea 979
+            hoja de estilo: usec.css
+
+        texto descripción :
+            etiqueta : td 
+        
+        borrar:
+        etiqueta padre: span
+        id: showDelCheckBox
+        input type: checkbox 
+
+        tabla orden hasta el momento:
+        etiqueta: table 
+        id: order_table1
+        class:order_table
+        selector: table.order_table línea 2409
+        hoja de estilo: included_styles.css 
+        etiqueta : td 
+        class:bg_lightpink
+        selector: .bg_lightpink línea 401
+
+        botón gaurdar sin enviar:
+        etiqueta padre: p
+        class:buttonpink 
+        selector: p.buttonpink línea 666 
+        hoja de estilo: included_styles.css     
+
+        título: 
+            etiqueta padre: td
+            class: tbl_bgmid3 
+            selector: .contentbackgroundcolor td.tbl_bgmid3 línea 603
+            hoja de estilo: included_styles.css 
+            class2: tbl_header_big
+            selector: tbl_header_big línea 336 
+
+        botón ver subtotal: 
+        etiqueta: p 
+        class: button línea 224
+        selector : p.button
+        hoja de estilo: included_styles.css 
+        input 
+        class: buttonBg seleccion
+        selector: .buttonBg línea 263
+            selector hover : .button:hover línea 234
+            hoja de estilo: included_styles.css 
+
+        botón ver subtotal:
+        etiqueta padre: p
+        class : p.button
+        id: subtotal
+        selector: .buttonp.button línea 224
+        hoja de estilo: included_styles.css 
+            input button:
+                class: buttonBg
+                selector: .buttonBg 263
+                hoja de estilo: included_styles.css 
+
+
+
+                //RYEMSPCM1/default/main/Global_Internet/Cluster_Latin_America/Nicaragua/WebE_FLD/WORKAREA/avon-ni/REPSuite/contentmanaged/webepages/core/rep_order_summary_landing/slots

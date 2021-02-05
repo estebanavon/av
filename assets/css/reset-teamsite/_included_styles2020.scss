@@ -139,9 +139,7 @@ td.td_bot_border > p, td.td_bot_border > div p{
 [name="exForm"] td.td_bot_border > div:first-of-type{
     @include demoDescription;
 }
-[name="exForm"] td.td_bot_border > div:nth-of-type(2) > span{
-    @include l-Price;
-}
+
 [name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
     @include SalePrice;
 }

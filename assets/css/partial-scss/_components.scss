@@ -122,11 +122,7 @@
     width: 85%;
     margin: 0 auto;
 }
-@mixin l-Price {
-    color: $color-primary !important;
-    border-bottom: 2px solid $color-secondary;
-    padding-bottom: 10px;
-}
+
 
 @mixin SalePrice{
     font-weight: 600;
