@@ -134,9 +134,7 @@ td.td_bot_border > p, td.td_bot_border > div p{
 [name="exForm"] td.td_bot_border > div:first-of-type{
     @include demoDescription;
 }
-[name="exForm"] td.td_bot_border > div:nth-of-type(2) > span{
-    @include l-Price;
-}
+
 [name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
     @include SalePrice;
 }
@@ -208,24 +206,15 @@ td.td_bot_border > p, td.td_bot_border > div p{
     padding: 30px;
 }
 
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:first-of-type td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:first-of-type td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:first-of-type td{
-    @include position;
-}
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:first-of-type td:nth-of-type(2),
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:first-of-type td:nth-of-type(2),
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:first-of-type td:nth-of-type(2){
-    @include positionTop;
-}
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td{
-    @include position;
-}
+
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td a,
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td a,
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td a{   
      @include av-link();
 }
 /*by GErber Barillas 12 enero 2021*/
+
+
+
+/*by Gerber Barillas CSS mexico*/
+

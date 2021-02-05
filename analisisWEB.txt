@@ -371,3 +371,7 @@ Revisa la lista de productos que has ordenado.
                 class: buttonBg
                 selector: .buttonBg 263
                 hoja de estilo: included_styles.css 
+
+
+
+                //RYEMSPCM1/default/main/Global_Internet/Cluster_Latin_America/Nicaragua/WebE_FLD/WORKAREA/avon-ni/REPSuite/contentmanaged/webepages/core/rep_order_summary_landing/slots

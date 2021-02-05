@@ -3519,12 +3519,6 @@ td.td_bot_border > p, td.td_bot_border > div p {
   margin: 0 auto;
 }
 
-[name="exForm"] td.td_bot_border > div:nth-of-type(2) > span {
-  color: #7F28C4 !important;
-  border-bottom: 2px solid #E82F89;
-  padding-bottom: 10px;
-}
-
 [name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
   font-weight: 600;
   font-size: 22px !important;
@@ -3636,28 +3630,6 @@ td.td_bot_border > p, td.td_bot_border > div p {
   padding: 30px;
 }
 
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:first-of-type td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:first-of-type td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:first-of-type td {
-  position: relative;
-  top: 20px;
-}
-
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:first-of-type td:nth-of-type(2),
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:first-of-type td:nth-of-type(2),
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:first-of-type td:nth-of-type(2) {
-  position: relative;
-  left: -115px;
-  top: 0px;
-}
-
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td,
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td {
-  position: relative;
-  top: 20px;
-}
-
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td table.alt_rows tr:nth-of-type(2) td a,
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td a,
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td a {
@@ -3684,4 +3656,5 @@ td.td_bot_border > p, td.td_bot_border > div p {
 }
 
 /*by GErber Barillas 12 enero 2021*/
+/*by Gerber Barillas CSS mexico*/
 /*# sourceMappingURL=included_styles.css.map */

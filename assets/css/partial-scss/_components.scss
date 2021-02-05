@@ -101,11 +101,7 @@
     width: 85%;
     margin: 0 auto;
 }
-@mixin l-Price {
-    color: $color-primary !important;
-    border-bottom: 2px solid $color-secondary;
-    padding-bottom: 10px;
-}
+
 
 @mixin SalePrice{
     font-weight: 600;
@@ -151,15 +147,7 @@
 @mixin list_product_step4 {
     margin-top:50px;
 }
-@mixin position {
-    position: relative;
-    top: 20px;
-}
-@mixin positionTop {
-    position: relative;
-    left: -115px;
-    top: 0px;
-}
+
 
 
 
