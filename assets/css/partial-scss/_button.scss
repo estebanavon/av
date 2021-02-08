@@ -135,7 +135,17 @@
     }
 }
 
-
+@mixin map-menu {
+    font-family: $regular-monts;
+    color: $color-dark-50;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 .av-link {
     @include av-link();

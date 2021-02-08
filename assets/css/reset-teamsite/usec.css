@@ -1145,16 +1145,6 @@ A.bodyLink.visited {
   cursor: pointer;
 }
 
-.menuItem {
-  font-family: Arial;
-  color: #646464;
-  font-size: 11px;
-  font-weight: normal;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .menuItemUL {
   font-family: Arial;
   color: #646464;
@@ -1170,36 +1160,6 @@ A.bodyLink.visited {
   color: #646464;
   font-size: 11px;
   font-weight: bold;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-A.menuItem {
-  font-family: Arial;
-  color: #646464;
-  font-size: 11px;
-  font-weight: normal;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-A.menuItem:hover {
-  font-family: Arial;
-  color: #646464;
-  font-size: 11px;
-  font-weight: normal;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-A.menuItem.visited {
-  font-family: Arial;
-  color: #646464;
-  font-size: 11px;
-  font-weight: normal;
   text-align: left;
   cursor: pointer;
   text-decoration: none;
@@ -1273,10 +1233,6 @@ A.menuItem.visited {
 
 .columnNormal {
   background-color: #ffffff;
-}
-
-.columnGrey {
-  background-color: #efefef;
 }
 
 .cellLeft {
@@ -3313,7 +3269,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
   margin: 0 auto;
   height: auto;
   width: 992px;
-  min-height: 75vh;
+  min-height: 73vh;
 }
 
 @media (min-width: 1024px) {
@@ -3361,6 +3317,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 76vh;
 }
 
 [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
@@ -3369,7 +3326,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 
 @media (min-width: 1024px) {
   [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
-    display: table-cell;
+    display: none;
     height: 80vh;
   }
 }

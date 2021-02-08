@@ -19,7 +19,7 @@
         margin: 0 auto;
         height: auto;
         width: $media-2;
-        min-height: 75vh;
+        min-height: 73vh;
         
         @media (min-width:$media-3) {
             width: $media-3;
@@ -144,10 +144,11 @@ table.border > tbody > tr > td > table > tbody {
         display: flex;
         > td {
             flex: 1;
+            height: 76vh;
             &:first-child {
                 display: none;
                 @media (min-width:$media-3) {
-                    display: table-cell;
+                    display: none;
                     height: 80vh;
                 }
             }

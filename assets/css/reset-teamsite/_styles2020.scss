@@ -460,6 +460,9 @@ td.bg2_f2f0f0.padding_3.active1 {
         }
         .scroll_promo {
             min-height: 100px;
+            td {
+                text-align: left !important;
+            }
         }
     } 
 }
@@ -602,11 +605,17 @@ table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="to
         background-color: $color-light-white;
         padding: 15px;
     }
-    #Image1 {
-        width: auto !important;
-        height: auto !important;
-    }
+    
 }
+
+#Image0, 
+#Image1,
+#Image2,
+#Image3 {
+    width: auto !important;
+    height: auto !important;
+}
+
 [bgcolor="E6E9EE"] {
     background-color: transparent !important;
 }
@@ -701,6 +710,10 @@ table[width="700"] {
 img[height="14"], [type="image"][height="14"] {
     height: auto !important;
 }
+[src*="presidents_club"] {
+    width: 100%;
+}
+
 .av-tc {
     h2 {
         @include title;

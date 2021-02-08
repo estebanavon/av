@@ -3001,6 +3001,10 @@ td.bg2_f2f0f0.padding_3.active1 {
   min-height: 100px;
 }
 
+[name="addOffersForm"] .paddingleft_15 table.tbl_orderpack > tbody .scroll_promo td {
+  text-align: left !important;
+}
+
 .tbl_bgleft3 {
   width: 0px;
 }
@@ -3208,7 +3212,10 @@ table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="to
   padding: 15px;
 }
 
-#profilePersonalForm #Image1 {
+#Image0,
+#Image1,
+#Image2,
+#Image3 {
   width: auto !important;
   height: auto !important;
 }
@@ -3396,6 +3403,10 @@ img[height="14"], [type="image"][height="14"] {
   height: auto !important;
 }
 
+[src*="presidents_club"] {
+  width: 100%;
+}
+
 .av-tc h2 {
   font-family: montserrat-light, Helvetica, sans-serif;
   font-size: 30px;
@@ -3575,6 +3586,19 @@ a.ord_link span br {
 .view ~ td [onclick="ClearAllItems();"].small, .view_order ~ td [onclick="ClearAllItems();"].small {
   padding: 10px 20px;
   font-size: 14px;
+}
+
+.menuItem {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  color: gray;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
 }
 
 textarea {
@@ -3758,6 +3782,7 @@ h1 > em.left {
   height: 30px;
 }
 
+[name="addeditform"] .tbl_header.tbl_bgmid3,
 .pop_main_header_txt {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
@@ -3776,7 +3801,11 @@ h1 > em.left {
   color: #F09F87 !important;
 }
 
-a.linkList, a.bodyCenter, a.bodyBold, a.body {
+a.linkList,
+a.bodyCenter,
+a.bodyBold,
+a.body,
+a.offersLink {
   color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   text-decoration: underline;
@@ -3787,11 +3816,19 @@ a.linkList, a.bodyCenter, a.bodyBold, a.body {
   transition: all 0.5s;
 }
 
-a.linkList:hover, a.bodyCenter:hover, a.bodyBold:hover, a.body:hover {
+a.linkList:hover,
+a.bodyCenter:hover,
+a.bodyBold:hover,
+a.body:hover,
+a.offersLink:hover {
   background-color: #f6effc;
 }
 
-a.linkList.visited, a.bodyCenter.visited, a.bodyBold.visited, a.body.visited {
+a.linkList.visited,
+a.bodyCenter.visited,
+a.bodyBold.visited,
+a.body.visited,
+a.offersLink.visited {
   color: #66209d;
 }
 

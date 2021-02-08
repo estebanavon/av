@@ -36,7 +36,9 @@ a.ord_link {
         margin-right: 7px;
     }
 }
-
+.menuItem {
+    @include map-menu;
+}
 textarea {
     @include av-textarea;
 }
@@ -96,7 +98,7 @@ h1 > em {
 .tbl_outerline.bg_fff9f9 {
     @include av-table($color-dark-light,$color-text);
 }
-
+[name="addeditform"] .tbl_header.tbl_bgmid3,
 .pop_main_header_txt {
     @include modal-title;
 }
@@ -108,7 +110,11 @@ h1 > em {
     @include alert-warning;
 }
 
-a.linkList, a.bodyCenter, a.bodyBold, a.body {
+a.linkList,
+a.bodyCenter,
+a.bodyBold,
+a.body,
+a.offersLink {
 	@include av-link();
 }
 
