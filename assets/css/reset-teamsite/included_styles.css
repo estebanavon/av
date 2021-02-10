@@ -230,6 +230,7 @@
 }
 
 /* by Gerber Barillas */
+/* CSS MX */
 /* by Gerber Barillas */
 /* CSS Document */
 body {
@@ -4026,4 +4027,33 @@ td.td_bot_border > p, td.td_bot_border > div p {
 }
 
 /*by GErber Barillas 12 enero 2021*/
+/* CSS MX by GEBZ. */
+.articleHeader table tr td img#order_tracking_banner_1,
+.articleHeader table tr td img#order_tracking_banner_3 {
+  width: 100% !important;
+  height: auto;
+}
+
+div#instantCreditContentSlot_content2 > p > a {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div#instantCreditContentSlot_content2 > p > a:hover {
+  background-color: #f6effc;
+}
+
+div#instantCreditContentSlot_content2 > p > a.visited {
+  color: #66209d;
+}
+
+.contentbackgroundcolor > div {
+  margin-top: 40px;
+}
 /*# sourceMappingURL=included_styles.css.map */

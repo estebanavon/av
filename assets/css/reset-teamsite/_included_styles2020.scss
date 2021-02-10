@@ -229,3 +229,20 @@ td.td_bot_border > p, td.td_bot_border > div p{
 } 
 
 /*by GErber Barillas 12 enero 2021*/
+
+
+
+
+/* CSS MX by GEBZ. */
+.articleHeader table tr td img#order_tracking_banner_1,
+.articleHeader table tr td img#order_tracking_banner_3{
+    @include bannerSeguimiento; 
+}
+
+div#instantCreditContentSlot_content2 > p > a{
+    @include av-link();
+}
+
+.contentbackgroundcolor > div {
+    @include margintop;
+}

@@ -176,6 +176,16 @@
 }
 
 
+/* CSS MX */
+
+@mixin bannerSeguimiento {
+    width: 100% !important;
+    height: auto;
+}
+
+@mixin margintop {
+    margin-top:40px;
+}
 
 /* by Gerber Barillas */
 
