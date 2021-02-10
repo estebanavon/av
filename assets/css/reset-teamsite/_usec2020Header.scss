@@ -148,51 +148,14 @@ table.border > tbody > tr > td > table > tbody {
             &:first-child {
                 display: none;
                 @media (min-width:$media-3) {
-                    display: none;
+                    display: block;
                     height: 80vh;
                 }
             }
             &:last-child {
                 > table {
                     width: 100%;
-                    > tbody > tr:last-child > td {
-                        height: 0px;
-                        overflow: hidden;
-                        display: none;
-                    }
                 }
-            }
-        }
-        #logindiv {
-            display: block !important;
-            width: 400px;
-            padding: 40px 50px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.15);
-            > table > tbody > tr:first-child > td > img {
-                width: 100%;
-            }
-            .loginBoxBG > table > tbody > tr > td > table {
-                width: 100%;
-            }
-            [name="loginForm"] ~ tr {
-                &:nth-last-child(4), &:nth-last-child(6), &:nth-last-child(8){
-                    tr {
-                        display: flex;
-                        flex-direction: column;
-                        margin-bottom: 12px;
-                        input {
-                            width: 100%;
-                        }
-                    }
-                }
-                &:nth-last-child(4) {
-                    td:nth-child(2) {
-                        margin: 10px 0px;
-                    }
-                }
-            }
-            a.bodyCenter {
-                margin: 5px 0px;
             }
         }
     }
@@ -210,4 +173,90 @@ table.border > tbody > tr > td > table > tbody {
             }
         }
     }
-} 
+}
+#logindiv {
+    box-sizing: border-box;
+    display: block !important;
+    width: 400px;
+    padding: 40px 50px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    > table > tbody > tr:first-child > td > img {
+        width: 100%;
+    }
+    .loginBoxBG > table > tbody > tr > td > table {
+        width: 100%;
+    }
+    [name="loginForm"] ~ tr {
+        &:nth-last-child(4), &:nth-last-child(6), &:nth-last-child(8){
+            tr {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 12px;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        &:nth-last-child(4) {
+            td:nth-child(2) {
+                margin: 10px 0px;
+            }
+        }
+    }
+    a.bodyCenter {
+        margin: 5px 0px;
+    }
+}
+.avlogin-support {
+    margin-top: 35px;
+    width: 400px;
+    text-align: left;
+   
+    .avlogin-contact {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        p {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-right: 3px;
+            }
+        }
+    }
+}
+.avlogin-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    > div:first-child {
+        flex: 1;
+    }
+}
+.avlogin-social {
+    display: flex;
+    padding: 30px;
+    background-color: $color-light-white;
+    a {
+        text-decoration: none;
+        color: $color-text;
+    }
+    > div {
+        font-size: 15px;
+        &:first-child {
+            margin-right: 40px;
+        }
+    }
+    > div:last-child {
+        text-align: left;
+        > div:first-child a::after {
+            content: ' /';
+        }
+        > div:last-child {
+            a:first-child {
+                margin-right: 15px;
+            }
+        }
+    } 
+}

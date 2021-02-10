@@ -207,7 +207,7 @@
   padding: 0;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(3) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(4) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(5) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(6) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(7) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(8) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(9) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(10) tr td {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, [name="exForm"] #lineno0 ~ table tr td[width="33%"] {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-box-shadow 0.4s;
@@ -216,7 +216,7 @@
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(3) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(4) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(5) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(6) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(7) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(8) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(9) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(10) tr td:hover {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, [name="exForm"] #lineno0 ~ table tr td:hover[width="33%"] {
   -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -3071,7 +3071,11 @@ td .font_bold.font_14.txt_fff ~ td.padding_10 {
 
 .padding5.font_12 [src="/REPSuite/static/images/iom/confirmation_order_image.jpg"] {
   position: relative;
-  top: -120px;
+  top: -80px;
+}
+
+[src*="blue_divider"] {
+  display: none;
 }
 
 [valign="bottom"] > .alt_rows .tbl_bgmid3.tbl_header_big {
@@ -3443,6 +3447,14 @@ img[height="14"], [type="image"][height="14"] {
   font-size: 15px;
   line-height: 17px;
   color: gray;
+}
+
+[name="creditScoreForm"] table {
+  width: 100%;
+}
+
+[name="creditScoreForm"] table[width="176"] {
+  width: auto;
 }
 
 body, td {
@@ -3923,7 +3935,7 @@ td.td_bot_border > p, td.td_bot_border > div p {
   color: #E82F89 !important;
 }
 
-[name="exForm"] table tr td table tr td table:nth-of-type(2), [name="exForm"] table tr td table tr td table:nth-of-type(3), [name="exForm"] table tr td table tr td table:nth-of-type(4), [name="exForm"] table tr td table tr td table:nth-of-type(5), [name="exForm"] table tr td table tr td table:nth-of-type(6), [name="exForm"] table tr td table tr td table:nth-of-type(7), [name="exForm"] table tr td table tr td table:nth-of-type(8), [name="exForm"] table tr td table tr td table:nth-of-type(9), [name="exForm"] table tr td table tr td table:nth-of-type(10) {
+[name="exForm"] #lineno0 ~ table {
   border-spacing: 20px 15px;
 }
 
