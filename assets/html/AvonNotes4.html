@@ -5,53 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../css/reset-teamsite/usec.css" rel="stylesheet">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    
+    
+    <link href="../css/styles-teamsite/styles_scss.css" rel="stylesheet">
+    <style>
+        
+    </style>
+    
+    
 </head>
 
 <body>
-    <div class="avlogin-content">
-        <div class="">
 
+<div class="container-fluid mt-5">
+    <!-- INDICADORES DE PRODUCTOS -->
+
+    <div class="row">
+        <div class="col-12 cont_title_step4">
+            <h1 class="titleStep4">Disponibilidad de producto</h1>
+            <p>Si aparece cualquiera de estos colores en tu orden, significan lo siguiente:</p>
         </div>
-        <div class="avlogin-social">
-            <div>
-                <svg width="100px">
-                    <use xlink:href="#brand"></use>
-                </svg>
-            </div>
-            <div>
-                <div class="">
-                    <a href="https://www.facebook.com/avoncentroamerica" target="_blank">Facebook</a> 
-                    <a href="https://twitter.com/avon_ca" target="_blank">Twitter</a> 
-                    <a href="https://www.instagram.com/avoncentroamerica/" target="_blank">Instagram</a> 
-                    <a href="https://www.youtube.com/user/avonvideosca" target="_blank">Youtube</a>
+	</div>
+	
+	<div class="row my-4">
+        <div class="col-3">
+            <div class="av-card">
+                <div class="av-summary-indicator" style="background-color: #04831A;"></div>
+                <img src="/REPSuite/static/images/banners/paso4_indicador_verde.jpg" alt="" class="av-card-image w-100">
+                <div class="av-card-text">
+                    <h4 class="av-card-title">Producto Disponible, Orden Competa </h4>
+                    <p class="mb-1" style="color: #04831A;">Verde o sin indicador</p>
+                    <p>
+                        Todos los prodcutos están disponibles en campaña.
+                    </p>
                 </div>
-                <hr>
-                <div>
-                    <a href="https://www.avon.com.ni/cam-home/terminos-y-condiciones.html" target="_blank">Términos y condiciones</a>
-                    <a href="https://www.avon.com.ni/cam-home/privacidad-y-seguridad.html" target="_blank">Privacidad y seguridad</a>
+                
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="av-card">
+                <div class="av-summary-indicator" style="background-color: #D5B404;"></div>
+                <img src="/REPSuite/static/images/banners/paso4_indicador_amarillo.jpg" alt="" class="av-card-image w-100">
+                <div class="av-card-text">
+                    <h4 class="av-card-title">Producto por Agotarse</h4>
+                    <p class="mb-1" style="color: #D5B404;">Amarillo</p>
+                    <p>
+                        Hay pocas unidades, tal vez no se surta.
+                    </p>
                 </div>
             </div>
+        </div>
+        <div class="col-3">
+            <div class="av-card">
+                <div class="av-summary-indicator" style="background-color: #D80508;"></div>
+                <img src="/REPSuite/static/images/banners/paso4_indicador_rojo.jpg" alt="" class="av-card-image w-100">
+                <div class="av-card-text">
+                    
+                    <h4 class="av-card-title">Producto llegará en la próxima Campaña </h4>
+                    <p class="mb-1" style="color: #D80508;">Rojo</p>
+                    <p>
+                        Se factura y llegará en la siguiente campaña.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="av-card">
+                <div class="av-summary-indicator" style="background-color: #4D4D4D;"></div>
+                <img src="/REPSuite/static/images/banners/paso4_indicador_gris.jpg" alt="" class="av-card-image w-100">
+                <div class="av-card-text">
+                    <h4 class="av-card-title">Producto No Disponible </h4>
+                    <p class="mb-1" style="color: #4D4D4D;">Gris<p>
+                    <p>
+                        El producto se borra de tu orden y no será surtido.
+                    </p>
+                </div>
+            </div>
+        </div>
+	</div>
+    
+    <div class="row px-5">
+		<div class="col d-flex">
+            <img src="/REPSuite/static/images/banners/paso4_warning.png" style="width: 40px;align-self: flex-start;height: auto;margin: 0px 20px;">
+			<p class="text-left">A veces, en los indicadores ROJO y GRIS te ofreceremos sustituciones. Si aceptas, 
+			el producto sustituto te será facturado y surtido en tu orden de campaña actual. 
+			En el caso del indicador ROJO, si aceptas el sustituto, ya no te llegará el producto 
+			anterior en la siguiente campaña.</p>
+		</div>
+    </div>
+    <div class="av-spacer"></div>
+    <div class="row mb-5">
+        <!-- <div class="col-2">
+            <img src="/REPSuite/web/static/images/banners/paso4_club_premium.jpg" alt="" class="img-fluid w-100">    
+        </div> -->
+        <div class="col">
+            <h4 class="av-card-title text-uppercase" style="color: #ec008c; font-size: 30px; font-weight: bold;">Club premium</h4>
+            <p class="av-text">
+                Si llevas <b class="av-highlight">6 o más Campañas </b> con tu negocio Avon, puedes optar por <b class="av-highlight">PAGOS EN CUOTAS</b> 
+                en los productos de Folletos con esta opción. Si aún no perteneces al <b class="av-highlight">Club premium</b>, utiliza los códigos 
+                de un solo pago para adquirir tus productos. 
+            </p>
         </div>
     </div>
-    
-    <?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <svg version="1.1" style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 100 22.54" style="enable-background:new 0 0 100 22.54;" xml:space="preserve">
-            <defs>
-            <g id="brand">
-                <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#606060;" d="M12.77,1.16l10.52,21.38h-4.92
-                    c-3.14-4.23-6.63-5.67-10.52-6.15l0,0l-2.19,4.23c-0.75,1.23-1.84,1.84-3.14,1.84l0,0H0L10.52,1.09h2.25V1.16z M27.25,1.16
-                    c1.3,0,2.39,0.75,2.94,1.91l5.6,11.95l5.6-11.95c0.55-1.16,1.71-1.91,2.94-1.91h2.8L36.89,22.54h-2.25L24.39,1.16H27.25z
-                        M84.29,1.16l11.34,13.52V3.42c0-1.23,1.02-2.25,2.32-2.25l0,0H100v21.38h-0.96c-2.66,0-4.51-2.39-4.51-2.39l0,0L85.25,9.02v11.27
-                    c0,1.23-1.02,2.25-2.32,2.25l0,0h-2.05V1.16H84.29z M62.36,0c3.21,0,6.08,1.09,8.27,3.21c2.19,2.12,3.42,4.99,3.42,7.99
-                    c0,3.07-1.23,5.87-3.48,7.99c-2.19,2.12-5.12,3.28-8.27,3.28c-3.14,0-6.01-1.16-8.27-3.28c-2.19-2.12-3.42-4.92-3.42-7.99
-                    s1.23-5.87,3.42-7.99C56.28,1.16,59.08,0,62.36,0z M62.36,4.23c-3.96,0-7.17,3.14-7.17,7.04s3.21,7.04,7.17,7.04
-                    s7.24-3.14,7.24-7.04C69.54,7.38,66.33,4.23,62.36,4.23z M11.68,8.47l-2.05,4.3c1.64,0.34,3.28,0.82,4.85,1.57l0,0L11.68,8.47z"/>
-            </g>
-            </defs>
-    </svg>
+    <div class="row">
+		<div class="col-8">
+			<h3 class="Order_title_Step4">Revisa tu orden</h3>
+			<p>Revisa las cantidades y los productos de tu orden. En esta sección aún puedes regresar a agregar 
+				productos haciendo click sobre Folleto. Puedes modificar cantidades y borrar productos. 
+				Haz click en Subtotal para ver el estimado de tu orden.
+			</p>
+			<p>	Recuerda escribir tu correo electrónico abajo para recibir una confirmación de tu orden al mismo.</p>
+		</div>
+        <div class="col-4">
+			<h3 class="Order_title_Step4">Contáctanos</h3>
+			<p>Llámanos en horario de:<br> lunes a viernes de 7:00 a.m a 6:00 p.m <br>sabados de 7:00 a.m a 5:00  p.m</p>
+
+			<h3 class="Order_title_Step4 mt-3">24369401</h3>
+		</div>
+	</div>
+    <div class="av-spacer"></div>
+</div>
+
+
+
 </body>
 
 </html>

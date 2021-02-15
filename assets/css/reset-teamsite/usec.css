@@ -1658,10 +1658,6 @@ A.linkJob.visited {
   background-color: #FFFFFF;
 }
 
-.footerbackgroundcolor {
-  background-color: #000000;
-}
-
 .ht_line {
   background: url(/PRSuite/static/images/Skins/ht_black/ht_line_3px_height.jpg);
   width: 759px;
@@ -1812,48 +1808,6 @@ form {
 }
 
 /* added for wave D footer */
-a.footerLinks {
-  color: #333333;
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-.footerLinks {
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-.footerLinks a:hover {
-  color: #f00088;
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-.footerLinksBold {
-  background-color: #f5f5f5;
-  color: #f00088;
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 8px;
-  text-decoration: none;
-  text-shadow: 1px 0 0 #ffffff;
-}
-
-.footerBackground {
-  background-color: #ffffff;
-  color: #f00088;
-  font-family: Arial;
-  font-size: 11px;
-}
-
 form {
   margin: 0px;
   padding: 0px;
@@ -2525,7 +2479,6 @@ a.loginLinks {
 
 .HT_bottom_line {
   background: #ffffff none repeat scroll 0 0;
-  border-top: 3px solid #e2e2e2;
   height: 3px;
 }
 
@@ -3270,17 +3223,22 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
   height: auto;
   width: 992px;
   min-height: 73vh;
+  padding: 0px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (min-width: 1024px) {
   table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
     width: 1024px;
+    padding: 0px 30px;
   }
 }
 
 @media (min-width: 1200px) {
   table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
     width: 1200px;
+    padding: 0px 60px;
   }
 }
 

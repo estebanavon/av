@@ -264,8 +264,9 @@
     .av-card-image {
         overflow: hidden;
     }
+    
     .av-card-text {
-        padding: 25px;
+        padding: 20px;
         background-color: $color-light-white;
         flex-grow: 1;
         display: flex;
@@ -283,6 +284,7 @@
         .av-button-tertiary {
             margin-top: auto;
         }
+        
     }
 }
 
@@ -626,6 +628,9 @@
     }
     @media (min-width:$media-1) {
         padding: 8%;
+    }
+    h4 {
+        font-size: $size-text;
     }
 }
 /* width */

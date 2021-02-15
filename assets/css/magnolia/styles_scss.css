@@ -57,7 +57,6 @@
   color: #3b4546;
   text-align: left;
   margin: 0px;
-  margin-bottom: 20px;
   display: block;
   padding: 0;
 }
@@ -407,7 +406,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   color: #fff;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
-  line-height: 52px;
+  line-height: 40px;
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
@@ -418,14 +417,14 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 @media (min-width: 768px) {
   .av-title-container .av-title-text {
     font-size: 5rem;
-    line-height: 52px;
+    line-height: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .av-title-container .av-title-text {
     font-size: 7rem;
-    line-height: 70.2px;
+    line-height: 54px;
   }
 }
 
@@ -542,7 +541,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 20px;
   margin-bottom: 22px;
 }
 
@@ -569,7 +568,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-text .av-highlight {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
 }
 
 .av-text.av-text-small {
@@ -597,14 +596,14 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-list {
   font-family: montserrat-regular, Helvetica, sans-serif;
   padding-left: 20px;
-  line-height: 26px;
+  line-height: 20px;
   font-size: 20px;
   color: #3b4546;
   list-style-type: disc;
 }
 
 .av-list .av-highlight {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
 }
 
 .av-list li {
@@ -779,7 +778,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-card .av-card-text {
-  padding: 25px;
+  padding: 20px;
   background-color: #F7F7F7;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1284,6 +1283,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   .av-footer {
     padding: 8%;
   }
+}
+
+.av-footer h4 {
+  font-size: 20px;
 }
 
 /* width */
@@ -2710,7 +2713,7 @@ a {
   color: #3b4546;
   font-family: gotham-book, Helvetica, sans-serif;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 20px;
   margin-bottom: 22px;
 }
 
@@ -3274,7 +3277,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   color: #042E4F;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
-  line-height: 52px;
+  line-height: 40px;
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
@@ -3354,7 +3357,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   color: #fff;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
-  line-height: 52px;
+  line-height: 40px;
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
@@ -3434,7 +3437,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   color: #79366D;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
-  line-height: 52px;
+  line-height: 40px;
   font-style: normal;
   word-break: break-word;
   margin: 0rem;
@@ -3544,7 +3547,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   color: #fff;
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
-  line-height: 52px;
+  line-height: 40px;
   font-style: normal;
   word-break: break-word;
   margin: 0rem;

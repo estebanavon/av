@@ -20,12 +20,16 @@
         height: auto;
         width: $media-2;
         min-height: 73vh;
+        padding: 0px 20px;
+        box-sizing: border-box;
         
         @media (min-width:$media-3) {
             width: $media-3;
+            padding: 0px 30px;
         }
         @media (min-width:$media-4) {
             width: $media-4;
+            padding: 0px 60px;
         }
     }
 }
