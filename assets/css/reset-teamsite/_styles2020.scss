@@ -11,7 +11,7 @@
 /*------- HEADER FIX 2020 ------*/
 
 
-%toplink {
+%linkSmall {
     color: $color-text;
 	font-weight: normal;
 	text-decoration: none;
@@ -22,18 +22,18 @@
         font-size: 0;
     }
 }
-.topLinks {
-    @extend %toplink;
+.topLinks, .footerLinks {
+    @extend %linkSmall;
     font-family:  $regular-monts;
 }
-.topLinksBold {
-    @extend %toplink;
+.topLinksBold, .footerLinksBold, .footerBackground {
+    @extend %linkSmall;
     font-family:  $bold-monts;
 }
 .accName_Text,
 .ord_gray_txt {
     @include text-system($bold-monts);
-    padding-left: 72px;
+    padding-left: 76px;
     text-transform: uppercase;
     text-align: left;
 }
@@ -52,11 +52,9 @@ td .pink30_txt, .campaign_All{
     }
 }
 
-table.border_rightstyle.bg1_f2f0f0{
-    padding: 20px 45px;
+[src*="blue_divider"] {
+    display: none;
 }
-
-
 
 .tbl_orderpack > tbody > tr:nth-child(6) table {
     border-spacing: 0px 5px;
@@ -87,7 +85,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 .td_subheader_bg {
     text-align: left;
     .sub_heading2 {
-        border-bottom: 1px solid $color-secondary;
+        border-bottom: 1px solid $color-text;
         text-align: left;
         padding: 5px 10px;
         display: block;
@@ -111,54 +109,20 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
     }
 }
 
-/*------- PLACE N ORDER PADDING 2020 ------*/
+/*------- STEPPER 2020 ------*/
 
-.tbl_bgpink,
-[name="frmPreviewOrder"],
-[name="frmDemoBrochure"],
-[name="exForm"],
-[name="frmSummary"],
-[name="frmConfirm"],
-#frmCreateOrder,
-#newIooffersForm,
-#clearanceoffersForm,
-#returnForm,
-#aaa.bor_outer,
-.contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
-    padding: 0px 30px;
-    box-sizing: border-box;
-    width: 100%;
-    @media (min-width:$media-3) {
-        padding: 0px 50px;
-    }
-}
-#frmSelectCampaign {
-    padding: 0px 30px;
-}
-
-.order_method_campaign + [width="55%"],
-.view ~ td:nth-child(4),
-.view_order ~ td:nth-child(4),
-tr.rightalign > td[valign="top"],
-tr[align="right"] > td[valign="top"] {
-    padding-right: 30px;
-    @media (min-width:$media-3) {
-        padding-right: 50px;
-    }
-}
-[name="frmSummary"] > table:last-child {
+.tbl_bgpink td.padding_10.padding_left20 {
     display: flex;
-    justify-content: flex-end;
-    
-    .buttonBgpink {
-        @include av-button-secondary;
-    } 
-    .bodyR {
-        color: $color-white;
-        padding: 10px;
-        background-color: $color-dark-lighter;
+    img {
+        width: 100%;
     }
 }
+
+
+
+
+
+
 
 
 /*------- CREATE ORDER TABLES 2020 ------*/
@@ -214,17 +178,30 @@ tr[align="right"] > td[valign="top"] {
         @include av-table($color-dark-light,$color-text);
         box-shadow: $color-shadow-border;
     }
+    .bgaltwhite {
+        .border_left, .saved_customer_name {
+            display: inline-block;
+        }
+    }
     .openclose a {
         @include av-link;
         white-space: nowrap;
     }
 }
-
+.tbl_bgleft2, .tbl_bgleft3 {
+    display: inline-block;
+    width: 0px;
+} 
 .border_left.border_right[style="border-bottom:1px solid #E1DFDF"] {
     border-bottom: none !important;
     margin-bottom: 55px;
+    .border_left.border_right {
+        margin: 0 auto;
+    }
 }
-
+.contentbackgroundcolor td.tbl_bgmid3 {
+    white-space: nowrap;
+}
 /*------- PLACE N ORDER COUNTER 2020 ------*/
 
 table.order_table {
@@ -258,11 +235,15 @@ table.order_table {
 /*------- BROSURA 2020 ------*/
 
 .contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
+    width: 100%;
     margin: 50px 0px;
+    .tbl_header_big {
+        margin-bottom: 20px;
+    }
 }
 .contentbackgroundcolor table[width="745px"].bor_outer {
     width: 100%;
-    border-spacing: 20px 0px;
+    border-spacing: 10px 0px;
     > tbody > tr > td {
         vertical-align: top;
         &:first-child > table {
@@ -297,11 +278,11 @@ table.order_table {
                 .bg_cecdcd {
                     display: block;
                     h3 {
-                        padding: 0px 10px;
+                        padding: 10px;
                         text-align: center;
                     }
                 }
-                img[src^="static/images/offerImages"]{
+                img[src*="offerImages"]{
                     @include img-full-screen;
                 }
                 
@@ -312,9 +293,14 @@ table.order_table {
     
 }
 
-#searchForm p.button {
-    text-align: center;
-}
+#searchForm {
+    table[width="752"] {
+        width: 100%;
+    }
+    p.button {
+        text-align: center;
+    }
+} 
 
 /*------- QUICK ORDER 2020 ------*/
 
@@ -340,19 +326,29 @@ table.order_table {
 }
 
 /*------- MODAL 2020 ------*/
-[name="addDemoForm"], [name="addOffersForm"], [name="addeditform"] {
+[name="addDemoForm"],
+[name="addOffersForm"],
+[name="addeditform"] {
     padding: 0 30px;
 }
-[name="addeditform"] > table {
-    display: block;
-    width: 100%;
+[name="addeditform"] {
+    .padding_10 {
+        padding: 5px 0px;
+    }
+    input[type="text"] {
+        max-width: 250px;
+    }
+} 
+
+[name="addeditform"] .tbl_header.tbl_bgmid3,
+.pop_main_header_txt {
+    @include modal-title;
 }
+
 #displayCategoryForm table[width="85%"]{
     width: 100%;
 }
-[src="static/images/headers/es_blue_divider770.jpg"] {
-    width: 0px;
-}
+
 /*------- TABLAS 2020 ------*/
 
 .div_table {
@@ -411,10 +407,6 @@ td.bg2_f2f0f0.padding_3.active1 {
     display: block;
 }
 
-.margin_top10{
-    margin: 20px;
-}
-
 /*------- CLEARANCE OFFERS 2020 ------*/
 
 #clearanceoffersForm {
@@ -423,7 +415,7 @@ td.bg2_f2f0f0.padding_3.active1 {
      }
      #displayArea1 > table{
         border: none !important;
-        border-spacing: 15px 8px;
+        @include borderSpace;
         > tbody > tr:nth-child(odd) > td[height="50%"] {
             @extend %borderShadow;
             padding: 20px 10px;
@@ -460,6 +452,9 @@ td.bg2_f2f0f0.padding_3.active1 {
         }
         .scroll_promo {
             min-height: 100px;
+            td[width="38%"] {
+                width: 35% !important;
+            }
             td {
                 text-align: left !important;
             }
@@ -467,11 +462,10 @@ td.bg2_f2f0f0.padding_3.active1 {
     } 
 }
 
-.tbl_bgleft3 {
-    width: 0px;
-}
 
 /*------- SUBTOTAL 2020 ------*/
+
+
 
 td .font_bold.font_14.txt_fff {
     @include subtitle(25px,center);
@@ -517,17 +511,42 @@ td .font_bold.font_14.txt_fff {
         top: -80px;
     }
 }
-[src*="blue_divider"] {
-    display: none;
-}
-[valign="bottom"] > .alt_rows .tbl_bgmid3.tbl_header_big {
-    padding: 0 80px;
+
+
+/*------- Step 4 2020 ------*/
+
+[name="frmSummary"] {
+    > table:first-of-type {
+        .bgalt {
+            background-color: $color-dark-lighter;
+            display: flex;
+            padding: 30px;
+            > td {
+                flex: 1;
+            }
+        }
+        .bodyR {
+            padding: 15px;
+            font-family: $bold-monts;
+        }
+        .tbl_header_big {
+            margin-bottom: 20px;
+        }
+    }
+    
+    > table:last-child {
+        display: flex;
+        justify-content: flex-end;
+        
+        .buttonBgpink {
+            @include av-button-secondary;
+        }
+    }
 }
 
 td.leftalign {
     > table.bor_outer {
         &:not(.padding10) {
-            padding: 0 80px;
             display: block;
             .border_right {
                 padding-right: 60px;
@@ -537,11 +556,11 @@ td.leftalign {
             .padding_left20 {
                 padding-left: 60px;
             }
-            
         }
         &.padding10 {
-            padding: 0 50px;
-            display: block;
+            td:first-child {
+                display: inline-block;
+            }
             .leftalign {
                 width: 100%
             }
@@ -552,14 +571,7 @@ td.leftalign {
 .orderbrochure_content {
     @include subtitle(20px,left);
 }
-.tbl_bgleft3 + .tbl_bgmid3.tbl_header_big > font {
-    padding: 0 80px;
-}
-table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="top"] > td > table > tbody > tr > td > table {
-    padding: 0 80px;
-    width: 100%;
-    display: block;
-}
+
 
 /*------- CAMBIOS 2020 ------*/
 #replacementsTbl {
@@ -567,13 +579,7 @@ table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="to
         border: none !important;
     }
 }
-#aaa.bor_outer {
-    + #replacementsTbl.bor_outer {
-        width: 90%;
-        margin: 0 auto;   
-    }
-    
-}
+
 .content [src="/REPSuite/static/images/iom/banner_top_returns.jpg"] {
     @include img-full-screen;
 }
@@ -607,6 +613,14 @@ table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="to
     .tableBg1 {
         background-color: $color-light-white;
         padding: 15px;
+        .tableBg1 > tbody > tr {
+            > td[width="26%"] {
+                display: none;
+            }
+            > td[width="28%"] {
+                min-width: 312px;
+            }
+        }
     }
     
 }
@@ -628,7 +642,8 @@ table.bor_outer > tbody > tr > td > table.padding_left20 > tbody > tr[valign="to
 [name="frmConfirm"] .font_bold {
     @include text-system($bold-monts);
 }
-table[width="700"] {
+table[width="700"],
+table[width="98%"] {
     width: 100% !important;
 }
 #pagos_linea_ {
@@ -718,19 +733,20 @@ img[height="14"], [type="image"][height="14"] {
 }
 
 .av-tc {
+    margin-top: 40px;
     h2 {
         @include title;
         margin-bottom: 20px;
     }
     h4 {
         @include text-system($bold-monts);
-        color: $color-dark-50;
+        color: $color-text;
         margin-bottom: 20px;
     }
     p {
         @include text-system;
-        color: $color-dark-50;
-        margin-bottom: 20px;  
+        text-align: justify;
+        margin-bottom: 20px;
     }
     ul {
         list-style-type: circle;
@@ -738,7 +754,6 @@ img[height="14"], [type="image"][height="14"] {
         margin-bottom: 20px;
         li {
             @include text-system;
-            color: $color-dark-50;
         }
         
     } 
@@ -748,4 +763,8 @@ img[height="14"], [type="image"][height="14"] {
     &[width="176"] {
         width: auto;
     }
+}
+#unPlacedOrderForm [style="border: 1px solid #A9A9A9; background-color: #f0f0f0;"] {
+    background-color: transparent !important;
+    border: none !important;
 }

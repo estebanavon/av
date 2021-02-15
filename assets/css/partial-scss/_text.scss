@@ -3,7 +3,6 @@
     color: $color-text;
     text-align: left;
     margin: 0px;
-    margin-bottom: 20px;
     display: block;
     padding: 0;
 }
@@ -30,10 +29,13 @@
     @extend %titles;
     font-family: $light-monts;
     font-size: 30px;
+    b {
+        font-weight: normal !important;
+    }
 }
 @mixin highlight() {
     .av-highlight {
-        font-family: $semi-bold-monts;
+        font-family: $bold-monts;
     }
 }
 @mixin text-mixin($font:$regular-monts){
@@ -59,7 +61,7 @@
 @mixin text-system($font:$regular-monts){
     color: $color-text;
     font-family: $font;
-    font-size: $size-text - 5;
+    font-size: $size-text - 4;
     line-height: $size-text - 3;
 }
 @mixin negative($align:center) {

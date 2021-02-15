@@ -1845,9 +1845,9 @@ margin-top: 15px;
 .contentbackgroundcolor{
   background-color: #FFFFFF;
 }
-.footerbackgroundcolor{
-  background-color: #000000;
-}
+// .footerbackgroundcolor{
+//   background-color: #000000;
+// }
 .ht_line{
  background : url(/PRSuite/static/images/Skins/ht_black/ht_line_3px_height.jpg); width:759px;  height:2px; border:0;
 }
@@ -1995,44 +1995,44 @@ padding: 0px;
 
 
 /* added for wave D footer */
-a.footerLinks{
-	color: #333333;
-    font-family: Arial;
-    font-size: 11px;
-    font-weight: normal;
-    text-decoration: none;
-}
-.footerLinks{
-	color: #ffffff;
-    font-family: Arial;
-    font-size: 11px;
-    font-weight: normal;
-    text-decoration: none;
-}
-.footerLinks a:hover{
-	color: #f00088;
-	font-family: Arial;
-    font-size: 11px;
-    font-weight: normal;
-    text-decoration: none;
-}
+// a.footerLinks{
+// 	color: #333333;
+//     font-family: Arial;
+//     font-size: 11px;
+//     font-weight: normal;
+//     text-decoration: none;
+// }
+// .footerLinks{
+// 	color: #ffffff;
+//     font-family: Arial;
+//     font-size: 11px;
+//     font-weight: normal;
+//     text-decoration: none;
+// }
+// .footerLinks a:hover{
+// 	color: #f00088;
+// 	font-family: Arial;
+//     font-size: 11px;
+//     font-weight: normal;
+//     text-decoration: none;
+// }
 
-.footerLinksBold {
-	background-color: #f5f5f5;
-    color: #f00088;
-    font-family: Arial;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 8px;
-    text-decoration: none;
-    text-shadow: 1px 0 0 #ffffff;
-}
-.footerBackground {
-	background-color: #ffffff;
-    color: #f00088;
-    font-family: Arial;
-    font-size: 11px;
-}
+// .footerLinksBold {
+// 	background-color: #f5f5f5;
+//     color: #f00088;
+//     font-family: Arial;
+//     font-size: 11px;
+//     font-weight: bold;
+//     padding: 8px;
+//     text-decoration: none;
+//     text-shadow: 1px 0 0 #ffffff;
+// }
+// .footerBackground {
+// 	background-color: #ffffff;
+//     color: #f00088;
+//     font-family: Arial;
+//     font-size: 11px;
+// }
 form
 {
 margin: 0px;
@@ -2695,7 +2695,6 @@ text-decoration:none;
 
 .HT_bottom_line {
  	background: #ffffff none repeat scroll 0 0;
-    border-top: 3px solid #e2e2e2;
     height: 3px;
 }
 
