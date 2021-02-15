@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
+.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,16 +66,16 @@
   white-space: nowrap;
 }
 
-.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
+.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
   outline: none;
   text-decoration: none !important;
 }
 
-.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.negative, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder {
+.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.negative, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder, .rightalign > a.negative {
   color: #fff;
 }
 
-.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder {
+.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
   color: #fff;
   padding: 13px 30px;
   text-align: center;
@@ -88,11 +88,11 @@
           align-items: center;
 }
 
-.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus {
+.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
   z-index: 5;
 }
 
-.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.small, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.small, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder {
+.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.small, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.small, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder, .rightalign > a.small {
   padding: 10px 20px;
   font-size: 14px;
 }
@@ -198,7 +198,7 @@
 .articleHeader, td .font_bold.font_14.txt_fff, .orderbrochure_content, .av-tc h2, .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
-.titleStep4, .order_method_campaign, h1 > em, .Order_title_Step4 {
+.titleStep4, .order_method_campaign, h1 > em, .Order_title_Step4, .textbox_h1 {
   color: #3b4546;
   text-align: left;
   margin: 0px;
@@ -207,7 +207,7 @@
   padding: 0;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(3) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(4) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(5) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(6) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(7) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(8) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(9) tr td, [name="exForm"] table tr td table tr td table:nth-of-type(10) tr td {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, [name="exForm"] #lineno0 ~ table tr td[width="33%"] {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-box-shadow 0.4s;
@@ -216,7 +216,7 @@
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, [name="exForm"] table tr td table tr td table:nth-of-type(2) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(3) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(4) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(5) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(6) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(7) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(8) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(9) tr td:hover, [name="exForm"] table tr td table tr td table:nth-of-type(10) tr td:hover {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, [name="exForm"] #lineno0 ~ table tr td:hover[width="33%"] {
   -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -3072,7 +3072,11 @@ td .font_bold.font_14.txt_fff ~ td.padding_10 {
 
 .padding5.font_12 [src="/REPSuite/static/images/iom/confirmation_order_image.jpg"] {
   position: relative;
-  top: -120px;
+  top: -80px;
+}
+
+[src*="blue_divider"] {
+  display: none;
 }
 
 [valign="bottom"] > .alt_rows .tbl_bgmid3.tbl_header_big {
@@ -3444,6 +3448,14 @@ img[height="14"], [type="image"][height="14"] {
   font-size: 15px;
   line-height: 17px;
   color: gray;
+}
+
+[name="creditScoreForm"] table {
+  width: 100%;
+}
+
+[name="creditScoreForm"] table[width="176"] {
+  width: auto;
 }
 
 body, td {
@@ -3924,7 +3936,7 @@ td.td_bot_border > p, td.td_bot_border > div p {
   color: #E82F89 !important;
 }
 
-[name="exForm"] table tr td table tr td table:nth-of-type(2), [name="exForm"] table tr td table tr td table:nth-of-type(3), [name="exForm"] table tr td table tr td table:nth-of-type(4), [name="exForm"] table tr td table tr td table:nth-of-type(5), [name="exForm"] table tr td table tr td table:nth-of-type(6), [name="exForm"] table tr td table tr td table:nth-of-type(7), [name="exForm"] table tr td table tr td table:nth-of-type(8), [name="exForm"] table tr td table tr td table:nth-of-type(9), [name="exForm"] table tr td table tr td table:nth-of-type(10) {
+[name="exForm"] #lineno0 ~ table {
   border-spacing: 20px 15px;
 }
 
@@ -4055,5 +4067,106 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 
 .contentbackgroundcolor > div {
   margin-top: 40px;
+}
+
+.dudasComentarios {
+  padding: 20px 40px;
+  background-color: rgba(200, 200, 200, 0.3);
+  line-height: 23px;
+}
+
+.dudasComentarios a {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.dudasComentarios a:hover {
+  background-color: #f6effc;
+}
+
+.dudasComentarios a.visited {
+  color: #66209d;
+}
+
+.rightalign > a {
+  color: #7F28C4;
+}
+
+.rightalign > a svg {
+  fill: #7F28C4;
+  width: 26px;
+  height: 26px;
+  margin: 0 10px;
+}
+
+.rightalign > a:hover, .rightalign > a:active, .rightalign > a:focus {
+  color: #7F28C4;
+}
+
+.rightalign > a.negative {
+  color: #fff;
+}
+
+.rightalign > a.negative:hover, .rightalign > a.negative:active, .rightalign > a.negative:focus {
+  color: #fff;
+}
+
+.contentbackgroundcolor > div > span.body p {
+  text-align: center;
+}
+
+.articleHeader table tr td:nth-of-type(3) > img {
+  visibility: hidden;
+}
+
+[name="profilePersonalForm"] table tr td table tr td table tr:first-of-type > td:first-of-type,
+.leftalign table tr td table tr:first-of-type > td:first-of-type {
+  margin-top: -40px;
+}
+
+.textbox_h1 {
+  margin-bottom: 30px;
+  font-family: montserrat-light, Helvetica, sans-serif;
+  font-size: 30px;
+  width: 80%;
+}
+
+.textbox_h4 {
+  margin-bottom: 30px;
+}
+
+.textbox_h1 span {
+  color: #7F28C4;
+  font-weight: bolder;
+}
+
+.textbox p {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.containerbox {
+  padding: 40px 0px;
+  background-color: rgba(200, 200, 200, 0.3);
+  margin-bottom: 30px;
+}
+
+.containerbox span {
+  color: #7F28C4;
+}
+
+.border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
+  width: 300px;
+}
+
+.divisor {
+  background-color: #E82F89;
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=included_styles.css.map */

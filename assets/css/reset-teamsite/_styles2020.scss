@@ -514,8 +514,11 @@ td .font_bold.font_14.txt_fff {
 .padding5.font_12 {
     [src="/REPSuite/static/images/iom/confirmation_order_image.jpg"] {
         position: relative;
-        top: -120px;
+        top: -80px;
     }
+}
+[src*="blue_divider"] {
+    display: none;
 }
 [valign="bottom"] > .alt_rows .tbl_bgmid3.tbl_header_big {
     padding: 0 80px;
@@ -739,4 +742,10 @@ img[height="14"], [type="image"][height="14"] {
         }
         
     } 
+}
+[name="creditScoreForm"] table {
+    width: 100%;
+    &[width="176"] {
+        width: auto;
+    }
 }

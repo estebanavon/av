@@ -3326,58 +3326,13 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 
 @media (min-width: 1024px) {
   [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
-    display: none;
+    display: block;
     height: 80vh;
   }
 }
 
 [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table {
   width: 100%;
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:last-child > td {
-  height: 0px;
-  overflow: hidden;
-  display: none;
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv {
-  display: block !important;
-  width: 400px;
-  padding: 40px 50px;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv > table > tbody > tr:first-child > td > img {
-  width: 100%;
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv .loginBoxBG > table > tbody > tr > td > table {
-  width: 100%;
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(4) tr, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(6) tr, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(8) tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 12px;
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(4) tr input, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(6) tr input, [onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(8) tr input {
-  width: 100%;
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv [name="loginForm"] ~ tr:nth-last-child(4) td:nth-child(2) {
-  margin: 10px 0px;
-}
-
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) > td > table > tbody > tr #logindiv a.bodyCenter {
-  margin: 5px 0px;
 }
 
 [name="homeNavParent"] > table {
@@ -3403,5 +3358,126 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 [name="homeNavParent"] > table > tbody tr:nth-child(2) td:last-child {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+#logindiv {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block !important;
+  width: 400px;
+  padding: 40px 50px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+#logindiv > table > tbody > tr:first-child > td > img {
+  width: 100%;
+}
+
+#logindiv .loginBoxBG > table > tbody > tr > td > table {
+  width: 100%;
+}
+
+#logindiv [name="loginForm"] ~ tr:nth-last-child(4) tr, #logindiv [name="loginForm"] ~ tr:nth-last-child(6) tr, #logindiv [name="loginForm"] ~ tr:nth-last-child(8) tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 12px;
+}
+
+#logindiv [name="loginForm"] ~ tr:nth-last-child(4) tr input, #logindiv [name="loginForm"] ~ tr:nth-last-child(6) tr input, #logindiv [name="loginForm"] ~ tr:nth-last-child(8) tr input {
+  width: 100%;
+}
+
+#logindiv [name="loginForm"] ~ tr:nth-last-child(4) td:nth-child(2) {
+  margin: 10px 0px;
+}
+
+#logindiv a.bodyCenter {
+  margin: 5px 0px;
+}
+
+.avlogin-support {
+  margin-top: 35px;
+  width: 400px;
+  text-align: left;
+}
+
+.avlogin-support .avlogin-contact {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.avlogin-support .avlogin-contact p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.avlogin-support .avlogin-contact p svg {
+  margin-right: 3px;
+}
+
+.avlogin-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  height: 100%;
+}
+
+.avlogin-content > div:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.avlogin-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  background-color: #F7F7F7;
+}
+
+.avlogin-social a {
+  text-decoration: none;
+  color: #3b4546;
+}
+
+.avlogin-social > div {
+  font-size: 15px;
+}
+
+.avlogin-social > div:first-child {
+  margin-right: 40px;
+}
+
+.avlogin-social > div:last-child {
+  text-align: left;
+}
+
+.avlogin-social > div:last-child > div:first-child a::after {
+  content: ' /';
+}
+
+.avlogin-social > div:last-child > div:last-child a:first-child {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=usec.css.map */

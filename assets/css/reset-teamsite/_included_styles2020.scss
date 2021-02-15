@@ -136,9 +136,7 @@ input[type="checkbox"] {
 td input.buttonBgorder{
     @include av-button-secondary;
 }
-// td.td_bot_border > p, td.td_bot_border > div {
-//     @include text-system($regular-monts);
-// }
+
 td.td_bot_border > p, td.td_bot_border > div p{
     width: 80%;
 }
@@ -149,26 +147,15 @@ td.td_bot_border > p, td.td_bot_border > div p{
 [name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
     @include SalePrice;
 }
-[name="exForm"] table tr td table tr td table {
-    &:nth-of-type(2), 
-    &:nth-of-type(3), 
-    &:nth-of-type(4), 
-    &:nth-of-type(5), 
-    &:nth-of-type(6), 
-    &:nth-of-type(7), 
-    &:nth-of-type(8), 
-    &:nth-of-type(9), 
-    &:nth-of-type(10) {
-        @include borderSpace;
-        tr td {
+
+[name="exForm"] #lineno0 ~ table {
+    @include borderSpace;
+        tr td[width="33%"] {
             @include gridDemos;
         }
-    }
 }
 
-// .td_bot_border p {
-//     @include text-system($regular-monts);
-// }
+
 [name="newIooffersForm"] table tr td table tr td,
 [name="newIooffersForm"] table tr td table tr td img {
     @include step3;
@@ -177,9 +164,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
     @include cont_title_step4; 
 }
 
-// .textStep4{
-//     @include text-system($regular-monts);
-// }
 .cont_mar_step4{
     @include cont_mar_step4; 
 }
@@ -230,19 +214,60 @@ td.td_bot_border > p, td.td_bot_border > div p{
 
 /*by GErber Barillas 12 enero 2021*/
 
-
-
-
 /* CSS MX by GEBZ. */
 .articleHeader table tr td img#order_tracking_banner_1,
 .articleHeader table tr td img#order_tracking_banner_3{
     @include bannerSeguimiento; 
 }
-
 div#instantCreditContentSlot_content2 > p > a{
     @include av-link();
 }
-
 .contentbackgroundcolor > div {
     @include margintop;
+}
+.dudasComentarios{
+    @include dudasComentarios;
+}
+.dudasComentarios a{
+    @include av-link();
+}
+.rightalign > a {
+    @include av-button-tertiary;
+}
+.contentbackgroundcolor > div > span.body p{
+    text-align: center;
+}
+.articleHeader table tr td:nth-of-type(3) > img {
+    visibility: hidden;
+}
+[name="profilePersonalForm"] table tr td table tr td table tr:first-of-type > td:first-of-type,
+.leftalign  table  tr  td  table tr:first-of-type > td:first-of-type{
+    margin-top: -40px;
+}
+.textbox_h1{
+    @include textbox_h1;
+    @include title;
+    width: 80%;
+}
+.textbox_h4{
+    @include textbox_h4;
+}
+.textbox_h1 span{
+    @include textbox_h1_span;
+}
+.textbox p{
+    @include textbox_p;
+}
+.containerbox{
+    @include containerbox; 
+}
+.containerbox span{
+    @include containerbox_span;
+}
+
+.border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
+    width: 300px;
+}
+.divisor{
+    @include divisor;
 }

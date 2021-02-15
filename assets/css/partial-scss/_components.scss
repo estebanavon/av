@@ -187,5 +187,40 @@
     margin-top:40px;
 }
 
+@mixin dudasComentarios {
+    padding: 20px 40px;
+    background-color: $color-dark-30;
+    line-height: 23px;
+}
+@mixin textbox_h1 {
+    margin-bottom: 30px;
+}
+@mixin textbox_h4 {
+    margin-bottom: 30px;
+}
+@mixin textbox_h1_span {
+    color:$color-primary;
+    font-weight: bolder;
+}
+@mixin textbox_p {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+@mixin containerbox {
+    padding: 40px 0px;
+    background-color: $color-dark-30;
+    margin-bottom: 30px;
+}
+@mixin containerbox_span {
+    color:$color-primary;
+}
+@mixin divisor {
+    background-color:$color-secondary;
+    margin-bottom: 60px;
+}
+
+
+
+
 /* by Gerber Barillas */
 
