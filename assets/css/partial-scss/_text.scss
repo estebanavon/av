@@ -38,6 +38,9 @@
         font-family: $bold-monts;
     }
 }
+strong {
+    font-family: $bold-monts;
+}
 @mixin text-mixin($font:$regular-monts){
     color: $color-text;
     font-family: $font;

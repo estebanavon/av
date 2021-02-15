@@ -61,6 +61,10 @@
   padding: 0;
 }
 
+strong {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
 section.av-container {
   overflow-x: hidden;
 }

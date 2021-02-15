@@ -105,7 +105,6 @@ h1 > em {
 // TABLES
 
 .tbl_outerline, #returnForm > table,
-#orderTrackingForm td[height="10"] > table.body,
 #allrep, #allsl {
     box-shadow: $color-shadow-border;
 }
@@ -114,10 +113,8 @@ h1 > em {
         box-shadow: none;
     }
 }
+
 .tbl_lineentry,
-#aaa.bor_outer,
-#returnForm > table > tbody > tr > td > table,
-#orderTrackingForm td[height="10"],
 .my_customer,
 #allrep, #allsl {
     @include av-table();
@@ -125,6 +122,16 @@ h1 > em {
 #allrep, #allsl {
     @include av-table-result();
 }
+
+[name="selectUserForm"] table.body,
+#orderTrackingForm td[height="10"] > table.body,
+#frmOrderDelivery table.body,
+#receivedMsgForm td[height="10"] > table.body,
+#aaa.bor_outer > table,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
+    @include av-table1();
+}
+
 .tbl_outerline.bg_fff9f9 {
     @include av-table($color-dark-light,$color-text);
 }
@@ -225,9 +232,9 @@ td input.buttonBgorder{
 div#instantCreditContentSlot_content2 > p > a{
     @include av-link();
 }
-.contentbackgroundcolor > div {
-    @include margintop;
-}
+// .contentbackgroundcolor > div {
+//     @include margintop;
+// }
 .dudasComentarios{
     @include dudasComentarios;
 }
@@ -243,10 +250,10 @@ div#instantCreditContentSlot_content2 > p > a{
 .articleHeader table tr td:nth-of-type(3) > img {
     visibility: hidden;
 }
-[name="profilePersonalForm"] table tr td table tr td table tr:first-of-type > td:first-of-type,
-.leftalign  table  tr  td  table tr:first-of-type > td:first-of-type{
-    margin-top: -40px;
-}
+// [name="profilePersonalForm"] table tr td table tr td table tr:first-of-type > td:first-of-type,
+// .leftalign  table  tr  td  table tr:first-of-type > td:first-of-type{
+//     margin-top: -40px;
+// }
 .textbox_h1{
     @include textbox_h1;
     @include title;
@@ -268,9 +275,9 @@ div#instantCreditContentSlot_content2 > p > a{
     @include containerbox_span;
 }
 
-.border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
-    width: 300px;
-}
+// .border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
+//     width: 300px;
+// }
 .divisor{
     @include divisor;
 }

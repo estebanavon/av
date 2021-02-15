@@ -206,6 +206,10 @@
   padding: 0;
 }
 
+strong {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
 #clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, [name="exForm"] #lineno0 ~ table tr td[width="33%"] {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
@@ -2577,8 +2581,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 #divOuter_1 + table.alt_rows .bg_fff9f9 > thead td,
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td.font_bold,
-#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > div.font_bold,
-#divOuter_1 + table.alt_rows .bg_fff9f9 > table > tbody > tr:first-child > td {
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
   color: #3b4546;
@@ -3116,8 +3119,7 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > thead td,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td.font_bold,
-#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > div.font_bold,
-#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:first-child > td {
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > div.font_bold {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
   color: #3b4546;
@@ -3686,7 +3688,6 @@ h1 > em.left {
 }
 
 .tbl_outerline, #returnForm > table,
-#orderTrackingForm td[height="10"] > table.body,
 #allrep, #allsl {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
@@ -3698,9 +3699,6 @@ h1 > em.left {
 }
 
 .tbl_lineentry,
-#aaa.bor_outer,
-#returnForm > table > tbody > tr > td > table,
-#orderTrackingForm td[height="10"],
 .my_customer,
 #allrep, #allsl {
   width: 100%;
@@ -3711,36 +3709,17 @@ h1 > em.left {
 .tbl_lineentry > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .tbl_lineentry > tbody > tr:first-child > td.font_bold,
 .tbl_lineentry > tbody > tr:first-child > td > div.font_bold,
-.tbl_lineentry > table > tbody > tr:first-child > td,
-#aaa.bor_outer > thead td,
-#aaa.bor_outer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-#aaa.bor_outer > tbody > tr:first-child > td.font_bold,
-#aaa.bor_outer > tbody > tr:first-child > td > div.font_bold,
-#aaa.bor_outer > table > tbody > tr:first-child > td,
-#returnForm > table > tbody > tr > td > table > thead td,
-#returnForm > table > tbody > tr > td > table > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-#returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td.font_bold,
-#returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td > div.font_bold,
-#returnForm > table > tbody > tr > td > table > table > tbody > tr:first-child > td,
-#orderTrackingForm td[height="10"] > thead td,
-#orderTrackingForm td[height="10"] > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-#orderTrackingForm td[height="10"] > tbody > tr:first-child > td.font_bold,
-#orderTrackingForm td[height="10"] > tbody > tr:first-child > td > div.font_bold,
-#orderTrackingForm td[height="10"] > table > tbody > tr:first-child > td,
 .my_customer > thead td,
 .my_customer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .my_customer > tbody > tr:first-child > td.font_bold,
 .my_customer > tbody > tr:first-child > td > div.font_bold,
-.my_customer > table > tbody > tr:first-child > td,
 #allrep > thead td,
 #allrep > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #allrep > tbody > tr:first-child > td.font_bold,
-#allrep > tbody > tr:first-child > td > div.font_bold,
-#allrep > table > tbody > tr:first-child > td, #allsl > thead td,
+#allrep > tbody > tr:first-child > td > div.font_bold, #allsl > thead td,
 #allsl > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #allsl > tbody > tr:first-child > td.font_bold,
-#allsl > tbody > tr:first-child > td > div.font_bold,
-#allsl > table > tbody > tr:first-child > td {
+#allsl > tbody > tr:first-child > td > div.font_bold {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
   color: #3b4546;
@@ -3753,12 +3732,6 @@ h1 > em.left {
 
 .tbl_lineentry > tbody > tr:first-child > td > a.font_bold,
 .tbl_lineentry > tbody > tr:first-child > td > a,
-#aaa.bor_outer > tbody > tr:first-child > td > a.font_bold,
-#aaa.bor_outer > tbody > tr:first-child > td > a,
-#returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td > a.font_bold,
-#returnForm > table > tbody > tr > td > table > tbody > tr:first-child > td > a,
-#orderTrackingForm td[height="10"] > tbody > tr:first-child > td > a.font_bold,
-#orderTrackingForm td[height="10"] > tbody > tr:first-child > td > a,
 .my_customer > tbody > tr:first-child > td > a.font_bold,
 .my_customer > tbody > tr:first-child > td > a,
 #allrep > tbody > tr:first-child > td > a.font_bold,
@@ -3770,12 +3743,6 @@ h1 > em.left {
 }
 
 .tbl_lineentry tr.bgaltwhite, .tbl_lineentry tr.bgalt,
-#aaa.bor_outer tr.bgaltwhite,
-#aaa.bor_outer tr.bgalt,
-#returnForm > table > tbody > tr > td > table tr.bgaltwhite,
-#returnForm > table > tbody > tr > td > table tr.bgalt,
-#orderTrackingForm td[height="10"] tr.bgaltwhite,
-#orderTrackingForm td[height="10"] tr.bgalt,
 .my_customer tr.bgaltwhite,
 .my_customer tr.bgalt,
 #allrep tr.bgaltwhite,
@@ -3793,6 +3760,34 @@ h1 > em.left {
   padding: 4px;
 }
 
+[name="selectUserForm"] table.body,
+#orderTrackingForm td[height="10"] > table.body,
+#frmOrderDelivery table.body,
+#receivedMsgForm td[height="10"] > table.body,
+#aaa.bor_outer > table,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+[name="selectUserForm"] table.body > tbody > tr:first-child > td,
+#orderTrackingForm td[height="10"] > table.body > tbody > tr:first-child > td,
+#frmOrderDelivery table.body > tbody > tr:first-child > td,
+#receivedMsgForm td[height="10"] > table.body > tbody > tr:first-child > td,
+#aaa.bor_outer > table > tbody > tr:first-child > td,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:first-child > td {
+  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #3b4546;
+  padding: 17px 0px;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .tbl_outerline.bg_fff9f9 {
   width: 100%;
   text-align: center;
@@ -3801,8 +3796,7 @@ h1 > em.left {
 .tbl_outerline.bg_fff9f9 > thead td,
 .tbl_outerline.bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td.font_bold,
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold,
-.tbl_outerline.bg_fff9f9 > table > tbody > tr:first-child > td {
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
   color: #3b4546;
@@ -3847,7 +3841,7 @@ h1 > em.left {
   border-radius: 0px;
   min-width: 42px;
   width: auto;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .linearFormInput:hover, input[type="text"]:not(.searchBox):hover, input[type="password"]:hover {
@@ -3875,7 +3869,7 @@ select {
   border-radius: 0px;
   min-width: 42px;
   width: auto;
-  font-size: 15px;
+  font-size: 16px;
   background-color: transparent;
 }
 
@@ -4008,10 +4002,6 @@ div#instantCreditContentSlot_content2 > p > a.visited {
   color: #66209d;
 }
 
-.contentbackgroundcolor > div {
-  margin-top: 40px;
-}
-
 .dudasComentarios {
   padding: 20px 40px;
   background-color: rgba(200, 200, 200, 0.3);
@@ -4068,16 +4058,15 @@ div#instantCreditContentSlot_content2 > p > a.visited {
   visibility: hidden;
 }
 
-[name="profilePersonalForm"] table tr td table tr td table tr:first-of-type > td:first-of-type,
-.leftalign table tr td table tr:first-of-type > td:first-of-type {
-  margin-top: -40px;
-}
-
 .textbox_h1 {
   margin-bottom: 30px;
   font-family: montserrat-light, Helvetica, sans-serif;
   font-size: 30px;
   width: 80%;
+}
+
+.textbox_h1 b {
+  font-weight: normal !important;
 }
 
 .textbox_h4 {
@@ -4102,10 +4091,6 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 
 .containerbox span {
   color: #7F28C4;
-}
-
-.border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
-  width: 300px;
 }
 
 .divisor {
