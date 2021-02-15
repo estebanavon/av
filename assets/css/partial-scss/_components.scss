@@ -44,7 +44,7 @@
     border-radius: 0px;
     min-width: 42px;
     width: auto;
-    font-size: $size-text - 5;
+    font-size: $size-text - 4;
 
     &:hover {
         border-bottom: 1px solid $color-dark-light;
@@ -71,8 +71,7 @@
     > thead td,
     > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
     > tbody > tr:first-child > td.font_bold,
-    > tbody > tr:first-child > td > div.font_bold,
-    > table > tbody > tr:first-child > td {
+    > tbody > tr:first-child > td > div.font_bold {
         font-family: $semi-bold-monts;
         font-size: 14px;
         color: $color;
@@ -90,6 +89,22 @@
     }
     tr.bgaltwhite, tr.bgalt {
         height: 30px;
+    }
+}
+@mixin av-table1 {
+    width: 100%;
+    text-align:center;
+    box-shadow: $color-shadow-border;
+
+    > tbody > tr:first-child > td {
+        font-family: $semi-bold-monts;
+        font-size: 14px;
+        color: $color-text;
+        padding: 17px 0px;
+        background-color: $color-dark-lighter;
+        text-align: center;
+        line-height: 13px;
+        border-right: 1px solid $color-white-lighter;
     }
 }
 @mixin av-table-result {

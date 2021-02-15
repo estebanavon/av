@@ -80,7 +80,7 @@ h1 > em {
 }
 
 .tbl_outerline, #returnForm > table,
-#orderTrackingForm td[height="10"] > table.body {
+#allrep, #allsl {
     box-shadow: $color-shadow-border;
 }
 .div_table {
@@ -88,13 +88,25 @@ h1 > em {
         box-shadow: none;
     }
 }
+
 .tbl_lineentry,
-#aaa.bor_outer,
-#returnForm > table > tbody > tr > td > table,
-#orderTrackingForm td[height="10"],
-.my_customer {
+.my_customer,
+#allrep, #allsl {
     @include av-table();
 }
+#allrep, #allsl {
+    @include av-table-result();
+}
+
+[name="selectUserForm"] table.body,
+#orderTrackingForm td[height="10"] > table.body,
+#frmOrderDelivery table.body,
+#receivedMsgForm td[height="10"] > table.body,
+#aaa.bor_outer > table,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
+    @include av-table1();
+}
+
 .tbl_outerline.bg_fff9f9 {
     @include av-table($color-dark-light,$color-text);
 }
@@ -183,10 +195,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
 .divider{
     @include divider;
 }
-// [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table{
-//     @include text-system($regular-monts);
-//     @include list_product_step4;
-// }
 
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3){
     padding: 30px;
@@ -222,9 +230,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
 div#instantCreditContentSlot_content2 > p > a{
     @include av-link();
 }
-.contentbackgroundcolor > div {
-    @include margintop;
-}
 .dudasComentarios{
     @include dudasComentarios;
 }
@@ -239,10 +244,6 @@ div#instantCreditContentSlot_content2 > p > a{
 }
 .articleHeader table tr td:nth-of-type(3) > img {
     visibility: hidden;
-}
-[name="profilePersonalForm"] table tr td table tr td table tr:first-of-type > td:first-of-type,
-.leftalign  table  tr  td  table tr:first-of-type > td:first-of-type{
-    margin-top: -40px;
 }
 .textbox_h1{
     @include textbox_h1;
@@ -264,9 +265,12 @@ div#instantCreditContentSlot_content2 > p > a{
 .containerbox span{
     @include containerbox_span;
 }
+<<<<<<< HEAD
 .border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
     width: 300px;
 }
+=======
+>>>>>>> 69f098472fbb94ce72c7c49435eeaf033368a004
 .divisor{
     @include divisor;
 }
