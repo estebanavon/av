@@ -4,23 +4,16 @@ body, td {
     @include text-system($regular-monts);
 }
 
-
-
-ul.breadcrumb_line li a,
-ul.breadcrumb_line li.active a {
-    padding:  10px 20px;
-    font-size: 14px;
-}
-
-// BUTTONS
-
 ul.breadcrumb_line li a {
     @include av-button-secondary;
 }
 ul.breadcrumb_line li.active a {
     @include av-button-tertiary;
 }
-
+ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
+    padding:  10px 20px;
+    font-size: 14px;
+}
 .buttonBg {
     @include av-button-primary;
 }
@@ -43,40 +36,35 @@ a.ord_link {
         margin-right: 7px;
     }
 }
-
+.menuItem {
+    @include map-menu;
+}
+textarea {
+    @include av-textarea;
+}
 .tbl_outerline .buttonBgpink {
     @include av-button-secondary;
     margin: 0px 10px 10px 10px;
 }
 
-a.linkList,
-a.bodyCenter,
-a.bodyBold,
-a.body,
-a.offersLink,
-.normal_blacklink {
-	@include av-link();
+.contentbackgroundcolor {
+    padding: 0px 20px;
 }
-.menuItem {
-    @include map-menu;
-}
-
-
-
-textarea {
-    @include av-textarea;
-}
-
-
-
-//  TEXT
-
 .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
 .titleStep4 {
     @include title;
 }
+.contentbackgroundcolor td.tbl_bgmid3 {
+    white-space: nowrap;
+}
+.order_method_campaign {
+    @include titleRegular();
+    padding: 35px 0px 15px 50px;
+    height: auto;
+}
+
 .commentsArticleHeader,
 .sub_heading,
 .sub_heading2,
@@ -87,26 +75,12 @@ td h2,
 tr.tableBg1 ~ tr strong {
     @include text-system($bold-monts)
 }
-.sub_heading1 {
-    margin-bottom: 25px
-}
-.order_method_campaign {
-    @include titleRegular();
-    padding: 40px 0px 30px 0px;
-    height: auto;
-}
 h1 > em {
     @include subtitle(20px,center);
 }
 
-
-
-
-// TABLES
-
 .tbl_outerline, #returnForm > table,
-#orderTrackingForm td[height="10"] > table.body,
-#allrep, #allsl {
+#orderTrackingForm td[height="10"] > table.body {
     box-shadow: $color-shadow-border;
 }
 .div_table {
@@ -118,18 +92,16 @@ h1 > em {
 #aaa.bor_outer,
 #returnForm > table > tbody > tr > td > table,
 #orderTrackingForm td[height="10"],
-.my_customer,
-#allrep, #allsl {
+.my_customer {
     @include av-table();
-}
-#allrep, #allsl {
-    @include av-table-result();
 }
 .tbl_outerline.bg_fff9f9 {
     @include av-table($color-dark-light,$color-text);
 }
-
-
+[name="addeditform"] .tbl_header.tbl_bgmid3,
+.pop_main_header_txt {
+    @include modal-title;
+}
 
 .success, .rtlBody > strong > font {
     @include alert-succes;
@@ -138,7 +110,13 @@ h1 > em {
     @include alert-warning;
 }
 
-
+a.linkList,
+a.bodyCenter,
+a.bodyBold,
+a.body,
+a.offersLink {
+	@include av-link();
+}
 
 .linearFormInput, input[type="text"]:not(.searchBox), input[type="password"] {
     @include av-input-text();
@@ -159,31 +137,21 @@ td input.buttonBgorder{
     @include av-button-secondary;
 }
 
-
+td.td_bot_border > p, td.td_bot_border > div p{
+    width: 80%;
+}
 [name="exForm"] td.td_bot_border > div:first-of-type{
     @include demoDescription;
 }
 
+[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
+    @include SalePrice;
+}
 
 [name="exForm"] #lineno0 ~ table {
     @include borderSpace;
         tr td[width="33%"] {
             @include gridDemos;
-            > p {
-                width: 80%;
-                &:first-of-type {
-                    font-size: 16px;
-                    font-family: $bold-monts;
-                    display: block;
-                    margin-bottom: 8px;
-                }
-                span.red_txt2 {
-                    @include SalePrice;
-                }
-            }
-            div.padding_top10 {
-                padding-top: 20px;
-            }
         }
 }
 
@@ -199,7 +167,9 @@ td input.buttonBgorder{
 .cont_mar_step4{
     @include cont_mar_step4; 
 }
-
+.statuslight{
+    @include img_step4;
+}
 .cont_warning_Step4{
     @include cont_warning_Step4;
 }
@@ -213,7 +183,34 @@ td input.buttonBgorder{
 .divider{
     @include divider;
 }
+// [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table{
+//     @include text-system($regular-monts);
+//     @include list_product_step4;
+// }
 
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3){
+    padding: 30px;
+}
+[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) {
+    td table.alt_rows tr:first-of-type td,
+    td:nth-of-type(2) table.alt_rows tr:first-of-type td,
+    td:nth-of-type(3) table.alt_rows tr:first-of-type td {
+        @include position;
+    }
+    td table.alt_rows tr:first-of-type td:nth-of-type(2),
+    td:nth-of-type(2) table.alt_rows tr:first-of-type td:nth-of-type(2),
+    td:nth-of-type(3) table.alt_rows tr:first-of-type td:nth-of-type(2){
+        @include positionTop;
+    }
+    td table.alt_rows tr:nth-of-type(2) td,
+    td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td,
+    td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td{
+        @include position;
+        a {
+            @include av-link();
+        }
+    }
+} 
 
 /*by GErber Barillas 12 enero 2021*/
 
