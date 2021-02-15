@@ -80,11 +80,7 @@ h1 > em {
 }
 
 .tbl_outerline, #returnForm > table,
-<<<<<<< HEAD
 #allrep, #allsl {
-=======
-#orderTrackingForm td[height="10"] > table.body {
->>>>>>> c0825beace000973f33ea092dc7bdde57148adfd
     box-shadow: $color-shadow-border;
 }
 .div_table {
@@ -94,7 +90,6 @@ h1 > em {
 }
 
 .tbl_lineentry,
-<<<<<<< HEAD
 .my_customer,
 #allrep, #allsl {
     @include av-table();
@@ -112,14 +107,6 @@ h1 > em {
     @include av-table1();
 }
 
-=======
-#aaa.bor_outer,
-#returnForm > table > tbody > tr > td > table,
-#orderTrackingForm td[height="10"],
-.my_customer {
-    @include av-table();
-}
->>>>>>> c0825beace000973f33ea092dc7bdde57148adfd
 .tbl_outerline.bg_fff9f9 {
     @include av-table($color-dark-light,$color-text);
 }
@@ -208,10 +195,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
 .divider{
     @include divider;
 }
-// [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table{
-//     @include text-system($regular-monts);
-//     @include list_product_step4;
-// }
 
 [name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3){
     padding: 30px;
@@ -247,9 +230,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
 div#instantCreditContentSlot_content2 > p > a{
     @include av-link();
 }
-// .contentbackgroundcolor > div {
-//     @include margintop;
-// }
 .dudasComentarios{
     @include dudasComentarios;
 }
@@ -265,10 +245,6 @@ div#instantCreditContentSlot_content2 > p > a{
 .articleHeader table tr td:nth-of-type(3) > img {
     visibility: hidden;
 }
-// [name="profilePersonalForm"] table tr td table tr td table tr:first-of-type > td:first-of-type,
-// .leftalign  table  tr  td  table tr:first-of-type > td:first-of-type{
-//     margin-top: -40px;
-// }
 .textbox_h1{
     @include textbox_h1;
     @include title;
@@ -289,10 +265,6 @@ div#instantCreditContentSlot_content2 > p > a{
 .containerbox span{
     @include containerbox_span;
 }
-
-// .border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
-//     width: 300px;
-// }
 .divisor{
     @include divisor;
 }
