@@ -42,7 +42,7 @@ table.border > tbody > tr > td > table > tbody {
             display: flex;
             flex-direction: row-reverse;
             position: relative;
-            padding: 0px 40px 14px 40px;
+            padding: 0px 40px 10px 40px;
 
             > td:first-child {
                 flex: 3;
@@ -78,6 +78,9 @@ table.border > tbody > tr > td > table > tbody {
                                     flex: 1;
                                     padding-right: 80px;
                                     font-size: 12px;
+                                }
+                                .alert{
+                                    padding-left: 80px;
                                 }
                             } 
                             > td:first-child:not([colspan="3"]) {

@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
+.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, #yourTeamOrderForm #divBioBottom1 a.body, #yourTeamOrderForm #divBioBottom2 a.body, #yourTeamOrderForm #divBioBottom3 a.body, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,16 +66,16 @@
   white-space: nowrap;
 }
 
-.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
+.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, #yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom3 a.body:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom3 a.body:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:focus, #yourTeamOrderForm #divBioBottom3 a.body:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
   outline: none;
   text-decoration: none !important;
 }
 
-.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.negative, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder, .rightalign > a.negative {
+.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.negative, #yourTeamOrderForm #divBioBottom1 a.negative.body, #yourTeamOrderForm #divBioBottom2 a.negative.body, #yourTeamOrderForm #divBioBottom3 a.negative.body, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder, .rightalign > a.negative {
   color: #fff;
 }
 
-.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
+.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, #yourTeamOrderForm #divBioBottom1 a.body, #yourTeamOrderForm #divBioBottom2 a.body, #yourTeamOrderForm #divBioBottom3 a.body, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
   color: #fff;
   padding: 13px 30px;
   text-align: center;
@@ -88,11 +88,11 @@
           align-items: center;
 }
 
-.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
+.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, #yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom3 a.body:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom3 a.body:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:focus, #yourTeamOrderForm #divBioBottom3 a.body:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
   z-index: 5;
 }
 
-.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.small, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.small, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder, .rightalign > a.small {
+.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.small, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.small, #yourTeamOrderForm #divBioBottom1 a.small.body, #yourTeamOrderForm #divBioBottom2 a.small.body, #yourTeamOrderForm #divBioBottom3 a.small.body, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder, .rightalign > a.small {
   padding: 10px 20px;
   font-size: 14px;
 }
@@ -206,11 +206,7 @@
   padding: 0;
 }
 
-strong {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-}
-
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, [name="exForm"] #lineno0 ~ table tr td[width="33%"] {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, [name="exForm"] #lineno0 ~ table tr td.td_bot_border {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-box-shadow 0.4s;
@@ -219,7 +215,7 @@ strong {
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, [name="exForm"] #lineno0 ~ table tr td:hover[width="33%"] {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, [name="exForm"] #lineno0 ~ table tr td.td_bot_border:hover {
   -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -240,6 +236,171 @@ strong {
   top: 15px;
   left: 18px;
   border: 4px solid #f7f7f7;
+}
+
+.av-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.78);
+}
+
+.av-modal-content {
+  background-color: #ffffff;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.14);
+}
+
+.av-modal-close {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  width: auto;
+  padding: 20px 25px;
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.av-modal-close:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.av-modal-footer {
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.av-modal-background {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(84, 98, 100, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9990;
+}
+
+.av-modal-hcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 60vh;
+}
+
+@media (min-width: 768px) {
+  .av-modal-hcontainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.av-modal-hside {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.av-modal-hside .av-wrapper {
+  padding: 35px;
+}
+
+.av-modal-hside .modalFade {
+  opacity: 0;
+  -webkit-animation-name: modalFade;
+          animation-name: modalFade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes modalFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.av-modal-hbuttons .avModalButton {
+  text-decoration: none;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  border-left: 5px solid transparent;
+  padding: 6px;
+  padding-left: 10px;
+  color: #7F28C4;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.av-modal-hbuttons .avModalButton.active {
+  border-left-color: #7F28C4;
+  background-color: #F7F7F7;
+}
+
+.av-modal-himg {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.av-modal-himage {
+  width: 470px;
 }
 
 /* by Gerber Barillas */
@@ -2362,7 +2523,7 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
 
 @media (min-width: 992px) {
   #dashboardFrame {
-    width: 900px !important;
+    width: 800px !important;
   }
 }
 
@@ -2397,8 +2558,8 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
-  padding-left: 76px;
+  line-height: 18px;
+  padding-left: 72px;
   text-transform: uppercase;
   text-align: left;
 }
@@ -2414,6 +2575,7 @@ td .pink30_txt, .campaign_All {
   height: auto;
   font-family: montserrat-light, Helvetica, sans-serif;
   font-size: 30px;
+  line-height: 36px;
 }
 
 .articleHeader b {
@@ -2439,7 +2601,7 @@ td .pink30_txt, .campaign_All {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
   background-color: #f0f0f0;
   padding: 10px;
   text-align: left;
@@ -2503,7 +2665,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
 }
 
 /*------- STEPPER 2020 ------*/
@@ -2515,6 +2677,12 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 
 .tbl_bgpink td.padding_10.padding_left20 img {
   width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .tbl_bgpink td.padding_10.padding_left20 img {
+    float: left;
+  }
 }
 
 /*------- CREATE ORDER TABLES 2020 ------*/
@@ -2578,7 +2746,6 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-#divOuter_1 + table.alt_rows .bg_fff9f9 > thead td,
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td.font_bold,
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
@@ -2590,13 +2757,6 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
   text-align: center;
   line-height: 13px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > a.font_bold,
-#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > a {
-  color: #7F28C4;
-  white-space: nowrap;
-  text-decoration: none;
 }
 
 #divOuter_1 + table.alt_rows .bg_fff9f9 tr.bgaltwhite, #divOuter_1 + table.alt_rows .bg_fff9f9 tr.bgalt {
@@ -2681,60 +2841,60 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
 }
 
 /*------- BROSURA 2020 ------*/
-.contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
+[name="dirtyValue"] + table.center {
   width: 100%;
   margin: 50px 0px;
 }
 
-.contentbackgroundcolor table[width="745px"]:not(.bor_outer) .tbl_header_big {
-  margin-bottom: 20px;
+[name="dirtyValue"] + table.center .tbl_header_big {
+  margin-bottom: 10px;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer {
+[name="dirtyValue"] + table.center table.bor_outer {
   width: 100%;
   border-spacing: 10px 0px;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td {
   vertical-align: top;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table {
   min-height: 290px;
   border-spacing: 0px 15px;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table > tbody > tr {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr > td {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table > tbody > tr > td {
   padding: 10px 40px;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table {
   width: 100%;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table td {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table td {
   text-align: right;
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
   color: #E82F89;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table div[align="center"] {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table > tbody > tr .border_bottomd7d1d1 > table div[align="center"] {
   text-align: left;
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2744,16 +2904,16 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
           flex-direction: column-reverse;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody .bg_cecdcd {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody .bg_cecdcd {
   display: block;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody .bg_cecdcd h3 {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody .bg_cecdcd h3 {
   padding: 10px;
   text-align: center;
 }
 
-.contentbackgroundcolor table[width="745px"].bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody img[src*="offerImages"] {
+[name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody img[src*="offerImages"] {
   width: 100%;
   display: block;
   margin: 0 auto;
@@ -3116,7 +3276,6 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
   text-align: center;
 }
 
-#returnForm > table > tbody > tr > td > table > tbody > tr > td > thead td,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td.font_bold,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > div.font_bold {
@@ -3128,13 +3287,6 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
   text-align: center;
   line-height: 13px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > a.font_bold,
-#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > a {
-  color: #7F28C4;
-  white-space: nowrap;
-  text-decoration: none;
 }
 
 #returnForm > table > tbody > tr > td > table > tbody > tr > td tr.bgaltwhite, #returnForm > table > tbody > tr > td > table > tbody > tr > td tr.bgalt {
@@ -3153,8 +3305,8 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
 }
 
 #profilePersonalForm .tableBg1 {
-  background-color: #F7F7F7;
   padding: 15px;
+  background-color: #F7F7F7;
 }
 
 #profilePersonalForm .tableBg1 .tableBg1 > tbody > tr > td[width="26%"] {
@@ -3185,7 +3337,7 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
 }
 
 table[width="700"],
@@ -3231,7 +3383,7 @@ table[width="98%"] {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
   display: block;
   margin-bottom: 10px;
 }
@@ -3368,6 +3520,7 @@ img[height="14"], [type="image"][height="14"] {
 .av-tc h2 {
   font-family: montserrat-light, Helvetica, sans-serif;
   font-size: 30px;
+  line-height: 36px;
   margin-bottom: 20px;
 }
 
@@ -3379,7 +3532,7 @@ img[height="14"], [type="image"][height="14"] {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
   color: #3b4546;
   margin-bottom: 20px;
 }
@@ -3388,7 +3541,7 @@ img[height="14"], [type="image"][height="14"] {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
   text-align: justify;
   margin-bottom: 20px;
 }
@@ -3403,7 +3556,7 @@ img[height="14"], [type="image"][height="14"] {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
 }
 
 [name="creditScoreForm"] table {
@@ -3414,22 +3567,93 @@ img[height="14"], [type="image"][height="14"] {
   width: auto;
 }
 
-#unPlacedOrderForm [style="border: 1px solid #A9A9A9; background-color: #f0f0f0;"] {
+div[style*="#A9A9A9;"] {
   background-color: transparent !important;
   border: none !important;
+}
+
+#yourTeamOrderForm #divBioBottom1 a.body, #yourTeamOrderForm #divBioBottom2 a.body {
+  background-color: #7F28C4;
+}
+
+#yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:focus {
+  color: #fff;
+}
+
+#yourTeamOrderForm #divBioBottom3 a.body {
+  color: #7F28C4;
+  border: solid 1px #7F28C4;
+}
+
+#yourTeamOrderForm #divBioBottom3 a.body:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+  color: #7F28C4;
+}
+
+#yourTeamOrderForm #divBioBottom3 a.body.small {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.smallfieldcell > select {
+  width: 300px;
+}
+
+#unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body {
+  width: 100%;
+}
+
+#unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body td.bodyBold, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body td.bodyBold, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body td.bodyBold {
+  width: 100%;
+  padding: 20px;
+}
+
+#unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body td.bodyBold .openclose, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body td.bodyBold .openclose, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body td.bodyBold .openclose {
+  padding: 10px 10px;
+  left: 0;
+  top: -18px;
+  color: #7F28C4;
+  cursor: pointer;
+}
+
+#unPlacedOrderForm > table:last-child > tbody table[width="409"], #unPlacedOrderForm > table:last-child > tbody table[width="25%"], #unPlacedOrderForm > table:last-child > tbody table[width="40%"], #allOrderForm > table:last-child > tbody table[width="409"], #allOrderForm > table:last-child > tbody table[width="25%"], #allOrderForm > table:last-child > tbody table[width="40%"], #savedOrderForm > table:last-child > tbody table[width="409"], #savedOrderForm > table:last-child > tbody table[width="25%"], #savedOrderForm > table:last-child > tbody table[width="40%"] {
+  width: 50%;
+}
+
+#unPlacedOrderForm > table:last-child > tbody table[width="409"] .linearFormInput, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] .linearFormInput, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] .linearFormInput, #allOrderForm > table:last-child > tbody table[width="409"] .linearFormInput, #allOrderForm > table:last-child > tbody table[width="25%"] .linearFormInput, #allOrderForm > table:last-child > tbody table[width="40%"] .linearFormInput, #savedOrderForm > table:last-child > tbody table[width="409"] .linearFormInput, #savedOrderForm > table:last-child > tbody table[width="25%"] .linearFormInput, #savedOrderForm > table:last-child > tbody table[width="40%"] .linearFormInput {
+  width: 300px;
+}
+
+#unPlacedOrderForm > table:last-child > tbody table[width="409"] td.body, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] td.body, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] td.body, #allOrderForm > table:last-child > tbody table[width="409"] td.body, #allOrderForm > table:last-child > tbody table[width="25%"] td.body, #allOrderForm > table:last-child > tbody table[width="40%"] td.body, #savedOrderForm > table:last-child > tbody table[width="409"] td.body, #savedOrderForm > table:last-child > tbody table[width="25%"] td.body, #savedOrderForm > table:last-child > tbody table[width="40%"] td.body {
+  height: 20px;
+  font-size: 14px;
+  text-align: right;
+  white-space: nowrap;
+  width: 200px;
+  display: inline-block;
+  padding-right: 22px;
+}
+
+#unPlacedOrderForm > table:last-child > tbody table[width="409"] td.body + td + td > a, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] td.body + td + td > a, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] td.body + td + td > a, #allOrderForm > table:last-child > tbody table[width="409"] td.body + td + td > a, #allOrderForm > table:last-child > tbody table[width="25%"] td.body + td + td > a, #allOrderForm > table:last-child > tbody table[width="40%"] td.body + td + td > a, #savedOrderForm > table:last-child > tbody table[width="409"] td.body + td + td > a, #savedOrderForm > table:last-child > tbody table[width="25%"] td.body + td + td > a, #savedOrderForm > table:last-child > tbody table[width="40%"] td.body + td + td > a {
+  position: relative;
+  left: -20px;
+}
+
+#unPlacedOrderForm > table:last-child > tbody table[width="409"] #divBioBottom, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] #divBioBottom, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] #divBioBottom, #allOrderForm > table:last-child > tbody table[width="409"] #divBioBottom, #allOrderForm > table:last-child > tbody table[width="25%"] #divBioBottom, #allOrderForm > table:last-child > tbody table[width="40%"] #divBioBottom, #savedOrderForm > table:last-child > tbody table[width="409"] #divBioBottom, #savedOrderForm > table:last-child > tbody table[width="25%"] #divBioBottom, #savedOrderForm > table:last-child > tbody table[width="40%"] #divBioBottom {
+  margin-top: 20px;
+}
+
+#allrep1, #allsl1 {
+  max-width: 1088px;
+  overflow-y: auto;
+  display: block;
 }
 
 body, td {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 17px;
-}
-
-ul.breadcrumb_line li a,
-ul.breadcrumb_line li.active a {
-  padding: 10px 20px;
-  font-size: 14px;
+  line-height: 18px;
 }
 
 ul.breadcrumb_line li a {
@@ -3461,6 +3685,11 @@ ul.breadcrumb_line li.active a.negative {
 
 ul.breadcrumb_line li.active a.negative:hover, ul.breadcrumb_line li.active a.negative:active, ul.breadcrumb_line li.active a.negative:focus {
   color: #fff;
+}
+
+ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
+  padding: 10px 20px;
+  font-size: 14px;
 }
 
 .buttonBg {
@@ -3547,6 +3776,10 @@ a.ord_link span br {
   color: #fff;
 }
 
+.view, .view_order {
+  vertical-align: top;
+}
+
 .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"] {
   color: #7F28C4;
   border: solid 1px #7F28C4;
@@ -3563,6 +3796,30 @@ a.ord_link span br {
   font-size: 14px;
 }
 
+.menuItem {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  color: gray;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  color: #3b4546;
+  border-radius: 4px;
+  border: 2px solid #e2e2e2;
+  resize: none;
+}
+
 .tbl_outerline .buttonBgpink {
   background-color: #7F28C4;
   margin: 0px 10px 10px 10px;
@@ -3570,6 +3827,225 @@ a.ord_link span br {
 
 .tbl_outerline .buttonBgpink:hover, .tbl_outerline .buttonBgpink:active, .tbl_outerline .buttonBgpink:focus {
   color: #fff;
+}
+
+.tbl_header_big,
+.contentbackgroundcolor td.tbl_bgmid3,
+.sub_heading1,
+.titleStep4 {
+  font-family: montserrat-light, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.tbl_header_big b,
+.contentbackgroundcolor td.tbl_bgmid3 b,
+.sub_heading1 b,
+.titleStep4 b {
+  font-weight: normal !important;
+}
+
+.sub_heading1 {
+  margin-bottom: 30px;
+}
+
+.contentbackgroundcolor td.tbl_bgmid3 {
+  white-space: nowrap;
+}
+
+.order_method_campaign {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 45px 0px 45px 0px;
+  height: auto;
+}
+
+.commentsArticleHeader,
+.sub_heading,
+.sub_heading2,
+td h2,
+.bodyBold,
+#profilePersonalForm .rtlBody strong,
+.tableBg1 strong,
+tr.tableBg1 ~ tr strong {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+h1 > em {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 19px;
+}
+
+@media (min-width: 768px) {
+  h1 > em {
+    font-size: 20px;
+  }
+}
+
+h1 > em.left {
+  text-align: left;
+}
+
+.tbl_outerline, #returnForm > table {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.div_table .tbl_outerline {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tbl_lineentry,
+.my_customer {
+  width: 100%;
+  text-align: center;
+}
+
+.tbl_lineentry > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+.tbl_lineentry > tbody > tr:first-child > td.font_bold,
+.tbl_lineentry > tbody > tr:first-child > td > div.font_bold,
+.my_customer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+.my_customer > tbody > tr:first-child > td.font_bold,
+.my_customer > tbody > tr:first-child > td > div.font_bold {
+  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #3b4546;
+  padding: 17px 0px;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.tbl_lineentry tr.bgaltwhite, .tbl_lineentry tr.bgalt,
+.my_customer tr.bgaltwhite,
+.my_customer tr.bgalt {
+  height: 30px;
+}
+
+.sortable, #allrep, #allrep1, #allsl, #allsl1, #allrepdiffzone, #allrepdiffzoneALL,
+[name="selectUserForm"] table.body,
+#orderTrackingForm td[height="10"] > table.body,
+#frmOrderDelivery table.body,
+#receivedMsgForm td[height="10"] > table.body,
+#aaa.bor_outer > table,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sortable > thead td,
+.sortable > tbody:first-child > tr:first-child > td, #allrep > thead td,
+#allrep > tbody:first-child > tr:first-child > td, #allrep1 > thead td,
+#allrep1 > tbody:first-child > tr:first-child > td, #allsl > thead td,
+#allsl > tbody:first-child > tr:first-child > td, #allsl1 > thead td,
+#allsl1 > tbody:first-child > tr:first-child > td, #allrepdiffzone > thead td,
+#allrepdiffzone > tbody:first-child > tr:first-child > td, #allrepdiffzoneALL > thead td,
+#allrepdiffzoneALL > tbody:first-child > tr:first-child > td,
+[name="selectUserForm"] table.body > thead td,
+[name="selectUserForm"] table.body > tbody:first-child > tr:first-child > td,
+#orderTrackingForm td[height="10"] > table.body > thead td,
+#orderTrackingForm td[height="10"] > table.body > tbody:first-child > tr:first-child > td,
+#frmOrderDelivery table.body > thead td,
+#frmOrderDelivery table.body > tbody:first-child > tr:first-child > td,
+#receivedMsgForm td[height="10"] > table.body > thead td,
+#receivedMsgForm td[height="10"] > table.body > tbody:first-child > tr:first-child > td,
+#aaa.bor_outer > table > thead td,
+#aaa.bor_outer > table > tbody:first-child > tr:first-child > td,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > thead td,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody:first-child > tr:first-child > td {
+  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #3b4546;
+  padding: 17px 0px;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sortable > thead td > a,
+.sortable > tbody:first-child > tr:first-child > td > a, #allrep > thead td > a,
+#allrep > tbody:first-child > tr:first-child > td > a, #allrep1 > thead td > a,
+#allrep1 > tbody:first-child > tr:first-child > td > a, #allsl > thead td > a,
+#allsl > tbody:first-child > tr:first-child > td > a, #allsl1 > thead td > a,
+#allsl1 > tbody:first-child > tr:first-child > td > a, #allrepdiffzone > thead td > a,
+#allrepdiffzone > tbody:first-child > tr:first-child > td > a, #allrepdiffzoneALL > thead td > a,
+#allrepdiffzoneALL > tbody:first-child > tr:first-child > td > a,
+[name="selectUserForm"] table.body > thead td > a,
+[name="selectUserForm"] table.body > tbody:first-child > tr:first-child > td > a,
+#orderTrackingForm td[height="10"] > table.body > thead td > a,
+#orderTrackingForm td[height="10"] > table.body > tbody:first-child > tr:first-child > td > a,
+#frmOrderDelivery table.body > thead td > a,
+#frmOrderDelivery table.body > tbody:first-child > tr:first-child > td > a,
+#receivedMsgForm td[height="10"] > table.body > thead td > a,
+#receivedMsgForm td[height="10"] > table.body > tbody:first-child > tr:first-child > td > a,
+#aaa.bor_outer > table > thead td > a,
+#aaa.bor_outer > table > tbody:first-child > tr:first-child > td > a,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > thead td > a,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody:first-child > tr:first-child > td > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.sortable > thead td, #allrep > thead td, #allrep1 > thead td, #allsl > thead td, #allsl1 > thead td, #allrepdiffzone > thead td, #allrepdiffzoneALL > thead td {
+  color: #7F28C4;
+  border-bottom: none !important;
+}
+
+.sortable > tbody td, #allrep > tbody td, #allrep1 > tbody td, #allsl > tbody td, #allsl1 > tbody td, #allrepdiffzone > tbody td, #allrepdiffzoneALL > tbody td {
+  font-size: 12px;
+  padding: 4px;
+}
+
+.tbl_outerline.bg_fff9f9 {
+  width: 100%;
+  text-align: center;
+}
+
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td.font_bold,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
+  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #3b4546;
+  padding: 17px 0px;
+  background-color: #cccccc;
+  text-align: center;
+  line-height: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.tbl_outerline.bg_fff9f9 tr.bgaltwhite, .tbl_outerline.bg_fff9f9 tr.bgalt {
+  height: 30px;
+}
+
+[name="addeditform"] .tbl_header.tbl_bgmid3,
+.pop_main_header_txt {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  line-height: 34px;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+}
+
+.success, .rtlBody > strong > font {
+  color: #1A8282 !important;
+}
+
+.error, .red_txt2, .totalQty {
+  color: #F09F87 !important;
 }
 
 a.linkList,
@@ -3604,226 +4080,6 @@ a.body.visited,
 a.offersLink.visited,
 .normal_blacklink.visited {
   color: #66209d;
-}
-
-.menuItem {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  color: gray;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 28px;
-  text-decoration: none;
-}
-
-.menuItem:hover {
-  text-decoration: underline;
-}
-
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  color: #3b4546;
-  border-radius: 4px;
-  border: 2px solid #e2e2e2;
-  resize: none;
-}
-
-.tbl_header_big,
-.contentbackgroundcolor td.tbl_bgmid3,
-.sub_heading1,
-.titleStep4 {
-  font-family: montserrat-light, Helvetica, sans-serif;
-  font-size: 30px;
-}
-
-.tbl_header_big b,
-.contentbackgroundcolor td.tbl_bgmid3 b,
-.sub_heading1 b,
-.titleStep4 b {
-  font-weight: normal !important;
-}
-
-.commentsArticleHeader,
-.sub_heading,
-.sub_heading2,
-td h2,
-.bodyBold,
-#profilePersonalForm .rtlBody strong,
-.tableBg1 strong,
-tr.tableBg1 ~ tr strong {
-  color: #3b4546;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 17px;
-}
-
-.sub_heading1 {
-  margin-bottom: 25px;
-}
-
-.order_method_campaign {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 24px;
-  padding: 40px 0px 30px 0px;
-  height: auto;
-}
-
-h1 > em {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 19px;
-}
-
-@media (min-width: 768px) {
-  h1 > em {
-    font-size: 20px;
-  }
-}
-
-h1 > em.left {
-  text-align: left;
-}
-
-.tbl_outerline, #returnForm > table,
-#allrep, #allsl {
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-}
-
-.div_table .tbl_outerline {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.tbl_lineentry,
-.my_customer,
-#allrep, #allsl {
-  width: 100%;
-  text-align: center;
-}
-
-.tbl_lineentry > thead td,
-.tbl_lineentry > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-.tbl_lineentry > tbody > tr:first-child > td.font_bold,
-.tbl_lineentry > tbody > tr:first-child > td > div.font_bold,
-.my_customer > thead td,
-.my_customer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-.my_customer > tbody > tr:first-child > td.font_bold,
-.my_customer > tbody > tr:first-child > td > div.font_bold,
-#allrep > thead td,
-#allrep > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-#allrep > tbody > tr:first-child > td.font_bold,
-#allrep > tbody > tr:first-child > td > div.font_bold, #allsl > thead td,
-#allsl > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-#allsl > tbody > tr:first-child > td.font_bold,
-#allsl > tbody > tr:first-child > td > div.font_bold {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #3b4546;
-  padding: 17px 0px;
-  background-color: #f0f0f0;
-  text-align: center;
-  line-height: 13px;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.tbl_lineentry > tbody > tr:first-child > td > a.font_bold,
-.tbl_lineentry > tbody > tr:first-child > td > a,
-.my_customer > tbody > tr:first-child > td > a.font_bold,
-.my_customer > tbody > tr:first-child > td > a,
-#allrep > tbody > tr:first-child > td > a.font_bold,
-#allrep > tbody > tr:first-child > td > a, #allsl > tbody > tr:first-child > td > a.font_bold,
-#allsl > tbody > tr:first-child > td > a {
-  color: #7F28C4;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.tbl_lineentry tr.bgaltwhite, .tbl_lineentry tr.bgalt,
-.my_customer tr.bgaltwhite,
-.my_customer tr.bgalt,
-#allrep tr.bgaltwhite,
-#allrep tr.bgalt, #allsl tr.bgaltwhite, #allsl tr.bgalt {
-  height: 30px;
-}
-
-#allrep > thead td, #allsl > thead td {
-  color: #7F28C4;
-  border-bottom: none !important;
-}
-
-#allrep > tbody td, #allsl > tbody td {
-  font-size: 12px;
-  padding: 4px;
-}
-
-[name="selectUserForm"] table.body,
-#orderTrackingForm td[height="10"] > table.body,
-#frmOrderDelivery table.body,
-#receivedMsgForm td[height="10"] > table.body,
-#aaa.bor_outer > table,
-#returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
-  width: 100%;
-  text-align: center;
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-}
-
-[name="selectUserForm"] table.body > tbody > tr:first-child > td,
-#orderTrackingForm td[height="10"] > table.body > tbody > tr:first-child > td,
-#frmOrderDelivery table.body > tbody > tr:first-child > td,
-#receivedMsgForm td[height="10"] > table.body > tbody > tr:first-child > td,
-#aaa.bor_outer > table > tbody > tr:first-child > td,
-#returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:first-child > td {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #3b4546;
-  padding: 17px 0px;
-  background-color: #f0f0f0;
-  text-align: center;
-  line-height: 13px;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.tbl_outerline.bg_fff9f9 {
-  width: 100%;
-  text-align: center;
-}
-
-.tbl_outerline.bg_fff9f9 > thead td,
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td.font_bold,
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #3b4546;
-  padding: 17px 0px;
-  background-color: #cccccc;
-  text-align: center;
-  line-height: 13px;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > a.font_bold,
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > a {
-  color: #7F28C4;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.tbl_outerline.bg_fff9f9 tr.bgaltwhite, .tbl_outerline.bg_fff9f9 tr.bgalt {
-  height: 30px;
-}
-
-.success, .rtlBody > strong > font {
-  color: #1A8282 !important;
-}
-
-.error, .red_txt2, .totalQty {
-  color: #F09F87 !important;
 }
 
 .linearFormInput, input[type="text"]:not(.searchBox), input[type="password"] {
@@ -3902,6 +4158,10 @@ td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgor
   color: #fff;
 }
 
+td.td_bot_border > p, td.td_bot_border > div p {
+  width: 80%;
+}
+
 [name="exForm"] td.td_bot_border > div:first-of-type {
   width: 85%;
   margin: 0 auto;
@@ -3911,46 +4171,28 @@ td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgor
   border-spacing: 14px 6px;
 }
 
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] > p {
-  width: 80%;
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border {
+  font-size: 13px;
 }
 
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] > p:first-of-type {
-  font-size: 16px;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  display: block;
-  margin-bottom: 8px;
-}
-
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] > p span.red_txt2 {
-  font-weight: 600;
-  font-size: 22px !important;
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border > p span.red_txt2 {
+  font-size: 22px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
   color: #E82F89 !important;
 }
 
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] div.padding_top10 {
-  padding-top: 20px;
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border > div.padding_top10 {
+  padding-top: 17px;
+}
+
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border strong {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 17px;
 }
 
 [name="newIooffersForm"] table tr td table tr td,
 [name="newIooffersForm"] table tr td table tr td img {
   width: 100% !important;
-}
-
-.cont_title_step4 {
-  line-height: 40px;
-}
-
-.cont_mar_step4 {
-  padding: 40px 0px;
-}
-
-.cont_warning_Step4 {
-  background-color: #F7F7F7;
-}
-
-.title_pink {
-  color: #E82F89;
 }
 
 .Order_title_Step4 {
@@ -3975,7 +4217,6 @@ td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgor
   color: #E82F89;
 }
 
-/*by GErber Barillas 12 enero 2021*/
 /* CSS MX by GEBZ. */
 .articleHeader table tr td img#order_tracking_banner_1,
 .articleHeader table tr td img#order_tracking_banner_3 {
@@ -4062,6 +4303,7 @@ div#instantCreditContentSlot_content2 > p > a.visited {
   margin-bottom: 30px;
   font-family: montserrat-light, Helvetica, sans-serif;
   font-size: 30px;
+  line-height: 36px;
   width: 80%;
 }
 

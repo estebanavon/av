@@ -29,6 +29,7 @@
     @extend %titles;
     font-family: $light-monts;
     font-size: 30px;
+    line-height: 36px;
     b {
         font-weight: normal !important;
     }
@@ -38,9 +39,7 @@
         font-family: $bold-monts;
     }
 }
-strong {
-    font-family: $bold-monts;
-}
+
 @mixin text-mixin($font:$regular-monts){
     color: $color-text;
     font-family: $font;
@@ -65,7 +64,7 @@ strong {
     color: $color-text;
     font-family: $font;
     font-size: $size-text - 4;
-    line-height: $size-text - 3;
+    line-height: $size-text - 2;
 }
 @mixin negative($align:center) {
     &.negative {

@@ -106,6 +106,9 @@
     }
     
 }
+.av-title {
+    @include title;
+}
 
 .av-text{
     @include text-mixin();
@@ -243,6 +246,10 @@
         @media (min-width:$media-1) {
             min-height: 300px;
         }
+    }
+    > a:hover {
+        text-decoration: none;
+        display: block;
     }
     .av-card-wrapper {
         position: absolute;
@@ -515,63 +522,6 @@
 }
 .flex-1{
     flex-grow: 1;
-}
-
-.av-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.78);
-    &-content {
-        background-color: #ffffff;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        box-sizing: border-box;
-        max-width: 650px;
-        margin: auto;
-        border-radius: 4px;
-        position: relative;
-    }
-    &-close {
-        font-size: 20px;
-        color: $color-white;
-        background-color: $color-primary;
-        cursor: pointer;
-        width: auto;
-        padding: 20px 25px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transition: all 0.4s;
-        &:hover {
-            color: $color-primary;
-            background-color: $color-white;
-        }
-    }
-    &-footer {
-        padding: 12px;
-        color: rgba(255, 255, 255, 0.5);
-    }
-    &-background{
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.1);
-        position: fixed;
-        top: 0;
-        z-index: 9990;
-        left: 0;
-    }
-    img {
-        width: 100%;
-    }
 }
 
 .av-scroll-wrapper {

@@ -414,25 +414,36 @@ function AlphaFadeWithImage()
            //construct the wait panel
        var lPanel = document.createElement("div");
        lPanel.id ="lPanel";
-       lPanel.style.cursor = "wait";
-       var iWidth = (window.screen.width/2) - (125+10);
-       var iHeight = (window.screen.height/2) - 80;
+    //    lPanel.style.cursor = "wait";
+    //    var iWidth = (window.screen.width/2) - (125+10);
+    //    var iHeight = (window.screen.height/2) - 80;
        
-       lPanel.style.left =  iWidth;
-       lPanel.style.top =  iHeight;
-       lPanel.align="center";
-       lPanel.style.width = "208";
-       lPanel.style.height = "13";
-       lPanel.style.position = "absolute";
-       lPanel.style.border ='1 solid #000000';
-       lPanel.style.filter = "progid:DXImageTransform.Microsoft.Shadow(direction=45,color=#000000,strength=5)";
-       lPanel.style.backgroundColor = "#eeeeee";
+    //    lPanel.style.left =  iWidth;
+    //    lPanel.style.top =  iHeight;
+    //    lPanel.align="center";
+    //    lPanel.style.width = "208";
+    //    lPanel.style.height = "13";
+    //    lPanel.style.position = "absolute";
+    //    lPanel.style.border ='1 solid #000000';
+    //    lPanel.style.filter = "progid:DXImageTransform.Microsoft.Shadow(direction=45,color=#000000,strength=5)";
+    //    lPanel.style.backgroundColor = "#eeeeee";
        lPanel.style.zIndex = "201";
+	    lPanel.style.position = "fixed";
+	    lPanel.style.top =  '0';
+       lPanel.style.display = "flex";
+	   lPanel.style.justifyContent = "center";
+	   lPanel.style.alignItems = "center";
+		lPanel.style.width = "100%";
+       lPanel.style.height = "100%";
        //var loadPWait = '<table border=0 bordercolor=666666 width=100% height=100% cellpadding=0 cellspacing=0><tr><td bgcolor=#666666 style="color:white;font-family:verdana;font-size:8pt;font-weight:600;" height=10>&nbsp;'+headerMessage+'</td></tr><tr><td style="color:#666666;font-family:verdana;font-size:8pt;" bgcolor=#ffffff align=center>'+processMessage+'</td></tr></table>';
-       var loadPWait = '<img src="static/images/iom/loadingAnimation.png" alt="Animation">';
+       var loadPWait = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" xml:space="preserve">'+
+	   '<circle cx="50" cy="50" r="40" class="avThickboxLoader"/></svg>';
+	   
        lPanel.innerHTML = loadPWait;
        //  document.body.appendChild(transPanel);
        document.body.appendChild(lPanel);
+	   
+	   
    }
    catch(Exception){}
 }

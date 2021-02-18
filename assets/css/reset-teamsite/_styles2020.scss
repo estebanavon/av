@@ -2,7 +2,7 @@
 #dashboardFrame {
     width: 100% !important;
     @media (min-width:$media-2){
-        width: 900px !important;
+        width: 800px !important;
     }
 }
 [name="dashboardInformationForm"] td[nowrap=""]{
@@ -33,7 +33,7 @@
 .accName_Text,
 .ord_gray_txt {
     @include text-system($bold-monts);
-    padding-left: 76px;
+    padding-left: 72px;
     text-transform: uppercase;
     text-align: left;
 }
@@ -115,6 +115,9 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
     display: flex;
     img {
         width: 100%;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            float: left;
+        }
     }
 }
 
@@ -234,64 +237,65 @@ table.order_table {
 
 /*------- BROSURA 2020 ------*/
 
-.contentbackgroundcolor table[width="745px"]:not(.bor_outer) {
+[name="dirtyValue"] + table.center {
     width: 100%;
     margin: 50px 0px;
     .tbl_header_big {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-}
-.contentbackgroundcolor table[width="745px"].bor_outer {
-    width: 100%;
-    border-spacing: 10px 0px;
-    > tbody > tr > td {
-        vertical-align: top;
-        &:first-child > table {
-            min-height: 290px;
-            border-spacing: 0px 15px;
-            > tbody > tr {
-                box-shadow: $color-shadow-border;
-                > td {
-                    padding: 10px 40px;
-                }
-                .border_bottomd7d1d1 {
-                    > table {
-                        width: 100%;
-
-                        td {
-                            text-align: right;
-                            @include text-system($bold-monts);
-                            color: $color-secondary;
-                        }
-                        div[align="center"] {
-                            text-align: left;
-                            @include text-system($bold-monts);
-                        }
+    table.bor_outer {
+        width: 100%;
+        border-spacing: 10px 0px;
+        > tbody > tr > td {
+            vertical-align: top;
+            &:first-child > table {
+                min-height: 290px;
+                border-spacing: 0px 15px;
+                > tbody > tr {
+                    box-shadow: $color-shadow-border;
+                    > td {
+                        padding: 10px 40px;
                     }
-                }
-            }
-        }
-        &:last-child {
-            .tbl_orderpack > tbody {
-                display: flex;
-                flex-direction: column-reverse;
-                .bg_cecdcd {
-                    display: block;
-                    h3 {
-                        padding: 10px;
-                        text-align: center;
-                    }
-                }
-                img[src*="offerImages"]{
-                    @include img-full-screen;
-                }
-                
-            }
-        }
-
-    }
+                    .border_bottomd7d1d1 {
+                        > table {
+                            width: 100%;
     
+                            td {
+                                text-align: right;
+                                @include text-system($bold-monts);
+                                color: $color-secondary;
+                            }
+                            div[align="center"] {
+                                text-align: left;
+                                @include text-system($bold-monts);
+                            }
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                .tbl_orderpack > tbody {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .bg_cecdcd {
+                        display: block;
+                        h3 {
+                            padding: 10px;
+                            text-align: center;
+                        }
+                    }
+                    img[src*="offerImages"]{
+                        @include img-full-screen;
+                    }
+                    
+                }
+            }
+    
+        }
+        
+    }
 }
+
 
 #searchForm {
     table[width="752"] {
@@ -595,6 +599,7 @@ td.leftalign {
         }
     }
 }
+//.tableBg1,
 .bg_f5f3f4 {
     background-color: $color-light-white;
 }
@@ -611,8 +616,8 @@ td.leftalign {
 } 
 #profilePersonalForm {
     .tableBg1 {
-        background-color: $color-light-white;
         padding: 15px;
+        background-color: $color-light-white;
         .tableBg1 > tbody > tr {
             > td[width="26%"] {
                 display: none;
@@ -764,7 +769,56 @@ img[height="14"], [type="image"][height="14"] {
         width: auto;
     }
 }
-#unPlacedOrderForm [style="border: 1px solid #A9A9A9; background-color: #f0f0f0;"] {
+div[style*="#A9A9A9;"] {
     background-color: transparent !important;
     border: none !important;
+}
+#yourTeamOrderForm {
+    #divBioBottom {
+        &1 a.body, &2 a.body {
+            @include av-button-secondary;
+        }
+        &3 a.body {
+            @include av-button-outline;
+        }
+    }   
+}
+.smallfieldcell > select {
+    width: 300px;
+}
+#unPlacedOrderForm, #allOrderForm, #savedOrderForm {
+    > table:last-child > tbody {
+        > tr:last-child tr[valign="top"] + tr table.body {
+            @include av-panel;
+        }
+        
+        table[width="409"], table[width="25%"], table[width="40%"] {
+            width: 50%;
+            .linearFormInput{
+                width: 300px;
+            }
+            td.body {
+                height: 20px;
+                font-size: 14px;
+                text-align: right;
+                white-space: nowrap;
+                width: 200px;
+                display: inline-block;
+                padding-right: 22px;
+                + td + td > a {
+                    position: relative;
+                    left: -20px;
+                }
+            }
+            #divBioBottom {
+                margin-top: 20px;
+            }
+        }
+        
+    }
+}
+#allrep1,#allsl1{
+    max-width: 1088px;
+    overflow-y: auto;
+    display: block;
 }

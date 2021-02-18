@@ -3131,7 +3131,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   position: relative;
-  padding: 0px 40px 14px 40px;
+  padding: 0px 40px 10px 40px;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
@@ -3185,6 +3185,10 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
           flex: 1;
   padding-right: 80px;
   font-size: 12px;
+}
+
+table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) td[colspan="3"] > table > tbody > tr .alert {
+  padding-left: 80px;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(2) > td table > tbody > tr:nth-child(4) > td:first-child:not([colspan="3"]) {

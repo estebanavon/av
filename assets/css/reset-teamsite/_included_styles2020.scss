@@ -31,6 +31,7 @@ a.ord_link {
     @include av-button-tertiary;
 }
 .view, .view_order {
+    vertical-align: top;
     ~ td [onclick="ClearAllItems();"]{
         @include av-button-outline;
         margin-right: 7px;
@@ -47,21 +48,21 @@ textarea {
     margin: 0px 10px 10px 10px;
 }
 
-.contentbackgroundcolor {
-    padding: 0px 20px;
-}
 .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
 .titleStep4 {
     @include title;
 }
+.sub_heading1 {
+    margin-bottom: 30px;
+}
 .contentbackgroundcolor td.tbl_bgmid3 {
     white-space: nowrap;
 }
 .order_method_campaign {
     @include titleRegular();
-    padding: 35px 0px 15px 50px;
+    padding: 45px 0px 45px 0px;
     height: auto;
 }
 
@@ -79,8 +80,7 @@ h1 > em {
     @include subtitle(20px,center);
 }
 
-.tbl_outerline, #returnForm > table,
-#allrep, #allsl {
+.tbl_outerline, #returnForm > table {
     box-shadow: $color-shadow-border;
 }
 .div_table {
@@ -90,14 +90,10 @@ h1 > em {
 }
 
 .tbl_lineentry,
-.my_customer,
-#allrep, #allsl {
+.my_customer {
     @include av-table();
 }
-#allrep, #allsl {
-    @include av-table-result();
-}
-
+.sortable, #allrep, #allrep1, #allsl, #allsl1,#allrepdiffzone,#allrepdiffzoneALL, 
 [name="selectUserForm"] table.body,
 #orderTrackingForm td[height="10"] > table.body,
 #frmOrderDelivery table.body,
@@ -105,6 +101,9 @@ h1 > em {
 #aaa.bor_outer > table,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
     @include av-table1();
+}
+.sortable, #allrep, #allrep1, #allsl, #allsl1, #allrepdiffzone, #allrepdiffzoneALL {
+    @include av-table-result();
 }
 
 .tbl_outerline.bg_fff9f9 {
@@ -126,7 +125,8 @@ a.linkList,
 a.bodyCenter,
 a.bodyBold,
 a.body,
-a.offersLink {
+a.offersLink,
+.normal_blacklink {
 	@include av-link();
 }
 
@@ -156,15 +156,24 @@ td.td_bot_border > p, td.td_bot_border > div p{
     @include demoDescription;
 }
 
-[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
-    @include SalePrice;
-}
-
 [name="exForm"] #lineno0 ~ table {
     @include borderSpace;
-        tr td[width="33%"] {
+        tr td.td_bot_border {
             @include gridDemos;
+            > p span.red_txt2 {
+                @include SalePrice;
+            }
+            
+            > div.padding_top10 {
+                padding-top: 17px;
+            }
+            strong {
+                font-family: $bold-monts;
+                font-size: 17px;
+            }
         }
+        
+        
 }
 
 
@@ -172,23 +181,7 @@ td.td_bot_border > p, td.td_bot_border > div p{
 [name="newIooffersForm"] table tr td table tr td img {
     @include step3;
 }
-.cont_title_step4{
-    @include cont_title_step4; 
-}
 
-.cont_mar_step4{
-    @include cont_mar_step4; 
-}
-.statuslight{
-    @include img_step4;
-}
-.cont_warning_Step4{
-    @include cont_warning_Step4;
-}
-
-.title_pink{
-    @include title_pink;
-}
 .Order_title_Step4{
     @include subtitle(20px,left);
 }
@@ -196,31 +189,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
     @include divider;
 }
 
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3){
-    padding: 30px;
-}
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) {
-    td table.alt_rows tr:first-of-type td,
-    td:nth-of-type(2) table.alt_rows tr:first-of-type td,
-    td:nth-of-type(3) table.alt_rows tr:first-of-type td {
-        @include position;
-    }
-    td table.alt_rows tr:first-of-type td:nth-of-type(2),
-    td:nth-of-type(2) table.alt_rows tr:first-of-type td:nth-of-type(2),
-    td:nth-of-type(3) table.alt_rows tr:first-of-type td:nth-of-type(2){
-        @include positionTop;
-    }
-    td table.alt_rows tr:nth-of-type(2) td,
-    td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td,
-    td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td{
-        @include position;
-        a {
-            @include av-link();
-        }
-    }
-} 
-
-/*by GErber Barillas 12 enero 2021*/
 
 /* CSS MX by GEBZ. */
 .articleHeader table tr td img#order_tracking_banner_1,
