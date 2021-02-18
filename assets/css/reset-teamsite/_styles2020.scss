@@ -784,37 +784,32 @@ div[style*="#A9A9A9;"] {
     }   
 }
 .smallfieldcell > select {
-    width: 300px;
+    width: 280px;
 }
 #unPlacedOrderForm, #allOrderForm, #savedOrderForm {
     > table:last-child > tbody {
         > tr:last-child tr[valign="top"] + tr table.body {
             @include av-panel;
         }
-        
-        table[width="409"], table[width="25%"], table[width="40%"] {
-            width: 50%;
-            .linearFormInput{
-                width: 300px;
-            }
-            td.body {
-                height: 20px;
-                font-size: 14px;
-                text-align: right;
-                white-space: nowrap;
-                width: 200px;
-                display: inline-block;
-                padding-right: 22px;
-                + td + td > a {
-                    position: relative;
-                    left: -20px;
-                }
-            }
-            #divBioBottom {
-                margin-top: 20px;
+        .linearFormInput{
+            width: 280px;
+        }
+        td.body {
+            height: 20px;
+            font-size: 14px;
+            padding-right: 20px;
+            width: 220px;
+            text-align: right;
+            + td + td > a {
+                position: relative;
+                left: -20px;
             }
         }
         
+        
+        #divBioBottom {
+            margin-top: 20px;
+        }
     }
 }
 #allrep1,#allsl1{

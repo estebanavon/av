@@ -1,9 +1,10 @@
 
-const brochures20 = [
+
+const brochures5 = [
     {
-        title: 'Cyber Weekend',
-        file: '15',
-        type: 'imb',
+        title: 'Anew Clinical Especial',
+        file: 'AnewClinicalEvento',
+        type: 'flyer',
     },
     {
         title: 'Belleza',
@@ -16,69 +17,45 @@ const brochures20 = [
         type: 'imb',
     },
     {
-        title: 'Cuidar de ti',
+        title: 'Evento Anew',
         file: '3',
         type: 'imb',
     },
     {
-        title: 'Cucina Donna',
+        title: 'Anew',
         file: '4',
         type: 'imb',
     },
     {
-        title: 'Bienestar personal',
-        file: '6',
-        type: 'imb',
-    },
-    {
-        title: 'Regalos Navideños',
-        file: '12',
-        type: 'imb',
-    },
-    {
-        title: 'Regalos Premium',
-        file: '13',
-        type: 'imb',
-    },
-    {
-        title: 'Salón en casa',
-        file: '14',
-        type: 'imb',
-    },
-    {
-        title: '3er del Concierto Avon',
-        file: '3erConcierto.pdf',
+        title: 'Anticipate y gana',
+        file: 'AnticipateGana.pdf',
         type: 'flyer',
     },
     {
-        title: 'Adios 2020, Hola rebajas',
-        file: 'Adios2020HolaRebajas.pdf',
+        title: 'Avon Care Olive Oil',
+        file: 'FlyerACOliveOil.pdf',
         type: 'flyer',
     },
     {
-        title: 'Flap Macadamia',
-        file: 'FlapMacadamia.pdf',
+        title: 'Flyer festival de maquillaje',
+        file: 'FlyerFestivaldeMaquillaje.pdf',
         type: 'flyer',
     },
     {
-        title: 'Las últimas y nos vamos',
-        file: 'LasUltimasNosVamos.pdf',
+        title: 'Llegaron vacaciones descuentos',
+        file: 'LlegaronVacacionesdescuentos.pdf',
         type: 'flyer',
     },
     {
-        title: 'Minifolleto Kids Navideño',
-        file: 'MinifolletoKidsNavideno.pdf',
-        type: 'flyer',
-    },
-    {
-        title: 'Ofertas navideñas, Ding Dong',
-        file: 'OfertasNavidenasDingDong.pdf',
+        title: 'Minifolleto descuentos Día de la Mujer',
+        file: 'MinifolletoDescuentosDiaMujer.pdf',
         type: 'flyer',
     },
     {
         title: 'Avon Contigo',
-        file: 'avon_contigo_c2020.pdf',
+        file: 'avon_contigo_c0521.pdf',
         type: 'contigo',
     },
+  
 ]
 

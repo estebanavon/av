@@ -3596,7 +3596,7 @@ div[style*="#A9A9A9;"] {
 }
 
 .smallfieldcell > select {
-  width: 300px;
+  width: 280px;
 }
 
 #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body {
@@ -3616,30 +3616,24 @@ div[style*="#A9A9A9;"] {
   cursor: pointer;
 }
 
-#unPlacedOrderForm > table:last-child > tbody table[width="409"], #unPlacedOrderForm > table:last-child > tbody table[width="25%"], #unPlacedOrderForm > table:last-child > tbody table[width="40%"], #allOrderForm > table:last-child > tbody table[width="409"], #allOrderForm > table:last-child > tbody table[width="25%"], #allOrderForm > table:last-child > tbody table[width="40%"], #savedOrderForm > table:last-child > tbody table[width="409"], #savedOrderForm > table:last-child > tbody table[width="25%"], #savedOrderForm > table:last-child > tbody table[width="40%"] {
-  width: 50%;
+#unPlacedOrderForm > table:last-child > tbody .linearFormInput, #allOrderForm > table:last-child > tbody .linearFormInput, #savedOrderForm > table:last-child > tbody .linearFormInput {
+  width: 280px;
 }
 
-#unPlacedOrderForm > table:last-child > tbody table[width="409"] .linearFormInput, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] .linearFormInput, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] .linearFormInput, #allOrderForm > table:last-child > tbody table[width="409"] .linearFormInput, #allOrderForm > table:last-child > tbody table[width="25%"] .linearFormInput, #allOrderForm > table:last-child > tbody table[width="40%"] .linearFormInput, #savedOrderForm > table:last-child > tbody table[width="409"] .linearFormInput, #savedOrderForm > table:last-child > tbody table[width="25%"] .linearFormInput, #savedOrderForm > table:last-child > tbody table[width="40%"] .linearFormInput {
-  width: 300px;
-}
-
-#unPlacedOrderForm > table:last-child > tbody table[width="409"] td.body, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] td.body, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] td.body, #allOrderForm > table:last-child > tbody table[width="409"] td.body, #allOrderForm > table:last-child > tbody table[width="25%"] td.body, #allOrderForm > table:last-child > tbody table[width="40%"] td.body, #savedOrderForm > table:last-child > tbody table[width="409"] td.body, #savedOrderForm > table:last-child > tbody table[width="25%"] td.body, #savedOrderForm > table:last-child > tbody table[width="40%"] td.body {
+#unPlacedOrderForm > table:last-child > tbody td.body, #allOrderForm > table:last-child > tbody td.body, #savedOrderForm > table:last-child > tbody td.body {
   height: 20px;
   font-size: 14px;
+  padding-right: 20px;
+  width: 220px;
   text-align: right;
-  white-space: nowrap;
-  width: 200px;
-  display: inline-block;
-  padding-right: 22px;
 }
 
-#unPlacedOrderForm > table:last-child > tbody table[width="409"] td.body + td + td > a, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] td.body + td + td > a, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] td.body + td + td > a, #allOrderForm > table:last-child > tbody table[width="409"] td.body + td + td > a, #allOrderForm > table:last-child > tbody table[width="25%"] td.body + td + td > a, #allOrderForm > table:last-child > tbody table[width="40%"] td.body + td + td > a, #savedOrderForm > table:last-child > tbody table[width="409"] td.body + td + td > a, #savedOrderForm > table:last-child > tbody table[width="25%"] td.body + td + td > a, #savedOrderForm > table:last-child > tbody table[width="40%"] td.body + td + td > a {
+#unPlacedOrderForm > table:last-child > tbody td.body + td + td > a, #allOrderForm > table:last-child > tbody td.body + td + td > a, #savedOrderForm > table:last-child > tbody td.body + td + td > a {
   position: relative;
   left: -20px;
 }
 
-#unPlacedOrderForm > table:last-child > tbody table[width="409"] #divBioBottom, #unPlacedOrderForm > table:last-child > tbody table[width="25%"] #divBioBottom, #unPlacedOrderForm > table:last-child > tbody table[width="40%"] #divBioBottom, #allOrderForm > table:last-child > tbody table[width="409"] #divBioBottom, #allOrderForm > table:last-child > tbody table[width="25%"] #divBioBottom, #allOrderForm > table:last-child > tbody table[width="40%"] #divBioBottom, #savedOrderForm > table:last-child > tbody table[width="409"] #divBioBottom, #savedOrderForm > table:last-child > tbody table[width="25%"] #divBioBottom, #savedOrderForm > table:last-child > tbody table[width="40%"] #divBioBottom {
+#unPlacedOrderForm > table:last-child > tbody #divBioBottom, #allOrderForm > table:last-child > tbody #divBioBottom, #savedOrderForm > table:last-child > tbody #divBioBottom {
   margin-top: 20px;
 }
 
