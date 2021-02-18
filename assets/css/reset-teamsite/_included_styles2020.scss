@@ -236,3 +236,9 @@ div#instantCreditContentSlot_content2 > p > a{
 .divisor{
     @include divisor;
 }
+
+[name="frmSendEBrochure"] table tr td table tr td:nth-child(5) > div{
+    width: 58%;
+    margin: 0 auto;
+    text-align: center;
+}

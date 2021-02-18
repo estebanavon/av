@@ -4046,8 +4046,7 @@ a.linkList,
 a.bodyCenter,
 a.bodyBold,
 a.body,
-a.offersLink,
-.normal_blacklink {
+a.offersLink {
   color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   text-decoration: underline;
@@ -4187,6 +4186,22 @@ td.td_bot_border > p, td.td_bot_border > div p {
 [name="newIooffersForm"] table tr td table tr td,
 [name="newIooffersForm"] table tr td table tr td img {
   width: 100% !important;
+}
+
+.cont_title_step4 {
+  line-height: 40px;
+}
+
+.statuslight {
+  padding: 40px 0px;
+}
+
+.cont_warning_Step4 {
+  background-color: #F7F7F7;
+}
+
+.title_pink {
+  color: #E82F89;
 }
 
 .Order_title_Step4 {
@@ -4332,5 +4347,11 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 .divisor {
   background-color: #E82F89;
   margin-bottom: 60px;
+}
+
+[name="frmSendEBrochure"] table tr td table tr td:nth-child(5) > div {
+  width: 58%;
+  margin: 0 auto;
+  text-align: center;
 }
 /*# sourceMappingURL=included_styles.css.map */
