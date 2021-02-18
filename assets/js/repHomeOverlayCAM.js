@@ -16,10 +16,6 @@ const avOlderConfig = [
     },
 ];
 
-
-
-
-
 var avConfig,loaCheck;
 //var loaCheck = AvonAnalyticsObjex.Profile.loa;
 var loaCheck = 9;
@@ -44,6 +40,10 @@ var avModalhtml = '<div id="avOverlay" class="av-modal">'+
             '</div></div></div></div></div>';
                 
 if (sessionStorage.getItem("homeModalClosed") != "true") {
+    var avModalNameGet = document.querySelector('#avModalNameGet').textContent;
+    console.log(avModalNameGet);
+    document.querySelector('#avModalNameGet').textContent = avModalNameGet;
+    
     var avContainer = document.createElement('div');
     avContainer.innerHTML = avModalhtml;
     var avTarget = parent.document.querySelector('body');
@@ -52,6 +52,7 @@ if (sessionStorage.getItem("homeModalClosed") != "true") {
 
 $(document).ready(function(){
 
+    $('#avModalName').text(avModalNameGet);
     let avMoreTitle,avMore;
     $('.avMore-open').click(function(){
         avMoreTitle = $(this).attr('av-data');
