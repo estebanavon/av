@@ -176,9 +176,7 @@ td.td_bot_border > p, td.td_bot_border > div p{
     @include cont_title_step4; 
 }
 
-.cont_mar_step4{
-    @include cont_mar_step4; 
-}
+
 .statuslight{
     @include img_step4;
 }
@@ -196,29 +194,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
     @include divider;
 }
 
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) td:nth-of-type(3){
-    padding: 30px;
-}
-[name="frmSummary"] table tr:nth-of-type(2) > td table tr:nth-of-type(3) > td > table tr:nth-of-type(2) {
-    td table.alt_rows tr:first-of-type td,
-    td:nth-of-type(2) table.alt_rows tr:first-of-type td,
-    td:nth-of-type(3) table.alt_rows tr:first-of-type td {
-        @include position;
-    }
-    td table.alt_rows tr:first-of-type td:nth-of-type(2),
-    td:nth-of-type(2) table.alt_rows tr:first-of-type td:nth-of-type(2),
-    td:nth-of-type(3) table.alt_rows tr:first-of-type td:nth-of-type(2){
-        @include positionTop;
-    }
-    td table.alt_rows tr:nth-of-type(2) td,
-    td:nth-of-type(2) table.alt_rows tr:nth-of-type(2) td,
-    td:nth-of-type(3) table.alt_rows tr:nth-of-type(2) td{
-        @include position;
-        a {
-            @include av-link();
-        }
-    }
-} 
 
 /*by GErber Barillas 12 enero 2021*/
 
@@ -265,12 +240,12 @@ div#instantCreditContentSlot_content2 > p > a{
 .containerbox span{
     @include containerbox_span;
 }
-<<<<<<< HEAD
-.border tr td table tr:nth-child(3) td table tr td table tr:nth-child(3) td table tr td table tr td a img {
-    width: 300px;
-}
-=======
->>>>>>> 69f098472fbb94ce72c7c49435eeaf033368a004
 .divisor{
     @include divisor;
+}
+
+[name="frmSendEBrochure"] table tr td table tr td:nth-child(5) > div{
+    width: 58%;
+    margin: 0 auto;
+    text-align: center;
 }

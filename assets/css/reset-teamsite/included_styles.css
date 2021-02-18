@@ -3426,12 +3426,6 @@ body, td {
   line-height: 17px;
 }
 
-ul.breadcrumb_line li a,
-ul.breadcrumb_line li.active a {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
 ul.breadcrumb_line li a {
   background-color: #7F28C4;
 }
@@ -3461,6 +3455,11 @@ ul.breadcrumb_line li.active a.negative {
 
 ul.breadcrumb_line li.active a.negative:hover, ul.breadcrumb_line li.active a.negative:active, ul.breadcrumb_line li.active a.negative:focus {
   color: #fff;
+}
+
+ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
+  padding: 10px 20px;
+  font-size: 14px;
 }
 
 .buttonBg {
@@ -3563,49 +3562,6 @@ a.ord_link span br {
   font-size: 14px;
 }
 
-.tbl_outerline .buttonBgpink {
-  background-color: #7F28C4;
-  margin: 0px 10px 10px 10px;
-}
-
-.tbl_outerline .buttonBgpink:hover, .tbl_outerline .buttonBgpink:active, .tbl_outerline .buttonBgpink:focus {
-  color: #fff;
-}
-
-a.linkList,
-a.bodyCenter,
-a.bodyBold,
-a.body,
-a.offersLink,
-.normal_blacklink {
-  color: #7F28C4;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  text-decoration: underline;
-  font-style: normal;
-  cursor: pointer;
-  font-size: 16px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-a.linkList:hover,
-a.bodyCenter:hover,
-a.bodyBold:hover,
-a.body:hover,
-a.offersLink:hover,
-.normal_blacklink:hover {
-  background-color: #f6effc;
-}
-
-a.linkList.visited,
-a.bodyCenter.visited,
-a.bodyBold.visited,
-a.body.visited,
-a.offersLink.visited,
-.normal_blacklink.visited {
-  color: #66209d;
-}
-
 .menuItem {
   font-family: montserrat-regular, Helvetica, sans-serif;
   color: gray;
@@ -3630,6 +3586,19 @@ textarea {
   resize: none;
 }
 
+.tbl_outerline .buttonBgpink {
+  background-color: #7F28C4;
+  margin: 0px 10px 10px 10px;
+}
+
+.tbl_outerline .buttonBgpink:hover, .tbl_outerline .buttonBgpink:active, .tbl_outerline .buttonBgpink:focus {
+  color: #fff;
+}
+
+.contentbackgroundcolor {
+  padding: 0px 20px;
+}
+
 .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
@@ -3645,6 +3614,17 @@ textarea {
   font-weight: normal !important;
 }
 
+.contentbackgroundcolor td.tbl_bgmid3 {
+  white-space: nowrap;
+}
+
+.order_method_campaign {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 35px 0px 15px 50px;
+  height: auto;
+}
+
 .commentsArticleHeader,
 .sub_heading,
 .sub_heading2,
@@ -3657,17 +3637,6 @@ tr.tableBg1 ~ tr strong {
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 16px;
   line-height: 17px;
-}
-
-.sub_heading1 {
-  margin-bottom: 25px;
-}
-
-.order_method_campaign {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 24px;
-  padding: 40px 0px 30px 0px;
-  height: auto;
 }
 
 h1 > em {
@@ -3818,12 +3787,54 @@ h1 > em.left {
   height: 30px;
 }
 
+[name="addeditform"] .tbl_header.tbl_bgmid3,
+.pop_main_header_txt {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  line-height: 34px;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+}
+
 .success, .rtlBody > strong > font {
   color: #1A8282 !important;
 }
 
 .error, .red_txt2, .totalQty {
   color: #F09F87 !important;
+}
+
+a.linkList,
+a.bodyCenter,
+a.bodyBold,
+a.body,
+a.offersLink {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a.linkList:hover,
+a.bodyCenter:hover,
+a.bodyBold:hover,
+a.body:hover,
+a.offersLink:hover {
+  background-color: #f6effc;
+}
+
+a.linkList.visited,
+a.bodyCenter.visited,
+a.bodyBold.visited,
+a.body.visited,
+a.offersLink.visited {
+  color: #66209d;
 }
 
 .linearFormInput, input[type="text"]:not(.searchBox), input[type="password"] {
@@ -3902,34 +3913,23 @@ td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgor
   color: #fff;
 }
 
+td.td_bot_border > p, td.td_bot_border > div p {
+  width: 80%;
+}
+
 [name="exForm"] td.td_bot_border > div:first-of-type {
   width: 85%;
   margin: 0 auto;
 }
 
-[name="exForm"] #lineno0 ~ table {
-  border-spacing: 14px 6px;
-}
-
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] > p {
-  width: 80%;
-}
-
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] > p:first-of-type {
-  font-size: 16px;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  display: block;
-  margin-bottom: 8px;
-}
-
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] > p span.red_txt2 {
+[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
   font-weight: 600;
   font-size: 22px !important;
   color: #E82F89 !important;
 }
 
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] div.padding_top10 {
-  padding-top: 20px;
+[name="exForm"] #lineno0 ~ table {
+  border-spacing: 14px 6px;
 }
 
 [name="newIooffersForm"] table tr td table tr td,
@@ -3941,7 +3941,7 @@ td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgor
   line-height: 40px;
 }
 
-.cont_mar_step4 {
+.statuslight {
   padding: 40px 0px;
 }
 
@@ -4096,5 +4096,11 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 .divisor {
   background-color: #E82F89;
   margin-bottom: 60px;
+}
+
+[name="frmSendEBrochure"] table tr td table tr td:nth-child(5) > div {
+  width: 58%;
+  margin: 0 auto;
+  text-align: center;
 }
 /*# sourceMappingURL=included_styles.css.map */
