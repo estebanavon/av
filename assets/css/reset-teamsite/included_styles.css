@@ -4034,7 +4034,8 @@ a.linkList,
 a.bodyCenter,
 a.bodyBold,
 a.body,
-a.offersLink {
+a.offersLink,
+.normal_blacklink {
   color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   text-decoration: underline;
