@@ -340,10 +340,13 @@
 }
 @mixin textbox_h4 {
     margin-bottom: 30px;
+    font-family: $bold-monts;
+    font-size: 16px;
 }
 @mixin textbox_h1_span {
-    color:$color-primary;
+    color:$color-success;
     font-weight: bolder;
+    font-family: $bold-monts;
 }
 @mixin textbox_p {
     margin-bottom: 20px;

@@ -206,7 +206,7 @@
   padding: 0;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, [name="exForm"] #lineno0 ~ table tr td.td_bot_border {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, [name="exForm"] #lineno0 ~ table tr td[width="33%"] {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-box-shadow 0.4s;
@@ -215,7 +215,7 @@
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, [name="exForm"] #lineno0 ~ table tr td.td_bot_border:hover {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, [name="exForm"] #lineno0 ~ table tr td:hover[width="33%"] {
   -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -3770,10 +3770,6 @@ a.ord_link span br {
   color: #fff;
 }
 
-.view, .view_order {
-  vertical-align: top;
-}
-
 .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"] {
   color: #7F28C4;
   border: solid 1px #7F28C4;
@@ -3823,6 +3819,10 @@ textarea {
   color: #fff;
 }
 
+.contentbackgroundcolor {
+  padding: 0px 20px;
+}
+
 .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
@@ -3839,10 +3839,6 @@ textarea {
   font-weight: normal !important;
 }
 
-.sub_heading1 {
-  margin-bottom: 30px;
-}
-
 .contentbackgroundcolor td.tbl_bgmid3 {
   white-space: nowrap;
 }
@@ -3850,7 +3846,7 @@ textarea {
 .order_method_campaign {
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 24px;
-  padding: 45px 0px 45px 0px;
+  padding: 35px 0px 15px 50px;
   height: auto;
 }
 
@@ -3885,7 +3881,8 @@ h1 > em.left {
   text-align: left;
 }
 
-.tbl_outerline, #returnForm > table {
+.tbl_outerline, #returnForm > table,
+#allrep, #allsl {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
@@ -3896,7 +3893,8 @@ h1 > em.left {
 }
 
 .tbl_lineentry,
-.my_customer {
+.my_customer,
+#allrep, #allsl {
   width: 100%;
   text-align: center;
 }
@@ -3906,7 +3904,12 @@ h1 > em.left {
 .tbl_lineentry > tbody > tr:first-child > td > div.font_bold,
 .my_customer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .my_customer > tbody > tr:first-child > td.font_bold,
-.my_customer > tbody > tr:first-child > td > div.font_bold {
+.my_customer > tbody > tr:first-child > td > div.font_bold,
+#allrep > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+#allrep > tbody > tr:first-child > td.font_bold,
+#allrep > tbody > tr:first-child > td > div.font_bold, #allsl > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+#allsl > tbody > tr:first-child > td.font_bold,
+#allsl > tbody > tr:first-child > td > div.font_bold {
   font-family: montserrat-semi-bold, Helvetica, sans-serif;
   font-size: 14px;
   color: #3b4546;
@@ -3919,11 +3922,22 @@ h1 > em.left {
 
 .tbl_lineentry tr.bgaltwhite, .tbl_lineentry tr.bgalt,
 .my_customer tr.bgaltwhite,
-.my_customer tr.bgalt {
+.my_customer tr.bgalt,
+#allrep tr.bgaltwhite,
+#allrep tr.bgalt, #allsl tr.bgaltwhite, #allsl tr.bgalt {
   height: 30px;
 }
 
-.sortable, #allrep, #allrep1, #allsl, #allsl1, #allrepdiffzone, #allrepdiffzoneALL,
+#allrep > thead td, #allsl > thead td {
+  color: #7F28C4;
+  border-bottom: none !important;
+}
+
+#allrep > tbody td, #allsl > tbody td {
+  font-size: 12px;
+  padding: 4px;
+}
+
 [name="selectUserForm"] table.body,
 #orderTrackingForm td[height="10"] > table.body,
 #frmOrderDelivery table.body,
@@ -3936,14 +3950,6 @@ h1 > em.left {
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.sortable > thead td,
-.sortable > tbody:first-child > tr:first-child > td, #allrep > thead td,
-#allrep > tbody:first-child > tr:first-child > td, #allrep1 > thead td,
-#allrep1 > tbody:first-child > tr:first-child > td, #allsl > thead td,
-#allsl > tbody:first-child > tr:first-child > td, #allsl1 > thead td,
-#allsl1 > tbody:first-child > tr:first-child > td, #allrepdiffzone > thead td,
-#allrepdiffzone > tbody:first-child > tr:first-child > td, #allrepdiffzoneALL > thead td,
-#allrepdiffzoneALL > tbody:first-child > tr:first-child > td,
 [name="selectUserForm"] table.body > thead td,
 [name="selectUserForm"] table.body > tbody:first-child > tr:first-child > td,
 #orderTrackingForm td[height="10"] > table.body > thead td,
@@ -3966,14 +3972,6 @@ h1 > em.left {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.sortable > thead td > a,
-.sortable > tbody:first-child > tr:first-child > td > a, #allrep > thead td > a,
-#allrep > tbody:first-child > tr:first-child > td > a, #allrep1 > thead td > a,
-#allrep1 > tbody:first-child > tr:first-child > td > a, #allsl > thead td > a,
-#allsl > tbody:first-child > tr:first-child > td > a, #allsl1 > thead td > a,
-#allsl1 > tbody:first-child > tr:first-child > td > a, #allrepdiffzone > thead td > a,
-#allrepdiffzone > tbody:first-child > tr:first-child > td > a, #allrepdiffzoneALL > thead td > a,
-#allrepdiffzoneALL > tbody:first-child > tr:first-child > td > a,
 [name="selectUserForm"] table.body > thead td > a,
 [name="selectUserForm"] table.body > tbody:first-child > tr:first-child > td > a,
 #orderTrackingForm td[height="10"] > table.body > thead td > a,
@@ -3989,16 +3987,6 @@ h1 > em.left {
   color: #7F28C4;
   white-space: nowrap;
   text-decoration: none;
-}
-
-.sortable > thead td, #allrep > thead td, #allrep1 > thead td, #allsl > thead td, #allsl1 > thead td, #allrepdiffzone > thead td, #allrepdiffzoneALL > thead td {
-  color: #7F28C4;
-  border-bottom: none !important;
-}
-
-.sortable > tbody td, #allrep > tbody td, #allrep1 > tbody td, #allsl > tbody td, #allsl1 > tbody td, #allrepdiffzone > tbody td, #allrepdiffzoneALL > tbody td {
-  font-size: 12px;
-  padding: 4px;
 }
 
 .tbl_outerline.bg_fff9f9 {
@@ -4061,8 +4049,7 @@ a.linkList:hover,
 a.bodyCenter:hover,
 a.bodyBold:hover,
 a.body:hover,
-a.offersLink:hover,
-.normal_blacklink:hover {
+a.offersLink:hover {
   background-color: #f6effc;
 }
 
@@ -4070,8 +4057,7 @@ a.linkList.visited,
 a.bodyCenter.visited,
 a.bodyBold.visited,
 a.body.visited,
-a.offersLink.visited,
-.normal_blacklink.visited {
+a.offersLink.visited {
   color: #66209d;
 }
 
@@ -4160,48 +4146,23 @@ td.td_bot_border > p, td.td_bot_border > div p {
   margin: 0 auto;
 }
 
-[name="exForm"] #lineno0 ~ table {
-  border-spacing: 14px 6px;
-}
-
-[name="exForm"] #lineno0 ~ table tr td.td_bot_border {
-  font-size: 13px;
-}
-
-[name="exForm"] #lineno0 ~ table tr td.td_bot_border > p span.red_txt2 {
+[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
   font-size: 22px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
   color: #E82F89 !important;
 }
 
-[name="exForm"] #lineno0 ~ table tr td.td_bot_border > div.padding_top10 {
-  padding-top: 17px;
+[name="exForm"] #lineno0 ~ table {
+  border-spacing: 14px 6px;
 }
 
-[name="exForm"] #lineno0 ~ table tr td.td_bot_border strong {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 17px;
+[name="exForm"] #lineno0 ~ table tr td[width="33%"] {
+  font-size: 13px;
 }
 
 [name="newIooffersForm"] table tr td table tr td,
 [name="newIooffersForm"] table tr td table tr td img {
   width: 100% !important;
-}
-
-.cont_title_step4 {
-  line-height: 40px;
-}
-
-.statuslight {
-  padding: 40px 0px;
-}
-
-.cont_warning_Step4 {
-  background-color: #F7F7F7;
-}
-
-.title_pink {
-  color: #E82F89;
 }
 
 .Order_title_Step4 {
@@ -4226,6 +4187,7 @@ td.td_bot_border > p, td.td_bot_border > div p {
   color: #E82F89;
 }
 
+/*by GErber Barillas 12 enero 2021*/
 /* CSS MX by GEBZ. */
 .articleHeader table tr td img#order_tracking_banner_1,
 .articleHeader table tr td img#order_tracking_banner_3 {
@@ -4322,16 +4284,23 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 
 .textbox_h4 {
   margin-bottom: 30px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 16px;
 }
 
 .textbox_h1 span {
-  color: #7F28C4;
+  color: #1A8282;
   font-weight: bolder;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
 }
 
 .textbox p {
   margin-bottom: 20px;
   line-height: 20px;
+}
+
+#linkDescargaAplicacion {
+  padding-left: 20px;
 }
 
 .containerbox {
@@ -4349,9 +4318,32 @@ div#instantCreditContentSlot_content2 > p > a.visited {
   margin-bottom: 60px;
 }
 
-[name="frmSendEBrochure"] table tr td table tr td:nth-child(5) > div {
-  width: 58%;
-  margin: 0 auto;
+div > table tr td table tr td:nth-child(5) {
+  width: 49%;
+}
+
+div > table tr td table tr td:nth-child(5) b {
+  line-height: 50px;
+}
+
+div > table tr td table tr td:nth-child(5) div {
+  margin-top: 25px;
+}
+
+div > table tr td table tr td:nth-child(5) div table {
+  width: 80%;
   text-align: center;
+  margin: 0 auto;
+  background-color: inherit;
+}
+
+div > table tr td table tr td:nth-child(5) div table tr td {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div > table tr td table tr td:nth-child(5) div table tr td font {
+  color: #7F28C4 !important;
 }
 /*# sourceMappingURL=included_styles.css.map */
