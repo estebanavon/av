@@ -1,11 +1,6 @@
 
 const brochures6 = [
     {
-        title: 'Avon Contigo 3',
-        file: 'avon_contigo_c0121.pdf',
-        type: 'contigo',
-    },
-    {
         title: 'Belleza',
         file: '1',
         type: 'imb',
@@ -16,9 +11,19 @@ const brochures6 = [
         type: 'imb',
     },
     {
-        title: 'Rutinas Anew',
-        file: '3',
-        type: 'imb',
+        title: 'Avon Contigo',
+        file: 'avon_contigo_c0621.pdf',
+        type: 'contigo',
+    },
+    {
+        title: 'Grandes Ofertas C06',
+        file: 'GrandesOfertas06.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Mini Kids, Día del Niño',
+        file: 'MiniKidsDiaDNino.pdf',
+        type: 'flyer',
     },
 ]
 
