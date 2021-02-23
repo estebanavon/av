@@ -179,6 +179,9 @@ td.td_bot_border > p, td.td_bot_border > div p{
     @include divider;
 }
 
+.marginsPopup [name="gomacErrorForm"] > table tr:nth-child(2) td.error strong {
+    font-weight: normal;
+}
 
 
 /*by GErber Barillas 12 enero 2021*/
@@ -257,3 +260,5 @@ div > table tr td table tr td:nth-child(5) div table tr td{
 div > table tr td table tr td:nth-child(5) div table tr td font{
     color:$color-primary !important;
 }
+
+

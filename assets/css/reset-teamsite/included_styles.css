@@ -4034,8 +4034,7 @@ a.linkList,
 a.bodyCenter,
 a.bodyBold,
 a.body,
-a.offersLink,
-.normal_blacklink {
+a.offersLink {
   color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   text-decoration: underline;
@@ -4186,6 +4185,10 @@ td.td_bot_border > p, td.td_bot_border > div p {
 .divider {
   border: 2px solid #E82F89;
   color: #E82F89;
+}
+
+.marginsPopup [name="gomacErrorForm"] > table tr:nth-child(2) td.error strong {
+  font-weight: normal;
 }
 
 /*by GErber Barillas 12 enero 2021*/
