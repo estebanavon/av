@@ -459,6 +459,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   font-size: 18px;
   letter-spacing: 16px;
   min-height: 50px;
+  height: 100%;
   background-color: #cccccc;
   border: none;
   outline: none;
@@ -1037,6 +1038,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   font-size: 18px;
   letter-spacing: 0px;
   min-height: 50px;
+  height: 100%;
   background-color: #cccccc;
   border: none;
   outline: none;

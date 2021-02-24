@@ -3637,10 +3637,16 @@ div[style*="#A9A9A9;"] {
   margin-top: 20px;
 }
 
-#allrep1, #allsl1 {
+#allrep1, #allsl1, #allrepdiffzoneALL {
   max-width: 1088px;
   overflow-y: auto;
   display: block;
+}
+
+tr.tableBg1 > td:nth-child(2) > table.body td {
+  background-color: red;
+  font-size: 12px;
+  white-space: nowrap;
 }
 
 body, td {
@@ -3837,6 +3843,10 @@ textarea {
 .sub_heading1 b,
 .titleStep4 b {
   font-weight: normal !important;
+}
+
+.sub_heading1 {
+  margin-bottom: 20px;
 }
 
 .contentbackgroundcolor td.tbl_bgmid3 {

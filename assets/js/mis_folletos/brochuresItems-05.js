@@ -1,5 +1,11 @@
 
+
 const brochures5 = [
+    {
+        title: 'Anew Clinical Especial',
+        file: 'AnewClinicalEvento.pdf',
+        type: 'flyer',
+    },
     {
         title: 'Belleza',
         file: '1',
@@ -41,7 +47,7 @@ const brochures5 = [
         type: 'flyer',
     },
     {
-        title: 'Minifolleto descuentos Día de la Mujer',
+        title: 'Minifolleto descuentos DÃ­a de la Mujer',
         file: 'MinifolletoDescuentosDiaMujer.pdf',
         type: 'flyer',
     },
@@ -52,4 +58,3 @@ const brochures5 = [
     },
   
 ]
-

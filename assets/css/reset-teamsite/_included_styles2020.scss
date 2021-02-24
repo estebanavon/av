@@ -1,5 +1,3 @@
-
-
 body, td {
     @include text-system($regular-monts);
 }
@@ -55,6 +53,9 @@ textarea {
 .sub_heading1,
 .titleStep4 {
     @include title;
+}
+.sub_heading1 {
+    margin-bottom: 20px;
 }
 .contentbackgroundcolor td.tbl_bgmid3 {
     white-space: nowrap;
