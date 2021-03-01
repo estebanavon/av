@@ -65,13 +65,14 @@
     border: 2px solid #e2e2e2;
     resize: none;
 }
-@mixin av-table($colorHeader:$color-dark-lighter,$color:$color-text) {
+@mixin av-table-header($colorHeader:$color-dark-lighter,$color:$color-text) {
     width: 100%;
     text-align:center;
+    > tbody > tr:first-child > td#attTableHeaders,
     > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
     > tbody > tr:first-child > td.font_bold,
     > tbody > tr:first-child > td > div.font_bold {
-        font-family: $semi-bold-monts;
+        font-family: $bold-monts;
         font-size: 14px;
         color: $color;
         padding: 17px 0px;
@@ -79,19 +80,24 @@
         text-align: center;
         line-height: 13px;
         border-right: 1px solid $color-white-lighter;
+        > a {
+            color: $color-primary;
+            white-space: nowrap;
+            text-decoration: none;
+        }
     }
     
     tr.bgaltwhite, tr.bgalt {
         height: 30px;
     }
 }
-@mixin av-table1 {
+@mixin av-table-primary {
     width: 100%;
     text-align:center;
     box-shadow: $color-shadow-border;
     > thead td,
     > tbody:first-child > tr:first-child > td {
-        font-family: $semi-bold-monts;
+        font-family: $bold-monts;
         font-size: 14px;
         color: $color-text;
         padding: 17px 0px;
@@ -105,9 +111,12 @@
             text-decoration: none;
         }
     }
+    .tableBg1 {
+        background-color: $color-light-white;
+        height: 30px;
+    }
 }
 @mixin av-table-result {
-    
     > thead td {
         color: $color-primary;
         border-bottom: none !important;
@@ -138,7 +147,7 @@
     width: 100%;
     display: block;
     margin: 0 auto;
-    height: auto;
+    //height: auto;
 }
 
 .av-summary-indicator {
@@ -295,6 +304,24 @@
 @mixin gridDemos {
     @extend %borderShadow;
     font-size: 13px;
+    padding: 0px 30px 30px 30px;
+    line-height: 15px;
+
+    > p span.red_txt2 {
+        @include salePrice;
+    }
+    
+    > div.padding_top10 {
+        padding-top: 17px;
+    }
+    strong {
+        font-family: $bold-monts;
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .buttonBgorder {
+        width: 100%;
+    }
 }
 @mixin demoDescription {
     width: 85%;
@@ -302,11 +329,7 @@
 }
 
 
-@mixin SalePrice{
-    font-size: 22px;
-    font-family: $bold-monts !important;
-    color:$color-secondary !important;
-}
+
 
 @mixin step3 {
     width: 100% !important;

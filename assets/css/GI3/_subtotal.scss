@@ -1,0 +1,22 @@
+
+/*------- SUBTOTAL 2020 ------*/
+form[name="frmPreviewOrder"] {
+ img {
+     width: 100%;
+ }
+}
+td.font_bold.font_14.txt_fff {
+    @include subtitle(25px,left);
+    color: $color-secondary;
+    line-height: 29px;
+    background-color:$color-white;
+    padding-right: 10px;
+    display: table-cell;
+    
+}
+.body {
+    em {
+        font-size: $size-text + 1;
+        color: $color-secondary;       
+    }
+} 

@@ -1,18 +1,35 @@
-<meta http-equiv="Expires" content="0">
-<meta http-equiv="Last-Modified" content="0">
-<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-<meta http-equiv="Pragma" content="no-cache">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+<style>.topbackgroundcolor {position: relative;}.mtDropdownMenu{top: -12px !important;}</style>
+<script src="static/js/jquery.bgiframe-3.1.js"></script>
 <link rel="stylesheet" type="text/css" href="/FLDSuite/web/static/css/styles_scss.css">
 
 <section class="avHome">
-       
+        <div class="avHome-nav pb-2">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                <a target="_top" class="av-button-tertiary mr-5" href="/DMSuite/selectZM.page">
+                        <svg width="19px" height="19px">
+                            <use xlink:href="#location"></use>
+                        </svg>
+                        Mis zonas
+                    </a>
+                    <a target="_top" class="av-button-tertiary mr-5" href="/DMSuite/yourTeamOrders.page">
+                        <svg width="17px" height="19px">
+                            <use xlink:href="#orders"></use>
+                        </svg>
+                        Órdenes de tu equipo
+                    </a>
+                    <a target="_blank" class="av-button-tertiary" href="https://mcollect.avon.com.mx/">
+                        <svg width="17px" height="17px">
+                            <use xlink:href="#linkOut"></use>
+                        </svg>
+                        Master collection
+                    </a>
+                </div>
+            </div>
+        </div>
         <!-- INICA SLIDER HOME 2020 -->
     
         <div id="avHomeSlider" class="carousel slide" data-ride="carousel">
@@ -22,14 +39,14 @@
               </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                 <a target="_top" href="">
-                    <img src="/REPSuite/web/static/images/home/avHomeTest.jpg" class="d-block w-100" alt="slider1">
+                 <a target="_top" href="/DMSuite/dia_de_la_oportunidad.page">
+                    <img src="/REPSuite/web/static/images/home/banner_oportunidad.jpg" class="d-block w-100" alt="slider1">
                   </a>
               </div>
               <div class="carousel-item">
-                 <a target="_top" href="">
-                    <img src="/REPSuite/web/static/images/home/avHomeTest.jpg" class="d-block w-100" alt="slider1">
-                  </a>
+                 
+                <img src="/REPSuite/web/static/images/home/banner_nueva_imagen.jpg" class="d-block w-100" alt="slider1">
+                  
               </div>
             </div>
            <a target="_top" class="carousel-control-prev" href="#avHomeSlider" role="button" data-slide="prev">
@@ -49,29 +66,29 @@
           <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col">
-                    <h3 class="av-title mb-3 left">Principales funcionalidades</h3>
+                    <h3 class="av-title mb-3 left">Conoce tus herramientas digitales</h3>
                 </div>
                 <div class="w-100"></div>
                 <div class="col">
                     <div class="d-flex">
                         <div class="avHome-card">
-                            <a target="_top" href="/DMSuite/yourTeamOrders.page"> 
-                                <img src="/REPSuite/web/static/images/home/" alt="SEGUIMIENTO DE PEDIDOS">
+                            <a target="_top" href="/DMSuite/aprendiendo_con_avon.page">
+                                <img src="/REPSuite/static/images/home/avAprendiendoVertical.png">
                             </a>
                         </div>
                         <div class="avHome-card">
-                            <a target="_top" href="http://qnjs-nola.avon.com/CAM/Home?registro=20000000001&pais=5&tipo=2"> 
-                                <img src="/REPSuite/web/static/images/home/" alt="CONEXIÓN AVON">
+                            <a target="_top" href="/DMSuite/trainingLanding.page"> 
+                                <img src="/REPSuite/web/static/images/home/avNegocioVertical.png">
                             </a>
                         </div>
                         <div class="avHome-card">
-                            <a target="_top" href="/ZMSuite/static/pdf/Avon_ROA.pdf"> 
-                                <img src="/REPSuite/web/static/images/home/" alt="ROA">
+                            <a target="_top" href="/DMSuite/onlineAppointments.page">
+                                <img src="/ZMSuite/static/images/home/avAppointVertical.png">
                             </a>
                         </div>
                         <div class="avHome-card">
-                            <a target="_top" href="/ZMSuite/static/pdf/entrenamiento_asesoras_nuevas.pdf"> 
-                                <img src="/REPSuite/web/static/images/home/" alt="ASESORAS NUEVAS">
+                            <a target="_top" href="/DMSuite/myNews.page">
+                                <img src="/ZMSuite/static/images/home/avDescargablesVertical.png">
                             </a>
                         </div>
                         
@@ -82,107 +99,70 @@
                 <div class="col mt-5">
                     <h3 class="av-title mb-3 left">Artículos destacados</h3>
                 </div>
+               
                 <div class="w-100"></div>
-                <div class="col-6">
-                    <div class="av-card">
-                        <a href="/DMSuite/Oportunidades_Sin_Limites_Avon_Asesoras.page" target="_top" >
-                            <div class="av-card-image"><img class="w-100 av-fallback"
-                                    src="/REPSuite/web/static/images/home/" alt=""></div>
-                            <div class="av-card-text">
-                                <h4 class="av-card-title">Oportunidades sin Límites</h4>
-                                <p class="av-text">Aumenta tus ganancias con las herramientas digitales y el contenido exclusivo para Asesoras</p>
-                                <span class="av-button-tertiary">Ver más</span>
+                <div class="av-spacer"></div>
+                <div class="col">
+                    <a href="/DMSuite/vendorLinksOne.page?linkid=11" target="_blank" class="av-card-link">
+                        <div class="av-card">
+                            <div class="av-card-image">
+                                <img class="w-100 av-fallback" src="/DMSuite/static/images/home/acompaname_large.jpg" alt="acompaname">
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="av-card">
-                        <a href="/DMSuite/Guia_Plan_90_Dias.page" target="_top" >
-                            <div class="av-card-image"><img class="w-100 av-fallback"
-                                    src="/REPSuite/web/static/images/home/" alt=""></div>
                             <div class="av-card-text">
-                                <h4 class="av-card-title">Plan 90 días</h4>
-                                <p class="av-text">Guía paso a paso para las Consejeras Nuevas en su Negocio Independiente Avon</p>
-                                <span class="av-button-tertiary">Ver más</span>
+                                <h4 class="av-card-title">Acompáñame</h4>
+                                <p class="av-text">Consulta tus reportes</p>
+                                <span class="av-button-tertiary" >VER MÁS</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
+                
+                
                 <div class="w-100"></div>
                 <div class="av-spacer"></div>
                 <div class="col-4">
-                    <div class="av-card">
-                        <a href="/ZMSuite/static/pdf/Avon_Medidas_Autoproteccion_Gerentes_Zona.pdf" target="_top">
+                    <a href="/DMSuite/liderazgo_web.page" target="_self" class="av-card-link" >
+                        <div class="av-card">
                             <div class="av-card-image">
-                                <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home" alt="Punto de pago">
+                                <img class="w-100 av-fallback" src="/ZMSuite/web/static/images/home/liderazgo_web_small.jpg" alt="Liderazgo">
                             </div>
                             <div class="av-card-text">
-                                <h4 class="av-card-title">Medidas de Autoprotección</h4>
-                                <p class="av-text">Considera estos consejos para protegerte</p>
-                                <span class="av-button-tertiary" >VER MÁS</span>
+                                <h4 class="av-card-title">Liderazgo web</h4>
+                                <p class="av-text">Planfica y entérate de todo lo que viene en esta Campaña</p>
+                                <span class="av-button-tertiary">Visitar</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-4">
-                    <div class="av-card">
-                        <a href="/DMSuite/servicio_de_despacho.page" target="_top" >
+                    <a href="https://mcollect.avon.com.mx/" target="_blank" class="av-card-link" >
+                        <div class="av-card">
                             <div class="av-card-image">
-                                <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home" alt="Mis folletos">
+                                <img class="w-100 av-fallback" src="/ZMSuite/web/static/images/home/master_collection.jpg" alt="master_collection">
                             </div>
                             <div class="av-card-text">
-                                <h4 class="av-card-title">Servicio de Despacho</h4>
-                                <p class="av-text">Te llevamos tu pedido hasta tu casa</p>
+                                <h4 class="av-card-title">Master collection</h4>
+                                <p class="av-text">Ingresa al portal</p>
                                 <span class="av-button-tertiary">VER MÁS</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-4">
-                    <div class="av-card">
-                        <a href="/DMSuite/rep_makepayment_content.page" target="_top" >
+                    <a href="https://avonmexico.my.salesforce.com/" target="_blank" class="av-card-link" >
+                        <div class="av-card">
                             <div class="av-card-image">
-                                <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home/.jpg" alt="Devolucion">
+                                <img class="w-100 av-fallback" src="/ZMSuite/web/static/images/home/reporta_incidencias.jpg" alt="reporta_incidencias">
                             </div>
                             <div class="av-card-text">
-                                <h4 class="av-card-title">¿Cómo Pagar?</h4>
-                                <p class="av-text">Cosulta aquí los puntos de pago que hay cerca de ti</p>
-                                <span class="av-button-tertiary">VER VIDEO</span>
+                                <h4 class="av-card-title">Reporta incidencias</h4>
+                                <p class="av-text">Ingresa al salesforce</p>
+                                <span class="av-button-tertiary">VISITAR</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="w-100"></div>
-                <div class="av-spacer"></div>
-                <div class="col-6">
-                    <div class="av-card">
-                        <a href="/DMSuite/sellingTips.page" target="_top">
-                            <div class="av-card-image">
-                                <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home" alt="Punto de pago">
-                            </div>
-                            <div class="av-card-text">
-                                <h4 class="av-card-title">Avon Contigo</h4>
-                                <p class="av-text">Ten una Campaña exitosa y gánate los incentivos de la mano de tu Avon Contigo</p>
-                                <span class="av-button-tertiary" >VER MÁS</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="av-card">
-                        <a href="/DMSuite/myNews.page" target="_top" >
-                            <div class="av-card-image">
-                                <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home" alt="Mis folletos">
-                            </div>
-                            <div class="av-card-text">
-                                <h4 class="av-card-title">Guía Interactiva Avon On</h4>
-                                <p class="av-text">Descubre los muchos beneficios que nuestra App Avon On tiene para ti</p>
-                                <span class="av-button-tertiary">VER MÁS</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
             </div>
           </div>
           <div class="av-spacer"></div>
@@ -190,49 +170,45 @@
             <div class="row">
                 <div class="col-12 col-md">
                     <ul class="av-list av-footer-list">
-                        <li class="av-list-title">Mis Órdenes</li>
-                        <li><a href="https://www.avon.mx/avon-mx/nuestra-compania.html">Colocar Ordenes</a></li>
-                        <li><a href="https://www.avon.mx/avon-mx/venta-de-vehiculos-falsa.html">Seguimiento de orden</a></li>
-                        <li><a href="https://www.avon.mx/avon-mx/empleos.html">Fechas de campaña</a></li>
-                        <li><a href="http://www.amvd.org.mx/">Envia folleto digital</a></li>
-                        <li><a href="http://www.canipec.org.mx/woo/">Ofertas exclusivas de internet</a></li>
-                        <li><a href="https://www.avon.mx/avon-mx/belleza-por-un-proposito.html">Cambios y devoluciones</a></li>
+                        <li class="av-list-title"><a href="/DMSuite/myTeamOffice.page" target="_top">Mi equipo</a></li>
+                        <li><a href="/DMSuite/selectZM.page" target="_top">Mis zonas</a></li>
+                        <li><a href="/DMSuite/selectUser.page" target="_top">Mis Representantes</a></li>
+                        <li><a href="/DMSuite/yourTeamOrders.page" target="_top">Mi equipo de Representantes</a></li>
+                        <li><a href="/DMSuite/reports.page" target="_top"> Reportes</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md">
                     <ul class="av-list av-footer-list">
-                        <li class="av-list-title">Mi cuenta</li>
-                        <li><a href="https://www.avon.mx/avon-mx/findARep.html">Encuentra a tu representante</a></li>
-                        <li><a href="https://www.avon.mx/avon-mx/catalogo-avon-movil.html">Catálogo AVON Móvil</a></li>
-                        <li><a href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a></li>
+                        <li class="av-list-title"><a href="/DMSuite/hotLeads.page" target="_top">Prospectos</a></li>
                     </ul>
                     <ul class="av-list av-footer-list">
-                        <li class="av-list-title">Mis folletos</li>
-                        <li><a href="https://www.avon.mx/avon-mx/findARep.html">Encuentra a tu representante</a></li>
-                        <li><a href="https://www.avon.mx/avon-mx/catalogo-avon-movil.html">Catálogo AVON Móvil</a></li>
-                        <li><a href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a></li>
+                        <li class="av-list-title"><a href="/DMSuite/myNews.page" target="_top">Materiales descargables</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md">
                     <ul class="av-list av-footer-list">
-                        <li class="av-list-title">Mi negocio digital</li>
-                        <li><a href="https://www.avon.mx/avon-mx/privacidad-y-seguridad.html">Aviso de Privacidad y Seguridad</a></li>
-                        <li><a href="https://www.avon.mx/avon-mx/terminos-y-condiciones.html">Términos y Condiciones</a></li>
-                        <li><a href="Código de Conducta">Código de Conducta</a></li>
-                        <li><a href="Cómo Pagar">Cómo Pagar</a></li>
-                        <li><a href="Contrato de Suministro Integral">Contrato de Suministro Integral</a></li>
+                        <li class="av-list-title"><a href="/DMSuite/trainingLanding.page" target="_top">Mi Negocio Digital</a></li>
+                        <li><a href="/DMSuite/trainingCategories.page" target="_top">Catálogo Avon Móvil</a></li>
+                        <li><a href="/DMSuite/sellingTips.page" target="_top">Avon Contigo e Incentivos</a></li>
+                        <li><a href="/DMSuite/beautyArticles.page" target="_top">Avon On</a></li>
                     </ul>
                     <ul class="av-list av-footer-list">
-                        <li class="av-list-title">Oportunidades</li>
-                        <li><a href="https://www.avon.mx/avon-mx/privacidad-y-seguridad.html">Aviso de Privacidad y Seguridad</a></li>
-                        <li><a href="https://www.avon.mx/avon-mx/terminos-y-condiciones.html">Términos y Condiciones</a></li>
+                        <li class="av-list-title"><a href="/DMSuite/messages.page" target="_top">Mis mensajes</a></li>
+                        <li><a href="/DMSuite/sendMessage.page" target="_top">Enviar mensajes</a></li>
+                        <li><a href="/DMSuite/receivedMessage.page" target="_top">Leer mensajes</a></li>
                     </ul>
                 </div>
                 <div class="w-100"></div><div class="av-spacer"></div>
                 <div class="col">
                     <div class="av-spacer"></div>
                     <div class="w-100">
-                        <h4 style="text-align: center;">2020, Avon Products Inc</h4>
+                        <script>
+                            var fechaActual = (new Date).getFullYear();
+                            $(document).ready(function() {
+                                $("#dateyear").text(fechaActual);
+                            });
+                        </script>
+                        <h4 style="text-align: center;"><span id="dateyear"></span>, Avon Cosmetics</h4>
                     </div>
                 </div>
             </div>
@@ -355,6 +331,47 @@
             <path style="fill:#424242;" d="M12.47,7.49c-1.63,0-3.26,0-4.89,0c-0.77,0-1.3-0.51-1.32-1.22C6.25,5.55,6.8,5.01,7.58,5.01c3.29-0.01,6.57-0.01,9.86,0
                 c0.75,0,1.3,0.55,1.3,1.24c0,0.71-0.54,1.24-1.3,1.24C15.79,7.5,14.13,7.49,12.47,7.49C12.47,7.49,12.47,7.49,12.47,7.49z"/>
         </g>
+        <g id="orders">
+            <path style="fill:#424242;" d="M0,9.92C0,7.26,0,4.6,0,1.95c0-1,0.7-1.83,1.65-1.92C2.06-0.02,2.48,0.01,2.9,0.01
+                c4.09,0,8.17,0,12.26,0c1.1,0,1.94,0.81,1.94,1.92c0,4.1,0,8.19,0,12.29c0,1.28,0,2.55,0,3.83c0,0.53-0.38,0.94-0.9,0.95
+                c-0.17,0.01-0.36-0.05-0.51-0.12c-1.05-0.51-2.1-1.04-3.14-1.57c-0.14-0.07-0.24-0.08-0.38,0c-1.04,0.53-2.09,1.05-3.14,1.57
+                c-0.32,0.16-0.62,0.16-0.94,0c-1.06-0.53-2.13-1.06-3.19-1.6c-0.11-0.05-0.19-0.05-0.29,0c-1.06,0.54-2.13,1.07-3.19,1.6
+                c-0.53,0.26-1.12,0.07-1.33-0.46C0.02,18.28,0,18.11,0,17.95C0,15.27,0,12.59,0,9.92z M15.19,16.52c0-4.89,0-9.75,0-14.61
+                c-4.43,0-8.86,0-13.29,0c0,4.87,0,9.73,0,14.6c0.06-0.03,0.1-0.05,0.14-0.07c0.73-0.36,1.46-0.72,2.18-1.09
+                c0.35-0.18,0.68-0.18,1.04,0c1.05,0.53,2.1,1.05,3.15,1.58c0.09,0.05,0.17,0.05,0.26,0c1.07-0.54,2.15-1.08,3.22-1.61
+                c0.3-0.15,0.6-0.15,0.9,0c0.47,0.24,0.95,0.47,1.42,0.71C14.54,16.19,14.86,16.35,15.19,16.52z"/>
+            <path style="fill:#424242;" d="M7.12,11.41c0.47,0,0.94,0,1.41,0c0.54,0,0.96,0.41,0.97,0.94c0,0.53-0.41,0.95-0.96,0.95
+                c-0.95,0.01-1.9,0-2.86,0c-0.52,0-0.93-0.43-0.94-0.94c0-0.53,0.41-0.94,0.94-0.95C6.17,11.4,6.64,11.41,7.12,11.41z"/>
+            <path style="fill:#424242;" d="M7.12,5.71c0.47,0,0.93,0,1.4,0c0.55,0,0.97,0.4,0.98,0.93C9.51,7.17,9.09,7.59,8.54,7.6
+                c-0.95,0.01-1.89,0.01-2.84,0c-0.54,0-0.96-0.44-0.95-0.96C4.77,6.1,5.17,5.71,5.72,5.71C6.19,5.7,6.66,5.71,7.12,5.71z"/>
+            <path style="fill:#424242;" d="M7.14,8.56c0.48,0,0.95-0.01,1.43,0c0.44,0.01,0.79,0.29,0.9,0.7c0.11,0.41-0.06,0.84-0.43,1.05
+                c-0.14,0.08-0.31,0.13-0.46,0.13c-0.96,0.01-1.93,0.01-2.89,0c-0.52,0-0.93-0.41-0.94-0.93C4.74,9,5.14,8.57,5.67,8.56
+                C6.16,8.55,6.65,8.56,7.14,8.56C7.14,8.56,7.14,8.56,7.14,8.56z"/>
+            <path style="fill:#424242;" d="M11.4,5.71c0.53,0,0.95,0.42,0.95,0.94c0,0.53-0.42,0.95-0.95,0.96c-0.51,0-0.94-0.43-0.94-0.95
+                C10.46,6.12,10.87,5.71,11.4,5.71z"/>
+            <path style="fill:#424242;" d="M10.46,12.34c0-0.53,0.42-0.94,0.95-0.94c0.52,0,0.94,0.42,0.94,0.95c0,0.53-0.43,0.95-0.96,0.95
+                C10.87,13.3,10.45,12.87,10.46,12.34z"/>
+            <path style="fill:#424242;" d="M11.39,10.45c-0.52,0-0.94-0.43-0.94-0.95c0-0.53,0.42-0.94,0.95-0.94c0.53,0,0.95,0.42,0.95,0.94
+                C12.35,10.03,11.92,10.45,11.39,10.45z"/>
+        </g>
+        <g id="linkOut">
+            <path style="fill:#424242;" d="M13.29,2.11c-0.26,0-0.52,0-0.78,0c-3.08,0-6.16,0-9.23,0c-0.57,0-1.01-0.32-1.11-0.81
+			C2.05,0.77,2.28,0.3,2.78,0.09C2.94,0.03,3.12,0,3.29,0c4.19,0,8.38,0,12.57,0C16.58,0,17,0.42,17,1.14c0,4.21,0,8.41,0,12.62
+			c0,0.65-0.44,1.11-1.06,1.11c-0.6,0-1.05-0.48-1.05-1.13c0-3.19,0-6.39,0-9.58c0-0.15,0-0.31,0-0.55
+			c-0.38,0.38-0.71,0.7-1.04,1.02C9.87,8.63,5.89,12.62,1.9,16.6c-0.63,0.63-1.51,0.49-1.81-0.27C-0.08,15.91,0,15.52,0.31,15.2
+			C1,14.5,1.7,13.8,2.39,13.11C5.95,9.55,9.51,5.99,13.08,2.43c0.08-0.08,0.19-0.14,0.29-0.2C13.34,2.19,13.31,2.15,13.29,2.11z"/>
+        </g>
+        <g id="location">
+            <path style="fill:#424242;" d="M1.49,8.52c0.04-4.59,3-7.93,6.99-8.45c4.38-0.58,8.45,2.57,8.97,6.97
+                c0.3,2.58-0.48,4.81-2.29,6.67c-1.62,1.65-3.27,3.27-4.9,4.91c-0.52,0.52-0.99,0.52-1.5,0.01c-1.64-1.64-3.29-3.28-4.93-4.93
+                C2.27,12.11,1.49,10.19,1.49,8.52z M9.46,16.87c0.09-0.07,0.13-0.09,0.15-0.12c1.5-1.5,3.02-2.97,4.48-4.51
+                c2.44-2.58,2.15-6.73-0.57-9c-2.65-2.2-6.47-1.89-8.74,0.7c-2.05,2.34-2.04,5.95,0.09,8.23c1.26,1.35,2.6,2.63,3.9,3.94
+                C9.01,16.36,9.23,16.62,9.46,16.87z"/>
+            <path style="fill:#424242;" d="M13.07,8.04c0,1.97-1.61,3.55-3.61,3.55c-1.91,0-3.51-1.62-3.52-3.56c0-1.97,1.59-3.56,3.57-3.56
+                C11.47,4.46,13.07,6.07,13.07,8.04z M9.51,9.81c0.98,0,1.8-0.82,1.79-1.79c-0.01-0.97-0.82-1.78-1.78-1.77
+                c-1.01,0-1.81,0.81-1.8,1.81C7.73,9.02,8.53,9.81,9.51,9.81z"/>
+        </g>
     </defs>
     
     </svg>
+

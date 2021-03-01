@@ -22,11 +22,12 @@
 }
 %button-basic-fill {
     color: $color-white;
-    padding:  13px 30px;
+    padding:  15px 30px;
     text-align: center;
     border-radius: 4px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     &:hover,
     &:active,
     &:focus {
@@ -61,24 +62,22 @@
     &:active,
     &:focus {
         color: $color-white;
+        background-color: $color-primary-hover;
     }
 }
 
 @mixin av-button-tertiary {
     @extend %button-basic;
     @extend %button-basic-fill;
-    
     color: $color-primary;
     svg {
         fill: $color-primary;
-        width: 26px;
-        height: 26px;
-        margin: 0 10px;
+        margin-right: 7px;
     }
     &:hover,
     &:active,
     &:focus {
-        color: $color-primary;
+        color: $color-primary-hover;
     }
     &.negative {
         color: $color-white;

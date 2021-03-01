@@ -48,16 +48,12 @@
     .av-title-text{
         
         @include titile-mixin();
-        font-size: 4rem;
+        font-size: 40px;
+        line-height: 45px;
         text-align: right;
-
-        @media (min-width:$media-1) {
-            font-size: 5rem;
-            line-height: $line-height * 2;
-        }
         @media (min-width:$media-2) {
-            font-size: 7rem;
-            line-height: $line-height * 2.7;
+            font-size: 50px;
+            line-height: 55px;
         }
 
         .av-title-stroke {
@@ -78,8 +74,8 @@
         font-style: normal;
 
         @media (min-width:$media-1) {
-            margin: 2rem 0;
-            font-size: 3rem;
+            margin: 12px 0;
+            font-size: $size-text + 3;
         }
     }
 
@@ -98,11 +94,11 @@
 
 
 .av-subtitle {
-    @include subtitle($size-text * 1.9);
+    @include subtitle(33px,center,20px);
     @include negative();
 
     &-support {
-        @include subtitle($size-text * 1.6);
+        @include subtitle(30px);
         @include negative();
     }
     
@@ -135,7 +131,7 @@
     }
 }
 .av-pink {
-    color: $color-primary;
+    color: $color-secondary;
 }
 
 // LISTS
@@ -211,7 +207,9 @@
 
 
 // CARDS
-
+.av-card-link:hover {
+    text-decoration: none;
+}
 .av-card {
     position: relative;
     width: 100%;
@@ -310,8 +308,8 @@
             background-color: $color-dark-light;
             td {
                 padding: ($size-text * 1.7);
-                color: $color-white;
-                font-weight: bolder;
+                color: $color-text;
+                font-family: $bold-monts;
                 font-size: $size-text;
             }
         }
@@ -321,7 +319,8 @@
         td {
             padding: $size-text $size-text * 1.8;
             font-family: $regular-monts;
-            font-size: $size-text;
+            font-size: $size-text - 1;
+            line-height: $size-text;
         }
     }    
 }
@@ -343,10 +342,10 @@
     margin: 0 (-$margin-default);
 }
 .av-spacer {
-    height: 2rem;
+    height: 30px;
     width: 100%;
     @media (min-width:$media-1){
-        height: 5rem;
+        height: 40px;
     }
 }
 .w-100 {

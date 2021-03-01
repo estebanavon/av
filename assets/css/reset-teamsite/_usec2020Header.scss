@@ -45,7 +45,7 @@ table.border > tbody > tr > td > table > tbody {
             padding: 0px 40px 10px 40px;
 
             > td:first-child {
-                flex: 3;
+                flex: 5;
                 display: flex;
                 justify-content: flex-start;
 
@@ -55,7 +55,7 @@ table.border > tbody > tr > td > table > tbody {
                 }
             }
             > td:last-child {
-                flex: 2;
+                flex: 4;
                 
                 > table > tbody {
 
@@ -223,9 +223,14 @@ table.border > tbody > tr > td > table > tbody {
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
+        &.mx {
+            margin-top: 30px;
+            flex-direction: column;
+        }
         p {
             display: flex;
             align-items: center;
+            margin-bottom: 8px;
             svg {
                 margin-right: 3px;
             }
@@ -237,13 +242,19 @@ table.border > tbody > tr > td > table > tbody {
     flex-direction: column;
     width: 85%;
     height: 100%;
-    > div:first-child {
-        flex: 1;
-    }
+   
+}
+.avlogin-cont {
+    background-position: center;
+    background-size: cover;
 }
 .avlogin-social {
+    flex: 1;
     display: flex;
-    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 50px;
     background-color: $color-light-white;
     a {
         text-decoration: none;
@@ -252,18 +263,23 @@ table.border > tbody > tr > td > table > tbody {
     > div {
         font-size: 15px;
         &:first-child {
-            margin-right: 40px;
-        }
-    }
-    > div:last-child {
-        text-align: left;
-        > div:first-child a::after {
-            content: ' /';
-        }
-        > div:last-child {
-            a:first-child {
-                margin-right: 15px;
+            margin-bottom: 15px;
+            svg {
+                opacity: 0.8;
+                height: 30px;
             }
         }
-    } 
+        &:last-child {
+            text-align: left;
+            > div:first-child a::after {
+                content: ' /';
+            }
+            > div:last-child {
+                a:first-child {
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+     
 }

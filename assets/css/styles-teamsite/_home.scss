@@ -1,6 +1,13 @@
 .avHome {
     overflow: hidden;
     position: relative;
+    width: 100% !important;
+    &:not(.mx) {
+        @media (min-width:$media-2){
+            width: 810px !important;
+        }
+    }
+    
     [data-slide="prev"] {
         width: 45px;
         left: 30px;
@@ -47,6 +54,9 @@
     .av-button-tertiary {
         font-size: 14px;
         color: $color-text;
+        &:hover {
+            color: $color-text;
+        }
     }
 }
 .avHome-card {

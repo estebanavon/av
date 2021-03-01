@@ -1,0 +1,61 @@
+/*------- STEP 0 2020 ------*/
+
+div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
+    padding-left: 0 !important;
+    img {
+        @include img-full-screen;
+    }
+    
+}
+.table_bg {
+    box-shadow: $color-shadow-border;
+    width: 100%;
+}
+.td_subheader_bg {
+    text-align: left;
+    .sub_heading2 {
+        border-bottom: 1px solid $color-text;
+        text-align: left;
+        padding: 5px 10px;
+        display: block;
+    }
+}
+.place_an_order_tbl2 {
+    box-shadow: $color-shadow-border;
+    border-spacing: 7px 0px;
+    background-color: $color-light-white;
+    margin-bottom: 20px;
+
+    .tdcell_R.border_top_white > table > tbody {
+        display: flex;
+        align-items: center;
+        label strong {
+            white-space: nowrap;
+        }
+    }
+    label {
+        @include text-system($bold-monts);
+    }
+}
+
+div#alternate .placeAnOrder_image {
+    background-color: #fff;
+    border: none;
+
+    > tbody > tr {
+        display: flex;
+        flex-wrap: wrap;
+        @media (min-width:$media-3) {
+            flex-wrap: nowrap;
+        }
+        > td {
+            flex: 1;
+        }
+        > td:nth-child(4) {
+            display: none;
+        }
+        > td:nth-child(3) {
+            border-right: 0;
+        }
+    }
+}

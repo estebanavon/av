@@ -1,0 +1,12 @@
+@font-face {
+    src: url('./avIcon.ttf') format("truetype");
+    font-family: icons;
+}
+.test {
+    font-family: icons;
+    font-size: 25px;
+    color: #000;
+}
+.b:before{
+    content: "\0041";
+}

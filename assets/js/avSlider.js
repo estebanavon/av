@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
     var slideIndex = 2;
     var timeOut;
 
