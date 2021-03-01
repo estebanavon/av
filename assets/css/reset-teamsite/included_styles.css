@@ -4201,6 +4201,10 @@ td.td_bot_border > p, td.td_bot_border > div p {
   font-weight: normal;
 }
 
+#clearanceoffersForm #displayArea1 > table {
+  width: 35%;
+}
+
 /*by GErber Barillas 12 enero 2021*/
 /* CSS MX by GEBZ. */
 .articleHeader table tr td img#order_tracking_banner_1,
