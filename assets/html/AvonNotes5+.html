@@ -1,40 +1,48 @@
+<!--HOME SL NI-->
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<script src="static/js/jquery.bgiframe-3.1.js"></script>
-<style>.topbackgroundcolor {position: relative;}.mtDropdownMenu{top: -12px !important;}</style>
+
 <link rel="stylesheet" type="text/css" href="/FLDSuite/web/static/css/styles_scss.css">
 
-<section class="avHome mx mt-4">
-    <div class="avHome-nav pt-1 pb-2">
+
+<script>
+    var tr1 = document.getElementsByTagName("tr");
+    tr1[0].style.display = "none";
+</script>
+<section class="avHome">
+    <div class="avHome-nav pb-2">
         <div class="d-flex justify-content-between">
             <div class="d-flex align-items-center">
-               <a target="_blank" class="av-button-tertiary mr-5" href="/REPSuite/vendorLinksOne.page?linkid=42">
+               <a target="_top" class="av-button-tertiary mr-5" href="/SLSuite/placeRepOrder.page">
+                    <svg width="25px" height="20px">
+                        <use xlink:href="#folletos"></use>
+                    </svg>
+                    Coloca Tu Orden
+                </a>
+               <a target="_top" class="av-button-tertiary" href="/SLSuite/orderTracking.page">
+                    <svg width="25px" height="20px">
+                        <use xlink:href="#seguimiento"></use>
+                    </svg>
+                    Sigue Tu Orden
+                </a>
+				<a target="_blank" class="av-button-tertiary mr-5" href="https://ni.avonfolletodigital.com/order/">
                     <svg width="25px" height="20px">
                         <use xlink:href="#folletos"></use>
                     </svg>
                     Comparte tus folletos
                 </a>
-               <a target="_top" class="av-button-tertiary" href="/REPSuite/orderTracking.page">
-                    <svg width="25px" height="20px">
-                        <use xlink:href="#seguimiento"></use>
-                    </svg>
-                    Seguimiento de orden
-                </a>
             </div>
             <div class="d-flex align-items-center">
-                <a target="_top" class="av-button-tertiary ml-3" href="/REPSuite/orderDeliveryDetails.page">
+                <a target="_top" class="av-button-tertiary ml-3" href="/SLSuite/orderDeliveryDetails.page">
                     <svg width="25px" height="25px">
                         <use xlink:href="#clock"></use>
                     </svg>
                 </a>
-               <div class="av-button-tertiary ml-3 avMore-open" av-more="contact" av-data="¿Dudas? Estamos para apoyarte">
-                    <svg width="25px" height="24px">
-                        <use xlink:href="#more"></use>
-                    </svg>
-                </div>
-                <!-- <div class="av-button-tertiary ml-3 avMore-open" av-more="option" av-data="Opciones rápidas"><svg width="25px" height="24px"><use xlink:href="#more"></use></svg></div> -->
             </div>
             
         </div>
@@ -43,19 +51,9 @@
     <div class="avMore" id="avMoreId">
         <div class="avMore-more">
             <div class="d-flex">
-                <a target="_top" class="av-button-tertiary mr-5" href="/REPSuite/myNews.page">
+                <a target="_top" class="av-button-tertiary">
                     <svg width="25px" height="20px">
-                        <use xlink:href="#folletos"></use>
-                    </svg>
-                </a>
-                <a target="_top" class="av-button-tertiary mr-5" href="/REPSuite/orderDeliveryDetails.page">
-                    <svg width="25px" height="25px">
-                        <use xlink:href="#clock"></use>
-                    </svg>
-                </a>
-                <a target="_top" class="av-button-tertiary" href="/REPSuite/orderTracking.page">
-                    <svg width="25px" height="20px">
-                        <use xlink:href="#seguimiento"></use>
+                        <use xlink:href="#phone"></use>
                     </svg>
                 </a>
             </div>
@@ -70,32 +68,21 @@
             <h3 class="av-title mb-3 left" id="avMore-title"></h3>
             <div class="av-wrapper text-left">
                 <div class="avMore-contact" style="display: none;">
-                    <p class="av-text">
-                        Enviar una Orden: <b class="av-highlight">(55) 39889768.</b> Servicio con cargo de $10.
+                    <p class="av-text">Contáctanos de lunes a viernes de 7:00a.m. a 6:00p.m.<br>
+						y sábados y domingos de 8:00a.m. a 4:00p.m.
                     </p>
                     <p class="av-text">
-                        Consulta de saldos y dígitos para pago: <b class="av-highlight">(55)1882 5878.</b>
+                       O escríbenos por WhatsApp: <strong>+502 4020 4060</strong>
                     </p>
-                    <p class="av-text">
-                        Reporte de Incidentes en Reparto: <b class="av-highlight">(55) 61722288.</b>
-                    </p>
-                    <p class="av-text">
-                        Validación de prospectos, zonificación, apoyo para Nombramientos fuera de la zona: <b class="av-highlight">(55) 3988 1768.</b>
-                    </p>
-                    <p class="av-text">
-                        Escríbenos sobre el Modelo de Liderazgo a <b class="av-highlight">contacto.empresarias.mexico@avon.com</b>
-                    </p>
-                    <p class="av-text">
-                        Llámanos al <b class="av-highlight">(55) 1000 2866</b> desde cualquier parte del país para todas tus consultas.
-                    </p>
-                    
+                    <div class="d-flex justify-content-between">
+                        <h4>Tel: 2255-7131</h4>
+                        <h4>servicioal.cliente@avon.com</h4>
+                    </div>
                 </div>
                 <!-- <div class="avMore-option" style="display: none;"><p class="av-text">Hola</p></div> -->
             </div>
         </div>
     </div>
-	
-	
     <!-- INICA SLIDER HOME 2020 -->
 
     <div id="avHomeSlider" class="carousel slide" data-ride="carousel">
@@ -103,27 +90,23 @@
             <li data-target="#avHomeSlider" data-slide-to="0" class="active"></li>
             <li data-target="#avHomeSlider" data-slide-to="1"></li>
 			<li data-target="#avHomeSlider" data-slide-to="2"></li>
-			<li data-target="#avHomeSlider" data-slide-to="3"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/REPSuite/static/images/home/banner_nueva_imagen.jpg" class="d-block w-100" alt="slider4">  
-            </div>
-            <div class="carousel-item">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <a target="_top">
+                <img src="/REPSuite/web/static/home_2018/img/hero_se_pone_mejor.jpg" class="d-block w-100" alt="slider1">
+              </a>
+          </div>
+          <div class="carousel-item">
              <a target="_blank" href="https://watchmenow.avon.com">
-                <img src="/REPSuite/static/images/home/hero_1_million.jpg" class="d-block w-100" alt="slider2">
+                <img src="/REPSuite/web/static/home_2018/img/hero_1_million.jpg" class="d-block w-100" alt="slider1">
               </a>
-            </div>
-            <div class="carousel-item">
-             <a target="_blank" href="/REPSuite/vendorLinksOne.page?linkid=41">
-                <img src="/REPSuite/static/images/home/aprende_avon.jpg" class="d-block w-100" alt="slider2">
+          </div>
+			<div class="carousel-item">
+             <a target="_top" href="/SLSuite/myNews.page">
+                <img src="/REPSuite/web/static/home_2018/img/hero_mis_folletos.jpg" class="d-block w-100" alt="slider1">
               </a>
-            </div>
-            <div class="carousel-item">
-             <a target="_blank" href="https://catalogo.avon.mx/05/202105_03/">
-                <img src="/REPSuite/static/images/home/folleto_anew.jpg" class="d-block w-100" alt="slider2">
-              </a>
-            </div>
+          </div>
         </div>
        <a target="_top" class="carousel-control-prev" href="#avHomeSlider" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -142,149 +125,240 @@
       <div class="container-fluid mt-5">
         <div class="row">
             <div class="col">
-                <h3 class="av-title mb-3 left">Mi Negocio Digital</h3>
+                <h3 class="av-title mb-3 left">Administra Tu Sector</h3>
             </div>
             <div class="w-100"></div>
             <div class="col">
                 <div class="d-flex">
                     <div class="avHome-card">
-                        <a target="_top" href="/REPSuite/trainingCategories.page"> 
-                            <img src="/REPSuite/web/static/images/home/avCatalogoVertical.png">
+                        <a target="_top" href="/SLSuite/placeRepOrder.page"> 
+                            <img src="/REPSuite/web/static/home_2018/img/icono_ingreso_pedidos.png" alt="INGRESO DE PEDIDOS">
                         </a>
                     </div>
                     <div class="avHome-card">
-                        <a target="_top" href="/REPSuite/beautyArticles.page"> 
-                            <img src="/REPSuite/web/static/images/home/avAvonOnVertical.png">
+                        <a target="_top" href="/SLSuite/yourTeamOrders.page"> 
+                            <img src="/REPSuite/web/static/home_2018/img/seguimiento_de_pedidos.png" alt="SEGUIMIENTO DE PEDIDOS">
                         </a>
                     </div>
                     <div class="avHome-card">
-                        <a target="_top" href="/REPSuite/faq.page"> 
-                            <img src="/REPSuite/web/static/images/home/avAprendiendoVertical.png">
-                        </a>
-                    </div>
-                    <div class="avHome-card">
-                        <a target="_top" href="/REPSuite/trainingLanding.page"> 
-                            <img src="/REPSuite/web/static/images/home/avNegocioVertical.png">
+                       <a target="_blank" id="conexLink"> 
+                            <img src="/REPSuite/web/static/home_2018/img/conexion_avon.png" alt="CONEXIÓN AVON">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="w-100"></div>
-            
+
             <div class="col mt-5">
-                <h3 class="av-title mb-3 left">Artículos destacados</h3>
+                <h3 class="av-title mb-3 left">Mi Negocio Digital</h3>
             </div>
             <div class="w-100"></div>
-            <div class="col-4">
-                <a href="/REPSuite/myNews.page" target="_top" class="av-card-link">
+            <div class="col">
+                <div class="d-flex">
+			        <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/trainingLanding.page"> 
+                            <img src="/REPSuite/web/static/images/home/avNegocioVertical.png">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/trainingCategories.page"> 
+                            <img src="/REPSuite/web/static/images/home/avCatalogoVertical.png">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/beautyArticles.page"> 
+                            <img src="/REPSuite/web/static/images/home/avAvonOnVertical.png">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/faq.page"> 
+                            <img src="/REPSuite/web/static/images/home/avAprendiendoVertical.png">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="w-100"></div>
+            
+            <div class="col mt-5">
+                <h3 class="av-title mb-3 left">Crece Tu Negocio Avon</h3>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-6">
+                <a href="/SLSuite/Oportunidades_Sin_Limites_Avon_Asesoras.page" target="_top" class="av-card-link" >
                     <div class="av-card">
-                        <div class="av-card-image">
-                            <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home/materiales_descargables.jpg" alt="Descargables">
-                        </div>
+                        <div class="av-card-image"><img class="w-100 av-fallback"
+                                src="/REPSuite/web/static/home_2018/img/oportunidades_sin_limites_sl.jpg" alt="Oportunidades Sin Límites"></div>
                         <div class="av-card-text">
-                            <h4 class="av-card-title">Materiales descargables</h4>
-                            <p class="av-text">Todo lo que necesitas para una Campaña exitosa</p>
+                            <h4 class="av-card-title">Oportunidades Sin Límites</h4>
+                            <p class="av-text">Aumenta tus ganancias con las herramientas digitales y el contenido exclusivo para Asesoras</p>
                             <span class="av-button-tertiary">VER MÁS</span>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-4">
-                <a href="https://www.avon.mx/avon-mx/como-pagar.html" target="_blank" class="av-card-link" >
+            <div class="col-6">
+                <a href="/SLSuite/Guia_Plan_90_Dias.page" target="_top" class="av-card-link" >
                     <div class="av-card">
-                        <div class="av-card-image">
-                            <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home/puntos_pago.jpg" alt="puntos_pago">
-                        </div>
+                        <div class="av-card-image"><img class="w-100 av-fallback"
+                                src="/REPSuite/web/static/home_2018/img/loa_0_plan_90_sl.jpg" alt="Plan 90 días"></div>
                         <div class="av-card-text">
-                            <h4 class="av-card-title">Puntos pago</h4>
-                            <p class="av-text">Ubica un punto de pago cerca de ti</p>
-                            <span class="av-button-tertiary">Ubicar</span>
+                            <h4 class="av-card-title">Plan 90 días</h4>
+                            <p class="av-text">Guía paso a paso para las Consejeras Nuevas en su Negocio Independiente Avon</p>
+                            <span class="av-button-tertiary">VER MÁS</span>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-4">
-                <a href="https://www.youtube.com/watch?v=GEpCe4inm1I&feature=youtu.be" target="_blank" class="av-card-link" >
+            <div class="w-100"></div>
+            <div class="av-spacer"></div>
+
+
+            <div class="col-6">
+                <a href="/FLDSuite/static/pdf/Avon_Plan_Empresarial.jpg" target="_blank" class="av-card-link">
                     <div class="av-card">
                         <div class="av-card-image">
-                            <img class="w-100 av-fallback" src="/REPSuite/web/static/images/home/cambios_devoluciones.jpg" alt="cambios_devoluciones">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/esquema_de_comisiones_sl.jpg" alt="Punto de pago">
                         </div>
                         <div class="av-card-text">
-                            <h4 class="av-card-title">¿Cambios o devoluciones?</h4>
+                            <h4 class="av-card-title">Esquema de Comisiones </h4>
+                            <p class="av-text">Cálculo de comisiones mercantiles para Asesoras Independientes</p>
+                            <span class="av-button-tertiary">DESCARGAR</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/FLDSuite/static/pdf/incentivos/Avon_Programa_Recomendaciones_2021.pdf" target="_blank" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/programa_semestral_sl.jpg" alt="Programa Semestral">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Programa Semestral</h4>
+                            <p class="av-text">Programa acumulativo de Recomendaciones C1 a C9 2021</p>
+                            <span class="av-button-tertiary">DESCARGAR</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-100"></div>
+            <div class="av-spacer"></div>
+            <div class="col-4">
+                <a href="/SLSuite/offerStore.page" target="_top" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/ofertas_exclusivas_de_internet_sl.jpg" alt="Ofertas Exclusivas de Internet">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Ofertas Exclusivas de Internet</h4>
                             <p class="av-text">Llévate estas ofertas únicas por internet</p>
                             <span class="av-button-tertiary">VER MÁS</span>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="w-100"></div>
-            <div class="av-spacer"></div>
-            <div class="col" id="repHomeLoaSeg"></div>
+            <div class="col-4">
+                <a href="/SLSuite/servicio_de_despacho.page" target="_top" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/servicio_despacho_sl.jpg" alt="Servicio de Despacho">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Servicio de Despacho</h4>
+                            <p class="av-text">Si no recibiste tu pedido en tu casa, recógelo en bodega</p>
+                        <span class="av-button-tertiary">VER MÁS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="/SLSuite/rep_makepayment_content.page" target="_top" class="av-card-link">
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/como_realizar_pagos_sl.jpg" alt="Cómo Realizar Mis Pagos">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Cómo Realizar Tus Pagos</h4>
+                            <p class="av-text">Encuentra todos los bancos y puntos de pago aquí</p>
+                            <span class="av-button-tertiary">VER MÁS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+<!--FOOTER -->
         </div>
-    </div>
-    <div id="avNameGet" style="opacity: 0;"><variable name="firstname"></variable></div>
-    <footer class="av-footer mt-5">
+      </div>
+      <div class="av-spacer"></div>
+      <footer class="av-footer">
         <div class="row">
             <div class="col-12 col-md">
                 <ul class="av-list av-footer-list">
-                    <li class="av-list-title"><a href="/REPSuite/PlaceAnOrder.page" target="_top">Colocar Orden</a> </li>
-                </ul>
-                <ul class="av-list av-footer-list">
-                    <li class="av-list-title"><a href="/REPSuite/orderLanding.page" target="_top">Mis Órdenes</a> </li>
-                    <li><a href="/REPSuite/PlaceAnOrder.page" target="_top">Colocar Pedido</a></li>
-                    <li><a href="/REPSuite/orderTracking.page" target="_top">Seguimiento de tu Orden</a></li>
-                    <li><a href="/REPSuite/orderDeliveryDetails.page" target="_top">Fechas de Campaña</a></li>
-                    <li><a href="/REPSuite/addCustomer.page" target="_top">Agregar cliente</a></li>
-                    <li><a href="/REPSuite/sendEBrochure.page" target="_top">Enviar Folleto Virtual</a></li>
-                    <li><a href="/REPSuite/offerStore.page" target="_top">Ofertas Exclusivas de Internet</a></li>
-                    <li><a href="/REPSuite/returnsStandaloneLanding.page" target="_top">Devoluciones</a></li>
-                    <li><a href="/REPSuite/replacementsStandaloneLanding.page" target="_top">Cambios</a></li>
-                    <li><a href="/REPSuite/prizesAndFreeStandaloneLanding.page" target="_top">Cambios de Regalos y Gratis</a></li>
+                    <li class="av-list-title"><a href="/REPSuite/trainingCategories.page" target="_top">Mi Equipo de Consejeras</a> </li>
+                    <li><a href="/SLSuite/selectUser.page" target="_top">Mis Consejeras</a></li>
+                    <li><a href="/SLSuite/yourTeamOrders.page" target="_top">Seguimiento de Pedidos</a></li>
+                    <li><a href="/SLSuite/reports.page" target="_top">Reportes</a></li>
+                    <li><a href="/SLSuite/creditScore.page" target="_top">Autoevaluación Búsqueda de Candidatas</a></li>
+                    <li><a href="/SLSuite/placeRepOrder.page" target="_top">Ingreso de Pedidos</a></li>
                 </ul>
             </div>
             
             <div class="col-12 col-md">
                 <ul class="av-list av-footer-list">
-                    <li class="av-list-title"><a href="/REPSuite/accountLanding.page" target="_top">Mi Cuenta</a> </li>
-                    <li><a href="/REPSuite/accountBalance.page" target="_top">Estado de cuenta</a></li>
-                    <li><a href="/REPSuite/profilePersonal.page" target="_top">Mi perfil</a></li>
-                    <li><a href="/REPSuite/presidentsClub.page" target="_top">Universo Estelar</a></li>
-                    <li><a href="/REPSuite/submitReferral.page" target="_top">Enviar Recomendaciones</a></li>
+                    <li class="av-list-title"><a href="/SLSuite/myOwnOffice.page" target="_top">Mis Órdenes</a></li>
+                    <li><a href="/SLSuite/PlaceAnOrder.page" target="_top">Colocar Pedido</a></li>
+                    <li><a href="/SLSuite/orderTracking.page" target="_top">Seguimiento de Tus Órdenes</a></li>
+                    <li><a href="/SLSuite/orderDeliveryDetails.page" target="_top">Fechas de Campaña</a></li>
+                    <li><a href="/SLSuite/rep_makepayment_content.page" target="_top">Cómo realizar mi pago</a></li>
+                    <li><a href="/SLSuite/profilePersonal.page" target="_top">Información Personal</a></li>
+                    <li><a href="/SLSuite/presidentsClub.page" target="_top">Círculo de Ganadoras</a></li>
+                    <li><a href="/SLSuite/submitReferral.page" target="_top">Indicaciones</a></li>
+                    <li><a href="/SLSuite/addCustomer.page" target="_top">Mis Clientes</a></li>
+                    <li><a href="/SLSuite/sendEBrochure.page" target="_top">Enviar el Folleto Virtual</a></li>
+                    <li><a href="/SLSuite/offerStore.page" target="_top">Tienda en Línea</a></li>
                 </ul>
+                
+            </div>
+
+            <div class="col-12 col-md">
                 <ul class="av-list av-footer-list">
-                    <li class="av-list-title"><a href="/REPSuite/myNews.page" target="_top">Materiales descargables</a></li>
-                    <li><a href="/REPSuite/latestNews.page" target="_top">Materiales descargables</a></li>
-                    <li><a href="/REPSuite/receivedMessage.page" target="_top"> Mis Mensajes</a></li>
+                    <li class="av-list-title"><a href="/SLSuite/myNews.page" target="_top">Mis Folletos</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md">
                 <ul class="av-list av-footer-list">
-                    <li class="av-list-title" ><a href="/REPSuite/trainingLanding.page" target="_top"> Mi Negocio Digital</a></li>
-                    <li><a href="/REPSuite/trainingCategories.page" target="_top">Catálogo Avon Móvil</a></li>
-                    <li><a href="/REPSuite/sellingTips.page" target="_top">Incentivos</a></li>
-                    <li><a href="/REPSuite/beautyArticles.page" target="_top">Avon On</a></li>
-                    <li><a href="/REPSuite/faq.page" target="_top">Aprendiendo con Avon</a></li>
+                    <li class="av-list-title"><a href="SLSuite/trainingLanding.page" target="_top">Mi Negocio Digital</a></li>
+                    <li><a href="/SLSuite/trainingCategories.page" target="_top">Catálogo Avon Móvil </a></li>
+                    <li><a href="/SLSuite/sellingTips.page" target="_top">Tablero de Control - Catálogos</a></li>
+                    <li><a href="/SLSuite/beautyArticles.page" target="_top">App Avon On</a></li>
+                    <li><a href="/SLSuite/faq.pager" target="_top">Aprendiendo con Avon</a></li>
                 </ul>
                 <ul class="av-list av-footer-list">
-                    <li class="av-list-title"><a href="/REPSuite/careerLanding.page" target="_top">Oportunidades</a> </li>
+                    <li class="av-list-title"><a href="/SLSuite/messages.page" target="_top">Mis Mensajes</a></li>
+                    
+
+                    <li><a href="/SLSuite/sendMessage.page">Enviar Mensajes</a></li>
+                    <li><a href="/SLSuite/receivedMessage.page">Leer Mensajes</a></li>
                 </ul>
             </div>
-            <div class="w-100"></div>
-            <div class="av-spacer"></div>
-            <div class="col">
-                <script>
-                    var fechaActual = (new Date).getFullYear();
-                    $(document).ready(function() {
-                        $("#dateyear").text(fechaActual);
-                    });
-                </script>
-                    <h4 style="text-align: center;"><span id="dateyear"></span>, Avon Cosmetics</h4>
+     
+            <div class="col-12">
+                <div class="w-100"></div><div class="av-spacer"></div>
+                <div class="w-100">
+                    <script>
+                        var fechaActual = (new Date).getFullYear();
+                        $(document).ready(function() {
+                            $("#dateyear").text(fechaActual);
+                        });
+                    </script>
+                    <h4 style="text-align: center;"><span id="dateyear"></span>, Productos Avon de Nicaragua, S.A. </h4>
                 </div>
             </div>
         </div>
     </footer>
 </section>
-<div style="opacity: 0;" id="avModalNameGet"><variable name="firstname"></variable></div>
+<!--<div style="opacity: 0;" id="avModalNameGet"><variable name="firstname"></variable></div>-->
 <script>
     $(document).ready(function(){
         let avMoreTitle,avMore;
@@ -412,5 +486,10 @@
 
 </svg>
 
-<script src="/REPSuite/web/static/js/repHomeOverlay_v01.js"></script>
-<script src="/REPSuite/web/static/js/repHomeLoaSeg.js"></script>
+<script>
+window.onload = function() {
+    var avAcct = AvonAnalyticsObjex.Profile.repAcct;
+    document.getElementById("conexLink").setAttribute("href",`http://qnjs-nola.avon.com/CAM/Home?registro=${avAcct}&pais=5&tipo=4`);
+}
+</script>
+<script src="/REPSuite/web/static/js/repHomeOverlay.js"></script>

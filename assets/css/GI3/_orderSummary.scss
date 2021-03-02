@@ -1,0 +1,66 @@
+
+/*------- Step 4 2020 ------*/
+
+[name="frmSummary"] {
+    > table:first-of-type {
+        .bgalt {
+            background-color: $color-dark-lighter;
+            display: flex;
+            padding: 30px;
+            > td {
+                flex: 1;
+            }
+        }
+        
+        .tbl_header_big {
+            margin-bottom: 20px;
+        }
+    }
+    
+    > table:last-child {
+        display: flex;
+        justify-content: flex-end;
+
+        td:first-child .buttonBgpink{
+            margin-right: 10px;
+        }
+        .buttonBgpink {
+            @include av-button-secondary;
+        }
+    }
+}
+
+td.leftalign {
+    > table.bor_outer {
+        &:not(.padding10) {
+            display: block;
+            .border_right {
+                padding-right: 60px;
+                border-right: 1px solid;
+                width: 500px;
+            }
+            .padding_left20, .puplink {
+                padding-left: 60px;
+            }
+        }
+        &.padding10 {
+            td:first-child {
+                display: inline-block;
+            }
+            .leftalign {
+                width: 100%
+            }
+        }
+    }
+    
+} 
+.orderbrochure_content {
+    @include subtitle(20px,left);
+}
+[colspan="2"].orderbrochure_content {
+    margin-top: 30px;
+}
+.bodyR {
+    padding: 15px;
+    font-family: $bold-monts;
+}

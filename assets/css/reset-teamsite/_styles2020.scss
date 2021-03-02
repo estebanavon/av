@@ -2,7 +2,7 @@
 #dashboardFrame {
     width: 100% !important;
     @media (min-width:$media-2){
-        width: 800px !important;
+        width: 810px !important;
     }
 }
 [name="dashboardInformationForm"] td[nowrap=""]{
@@ -47,7 +47,7 @@ td .pink30_txt, .campaign_All{
     height: auto;
     @include title;
     
-    > img {
+    img {
         @include img-full-screen();
     }
 }
@@ -69,55 +69,13 @@ td .pink30_txt, .campaign_All{
     }
 }
 
-/*------- STEP 0 2020 ------*/
-
-div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
-    padding-left: 0 !important;
-    img {
-        @include img-full-screen;
-    }
-    
-}
-.table_bg {
-    box-shadow: $color-shadow-border;
-    width: 100%;
-}
-.td_subheader_bg {
-    text-align: left;
-    .sub_heading2 {
-        border-bottom: 1px solid $color-text;
-        text-align: left;
-        padding: 5px 10px;
-        display: block;
-    }
-}
-.place_an_order_tbl2 {
-    box-shadow: $color-shadow-border;
-    border-spacing: 7px 0px;
-    background-color: $color-light-white;
-    margin-bottom: 20px;
-
-    .tdcell_R.border_top_white > table > tbody {
-        display: flex;
-        align-items: center;
-        label strong {
-            white-space: nowrap;
-        }
-    }
-    label {
-        @include text-system($bold-monts);
-    }
-}
 
 /*------- STEPPER 2020 ------*/
 
 .tbl_bgpink td.padding_10.padding_left20 {
-    display: flex;
     img {
-        width: 100%;
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            float: left;
-        }
+        width: 25%;
+        float: left;
     }
 }
 
@@ -178,7 +136,7 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
 #divOuter_1 + table.alt_rows {
     margin: 50px 0px 25px 0px;  
     .bg_fff9f9 {
-        @include av-table($color-dark-light,$color-text);
+        @include av-table-header($color-dark-light,$color-text);
         box-shadow: $color-shadow-border;
     }
     .bgaltwhite {
@@ -226,7 +184,8 @@ table.order_table {
             color: $color-white;
             background-image: $color-gradient;
         }
-        .bg_lightpinkheader, .bg_lightpink,.bg_lightpinklast {
+        .bg_lightpinkheader, .bg_lightpink,.bg_lightpinklast,
+        .bg_lightpinklastheader {
             font-size: 12px;
             padding-top: 2px;
             background-color: $color-light-white;
@@ -251,6 +210,7 @@ table.order_table {
             &:first-child > table {
                 min-height: 290px;
                 border-spacing: 0px 15px;
+                border-collapse: separate;
                 > tbody > tr {
                     box-shadow: $color-shadow-border;
                     > td {
@@ -282,6 +242,7 @@ table.order_table {
                         h3 {
                             padding: 10px;
                             text-align: center;
+                            font-family: $regular-monts;
                         }
                     }
                     img[src*="offerImages"]{
@@ -392,6 +353,10 @@ td.padding_3.active a, td.padding_3 a {
     width: 100%;
 	padding: 15px 0;
 	font-family: $regular-monts;
+    color: $color-text;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
 }
 
 
@@ -399,8 +364,8 @@ td.bg2_f2f0f0.padding_3.active1 {
     border-bottom: 5px solid $color-primary;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    
 }
+
 .bg_f2f0f0 td.active a, .bg1_f2f0f0 a, .bg_f2f0f0 a {
     color: $color-text;
     font-family: $regular-monts;
@@ -467,30 +432,6 @@ td.bg2_f2f0f0.padding_3.active1 {
 }
 
 
-/*------- SUBTOTAL 2020 ------*/
-
-
-
-td .font_bold.font_14.txt_fff {
-    @include subtitle(25px,center);
-    color: $color-secondary;
-    line-height: 29px;
-    padding-left: 70px;
-    background-color:$color-white;
-    display: table-cell;
-    ~ td.padding_10 {
-        padding-right: 70px;
-    }
-}
-.body {
-    > img[src="/REPSuite/static/images/iom/banner_subtotal_text.gif"] {
-        @include img-full-screen
-    }
-    em {
-        padding-left: 70px;
-        color: $color-secondary;       
-    }
-} 
 
 /*------- SUBTOTAL 2020 ------*/
 
@@ -517,65 +458,6 @@ td .font_bold.font_14.txt_fff {
 }
 
 
-/*------- Step 4 2020 ------*/
-
-[name="frmSummary"] {
-    > table:first-of-type {
-        .bgalt {
-            background-color: $color-dark-lighter;
-            display: flex;
-            padding: 30px;
-            > td {
-                flex: 1;
-            }
-        }
-        .bodyR {
-            padding: 15px;
-            font-family: $bold-monts;
-        }
-        .tbl_header_big {
-            margin-bottom: 20px;
-        }
-    }
-    
-    > table:last-child {
-        display: flex;
-        justify-content: flex-end;
-        
-        .buttonBgpink {
-            @include av-button-secondary;
-        }
-    }
-}
-
-td.leftalign {
-    > table.bor_outer {
-        &:not(.padding10) {
-            display: block;
-            .border_right {
-                padding-right: 60px;
-                border-right: 1px solid;
-                width: 500px;
-            }
-            .padding_left20 {
-                padding-left: 60px;
-            }
-        }
-        &.padding10 {
-            td:first-child {
-                display: inline-block;
-            }
-            .leftalign {
-                width: 100%
-            }
-        }
-    }
-    
-} 
-.orderbrochure_content {
-    @include subtitle(20px,left);
-}
-
 
 /*------- CAMBIOS 2020 ------*/
 #replacementsTbl {
@@ -584,12 +466,6 @@ td.leftalign {
     }
 }
 
-.content [src="/REPSuite/static/images/iom/banner_top_returns.jpg"] {
-    @include img-full-screen;
-}
-[src="/REPSuite/static/images/iom/returns_subtitle.jpg"] {
-    margin: 40px 0px;
-}
 .bg_efedee.padding_top10.padding_bottom10 {
     table {
         width: 100%;
@@ -605,7 +481,7 @@ td.leftalign {
 }
 
 #returnForm > table > tbody > tr > td > table > tbody > tr > td {
-    @include av-table;
+    @include av-table-header;
 }
 
 #folletos_virtuales_1 {
@@ -633,7 +509,10 @@ td.leftalign {
 #Image0, 
 #Image1,
 #Image2,
-#Image3 {
+#Image3, 
+#Image4,
+#Image5, 
+#Image6 {
     width: auto !important;
     height: auto !important;
 }
@@ -817,8 +696,18 @@ div[style*="#A9A9A9;"] {
     overflow-y: auto;
     display: block;
 }
-tr.tableBg1 > td:nth-child(2) > table.body td {
-    background-color: red;
-    font-size: 12px;
-    white-space: nowrap;
+tr.tableBg1 > td:nth-child(2) > table.body {
+    > tbody {
+        padding-left: 30px;
+        display: block;
+    }
+    td {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+} 
+
+// RESUMEN ROJO
+td:nth-child(2)#attTableColumns {
+    background-color: $color-light-white;
 }

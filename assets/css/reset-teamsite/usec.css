@@ -1634,9 +1634,7 @@ A.linkJob.visited {
 
 .margins_theme {
   background-color: #EEEEEE;
-  height: 100%;
   background: #eeeeee;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -3122,6 +3120,10 @@ td > img {
   }
 }
 
+.margins_theme {
+  overflow-y: hidden;
+}
+
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3134,10 +3136,16 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
   padding: 0px 40px 10px 40px;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr {
+    display: table-row;
+  }
+}
+
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3152,9 +3160,9 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:last-child > table > tbody > tr:nth-child(1) {
@@ -3379,6 +3387,14 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
           justify-content: space-between;
 }
 
+.avlogin-support .avlogin-contact.mx {
+  margin-top: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .avlogin-support .avlogin-contact p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3386,6 +3402,7 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 8px;
 }
 
 .avlogin-support .avlogin-contact p svg {
@@ -3404,17 +3421,29 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
   height: 100%;
 }
 
-.avlogin-content > div:first-child {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.avlogin-cont {
+  background-position: center;
+  background-size: cover;
 }
 
 .avlogin-social {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 50px;
   background-color: #F7F7F7;
 }
 
@@ -3428,7 +3457,12 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 }
 
 .avlogin-social > div:first-child {
-  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
+.avlogin-social > div:first-child svg {
+  opacity: 0.8;
+  height: 30px;
 }
 
 .avlogin-social > div:last-child {
@@ -3440,6 +3474,6 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
 }
 
 .avlogin-social > div:last-child > div:last-child a:first-child {
-  margin-right: 15px;
+  margin-right: 45px;
 }
 /*# sourceMappingURL=usec.css.map */

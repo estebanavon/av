@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, #yourTeamOrderForm #divBioBottom1 a.body, #yourTeamOrderForm #divBioBottom2 a.body, #yourTeamOrderForm #divBioBottom3 a.body, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
+.av-button-icon, .av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, #yourTeamOrderForm #divBioBottom1 a.body, #yourTeamOrderForm #divBioBottom2 a.body, #yourTeamOrderForm #divBioBottom3 a.body, ul.breadcrumb_line li:not(.active) > a, ul.breadcrumb_line li.active > a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a, .pymntBtnDisable, .instant_buttonBgorder, .instant_buttonBgoffer, [name="frmSummary"] > table:last-child .buttonBgpink {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,18 +66,18 @@
   white-space: nowrap;
 }
 
-.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, #yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom3 a.body:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom3 a.body:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:focus, #yourTeamOrderForm #divBioBottom3 a.body:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
+.av-button-icon:hover, .av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, #yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom3 a.body:hover, ul.breadcrumb_line li:not(.active) > a:hover, ul.breadcrumb_line li.active > a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .pymntBtnDisable:hover, .instant_buttonBgorder:hover, .instant_buttonBgoffer:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom3 a.body:active, ul.breadcrumb_line li:not(.active) > a:active, ul.breadcrumb_line li.active > a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .pymntBtnDisable:active, .instant_buttonBgorder:active, .instant_buttonBgoffer:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:focus, #yourTeamOrderForm #divBioBottom3 a.body:focus, ul.breadcrumb_line li:not(.active) > a:focus, ul.breadcrumb_line li.active > a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus, .pymntBtnDisable:focus, .instant_buttonBgorder:focus, .instant_buttonBgoffer:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus {
   outline: none;
   text-decoration: none !important;
 }
 
-.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmSummary"] > table:last-child .negative.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.negative, #yourTeamOrderForm #divBioBottom1 a.negative.body, #yourTeamOrderForm #divBioBottom2 a.negative.body, #yourTeamOrderForm #divBioBottom3 a.negative.body, ul.breadcrumb_line li a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder, .rightalign > a.negative {
+.negative.av-button-icon, .negative.av-button-primary, .negative.av-button-secondary, .negative.av-button-tertiary, .negative.av-button-outline, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.negative, #yourTeamOrderForm #divBioBottom1 a.negative.body, #yourTeamOrderForm #divBioBottom2 a.negative.body, #yourTeamOrderForm #divBioBottom3 a.negative.body, ul.breadcrumb_line li:not(.active) > a.negative, ul.breadcrumb_line li.active > a.negative, .negative.buttonBg, .negative.buttonBgpink, a.negative.ord_link, .view a.negative:not(.ord_link), .view_order a.negative, .view ~ td .negative[onclick="ClearAllItems();"], .view_order ~ td .negative[onclick="ClearAllItems();"], td input.negative.buttonBgorder, .rightalign > a.negative, .negative.pymntBtnDisable, .negative.instant_buttonBgorder, .negative.instant_buttonBgoffer, [name="frmSummary"] > table:last-child .negative.buttonBgpink {
   color: #fff;
 }
 
-.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmSummary"] > table:last-child .buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, #yourTeamOrderForm #divBioBottom1 a.body, #yourTeamOrderForm #divBioBottom2 a.body, #yourTeamOrderForm #divBioBottom3 a.body, ul.breadcrumb_line li a, ul.breadcrumb_line li.active a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a {
+.av-button-primary, .av-button-secondary, .av-button-tertiary, .av-button-outline, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a, #yourTeamOrderForm #divBioBottom1 a.body, #yourTeamOrderForm #divBioBottom2 a.body, #yourTeamOrderForm #divBioBottom3 a.body, ul.breadcrumb_line li:not(.active) > a, ul.breadcrumb_line li.active > a, .buttonBg, .buttonBgpink, a.ord_link, .view a:not(.ord_link), .view_order a, .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"], .tbl_outerline .buttonBgpink, td input.buttonBgorder, .rightalign > a, .pymntBtnDisable, .instant_buttonBgorder, .instant_buttonBgoffer, [name="frmSummary"] > table:last-child .buttonBgpink {
   color: #fff;
-  padding: 13px 30px;
+  padding: 15px 30px;
   text-align: center;
   border-radius: 4px;
   display: -webkit-inline-box;
@@ -86,13 +86,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, #yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom3 a.body:hover, ul.breadcrumb_line li a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom3 a.body:active, ul.breadcrumb_line li a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:focus, #yourTeamOrderForm #divBioBottom3 a.body:focus, ul.breadcrumb_line li a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus {
+.av-button-primary:hover, .av-button-secondary:hover, .av-button-tertiary:hover, .av-button-outline:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, #yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom3 a.body:hover, ul.breadcrumb_line li:not(.active) > a:hover, ul.breadcrumb_line li.active > a:hover, .buttonBg:hover, .buttonBgpink:hover, a.ord_link:hover, .view a:hover:not(.ord_link), .view_order a:hover, .view ~ td :hover[onclick="ClearAllItems();"], .view_order ~ td :hover[onclick="ClearAllItems();"], td input.buttonBgorder:hover, .rightalign > a:hover, .pymntBtnDisable:hover, .instant_buttonBgorder:hover, .instant_buttonBgoffer:hover, [name="frmSummary"] > table:last-child .buttonBgpink:hover, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom3 a.body:active, ul.breadcrumb_line li:not(.active) > a:active, ul.breadcrumb_line li.active > a:active, .buttonBg:active, .buttonBgpink:active, a.ord_link:active, .view a:active:not(.ord_link), .view_order a:active, .view ~ td :active[onclick="ClearAllItems();"], .view_order ~ td :active[onclick="ClearAllItems();"], td input.buttonBgorder:active, .rightalign > a:active, .pymntBtnDisable:active, .instant_buttonBgorder:active, .instant_buttonBgoffer:active, [name="frmSummary"] > table:last-child .buttonBgpink:active, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:focus, #yourTeamOrderForm #divBioBottom3 a.body:focus, ul.breadcrumb_line li:not(.active) > a:focus, ul.breadcrumb_line li.active > a:focus, .buttonBg:focus, .buttonBgpink:focus, a.ord_link:focus, .view a:focus:not(.ord_link), .view_order a:focus, .view ~ td :focus[onclick="ClearAllItems();"], .view_order ~ td :focus[onclick="ClearAllItems();"], td input.buttonBgorder:focus, .rightalign > a:focus, .pymntBtnDisable:focus, .instant_buttonBgorder:focus, .instant_buttonBgoffer:focus, [name="frmSummary"] > table:last-child .buttonBgpink:focus {
   z-index: 5;
 }
 
-.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmSummary"] > table:last-child .small.buttonBgpink, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.small, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.small, #yourTeamOrderForm #divBioBottom1 a.small.body, #yourTeamOrderForm #divBioBottom2 a.small.body, #yourTeamOrderForm #divBioBottom3 a.small.body, ul.breadcrumb_line li a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder, .rightalign > a.small {
+.small.av-button-primary, .small.av-button-secondary, .small.av-button-tertiary, .small.av-button-outline, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.small, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a.small, #yourTeamOrderForm #divBioBottom1 a.small.body, #yourTeamOrderForm #divBioBottom2 a.small.body, #yourTeamOrderForm #divBioBottom3 a.small.body, ul.breadcrumb_line li:not(.active) > a.small, ul.breadcrumb_line li.active > a.small, .small.buttonBg, .small.buttonBgpink, a.small.ord_link, .view a.small:not(.ord_link), .view_order a.small, .view ~ td .small[onclick="ClearAllItems();"], .view_order ~ td .small[onclick="ClearAllItems();"], td input.small.buttonBgorder, .rightalign > a.small, .small.pymntBtnDisable, .small.instant_buttonBgorder, .small.instant_buttonBgoffer, [name="frmSummary"] > table:last-child .small.buttonBgpink {
   padding: 10px 20px;
   font-size: 14px;
 }
@@ -154,6 +157,7 @@
 
 .av-button-secondary:hover, .av-button-secondary:active, .av-button-secondary:focus {
   color: #fff;
+  background-color: #6A17AD;
 }
 
 .av-button-tertiary {
@@ -163,13 +167,11 @@
 
 .av-button-tertiary svg {
   fill: #7F28C4;
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  margin-right: 7px;
 }
 
 .av-button-tertiary:hover, .av-button-tertiary:active, .av-button-tertiary:focus {
-  color: #7F28C4;
+  color: #6A17AD;
 }
 
 .av-button-tertiary.negative {
@@ -195,18 +197,25 @@
   font-size: 14px;
 }
 
-.articleHeader, td .font_bold.font_14.txt_fff, .orderbrochure_content, .av-tc h2, .tbl_header_big,
+.articleHeader, .av-tc h2, .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
-.titleStep4, .order_method_campaign, h1 > em, .Order_title_Step4, .textbox_h1 {
+.titleStep4, .order_method_campaign, h1 > em, .Order_title_Step4, .textbox_h1, .orderbrochure_content, td.font_bold.font_14.txt_fff {
   color: #3b4546;
   text-align: left;
   margin: 0px;
   display: block;
   padding: 0;
+  font-style: normal;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, [name="exForm"] #lineno0 ~ table tr td[width="33%"] {
+.av-sale-price {
+  font-size: 22px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
+  color: #E82F89 !important;
+}
+
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #OfferStoreForm .horizontal_solid_line, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, [name="exForm"] #lineno0 ~ table tr td.td_bot_border {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-box-shadow 0.4s;
@@ -215,13 +224,15 @@
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
 
-#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, [name="exForm"] #lineno0 ~ table tr td:hover[width="33%"] {
+#clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td:hover[height="50%"], #OfferStoreForm .horizontal_solid_line:hover, #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body:hover, [name="exForm"] #lineno0 ~ table tr td.td_bot_border:hover {
   -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
-.success, .rtlBody > strong > font, .error, .red_txt2, .totalQty {
+.success, .rtlBody > strong > font, .error, .red_txt2, .totalQty,
+.error_GOMAC,
+.overBookedRepText, .segmentBlckedRepText {
   text-transform: uppercase;
   font-size: 16px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
@@ -702,12 +713,6 @@ ul.nav_lineentry li {
   font-size: 11px;
 }
 
-td.tbl_bgright3 {
-  background: none;
-  width: 26px;
-  height: 30px;
-}
-
 div.div_table {
   height: 330px;
   overflow-y: auto;
@@ -1051,14 +1056,6 @@ ul.single_list li {
 }
 
 /*---------------------------------------favorites8------------------------*/
-.txt_black .active a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: arial;
-  font-size: 12px;
-}
-
 .bg_f6f4f4 {
   background-color: f6f4f4;
   border-right: solid 1px #ccc;
@@ -2095,14 +2092,6 @@ a.returnsSearch {
   padding-right: 10px;
 }
 
-td.active1 a {
-  color: #333333;
-  font-size: 15px;
-  text-decoration: none;
-  font-weight: normal;
-  text-align: center;
-}
-
 .border_bot_top_gray {
   border-bottom: solid 1px #fff;
   border-top: solid 1px #fff;
@@ -2328,17 +2317,6 @@ font:Arial;
 }
 
 /*Mich added style*/
-table.placeAnOrder_image {
-  background-color: #fff;
-  padding: 5px;
-  border: none;
-}
-
-table.placeAnOrder_image img {
-  height: 22px;
-  width: 22px;
-}
-
 img.product_small {
   border: none;
   width: 80px;
@@ -2372,13 +2350,6 @@ img.promo_overlay {
 img.transaction_button {
   border: none;
   height: 17px;
-}
-
-.error_GOMAC {
-  font: 15px Arial;
-  color: red;
-  height: 15px;
-  font-weight: bold;
 }
 
 .body_rule_box {
@@ -2502,14 +2473,6 @@ div#campaignSelect > table > tbody > tr:first-child > td {
   padding: 5px;
 }
 
-div#alternate table tbody tr:nth-child(4) td table tbody tr td:nth-child(4) {
-  display: none;
-}
-
-div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
-  border-right: 0;
-}
-
 /*== END Image Step 0 ==*/
 /*== DEMOS STYLES ==*/
 /*== END DEMOS STYLES ==*/
@@ -2523,7 +2486,7 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
 
 @media (min-width: 992px) {
   #dashboardFrame {
-    width: 800px !important;
+    width: 810px !important;
   }
 }
 
@@ -2557,8 +2520,8 @@ div#alternate table tbody tr:nth-child(4) td table tbody tr > td:nth-child(3) {
 .ord_gray_txt {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
   padding-left: 72px;
   text-transform: uppercase;
   text-align: left;
@@ -2574,6 +2537,7 @@ td .pink30_txt, .campaign_All {
   width: 100%;
   height: auto;
   font-family: montserrat-light, Helvetica, sans-serif;
+  font-weight: lighter;
   font-size: 30px;
   line-height: 36px;
 }
@@ -2582,11 +2546,10 @@ td .pink30_txt, .campaign_All {
   font-weight: normal !important;
 }
 
-.articleHeader > img {
+.articleHeader img {
   width: 100%;
   display: block;
   margin: 0 auto;
-  height: auto;
 }
 
 [src*="blue_divider"] {
@@ -2600,8 +2563,8 @@ td .pink30_txt, .campaign_All {
 .tbl_orderpack > tbody > tr:nth-child(6) table tr:first-child > td {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
   background-color: #f0f0f0;
   padding: 10px;
   text-align: left;
@@ -2611,78 +2574,10 @@ td .pink30_txt, .campaign_All {
   padding: 0px 20px;
 }
 
-/*------- STEP 0 2020 ------*/
-div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
-  padding-left: 0 !important;
-}
-
-div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  height: auto;
-}
-
-.table_bg {
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  width: 100%;
-}
-
-.td_subheader_bg {
-  text-align: left;
-}
-
-.td_subheader_bg .sub_heading2 {
-  border-bottom: 1px solid #3b4546;
-  text-align: left;
-  padding: 5px 10px;
-  display: block;
-}
-
-.place_an_order_tbl2 {
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  border-spacing: 7px 0px;
-  background-color: #F7F7F7;
-  margin-bottom: 20px;
-}
-
-.place_an_order_tbl2 .tdcell_R.border_top_white > table > tbody {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.place_an_order_tbl2 .tdcell_R.border_top_white > table > tbody label strong {
-  white-space: nowrap;
-}
-
-.place_an_order_tbl2 label {
-  color: #3b4546;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-}
-
 /*------- STEPPER 2020 ------*/
-.tbl_bgpink td.padding_10.padding_left20 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .tbl_bgpink td.padding_10.padding_left20 img {
-  width: 100%;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .tbl_bgpink td.padding_10.padding_left20 img {
-    float: left;
-  }
+  width: 25%;
+  float: left;
 }
 
 /*------- CREATE ORDER TABLES 2020 ------*/
@@ -2706,7 +2601,6 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
   width: 100%;
   display: block;
   margin: 0 auto;
-  height: auto;
 }
 
 #frmCreateOrder > table > tbody > tr > td > table[width="751"] img[width="361"] {
@@ -2746,10 +2640,11 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td#attTableHeaders,
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td.font_bold,
 #divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 14px;
   color: #3b4546;
   padding: 17px 0px;
@@ -2757,6 +2652,15 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
   text-align: center;
   line-height: 13px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td#attTableHeaders > a,
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray) > a,
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td.font_bold > a,
+#divOuter_1 + table.alt_rows .bg_fff9f9 > tbody > tr:first-child > td > div.font_bold > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 #divOuter_1 + table.alt_rows .bg_fff9f9 tr.bgaltwhite, #divOuter_1 + table.alt_rows .bg_fff9f9 tr.bgalt {
@@ -2834,7 +2738,8 @@ table.order_table > tbody > tr:nth-child(1) td {
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
 }
 
-table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lightpink, table.order_table > tbody .bg_lightpinklast {
+table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lightpink, table.order_table > tbody .bg_lightpinklast,
+table.order_table > tbody .bg_lightpinklastheader {
   font-size: 12px;
   padding-top: 2px;
   background-color: #F7F7F7;
@@ -2862,6 +2767,7 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
 [name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table {
   min-height: 290px;
   border-spacing: 0px 15px;
+  border-collapse: separate;
 }
 
 [name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:first-child > table > tbody > tr {
@@ -2881,8 +2787,8 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
   text-align: right;
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
   color: #E82F89;
 }
 
@@ -2890,8 +2796,8 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
   text-align: left;
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 [name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody {
@@ -2911,13 +2817,13 @@ table.order_table > tbody .bg_lightpinkheader, table.order_table > tbody .bg_lig
 [name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody .bg_cecdcd h3 {
   padding: 10px;
   text-align: center;
+  font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 [name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody img[src*="offerImages"] {
   width: 100%;
   display: block;
   margin: 0 auto;
-  height: auto;
 }
 
 #searchForm table[width="752"] {
@@ -3017,6 +2923,10 @@ td.padding_3.active a, td.padding_3 a {
   width: 100%;
   padding: 15px 0;
   font-family: montserrat-regular, Helvetica, sans-serif;
+  color: #3b4546;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
 }
 
 td.bg2_f2f0f0.padding_3.active1 {
@@ -3041,7 +2951,6 @@ td.bg2_f2f0f0.padding_3.active1 {
   width: 100%;
   display: block;
   margin: 0 auto;
-  height: auto;
 }
 
 #clearanceoffersForm #displayArea1 > table {
@@ -3095,45 +3004,6 @@ td.bg2_f2f0f0.padding_3.active1 {
 }
 
 /*------- SUBTOTAL 2020 ------*/
-td .font_bold.font_14.txt_fff {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 24px;
-  color: #E82F89;
-  line-height: 29px;
-  padding-left: 70px;
-  background-color: #fff;
-  display: table-cell;
-}
-
-@media (min-width: 768px) {
-  td .font_bold.font_14.txt_fff {
-    font-size: 25px;
-  }
-}
-
-td .font_bold.font_14.txt_fff.left {
-  text-align: left;
-}
-
-td .font_bold.font_14.txt_fff ~ td.padding_10 {
-  padding-right: 70px;
-}
-
-.body > img[src="/REPSuite/static/images/iom/banner_subtotal_text.gif"] {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  height: auto;
-}
-
-.body em {
-  padding-left: 70px;
-  color: #E82F89;
-}
-
-/*------- SUBTOTAL 2020 ------*/
 .tableBorder [bgcolor="#EDEEEF"] {
   background-color: transparent;
 }
@@ -3159,100 +3029,9 @@ td .font_bold.font_14.txt_fff ~ td.padding_10 {
   top: -80px;
 }
 
-/*------- Step 4 2020 ------*/
-[name="frmSummary"] > table:first-of-type .bgalt {
-  background-color: #f0f0f0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px;
-}
-
-[name="frmSummary"] > table:first-of-type .bgalt > td {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-[name="frmSummary"] > table:first-of-type .bodyR {
-  padding: 15px;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-}
-
-[name="frmSummary"] > table:first-of-type .tbl_header_big {
-  margin-bottom: 20px;
-}
-
-[name="frmSummary"] > table:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-[name="frmSummary"] > table:last-child .buttonBgpink {
-  background-color: #7F28C4;
-}
-
-[name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmSummary"] > table:last-child .buttonBgpink:focus {
-  color: #fff;
-}
-
-td.leftalign > table.bor_outer:not(.padding10) {
-  display: block;
-}
-
-td.leftalign > table.bor_outer:not(.padding10) .border_right {
-  padding-right: 60px;
-  border-right: 1px solid;
-  width: 500px;
-}
-
-td.leftalign > table.bor_outer:not(.padding10) .padding_left20 {
-  padding-left: 60px;
-}
-
-td.leftalign > table.bor_outer.padding10 td:first-child {
-  display: inline-block;
-}
-
-td.leftalign > table.bor_outer.padding10 .leftalign {
-  width: 100%;
-}
-
-.orderbrochure_content {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-weight: 300;
-  text-align: left;
-  font-size: 19px;
-}
-
-@media (min-width: 768px) {
-  .orderbrochure_content {
-    font-size: 20px;
-  }
-}
-
-.orderbrochure_content.left {
-  text-align: left;
-}
-
 /*------- CAMBIOS 2020 ------*/
 #replacementsTbl img[border="1"] {
   border: none !important;
-}
-
-.content [src="/REPSuite/static/images/iom/banner_top_returns.jpg"] {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  height: auto;
-}
-
-[src="/REPSuite/static/images/iom/returns_subtitle.jpg"] {
-  margin: 40px 0px;
 }
 
 .bg_efedee.padding_top10.padding_bottom10 table {
@@ -3263,7 +3042,6 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
   width: 100%;
   display: block;
   margin: 0 auto;
-  height: auto;
   width: 90%;
 }
 
@@ -3276,10 +3054,11 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
   text-align: center;
 }
 
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td#attTableHeaders,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td.font_bold,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > div.font_bold {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 14px;
   color: #3b4546;
   padding: 17px 0px;
@@ -3287,6 +3066,15 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
   text-align: center;
   line-height: 13px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td#attTableHeaders > a,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child.font_bold > td:not(.border_bottomgray) > a,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td.font_bold > a,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > tbody > tr:first-child > td > div.font_bold > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 #returnForm > table > tbody > tr > td > table > tbody > tr > td tr.bgaltwhite, #returnForm > table > tbody > tr > td > table > tbody > tr > td tr.bgalt {
@@ -3297,7 +3085,6 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
   width: 100%;
   display: block;
   margin: 0 auto;
-  height: auto;
 }
 
 #orderTrackingForm table {
@@ -3320,7 +3107,10 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
 #Image0,
 #Image1,
 #Image2,
-#Image3 {
+#Image3,
+#Image4,
+#Image5,
+#Image6 {
   width: auto !important;
   height: auto !important;
 }
@@ -3336,8 +3126,8 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
 [name="frmConfirm"] .font_bold {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 table[width="700"],
@@ -3382,8 +3172,8 @@ table[width="98%"] {
 .offer_action_header_txt, .offer_font_bold .offer_prize_font_size, .offer_decription {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
   display: block;
   margin-bottom: 10px;
 }
@@ -3415,13 +3205,11 @@ table[width="98%"] {
 
 [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a svg {
   fill: #7F28C4;
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  margin-right: 7px;
 }
 
 [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:hover, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:active, [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a:focus {
-  color: #7F28C4;
+  color: #6A17AD;
 }
 
 [name="frmCustomer"] > div > table > tbody > tr:last-child .txt_black a.negative {
@@ -3438,6 +3226,7 @@ table[width="98%"] {
 
 [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:hover, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:active, [name="frmCustomer"] #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table .txt_black a:focus {
   color: #fff;
+  background-color: #6A17AD;
 }
 
 #search td.body > table > tbody {
@@ -3519,6 +3308,7 @@ img[height="14"], [type="image"][height="14"] {
 
 .av-tc h2 {
   font-family: montserrat-light, Helvetica, sans-serif;
+  font-weight: lighter;
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 20px;
@@ -3531,8 +3321,8 @@ img[height="14"], [type="image"][height="14"] {
 .av-tc h4 {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
   color: #3b4546;
   margin-bottom: 20px;
 }
@@ -3540,8 +3330,8 @@ img[height="14"], [type="image"][height="14"] {
 .av-tc p {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
   text-align: justify;
   margin-bottom: 20px;
 }
@@ -3555,8 +3345,8 @@ img[height="14"], [type="image"][height="14"] {
 .av-tc ul li {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 [name="creditScoreForm"] table {
@@ -3578,6 +3368,7 @@ div[style*="#A9A9A9;"] {
 
 #yourTeamOrderForm #divBioBottom1 a.body:hover, #yourTeamOrderForm #divBioBottom1 a.body:active, #yourTeamOrderForm #divBioBottom1 a.body:focus, #yourTeamOrderForm #divBioBottom2 a.body:hover, #yourTeamOrderForm #divBioBottom2 a.body:active, #yourTeamOrderForm #divBioBottom2 a.body:focus {
   color: #fff;
+  background-color: #6A17AD;
 }
 
 #yourTeamOrderForm #divBioBottom3 a.body {
@@ -3643,53 +3434,55 @@ div[style*="#A9A9A9;"] {
   display: block;
 }
 
+tr.tableBg1 > td:nth-child(2) > table.body > tbody {
+  padding-left: 30px;
+  display: block;
+}
+
 tr.tableBg1 > td:nth-child(2) > table.body td {
-  background-color: red;
   font-size: 12px;
   white-space: nowrap;
+}
+
+td:nth-child(2)#attTableColumns {
+  background-color: #F7F7F7;
 }
 
 body, td {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
 }
 
-ul.breadcrumb_line li a {
+ul.breadcrumb_line li:not(.active) > a {
   background-color: #7F28C4;
 }
 
-ul.breadcrumb_line li a:hover, ul.breadcrumb_line li a:active, ul.breadcrumb_line li a:focus {
+ul.breadcrumb_line li:not(.active) > a:hover, ul.breadcrumb_line li:not(.active) > a:active, ul.breadcrumb_line li:not(.active) > a:focus {
   color: #fff;
+  background-color: #6A17AD;
 }
 
-ul.breadcrumb_line li.active a {
+ul.breadcrumb_line li.active > a {
   color: #7F28C4;
 }
 
-ul.breadcrumb_line li.active a svg {
+ul.breadcrumb_line li.active > a svg {
   fill: #7F28C4;
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  margin-right: 7px;
 }
 
-ul.breadcrumb_line li.active a:hover, ul.breadcrumb_line li.active a:active, ul.breadcrumb_line li.active a:focus {
-  color: #7F28C4;
+ul.breadcrumb_line li.active > a:hover, ul.breadcrumb_line li.active > a:active, ul.breadcrumb_line li.active > a:focus {
+  color: #6A17AD;
 }
 
-ul.breadcrumb_line li.active a.negative {
+ul.breadcrumb_line li.active > a.negative {
   color: #fff;
 }
 
-ul.breadcrumb_line li.active a.negative:hover, ul.breadcrumb_line li.active a.negative:active, ul.breadcrumb_line li.active a.negative:focus {
+ul.breadcrumb_line li.active > a.negative:hover, ul.breadcrumb_line li.active > a.negative:active, ul.breadcrumb_line li.active > a.negative:focus {
   color: #fff;
-}
-
-ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
-  padding: 10px 20px;
-  font-size: 14px;
 }
 
 .buttonBg {
@@ -3709,13 +3502,11 @@ ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
 
 .buttonBgpink svg {
   fill: #7F28C4;
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  margin-right: 7px;
 }
 
 .buttonBgpink:hover, .buttonBgpink:active, .buttonBgpink:focus {
-  color: #7F28C4;
+  color: #6A17AD;
 }
 
 .buttonBgpink.negative {
@@ -3732,13 +3523,11 @@ a.ord_link {
 
 a.ord_link svg {
   fill: #7F28C4;
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  margin-right: 7px;
 }
 
 a.ord_link:hover, a.ord_link:active, a.ord_link:focus {
-  color: #7F28C4;
+  color: #6A17AD;
 }
 
 a.ord_link.negative {
@@ -3759,13 +3548,11 @@ a.ord_link span br {
 
 .view a:not(.ord_link) svg, .view_order a svg {
   fill: #7F28C4;
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  margin-right: 7px;
 }
 
 .view a:not(.ord_link):hover, .view a:not(.ord_link):active, .view a:not(.ord_link):focus, .view_order a:hover, .view_order a:active, .view_order a:focus {
-  color: #7F28C4;
+  color: #6A17AD;
 }
 
 .view a:not(.ord_link).negative, .view_order a.negative {
@@ -3774,6 +3561,10 @@ a.ord_link span br {
 
 .view a:not(.ord_link).negative:hover, .view a:not(.ord_link).negative:active, .view a:not(.ord_link).negative:focus, .view_order a.negative:hover, .view_order a.negative:active, .view_order a.negative:focus {
   color: #fff;
+}
+
+.view, .view_order {
+  vertical-align: top;
 }
 
 .view ~ td [onclick="ClearAllItems();"], .view_order ~ td [onclick="ClearAllItems();"] {
@@ -3823,10 +3614,7 @@ textarea {
 
 .tbl_outerline .buttonBgpink:hover, .tbl_outerline .buttonBgpink:active, .tbl_outerline .buttonBgpink:focus {
   color: #fff;
-}
-
-.contentbackgroundcolor {
-  padding: 0px 20px;
+  background-color: #6A17AD;
 }
 
 .tbl_header_big,
@@ -3834,6 +3622,7 @@ textarea {
 .sub_heading1,
 .titleStep4 {
   font-family: montserrat-light, Helvetica, sans-serif;
+  font-weight: lighter;
   font-size: 30px;
   line-height: 36px;
 }
@@ -3846,7 +3635,7 @@ textarea {
 }
 
 .sub_heading1 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contentbackgroundcolor td.tbl_bgmid3 {
@@ -3856,7 +3645,7 @@ textarea {
 .order_method_campaign {
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 24px;
-  padding: 35px 0px 15px 50px;
+  padding: 45px 0px 45px 0px;
   height: auto;
 }
 
@@ -3870,8 +3659,8 @@ td h2,
 tr.tableBg1 ~ tr strong {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 h1 > em {
@@ -3879,6 +3668,7 @@ h1 > em {
   font-weight: 300;
   text-align: center;
   font-size: 19px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -3891,8 +3681,7 @@ h1 > em.left {
   text-align: left;
 }
 
-.tbl_outerline, #returnForm > table,
-#allrep, #allsl {
+.tbl_outerline, #returnForm > table {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
@@ -3904,23 +3693,24 @@ h1 > em.left {
 
 .tbl_lineentry,
 .my_customer,
-#allrep, #allsl {
+#att_table_header_outline {
   width: 100%;
   text-align: center;
 }
 
+.tbl_lineentry > tbody > tr:first-child > td#attTableHeaders,
 .tbl_lineentry > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .tbl_lineentry > tbody > tr:first-child > td.font_bold,
 .tbl_lineentry > tbody > tr:first-child > td > div.font_bold,
+.my_customer > tbody > tr:first-child > td#attTableHeaders,
 .my_customer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
 .my_customer > tbody > tr:first-child > td.font_bold,
 .my_customer > tbody > tr:first-child > td > div.font_bold,
-#allrep > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-#allrep > tbody > tr:first-child > td.font_bold,
-#allrep > tbody > tr:first-child > td > div.font_bold, #allsl > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-#allsl > tbody > tr:first-child > td.font_bold,
-#allsl > tbody > tr:first-child > td > div.font_bold {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+#att_table_header_outline > tbody > tr:first-child > td#attTableHeaders,
+#att_table_header_outline > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+#att_table_header_outline > tbody > tr:first-child > td.font_bold,
+#att_table_header_outline > tbody > tr:first-child > td > div.font_bold {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 14px;
   color: #3b4546;
   padding: 17px 0px;
@@ -3930,29 +3720,71 @@ h1 > em.left {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.tbl_lineentry > tbody > tr:first-child > td#attTableHeaders > a,
+.tbl_lineentry > tbody > tr:first-child.font_bold > td:not(.border_bottomgray) > a,
+.tbl_lineentry > tbody > tr:first-child > td.font_bold > a,
+.tbl_lineentry > tbody > tr:first-child > td > div.font_bold > a,
+.my_customer > tbody > tr:first-child > td#attTableHeaders > a,
+.my_customer > tbody > tr:first-child.font_bold > td:not(.border_bottomgray) > a,
+.my_customer > tbody > tr:first-child > td.font_bold > a,
+.my_customer > tbody > tr:first-child > td > div.font_bold > a,
+#att_table_header_outline > tbody > tr:first-child > td#attTableHeaders > a,
+#att_table_header_outline > tbody > tr:first-child.font_bold > td:not(.border_bottomgray) > a,
+#att_table_header_outline > tbody > tr:first-child > td.font_bold > a,
+#att_table_header_outline > tbody > tr:first-child > td > div.font_bold > a {
+  color: #7F28C4;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
 .tbl_lineentry tr.bgaltwhite, .tbl_lineentry tr.bgalt,
 .my_customer tr.bgaltwhite,
 .my_customer tr.bgalt,
-#allrep tr.bgaltwhite,
-#allrep tr.bgalt, #allsl tr.bgaltwhite, #allsl tr.bgalt {
+#att_table_header_outline tr.bgaltwhite,
+#att_table_header_outline tr.bgalt {
   height: 30px;
 }
 
-#allrep > thead td, #allsl > thead td {
+.tbl_outerline.bg_fff9f9 {
+  width: 100%;
+  text-align: center;
+}
+
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td#attTableHeaders,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td.font_bold,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 14px;
+  color: #3b4546;
+  padding: 17px 0px;
+  background-color: #cccccc;
+  text-align: center;
+  line-height: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td#attTableHeaders > a,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray) > a,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td.font_bold > a,
+.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold > a {
   color: #7F28C4;
-  border-bottom: none !important;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
-#allrep > tbody td, #allsl > tbody td {
-  font-size: 12px;
-  padding: 4px;
+.tbl_outerline.bg_fff9f9 tr.bgaltwhite, .tbl_outerline.bg_fff9f9 tr.bgalt {
+  height: 30px;
 }
 
+.sortable, #allrep, #allrep1, #allsl, #allsl1, #allrepdiffzone, #allrepdiffzoneALL,
+#allreps0,
 [name="selectUserForm"] table.body,
 #orderTrackingForm td[height="10"] > table.body,
 #frmOrderDelivery table.body,
 #receivedMsgForm td[height="10"] > table.body,
 #aaa.bor_outer > table,
+.body.acc_bal_table,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
   width: 100%;
   text-align: center;
@@ -3960,6 +3792,16 @@ h1 > em.left {
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
+.sortable > thead td,
+.sortable > tbody:first-child > tr:first-child > td, #allrep > thead td,
+#allrep > tbody:first-child > tr:first-child > td, #allrep1 > thead td,
+#allrep1 > tbody:first-child > tr:first-child > td, #allsl > thead td,
+#allsl > tbody:first-child > tr:first-child > td, #allsl1 > thead td,
+#allsl1 > tbody:first-child > tr:first-child > td, #allrepdiffzone > thead td,
+#allrepdiffzone > tbody:first-child > tr:first-child > td, #allrepdiffzoneALL > thead td,
+#allrepdiffzoneALL > tbody:first-child > tr:first-child > td,
+#allreps0 > thead td,
+#allreps0 > tbody:first-child > tr:first-child > td,
 [name="selectUserForm"] table.body > thead td,
 [name="selectUserForm"] table.body > tbody:first-child > tr:first-child > td,
 #orderTrackingForm td[height="10"] > table.body > thead td,
@@ -3970,9 +3812,11 @@ h1 > em.left {
 #receivedMsgForm td[height="10"] > table.body > tbody:first-child > tr:first-child > td,
 #aaa.bor_outer > table > thead td,
 #aaa.bor_outer > table > tbody:first-child > tr:first-child > td,
+.body.acc_bal_table > thead td,
+.body.acc_bal_table > tbody:first-child > tr:first-child > td,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > table > thead td,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody:first-child > tr:first-child > td {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 14px;
   color: #3b4546;
   padding: 17px 0px;
@@ -3982,6 +3826,16 @@ h1 > em.left {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.sortable > thead td > a,
+.sortable > tbody:first-child > tr:first-child > td > a, #allrep > thead td > a,
+#allrep > tbody:first-child > tr:first-child > td > a, #allrep1 > thead td > a,
+#allrep1 > tbody:first-child > tr:first-child > td > a, #allsl > thead td > a,
+#allsl > tbody:first-child > tr:first-child > td > a, #allsl1 > thead td > a,
+#allsl1 > tbody:first-child > tr:first-child > td > a, #allrepdiffzone > thead td > a,
+#allrepdiffzone > tbody:first-child > tr:first-child > td > a, #allrepdiffzoneALL > thead td > a,
+#allrepdiffzoneALL > tbody:first-child > tr:first-child > td > a,
+#allreps0 > thead td > a,
+#allreps0 > tbody:first-child > tr:first-child > td > a,
 [name="selectUserForm"] table.body > thead td > a,
 [name="selectUserForm"] table.body > tbody:first-child > tr:first-child > td > a,
 #orderTrackingForm td[height="10"] > table.body > thead td > a,
@@ -3992,6 +3846,8 @@ h1 > em.left {
 #receivedMsgForm td[height="10"] > table.body > tbody:first-child > tr:first-child > td > a,
 #aaa.bor_outer > table > thead td > a,
 #aaa.bor_outer > table > tbody:first-child > tr:first-child > td > a,
+.body.acc_bal_table > thead td > a,
+.body.acc_bal_table > tbody:first-child > tr:first-child > td > a,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > table > thead td > a,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > table > tbody:first-child > tr:first-child > td > a {
   color: #7F28C4;
@@ -3999,26 +3855,31 @@ h1 > em.left {
   text-decoration: none;
 }
 
-.tbl_outerline.bg_fff9f9 {
-  width: 100%;
-  text-align: center;
-}
-
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child.font_bold > td:not(.border_bottomgray),
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td.font_bold,
-.tbl_outerline.bg_fff9f9 > tbody > tr:first-child > td > div.font_bold {
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #3b4546;
-  padding: 17px 0px;
-  background-color: #cccccc;
-  text-align: center;
-  line-height: 13px;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.tbl_outerline.bg_fff9f9 tr.bgaltwhite, .tbl_outerline.bg_fff9f9 tr.bgalt {
+.sortable .tableBg1, #allrep .tableBg1, #allrep1 .tableBg1, #allsl .tableBg1, #allsl1 .tableBg1, #allrepdiffzone .tableBg1, #allrepdiffzoneALL .tableBg1,
+#allreps0 .tableBg1,
+[name="selectUserForm"] table.body .tableBg1,
+#orderTrackingForm td[height="10"] > table.body .tableBg1,
+#frmOrderDelivery table.body .tableBg1,
+#receivedMsgForm td[height="10"] > table.body .tableBg1,
+#aaa.bor_outer > table .tableBg1,
+.body.acc_bal_table .tableBg1,
+#returnForm > table > tbody > tr > td > table > tbody > tr > td > table .tableBg1 {
+  background-color: #F7F7F7;
   height: 30px;
+}
+
+.sortable > thead td, #allrep > thead td, #allrep1 > thead td, #allsl > thead td,
+#allsl1 > thead td, #allrepdiffzone > thead td, #allrepdiffzoneALL > thead td,
+#allreps0 > thead td {
+  color: #7F28C4;
+  border-bottom: none !important;
+}
+
+.sortable > tbody td, #allrep > tbody td, #allrep1 > tbody td, #allsl > tbody td,
+#allsl1 > tbody td, #allrepdiffzone > tbody td, #allrepdiffzoneALL > tbody td,
+#allreps0 > tbody td {
+  font-size: 12px;
+  padding: 4px;
 }
 
 [name="addeditform"] .tbl_header.tbl_bgmid3,
@@ -4036,7 +3897,9 @@ h1 > em.left {
   color: #1A8282 !important;
 }
 
-.error, .red_txt2, .totalQty {
+.error, .red_txt2, .totalQty,
+.error_GOMAC,
+.overBookedRepText, .segmentBlckedRepText {
   color: #F09F87 !important;
 }
 
@@ -4044,7 +3907,8 @@ a.linkList,
 a.bodyCenter,
 a.bodyBold,
 a.body,
-a.offersLink {
+a.offersLink,
+.normal_blacklink {
   color: #7F28C4;
   font-family: montserrat-regular, Helvetica, sans-serif;
   text-decoration: underline;
@@ -4059,7 +3923,8 @@ a.linkList:hover,
 a.bodyCenter:hover,
 a.bodyBold:hover,
 a.body:hover,
-a.offersLink:hover {
+a.offersLink:hover,
+.normal_blacklink:hover {
   background-color: #f6effc;
 }
 
@@ -4067,7 +3932,8 @@ a.linkList.visited,
 a.bodyCenter.visited,
 a.bodyBold.visited,
 a.body.visited,
-a.offersLink.visited {
+a.offersLink.visited,
+.normal_blacklink.visited {
   color: #66209d;
 }
 
@@ -4086,7 +3952,7 @@ a.offersLink.visited {
   border-radius: 0px;
   min-width: 42px;
   width: auto;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .linearFormInput:hover, input[type="text"]:not(.searchBox):hover, input[type="password"]:hover {
@@ -4114,7 +3980,7 @@ select {
   border-radius: 0px;
   min-width: 42px;
   width: auto;
-  font-size: 16px;
+  font-size: 15px;
   background-color: transparent;
 }
 
@@ -4145,29 +4011,37 @@ td input.buttonBgorder {
 
 td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgorder:focus {
   color: #fff;
-}
-
-td.td_bot_border > p, td.td_bot_border > div p {
-  width: 80%;
-}
-
-[name="exForm"] td.td_bot_border > div:first-of-type {
-  width: 85%;
-  margin: 0 auto;
-}
-
-[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
-  font-size: 22px;
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
-  color: #E82F89 !important;
+  background-color: #6A17AD;
 }
 
 [name="exForm"] #lineno0 ~ table {
   border-spacing: 14px 6px;
 }
 
-[name="exForm"] #lineno0 ~ table tr td[width="33%"] {
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border {
   font-size: 13px;
+  padding: 0px 30px 30px 30px;
+  line-height: 15px;
+}
+
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border > p span.red_txt2 {
+  font-size: 22px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
+  color: #E82F89 !important;
+}
+
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border > div.padding_top10 {
+  padding-top: 17px;
+}
+
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border strong {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+[name="exForm"] #lineno0 ~ table tr td.td_bot_border .buttonBgorder {
+  width: 100%;
 }
 
 [name="newIooffersForm"] table tr td table tr td,
@@ -4180,6 +4054,7 @@ td.td_bot_border > p, td.td_bot_border > div p {
   font-weight: 300;
   text-align: left;
   font-size: 19px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -4197,15 +4072,6 @@ td.td_bot_border > p, td.td_bot_border > div p {
   color: #E82F89;
 }
 
-.marginsPopup [name="gomacErrorForm"] > table tr:nth-child(2) td.error strong {
-  font-weight: normal;
-}
-
-#clearanceoffersForm #displayArea1 > table {
-  width: 35%;
-}
-
-/*by GErber Barillas 12 enero 2021*/
 /* CSS MX by GEBZ. */
 .articleHeader table tr td img#order_tracking_banner_1,
 .articleHeader table tr td img#order_tracking_banner_3 {
@@ -4263,13 +4129,11 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 
 .rightalign > a svg {
   fill: #7F28C4;
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  margin-right: 7px;
 }
 
 .rightalign > a:hover, .rightalign > a:active, .rightalign > a:focus {
-  color: #7F28C4;
+  color: #6A17AD;
 }
 
 .rightalign > a.negative {
@@ -4291,6 +4155,7 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 .textbox_h1 {
   margin-bottom: 30px;
   font-family: montserrat-light, Helvetica, sans-serif;
+  font-weight: lighter;
   font-size: 30px;
   line-height: 36px;
   width: 80%;
@@ -4317,10 +4182,6 @@ div#instantCreditContentSlot_content2 > p > a.visited {
   line-height: 20px;
 }
 
-#linkDescargaAplicacion {
-  padding-left: 20px;
-}
-
 .containerbox {
   padding: 40px 0px;
   background-color: rgba(200, 200, 200, 0.3);
@@ -4334,10 +4195,6 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 .divisor {
   background-color: #E82F89;
   margin-bottom: 60px;
-}
-
-div > table tr td table tr td:nth-child(5) {
-  width: 49%;
 }
 
 div > table tr td table tr td:nth-child(5) b {
@@ -4363,5 +4220,360 @@ div > table tr td table tr td:nth-child(5) div table tr td {
 
 div > table tr td table tr td:nth-child(5) div table tr td font {
   color: #7F28C4 !important;
+}
+
+.cod_text {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  color: #bc18ad;
+  font-size: 23px !important;
+}
+
+.pymnt_label {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 10px 0;
+  text-shadow: 1px 1px 0px white;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+.bankrefnumber_text {
+  font-weight: lighter;
+  color: #3b4546;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.4;
+  font-variant: small-caps;
+}
+
+.pymntBtnDisable {
+  background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
+  background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
+  display: inline-block;
+  min-width: 200px;
+  opacity: 0.5;
+  cursor: not-allowed;
+  width: 200px;
+}
+
+.pymntBtnDisable:hover, .pymntBtnDisable:active, .pymntBtnDisable:focus {
+  color: #fff;
+}
+
+.pymtBtnDisableMsg {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  color: #E82F89;
+  background-color: #fff !important;
+  text-shadow: none;
+  outline: medium none !important;
+  padding: 10px 0px;
+}
+
+.instant_buttonBgorder, .instant_buttonBgoffer {
+  background-color: #7F28C4;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.instant_buttonBgorder:hover, .instant_buttonBgorder:active, .instant_buttonBgorder:focus, .instant_buttonBgoffer:hover, .instant_buttonBgoffer:active, .instant_buttonBgoffer:focus {
+  color: #fff;
+  background-color: #6A17AD;
+}
+
+#count {
+  font-size: 14px;
+  color: #E82F89;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+.pup_info {
+  padding: 30px;
+  background-color: #BAE1E9;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.overBookedRepText, .segmentBlckedRepText {
+  padding: 0px 40px;
+}
+
+td.tbl_bgright3 {
+  height: 20px;
+}
+
+.puplink {
+  color: #7F28C4;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.puplink:hover {
+  background-color: #f6effc;
+}
+
+.puplink.visited {
+  color: #66209d;
+}
+
+.instant_slot_SrtDesc {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.alert1 td {
+  font-size: 11px;
+}
+
+.alert1 tr:first-child td {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+#accountBalanceForm [style*="border-radius"] {
+  border: none !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+}
+
+#accountBalanceForm table.body {
+  width: 100%;
+}
+
+td:first-child > table > tbody > tr > td > div > div > [name="dashboardInformationForm"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+[name="dashboardInformationForm"] > table > tbody {
+  text-align: left;
+}
+
+[name="dashboardInformationForm"] > table > tbody table.tableBg1 {
+  width: 200px;
+}
+
+[name="dashboardInformationForm"] > table > tbody table.tableBg1 td, [name="dashboardInformationForm"] > table > tbody table.tableBg1 a {
+  font-size: 13px;
+}
+
+/*------- Step 4 2020 ------*/
+[name="frmSummary"] > table:first-of-type .bgalt {
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+[name="frmSummary"] > table:first-of-type .bgalt > td {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+[name="frmSummary"] > table:first-of-type .tbl_header_big {
+  margin-bottom: 20px;
+}
+
+[name="frmSummary"] > table:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+[name="frmSummary"] > table:last-child td:first-child .buttonBgpink {
+  margin-right: 10px;
+}
+
+[name="frmSummary"] > table:last-child .buttonBgpink {
+  background-color: #7F28C4;
+}
+
+[name="frmSummary"] > table:last-child .buttonBgpink:hover, [name="frmSummary"] > table:last-child .buttonBgpink:active, [name="frmSummary"] > table:last-child .buttonBgpink:focus {
+  color: #fff;
+  background-color: #6A17AD;
+}
+
+td.leftalign > table.bor_outer:not(.padding10) {
+  display: block;
+}
+
+td.leftalign > table.bor_outer:not(.padding10) .border_right {
+  padding-right: 60px;
+  border-right: 1px solid;
+  width: 500px;
+}
+
+td.leftalign > table.bor_outer:not(.padding10) .padding_left20, td.leftalign > table.bor_outer:not(.padding10) .puplink {
+  padding-left: 60px;
+}
+
+td.leftalign > table.bor_outer.padding10 td:first-child {
+  display: inline-block;
+}
+
+td.leftalign > table.bor_outer.padding10 .leftalign {
+  width: 100%;
+}
+
+.orderbrochure_content {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 19px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .orderbrochure_content {
+    font-size: 20px;
+  }
+}
+
+.orderbrochure_content.left {
+  text-align: left;
+}
+
+[colspan="2"].orderbrochure_content {
+  margin-top: 30px;
+}
+
+.bodyR {
+  padding: 15px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+/*------- SUBTOTAL 2020 ------*/
+form[name="frmPreviewOrder"] img {
+  width: 100%;
+}
+
+td.font_bold.font_14.txt_fff {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 0px;
+  color: #E82F89;
+  line-height: 29px;
+  background-color: #fff;
+  padding-right: 10px;
+  display: table-cell;
+}
+
+@media (min-width: 768px) {
+  td.font_bold.font_14.txt_fff {
+    font-size: 25px;
+  }
+}
+
+td.font_bold.font_14.txt_fff.left {
+  text-align: left;
+}
+
+.body em {
+  font-size: 20px;
+  color: #E82F89;
+}
+
+/*------- STEP 0 2020 ------*/
+div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 {
+  padding-left: 0 !important;
+}
+
+div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.table_bg {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.td_subheader_bg {
+  text-align: left;
+}
+
+.td_subheader_bg .sub_heading2 {
+  border-bottom: 1px solid #3b4546;
+  text-align: left;
+  padding: 5px 10px;
+  display: block;
+}
+
+.place_an_order_tbl2 {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-spacing: 7px 0px;
+  background-color: #F7F7F7;
+  margin-bottom: 20px;
+}
+
+.place_an_order_tbl2 .tdcell_R.border_top_white > table > tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.place_an_order_tbl2 .tdcell_R.border_top_white > table > tbody label strong {
+  white-space: nowrap;
+}
+
+.place_an_order_tbl2 label {
+  color: #3b4546;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+div#alternate .placeAnOrder_image {
+  background-color: #fff;
+  border: none;
+}
+
+div#alternate .placeAnOrder_image > tbody > tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  div#alternate .placeAnOrder_image > tbody > tr {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+div#alternate .placeAnOrder_image > tbody > tr > td {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+div#alternate .placeAnOrder_image > tbody > tr > td:nth-child(4) {
+  display: none;
+}
+
+div#alternate .placeAnOrder_image > tbody > tr > td:nth-child(3) {
+  border-right: 0;
 }
 /*# sourceMappingURL=included_styles.css.map */

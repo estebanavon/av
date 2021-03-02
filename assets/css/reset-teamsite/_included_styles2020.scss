@@ -2,16 +2,13 @@ body, td {
     @include text-system($regular-monts);
 }
 
-ul.breadcrumb_line li a {
+ul.breadcrumb_line li:not(.active) > a {
     @include av-button-secondary;
 }
-ul.breadcrumb_line li.active a {
+ul.breadcrumb_line li.active > a {
     @include av-button-tertiary;
 }
-ul.breadcrumb_line li a, ul.breadcrumb_line li.active a {
-    padding:  10px 20px;
-    font-size: 14px;
-}
+
 .buttonBg {
     @include av-button-primary;
 }
@@ -29,6 +26,7 @@ a.ord_link {
     @include av-button-tertiary;
 }
 .view, .view_order {
+    vertical-align: top;
     ~ td [onclick="ClearAllItems();"]{
         @include av-button-outline;
         margin-right: 7px;
@@ -45,9 +43,6 @@ textarea {
     margin: 0px 10px 10px 10px;
 }
 
-.contentbackgroundcolor {
-    padding: 0px 20px;
-}
 .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
@@ -55,14 +50,14 @@ textarea {
     @include title;
 }
 .sub_heading1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .contentbackgroundcolor td.tbl_bgmid3 {
     white-space: nowrap;
 }
 .order_method_campaign {
     @include titleRegular();
-    padding: 35px 0px 15px 50px;
+    padding: 45px 0px 45px 0px;
     height: auto;
 }
 
@@ -80,8 +75,7 @@ h1 > em {
     @include subtitle(20px,center);
 }
 
-.tbl_outerline, #returnForm > table,
-#allrep, #allsl {
+.tbl_outerline, #returnForm > table {
     box-shadow: $color-shadow-border;
 }
 .div_table {
@@ -92,25 +86,34 @@ h1 > em {
 
 .tbl_lineentry,
 .my_customer,
-#allrep, #allsl {
-    @include av-table();
+#att_table_header_outline {
+    @include av-table-header();
 }
-#allrep, #allsl {
-    @include av-table-result();
+.tbl_outerline.bg_fff9f9 {
+    @include av-table-header($color-dark-light,$color-text);
 }
 
+
+.sortable, #allrep, #allrep1, #allsl, #allsl1,#allrepdiffzone, #allrepdiffzoneALL,
+#allreps0, 
 [name="selectUserForm"] table.body,
 #orderTrackingForm td[height="10"] > table.body,
 #frmOrderDelivery table.body,
 #receivedMsgForm td[height="10"] > table.body,
 #aaa.bor_outer > table,
+.body.acc_bal_table,
 #returnForm > table > tbody > tr > td > table > tbody > tr > td > table {
-    @include av-table1();
+    @include av-table-primary();
+}
+.sortable, #allrep, #allrep1, #allsl,
+#allsl1, #allrepdiffzone, #allrepdiffzoneALL,
+#allreps0 {
+    @include av-table-result();
 }
 
-.tbl_outerline.bg_fff9f9 {
-    @include av-table($color-dark-light,$color-text);
-}
+
+
+
 [name="addeditform"] .tbl_header.tbl_bgmid3,
 .pop_main_header_txt {
     @include modal-title;
@@ -119,7 +122,9 @@ h1 > em {
 .success, .rtlBody > strong > font {
     @include alert-succes;
 }
-.error, .red_txt2, .totalQty {
+.error, .red_txt2, .totalQty,
+.error_GOMAC,
+.overBookedRepText,.segmentBlckedRepText {
     @include alert-warning;
 }
 
@@ -127,7 +132,8 @@ a.linkList,
 a.bodyCenter,
 a.bodyBold,
 a.body,
-a.offersLink {
+a.offersLink,
+.normal_blacklink {
 	@include av-link();
 }
 
@@ -150,22 +156,11 @@ td input.buttonBgorder{
     @include av-button-secondary;
 }
 
-td.td_bot_border > p, td.td_bot_border > div p{
-    width: 80%;
-}
-[name="exForm"] td.td_bot_border > div:first-of-type{
-    @include demoDescription;
-}
-
-[name="exForm"] td.td_bot_border > p > strong > span.red_txt2 {
-    @include SalePrice;
-}
-
 [name="exForm"] #lineno0 ~ table {
     @include borderSpace;
-        tr td[width="33%"] {
+        tr td.td_bot_border {
             @include gridDemos;
-        }
+        }        
 }
 
 
@@ -173,6 +168,7 @@ td.td_bot_border > p, td.td_bot_border > div p{
 [name="newIooffersForm"] table tr td table tr td img {
     @include step3;
 }
+
 .Order_title_Step4{
     @include subtitle(20px,left);
 }
@@ -187,9 +183,6 @@ td.td_bot_border > p, td.td_bot_border > div p{
 #clearanceoffersForm #displayArea1 > table {
     width: 35%;
 }
-
-
-/*by GErber Barillas 12 enero 2021*/
 
 /* CSS MX by GEBZ. */
 .articleHeader table tr td img#order_tracking_banner_1,
@@ -228,10 +221,6 @@ div#instantCreditContentSlot_content2 > p > a{
 .textbox p{
     @include textbox_p;
 }
-
-#linkDescargaAplicacion{
-    padding-left: 20px;
-}
 .containerbox{
     @include containerbox; 
 }
@@ -241,9 +230,9 @@ div#instantCreditContentSlot_content2 > p > a{
 .divisor{
     @include divisor;
 }
-div > table tr td table tr td:nth-child(5){
-    width:49%;
-}
+// div > table tr td table tr td:nth-child(5){
+//     width:49%;
+// }
 div > table tr td table tr td:nth-child(5) b{
     line-height: 50px;
 }
