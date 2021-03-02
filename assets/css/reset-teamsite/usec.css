@@ -1634,9 +1634,7 @@ A.linkJob.visited {
 
 .margins_theme {
   background-color: #EEEEEE;
-  height: 100%;
   background: #eeeeee;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -3122,6 +3120,10 @@ td > img {
   }
 }
 
+.margins_theme {
+  overflow-y: hidden;
+}
+
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3132,6 +3134,12 @@ table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > 
           flex-direction: row-reverse;
   position: relative;
   padding: 0px 40px 10px 40px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr {
+    display: table-row;
+  }
 }
 
 table.border > tbody > tr > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {

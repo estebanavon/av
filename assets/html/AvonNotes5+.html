@@ -1,82 +1,495 @@
+<!--HOME SL NI-->
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<style>.topbackgroundcolor {position: relative;}.mtDropdownMenu{top: -12px !important;}</style>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" type="text/css" href="/FLDSuite/web/static/css/styles_scss.css">
 
 
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <h3 class="av-title mb-3 left">Ofertas exclusivas de internet C04</h3>
-        </div>
-        <div class="w-100"></div>
-        <div class="col">
-            <a href="/REPSuite/offerStore.page" target="_self" class="av-card-link">
-                <div class="av-card">
-                    <div class="av-card-image">
-                        <img class="w-100 av-fallback h-auto" src="http://ecm1.cms.avon.com/REPSuite/web/static/images/paso1_img/c06_offer_1.png" alt="c03_offer_1">
-                    </div>
-                    <div class="av-card-text">
-                        <h4 class="av-card-title">SET SWEET HONESTY FOREVER</h4>
-                        <p class="av-text">
-                            Set de 4 incluye 2 cremas suavizantes de 50 g, 1 Fragancia de 10 ml y colonia 1 fragancia en spray para ella de 50 ml
-                            <br>
-                            De $115.99 (Precio Folleto) a
-                        </p>
-                        <span class="av-sale-price">$74.99</span>
-                        <p class="av-text mt-2">Precio paga </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col">
-            <a href="/REPSuite/offerStore.page" target="_self" class="av-card-link">
-                <div class="av-card">
-                    <div class="av-card-image">
-                        <img class="w-100 av-fallback h-auto" src="http://ecm1.cms.avon.com/REPSuite/web/static/images/paso1_img/c06_offer_2.png" alt="c03_offer_3">
-                    </div>
-                    <div class="av-card-text">
-                        <h4 class="av-card-title">FOOT WORKS</h4>
-                        <p class="av-text">
-                            Spray refrescante para pies piña y árbol de té con vitamina E contenido neto 100 ml.
-                            <br>
-                            De $42.99 (Precio Folleto) a
-                        </p>
-                        
-                        <span class="av-sale-price">$26.99</span>
-                        <p class="av-text mt-2">Precio paga </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col">
-            <a href="/REPSuite/offerStore.page" target="_self" class="av-card-link">
-                <div class="av-card">
-                    <div class="av-card-image">
-                        <img class="w-100 av-fallback h-auto" src="http://ecm1.cms.avon.com/REPSuite/web/static/images/paso1_img/c06_offer_3.png" alt="c03_offer_3">
-                    </div>
-                    <div class="av-card-text">
-                        <h4 class="av-card-title">SET RARE GOLD</h4>
-                        <p class="av-text">
-                            Incluye 1 Fragancia spray para ella de 50 ml, 2 lociones perfumadas para el cuerpo de 90 ml c/u.
-                            <br>
-                            De $259.00 (Precio Folleto) a
-                        </p>
-                        <span class="av-sale-price">$167.99</span>
-                        <p class="av-text mt-2">Precio paga </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="w-100 mt-3"></div>
-        <div class="col">
-            <a class="av-button-outline small w-100" target="_self" href="/REPSuite/offerStore.page">Ofertas Exclusivas</a>
-        </div>
-        <div class="col">
-            <a class="av-button-outline small w-100" target="_self" href="/REPSuite/orderByBrochure.page">Folleto Virtual</a>
-        </div>
-        <div class="col">
-            <a class="av-button-outline small w-100" target="_self" href="/REPSuite/returnsStandaloneLanding.page">Cambios y Devoluciones</a>
+<script>
+    var tr1 = document.getElementsByTagName("tr");
+    tr1[0].style.display = "none";
+</script>
+<section class="avHome">
+    <div class="avHome-nav pb-2">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+               <a target="_top" class="av-button-tertiary mr-5" href="/SLSuite/placeRepOrder.page">
+                    <svg width="25px" height="20px">
+                        <use xlink:href="#folletos"></use>
+                    </svg>
+                    Coloca Tu Orden
+                </a>
+               <a target="_top" class="av-button-tertiary" href="/SLSuite/orderTracking.page">
+                    <svg width="25px" height="20px">
+                        <use xlink:href="#seguimiento"></use>
+                    </svg>
+                    Sigue Tu Orden
+                </a>
+				<a target="_blank" class="av-button-tertiary mr-5" href="https://ni.avonfolletodigital.com/order/">
+                    <svg width="25px" height="20px">
+                        <use xlink:href="#folletos"></use>
+                    </svg>
+                    Comparte tus folletos
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <a target="_top" class="av-button-tertiary ml-3" href="/SLSuite/orderDeliveryDetails.page">
+                    <svg width="25px" height="25px">
+                        <use xlink:href="#clock"></use>
+                    </svg>
+                </a>
+            </div>
+            
         </div>
     </div>
-</div>
+    
+    <div class="avMore" id="avMoreId">
+        <div class="avMore-more">
+            <div class="d-flex">
+                <a target="_top" class="av-button-tertiary">
+                    <svg width="25px" height="20px">
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="avMore-close">
+                <svg width="16px" height="16px">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="avMore-content">
+            <h3 class="av-title mb-3 left" id="avMore-title"></h3>
+            <div class="av-wrapper text-left">
+                <div class="avMore-contact" style="display: none;">
+                    <p class="av-text">Contáctanos de lunes a viernes de 7:00a.m. a 6:00p.m.<br>
+						y sábados y domingos de 8:00a.m. a 4:00p.m.
+                    </p>
+                    <p class="av-text">
+                       O escríbenos por WhatsApp: <strong>+502 4020 4060</strong>
+                    </p>
+                    <div class="d-flex justify-content-between">
+                        <h4>Tel: 2255-7131</h4>
+                        <h4>servicioal.cliente@avon.com</h4>
+                    </div>
+                </div>
+                <!-- <div class="avMore-option" style="display: none;"><p class="av-text">Hola</p></div> -->
+            </div>
+        </div>
+    </div>
+    <!-- INICA SLIDER HOME 2020 -->
+
+    <div id="avHomeSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators avHome-indicators">
+            <li data-target="#avHomeSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#avHomeSlider" data-slide-to="1"></li>
+			<li data-target="#avHomeSlider" data-slide-to="2"></li>
+          </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <a target="_top">
+                <img src="/REPSuite/web/static/home_2018/img/hero_se_pone_mejor.jpg" class="d-block w-100" alt="slider1">
+              </a>
+          </div>
+          <div class="carousel-item">
+             <a target="_blank" href="https://watchmenow.avon.com">
+                <img src="/REPSuite/web/static/home_2018/img/hero_1_million.jpg" class="d-block w-100" alt="slider1">
+              </a>
+          </div>
+			<div class="carousel-item">
+             <a target="_top" href="/SLSuite/myNews.page">
+                <img src="/REPSuite/web/static/home_2018/img/hero_mis_folletos.jpg" class="d-block w-100" alt="slider1">
+              </a>
+          </div>
+        </div>
+       <a target="_top" class="carousel-control-prev" href="#avHomeSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+       <a target="_top" class="carousel-control-next" href="#avHomeSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+
+    <!-- FINALIZA SLIDER HOME 2020 -->
+
+
+      <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col">
+                <h3 class="av-title mb-3 left">Administra Tu Sector</h3>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <div class="d-flex">
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/placeRepOrder.page"> 
+                            <img src="/REPSuite/web/static/home_2018/img/icono_ingreso_pedidos.png" alt="INGRESO DE PEDIDOS">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/yourTeamOrders.page"> 
+                            <img src="/REPSuite/web/static/home_2018/img/seguimiento_de_pedidos.png" alt="SEGUIMIENTO DE PEDIDOS">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                       <a target="_blank" id="conexLink"> 
+                            <img src="/REPSuite/web/static/home_2018/img/conexion_avon.png" alt="CONEXIÓN AVON">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+
+            <div class="col mt-5">
+                <h3 class="av-title mb-3 left">Mi Negocio Digital</h3>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <div class="d-flex">
+			        <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/trainingLanding.page"> 
+                            <img src="/REPSuite/web/static/images/home/avNegocioVertical.png">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/trainingCategories.page"> 
+                            <img src="/REPSuite/web/static/images/home/avCatalogoVertical.png">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/beautyArticles.page"> 
+                            <img src="/REPSuite/web/static/images/home/avAvonOnVertical.png">
+                        </a>
+                    </div>
+                    <div class="avHome-card">
+                        <a target="_top" href="/SLSuite/faq.page"> 
+                            <img src="/REPSuite/web/static/images/home/avAprendiendoVertical.png">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="w-100"></div>
+            
+            <div class="col mt-5">
+                <h3 class="av-title mb-3 left">Crece Tu Negocio Avon</h3>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-6">
+                <a href="/SLSuite/Oportunidades_Sin_Limites_Avon_Asesoras.page" target="_top" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image"><img class="w-100 av-fallback"
+                                src="/REPSuite/web/static/home_2018/img/oportunidades_sin_limites_sl.jpg" alt="Oportunidades Sin Límites"></div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Oportunidades Sin Límites</h4>
+                            <p class="av-text">Aumenta tus ganancias con las herramientas digitales y el contenido exclusivo para Asesoras</p>
+                            <span class="av-button-tertiary">VER MÁS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/SLSuite/Guia_Plan_90_Dias.page" target="_top" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image"><img class="w-100 av-fallback"
+                                src="/REPSuite/web/static/home_2018/img/loa_0_plan_90_sl.jpg" alt="Plan 90 días"></div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Plan 90 días</h4>
+                            <p class="av-text">Guía paso a paso para las Consejeras Nuevas en su Negocio Independiente Avon</p>
+                            <span class="av-button-tertiary">VER MÁS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-100"></div>
+            <div class="av-spacer"></div>
+
+
+            <div class="col-6">
+                <a href="/FLDSuite/static/pdf/Avon_Plan_Empresarial.jpg" target="_blank" class="av-card-link">
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/esquema_de_comisiones_sl.jpg" alt="Punto de pago">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Esquema de Comisiones </h4>
+                            <p class="av-text">Cálculo de comisiones mercantiles para Asesoras Independientes</p>
+                            <span class="av-button-tertiary">DESCARGAR</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/FLDSuite/static/pdf/incentivos/Avon_Programa_Recomendaciones_2021.pdf" target="_blank" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/programa_semestral_sl.jpg" alt="Programa Semestral">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Programa Semestral</h4>
+                            <p class="av-text">Programa acumulativo de Recomendaciones C1 a C9 2021</p>
+                            <span class="av-button-tertiary">DESCARGAR</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-100"></div>
+            <div class="av-spacer"></div>
+            <div class="col-4">
+                <a href="/SLSuite/offerStore.page" target="_top" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/ofertas_exclusivas_de_internet_sl.jpg" alt="Ofertas Exclusivas de Internet">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Ofertas Exclusivas de Internet</h4>
+                            <p class="av-text">Llévate estas ofertas únicas por internet</p>
+                            <span class="av-button-tertiary">VER MÁS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="/SLSuite/servicio_de_despacho.page" target="_top" class="av-card-link" >
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/servicio_despacho_sl.jpg" alt="Servicio de Despacho">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Servicio de Despacho</h4>
+                            <p class="av-text">Si no recibiste tu pedido en tu casa, recógelo en bodega</p>
+                        <span class="av-button-tertiary">VER MÁS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="/SLSuite/rep_makepayment_content.page" target="_top" class="av-card-link">
+                    <div class="av-card">
+                        <div class="av-card-image">
+                            <img class="w-100 av-fallback" src="/REPSuite/web/static/home_2018/img/como_realizar_pagos_sl.jpg" alt="Cómo Realizar Mis Pagos">
+                        </div>
+                        <div class="av-card-text">
+                            <h4 class="av-card-title">Cómo Realizar Tus Pagos</h4>
+                            <p class="av-text">Encuentra todos los bancos y puntos de pago aquí</p>
+                            <span class="av-button-tertiary">VER MÁS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+<!--FOOTER -->
+        </div>
+      </div>
+      <div class="av-spacer"></div>
+      <footer class="av-footer">
+        <div class="row">
+            <div class="col-12 col-md">
+                <ul class="av-list av-footer-list">
+                    <li class="av-list-title"><a href="/REPSuite/trainingCategories.page" target="_top">Mi Equipo de Consejeras</a> </li>
+                    <li><a href="/SLSuite/selectUser.page" target="_top">Mis Consejeras</a></li>
+                    <li><a href="/SLSuite/yourTeamOrders.page" target="_top">Seguimiento de Pedidos</a></li>
+                    <li><a href="/SLSuite/reports.page" target="_top">Reportes</a></li>
+                    <li><a href="/SLSuite/creditScore.page" target="_top">Autoevaluación Búsqueda de Candidatas</a></li>
+                    <li><a href="/SLSuite/placeRepOrder.page" target="_top">Ingreso de Pedidos</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-12 col-md">
+                <ul class="av-list av-footer-list">
+                    <li class="av-list-title"><a href="/SLSuite/myOwnOffice.page" target="_top">Mis Órdenes</a></li>
+                    <li><a href="/SLSuite/PlaceAnOrder.page" target="_top">Colocar Pedido</a></li>
+                    <li><a href="/SLSuite/orderTracking.page" target="_top">Seguimiento de Tus Órdenes</a></li>
+                    <li><a href="/SLSuite/orderDeliveryDetails.page" target="_top">Fechas de Campaña</a></li>
+                    <li><a href="/SLSuite/rep_makepayment_content.page" target="_top">Cómo realizar mi pago</a></li>
+                    <li><a href="/SLSuite/profilePersonal.page" target="_top">Información Personal</a></li>
+                    <li><a href="/SLSuite/presidentsClub.page" target="_top">Círculo de Ganadoras</a></li>
+                    <li><a href="/SLSuite/submitReferral.page" target="_top">Indicaciones</a></li>
+                    <li><a href="/SLSuite/addCustomer.page" target="_top">Mis Clientes</a></li>
+                    <li><a href="/SLSuite/sendEBrochure.page" target="_top">Enviar el Folleto Virtual</a></li>
+                    <li><a href="/SLSuite/offerStore.page" target="_top">Tienda en Línea</a></li>
+                </ul>
+                
+            </div>
+
+            <div class="col-12 col-md">
+                <ul class="av-list av-footer-list">
+                    <li class="av-list-title"><a href="/SLSuite/myNews.page" target="_top">Mis Folletos</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md">
+                <ul class="av-list av-footer-list">
+                    <li class="av-list-title"><a href="SLSuite/trainingLanding.page" target="_top">Mi Negocio Digital</a></li>
+                    <li><a href="/SLSuite/trainingCategories.page" target="_top">Catálogo Avon Móvil </a></li>
+                    <li><a href="/SLSuite/sellingTips.page" target="_top">Tablero de Control - Catálogos</a></li>
+                    <li><a href="/SLSuite/beautyArticles.page" target="_top">App Avon On</a></li>
+                    <li><a href="/SLSuite/faq.pager" target="_top">Aprendiendo con Avon</a></li>
+                </ul>
+                <ul class="av-list av-footer-list">
+                    <li class="av-list-title"><a href="/SLSuite/messages.page" target="_top">Mis Mensajes</a></li>
+                    
+
+                    <li><a href="/SLSuite/sendMessage.page">Enviar Mensajes</a></li>
+                    <li><a href="/SLSuite/receivedMessage.page">Leer Mensajes</a></li>
+                </ul>
+            </div>
+     
+            <div class="col-12">
+                <div class="w-100"></div><div class="av-spacer"></div>
+                <div class="w-100">
+                    <script>
+                        var fechaActual = (new Date).getFullYear();
+                        $(document).ready(function() {
+                            $("#dateyear").text(fechaActual);
+                        });
+                    </script>
+                    <h4 style="text-align: center;"><span id="dateyear"></span>, Productos Avon de Nicaragua, S.A. </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<!--<div style="opacity: 0;" id="avModalNameGet"><variable name="firstname"></variable></div>-->
+<script>
+    $(document).ready(function(){
+        let avMoreTitle,avMore;
+        $('.avMore-open').click(function(){
+            avMoreTitle = $(this).attr('av-data');
+            avMore = $(this).attr('av-more');
+            $('#avMoreId').addClass('active');
+            $('#avMore-title').text(avMoreTitle);
+            $('.avMore-'+ avMore).show(function(){
+                $(this).siblings().hide();
+            });
+        });
+        
+        $('.avMore-close').click(function(){
+            $('#avMoreId').removeClass('active');
+        });
+    });
+</script>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" style="display:none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+    <defs>
+    <g id="view">
+        <path style="fill:#FFFFFF;" d="M14.86,0.48c4.12,0.06,7.57,1.45,10.54,4.04c1.85,1.61,3.28,3.54,4.4,5.72
+                c0.25,0.49,0.27,0.98,0.01,1.47c-1.74,3.4-4.19,6.13-7.58,7.95c-2.56,1.38-5.31,2-8.22,1.8c-3.65-0.25-6.81-1.68-9.54-4.09
+                c-1.8-1.59-3.2-3.49-4.29-5.62c-0.26-0.51-0.26-1,0-1.51C1.95,6.82,4.42,4.1,7.82,2.29c1.79-0.96,3.71-1.54,5.74-1.73
+                C14.04,0.52,14.53,0.5,14.86,0.48z M21.21,5.15c-0.02,0.01-0.03,0.03-0.05,0.04c1.09,1.63,1.54,3.42,1.26,5.37
+                c-0.29,1.96-1.21,3.57-2.76,4.8c-2.59,2.04-6.19,2.18-8.85,0.34c-1.72-1.18-2.8-2.8-3.18-4.86c-0.37-2.04,0.05-3.94,1.2-5.67
+                C8.74,5.2,8.68,5.23,8.62,5.27c-2.26,1.36-3.98,3.22-5.31,5.48c-0.1,0.18-0.1,0.3,0,0.47c0.8,1.37,1.76,2.63,2.94,3.7
+                c2.73,2.49,5.9,3.78,9.63,3.53c1.79-0.12,3.46-0.63,5.03-1.49c2.5-1.37,4.38-3.35,5.8-5.8c0.07-0.13,0.08-0.22,0-0.35
+                c-1.1-1.91-2.5-3.55-4.28-4.85C22.04,5.68,21.62,5.43,21.21,5.15z M10.49,9.46c-0.05,2.4,1.96,4.48,4.37,4.53
+                c2.5,0.05,4.59-1.91,4.64-4.35c0.05-2.55-1.91-4.61-4.43-4.66C12.57,4.93,10.54,6.92,10.49,9.46z"/>
+    </g>
+    <g id="folletos">
+        <path style="fill:#3b4546;" d="M25,8.76c0,2.47,0,4.95,0,7.42c0,0.59-0.3,1.05-0.82,1.23c-0.15,0.05-0.31,0.08-0.46,0.08c-1.15,0-2.3,0.05-3.44,0.16
+            c-1.72,0.17-3.41,0.48-5.03,1.09c-0.72,0.27-1.41,0.61-2.05,1.03c-0.44,0.29-0.91,0.31-1.35,0.03c-1.36-0.88-2.86-1.4-4.43-1.74
+            c-1.28-0.28-2.58-0.44-3.89-0.5c-0.75-0.04-1.5-0.05-2.25-0.07C0.53,17.48,0,16.95,0,16.21c0-4.97,0-9.95,0-14.92
+            C0,0.53,0.53,0,1.29,0C2.61,0,3.93,0.05,5.25,0.2C7.22,0.41,9.16,0.78,11,1.55c0.48,0.2,0.94,0.45,1.41,0.68
+            c0.07,0.03,0.11,0.04,0.17,0c1.45-0.81,3.01-1.31,4.64-1.65c2.16-0.44,4.34-0.59,6.53-0.58C24.46,0,25,0.55,25,1.26
+            C25,3.76,25,6.26,25,8.76C25,8.76,25,8.76,25,8.76z M11.25,16.66c0-0.11,0-0.21,0-0.3c0-3.81,0-7.62,0-11.44
+            c0-0.16,0.04-0.36-0.03-0.47c-0.08-0.12-0.27-0.18-0.42-0.25C9.09,3.35,7.26,2.95,5.38,2.73C4.65,2.64,3.91,2.59,3.17,2.54
+            c-0.22-0.02-0.44,0-0.66,0c0,4.16,0,8.32,0,12.48C5.5,15.12,8.44,15.48,11.25,16.66z M22.49,15.01c0-4.18,0-8.33,0-12.5
+            c-0.3,0.02-0.6,0.03-0.89,0.04c-1.3,0.07-2.59,0.21-3.87,0.48c-1.32,0.27-2.6,0.67-3.79,1.3c-0.14,0.07-0.2,0.15-0.2,0.31
+            c0.01,3.88,0,7.75,0,11.63c0,0.12,0,0.25,0,0.39C16.56,15.48,19.5,15.12,22.49,15.01z"/>
+    </g>
+    <g id="seguimiento">
+        <path style="fill:#3b4546;" d="M2.49,16.26c-0.13-0.02-0.27-0.02-0.4-0.05C0.82,15.97,0,14.97,0,13.65C0,9.96,0,6.26,0,2.57c0-0.1,0-0.21,0.01-0.31
+            C0.14,0.98,1.2,0.01,2.48,0C6.25,0,10.01,0,13.78,0.01c1.38,0,2.46,1.12,2.47,2.53c0,0.35,0,0.69,0,1.04c0,0.05,0,0.11,0,0.18
+            c0.08,0,0.14,0,0.21,0c1.33,0,2.66-0.01,3.99,0c1.03,0.01,1.8,0.48,2.27,1.4c0.68,1.34,1.34,2.68,2.01,4.02
+            C24.91,9.53,25,9.89,25,10.28c0,1.58,0.01,3.16,0,4.74c-0.01,1.36-1.11,2.46-2.47,2.47c-0.45,0-0.89,0.01-1.34,0
+            c-0.12,0-0.17,0.03-0.22,0.15c-0.58,1.35-1.61,2.15-3.06,2.33c-1.89,0.24-3.68-1.06-4.08-2.93c-0.05-0.25-0.07-0.51-0.11-0.79
+            c-0.04,0-0.08-0.01-0.13-0.01c-1.15,0-2.29,0-3.44,0c-0.14,0-0.16,0.05-0.17,0.17c-0.06,1.77-1.44,3.3-3.2,3.54
+            c-2.05,0.28-3.87-1.04-4.24-3.08C2.52,16.68,2.51,16.47,2.49,16.26z M2.5,13.75c0.25,0,0.49-0.01,0.72,0
+            c0.16,0.01,0.27-0.04,0.38-0.15c1.48-1.48,3.89-1.46,5.34,0.04c0.08,0.08,0.15,0.11,0.26,0.11c1.45,0,2.9,0,4.35,0
+            c0.06,0,0.12,0,0.18,0c0-3.76,0-7.49,0-11.24c-3.75,0-7.49,0-11.24,0C2.5,6.26,2.5,9.99,2.5,13.75z M22.5,11.25
+            c-0.07,0-0.13,0-0.18,0c-0.77,0-1.54,0-2.31,0c-1.4,0-2.5-1.11-2.5-2.51c0-0.77,0-1.53,0-2.3c0-0.06,0-0.12,0-0.18
+            c-0.43,0-0.83,0-1.24,0c0,2.15,0,4.29,0,6.43c0.02,0,0.03,0.01,0.04,0c0.04-0.01,0.09-0.02,0.13-0.04
+            c0.62-0.18,1.24-0.21,1.87-0.07c1.29,0.3,2.19,1.07,2.69,2.29c0.04,0.09,0.08,0.13,0.19,0.12c0.39-0.01,0.78,0,1.17,0
+            c0.05,0,0.1,0,0.15-0.01C22.5,13.74,22.5,12.51,22.5,11.25z M5,16.25c0,0.68,0.55,1.25,1.23,1.25c0.7,0.01,1.27-0.55,1.27-1.25
+            c0-0.69-0.55-1.25-1.24-1.26C5.56,14.99,5.01,15.54,5,16.25z M17.5,17.5c0.69,0,1.26-0.57,1.26-1.25c0-0.68-0.57-1.25-1.25-1.25
+            c-0.71,0-1.26,0.56-1.26,1.29C16.25,16.94,16.82,17.5,17.5,17.5z M21.71,8.75C21.7,8.72,21.7,8.7,21.7,8.69
+            c-0.39-0.79-0.79-1.57-1.18-2.36c-0.02-0.03-0.05-0.07-0.08-0.07c-0.14-0.01-0.28,0-0.43,0c0,0.85,0,1.67,0,2.5
+            C20.58,8.75,21.14,8.75,21.71,8.75z"/>
+    </g>
+    <g id="phone">
+        <path style="fill:#3b4546;" d="M8.72,10.3c0.45,1.88,1.62,3.23,3.03,4.36c0.72,0.58,1.6,0.97,2.42,1.44c0.36,0.2,0.57,0.06,0.72-0.31
+            c0.42-1,1.05-1.82,2.2-2.02c0.34-0.06,0.72-0.09,1.05,0c1.92,0.51,3.72,1.29,5.29,2.52c0.51,0.4,0.93,0.96,1.27,1.52
+            c0.41,0.67,0.4,1.39,0.02,2.13c-0.66,1.26-1.24,2.55-2.4,3.45c-1.95,1.5-4.11,2-6.44,1.16C8.28,21.85,3.13,16.66,0.38,9.1
+            c-1.13-3.12,0.35-6.61,3.38-8.21c0.35-0.18,0.7-0.35,1.05-0.53C5.98-0.23,6.96-0.1,7.96,0.77c1.15,1,1.78,2.34,2.39,3.69
+            c0.3,0.66,0.55,1.35,0.75,2.04c0.42,1.45-0.14,2.66-1.48,3.34C9.34,9.99,9.06,10.13,8.72,10.3z M17.63,16.42
+            c-0.12,0.23-0.24,0.44-0.34,0.65c-0.86,1.72-2.06,2.26-3.88,1.63c-3.15-1.1-5.35-3.3-6.8-6.26c-0.34-0.69-0.55-1.5-0.56-2.26
+            C6.02,8.89,6.85,8.09,8,7.64c0.48-0.19,0.57-0.45,0.36-0.89C7.9,5.77,7.49,4.77,6.97,3.83C6.3,2.61,6.25,2.63,5.05,3.27
+            c-1.99,1.06-2.8,3.08-2.02,5.19c2.37,6.36,6.74,10.78,13.03,13.32c0.89,0.36,1.79,0.57,2.76,0.36c1.57-0.34,2.49-1.37,3.15-2.76
+            c0.23-0.49,0.15-0.74-0.25-1.01C20.48,17.5,19.11,16.89,17.63,16.42z"/>
+    </g>
+    <g id="morebutton">
+        <path style="fill:#3b4546;" d="M0,2.71C0.03,1.16,1.28-0.04,2.84,0c1.55,0.04,2.71,1.28,2.69,2.86c-0.02,1.5-1.31,2.71-2.84,2.67
+            C1.16,5.5-0.03,4.25,0,2.71z"/>
+        <path style="fill:#3b4546;" d="M12.51,5.53c-1.54,0.01-2.76-1.2-2.78-2.73c-0.02-1.56,1.2-2.79,2.75-2.8c1.53-0.01,2.79,1.22,2.79,2.73
+            C15.28,4.28,14.05,5.52,12.51,5.53z"/>
+        <path style="fill:#3b4546;" d="M22.2,5.53c-1.52-0.01-2.76-1.24-2.76-2.76c0-1.54,1.25-2.78,2.79-2.77c1.54,0.01,2.79,1.28,2.76,2.8
+            C24.97,4.33,23.72,5.54,22.2,5.53z"/>
+    </g>
+    <g id="clock">
+        <path style="fill:#3b4546;" d="M0,12.46C0.03,5.33,5.96-0.2,12.88,0.01C19.51,0.2,25.21,5.73,24.99,12.9C24.79,19.75,19.09,25.1,12.3,25
+            C5.51,24.89-0.02,19.34,0,12.46z M2.49,12.5c0.02,5.61,4.54,10.06,10.19,10c5.48-0.06,9.92-4.61,9.83-10.16
+            C22.43,6.84,17.83,2.3,12.14,2.5C6.96,2.68,2.52,6.91,2.49,12.5z"/>
+        <path style="fill:#3b4546;" d="M11.26,9.99c0-0.84-0.01-1.68,0-2.51c0.01-0.63,0.46-1.13,1.07-1.2c0.64-0.08,1.19,0.28,1.37,0.9
+            c0.03,0.12,0.04,0.25,0.04,0.37c0,1.38,0,2.77,0.01,4.15c0,0.17,0.08,0.37,0.2,0.49c1.04,1.06,2.1,2.11,3.15,3.16
+            c0.41,0.41,0.51,0.93,0.29,1.41c-0.21,0.47-0.67,0.77-1.17,0.75c-0.4-0.01-0.71-0.22-0.98-0.49c-0.75-0.76-1.51-1.51-2.27-2.27
+            c-0.41-0.41-0.83-0.83-1.25-1.24c-0.33-0.32-0.48-0.69-0.47-1.15C11.27,11.56,11.25,10.77,11.26,9.99
+            C11.26,9.99,11.26,9.99,11.26,9.99z"/>
+    </g>
+    <g id="close">
+        <path style="fill:#424242;" d="M7.99,9.9c-0.45,0.45-0.89,0.89-1.33,1.33c-1.45,1.45-2.91,2.91-4.36,4.36
+        c-0.49,0.49-1.19,0.55-1.73,0.17c-0.52-0.36-0.72-1.07-0.44-1.64c0.08-0.16,0.2-0.31,0.33-0.44c1.82-1.82,3.64-3.64,5.46-5.46
+        C5.97,8.15,6.04,8.08,6.11,8C5.66,7.55,5.23,7.12,4.79,6.69C3.36,5.25,1.92,3.81,0.48,2.37c-0.56-0.56-0.63-1.26-0.21-1.84
+        c0.45-0.61,1.37-0.73,1.92-0.2c0.84,0.8,1.64,1.62,2.46,2.44c1.06,1.06,2.11,2.11,3.17,3.17C7.88,6,7.93,6.05,8.02,6.13
+        C8.3,5.84,8.58,5.55,8.86,5.27c1.62-1.62,3.23-3.24,4.85-4.85c0.72-0.72,1.89-0.45,2.21,0.5c0.18,0.54,0.03,1.01-0.37,1.41
+        c-1,1-2,2.01-3.01,3.01c-0.88,0.88-1.77,1.76-2.68,2.67c0.31,0.31,0.62,0.6,0.92,0.9c1.59,1.59,3.18,3.18,4.77,4.77
+        c0.61,0.61,0.59,1.49-0.04,2.02c-0.5,0.42-1.24,0.43-1.71-0.02c-1.04-1.01-2.06-2.04-3.08-3.06c-0.86-0.85-1.71-1.71-2.57-2.57
+        C8.1,9.99,8.05,9.95,7.99,9.9z"/>
+    </g>
+    <g id="change">
+        <path style="fill:#424242;" d="M7.14,5.36C7.12,2.34,9.69-0.06,12.61,0c2.7,0.06,5.21,2.25,5.25,5.34
+        c0.08,0.01,0.17,0.01,0.25,0.02c0.47,0,0.94-0.01,1.41,0.01c1.25,0.05,2.29,0.98,2.49,2.22c0.39,2.54,0.78,5.07,1.17,7.61
+        c0.36,2.36,0.73,4.72,1.1,7.08c0.26,1.66-0.97,3.12-2.66,3.12c-5.67,0-11.34,0-17.02,0c-0.56,0-1.12,0.03-1.67-0.05
+        c-1.5-0.23-2.44-1.6-2.2-3.1c0.34-2.18,0.67-4.37,1.01-6.56C2.16,12.98,2.58,10.27,3,7.56c0.18-1.18,1.22-2.12,2.41-2.18
+        c0.48-0.03,0.97-0.01,1.45-0.01C6.95,5.36,7.04,5.36,7.14,5.36z M21.64,22.72c-0.76-4.91-1.51-9.8-2.26-14.7c-0.27,0-0.52,0-0.77,0
+        c-0.25,0-0.49,0-0.77,0c0,0.47,0,0.9,0,1.34c-0.01,0.75-0.59,1.32-1.32,1.33c-0.73,0.01-1.32-0.57-1.34-1.32
+        c-0.01-0.37,0-0.74,0-1.12c0-0.08-0.01-0.15-0.01-0.22c-1.8,0-3.56,0-5.34,0c0,0.47,0.01,0.91,0,1.35
+        c-0.02,0.74-0.63,1.31-1.36,1.3c-0.72-0.01-1.29-0.58-1.3-1.32c0-0.15,0-0.29,0-0.44c0-0.3,0-0.59,0-0.9c-0.54,0-1.03,0-1.55,0
+        c-0.75,4.9-1.5,9.78-2.26,14.68C9.46,22.72,15.53,22.72,21.64,22.72z M9.85,5.33c1.77,0,3.54,0,5.31,0
+        c0.05-1.45-1.28-2.72-2.74-2.66C10.64,2.74,9.74,4.33,9.85,5.33z"/>
+    </g>
+    <g id="more">
+        <path style="fill:#424242;" d="M0,14.65c0.03-1.55,1.28-2.75,2.84-2.71c1.55,0.04,2.71,1.28,2.69,2.86
+            c-0.02,1.5-1.31,2.71-2.84,2.67C1.16,17.44-0.03,16.19,0,14.65z"/>
+        <path style="fill:#424242;" d="M12.51,17.47c-1.54,0.01-2.76-1.2-2.78-2.73c-0.02-1.56,1.2-2.79,2.75-2.8
+            c1.53-0.01,2.79,1.22,2.79,2.73C15.28,16.22,14.05,17.46,12.51,17.47z"/>
+        <path style="fill:#424242;" d="M22.2,17.47c-1.52-0.01-2.76-1.24-2.76-2.76c0-1.54,1.25-2.78,2.79-2.77
+            c1.54,0.01,2.79,1.28,2.76,2.8C24.97,16.27,23.72,17.48,22.2,17.47z"/>
+    </g>
+    
+</defs>
+
+</svg>
+
+<script>
+window.onload = function() {
+    var avAcct = AvonAnalyticsObjex.Profile.repAcct;
+    document.getElementById("conexLink").setAttribute("href",`http://qnjs-nola.avon.com/CAM/Home?registro=${avAcct}&pais=5&tipo=4`);
+}
+</script>
+<script src="/REPSuite/web/static/js/repHomeOverlay.js"></script>

@@ -9,6 +9,9 @@
         }
     }
 }
+.margins_theme {
+    overflow-y: hidden;
+}
 @mixin bodyMixin {
     display: table-cell;
     background-color: $color-light-white;
@@ -43,6 +46,9 @@ table.border > tbody > tr > td > table > tbody {
             flex-direction: row-reverse;
             position: relative;
             padding: 0px 40px 10px 40px;
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                display: table-row;
+            }
 
             > td:first-child {
                 flex: 5;
