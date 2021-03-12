@@ -1,0 +1,158 @@
+
+
+
+/*------- CREATE ORDER TABLES 2020 ------*/
+
+.breadcrumb_line {
+    display: flex;
+    > li {
+        margin-right: 10px;
+        list-style-type:none;
+    }
+}
+#frmCreateOrder > table {
+    > tbody > tr > td > table[width="751"] {
+        display: block;
+        width: 100%;
+        > tbody > tr > td:first-child img {
+            @include img-full-screen;
+        }
+        img[width="361"] {
+            width: 0px;
+        }
+    }
+    .div_table, .div_fst_ordrtable {
+        table.body, table.tbl_lineentry {
+            > tbody {
+                > tr {
+                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+                    height: 55px;
+                    background-color: $color-white;
+                    
+                }
+            } 
+        }
+    }
+    .div_fst_ordrtable table.tbl_lineentry > tbody > tr {
+        > td:nth-child(5), > td:nth-child(6), > td:nth-child(7), > td:nth-child(8){
+            background-color: $color-light-white;
+        }
+    } 
+    > tbody > tr.tbl_header > .tbl_bgmid2 .tbl_header table {
+        width: 100%;
+    } 
+    .tbl_outerline > tbody > tr:last-child tr {
+        display: flex;
+    } 
+}
+
+/*------- SAVED ORDER TABLE 2020 ------*/
+
+#divOuter_1 + table.alt_rows {
+    margin: 50px 0px 25px 0px;  
+    .bg_fff9f9 {
+        @include av-table-header($color-dark-light,$color-text);
+        box-shadow: $color-shadow-border;
+    }
+    .bgaltwhite {
+        .border_left, .saved_customer_name {
+            display: inline-block;
+        }
+    }
+    .openclose a {
+        @include av-link;
+        white-space: nowrap;
+    }
+}
+.tbl_bgleft2, .tbl_bgleft3 {
+    display: inline-block;
+    width: 0px;
+} 
+.border_left.border_right[style="border-bottom:1px solid #E1DFDF"] {
+    border-bottom: none !important;
+    margin-bottom: 55px;
+    .border_left.border_right {
+        margin: 0 auto;
+    }
+}
+.contentbackgroundcolor td.tbl_bgmid3 {
+    white-space: nowrap;
+}
+/*------- PLACE N ORDER COUNTER 2020 ------*/
+
+table.order_table {
+    box-shadow: $color-shadow-border;
+    text-align: right;
+    width: 280px;
+    @media (min-width:$media-3){
+        width: 350px;
+    }
+    @media (min-width:$media-4){
+        width: 400px;
+    }
+    > tbody {
+        
+        > tr:nth-child(1) td {
+            font-size: 13px;
+            padding: 6px 30px;
+            font-family: $bold-monts;
+            color: $color-white;
+            background-image: $color-gradient;
+        }
+        .bg_lightpinkheader, .bg_lightpink,.bg_lightpinklast,
+        .bg_lightpinklastheader {
+            font-size: 12px;
+            padding-top: 2px;
+            background-color: $color-light-white;
+         }
+    }
+}
+
+
+
+#searchForm {
+    table[width="752"] {
+        width: 100%;
+    }
+    p.button {
+        text-align: center;
+    }
+} 
+
+/*------- QUICK ORDER 2020 ------*/
+
+.copyTextbox {
+    width: 100%;
+    display: block;
+}
+.copyImage {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+
+
+/*------- CAMBIOS 2020 ------*/
+#replacementsTbl {
+    img[border="1"]{
+        border: none !important;
+    }
+}
+
+.bg_efedee.padding_top10.padding_bottom10 {
+    table {
+        width: 100%;
+        img {
+            @include img-full-screen;
+            width: 90%;
+        }
+    }
+}
+
+.view, .view_order {
+    vertical-align: top;
+    ~ td [onclick="ClearAllItems();"]{
+        @include av-button-outline;
+        margin-right: 7px;
+    }
+}

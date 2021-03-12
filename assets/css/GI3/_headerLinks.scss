@@ -1,0 +1,34 @@
+
+
+%linkSmall {
+    color: $color-text;
+	font-weight: normal;
+	text-decoration: none;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 0 7px;
+    + .spacer {
+        font-size: 0;
+    }
+}
+.topLinks, .footerLinks {
+    @extend %linkSmall;
+    font-family:  $regular-monts;
+}
+.topLinksBold, .footerLinksBold, .footerBackground {
+    @extend %linkSmall;
+    font-family:  $bold-monts;
+}
+.accName_Text,
+.ord_gray_txt {
+    @include text-system($bold-monts);
+    padding-left: 72px;
+    text-transform: uppercase;
+    text-align: left;
+}
+td .pink30_txt, .campaign_All{
+    font-size: 30px;
+    color:$color-secondary;
+    font-family: $bold-monts;
+}
+

@@ -1,0 +1,311 @@
+// CAM STYLES FIX
+#dashboardFrame {
+    width: 100% !important;
+    @media (min-width:$media-2){
+        width: 810px !important;
+    }
+}
+[name="dashboardInformationForm"] td[nowrap=""]{
+    white-space: normal !important;
+}
+
+.sub_heading1 {
+    margin-bottom: 30px;
+}
+
+.articleHeader {
+    width: 100%;
+    height: auto;
+    @include title;
+    
+    img {
+        @include img-full-screen();
+    }
+}
+
+[src*="blue_divider"] {
+    display: none;
+}
+
+.tbl_orderpack > tbody > tr:nth-child(6) table {
+    border-spacing: 0px 5px;
+    tr:first-child > td {
+        @include text-system($bold-monts);
+        background-color: $color-dark-lighter;
+        padding: 10px;
+        text-align: left;
+    }
+    tr td:nth-child(3){
+        padding: 0px 20px;
+    }
+}
+
+
+/*------- STEPPER 2020 ------*/
+
+.tbl_bgpink td.padding_10.padding_left20 {
+    img {
+        width: 25%;
+        float: left;
+    }
+}
+
+
+/*------- Ebrochure 2020 ------*/
+
+[onclick="winClose=false;"] > table {
+    width: 100%;
+}
+/*------- LOGIN 2020 ------*/
+
+[background="static/images/es_logo1.jpg"] {
+    background-image: none !important;
+}
+
+/*------- TABLAS 2020 ------*/
+
+.div_table {
+    .tbl_outerline {
+        box-shadow: none;
+        
+        .bg_f5f3f4 {
+            background-color: $color-dark-lighter;
+            height: 40px;
+        }
+        .bg_e8e4e3 {
+            height: 40px;
+        }
+    }
+}
+
+/*------- TABS 2020 ------*/
+
+table.border_rightstyle td.padding_3 {
+    color: $color-text;
+    background-color: #ffff;
+    text-align: center;
+    width: 15%;
+	border: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer; 
+
+    &:hover {
+        background-color: #f8f8f8;
+    }
+    &.active {
+        border-bottom: 5px solid $color-primary;
+    }
+}
+
+
+td.padding_3.active a, td.padding_3 a {
+    width: 100%;
+	padding: 15px 0;
+	font-family: $regular-monts;
+    color: $color-text;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+td.bg2_f2f0f0.padding_3.active1 {
+    border-bottom: 5px solid $color-primary;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.bg_f2f0f0 td.active a, .bg1_f2f0f0 a, .bg_f2f0f0 a {
+    color: $color-text;
+    font-family: $regular-monts;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 15px;
+    display: block;
+}
+
+
+
+
+//.tableBg1,
+.bg_f5f3f4 {
+    background-color: $color-light-white;
+}
+
+#returnForm > table > tbody > tr > td > table > tbody > tr > td {
+    @include av-table-header;
+}
+
+#folletos_virtuales_1 {
+    @include img-full-screen;
+}
+#orderTrackingForm table {
+        width: 100%;
+} 
+#profilePersonalForm {
+    .tableBg1 {
+        padding: 15px;
+        background-color: $color-light-white;
+        .tableBg1 > tbody > tr {
+            > td[width="26%"] {
+                display: none;
+            }
+            > td[width="28%"] {
+                min-width: 312px;
+            }
+        }
+    }
+    
+}
+
+#Image0, 
+#Image1,
+#Image2,
+#Image3, 
+#Image4,
+#Image5, 
+#Image6 {
+    width: auto !important;
+    height: auto !important;
+}
+
+[bgcolor="E6E9EE"] {
+    background-color: transparent !important;
+}
+.mtDropdownMenu .item td {
+    font: 11px Arial, Helvetica, sans-serif;
+}
+[name="frmConfirm"] .font_bold {
+    @include text-system($bold-monts);
+}
+table[width="700"],
+table[width="98%"] {
+    width: 100% !important;
+}
+#pagos_linea_ {
+    &1,&2,&3,&10 {
+        width: 100% !important;
+        height: auto;
+    }
+}
+#OfferStoreForm {
+    .horizontal_solid_line {
+        @extend %borderShadow;
+        display: block;
+        width: 98.5%;
+        max-width: 555px;
+        td.offer_prize_font_size table > tbody > tr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .offer_font_bold .offer_prize_font_size {
+            color: $color-secondary;
+        }
+    }
+    td:last-child > .horizontal_solid_line {
+        margin: 0 0 0 auto;
+    }
+    td:first-child > .horizontal_solid_line {
+        margin: 0 auto 0 0;
+    }
+} 
+.offer_action_header_txt, .offer_font_bold .offer_prize_font_size, .offer_decription {
+    @include text-system($bold-monts);
+    display: block;
+    margin-bottom: 10px;
+}
+.offer_action_text {
+    font-size: 13px;
+}
+
+[name="frmCustomer"] {
+    > div > table > tbody > tr:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        > td:first-child > img {
+            width: 100%;
+        }
+        .txt_black a {
+            @include av-button-tertiary;
+        }
+    }
+    #ListCustomer > table > tbody > tr > td > .tbl_outerline ~ table {
+        .txt_black a {
+            @include av-button-secondary
+        }
+    }
+}
+
+#search td.body > table > tbody {
+    display: flex;
+    flex-direction: column;
+    > tr > td[width="245"] {
+        width: 0px;
+    }
+    td.bodyBold {
+        text-align: left;
+    }
+    a {
+        @include av-link;
+        line-height: 30px;
+    }
+}
+#receivedMsgForm a {
+    @include av-link;
+}
+[name="changePasswordForm"],[name="sendMsgForm"] {
+    padding: 20px 0px;
+    table {
+        width: 100%;
+    }
+}
+img[height="14"], [type="image"][height="14"] {
+    height: auto !important;
+}
+[src*="presidents_club"] {
+    width: 100%;
+}
+
+.av-tc {
+    margin-top: 40px;
+    h2 {
+        @include title;
+        margin-bottom: 20px;
+    }
+    h4 {
+        @include text-system($bold-monts);
+        color: $color-text;
+        margin-bottom: 20px;
+    }
+    p {
+        @include text-system;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style-type: circle;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        li {
+            @include text-system;
+        }
+        
+    } 
+}
+[name="creditScoreForm"] table {
+    width: 100%;
+    &[width="176"] {
+        width: auto;
+    }
+}
+div[style*="#A9A9A9;"] {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+// RESUMEN ROJO
+td:nth-child(2)#attTableColumns {
+    background-color: $color-light-white;
+}

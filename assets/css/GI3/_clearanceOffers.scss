@@ -1,0 +1,57 @@
+
+/*------- CLEARANCE OFFERS 2020 ------*/
+
+#clearanceoffersForm {
+    .Io_table_header_bg img {
+        @include img-full-screen;
+     }
+     #displayArea1 > table{
+        border: none !important;
+        @include borderSpace;
+        > tbody > tr:nth-child(odd) > td[height="50%"] {
+            @extend %borderShadow;
+            padding: 20px 10px;
+            
+            > table {
+                border-spacing: 10px 0px;
+                div.offers_description {
+                    width: 80%;
+                    overflow: hidden;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        
+    }
+} 
+
+/*------- CLEARANCE OFFERS MODAL 2020 ------*/
+
+[name="addOffersForm"] .paddingleft_15 {
+    padding-left: 0px;
+    table.tbl_orderpack table {
+        width: 100%;
+    }
+    
+    table.tbl_orderpack > tbody {
+        > tr:nth-last-child(3) {
+            font-family: $semi-bold-monts;
+            background-color: $color-dark-lighter;
+        }
+        > tr:nth-last-child(7) td:last-child{
+            font-family: $semi-bold-monts;
+            padding: 10px 30px;
+        }
+        .scroll_promo {
+            min-height: 100px;
+            td[width="38%"] {
+                width: 35% !important;
+            }
+            td {
+                text-align: left !important;
+            }
+        }
+    } 
+}
+
+

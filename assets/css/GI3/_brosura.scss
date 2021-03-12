@@ -1,0 +1,63 @@
+
+/*------- BROSURA 2020 ------*/
+
+[name="dirtyValue"] + table.center {
+    width: 100%;
+    margin: 50px 0px;
+    .tbl_header_big {
+        margin-bottom: 10px;
+    }
+    table.bor_outer {
+        width: 100%;
+        border-spacing: 10px 0px;
+        > tbody > tr > td {
+            vertical-align: top;
+            &:first-child > table {
+                min-height: 290px;
+                border-spacing: 0px 15px;
+                border-collapse: separate;
+                > tbody > tr {
+                    box-shadow: $color-shadow-border;
+                    > td {
+                        padding: 10px 40px;
+                    }
+                    .border_bottomd7d1d1 {
+                        > table {
+                            width: 100%;
+    
+                            td {
+                                text-align: right;
+                                @include text-system($bold-monts);
+                                color: $color-secondary;
+                            }
+                            div[align="center"] {
+                                text-align: left;
+                                @include text-system($bold-monts);
+                            }
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                .tbl_orderpack > tbody {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .bg_cecdcd {
+                        display: block;
+                        h3 {
+                            padding: 10px;
+                            text-align: center;
+                            font-family: $regular-monts;
+                        }
+                    }
+                    img[src*="offerImages"]{
+                        @include img-full-screen;
+                    }
+                    
+                }
+            }
+    
+        }
+        
+    }
+}

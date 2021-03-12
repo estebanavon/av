@@ -150,9 +150,9 @@ table.border > tbody > tr > td > table > tbody {
 }
 
 
+
 // LOG IN
-[onunload="closeAllChilds();"] > table.border > tbody > tr:nth-child(2) {
-    //@include bodyMixin;
+body[onunload="closeAllChilds();"] > table.border[width="770px"] > tbody > tr:nth-child(2) {
     > td > table > tbody > tr {
         display: flex;
         > td {
@@ -162,7 +162,6 @@ table.border > tbody > tr > td > table > tbody {
                 display: none;
                 @media (min-width:$media-3) {
                     display: block;
-                    height: 80vh;
                 }
             }
             &:last-child {
@@ -172,6 +171,9 @@ table.border > tbody > tr > td > table > tbody {
             }
         }
     }
+}
+body[onunload="closeAllChilds();"] > table.border:not([width="770px"]) > tbody > tr:nth-child(2) {
+    @include bodyMixin();
 }
 [name="homeNavParent"] > table {
     background-image: none;
@@ -287,5 +289,4 @@ table.border > tbody > tr > td > table > tbody {
             }
         }
     }
-     
 }
