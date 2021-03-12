@@ -1,0 +1,50 @@
+#yourTeamOrderForm {
+    #divBioBottom {
+        &1 a.body, &2 a.body {
+            @include av-button-secondary;
+        }
+        &3 a.body {
+            @include av-button-outline;
+        }
+    }   
+}
+.smallfieldcell > select {
+    width: 280px;
+}
+#unPlacedOrderForm, #allOrderForm, #savedOrderForm {
+    > table:last-child > tbody {
+        > tr:last-child tr[valign="top"] + tr table.body {
+            @include av-panel;
+        }
+        .linearFormInput{
+            width: 280px;
+        }
+        td.body {
+            height: 20px;
+            font-size: 14px;
+            padding-right: 20px;
+            width: 220px;
+            text-align: right;
+            + td + td > a {
+                position: relative;
+                left: -20px;
+            }
+        }
+        
+        
+        #divBioBottom {
+            margin-top: 20px;
+        }
+    }
+}
+
+tr.tableBg1 > td:nth-child(2) > table.body {
+    > tbody {
+        padding-left: 30px;
+        display: block;
+    }
+    td {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+} 

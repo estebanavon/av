@@ -7,13 +7,20 @@
 @import '../partial-scss/text';
 @import '../partial-scss/components';
 
-@import 'included_styles';
 
-@import 'styles2020';
-
-@import 'included_styles2020';
-
-@import '../GI3/mxExcepcions';
+@import '../GI3/mxExceptions';
 @import '../GI3/orderSummary';
 @import '../GI3/subtotal';
 @import '../GI3/step0';
+@import '../GI3/clearanceOffers';
+@import '../GI3/brosura';
+@import '../GI3/thickboxPopUp';
+@import '../GI3/step1';
+@import '../GI3/yourTeamOrder';
+@import '../GI3/headerLinks';
+
+@import 'included_styles';
+
+@import 'moreStyles';
+
+@import 'included_styles2020';

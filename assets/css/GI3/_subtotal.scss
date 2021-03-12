@@ -20,3 +20,25 @@ td.font_bold.font_14.txt_fff {
         color: $color-secondary;       
     }
 } 
+
+.tableBorder [bgcolor="#EDEEEF"] {
+    background-color: transparent;
+}
+[name="frmConfirm"] [src="static/images/article_content/es_headIMG.jpg"]{
+    width: 342px;
+    height: auto;
+    margin-top: 30px;
+}
+.bg_f4f1f1 {
+    padding: 10px;
+    background-image: $color-gradient;
+    td {
+        color: $color-white !important;
+    }
+}
+.padding5.font_12 {
+    [src="/REPSuite/static/images/iom/confirmation_order_image.jpg"] {
+        position: relative;
+        top: -80px;
+    }
+}

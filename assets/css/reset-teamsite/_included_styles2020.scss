@@ -25,13 +25,7 @@ a.ord_link {
 .view a:not(.ord_link), .view_order a {
     @include av-button-tertiary;
 }
-.view, .view_order {
-    vertical-align: top;
-    ~ td [onclick="ClearAllItems();"]{
-        @include av-button-outline;
-        margin-right: 7px;
-    }
-}
+
 .menuItem {
     @include map-menu;
 }
@@ -49,9 +43,7 @@ textarea {
 .titleStep4 {
     @include title;
 }
-.sub_heading1 {
-    margin-bottom: 30px;
-}
+
 .contentbackgroundcolor td.tbl_bgmid3 {
     white-space: nowrap;
 }
@@ -194,9 +186,9 @@ div#instantCreditContentSlot_content2 > p > a{
 .rightalign > a {
     @include av-button-tertiary;
 }
-.contentbackgroundcolor > div > span.body p{
-    text-align: center;
-}
+// .contentbackgroundcolor > div > span.body p{
+//     text-align: center;
+// }
 .articleHeader table tr td:nth-of-type(3) > img {
     visibility: hidden;
 }
