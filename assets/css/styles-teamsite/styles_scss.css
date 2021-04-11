@@ -264,6 +264,7 @@
 /* by Gerber Barillas */
 section.av-container {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 section.av-container .av-row {
@@ -749,8 +750,8 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-text {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 19px;
+  line-height: 19px;
   margin-bottom: 19px;
 }
 
@@ -818,6 +819,20 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-list li {
   margin-bottom: 7.6px;
   display: block;
+}
+
+.av-list.av-list-small {
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.av-list.av-list-small li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .av-list.av-list-item {
@@ -1306,7 +1321,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   width: 90%;
   height: 90%;
   border: 1px #fff solid;
-  border-radius: 4rem 0;
+  border-radius: 100px 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1441,6 +1456,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -2133,7 +2149,7 @@ a {
 }
 
 .av-concert-banner {
-  background-image: url("../images/concierto-avon/avConciertoHeader.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHeader.jpg");
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2173,80 +2189,80 @@ a {
 }
 
 .av-concierto {
-  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
+  background-image: url("../../../img/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../images/conciertoBasesHeader.jpg");
+    background-image: url("../../../img/conciertoBasesHeader.jpg");
   }
 }
 
 .av-concert1 {
-  background-image: url("../images/concierto-avon/avConciertoHow1.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert2 {
-  background-image: url("../images/concierto-avon/avConciertoHow2.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert3 {
-  background-image: url("../images/concierto-avon/avConciertoHow3.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert4 {
-  background-image: url("../images/concierto-avon/avConciertoHow4.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert5 {
-  background-image: url("../images/concierto-avon/avConciertoHow5.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert6 {
-  background-image: url("../images/concierto-avon/avConciertoHow6.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert7 {
-  background-image: url("../images/concierto-avon/avConciertoHow7.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert8 {
-  background-image: url("../images/concierto-avon/avConciertoHow8.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert9 {
-  background-image: url("../images/concierto-avon/avConciertoHow9.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-img-higiene {
-  background-image: url("../images/folletos/hg-1.jpg");
+  background-image: url("../../../img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2403,7 +2419,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("../images/circulo_estelar/ce-header.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-header.jpg");
   height: 45vh;
   margin-bottom: 0;
   margin: 0 -0.599rem;
@@ -2501,63 +2517,63 @@ a {
 }
 
 .av-card-default {
-  background-image: url("../images/circulo_estelar/ce-default.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-default.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-6 {
-  background-image: url("../images/circulo_estelar/ce-6.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-7 {
-  background-image: url("../images/circulo_estelar/ce-7.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-8 {
-  background-image: url("../images/circulo_estelar/ce-8.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-9 {
-  background-image: url("../images/circulo_estelar/ce-9.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-10 {
-  background-image: url("../images/circulo_estelar/ce-10.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-11 {
-  background-image: url("../images/circulo_estelar/ce-11.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-12 {
-  background-image: url("../images/circulo_estelar/ce-12.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-13 {
-  background-image: url("../images/circulo_estelar/ce-13.jpg");
+  background-image: url("../../../img/circulo_estelar/ce-13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

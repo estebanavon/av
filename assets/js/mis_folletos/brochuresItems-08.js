@@ -1,24 +1,38 @@
 
 const brochures8 = [
     {
-        title: 'Avon Contigo 3',
-        file: 'avon_contigo_c0121.pdf',
-        type: 'contigo',
-    },
-    {
         title: 'Belleza',
-        file: '1',
-        type: 'imb',
+        file: 'BellezaMx08.pdf',
+        type: 'flyer',
     },
     {
         title: 'Fashion & Home',
-        file: '2',
-        type: 'imb',
+        file: 'FashionNHomeMx08.pdf',
+        type: 'flyer',
     },
     {
-        title: 'Rutinas Anew',
-        file: '3',
-        type: 'imb',
+        title: 'Flyer protección contra Covid',
+        file: 'FlyerProteccionCovid.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Mini folletos feria de descuentos',
+        file: 'MinibrochureFeriaDescuentos.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Formato salida Anew Protinol',
+        file: 'FormatoSalidaAnewProtinol.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Flyer VEA Anew C10',
+        file: 'VEAFlyerAnewC1021.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Avon Contigo',
+        file: 'avon_contigo_c0821.pdf',
+        type: 'contigo',
     },
 ]
-

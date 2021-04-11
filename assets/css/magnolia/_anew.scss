@@ -1,0 +1,378 @@
+.av-anew-header {
+    width: 100%;
+    background-color: $color-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 15px 10px 15px;
+    @media (min-width:$media-3) {
+        flex-direction: column;
+        padding: 10px 30px 20px 30px;
+    }
+    .av-anew-link {
+        align-self: flex-end;
+        font-size: 13px;
+        display: none;
+        margin-bottom: 10px;
+        
+        a {
+            color: $color-text;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (min-width:$media-3) {
+            display: block;
+        }
+    }
+    @include headerLink($color-text);
+}
+.av-anew-container {
+    padding-top: 93px;
+    @media (min-width:$media-3) {
+        padding-top: 130px;
+    }
+    .av-title {
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+}
+.av-anew-hero {
+    background-color: $color-light-white;
+    img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        max-width: 1600px;
+    }
+}
+.av-anew-ages {
+    padding: 6px 15px;
+    width: auto;
+    display: block;
+    height: auto;
+    font-size: 15px;
+    border-radius: 15px 0px 15px 0px;
+    background-color: salmon;
+    text-transform: uppercase;
+    color: $color-white;
+    font-family: $bold-monts;
+    margin-bottom: 10px;
+}
+@mixin avMove {
+    position: absolute;
+    padding: 15px;
+    top: 40%;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    color: $color-white;
+    //display: none;
+    z-index: 30;
+    @media (min-width:1100px) {
+        display: none !important;
+    }
+}
+.av-anew-items {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    .av-move-right {
+        @include avMove;
+        right: 10px;
+        @media (min-width:500px) {
+            display: block;
+        }
+    }
+    .av-move-left {
+        @include avMove;
+        left: 10px;
+        display: none;
+    }
+}
+.av-anew-marker {
+    width: 160px;
+    min-width: 160px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50px 0px 50px 0px;
+    min-height: 30px;
+    transition: all 1s;
+    margin-right: 20px;
+    
+    &:hover {
+        box-shadow: $color-shadow-hover;
+    }
+    @media (min-width:$media-2) {
+        width: 170px;
+        min-width: 170px;
+    }
+    
+    @media (min-width:900px) {
+        transform: translateX(0px) !important;
+    }
+    
+    .av-img {
+        height: 30vh;
+        background-color: $color-light-white;
+        background-position: center;
+        background-size: cover;
+        @media (min-width:$media-3) {
+            height: 35vh;
+        }
+    }
+    span {
+        font-family: $bold-monts;
+        color: $color-text;
+        display: block;
+    }
+    
+    .av-age {
+        text-transform: uppercase;
+    }
+    .av-numbers {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .av-description {
+        font-size: 14px;
+        font-family: $regular-monts;
+    }
+}
+
+
+.av-anew-subtitle {
+    text-transform: uppercase;
+    font-family: $bold-monts;
+    font-size: 20px;
+    color: $color-text;
+    margin-bottom: 10px;
+}
+.av-anew-title-support {
+    @extend %titles;
+    font-family: $light-monts;
+    font-weight: lighter;
+    font-size: 28px;
+    line-height: 31px;
+    text-transform: uppercase;
+}
+
+.av-an-row {
+    background-color: $color-white;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    
+    $caPadding: 100px;
+    $caPaddingSmall: 5%;
+
+    padding-left: ($caPadding * 0.3);
+    padding-right: ($caPadding * 0.3);
+    @media (min-width:$media-1){
+        padding-left: $caPadding * 0.3;
+        padding-right: $caPadding * 0.3;
+    }
+    @media (min-width:$media-3){
+        padding-left: $caPadding;
+        padding-right: $caPadding;
+    }
+    @media (min-width:$media-4){
+        padding-left: $caPadding * 1.9;
+        padding-right: $caPadding * 1.9;
+    }
+    
+    @media (min-width:$media-6){
+        padding-left: $caPadding * 3;
+        padding-right: $caPadding * 3;
+    }
+    .av-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        flex: 1;
+    }
+
+    .noBack {
+        padding-right: 2%;
+    }
+    
+    @media (min-width:$media-1){
+        flex-direction: row;
+        &.reverse { 
+            flex-direction: row-reverse;
+            .noBack {
+                padding-left: 5%;
+            }
+        }
+    }
+    .av-title {
+        margin-bottom: 15px;
+        margin-top: 2px;
+    }
+}
+.av-anew-trio {
+    .av-move {
+        @include avMove;
+    }
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+
+    > .av-col {
+        $letPadding: 20px;
+        justify-content: flex-start;
+        &:nth-child(1){
+            
+            @media (min-width:$media-2){
+                padding-right: $letPadding;
+            }
+        }
+        &:nth-child(2){
+            padding: 0px $letPadding;
+            @media (min-width:$media-2){
+                padding: 0px ($letPadding * 4);
+            }
+            h4, img, p {
+                z-index: 10;
+            }
+
+        }
+        &:nth-child(3){
+            @media (min-width:$media-2){
+                padding-left: $letPadding;
+            }
+        }
+        
+    }
+    .av-anew-decor{
+        position: absolute;
+        top: -75px;
+        bottom: -75px;
+        left: 5%;
+        background-color: $color-light-white;
+        width: 85%;
+        z-index: 0;
+        display: none;
+        @media (min-width:$media-2){
+            display: block;
+        }
+    }
+    
+}
+.av-anew-more {   
+    order: 0;
+    width: 100%;
+    display: none;
+    @media (min-width:$media-2) {
+        order: 1;
+        margin-top: 30px;
+    }
+}
+.av-anew-bleed {
+    @mixin letMixin($direction) {
+        height: 350px;
+        min-height: 350px;
+        background-color: #eee;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 30px;
+        
+
+        $caPadding: 100px;
+        #{$direction}: 0px;
+        
+        @media (min-width:$media-1){
+            #{$direction}: -$caPadding * 0.3;
+        }
+        @media (min-width:$media-3){
+            margin-bottom: 2vh;
+            margin-top: 0;
+            height: 420px;
+        }
+        @media (min-width:$media-4){
+            #{$direction}: 0px;
+        }
+    }
+    &-up {
+        @include letMixin(right);
+        border-radius: 120px 0px 0px 0px;
+        margin-top: 40px;
+    }
+    &-down {
+        @include letMixin(left);
+        border-radius: 0px 0px 120px 0px;
+        
+    }
+}
+.av-anew-bleed-lg {
+    width: 530px;
+    left: -380px;
+    top: -100px;
+    position: relative;
+    opacity: 0.2;
+    @media (min-width:$media-1) {
+        opacity: 1;
+    }
+}
+.av-an-ages-row {
+    display: flex;
+    flex-wrap: nowrap;
+    .av-line {
+        height: 1px;
+        width: 100%;
+        background-color: $color-dark;
+        position: relative;
+        .av-dot {
+            position: absolute;
+            left: 50% ;
+            top: -2px;
+            background-color: $color-dark;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+    }
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-family: $bold-monts;
+    }
+    .av-text {
+        padding: 10px;
+    }
+}
+
+@mixin av-anew-section($name) {
+    .#{$name} {
+        background-image: url('#{$route-images}/#{$name}.jpg');
+    }
+}
+
+@include av-anew-section(sectionAnClinical);
+@include av-anew-section(sectionAnPerfectSkin);
+@include av-anew-section(sectionAnProtinol);
+@include av-anew-section(sectionAnInstitute);
+@include av-anew-section(sectionAnExp2);
+@include av-anew-section(sectionAnExp3);
+@include av-anew-section(avAnewAgeAll);
+@include av-anew-section(avAnewAge25);
+@include av-anew-section(avAnewAge30);
+@include av-anew-section(avAnewAge45);
+@include av-anew-section(avAnewAge60);

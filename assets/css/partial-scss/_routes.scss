@@ -9,10 +9,10 @@ $route-font: $prod-font;
 
 
 $prod-images: '../images';
-$dev-images: '../img';
+$dev-images: '../../../img';
 
 
 //Configuración de rutas sin condicionante
 
-$route-images: $prod-images;
+$route-images: $dev-images;
 

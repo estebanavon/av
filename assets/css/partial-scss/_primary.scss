@@ -150,6 +150,14 @@
         margin-bottom: $size-text / 2.5;
         display: block;
     }
+    &.av-list-small {
+        line-height: 21px;
+        font-size: 16px;
+        li {
+            display: flex;
+            align-items: center;
+        }
+    }
     
     &.av-list-item {
         padding-left: 0;
@@ -517,7 +525,7 @@
     width: 90%;
     height: 90%;
     border: 1px $color-white solid;
-    border-radius: 4rem 0;
+    border-radius: 100px 0;
     align-self: center;
 }
 .flex-1{
@@ -586,6 +594,7 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
   }
   
   /* Track */

@@ -46,8 +46,8 @@
 @mixin text-mixin($font:$regular-monts){
     color: $color-text;
     font-family: $font;
-    font-size: $size-text - 4;
-    line-height: $size-text - 2;
+    font-size: $size-text;
+    line-height: $size-text;
     margin-bottom: $size-text;
     @media (min-width:$media-1) {
         margin-bottom: $size-text + 1;

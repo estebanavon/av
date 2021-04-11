@@ -1093,7 +1093,7 @@ td.font_bold.font_14.txt_fff.left {
 }
 
 .body em {
-  font-size: 20px;
+  font-size: 16px;
   color: #E82F89;
 }
 
@@ -1174,8 +1174,8 @@ div#campaignSelect table tbody tr td .padding_left20.blk_main_heading24 img {
 .place_an_order_tbl2 label {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 div#alternate .placeAnOrder_image {
@@ -1311,8 +1311,8 @@ div#alternate .placeAnOrder_image > tbody > tr > td:nth-child(3) {
   text-align: right;
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
   color: #E82F89;
 }
 
@@ -1320,8 +1320,8 @@ div#alternate .placeAnOrder_image > tbody > tr > td:nth-child(3) {
   text-align: left;
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 [name="dirtyValue"] + table.center table.bor_outer > tbody > tr > td:last-child .tbl_orderpack > tbody {
@@ -1702,8 +1702,8 @@ tr.tableBg1 > td:nth-child(2) > table.body td {
 .ord_gray_txt {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
   padding-left: 72px;
   text-transform: uppercase;
   text-align: left;
@@ -3826,8 +3826,8 @@ div#campaignSelect > table > tbody > tr:first-child > td {
 .tbl_orderpack > tbody > tr:nth-child(6) table tr:first-child > td {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
   background-color: #f0f0f0;
   padding: 10px;
   text-align: left;
@@ -3994,8 +3994,8 @@ td.bg2_f2f0f0.padding_3.active1 {
 [name="frmConfirm"] .font_bold {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 table[width="700"],
@@ -4040,8 +4040,8 @@ table[width="98%"] {
 .offer_action_header_txt, .offer_font_bold .offer_prize_font_size, .offer_decription {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
   display: block;
   margin-bottom: 10px;
 }
@@ -4189,8 +4189,8 @@ img[height="14"], [type="image"][height="14"] {
 .av-tc h4 {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
   color: #3b4546;
   margin-bottom: 20px;
 }
@@ -4198,8 +4198,8 @@ img[height="14"], [type="image"][height="14"] {
 .av-tc p {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
   text-align: justify;
   margin-bottom: 20px;
 }
@@ -4213,8 +4213,8 @@ img[height="14"], [type="image"][height="14"] {
 .av-tc ul li {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 [name="creditScoreForm"] table {
@@ -4237,8 +4237,8 @@ td:nth-child(2)#attTableColumns {
 body, td {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 ul.breadcrumb_line li:not(.active) > a {
@@ -4421,8 +4421,8 @@ td h2,
 tr.tableBg1 ~ tr strong {
   color: #3b4546;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 h1 > em {
@@ -4723,7 +4723,7 @@ a.offersLink.visited,
   border-radius: 0px;
   min-width: 42px;
   width: auto;
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .linearFormInput:hover, input[type="text"]:not(.searchBox):hover, input[type="password"]:hover {
@@ -4751,7 +4751,7 @@ select {
   border-radius: 0px;
   min-width: 42px;
   width: auto;
-  font-size: 15px;
+  font-size: 11px;
   background-color: transparent;
 }
 
@@ -4841,6 +4841,14 @@ td input.buttonBgorder:hover, td input.buttonBgorder:active, td input.buttonBgor
 .divider {
   border: 2px solid #E82F89;
   color: #E82F89;
+}
+
+.marginsPopup [name="gomacErrorForm"] > table tr:nth-child(2) td.error strong {
+  font-weight: normal;
+}
+
+#clearanceoffersForm #displayArea1 > table {
+  width: 35%;
 }
 
 /* CSS MX by GEBZ. */

@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-subtitle, .av-subtitle-support, .av-title, .multimedia-title h2, .multimedia-layout-wrapper .video-text-item h3, .av-prtnl-subtitle.secondary {
+.av-subtitle, .av-subtitle-support, .av-title, .multimedia-title h2, .multimedia-layout-wrapper .video-text-item h3, .av-prtnl-subtitle.secondary, .av-anew-title-support {
   color: #3b4546;
   text-align: left;
   margin: 0px;
@@ -70,6 +70,7 @@
 
 section.av-container {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 section.av-container .av-row {
@@ -555,8 +556,8 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-text {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 19px;
+  line-height: 19px;
   margin-bottom: 19px;
 }
 
@@ -624,6 +625,20 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-list li {
   margin-bottom: 7.6px;
   display: block;
+}
+
+.av-list.av-list-small {
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.av-list.av-list-small li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .av-list.av-list-item {
@@ -1112,7 +1127,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   width: 90%;
   height: 90%;
   border: 1px #fff solid;
-  border-radius: 4rem 0;
+  border-radius: 100px 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1247,6 +1262,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -1872,7 +1888,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-concert-banner {
-  background-image: url("../images/concierto-avon/avConciertoHeader.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHeader.jpg");
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1912,73 +1928,73 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-concierto {
-  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
+  background-image: url("../../../img/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../images/conciertoBasesHeader.jpg");
+    background-image: url("../../../img/conciertoBasesHeader.jpg");
   }
 }
 
 .av-concert1 {
-  background-image: url("../images/concierto-avon/avConciertoHow1.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert2 {
-  background-image: url("../images/concierto-avon/avConciertoHow2.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert3 {
-  background-image: url("../images/concierto-avon/avConciertoHow3.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert4 {
-  background-image: url("../images/concierto-avon/avConciertoHow4.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert5 {
-  background-image: url("../images/concierto-avon/avConciertoHow5.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert6 {
-  background-image: url("../images/concierto-avon/avConciertoHow6.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert7 {
-  background-image: url("../images/concierto-avon/avConciertoHow7.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert8 {
-  background-image: url("../images/concierto-avon/avConciertoHow8.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert9 {
-  background-image: url("../images/concierto-avon/avConciertoHow9.jpg");
+  background-image: url("../../../img/concierto-avon/avConciertoHow9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2052,7 +2068,7 @@ a {
 }
 
 .av-img-higiene {
-  background-image: url("../images/folletos/hg-1.jpg");
+  background-image: url("../../../img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2210,7 +2226,7 @@ a {
 }
 
 .av-ec-header {
-  background-image: url("../images/etica-cumplimiento/avon-office.jpg");
+  background-image: url("../../../img/etica-cumplimiento/avon-office.jpg");
 }
 
 .av-ec-values p {
@@ -2231,54 +2247,54 @@ a {
 }
 
 .av-card-1 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-1.jpg");
+  background-image: url("../../../img/etica-cumplimiento/banner-ec-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-2 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-2.jpg");
+  background-image: url("../../../img/etica-cumplimiento/banner-ec-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-3 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-3.jpg");
+  background-image: url("../../../img/etica-cumplimiento/banner-ec-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-4 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-4.jpg");
+  background-image: url("../../../img/etica-cumplimiento/banner-ec-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-card-5 {
-  background-image: url("../images/etica-cumplimiento/banner-ec-5.jpg");
+  background-image: url("../../../img/etica-cumplimiento/banner-ec-5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .av-conv-header {
-  background-image: url("../images/responsabilidad-social/violence-woman.jpg");
+  background-image: url("../../../img/responsabilidad-social/violence-woman.jpg");
 }
 
 .av-cm-header {
-  background-image: url("../images/responsabilidad-social/cm-ganadores.jpg");
+  background-image: url("../../../img/responsabilidad-social/cm-ganadores.jpg");
 }
 
 .av-cm-convocatoria {
-  background-image: url("../images/responsabilidad-social/cm-convocatoria.jpg");
+  background-image: url("../../../img/responsabilidad-social/cm-convocatoria.jpg");
 }
 
 .av-conv-1 {
-  background-image: url("../images/responsabilidad-social/violence-banner-1.jpg");
+  background-image: url("../../../img/responsabilidad-social/violence-banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2286,7 +2302,7 @@ a {
 }
 
 .av-conv-2 {
-  background-image: url("../images/responsabilidad-social/violence-banner-2.jpg");
+  background-image: url("../../../img/responsabilidad-social/violence-banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2294,7 +2310,7 @@ a {
 }
 
 .av-conv-3 {
-  background-image: url("../images/responsabilidad-social/violence-banner-3.jpg");
+  background-image: url("../../../img/responsabilidad-social/violence-banner-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2672,8 +2688,8 @@ a {
 .av-prtnl-text {
   color: #3b4546;
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 19px;
+  line-height: 19px;
   margin-bottom: 19px;
 }
 
@@ -2878,7 +2894,7 @@ a {
 }
 
 .av-prtnl-prllx {
-  background-image: url("../images/anew-protinol/prtnl-background.jpg");
+  background-image: url("../../../img/anew-protinol/prtnl-background.jpg");
 }
 
 .h40vh {
@@ -2902,7 +2918,7 @@ section.av-nosolas-main {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-image: url("../images/responsabilidad-social/woman_manifiesto.jpg");
+  background-image: url("../../../img/responsabilidad-social/woman_manifiesto.jpg");
   background-position: 25% top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3064,7 +3080,7 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url("../images/responsabilidad-social/not-alone-title.jpg");
+  background-image: url("../../../img/responsabilidad-social/not-alone-title.jpg");
 }
 
 .av-nosolas-title .av-title-stroke {
@@ -3072,18 +3088,18 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-nosolas-title .av-title-text:nth-child(2), .av-nosolas-title .av-title-support {
-  background-image: url("../images/avon-gradient.jpg");
+  background-image: url("../../../img/avon-gradient.jpg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .av-nosolas-banner-1 {
-  background-image: url("../images/responsabilidad-social/not-alone-banner-1.jpg");
+  background-image: url("../../../img/responsabilidad-social/not-alone-banner-1.jpg");
   background-size: cover;
 }
 
 .av-nosolas-banner-3 {
-  background-image: url("../images/responsabilidad-social/not-alone-banner-3.jpg");
+  background-image: url("../../../img/responsabilidad-social/not-alone-banner-3.jpg");
   background-size: cover;
 }
 
@@ -3107,19 +3123,19 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-1 {
-  background-image: url("../images/responsabilidad-social/esr-1.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-1.jpg");
 }
 
 .av-esr-2 {
-  background-image: url("../images/responsabilidad-social/esr-2.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-2.jpg");
 }
 
 .av-esr-3 {
-  background-image: url("../images/responsabilidad-social/esr-3.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-3.jpg");
 }
 
 .av-esr-4 {
-  background-image: url("../images/responsabilidad-social/esr-4.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-4.jpg");
 }
 
 .av-esr-grid [class^="col-"] {
@@ -3127,31 +3143,31 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-esr-grid > div:nth-child(1) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-5.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-5.jpg");
 }
 
 .av-esr-grid > div:nth-child(2) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-6.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-6.jpg");
 }
 
 .av-esr-grid > div:nth-child(3) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-7.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-7.jpg");
 }
 
 .av-esr-grid > div:nth-child(5) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-9.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-9.jpg");
 }
 
 .av-esr-grid > div:nth-child(8) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-12.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-12.jpg");
 }
 
 .av-esr-grid > div:nth-child(9) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-13.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-13.jpg");
 }
 
 .av-esr-grid > div:nth-child(10) .av-card {
-  background-image: url("../images/responsabilidad-social/esr-14.jpg");
+  background-image: url("../../../img/responsabilidad-social/esr-14.jpg");
 }
 
 .esr-purple {
@@ -3467,32 +3483,32 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.productos:nth-child(1) {
-  background-image: url("../images/conoce-avon/ca-products-1b.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-1b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.productos:nth-child(1) {
-    background-image: url("../images/conoce-avon/ca-products-1.jpg");
+    background-image: url("../../../img/conoce-avon/ca-products-1.jpg");
   }
 }
 
 .av-ca-hero.productos:nth-child(2) {
-  background-image: url("../images/conoce-avon/ca-products-2b.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-2b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.productos:nth-child(2) {
-    background-image: url("../images/conoce-avon/ca-products-2.jpg");
+    background-image: url("../../../img/conoce-avon/ca-products-2.jpg");
   }
 }
 
 .av-ca-hero.productos:nth-child(3) {
-  background-image: url("../images/conoce-avon/ca-products-3b.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-3b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.productos:nth-child(3) {
-    background-image: url("../images/conoce-avon/ca-products-3.jpg");
+    background-image: url("../../../img/conoce-avon/ca-products-3.jpg");
   }
 }
 
@@ -3577,62 +3593,62 @@ section.av-nosolas-main .av-nosolas-container .av-nosolas-content .av-nosolas-st
 }
 
 .av-ca-hero.people:nth-child(1) {
-  background-image: url("../images/conoce-avon/ca-people-5b.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-5b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.people:nth-child(1) {
-    background-image: url("../images/conoce-avon/ca-people-5.jpg");
+    background-image: url("../../../img/conoce-avon/ca-people-5.jpg");
   }
 }
 
 .av-ca-hero.people:nth-child(2) {
-  background-image: url("../images/conoce-avon/ca-people-4b.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-4b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.people:nth-child(2) {
-    background-image: url("../images/conoce-avon/ca-people-4.jpg");
+    background-image: url("../../../img/conoce-avon/ca-people-4.jpg");
   }
 }
 
 .av-ca-hero.people:nth-child(3) {
-  background-image: url("../images/conoce-avon/ca-people-3b.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-3b.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.people:nth-child(3) {
-    background-image: url("../images/conoce-avon/ca-people-3.jpg");
+    background-image: url("../../../img/conoce-avon/ca-people-3.jpg");
   }
 }
 
 .av-ca-hero.liderazgo:nth-child(1) {
-  background-image: url("../images/conoce-avon/ca-liderazgo-ab.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-ab.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.liderazgo:nth-child(1) {
-    background-image: url("../images/conoce-avon/ca-liderazgo-a.jpg");
+    background-image: url("../../../img/conoce-avon/ca-liderazgo-a.jpg");
   }
 }
 
 .av-ca-hero.liderazgo:nth-child(2) {
-  background-image: url("../images/conoce-avon/ca-liderazgo-bb.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-bb.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.liderazgo:nth-child(2) {
-    background-image: url("../images/conoce-avon/ca-liderazgo-b.jpg");
+    background-image: url("../../../img/conoce-avon/ca-liderazgo-b.jpg");
   }
 }
 
 .av-ca-hero.liderazgo:nth-child(3) {
-  background-image: url("../images/conoce-avon/ca-liderazgo-cb.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-cb.jpg");
 }
 
 @media (min-width: 768px) {
   .av-ca-hero.liderazgo:nth-child(3) {
-    background-image: url("../images/conoce-avon/ca-liderazgo-c.jpg");
+    background-image: url("../../../img/conoce-avon/ca-liderazgo-c.jpg");
   }
 }
 
@@ -3978,21 +3994,6 @@ div.p-fix, h3.p-fix {
   fill: #fff;
 }
 
-.av-header .av-header-mobile {
-  padding: 20px 15px;
-  cursor: pointer;
-}
-
-@media (min-width: 1024px) {
-  .av-header .av-header-mobile {
-    display: none;
-  }
-}
-
-.av-header .av-header-mobile.mobile-close {
-  display: none;
-}
-
 .av-header .av-header-link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -4008,7 +4009,7 @@ div.p-fix, h3.p-fix {
   }
 }
 
-.av-header .av-header-link a {
+.av-header .av-header-link > a, .av-header .av-header-link > span {
   padding: 15px 25px 5px 25px;
   color: #fff;
   font-size: 14px;
@@ -4017,18 +4018,16 @@ div.p-fix, h3.p-fix {
   border-bottom: 3px solid transparent;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   opacity: 0.8;
+  cursor: pointer;
 }
 
-.av-header .av-header-link a:hover {
+.av-header .av-header-link > a:hover, .av-header .av-header-link > span:hover {
   opacity: 1;
 }
 
-.av-header .av-header-link a.active {
+.av-header .av-header-link > a.active, .av-header .av-header-link > span.active {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-}
-
-.av-header .av-ca-brand {
-  margin-bottom: 10px;
+  opacity: 1;
 }
 
 .av-header .av-header-line {
@@ -4058,6 +4057,25 @@ div.p-fix, h3.p-fix {
 .av-header.av-header-white .av-header-line {
   background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
+}
+
+.av-ca-brand {
+  margin-bottom: 10px;
+}
+
+.av-header-mobile {
+  padding: 20px 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .av-header-mobile {
+    display: none;
+  }
+}
+
+.av-header-mobile.mobile-close {
+  display: none;
 }
 
 .pt-10 {
@@ -4109,9 +4127,11 @@ div.p-fix, h3.p-fix {
           transform: translateY(85px);
 }
 
-.avMenu a {
-  padding: 0.8rem;
+.avMenu a, .avMenu span {
+  padding: 20px 0px;
   font-size: 19px;
+  color: #3b4546;
+  cursor: pointer;
 }
 
 .av-people {
@@ -4449,63 +4469,63 @@ div.p-fix, h3.p-fix {
 }
 
 .av-people-1 {
-  background-image: url("../images/conoce-avon/ca-people-1.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-1.jpg");
 }
 
 .av-people-2 {
-  background-image: url("../images/conoce-avon/ca-people-2.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-2.jpg");
 }
 
 .av-people-7 {
-  background-image: url("../images/conoce-avon/ca-people-7.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-7.jpg");
 }
 
 .av-people-8 {
-  background-image: url("../images/conoce-avon/ca-people-8.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-8.jpg");
 }
 
 .av-people-9 {
-  background-image: url("../images/conoce-avon/ca-people-9.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-9.jpg");
 }
 
 .av-people-12 {
-  background-image: url("../images/conoce-avon/ca-people-12.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-12.jpg");
 }
 
 .av-people-13 {
-  background-image: url("../images/conoce-avon/ca-people-13.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-13.jpg");
 }
 
 .av-products-9 {
-  background-image: url("../images/conoce-avon/ca-products-9.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-9.jpg");
 }
 
 .av-products-12 {
-  background-image: url("../images/conoce-avon/ca-products-12.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-12.jpg");
 }
 
 .av-products-14 {
-  background-image: url("../images/conoce-avon/ca-products-14.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-14.jpg");
 }
 
 .av-products-16 {
-  background-image: url("../images/conoce-avon/ca-products-16.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-16.jpg");
 }
 
 .av-product-4-2 {
-  background-image: url("../images/conoce-avon/ca-products-4.2.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-4.2.jpg");
 }
 
 .av-explore-1 {
-  background-image: url("../images/conoce-avon/ca-products-15.jpg");
+  background-image: url("../../../img/conoce-avon/ca-products-15.jpg");
 }
 
 .av-explore-2 {
-  background-image: url("../images/conoce-avon/ca-people-6.jpg");
+  background-image: url("../../../img/conoce-avon/ca-people-6.jpg");
 }
 
 .av-explore-3 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-a.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-a.jpg");
 }
 
 .av-liderazgo-1, .av-liderazgo-2, .av-liderazgo-3 {
@@ -4517,46 +4537,663 @@ div.p-fix, h3.p-fix {
 }
 
 .av-liderazgo-1 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-1.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-1.jpg");
 }
 
 .av-liderazgo-2 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-2.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-2.jpg");
 }
 
 .av-liderazgo-3 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-3.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-3.jpg");
 }
 
 .av-liderazgo-4 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-4.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-4.jpg");
 }
 
 .av-liderazgo-5 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-5.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-5.jpg");
 }
 
 .av-liderazgo-6 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-6.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-6.jpg");
 }
 
 .av-liderazgo-7 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-7.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-7.jpg");
 }
 
 .av-liderazgo-8 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-8.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-8.jpg");
 }
 
 .av-liderazgo-9 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-9.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-9.jpg");
 }
 
 .av-liderazgo-10 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-10.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-10.jpg");
 }
 
 .av-liderazgo-11 {
-  background-image: url("../images/conoce-avon/ca-liderazgo-11.jpg");
+  background-image: url("../../../img/conoce-avon/ca-liderazgo-11.jpg");
+}
+
+.av-anew-header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px 10px 15px;
+}
+
+@media (min-width: 1024px) {
+  .av-anew-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 30px 20px 30px;
+  }
+}
+
+.av-anew-header .av-anew-link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 13px;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.av-anew-header .av-anew-link a {
+  color: #3b4546;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .av-anew-header .av-anew-link {
+    display: block;
+  }
+}
+
+.av-anew-header .av-header-link {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .av-anew-header .av-header-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.av-anew-header .av-header-link > a, .av-anew-header .av-header-link > span {
+  padding: 15px 25px 5px 25px;
+  color: #3b4546;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.av-anew-header .av-header-link > a:hover, .av-anew-header .av-header-link > span:hover {
+  opacity: 1;
+}
+
+.av-anew-header .av-header-link > a.active, .av-anew-header .av-header-link > span.active {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.av-anew-container {
+  padding-top: 93px;
+}
+
+@media (min-width: 1024px) {
+  .av-anew-container {
+    padding-top: 130px;
+  }
+}
+
+.av-anew-container .av-title {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.av-anew-hero {
+  background-color: #F7F7F7;
+}
+
+.av-anew-hero img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 1600px;
+}
+
+.av-anew-ages {
+  padding: 6px 15px;
+  width: auto;
+  display: block;
+  height: auto;
+  font-size: 15px;
+  border-radius: 15px 0px 15px 0px;
+  background-color: salmon;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  margin-bottom: 10px;
+}
+
+.av-anew-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.av-anew-items .av-move-right {
+  position: absolute;
+  padding: 15px;
+  top: 40%;
+  font-size: 28px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  z-index: 30;
+  right: 10px;
+}
+
+@media (min-width: 1100px) {
+  .av-anew-items .av-move-right {
+    display: none !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .av-anew-items .av-move-right {
+    display: block;
+  }
+}
+
+.av-anew-items .av-move-left {
+  position: absolute;
+  padding: 15px;
+  top: 40%;
+  font-size: 28px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  z-index: 30;
+  left: 10px;
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .av-anew-items .av-move-left {
+    display: none !important;
+  }
+}
+
+.av-anew-marker {
+  width: 160px;
+  min-width: 160px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50px 0px 50px 0px;
+  min-height: 30px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-right: 20px;
+}
+
+.av-anew-marker:hover {
+  -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 992px) {
+  .av-anew-marker {
+    width: 170px;
+    min-width: 170px;
+  }
+}
+
+@media (min-width: 900px) {
+  .av-anew-marker {
+    -webkit-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
+  }
+}
+
+.av-anew-marker .av-img {
+  height: 30vh;
+  background-color: #F7F7F7;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1024px) {
+  .av-anew-marker .av-img {
+    height: 35vh;
+  }
+}
+
+.av-anew-marker span {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  color: #3b4546;
+  display: block;
+}
+
+.av-anew-marker .av-age {
+  text-transform: uppercase;
+}
+
+.av-anew-marker .av-numbers {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.av-anew-marker .av-description {
+  font-size: 14px;
+  font-family: montserrat-regular, Helvetica, sans-serif;
+}
+
+.av-anew-subtitle {
+  text-transform: uppercase;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  color: #3b4546;
+  margin-bottom: 10px;
+}
+
+.av-anew-title-support {
+  font-family: montserrat-light, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 28px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+.av-an-row {
+  background-color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .av-an-row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .av-an-row {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .av-an-row {
+    padding-left: 190px;
+    padding-right: 190px;
+  }
+}
+
+@media (min-width: 1480px) {
+  .av-an-row {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+.av-an-row .av-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.av-an-row .noBack {
+  padding-right: 2%;
+}
+
+@media (min-width: 768px) {
+  .av-an-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .av-an-row.reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .av-an-row.reverse .noBack {
+    padding-left: 5%;
+  }
+}
+
+.av-an-row .av-title {
+  margin-bottom: 15px;
+  margin-top: 2px;
+}
+
+.av-anew-trio {
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 40px;
+}
+
+.av-anew-trio .av-move {
+  position: absolute;
+  padding: 15px;
+  top: 40%;
+  font-size: 28px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  z-index: 30;
+}
+
+@media (min-width: 1100px) {
+  .av-anew-trio .av-move {
+    display: none !important;
+  }
+}
+
+.av-anew-trio > .av-col {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (min-width: 992px) {
+  .av-anew-trio > .av-col:nth-child(1) {
+    padding-right: 20px;
+  }
+}
+
+.av-anew-trio > .av-col:nth-child(2) {
+  padding: 0px 20px;
+}
+
+@media (min-width: 992px) {
+  .av-anew-trio > .av-col:nth-child(2) {
+    padding: 0px 80px;
+  }
+}
+
+.av-anew-trio > .av-col:nth-child(2) h4, .av-anew-trio > .av-col:nth-child(2) img, .av-anew-trio > .av-col:nth-child(2) p {
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .av-anew-trio > .av-col:nth-child(3) {
+    padding-left: 20px;
+  }
+}
+
+.av-anew-trio .av-anew-decor {
+  position: absolute;
+  top: -75px;
+  bottom: -75px;
+  left: 5%;
+  background-color: #F7F7F7;
+  width: 85%;
+  z-index: 0;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .av-anew-trio .av-anew-decor {
+    display: block;
+  }
+}
+
+.av-anew-more {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  width: 100%;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .av-anew-more {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 30px;
+  }
+}
+
+.av-anew-bleed-up {
+  height: 350px;
+  min-height: 350px;
+  background-color: #eee;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 30px;
+  right: 0px;
+  border-radius: 120px 0px 0px 0px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .av-anew-bleed-up {
+    right: -30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .av-anew-bleed-up {
+    margin-bottom: 2vh;
+    margin-top: 0;
+    height: 420px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .av-anew-bleed-up {
+    right: 0px;
+  }
+}
+
+.av-anew-bleed-down {
+  height: 350px;
+  min-height: 350px;
+  background-color: #eee;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 30px;
+  left: 0px;
+  border-radius: 0px 0px 120px 0px;
+}
+
+@media (min-width: 768px) {
+  .av-anew-bleed-down {
+    left: -30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .av-anew-bleed-down {
+    margin-bottom: 2vh;
+    margin-top: 0;
+    height: 420px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .av-anew-bleed-down {
+    left: 0px;
+  }
+}
+
+.av-anew-bleed-lg {
+  width: 530px;
+  left: -380px;
+  top: -100px;
+  position: relative;
+  opacity: 0.2;
+}
+
+@media (min-width: 768px) {
+  .av-anew-bleed-lg {
+    opacity: 1;
+  }
+}
+
+.av-an-ages-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.av-an-ages-row .av-line {
+  height: 1px;
+  width: 100%;
+  background-color: #3b4546;
+  position: relative;
+}
+
+.av-an-ages-row .av-line .av-dot {
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  background-color: #3b4546;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.av-an-ages-row h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+.av-an-ages-row .av-text {
+  padding: 10px;
+}
+
+.sectionAnClinical {
+  background-image: url("../../../img/sectionAnClinical.jpg");
+}
+
+.sectionAnPerfectSkin {
+  background-image: url("../../../img/sectionAnPerfectSkin.jpg");
+}
+
+.sectionAnProtinol {
+  background-image: url("../../../img/sectionAnProtinol.jpg");
+}
+
+.sectionAnInstitute {
+  background-image: url("../../../img/sectionAnInstitute.jpg");
+}
+
+.sectionAnExp2 {
+  background-image: url("../../../img/sectionAnExp2.jpg");
+}
+
+.sectionAnExp3 {
+  background-image: url("../../../img/sectionAnExp3.jpg");
+}
+
+.avAnewAgeAll {
+  background-image: url("../../../img/avAnewAgeAll.jpg");
+}
+
+.avAnewAge25 {
+  background-image: url("../../../img/avAnewAge25.jpg");
+}
+
+.avAnewAge30 {
+  background-image: url("../../../img/avAnewAge30.jpg");
+}
+
+.avAnewAge45 {
+  background-image: url("../../../img/avAnewAge45.jpg");
+}
+
+.avAnewAge60 {
+  background-image: url("../../../img/avAnewAge60.jpg");
 }
 /*# sourceMappingURL=styles_scss.css.map */
