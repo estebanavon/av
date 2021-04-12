@@ -29,6 +29,12 @@
             display: block;
         }
     }
+    .av-anew-brand {
+        display: none;
+        @media (min-width:$media-3) {
+            display: block;
+        }
+    }
     @include headerLink($color-text);
 }
 .av-anew-container {
@@ -78,6 +84,18 @@
         display: none !important;
     }
 }
+.av-move-right {
+    @include avMove;
+    right: 10px;
+    @media (min-width:500px) {
+        display: block;
+    }
+}
+.av-move-left {
+    @include avMove;
+    left: 10px;
+    display: none;
+}
 .av-anew-items {
     display: flex;
     justify-content: flex-start;
@@ -85,21 +103,14 @@
     width: 100%;
     position: relative;
     .av-move-right {
-        @include avMove;
-        right: 10px;
         @media (min-width:500px) {
             display: block;
         }
     }
-    .av-move-left {
-        @include avMove;
-        left: 10px;
-        display: none;
-    }
 }
 .av-anew-marker {
-    width: 160px;
-    min-width: 160px;
+    width: 150px;
+    min-width: 150px;
     height: 100%;
     overflow: hidden;
     border-radius: 50px 0px 50px 0px;
@@ -224,52 +235,57 @@
     }
 }
 .av-anew-trio {
-    .av-move {
-        @include avMove;
-    }
+    width: 100%;
     position: relative;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
     margin-top: 40px;
 
-    > .av-col {
+    .av-col {
         $letPadding: 20px;
         justify-content: flex-start;
-        &:nth-child(1){
-            
+        min-width: 260px;
+        padding: 0px $letPadding;
+        transition: all 1s;
+        &:nth-child(3){
             @media (min-width:$media-2){
                 padding-right: $letPadding;
             }
         }
-        &:nth-child(2){
-            padding: 0px $letPadding;
+        &:nth-child(4){
             @media (min-width:$media-2){
                 padding: 0px ($letPadding * 4);
             }
-            h4, img, p {
-                z-index: 10;
-            }
-
         }
-        &:nth-child(3){
+        &:nth-child(5){
             @media (min-width:$media-2){
                 padding-left: $letPadding;
             }
         }
-        
+        img {
+            height: 30vh;
+            @media (min-width:$media-2){
+                padding-left: $letPadding;
+                height: auto;
+            }
+        }    
     }
+    
     .av-anew-decor{
         position: absolute;
         top: -75px;
         bottom: -75px;
-        left: 5%;
+        left: -3%;
         background-color: $color-light-white;
-        width: 85%;
+        width: 100%;
         z-index: 0;
-        display: none;
-        @media (min-width:$media-2){
-            display: block;
+        @media (min-width:$media-1) {
+            left: 5%;
+            width: 85%;
+        }
+        ~ h4,~ img,~ p {
+            z-index: 10;
         }
     }
     
@@ -285,17 +301,17 @@
 }
 .av-anew-bleed {
     @mixin letMixin($direction) {
-        height: 350px;
-        min-height: 350px;
+        height: 250px;
+        min-height: 250px;
         background-color: #eee;
         position: relative;
         background-position: center;
         background-size: cover;
         margin-bottom: 30px;
         
-
         $caPadding: 100px;
-        #{$direction}: 0px;
+        #{$direction}: -$caPadding * 0.3;
+        //#{$direction}: 0px;
         
         @media (min-width:$media-1){
             #{$direction}: -$caPadding * 0.3;

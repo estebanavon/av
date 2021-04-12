@@ -22,41 +22,38 @@
 
 <body>  
     <div class="av-anew-header">
-      <div class="av-header-mobile" id="avMenuButton"><svg width="26px" height="24.4px"><use xlink:href="#menu"></use></svg></div>
-      <div class="av-header-mobile mobile-close" id="avMenuClose"><svg width="20px" height="20.0014px"><use xlink:href="#close"></use></svg></div>
       <div class="av-anew-link">
           <a target="_self" href="https://www.avon.mx/avon-mx/">Avon.mx</a>
           <a target="_self" href="https://tienda.mercadolibre.com.mx/avon">Mercado Libre</a>
       </div>      
-      <div class="w-100"></div>
-        <div class="w-100 d-flex justify-content-between">
-            <span class="d-none d-lg-block">
+      
+        <div class="w-100 d-flex justify-content-between align-items-center">
+            <span class="av-anew-brand">
                 <svg width="75px" height="13px">
                     <use xlink:href="#anew"></use>
                 </svg>
             </span>
+            <div class="av-header-mobile" id="avMenuButton"><svg width="26px" height="24.4px"><use xlink:href="#menu"></use></svg></div>
+            <div class="av-header-mobile mobile-close" id="avMenuClose"><svg width="20px" height="20.0014px"><use xlink:href="#close"></use></svg></div>
         
             <span class="av-ca-brand">
                 <svg width="140px" height="33px">
                     <use xlink:href="#brand"></use>
                 </svg>
             </span>
-            <span class="d-none d-lg-block">
+            <span class="">
                 <svg width="80px" height="31px">
                     <use xlink:href="#institute"></use>
                 </svg>
             </span>
         
         </div>
-      <div class="w-100"></div>
-      <div class="av-header-mobile"><svg width="26px" height="24.4px"><use xlink:href="#menu"></use></svg></div>
       <div class="av-header-link avMenuAnew">
           <span value="0" class="active">EXPLORA ANEW</span>
           <span value="1">CIENCIA DETRÁS DE TU PIEL</span>
           <span value="2">TRANSFORMA TU PIEL</span>
           <span value="3">EXPERIENCIA ANEW</span>
       </div>
-      <div class="av-header-line"></div>
     </div>
     <div class="avMenu avMenuAnew">
         <span value="0">Explora Anew</span>
@@ -66,6 +63,10 @@
         <a target="_self" href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a>
         <a target="_self" href="https://www.avon.mx/avon-mx/">Avon mx</a>
     </div>
+
+
+    <!-- EXPLORA ANEW -->
+
     <section class="av-container av-anew-container">
         <div class="av-anew-hero">
             <img class="d-none d-sm-block" src="../img/bannerAnexplore.jpg" />
@@ -85,8 +86,8 @@
                     <small>¿Qué necesita tu piel?</small>
                 </h3>
                 <div class="av-anew-items">
-                    <span class="material-icons av-move-right" datavalue="right">keyboard_arrow_right</span>
-                    <span class="material-icons av-move-left" datavalue="left">keyboard_arrow_left</span>
+                    <span class="material-icons avMove av-move-right" av-value="right">keyboard_arrow_right</span>
+                    <span class="material-icons avMove av-move-left" av-value="left">keyboard_arrow_left</span>
                     <div class="av-anew-marker">
                         <a href="#avAnewAgeAll">
                             <div class="av-img avAnewAgeAll"></div>
@@ -148,12 +149,12 @@
                 </div>
             </div>
         </div>
-        <div class="av-spacer"></div>
-        <div class="av-an-row row">
-            <div class="col-12 col-sm-2">
+        <div class="av-spacer d-none d-sm-block"></div>
+        <div class="av-an-row row d-none d-sm-flex">
+            <div class="col-2">
                 <img src="../img/serumAnClinical.png" style="height: 150px;">
             </div>
-            <div class="col col-md-8">
+            <div class="col-8">
                 <h3 class="av-title">conoce nuestros tratamientos en sérum</h3>
                 <div class="av-text">
                     Fórmulas concentradas de textura ligera y rápida absorción. Hay uno para cada necesidad. Utiliza este tratamiento para potenciar los resultados de tu rutina facial.
@@ -704,6 +705,8 @@
             
         </div>
         <div class="av-an-row av-anew-trio">
+            <span class="material-icons avMove av-move-right" av-value="right">keyboard_arrow_right</span>
+            <span class="material-icons avMove av-move-left" av-value="left">keyboard_arrow_left</span>
             <div class="av-col noBack">
                 <img class="d-block mx-auto" src="../img/serumAnClinical.png" />
                 <h4 class="av-anew-subtitle">ANEW CLINICAL SERÚM aclarador</h4>
@@ -717,7 +720,7 @@
                 <h4 class="av-anew-title-support mb-3">Con precision 3T</h4>
                 <p class="av-text">Ayudan a combatir manchas existentes y prevenir las futuras. </p>
             </div>
-            <span class="material-icons av-move">keyboard_arrow_right</span>
+            
             <div class="av-col">
                 <img class="d-block mx-auto" src="../img/serumAnClinical3.png" />
                 <h4 class="av-anew-subtitle">ANEW INSTANT REPAIR</h4>
