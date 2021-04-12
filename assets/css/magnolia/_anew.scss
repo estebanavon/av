@@ -102,6 +102,10 @@
     margin-top: 40px;
     width: 100%;
     position: relative;
+    overflow: hidden;
+    @media (min-width:$media-1) {
+        overflow: visible;
+    }
     .av-move-right {
         @media (min-width:500px) {
             display: block;
@@ -327,12 +331,18 @@
     }
     &-up {
         @include letMixin(right);
-        border-radius: 120px 0px 0px 0px;
+        border-radius: 50px 0px 0px 0px;
         margin-top: 40px;
+        @media (min-width:$media-2){
+            border-radius: 120px 0px 0px 0px;
+        }
     }
     &-down {
         @include letMixin(left);
-        border-radius: 0px 0px 120px 0px;
+        border-radius: 0px 0px 50px 0px;
+        @media (min-width:$media-2){
+            border-radius: 0px 0px 120px 0px;
+        }
         
     }
 }

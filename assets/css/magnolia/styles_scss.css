@@ -4772,6 +4772,13 @@ div.p-fix, h3.p-fix {
   margin-top: 40px;
   width: 100%;
   position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .av-anew-items {
+    overflow: visible;
+  }
 }
 
 @media (min-width: 500px) {
@@ -5057,7 +5064,7 @@ div.p-fix, h3.p-fix {
   background-size: cover;
   margin-bottom: 30px;
   right: -30px;
-  border-radius: 120px 0px 0px 0px;
+  border-radius: 50px 0px 0px 0px;
   margin-top: 40px;
 }
 
@@ -5081,6 +5088,12 @@ div.p-fix, h3.p-fix {
   }
 }
 
+@media (min-width: 992px) {
+  .av-anew-bleed-up {
+    border-radius: 120px 0px 0px 0px;
+  }
+}
+
 .av-anew-bleed-down {
   height: 250px;
   min-height: 250px;
@@ -5090,7 +5103,7 @@ div.p-fix, h3.p-fix {
   background-size: cover;
   margin-bottom: 30px;
   left: -30px;
-  border-radius: 0px 0px 120px 0px;
+  border-radius: 0px 0px 50px 0px;
 }
 
 @media (min-width: 768px) {
@@ -5110,6 +5123,12 @@ div.p-fix, h3.p-fix {
 @media (min-width: 1200px) {
   .av-anew-bleed-down {
     left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .av-anew-bleed-down {
+    border-radius: 0px 0px 120px 0px;
   }
 }
 
