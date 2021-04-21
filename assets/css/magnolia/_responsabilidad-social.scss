@@ -8,6 +8,10 @@
 .av-cm-convocatoria {
     background-image: url('#{$route-images}/responsabilidad-social/cm-convocatoria.jpg');
 }
+.av-convocatoria-2021 {
+    background-image: url('#{$route-images}/responsabilidad-social/convocatoriaViolencia2021.jpg');
+}
+
 @mixin image-placer($number){
     .av-conv-#{$number} {
         background-image: url('#{$route-images}/responsabilidad-social/violence-banner-#{$number}.jpg');
@@ -18,14 +22,13 @@
     }
     
 }
-
+.text-justify {
+    text-align: justify;
+}
 @include image-placer(1);
 @include image-placer(2);
 @include image-placer(3);
 
 .av-conv-row .w-100 {
     height: $size-text*2;
-    @media (min-width:$media-2) {
-        height: $size-text*4;
-    }
 }

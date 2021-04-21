@@ -1,3 +1,13 @@
+.avMenuAnewControl {
+    display: none;
+    &.active {
+        display: block;
+        @media (min-width:$media-3) {
+            display: none;    
+        }
+    }
+}
+
 .av-anew-header {
     width: 100%;
     background-color: $color-white;
@@ -53,7 +63,6 @@
         width: 100%;
         margin: 0 auto;
         display: block;
-        max-width: 1600px;
     }
 }
 .av-anew-ages {
@@ -314,8 +323,7 @@
         margin-bottom: 30px;
         
         $caPadding: 100px;
-        #{$direction}: -$caPadding * 0.3;
-        //#{$direction}: 0px;
+        #{$direction}: 0px;
         
         @media (min-width:$media-1){
             #{$direction}: -$caPadding * 0.3;
@@ -331,7 +339,7 @@
     }
     &-up {
         @include letMixin(right);
-        border-radius: 50px 0px 0px 0px;
+        //border-radius: 70px 0px 0px 0px;
         margin-top: 40px;
         @media (min-width:$media-2){
             border-radius: 120px 0px 0px 0px;
@@ -339,7 +347,7 @@
     }
     &-down {
         @include letMixin(left);
-        border-radius: 0px 0px 50px 0px;
+        //border-radius: 0px 0px 70px 0px;
         @media (min-width:$media-2){
             border-radius: 0px 0px 120px 0px;
         }

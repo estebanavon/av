@@ -212,6 +212,33 @@
     color: $color-text;
     font-size: $size-text + 2;
 }
+%av-list {
+    font-family: $regular-monts;
+    line-height: $line-height + 2;
+    font-size: $size-text;
+    color: $color-text;
+    text-align: justify;
+    @include highlight();
+    @media (min-width:$media-2) {
+        padding-left: 50px;
+    }
+    li {
+        display: list-item;
+        margin: 10px 0px;
+    }
+}
+.av-list-disc {
+    @extend %av-list;
+    list-style-type: disc;
+}
+.av-list-upper-latin {
+    @extend %av-list;
+    list-style-type: upper-latin;
+}
+.av-list-decimal {
+    @extend %av-list;
+    list-style-type: decimal;
+}
 
 
 // CARDS
@@ -304,7 +331,7 @@
 
 
 
-//  S
+//  TABLES
 
 .av-table-container {
     overflow-x: auto;
@@ -313,16 +340,20 @@
         width: 100%;
         border-collapse: collapse;
         thead tr {
-            background-color: $color-dark-light;
+            background-color: $color-dark;
             td {
+                background-color: $color-dark;
                 padding: ($size-text * 1.7);
-                color: $color-text;
+                color: $color-white;
                 font-family: $bold-monts;
                 font-size: $size-text;
             }
         }
         tr:nth-child(even){
             background-color: $color-dark-lighter;
+        }
+        tr:nth-child(odd){
+            background-color: $color-dark-light;
         }
         td {
             padding: $size-text $size-text * 1.8;

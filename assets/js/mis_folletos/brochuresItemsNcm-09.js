@@ -1,4 +1,5 @@
 
+
 const brochures8 = [
     {
         title: 'Belleza',
@@ -28,6 +29,26 @@ const brochures8 = [
     {
         title: 'Flyer VEA Anew C10',
         file: 'VEAFlyerAnewC1021.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Cabello Mx',
+        file: 'CabelloMx06-10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Cuidado facial Mx',
+        file: 'CuidadoFacialMx06-10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Linea blancos Mx',
+        file: 'LineaBlancosMx06-10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Día de las madres Mx',
+        file: 'DiaMadresMx07-08.pdf',
         type: 'flyer',
     },
     {

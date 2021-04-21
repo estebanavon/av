@@ -1,5 +1,5 @@
 
-const brochures11 = [
+const brochuresNcm11 = [
     {
         title: 'Avon Contigo 11',
         file: 'avon_contigo_c0121.pdf',

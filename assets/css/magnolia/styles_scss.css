@@ -556,7 +556,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-text {
   color: #3b4546;
   font-family: montserrat-regular, Helvetica, sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 19px;
   margin-bottom: 19px;
 }
@@ -726,6 +726,41 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   font-size: 21px;
 }
 
+.av-list-disc, .av-list-upper-latin, .av-list-decimal {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  line-height: 25px;
+  font-size: 19px;
+  color: #3b4546;
+  text-align: justify;
+}
+
+.av-list-disc .av-highlight, .av-list-upper-latin .av-highlight, .av-list-decimal .av-highlight {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .av-list-disc, .av-list-upper-latin, .av-list-decimal {
+    padding-left: 50px;
+  }
+}
+
+.av-list-disc li, .av-list-upper-latin li, .av-list-decimal li {
+  display: list-item;
+  margin: 10px 0px;
+}
+
+.av-list-disc {
+  list-style-type: disc;
+}
+
+.av-list-upper-latin {
+  list-style-type: upper-latin;
+}
+
+.av-list-decimal {
+  list-style-type: decimal;
+}
+
 .av-card-link:hover {
   text-decoration: none;
 }
@@ -858,18 +893,23 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-table-container .av-table thead tr {
-  background-color: #cccccc;
+  background-color: #3b4546;
 }
 
 .av-table-container .av-table thead tr td {
+  background-color: #3b4546;
   padding: 32.3px;
-  color: #3b4546;
+  color: #fff;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-size: 19px;
 }
 
 .av-table-container .av-table tr:nth-child(even) {
   background-color: #f0f0f0;
+}
+
+.av-table-container .av-table tr:nth-child(odd) {
+  background-color: #cccccc;
 }
 
 .av-table-container .av-table td {
@@ -2293,6 +2333,14 @@ a {
   background-image: url("../../../img/responsabilidad-social/cm-convocatoria.jpg");
 }
 
+.av-convocatoria-2021 {
+  background-image: url("../../../img/responsabilidad-social/convocatoriaViolencia2021.jpg");
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .av-conv-1 {
   background-image: url("../../../img/responsabilidad-social/violence-banner-1.jpg");
   background-size: cover;
@@ -2319,12 +2367,6 @@ a {
 
 .av-conv-row .w-100 {
   height: 38px;
-}
-
-@media (min-width: 992px) {
-  .av-conv-row .w-100 {
-    height: 76px;
-  }
 }
 
 .av-prtnl-header {
@@ -2688,7 +2730,7 @@ a {
 .av-prtnl-text {
   color: #3b4546;
   font-family: gotham-book, Helvetica, sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 19px;
   margin-bottom: 19px;
 }
@@ -4580,6 +4622,20 @@ div.p-fix, h3.p-fix {
   background-image: url("../../../img/conoce-avon/ca-liderazgo-11.jpg");
 }
 
+.avMenuAnewControl {
+  display: none;
+}
+
+.avMenuAnewControl.active {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .avMenuAnewControl.active {
+    display: none;
+  }
+}
+
 .av-anew-header {
   width: 100%;
   background-color: #fff;
@@ -4700,7 +4756,6 @@ div.p-fix, h3.p-fix {
   width: 100%;
   margin: 0 auto;
   display: block;
-  max-width: 1600px;
 }
 
 .av-anew-ages {
@@ -5063,8 +5118,7 @@ div.p-fix, h3.p-fix {
   background-position: center;
   background-size: cover;
   margin-bottom: 30px;
-  right: -30px;
-  border-radius: 50px 0px 0px 0px;
+  right: 0px;
   margin-top: 40px;
 }
 
@@ -5102,8 +5156,7 @@ div.p-fix, h3.p-fix {
   background-position: center;
   background-size: cover;
   margin-bottom: 30px;
-  left: -30px;
-  border-radius: 0px 0px 50px 0px;
+  left: 0px;
 }
 
 @media (min-width: 768px) {

@@ -23,10 +23,13 @@ section.av-lw {
             justify-content: center;
             align-items: center;
             background-color: $color-dark-30;
+            position: relative;
             .lw-logo {
                 display: block;
                 margin: 0 auto;
                 width: 160px !important;
+                position: absolute;
+                left: 30%;
             }
            .av-hover {
               display: none;

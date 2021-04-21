@@ -1,6 +1,6 @@
 
 
-const brochures5 = [
+const brochuresNcm20 = [
     {
         title: 'Anew Clinical Especial',
         file: 'AnewClinicalEvento',

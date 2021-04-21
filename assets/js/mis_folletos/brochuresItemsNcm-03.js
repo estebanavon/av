@@ -1,5 +1,5 @@
 
-const brochures3 = [
+const brochuresNcm3 = [
     {
         title: 'Belleza',
         file: '1',

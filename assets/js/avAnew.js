@@ -33,8 +33,14 @@ $(document).ready(function(){
     $('.av-anew-trio .avMove').click(function(){
         let avDirection = $(this).attr('av-value');
         if (avDirection == "right"){
-            $(this).parent().children('.av-col').css('transform','translateX(-270px)');
-            $(this).hide().next().show();
+            if (once) {
+                $(this).parent().children('.av-col').css('transform','translateX(-270px)');
+                once = false;
+            } else {
+                $(this).parent().children('.av-col').css('transform','translateX(-540px)');
+                $(this).hide().next().show();
+            }
+            
         } else {
             $(this).parent().children('.av-col').css('transform','translateX(0px)');
             $(this).hide().prev().show();
@@ -57,25 +63,24 @@ $(document).ready(function(){
 
     $('#avMenuButton').click(function(){
         $('.avMenu').addClass('active');
-        $('#avMenuClose').show();
-        $(this).hide();
+        $('#avMenuClose').addClass('active');
+        $(this).removeClass('active');
     });
     $('#avMenuClose').click(function(){
         $('.avMenu').removeClass('active');
-        $('#avMenuButton').show();
-        $(this).hide();
+        $('#avMenuButton').addClass('active');
+        $(this).removeClass('active');
     });
     $('.avMenuAnew').children().click(function(){
         let avvalue = $(this).attr('value');
         let selector = $('section').eq(avvalue)
-
         selector.siblings('section').hide();
         $(window).scrollTop(0);
         selector.show();
         $(this).addClass('active').siblings().removeClass('active');
         $('.avMenu').removeClass('active');
-        $('#avMenuClose').hide();
-        $('#avMenuButton').show();
+        $('#avMenuClose').removeClass('active').prev().addClass('active');
+        
         
     });
     $('.avMoreSection').click(function(){

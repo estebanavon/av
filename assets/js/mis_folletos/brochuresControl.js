@@ -7,14 +7,38 @@ $(document).ready(function(){
     
 
     const avMarket = AvonAnalyticsObjex.Visitor.market;
-
+    
     var campaignTwo,campaignThree;
     
     otherCampaign(currentCampaign, true);
     otherCampaign(currentCampaign, false);
 
-    const brochuresWrapper = [brochures1,brochures2,brochures3,brochures4,brochures5,brochures6,brochures7,brochures8,brochures9,brochures10,brochures11,brochures12,brochures13,brochures14,brochures15,brochures16,brochures17,brochures18,brochures19,brochures20];
     
+    var d = AvonAnalyticsObjex.Profile.zone;
+    var avNcm, brochuresWrapper;
+    var NCMzone = [
+        '2700','2701','2702','2703','2704','2705','2706','2707','2708','2709','2710',
+    ];
+    for (i=0; i < NCMzone.length; i++){
+        if (d == NCMzone[i]) {
+            avNcm = true;
+        } 
+    }
+
+    
+    if(avNcm) {
+        brochuresWrapper = [brochuresNcm1,brochuresNcm2,brochuresNcm3,brochuresNcm4,brochuresNcm5,brochuresNcm6,brochuresNcm7,brochuresNcm8,brochuresNcm9,brochuresNcm10,brochuresNcm11,brochuresNcm12,brochuresNcm13,brochuresNcm14,brochuresNcm15,brochuresNcm16,brochuresNcm17,brochuresNcm18,brochuresNcm19,brochuresNcm20];
+        console.log("TRUE")
+    } else {
+        brochuresWrapper = [brochures1,brochures2,brochures3,brochures4,brochures5,brochures6,brochures7,brochures8,brochures9,brochures10,brochures11,brochures12,brochures13,brochures14,brochures15,brochures16,brochures17,brochures18,brochures19,brochures20];
+        console.log("NONE")
+    }
+
+    if (AvonAnalyticsObjex.Profile.repAcct == '888888827'){
+        brochuresWrapper = [brochuresNcm1,brochuresNcm2,brochuresNcm3,brochuresNcm4,brochuresNcm5,brochuresNcm6,brochuresNcm7,brochuresNcm8,brochuresNcm9,brochuresNcm10,brochuresNcm11,brochuresNcm12,brochuresNcm13,brochuresNcm14,brochuresNcm15,brochuresNcm16,brochuresNcm17,brochuresNcm18,brochuresNcm19,brochuresNcm20];
+        console.log("TRUE")
+    }
+
     var brochuresConstructor = [brochuresWrapper[currentCampaign-1],brochuresWrapper[campaignTwo - 1],brochuresWrapper[campaignThree - 1]];
     var brochurePrint = ["","","",""];
 
@@ -103,16 +127,7 @@ $(document).ready(function(){
         return urlFile
     }
     
-    function imgImg(type,file) {
-        let imgRoute;
-        if (type == 'img') {
-            imgRoute = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/'+ file;
-            return imgRoute
-        } else if (type == 'video'){
-            imgRoute = '/FLDSuite/static/images/mis_folletos/'+ file + '.jpg';
-            return imgRoute
-        }
-    }
+
     var canvasIdNumber,canvasID,_PDF_DOC;
 
     function pdfImg(type,canvasIdNumber,file,e){
@@ -126,7 +141,7 @@ $(document).ready(function(){
                 showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/'+ brochuresConstructor[e][i].file +'',canvasID);
             }
             
-        } else if (type == 'imb') {
+        } else {
             if (campaignSelector(e) > 9 && file >= 10) {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
@@ -137,7 +152,7 @@ $(document).ready(function(){
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
                 'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/'+ campaignSelector(e) +'/20'+ otherYear(e) +
                 '' + campaignSelector(e) + '_0' + file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
-            } else if (campaignSelector(e) <= 9 && file <= 9) {
+            } else if (campaignSelector(e) <= 9 && file < 9) {
                 avCanvasLet = '<div style="overflow: hidden;border-radius: 8px;position: absolute;height: 130px;width: 132px;">'+
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
                 'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/0'+ campaignSelector(e) +'/20'+ otherYear(e) +
@@ -147,9 +162,8 @@ $(document).ready(function(){
                 '<iframe style="position: absolute;height: 230px;top: -13px;left: -83px;" '+
                 'scrolling="no" frameborder="0" src="https://viewer.ipaper.io/avon-nola/mexico/0'+ campaignSelector(e) +'/20'+ otherYear(e) +
                 '0' + campaignSelector(e) + '_' + file + '/-/embedded/flat/singlepage/1/"></iframe></div>';
-            }  
-        } else {
-            avCanvasLet = '';
+            }
+            
         }
         return avCanvasLet
     }
@@ -197,7 +211,7 @@ $(document).ready(function(){
                     canvasIdNumber = campaignSelector(e) + '_' +i;
                     
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
-                        '<div class="av-brochure-image" style="background-size: cover; background-image: url(\''+ imgImg(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) +'\');">' + pdfImg(brochuresConstructor[e][i].type,canvasIdNumber,brochuresConstructor[e][i].file,e) +
+                        '<div class="av-brochure-image">' + pdfImg(brochuresConstructor[e][i].type,canvasIdNumber,brochuresConstructor[e][i].file,e) +
                             '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
                             '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" />' +
                             '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,e,brochuresConstructor[e][i].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
@@ -264,13 +278,5 @@ $(document).ready(function(){
             brochureSelector.children(':not([data-type="'+ avFilter +'"])').hide();
         }
     });
-  	
-    $(window).scroll(function () {
-        const scrollPosition = $(document).scrollTop();
-        if (scrollPosition > 20) {
-            $(".av-brochure-aside").addClass('av-sticky').next().addClass('av-sticky');
-        } else {
-            $(".av-brochure-aside").removeClass('av-sticky').next().removeClass('av-sticky');
-        }
-    });
+
 })

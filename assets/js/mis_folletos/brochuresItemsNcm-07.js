@@ -1,5 +1,5 @@
 
-const brochures7 = [
+const brochuresNcm7 = [
     {
         title: 'Minifolleto de las mejores marcas',
         file: 'MinifolletoMejoresMarcas.pdf',
