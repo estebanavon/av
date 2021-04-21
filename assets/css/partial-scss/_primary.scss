@@ -556,8 +556,11 @@
     width: 90%;
     height: 90%;
     border: 1px $color-white solid;
-    border-radius: 100px 0;
+    border-radius: 60px 0;
     align-self: center;
+    @media (min-width:$media-2) {
+        border-radius: 100px 0;
+    }
 }
 .flex-1{
     flex-grow: 1;

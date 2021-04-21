@@ -1167,10 +1167,16 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   width: 90%;
   height: 90%;
   border: 1px #fff solid;
-  border-radius: 100px 0;
+  border-radius: 60px 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (min-width: 992px) {
+  .av-frame {
+    border-radius: 100px 0;
+  }
 }
 
 .flex-1 {
@@ -4101,8 +4107,10 @@ div.p-fix, h3.p-fix {
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
 }
 
-.av-ca-brand {
-  margin-bottom: 10px;
+@media (min-width: 1024px) {
+  .av-ca-brand {
+    margin-bottom: 10px;
+  }
 }
 
 .av-header-mobile {
@@ -4158,7 +4166,7 @@ div.p-fix, h3.p-fix {
   transition: all 0.5s;
   z-index: 100;
   background-color: #F7F7F7;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
 }
@@ -4169,11 +4177,20 @@ div.p-fix, h3.p-fix {
           transform: translateY(85px);
 }
 
-.avMenu a, .avMenu span {
-  padding: 20px 0px;
+.avMenu a, .avMenu > span {
+  padding: 15px 0px;
   font-size: 19px;
   color: #3b4546;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .av-people {
@@ -4624,6 +4641,8 @@ div.p-fix, h3.p-fix {
 
 .avMenuAnewControl {
   display: none;
+  width: 56px;
+  height: 68px;
 }
 
 .avMenuAnewControl.active {
@@ -4633,6 +4652,18 @@ div.p-fix, h3.p-fix {
 @media (min-width: 1024px) {
   .avMenuAnewControl.active {
     display: none;
+  }
+}
+
+.av-anew-institute {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (min-width: 1024px) {
+  .av-anew-institute {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

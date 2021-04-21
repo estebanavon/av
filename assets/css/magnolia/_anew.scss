@@ -1,5 +1,7 @@
 .avMenuAnewControl {
     display: none;
+    width: 56px;
+    height: 68px;
     &.active {
         display: block;
         @media (min-width:$media-3) {
@@ -7,7 +9,12 @@
         }
     }
 }
-
+.av-anew-institute {
+    transform: scale(0.9);
+    @media (min-width:$media-3) {
+        transform: scale(1);
+    }
+}
 .av-anew-header {
     width: 100%;
     background-color: $color-white;

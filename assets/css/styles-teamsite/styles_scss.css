@@ -1361,10 +1361,16 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   width: 90%;
   height: 90%;
   border: 1px #fff solid;
-  border-radius: 100px 0;
+  border-radius: 60px 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (min-width: 992px) {
+  .av-frame {
+    border-radius: 100px 0;
+  }
 }
 
 .flex-1 {
