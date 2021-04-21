@@ -10,9 +10,8 @@
     }
 }
 .av-anew-institute {
-    transform: scale(0.9);
     @media (min-width:$media-3) {
-        transform: scale(1);
+        transform: scale(1.5);
     }
 }
 .av-anew-header {
@@ -26,7 +25,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 15px 10px 15px;
+    padding: 15px 10px 10px 10px;
     @media (min-width:$media-3) {
         flex-direction: column;
         padding: 10px 30px 20px 30px;
@@ -60,8 +59,11 @@
         padding-top: 130px;
     }
     .av-title {
-        font-size: 35px;
+        font-size: 31px;
         text-transform: uppercase;
+        @media (min-width:$media-1) {
+            font-size: 35px;
+        }
     }
 }
 .av-anew-hero {
@@ -129,9 +131,8 @@
     }
 }
 .av-anew-marker {
-    width: 150px;
-    min-width: 150px;
-    height: 100%;
+    width: 145px;
+    min-width: 145px;
     overflow: hidden;
     border-radius: 50px 0px 50px 0px;
     min-height: 30px;
@@ -140,6 +141,21 @@
     
     &:hover {
         box-shadow: $color-shadow-hover;
+    }
+    &.all {
+        background-color: #46A29F;
+    }
+    &.c25 {
+        background-color: #F299F2;
+    }
+    &.c30 {
+        background-color: #DB7289;
+    }
+    &.c45 {
+        background-color: #CCA65B;
+    }
+    &.c60 {
+        background-color: #9F85E5;
     }
     @media (min-width:$media-2) {
         width: 170px;
@@ -161,7 +177,7 @@
     }
     span {
         font-family: $bold-monts;
-        color: $color-text;
+        color: $color-white;
         display: block;
     }
     
@@ -169,8 +185,11 @@
         text-transform: uppercase;
     }
     .av-numbers {
-        font-size: 30px;
+        font-size: 26px;
         text-transform: uppercase;
+        @media (min-width:$media-2) {
+            font-size: 30px;
+        }
     }
     .av-description {
         font-size: 14px;

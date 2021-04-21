@@ -415,10 +415,12 @@ div.p-fix, h3.p-fix {
     
 }
 .av-ca-brand {
+    transform: scale(0.7);
     @media (min-width:$media-3) {
         margin-bottom: 10px;
+        transform: scale(1);
     }
-        
+    
 }
 .av-header-mobile {
     padding: 20px 15px;

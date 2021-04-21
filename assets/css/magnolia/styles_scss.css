@@ -4107,9 +4107,16 @@ div.p-fix, h3.p-fix {
   background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
 }
 
+.av-ca-brand {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
 @media (min-width: 1024px) {
   .av-ca-brand {
     margin-bottom: 10px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -4655,15 +4662,10 @@ div.p-fix, h3.p-fix {
   }
 }
 
-.av-anew-institute {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
 @media (min-width: 1024px) {
   .av-anew-institute {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
@@ -4685,7 +4687,7 @@ div.p-fix, h3.p-fix {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 15px 10px 15px;
+  padding: 15px 10px 10px 10px;
 }
 
 @media (min-width: 1024px) {
@@ -4775,8 +4777,14 @@ div.p-fix, h3.p-fix {
 }
 
 .av-anew-container .av-title {
-  font-size: 35px;
+  font-size: 31px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .av-anew-container .av-title {
+    font-size: 35px;
+  }
 }
 
 .av-anew-hero {
@@ -4874,9 +4882,8 @@ div.p-fix, h3.p-fix {
 }
 
 .av-anew-marker {
-  width: 150px;
-  min-width: 150px;
-  height: 100%;
+  width: 145px;
+  min-width: 145px;
   overflow: hidden;
   border-radius: 50px 0px 50px 0px;
   min-height: 30px;
@@ -4888,6 +4895,26 @@ div.p-fix, h3.p-fix {
 .av-anew-marker:hover {
   -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.av-anew-marker.all {
+  background-color: #46A29F;
+}
+
+.av-anew-marker.c25 {
+  background-color: #F299F2;
+}
+
+.av-anew-marker.c30 {
+  background-color: #DB7289;
+}
+
+.av-anew-marker.c45 {
+  background-color: #CCA65B;
+}
+
+.av-anew-marker.c60 {
+  background-color: #9F85E5;
 }
 
 @media (min-width: 992px) {
@@ -4919,7 +4946,7 @@ div.p-fix, h3.p-fix {
 
 .av-anew-marker span {
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  color: #3b4546;
+  color: #fff;
   display: block;
 }
 
@@ -4928,8 +4955,14 @@ div.p-fix, h3.p-fix {
 }
 
 .av-anew-marker .av-numbers {
-  font-size: 30px;
+  font-size: 26px;
   text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .av-anew-marker .av-numbers {
+    font-size: 30px;
+  }
 }
 
 .av-anew-marker .av-description {
