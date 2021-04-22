@@ -48,7 +48,7 @@
     font-family: $font;
     font-size: 17px;
     line-height: 19px;
-    margin-bottom: $size-text;
+    margin-bottom: $size-text - 2;
     @media (min-width:$media-1) {
         margin-bottom: $size-text + 1;
     }
@@ -86,6 +86,9 @@
     font-size: 22px;
     font-family: $bold-monts !important;
     color:$color-secondary !important;
+}
+.text-uppercase {
+    text-transform: uppercase;
 }
 .av-sale-price {
     @include salePrice;

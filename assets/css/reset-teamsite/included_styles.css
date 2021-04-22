@@ -209,6 +209,10 @@
   font-style: normal;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .av-sale-price {
   font-size: 22px;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif !important;
