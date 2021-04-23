@@ -123,6 +123,18 @@
     left: 10px;
     display: none;
 }
+.avMoveMask {
+    position: absolute;
+    padding: 15px;
+    transform: scale(1.5);
+    top: 40%;
+    right: -40px;
+    cursor: pointer;
+    display: none;
+    @media (min-width:840px) {
+        display: block;
+    }
+}
 .av-anew-items {
     display: flex;
     justify-content: flex-start;
@@ -147,7 +159,6 @@
     min-height: 30px;
     transition: all 1s;
     margin-right: 20px;
-    box-shadow: $color-shadow-border;
     
     &:hover {
         box-shadow: $color-shadow-hover;
@@ -454,6 +465,19 @@
     img {
         display: block;
         margin: 15px auto;
+    }
+}
+.av-transform-decor {
+    position: absolute;
+    display: none;
+    @media (min-width:$media-2) {
+        display: block;
+        top: 0%;
+    }
+    @media (min-width:$media-3) {
+        top: 0%;
+        top: 10%;
+        left: -30%;
     }
 }
 .av-anew-transition {

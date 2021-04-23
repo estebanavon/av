@@ -57,6 +57,23 @@ $(document).ready(function(){
         }
         
     });
+    $('.avMoveMask').click(function(){
+        
+        $(this).parent().parent().children().eq(2).css({
+            "visibility":"hidden",
+            "opacity":"0",
+        });
+        setTimeout( function() {
+            $('.avMoveMask').parent().parent().children().eq(5).css({
+                "position":"static",
+                "opacity":"1",
+            });
+            $('.avMoveMask').parent().parent().children().eq(2).css({
+                "position":"absolute",
+            });
+       }, 500);
+        $(this).hide();
+    });
 
     $(window).resize(function(){
         screenWidth = window.innerWidth;
@@ -71,7 +88,7 @@ $(document).ready(function(){
         $('.av-move-left').hide();
         once = true;
     });
-    $('body').append(avFooterInsert);
+    
 
     $('#avMenuButton').click(function(){
         $('.avMenu').addClass('active');
@@ -120,22 +137,3 @@ $(document).ready(function(){
         $(this).hide().prev().show('slow');
     });
 });
-const avFooterInsert = '<footer class="av-footer">'+
-                                '<div class="row">'+
-                                    '<div class="col-auto mx-auto"><svg width="154.2px" height="30px" fill="#fff"><use xlink:href="#brand"></use></svg></div>'+
-                                    '<div class="av-spacer"></div><div class="w-100"></div>'+
-                                    '<div class="col">'+
-                                        '<div class="d-flex flex-column flex-sm-row justify-content-around w-100 flex-wrap">'+
-                                            '<a target="_self" href="./conoceavon.html" >Nuestros productos</a>'+
-                                            '<a target="_self" href="./conoceavon-unete.html">Únete a Avon</a>'+
-                                            '<a target="_self" href="./conoceavon-empresarias.html">Sé una empresaria</a>'+
-                                            '<a target="_self" href="https://www.avon.mx/avon-mx/">Inicio</a>'+
-                                            '<a target="_self" href="https://tienda.mercadolibre.com.mx/avon">Tienda en línea</a>'+
-                                        '</div>'+
-                                        '<div class="av-spacer"></div>'+
-                                        '<div class="w-100">'+
-                                            '<h4 style="text-align: center;">2021, Avon Products Inc</h4>'+
-                                        '</div>'+
-                                    '</div>'+
-                                '</div>'+
-                            '</footer>';

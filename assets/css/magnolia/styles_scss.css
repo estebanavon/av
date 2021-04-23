@@ -1302,7 +1302,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 @media (min-width: 768px) {
   .av-footer {
-    padding: 8%;
+    padding: 6%;
   }
 }
 
@@ -4871,6 +4871,23 @@ div.p-fix, h3.p-fix {
   }
 }
 
+.avMoveMask {
+  position: absolute;
+  padding: 15px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  top: 40%;
+  right: -40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (min-width: 840px) {
+  .avMoveMask {
+    display: block;
+  }
+}
+
 .av-anew-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4905,8 +4922,6 @@ div.p-fix, h3.p-fix {
   -webkit-transition: all 1s;
   transition: all 1s;
   margin-right: 20px;
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 .av-anew-marker:hover {
@@ -5367,6 +5382,26 @@ div.p-fix, h3.p-fix {
 .av-an-ages-row img {
   display: block;
   margin: 15px auto;
+}
+
+.av-transform-decor {
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .av-transform-decor {
+    display: block;
+    top: 0%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .av-transform-decor {
+    top: 0%;
+    top: 10%;
+    left: -30%;
+  }
 }
 
 .av-anew-transition {
