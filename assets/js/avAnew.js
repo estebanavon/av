@@ -34,12 +34,26 @@ $(document).ready(function(){
         screenWidth = window.innerWidth;
         let avDirection = $(this).attr('av-value');
         if (avDirection == "right"){
-            $(this).parent().children('.av-col').css('transform','translateX(-'+ ('800' - screenWidth) +'px)');
-            $(this).hide().next().show();
+            if (screenWidth < '500') {
+                if (once){
+                    $(this).parent().children('.av-col').css('transform','translateX(-250px)');
+                    $(this).next().show();
+                    once = false;
+                } else {
+                    $(this).parent().children('.av-col').css('transform','translateX(-'+ ('850' - screenWidth) +'px)');
+                    $(this).hide()
+                    once = true;
+                }
+            } else {
+                $(this).parent().children('.av-col').css('transform','translateX(-'+ ('850' - screenWidth) +'px)');
+                $(this).hide().next().show();
+            }
+            
             
         } else {
             $(this).parent().children('.av-col').css('transform','translateX(0px)');
             $(this).hide().prev().show();
+            once = true;
         }
         
     });
@@ -55,6 +69,7 @@ $(document).ready(function(){
         $('.av-anew-marker').css('transform','translateX(0px)')
         $('.av-anew-trio').children('.av-col').css('transform','translateX(0px)')
         $('.av-move-left').hide();
+        once = true;
     });
     $('body').append(avFooterInsert);
 
