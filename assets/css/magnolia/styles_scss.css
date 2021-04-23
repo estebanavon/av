@@ -4800,8 +4800,14 @@ div.p-fix, h3.p-fix {
   }
 }
 
+.av-anew-hero {
+  background-color: #F7F7F7;
+}
+
 .av-anew-hero img {
   width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .av-anew-hero img:first-child {
@@ -5040,7 +5046,7 @@ div.p-fix, h3.p-fix {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -5336,6 +5342,8 @@ div.p-fix, h3.p-fix {
   background-color: #f7f7f7;
   padding-top: 70px;
   padding-bottom: 80px;
+  position: relative;
+  top: -2px;
 }
 
 .av-an-ages-row {
