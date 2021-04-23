@@ -67,41 +67,19 @@
     }
 }
 .av-anew-hero {
-    position: relative;
     img {
         width: 100%;
-    }
-    .av-anew-hero-transform {
-        position: absolute;
-        top: 15%;
-        left: 10%;
-        width: 45%;
-        @media (min-width:$media-2) {
-            top: 30%;
+        
+        &:first-child {
+            display: none;
+            @media (min-width:$media-1) {
+                display: block;
+            }   
         }
-        h3,h2 {
-            font-family: $light-zona;
-            font-style: normal;
-            font-weight: normal;
-            text-transform: uppercase;
-            color: $color-gradient-2;
-        }
-        h3 {
-            font-size: 19px;
-            @media (min-width:$media-2) {
-                font-size: 25px;
-            }
-            @media (min-width:$media-4) {
-                font-size: 30px;
-            }
-        }
-        h2 {
-            font-size: 30px;
-            color: $color-dark-light;
-            span {
-                font-family: $regular-zona;
-                color: $color-gradient-2;
-            }
+        &:last-child {
+            @media (min-width:$media-1) {
+                display: none;
+            }   
         }
     }
 }
@@ -129,7 +107,7 @@
     color: $color-white;
     //display: none;
     z-index: 30;
-    @media (min-width:1100px) {
+    @media (min-width:840px) {
         display: none !important;
     }
 }
@@ -162,35 +140,21 @@
     }
 }
 .av-anew-marker {
-    width: 140px;
-    min-width: 140px;
+    width: 150px;
+    min-width: 150px;
     overflow: hidden;
     border-radius: 50px 0px 50px 0px;
     min-height: 30px;
     transition: all 1s;
     margin-right: 20px;
+    box-shadow: $color-shadow-border;
     
     &:hover {
         box-shadow: $color-shadow-hover;
     }
-    &.all {
-        background-color: #3c8f8c;
-    }
-    &.c25 {
-        background-color: #F299F2;
-    }
-    &.c30 {
-        background-color: #DB7289;
-    }
-    &.c45 {
-        background-color: #CCA65B;
-    }
-    &.c60 {
-        background-color: #9F85E5;
-    }
     @media (min-width:$media-2) {
-        width: 170px;
-        min-width: 170px;
+        width: 180px;
+        min-width: 180px;
     }
     
     @media (min-width:900px) {
@@ -227,7 +191,21 @@
         font-family: $regular-monts;
     }
 }
-
+.call {
+    background-color: salmon;
+}
+.c25 {
+    background-color: #F299F2;
+}
+.c30 {
+    background-color: #DB7289;
+}
+.c45 {
+    background-color: #CCA65B;
+}
+.c60 {
+    background-color: #9F85E5;
+}
 
 .av-anew-subtitle {
     text-transform: uppercase;
@@ -263,18 +241,18 @@
         padding-left: $caPadding * 0.3;
         padding-right: $caPadding * 0.3;
     }
+    
     @media (min-width:$media-3){
         padding-left: $caPadding;
         padding-right: $caPadding;
     }
-    @media (min-width:$media-4){
-        padding-left: $caPadding * 1.9;
-        padding-right: $caPadding * 1.9;
+    @media (min-width:$media-5){
+        padding-left: $caPadding * 1.8;
+        padding-right: $caPadding * 1.8;
     }
-    
     @media (min-width:$media-6){
-        padding-left: $caPadding * 3;
-        padding-right: $caPadding * 3;
+        padding-left: $caPadding * 2.8;
+        padding-right: $caPadding * 2.8;
     }
     .av-col {
         display: flex;
@@ -349,7 +327,7 @@
         background-color: $color-light-white;
         width: 100%;
         z-index: 0;
-        @media (min-width:$media-1) {
+        @media (min-width:$media-2) {
             left: 5%;
             width: 85%;
         }
@@ -391,14 +369,17 @@
         
         @media (min-width:$media-1){
             #{$direction}: -$caPadding * 0.3;
+            height: 350px;
         }
         @media (min-width:$media-3){
+            #{$direction}: -$caPadding * 0.5;
             margin-bottom: 2vh;
             margin-top: 0;
-            height: 420px;
+            height: 400px;
         }
         @media (min-width:$media-4){
             #{$direction}: 0px;
+            height: 420px;
         }
     }
     &-up {
@@ -439,8 +420,10 @@
 }
 .av-an-ages-row {
     display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
+    flex-wrap: wrap;
+    @media (min-width:$media-1) {
+        flex-wrap: nowrap;
+    }
     > div {
         flex: 1;
     }
@@ -467,6 +450,31 @@
     }
     .av-text {
         padding: 10px;
+    }
+    img {
+        display: block;
+        margin: 15px auto;
+    }
+}
+.av-anew-transition {
+    
+    width: 100%;
+    opacity: 0;
+    height: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    background-color: $color-white;
+    transition: all 0.7s;
+    overflow: hidden;
+    > div {
+        transform: scale(2);
+        transition: all 0.7s;
     }
 }
 

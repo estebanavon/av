@@ -961,6 +961,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-card-link:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .av-card {
