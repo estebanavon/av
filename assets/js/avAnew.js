@@ -127,6 +127,16 @@ $(document).ready(function(){
         
         
     });
+    var avScrollTop = document.body.scrollTop;
+    console.log(avScrollTop);
+    if(avScrollTop < '200px') {
+        $('.av-anew-scrollTop').hide();
+    } else {
+        $('.av-anew-scrollTop').show();
+    }
+    $('.av-anew-scrollTop').click(function(){
+        $(window).scrollTop(0);
+    });
     $('.avMoreSection').click(function(){
         $('.av-anew-more').hide('slow');
         $('.avMoreSection').css("opacity","1");
