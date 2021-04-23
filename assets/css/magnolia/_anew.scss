@@ -10,8 +10,12 @@
     }
 }
 .av-anew-institute {
+    transform: scale(1.4);
+    position: relative;
+    right: 3px;
     @media (min-width:$media-3) {
         transform: scale(1.5);
+        right: 0px;
     }
 }
 .av-anew-header {

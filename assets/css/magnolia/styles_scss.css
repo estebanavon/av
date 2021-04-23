@@ -4667,10 +4667,18 @@ div.p-fix, h3.p-fix {
   }
 }
 
+.av-anew-institute {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  position: relative;
+  right: 3px;
+}
+
 @media (min-width: 1024px) {
   .av-anew-institute {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
+    right: 0px;
   }
 }
 
