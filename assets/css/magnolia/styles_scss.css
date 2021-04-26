@@ -4936,6 +4936,7 @@ div.p-fix, h3.p-fix {
   -webkit-transition: all 1s;
   transition: all 1s;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .av-anew-marker:hover {
@@ -4997,7 +4998,11 @@ div.p-fix, h3.p-fix {
 }
 
 .call {
-  background-color: salmon;
+  background-color: #46A29F;
+}
+
+.call.c {
+  background-color: #F07E20;
 }
 
 .c25 {
@@ -5417,32 +5422,6 @@ div.p-fix, h3.p-fix {
     top: 0%;
     top: 10%;
     left: -30%;
-  }
-}
-
-.av-anew-scrollTop {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  padding: 10px;
-  background-color: #7F28C4;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 40px;
-  color: #fff;
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  z-index: 400;
-  cursor: pointer;
-}
-
-.av-anew-scrollTop:hover, .av-anew-scrollTop:active {
-  background-color: #6A17AD;
-}
-
-@media (min-width: 768px) {
-  .av-anew-scrollTop {
-    display: none;
   }
 }
 

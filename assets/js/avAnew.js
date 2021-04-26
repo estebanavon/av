@@ -100,15 +100,12 @@ $(document).ready(function(){
         $('#avMenuButton').addClass('active');
         $(this).removeClass('active');
     });
-
-    $('.avMenuAnew').children().click(function(){
-        let avvalue = $(this).attr('value');
+    function avAnewTransition(avvalue){
         let selector = $('section').eq(avvalue)
         $('.av-anew-transition').css({
             'height':'100%',
             'opacity':'1',
         });
-        
         setTimeout( function() {
             selector.siblings('section').hide();
             selector.show();
@@ -120,16 +117,19 @@ $(document).ready(function(){
         setTimeout( function() {
             $('.av-anew-transition').removeAttr('style');
        }, 2800);
-        
+    }
+
+    $('.avMenuAnew').children().click(function(){
+        let avvalue = $(this).attr('value');
+        avAnewTransition(avvalue);
         $(this).addClass('active').siblings().removeClass('active');
         $('.avMenu').removeClass('active');
         $('#avMenuClose').removeClass('active').prev().addClass('active');
-        
-        
     });
     
-    $('.av-anew-scrollTop').click(function(){
-        $(window).scrollTop(0);
+    $('.avAnewAgeAllLink').click(function(){
+        avAnewTransition(3);
+        $('.avMenuAnew').children().eq(3).addClass('active').siblings().removeClass('active');
     });
     $('.avMoreSection').click(function(){
         $('.av-anew-more').hide('slow');
