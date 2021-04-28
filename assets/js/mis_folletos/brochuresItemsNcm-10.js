@@ -1,24 +1,37 @@
-
-const brochuresNcm10 = [
-    {
-        title: 'Avon Contigo 10',
-        file: 'avon_contigo_c0121.pdf',
-        type: 'contigo',
-    },
+const brochures10 = [
     {
         title: 'Belleza',
-        file: '1',
-        type: 'imb',
+        file: 'BellezaMx10.pdf',
+        type: 'flyer',
     },
     {
         title: 'Fashion & Home',
-        file: '2',
-        type: 'imb',
+        file: 'FashionNHomeMx10.pdf',
+        type: 'flyer',
     },
     {
-        title: 'Rutinas Anew',
-        file: '3',
-        type: 'imb',
+        title: 'Avon Contigo',
+        file: 'avon_contigo_c1021.pdf',
+        type: 'contigo',
+    },
+    {
+        title: 'Home Office',
+        file: 'HomeOfficeMx09-10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Cabello Mx',
+        file: 'CabelloMx06-10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Cuidado facial Mx',
+        file: 'CuidadoFacialMx06-10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Linea blancos Mx',
+        file: 'LineaBlancosMx06-10.pdf',
+        type: 'flyer',
     },
 ]
-
