@@ -1,5 +1,8 @@
 
-@import '../partial-scss/routes';
+$prod-font: '/FLDSuite/static/fonts';
+$route-font: $prod-font;
+$route-images: '../images';;
+
 @import '../partial-scss/font';
 @import '../partial-scss/colors';
 @import '../partial-scss/variables';

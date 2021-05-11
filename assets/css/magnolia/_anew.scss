@@ -1,3 +1,4 @@
+
 .avMenuAnewControl {
     display: none;
     width: 56px;
@@ -493,7 +494,16 @@
         left: -30%;
     }
 }
-
+.av-modal-mimage {
+    @media (max-width:$media-1) {
+        flex: 1;
+        padding: 20px;
+        width: 100%;
+    }
+    @media (min-width:$media-1) {
+        padding: 40px 45px 0px 25px;
+    }
+}
 .av-anew-transition {
     
     width: 100%;

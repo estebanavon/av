@@ -3,7 +3,12 @@ section.av-lw {
     flex-direction: row;
     width: 100%;
     min-height: 96vh;
-
+    > div:first-child {
+        display: none;
+        @media (min-width:$media-1){
+            display: block;
+        }
+    } 
     aside {
         flex: 1;
         z-index: 20;
@@ -55,7 +60,6 @@ section.av-lw {
             }
         }
         @media (min-width:$media-1){
-            display: block;
             display: flex;
             flex-direction: column;
         }
@@ -131,8 +135,11 @@ section.av-lw {
                 &.unable {
                     cursor: pointer;
                     margin-top: 0rem;
-                    padding: $size-text ($menu-padding + 5%) $size-text $menu-padding;
+                    padding: $size-text;
                     transition: background-color 0.5s;
+                    @media (min-width:$media-1){
+                        padding: $size-text ($menu-padding + 5%) $size-text $menu-padding;
+                    }
                     &.sub {
                         padding: ($size-text - 4px) $menu-padding + 5% ($size-text - 4px) $menu-padding + 6%;
                         font-size: $size-text * 1.2;

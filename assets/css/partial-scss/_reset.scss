@@ -7,13 +7,11 @@
 html{
     scroll-behavior: smooth;
 }
-body{ 
-    
+body{    
     display: block;
     margin: 0 auto;
     overflow-x: hidden;
     font-family: $regular-monts;
-    
     .h1, .h2, .h3, h1, h2, h3 {
         margin: 0;
     }
@@ -25,11 +23,22 @@ video:focus {
     outline: none;
   }
 .multimedia-title h2 {
-    @include subtitle($size-text * 1.9);
+    @include title;
     margin: 2rem;
 }
+.left-nav h3 {
+    font-family: $regular-monts;
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+.left-nav ul.left-nav-list-1 li > a {
+    margin-bottom: 13px;
+    line-height: 13px;
+    font-family: $regular-monts;
+}
 .multimedia-layout-wrapper .video-text-item h3 {
-    @include subtitle($size-text);
+    @include title;
     margin: 2rem;
 }
 a {

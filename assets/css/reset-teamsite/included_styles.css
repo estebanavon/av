@@ -219,6 +219,41 @@
   color: #E82F89 !important;
 }
 
+.av-list-disc, .av-list-upper-latin, .av-list-decimal {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  line-height: 19px;
+  font-size: 17px;
+  color: #3b4546;
+  text-align: justify;
+}
+
+.av-list-disc .av-highlight, .av-list-upper-latin .av-highlight, .av-list-decimal .av-highlight {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .av-list-disc, .av-list-upper-latin, .av-list-decimal {
+    padding-left: 50px;
+  }
+}
+
+.av-list-disc li, .av-list-upper-latin li, .av-list-decimal li {
+  display: list-item;
+  margin: 10px 0px;
+}
+
+.av-list-disc {
+  list-style-type: disc;
+}
+
+.av-list-upper-latin {
+  list-style-type: upper-latin;
+}
+
+.av-list-decimal {
+  list-style-type: decimal;
+}
+
 #clearanceoffersForm #displayArea1 > table > tbody > tr:nth-child(odd) > td[height="50%"], #unPlacedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #allOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #savedOrderForm > table:last-child > tbody > tr:last-child tr[valign="top"] + tr table.body, #OfferStoreForm .horizontal_solid_line, [name="exForm"] #lineno0 ~ table tr td.td_bot_border {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
@@ -3804,6 +3839,7 @@ div#campaignSelect > table > tbody > tr:first-child > td {
   width: 100%;
   height: auto;
   font-family: montserrat-light, Helvetica, sans-serif;
+  text-transform: uppercase;
   font-weight: lighter;
   font-size: 30px;
   line-height: 36px;
@@ -4180,6 +4216,7 @@ img[height="14"], [type="image"][height="14"] {
 
 .av-tc h2 {
   font-family: montserrat-light, Helvetica, sans-serif;
+  text-transform: uppercase;
   font-weight: lighter;
   font-size: 30px;
   line-height: 36px;
@@ -4392,6 +4429,7 @@ textarea {
 .sub_heading1,
 .titleStep4 {
   font-family: montserrat-light, Helvetica, sans-serif;
+  text-transform: uppercase;
   font-weight: lighter;
   font-size: 30px;
   line-height: 36px;
@@ -4934,6 +4972,7 @@ div#instantCreditContentSlot_content2 > p > a.visited {
 .textbox_h1 {
   margin-bottom: 30px;
   font-family: montserrat-light, Helvetica, sans-serif;
+  text-transform: uppercase;
   font-weight: lighter;
   font-size: 30px;
   line-height: 36px;

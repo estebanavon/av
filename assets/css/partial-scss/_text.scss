@@ -30,6 +30,7 @@
 @mixin title {
     @extend %titles;
     font-family: $light-monts;
+    text-transform: uppercase;
     font-weight: lighter;
     font-size: 30px;
     line-height: 36px;
@@ -92,4 +93,31 @@
 }
 .av-sale-price {
     @include salePrice;
+}
+%av-list {
+    font-family: $regular-monts;
+    line-height: 19px;
+    font-size: 17px;
+    color: $color-text;
+    text-align: justify;
+    @include highlight();
+    @media (min-width:$media-2) {
+        padding-left: 50px;
+    }
+    li {
+        display: list-item;
+        margin: 10px 0px;
+    }
+}
+.av-list-disc {
+    @extend %av-list;
+    list-style-type: disc;
+}
+.av-list-upper-latin {
+    @extend %av-list;
+    list-style-type: upper-latin;
+}
+.av-list-decimal {
+    @extend %av-list;
+    list-style-type: decimal;
 }

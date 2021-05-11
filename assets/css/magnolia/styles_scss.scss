@@ -1,6 +1,7 @@
 
 @import '../partial-scss/routes';
-$route-font: '../../../fonts';
+$prod-font: '/dam/avon-mx/static/fonts';
+$route-font: $prod-font;
 @import '../partial-scss/font';
 @import '../partial-scss/colors';
 @import '../partial-scss/variables';
@@ -10,6 +11,7 @@ $route-font: '../../../fonts';
 @import '../partial-scss/primary';
 @import '../partial-scss/button';
 @import '../partial-scss/slider';
+@import '../partial-scss/components';
 @import '../partial-scss/concert-loader';
 @import '../partial-scss/reset';
 

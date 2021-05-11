@@ -118,7 +118,12 @@ $(document).ready(function(){
             $('.av-anew-transition').removeAttr('style');
        }, 2800);
     }
+    $('.scrollTo').click(function(){
+        let avvalue = $(this).attr('value');
+        var elmnt = document.getElementById(avvalue);
+        elmnt.scrollIntoView();
 
+    });
     $('.avMenuAnew').children().click(function(){
         let avvalue = $(this).attr('value');
         avAnewTransition(avvalue);
@@ -139,5 +144,20 @@ $(document).ready(function(){
     });
     $('.avMoreSectionSmall').click(function(){
         $(this).hide().prev().show('slow');
+    });
+
+
+    $('.avNewsLetter').click(function(){
+        $('#avOverlay').show('slow');
+    });      
+    $(window).scroll(function(){
+        let documentScroll = $(document).scrollTop();
+        if (documentScroll > 2500 && sessionStorage.getItem("homeModalClosed") != "true"){
+            $('#avOverlay').show('slow');
+        }
+    });
+    $(".avClose").click(function () {
+        $('#avOverlay').hide();
+        sessionStorage.setItem("homeModalClosed", "true");
     });
 });
