@@ -146,18 +146,4 @@ $(document).ready(function(){
         $(this).hide().prev().show('slow');
     });
 
-
-    $('.avNewsLetter').click(function(){
-        $('#avOverlay').show('slow');
-    });      
-    $(window).scroll(function(){
-        let documentScroll = $(document).scrollTop();
-        if (documentScroll > 2500 && sessionStorage.getItem("homeModalClosed") != "true"){
-            $('#avOverlay').show('slow');
-        }
-    });
-    $(".avClose").click(function () {
-        $('#avOverlay').hide();
-        sessionStorage.setItem("homeModalClosed", "true");
-    });
 });
