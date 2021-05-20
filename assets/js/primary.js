@@ -13,6 +13,7 @@ $(document).ready(function(){
         $(this).find('i').toggleClass('active');
     });
 
+
     var indexTest = 0;
     var lastScrollTop = 0, delta = 20;
     $(window).scroll(function(event){

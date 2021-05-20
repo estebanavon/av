@@ -12,7 +12,7 @@
         background-color: transparent;
         color: $color-text;
         display: none;
-        font-size: 6rem;
+        font-size: 40px;
         cursor: pointer;
         &:active{
             background-color: $color-dark-10;
@@ -21,11 +21,23 @@
             outline: none;
             border: none;
         }
+        
         &:first-child {
             left: 0;
         }
         &:last-child {
             right: 0;
+        }
+        &.ts {
+            @media (min-width:$media-2){
+                &:first-child {
+                    left: -70;
+                }
+                &:last-child {
+                    right: -70;
+                }
+            }
+               
         }
         @media (min-width:$media-1){
             display: block;
@@ -50,14 +62,14 @@
                 display: flex;
             }
         }
-        @mixin variants($animationName){
+        @mixin variants($animationName,$opacity:1){
             .av-slider-item {
                 z-index: 1;
             }
             .lastOne {
                 z-index: 2;
                 display: flex;
-                opacity: 1;
+                opacity: $opacity;
             }
             .active {
                 z-index: 3;
@@ -72,6 +84,9 @@
         }
         &.shade {
             @include variants(fadeInwards);
+        }
+        &.circuloEstelar {
+            @include variants(slideInwards,0);
         }
         @keyframes slideInwards {
             0%{

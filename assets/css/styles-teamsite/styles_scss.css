@@ -1,60 +1,60 @@
 @charset "UTF-8";
 @font-face {
-  src: url("../../fonts/ZonaPro-Black.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Black.otf");
   font-family: zona-pro-black;
 }
 
 @font-face {
-  src: url("../../fonts/ZonaPro-Light.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Light.otf");
   font-family: zona-pro-light;
 }
 
 @font-face {
-  src: url("../../fonts/ZonaPro-Regular.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Regular.otf");
   font-family: zona-pro-regular;
 }
 
 @font-face {
-  src: url("../../fonts/ZonaPro-SemiBold.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-SemiBold.otf");
   font-family: zona-pro-semi-bold;
 }
 
 @font-face {
-  src: url("../../fonts/ZonaPro-Thin.otf");
+  src: url("/FLDSuite/static/fonts/ZonaPro-Thin.otf");
   font-family: ZonaProThin;
 }
 
 @font-face {
-  src: url("../../fonts/Montserrat-Regular.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-Regular.ttf");
   font-family: montserrat-regular;
 }
 
 @font-face {
-  src: url("../../fonts/Montserrat-Light.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-Light.ttf");
   font-family: montserrat-light;
 }
 
 @font-face {
-  src: url("../../fonts/Montserrat-SemiBold.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-SemiBold.ttf");
   font-family: montserrat-semi-bold;
 }
 
 @font-face {
-  src: url("../../fonts/Montserrat-Bold.ttf");
+  src: url("/FLDSuite/static/fonts/Montserrat-Bold.ttf");
   font-family: montserrat-bold;
 }
 
 @font-face {
-  src: url("../../fonts/Gotham-Bold.otf");
+  src: url("/FLDSuite/static/fonts/Gotham-Bold.otf");
   font-family: gotham-bold;
 }
 
 @font-face {
-  src: url("../../fonts/Gotham-Book.otf");
+  src: url("/FLDSuite/static/fonts/Gotham-Book.otf");
   font-family: gotham-book;
 }
 
-.av-subtitle, .av-subtitle-support, .av-title, .multimedia-title h2, .multimedia-layout-wrapper .video-text-item h3 {
+.av-subtitle, .av-subtitle-support, .av-title {
   color: #3b4546;
   text-align: left;
   margin: 0px;
@@ -142,7 +142,7 @@
   font-family: montserrat-regular, Helvetica, sans-serif;
   color: #3b4546;
   padding: 15px 0px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .av-tabs div:not(.active):hover {
@@ -331,6 +331,16 @@
 
 .av-modal-himage {
   width: 470px;
+}
+
+.av-modal-controls {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  z-index: 10000;
+  font-size: 40px !important;
+  padding: 10px;
+  cursor: pointer;
 }
 
 /* by Gerber Barillas */
@@ -638,7 +648,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-title-container {
   position: relative;
-  height: 50vh;
+  height: 40vh;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,7 +678,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   .av-title-container {
     padding: 10px;
     margin-bottom: 50px;
-    height: 45vh;
+    height: 40vh;
   }
 }
 
@@ -828,11 +838,12 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   font-size: 17px;
   line-height: 19px;
   margin-bottom: 17px;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
   .av-text {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
@@ -993,6 +1004,10 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   margin: 1rem 0;
   color: #3b4546;
   font-size: 21px;
+}
+
+.av-card-link {
+  text-decoration: none;
 }
 
 .av-card-link:hover {
@@ -1798,7 +1813,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   background-color: transparent;
   color: #3b4546;
   display: none;
-  font-size: 6rem;
+  font-size: 40px;
   cursor: pointer;
 }
 
@@ -1817,6 +1832,15 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-slider .av-slider-control:last-child {
   right: 0;
+}
+
+@media (min-width: 992px) {
+  .av-slider .av-slider-control.ts:first-child {
+    left: -70;
+  }
+  .av-slider .av-slider-control.ts:last-child {
+    right: -70;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1891,6 +1915,29 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
   position: absolute;
   -webkit-animation-name: fadeInwards;
           animation-name: fadeInwards;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.av-slider .av-slider-content.circuloEstelar .av-slider-item {
+  z-index: 1;
+}
+
+.av-slider .av-slider-content.circuloEstelar .lastOne {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+.av-slider .av-slider-content.circuloEstelar .active {
+  z-index: 3;
+  position: absolute;
+  -webkit-animation-name: slideInwards;
+          animation-name: slideInwards;
   -webkit-animation-duration: 5.5s;
           animation-duration: 5.5s;
   -webkit-animation-fill-mode: forwards;
@@ -1985,53 +2032,6 @@ body {
 
 body .h1, body .h2, body .h3, body h1, body h2, body h3 {
   margin: 0;
-}
-
-video:focus {
-  outline: none;
-}
-
-.multimedia-title h2 {
-  font-family: montserrat-light, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 30px;
-  line-height: 36px;
-  margin: 2rem;
-}
-
-.multimedia-title h2 b {
-  font-weight: normal !important;
-}
-
-.left-nav h3 {
-  font-family: montserrat-regular, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 23px;
-  margin-bottom: 0px;
-}
-
-.left-nav ul.left-nav-list-1 li > a {
-  margin-bottom: 13px;
-  line-height: 13px;
-  font-family: montserrat-regular, Helvetica, sans-serif;
-}
-
-.multimedia-layout-wrapper .video-text-item h3 {
-  font-family: montserrat-light, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 30px;
-  line-height: 36px;
-  margin: 2rem;
-}
-
-.multimedia-layout-wrapper .video-text-item h3 b {
-  font-weight: normal !important;
-}
-
-a {
-  text-decoration: none;
 }
 
 .avLoaderMJ {
@@ -2311,7 +2311,7 @@ a {
 }
 
 .av-concert-banner {
-  background-image: url("../../../img/concierto-avon/avConciertoHeader.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHeader.jpg");
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2351,80 +2351,80 @@ a {
 }
 
 .av-concierto {
-  background-image: url("../../../img/conciertoBasesHeaderMobile.jpg");
+  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../../../img/conciertoBasesHeader.jpg");
+    background-image: url("../images/conciertoBasesHeader.jpg");
   }
 }
 
 .av-concert1 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow1.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert2 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow2.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert3 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow3.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert4 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow4.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert5 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow5.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert6 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow6.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert7 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow7.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert8 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow8.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert9 {
-  background-image: url("../../../img/concierto-avon/avConciertoHow9.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-img-higiene {
-  background-image: url("../../../img/folletos/hg-1.jpg");
+  background-image: url("../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2569,7 +2569,7 @@ a {
 }
 
 .av-ce-header {
-  background-image: url("../../../img/ce-header.jpg");
+  background-image: url("../images/ce-header.jpg");
 }
 
 .av-ce-obk .av-title, .av-ce-obk .av-title-stroke {
@@ -2593,6 +2593,20 @@ a {
   color: #3b4546;
 }
 
+.av-ce-obk .av-subtitle-text-9 {
+  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #3b4546;
+  color: #C1047E;
+  line-height: 41px;
+  margin-top: 10px;
+}
+
+.av-ce-obk .av-spacer {
+  height: 20px !important;
+}
+
 .av-list-container {
   height: 100%;
   position: relative;
@@ -2604,7 +2618,7 @@ a {
 }
 
 .av-full-title {
-  height: 24vh;
+  height: 30vh;
   position: absolute;
   left: 0px;
   right: 0px;
@@ -2623,15 +2637,18 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 30px;
+  line-height: 35px;
   text-transform: uppercase;
   color: #fff;
   font-family: montserrat-light, Helvetica, sans-serif;
-  background-image: url("../../img/conoce-avon/ca-people-5.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-0.jpg");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .av-spacer-full-title {
-  height: 24vh;
+  height: 30vh;
 }
 
 .av-ce .av-ce-1, .av-ce .av-ce-2, .av-ce .av-ce-3, .av-ce .av-ce-4, .av-ce .av-ce-5 {
@@ -2651,29 +2668,30 @@ a {
 }
 
 .av-ce .av-ce-1 {
-  background-image: url("../../../img/sectionAnProtinol.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-1.jpg");
 }
 
 .av-ce .av-ce-2 {
-  background-image: url("../../../img/sectionAnProtinol.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-2.jpg");
 }
 
 .av-ce .av-ce-3 {
-  background-image: url("../../../img/sectionAnProtinol.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-3.jpg");
 }
 
 .av-ce .av-ce-4 {
-  background-image: url("../../../img/sectionAnProtinol.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-4.jpg");
 }
 
 .av-ce .av-ce-5 {
-  background-image: url("../../../img/sectionAnProtinol.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-5.jpg");
 }
 
 .av-ce-tabs > div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 60px;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
 }
 
 .av-ce-tabs > div::before {
@@ -2681,13 +2699,76 @@ a {
 }
 
 .av-ce-tabs > div.active {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  width: 320px;
 }
 
 .av-ce-tabs > div.active::before {
   content: 'Campaña ';
+}
+
+.ce-circle svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.av-ce-earnings, .av-earnings {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  height: 470px;
+}
+
+@media (min-width: 768px) {
+  .av-ce-earnings, .av-earnings {
+    left: 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  .av-ce-earnings, .av-earnings {
+    left: 15%;
+  }
+}
+
+.av-earnings-img {
+  width: 320px;
+  position: relative;
+  left: 20px;
+  top: 10px;
+  margin-right: 120px;
+}
+
+.avThickboxLoaderOutline {
+  fill: transparent;
+  stroke-dasharray: 1260;
+  stroke: #d4d4d4;
+  stroke-width: 10;
+}
+
+#avThickboxLoader {
+  fill: transparent;
+  stroke-dasharray: 1260;
+  stroke: #C1047E;
+  stroke-width: 45;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.av0 {
+  stroke-dashoffset: 1000;
+}
+
+.av2 {
+  stroke-dashoffset: 750;
+}
+
+.av3 {
+  stroke-dashoffset: 0;
 }
 
 .av-title-apren {

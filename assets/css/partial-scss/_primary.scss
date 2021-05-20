@@ -23,7 +23,7 @@
 }
 .av-title-container {
     position: relative;
-    height: 50vh;
+    height: 40vh;
     padding: $margin-sm;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
     @media (min-width:$media-1) {
         padding: $margin-sm;
         margin-bottom: $margin-lg;
-        height: 45vh;
+        height: 40vh;
     }
     @media (min-width:$media-2) {
         padding: $margin-lg;
@@ -215,6 +215,9 @@
 
 
 // CARDS
+.av-card-link{
+    text-decoration: none;
+}
 .av-card-link:hover {
     text-decoration: none;
     cursor: pointer;

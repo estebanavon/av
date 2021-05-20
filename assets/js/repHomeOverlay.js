@@ -2,16 +2,10 @@
 // Image route:  "/REPSuite/static/images/home/"
 // Content for new REPs LOA < 7
 const avFreshConfig = [
-    
     {
         link:'/REPSuite/interfaz.page',
         img: 'overlayBienvenida.jpg',
-        title: 'Tu nuevo catalgo'
-    },
-    {
-        link: '/REPSuite/Aprende.page',
-        img: 'overlayBienvenida2.jpg',
-        title: 'Tu opinión vale'
+        title: 'Tu nuevo catalogo'
     },
 ];
 
@@ -23,25 +17,28 @@ const avOlderConfig = [
         img: 'overlayBienvenida.jpg',
         title: 'Tu nuevo catálogo'
     },
+  
     {
-        link: 'https://c5afw467.caspio.com/dp/c022600001822daaa18543e3a224',
-        img: 'overlayBienvenida2.jpg',
-        title: 'Tu opinión nos interesa'
+        link: '/REPSuite/web/static/images/home/ordenMinimac7.png',
+        img: 'ordenMinimac7.png',
+        title: 'Compra MÃínima'
     },
 ];
 
 // NCM PUSH
 avNCMunshift(AvonAnalyticsObjex.Profile.repAcct);
+// CE PUSH
+avCEunshift(AvonAnalyticsObjex.Profile.repAcct);
 
 
 var avPrinter,avConfig,loaCheck,avdownload;
 avPrinter = ['']
-//var loaCheck = AvonAnalyticsObjex.Profile.loa;
-var loaCheck = 9;
-if (loaCheck < 7){
+var loaCheck = AvonAnalyticsObjex.Profile.loa;
+//var loaCheck = 9;
+if (loaCheck < 10){
     avConfig = avFreshConfig;
 } else {
-    avConfig = avOlderConfig;
+    avConfig = avOlderConfig;  
 }
 for (i=0;i < avConfig.length;i++) {
     avPrinter += '<div class="avModalButton" av-data="'+ i +'">'+ avConfig[i].title +'</div>'
@@ -75,16 +72,14 @@ $(document).ready(function(){
         $(this).addClass('active').siblings().removeClass('active');
         $('#avImageModal').attr('style', 'background-image:url(\'/REPSuite/static/images/home/'+ avConfig[avData].img+'\');')
         $('#avLinkModal').attr('href', avConfig[avData].link)
-        if (avdownload) {
-            if (avData == 0 || avData == 1){
-                $('#avLinkModal').attr('download', 'Notificación de Cambio AVON')
-            }
+        if (avdownload && avData == 0){
+            $('#avLinkModal').attr('download', 'Notificación de Cambio AVON')
         } else {
             $('#avLinkModal').removeAttr('download');
         }
     });
-    if (avdownload) {
-        $('#avLinkModal').attr('download', 'Notificación de Cambio AVON')
+  if (avdownload) {
+        $('#avLinkModal').attr('download', 'NotificaciÃ³n de Cambio AVON')
     }
     $(".avClose").click(function () {
         $('#avOverlay').hide();

@@ -50,8 +50,9 @@
     font-size: 17px;
     line-height: 19px;
     margin-bottom: $size-text - 2;
+    text-align: left;
     @media (min-width:$media-1) {
-        margin-bottom: $size-text + 1;
+        margin-bottom: $size-text;
     }
 }
 @mixin modal-title {
@@ -67,8 +68,8 @@
 @mixin text-system($font:$regular-monts){
     color: $color-text;
     font-family: $font;
-    font-size: $size-text - 4;
-    line-height: $size-text - 2;
+    font-size: 16px;
+    line-height: 19px;
 }
 @mixin negative($align:center) {
     &.negative {

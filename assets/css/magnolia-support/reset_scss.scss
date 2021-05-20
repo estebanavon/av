@@ -1,0 +1,131 @@
+@import '../partial-scss/routes';
+$prod-font: '/dam/avon-mx/static/fonts';
+$route-font: $prod-font;
+@import '../partial-scss/font';
+@import '../partial-scss/colors';
+@import '../partial-scss/variables';
+@import '../partial-scss/text';
+@import '../partial-scss/components';
+
+@import '../partial-scss/primary-grid';
+@import '../partial-scss/primary';
+@import '../partial-scss/button';
+
+body {
+    padding-top: 212px;
+}
+video:focus {
+    outline: none;
+  }
+.multimedia-title h2 {
+    @include title;
+    margin: 2rem;
+}
+.left-nav h3 {
+    font-family: $regular-monts;
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+.left-nav ul.left-nav-list-1 li > a,
+.left-nav ul.left-nav-links li {
+    margin-bottom: 13px;
+    line-height: 13px;
+    font-family: $regular-monts;
+}
+.multimedia-layout-wrapper .video-text-item h3 {
+    @include title;
+    margin: 2rem;
+}
+a {
+    text-decoration: none;
+}
+
+
+.bucket {
+    h3 {
+        @include text-mixin($bold-monts);
+    }
+    p {
+        @include text-mixin();
+        font-size: 15px;
+    }
+    .read-more {
+        @include av-button-tertiary;
+        font-size: 14px;
+    }
+    h3, p, .read-more {
+        margin-bottom: 7px;
+        padding:  0px 10px;
+    }
+} 
+.products-carousel h2 {
+    @include title;
+    text-align: center;
+    > span {
+        font-family: $regular-monts;
+        font-size: 13px;
+    }
+    > a {
+        font-family: $bold-monts;
+        color: $color-primary ;
+        font-size: 13px;
+    }
+}
+.products-category h2, .brands h3 {
+    @include title;
+}
+.brands h3 {
+    margin: 40px 0px;
+}
+.products-category .product-dropdown .ui-select-container {
+    margin-top: 0px;
+}
+.multimedia-list .multimedia-list-items li div.video-title a {
+    @include text-mixin();
+}
+header nav .container-subnav ul.subnav-brands li.btn-see-all .btn,
+.btn-pink:not(.subscribe-button) {
+    @include av-button-secondary;
+}
+.subscribe-button {
+    font-family: $regular-monts;
+}
+header nav .container-subnav ul.subnav-left li a, header nav .found-rep-container .container-subnav-rep ul.subnav-left li a, .found-rep-container header nav .container-subnav-rep ul.subnav-left li a, header nav .found-rep-container .container-subnav-rep-found ul.subnav-left li a, .found-rep-container header nav .container-subnav-rep-found ul.subnav-left li a, header nav .found-rep-container .container-subnav-rep-selected ul.subnav-left li a, .found-rep-container header nav .container-subnav-rep-selected ul.subnav-left li a,
+.sticky-footer .sticky-footer-container .sticky-footer-header .sticky-footer-title,
+.products-carousel .content-products-carousel .product p,
+header nav .container-subnav ul li, header nav .found-rep-container .container-subnav-rep ul li, .found-rep-container header nav .container-subnav-rep ul li, header nav .found-rep-container .container-subnav-rep-found ul li, .found-rep-container header nav .container-subnav-rep-found ul li, header nav .found-rep-container .container-subnav-rep-selected ul li, .found-rep-container header nav .container-subnav-rep-selected ul li,
+.black-bar-column,
+.main-bar .search div.search-container div.search-field input,
+header nav .container-subnav ul li.group-title,
+.main-footer-content-positioner a,
+.multimedia-viewport.pictures .picture-text .picture-text-item h3,
+.select2-container .select2-choice>.select2-chosen,
+input.form-control, textarea.form-control,
+.rep .btn-rep {
+    font-family: $regular-monts;
+    font-style: normal;
+}
+.utility-bar {
+    font-family: $regular-monts;
+    font-size: 13px;
+    text-transform: none;
+}
+
+.highlighted-column {
+    font-family: $bold-monts;
+    font-size: 14px;
+}
+.highlighted-column span {
+    font-family: $regular-monts;
+}
+nav li {
+    font-family: $bold-monts;
+    font-size: 14px;
+    > a {
+        color: scale-color($color-text, $lightness: 5%);
+    }
+    &:hover {
+        color: $color-text;
+    }
+}

@@ -17,32 +17,4 @@ body{
     }
 }
 
-// Magnolia Exceptions
-
-video:focus {
-    outline: none;
-  }
-.multimedia-title h2 {
-    @include title;
-    margin: 2rem;
-}
-.left-nav h3 {
-    font-family: $regular-monts;
-    text-transform: uppercase;
-    font-size: 23px;
-    margin-bottom: 0px;
-}
-.left-nav ul.left-nav-list-1 li > a {
-    margin-bottom: 13px;
-    line-height: 13px;
-    font-family: $regular-monts;
-}
-.multimedia-layout-wrapper .video-text-item h3 {
-    @include title;
-    margin: 2rem;
-}
-a {
-    text-decoration: none;
-}
-
 

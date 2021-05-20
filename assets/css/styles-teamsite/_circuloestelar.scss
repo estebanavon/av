@@ -21,6 +21,15 @@
     .av-subtitle-text {
         @include avCeTitles(24px);
     }
+    .av-subtitle-text-9 {
+        @include avCeTitles(40px);
+        color: $color-gradient-2;
+        line-height: 41px;
+        margin-top: 10px;
+    }
+    .av-spacer {
+        height: 20px !important;
+    }
 }
 
 .av-list-container {
@@ -31,7 +40,7 @@
         display: block;
     }
 }
-$letHeight: 24vh;
+$letHeight: 30vh;
 .av-full-title {
     height: $letHeight;
     position: absolute;
@@ -43,11 +52,14 @@ $letHeight: 24vh;
     justify-content: center;
     flex-direction: column;
     font-size: 30px;
+    line-height: 35px;
     text-transform: uppercase;
     color: $color-white;
     font-family: $light-monts;
-    background-image: url('../../img/conoce-avon/ca-people-5.jpg');
+    background-image: url('#{$route-images}/circulo_estelar/avceSection-0.jpg');
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .av-spacer-full-title {
     height: $letHeight;
@@ -70,8 +82,7 @@ $letHeight: 24vh;
 @mixin card-image($number:default){
     .av-ce-#{$number} {
         @extend %avCe;
-        //background-image: url('#{$route-images}/ce-#{$number}.jpg');
-        background-image: url('#{$route-images}/sectionAnProtinol.jpg');
+        background-image: url('#{$route-images}/circulo_estelar/avceSection-#{$number}.jpg');
     }
     
 }
@@ -84,16 +95,66 @@ $letHeight: 24vh;
 }
 .av-ce-tabs {
     > div {
-        flex: 1;
+        width: 60px;
+        flex: none !important;
         &::before {
             content: 'C';
         }
         &.active {
-            flex: 3;
+            width: 320px;
             &::before {
                 content: 'Campaña ';
             }
         }
     }
 }
-
+.ce-circle {
+    svg {
+        transform: rotate(-90deg);
+    }
+}
+.av-ce-earnings,.av-earnings {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    height: 470px;
+    @media (min-width:$media-1) {
+        left: 10%;
+    }
+    @media (min-width:$media-2) {
+        left: 15%;
+    }
+}
+.av-earnings-img {
+    width: 320px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    margin-right: 120px;
+    
+}
+.avThickboxLoaderOutline {
+    fill: transparent;
+	stroke-dasharray: 1260;
+	stroke: rgb(212, 212, 212);
+	stroke-width: 10;
+}
+#avThickboxLoader {
+	fill: transparent;
+	stroke-dasharray: 1260;
+	stroke: $color-gradient-2;
+	stroke-width: 45;
+    transition: all 1s;
+}
+.av {
+    &0{
+        stroke-dashoffset: 1000;
+    }
+    &2{
+        stroke-dashoffset: 750;
+    }
+    &3{
+        stroke-dashoffset: 0;
+    }
+}
