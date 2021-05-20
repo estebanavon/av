@@ -321,7 +321,7 @@ $(document).ready(function () {
 
     const avNumber = AvonAnalyticsObjex.Profile.loa; 
     //const avNumber = '5'; 
-    for (i=0; i <= avNumber; i++){
+    for (i=0; i <= avNumber && i < 9; i++){
         $('.optionDisplay').append('<div value="'+ (i + 1) +'">'+ (i + 1) +'</div>');
     }
     $('.optionDisplay').children().eq(0).addClass('active');
@@ -371,7 +371,7 @@ $(document).ready(function () {
         avArrayPrintTrue[i] + '</div></div>'; 
     }
     var avArrayPrint = "";
-    for (i=0; i<(parseInt(avNumber,10)+1);i++){
+    for (i=0; i < (parseInt(avNumber,10)+1) && i < 9 ;i++){
         avArrayPrint += avArrayPrintContent[i]
     }
     $('.optionContent').append(avArrayPrint);
