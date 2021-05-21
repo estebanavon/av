@@ -4,8 +4,8 @@ $(document).ready(function () {
   
     var avFiles0 = [
         {
-            file: 'KITSDEBIENVENIDA.gif',
-            develop: false, 
+            file: 'GuiaAlExito.pdf',
+            develop: false,
         },
         {
             file: 'Bienvenida.mp4',
@@ -21,14 +21,6 @@ $(document).ready(function () {
         },
         {
             file: 'KitsdeBienvenida.pdf',
-            develop: false,
-        },
-        {
-            file: 'LineaCE.pdf',
-            develop: false,
-        },
-        {
-            file: 'GuiaProductosGratis.mp4',
             develop: false,
         },
         {
@@ -63,10 +55,6 @@ $(document).ready(function () {
         },
         {
             file: 'TipsdeVenta.jpg',
-            develop: false,
-        },
-        {
-            file: 'GuiaAlExitob.mp4',
             develop: false,
         },
         {
@@ -139,10 +127,6 @@ $(document).ready(function () {
         
     ];
     var avFiles3 = [
-        {
-            file: 'ConoceUniversoEstelar.mp4',
-            develop: false,
-        },
         {
             file: 'CalculaTuOportunidadDeGanancia.mp4',
             develop: false,
@@ -237,7 +221,7 @@ $(document).ready(function () {
     ];
     var avFiles6 = [
         {
-            file: 'ExitoSinLimites.pdf',
+            file: 'GuiaAlExito.pdf',
             develop: false,
         },
         {
@@ -364,7 +348,6 @@ $(document).ready(function () {
         }
         e++;
     }
-    debugger
     for (i=0;i<avArrayPrintTrue.length;i++) {
         avArrayPrintContent[i] =  '<div class="av-wrapper" style="display:none;" value="1"><div class="av-brochures-container pb-0">'+ avArrayPrintFalse[i] +
         '</div><div class="av-brochures-container py-2"><p class="av-text">Mi negocio digital</p></div><div class="av-brochures-container pt-0">'+ 
@@ -381,22 +364,27 @@ $(document).ready(function () {
         var type = file.substring(file.length - 3, file.length);
         return type;
     }
-
+    $('.av-modal-content').css('backgroundColor','transparent');
     var b,c,type;
     function docDisplay(b,c){
         $('.av-modal-content').children().eq(2).remove();
         let avType = typeGet(avFilesConstructor[b][c].file);
-
         switch (avType) {
             case 'mp4':
-                $('.av-modal-content').append('<video style="width: 70vw; background-color: black;" controls><source src="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[b][c].file +'"></video>')
+                $('.av-modal-content').append('<video id="contentLoad" style="width: 70vw; background-color: black;" controls><source src="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[b][c].file +'"></video>')
                 break;
             case 'pdf':
-                $('.av-modal-content').append('<iframe style="width: 80vw;height:80vh;" src="/FLDSuite/static/js/pdfjs-2.7.570-dist/web/viewer.html?file=/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[b][c].file +'"></iframe>')
+                $('.av-modal-content').append('<iframe id="contentLoad" style="width: 80vw;height:80vh;" src="/FLDSuite/static/js/pdfjs-2.7.570-dist/web/viewer.html?file=/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[b][c].file +'"></iframe>')
                 break;
             default:
-                $('.av-modal-content').append('<img style="max-height: 70vh;" src="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[b][c].file +'"/>')
+                $('.av-modal-content').append(
+                    '<svg version="1.1" id="ceLoader" xmlns="http://www.w3.org/2000/svg" '+
+                    'xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100px" xml:space="preserve">'+
+                    '<circle cx="50" cy="50" r="40" class="avThickboxLoader"></circle></svg>'
+                );
+                $('.av-modal-content').append('<img id="contentLoad" style="max-height: 70vh;" src="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[b][c].file +'"/>')
         }
+        
         switch (c){
             case (avFilesConstructor[b].length - 1):
                 $('.avModalNext').hide();    
@@ -410,6 +398,8 @@ $(document).ready(function () {
         }
         
         $('.avDownload').attr('href','/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[b][c].file +'')
+        debugger
+        $('#contentLoad').on( "load", $('#ceLoader').remove() )
     }
     $('.avCeDocs').click(function(){
         $('#avOverlay').show();
