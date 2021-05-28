@@ -1,24 +1,37 @@
-
-const brochuresNcm11 = [
-    {
-        title: 'Avon Contigo 11',
-        file: 'avon_contigo_c0121.pdf',
-        type: 'contigo',
-    },
+const brochures11 = [
     {
         title: 'Belleza',
-        file: '1',
-        type: 'imb',
+        file: 'BellezaMx11.pdf',
+        type: 'flyer',
     },
     {
         title: 'Fashion & Home',
-        file: '2',
-        type: 'imb',
+        file: 'FashionNHomeMx11.pdf',
+        type: 'flyer',
     },
     {
-        title: 'Rutinas Anew',
-        file: '3',
-        type: 'imb',
+        title: 'Avon Contigo',
+        file: 'avon_contigo_c1121.pdf',
+        type: 'contigo',
+    },
+    {
+        title: 'Flyer campañal ofertas hot',
+        file: 'flyerOfertasHot.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Minifolleto Electrodomésticos Hermetic',
+        file: 'minifolletoElectrodomesticosHermetic.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Minifolleto Maquillaje',
+        file: 'minifolletoMaquillajeC10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Anew Guía Restage',
+        file: 'anewGuiaRestage.pdf',
+        type: 'flyer',
     },
 ]
-

@@ -10,7 +10,7 @@ $color-bazar: #00CE15;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
     &:nth-child(5),
     &:nth-child(7){
         display: none;

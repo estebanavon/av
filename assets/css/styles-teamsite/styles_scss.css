@@ -3276,7 +3276,7 @@ section.av-lw .disable {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
 }
 
 .av-brochures-container:nth-child(5), .av-brochures-container:nth-child(7) {

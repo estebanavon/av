@@ -1794,6 +1794,12 @@ body {
   padding-top: 212px;
 }
 
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 58px;
+  }
+}
+
 video:focus {
   outline: none;
 }
@@ -1823,6 +1829,10 @@ video:focus {
   margin-bottom: 13px;
   line-height: 13px;
   font-family: montserrat-regular, Helvetica, sans-serif;
+}
+
+.left-nav ul.left-nav-links li {
+  line-height: 18px;
 }
 
 .multimedia-layout-wrapper .video-text-item h3 {

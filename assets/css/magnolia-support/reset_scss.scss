@@ -13,7 +13,11 @@ $route-font: $prod-font;
 
 body {
     padding-top: 212px;
+    @media only screen and (max-width: 767px){
+        padding-top: 58px;
+    }
 }
+
 video:focus {
     outline: none;
   }
@@ -32,6 +36,9 @@ video:focus {
     margin-bottom: 13px;
     line-height: 13px;
     font-family: $regular-monts;
+}
+.left-nav ul.left-nav-links li {
+    line-height: 18px;
 }
 .multimedia-layout-wrapper .video-text-item h3 {
     @include title;
