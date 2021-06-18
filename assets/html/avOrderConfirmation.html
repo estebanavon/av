@@ -1,125 +1,142 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <style>
-        .av-button-primary {
-            color: #fff;
-            border-radius: 4px;
-            display: block;
-            background-color: #7F28C4;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-            text-align: center;
-            font-style: normal;
-            white-space: nowrap;
-            background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));
-            background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);
-        }
-        .av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {
-            color: #fff;
-            outline: none;
-            text-decoration: none !important;
-        }
-        .avEmailContent {
-            width: 100%;
-            max-width: 800px;
-            color: #3b4546;
-            font-family: montserrat-regular, Helvetica, sans-serif;
-            font-size: 16px;
-            line-height: 20px;
-            margin: 0 auto;
-        }
-        .av-text {
-            text-align: left;
-        }
-        .avEmailText {
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            border-spacing: 0px 26px;
-        }
-        
-        .av-table {
-            font-size: 10px;
-            line-height: 12px;
-            text-align: center;
-            border-collapse: collapse;
-        }
-        @media only screen and (min-width: 480px) {
-            .av-table {
-                font-size: 13px;
-                line-height: 14px;
-                text-align: center;
-                border-collapse: collapse;
-            }
-            .avEmailText {
-                padding-left: 60px;
-                padding-right: 60px;
-            }
-            .av-table td {
-                padding: 10px;
-            }
-        }
-        .av-table tr:nth-child(even) {
-            background:#F2F2F2;
-        }
+        .av-button-primary {color: #fff;border-radius: 4px;display: block;background-color: #7F28C4;border: none;cursor: pointer;text-decoration: none;text-transform: uppercase;font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;text-align: center;font-style: normal;white-space: nowrap;background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);}
+        .av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {color: #fff;outline: none;text-decoration: none !important;}
+        .avEmailContent {width: 100%;max-width: 800px;color: #3b4546;font-family: montserrat-regular, Helvetica, sans-serif;font-size: 16px;line-height: 20px;margin: 0 auto;}
+        .av-text {text-align: left;font-size: 17px;}
+        .avEmailText {padding-left: 10px;padding-right: 10px;padding-top: 20px;padding-bottom: 20px;border-spacing: 0px 10px;font-size: 17px;}
+        .av-table {font-size: 13px;line-height: 12px;text-align: center;border-collapse: collapse;width: 100%;}
+        @media only screen and (min-width: 480px) {.av-table {    font-size: 13px;    line-height: 14px;    text-align: center;    border-collapse: collapse;}.avEmailText {padding-left: 50px;padding-right: 50px;}.av-table td {padding: 10px;}}
+        .av-table tr:nth-child(odd) {background:#F2F2F2;}
     </style>
 </head>
+
 <body>
+
     <table class="avEmailContent">
+        <tr><td><div id="__codeblock__" style="display: none; height: 0px; width: 0px;"></div></td></tr>
         <tr>
             <td style="text-align: center;">
-                <img style="width:100%;" src="../img/orderConfirmation.jpg">
+                <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/orderConfirmation2021.jpg">
             </td>
         </tr>
-		<tr>
+        <tr>
             <td>
                 <table class="avEmailText">
                     <tr>
                         <td class="av-text">
-                            <b style="font-weight: bolder;">Hola Karla Itzel,</b> hemos recibido tu orden. Revisa los detalles.
+                            <b style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">Hola $$PRFRD_NM$$.</b><br />
+                            Hemos recibido tu orden. Revisa los detalles.
                         </td>
                     </tr>
                     <tr>
                         <td class="av-text">
-                            Orden colocada en campaña: <span>11-2021</span>
+                            Orden colocada en campaña: <span style="color: #f00088;">$$CMPGN$$</span>
                         </td>
                     </tr>
                     <tr>
                         <td class="av-text">
                             Número de confirmación: <br />
-                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">0965dfWQE</p>
+                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">$$ORD_REF$$</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="av-text">
-                            Valor estimado de la orden <br />
-                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">$140.00</p>
+                            <!-- if ("$$ORD_TYP$$" ne "REPL") -->
+                            Valor Estimado de la Orden:
+                            <!-- endif -->
+                            <!-- if ("$$ORD_TYP$$" eq "REPL") -->
+                            Total de Ajustes:
+                            <!-- endif -->
+                            <br />
+                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">$$TOT_ORD_AMT$$</p>
                         </td>
                     </tr>
+                    <!--    if (("$$SBMTR_NM$$" ne "") && ( "$$SBMTR_CD$$" eq "CCA" ))  -->
                     <tr>
                         <td class="av-text" valign="top">
+                            <p>Esta orden fue colocada por un Operador de Call Center</p>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!--    if (("$$SBMTR_NM$$" ne "") && ( "$$SBMTR_CD$$" eq "MGR" ))  -->        
+                    <tr>
+                        <td class="av-text" valign="top">
+                            <p>Esta orden fue colocada a través de Complementos por la Gerente de Zona:</p>
+                            <p>$$SBMTR_NM$$</p>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!--    if (("$$SBMTR_NM$$" ne "") && ( "$$SBMTR_CD$$" eq "COORD" ))  -->
+                    <tr>
+                        <td class="av-text" valign="top">
+                            <p>Esta orden fue colocada a través de Complementos por la Empresaria:</p>
+                            <p>$$SBMTR_NM$$</p>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <tr>
+                        <td class="av-text" valign="top">
+                            <br /><br />
+                            <hr>
+                            <br />
                             Nombre: <br />
-                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">Karla Itzel Barba Corzas</p>
+                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">$$FULL_NM$$</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="av-text" >
                             Dirección de entrega: <br />
-                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">Ayuntamiento 83 Centro, Cuahutemoc 04000</p>
+                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">
+                                <!--    if ( "$$DLVRY_TYP$$" eq "" )  -->
+                                $$ADDRNM$$ $$STR_ADDR_TXT$$<br>
+                                $$STR_ADDR2_TXT$$<br>
+                                $$CITY_NM$$ $$PSTL_CD$$
+                                <!-- endif -->
+                                <!--    if ( "$$DLVRY_TYP$$" eq "CLIENT" )  -->
+                                $$ADDRNM$$ $$STR_ADDR_TXT$$<br>
+                                $$STR_ADDR2_TXT$$<br>
+                                $$STR_ADDR3_TXT$$<br>
+                                $$CNTY_NM$$ $$ST_NM$$ $$PSTL_CD$$
+                                <!-- endif -->
+                            </p>
+                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">
+                                $$MOBILE_PHON_NR$$
+                            </p>
+                        </td>
+                    </tr>
+                    <!--    if (("$$DLVRY_FROM_DT$$" ne "") && ( "$$WRHS_LAST_COLCTN_DT$$" ne "" ))  -->
+                    <tr>
+                        <td class="av-text" >
+                            Podrás recoger tu orden desde el <br />
+                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">
+                                $$DLVRY_FROM_DT$$
+                            </p>
+                            hasta el <br />
+                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">
+                                $$WRHS_LAST_COLCTN_DT$$
+                            </p>
                         </td>
                     </tr>
                     <tr>
+                        <td class="av-text" >
+                            Horario de servicio
+                            <span style="font-weight: bolder;">
+                                $$PUP_OPEN_HRS_INFO_TXT$$
+                            </span>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!-- if ("$$ORD_TYP$$" ne "REPL") -->
+                    <tr>
                         <td>
+                            <br /><br />
+                            <hr>
+                            <br />
                             Tu orden <br />
+                            <br />
                             <table class="av-table">
                                 <thead>
                                     <tr style="background-color: #606060;color: #fff;">
@@ -127,67 +144,269 @@
                                         <td><b>Clave del producto</b></td>
                                         <td><b>Unidades</b></td>
                                         <td><b>Descripción</b></td>
-                                        <td><b>Subtotal</b></td>
+                                        <td><b>Precio</b></td>
                                         <td><b>Total</b></td>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    $$DETAILROWSTART1$$
                                     <tr>
-                                        <td>9</td>
-                                        <td>09078768</td>
-                                        <td>2</td>
-                                        <td>DescripciónLorem ipsum dolor Lorem </td>
-                                        <td>$4.00</td>
-                                        <td><b>$8.00</b></td>
+                                        <td>$$CMPGN_NR$$</td>
+                                        <td>$$LINE_NR$$</td>
+                                        <td>$$QTY$$</td>
+                                        <td>$$PRODNM$$</td>
+                                        <td>$$UNIT_PRC$$</td>
+                                        <td><b>$$TOTAL_PRC$$</b></td>
                                     </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>09078768</td>
-                                        <td>2</td>
-                                        <td>DescripciónLorem ipsum dolor Lorem </td>
-                                        <td>$45767.00</td>
-                                        <td><b>$8.00</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>09078768</td>
-                                        <td>2</td>
-                                        <td>Descripción Lorem ipsum dolor Lorem Lorem ipsum dolor Lorem </td>
-                                        <td>$4234.00</td>
-                                        <td><b>$8.00</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>09078768</td>
-                                        <td>2</td>
-                                        <td>Descripción Lorem ipsum dolor Lorem Lorem ipsum dolor Lorem </td>
-                                        <td>$4.00</td>
-                                        <td><b>$865.00</b></td>
-                                    </tr>
+                                    $$DETAILROWEND1$$
+                                    
                                 </tbody>
                             </table>
                         </td>
                     </tr>
-                    <tr><td></td></tr>
+                    <!-- endif -->
+                    <!-- if ("$$RTRN_REC_CNT$$" gt 0) -->
                     <tr>
                         <td>
-                            <a href="https://play.google.com/store/apps/details?id=com.avon.avonon&hl=en&gl=US" target="_blank">
-                                <img src="../img/correoBienvenidaAvonOn.jpg" style="width: 100%;" />
-                            </a>
+                            Ajustes <br /><br />
+                            <table class="av-table">
+                                <thead>
+                                    <tr style="background-color: #606060;color: #fff;">
+                                        <td><b>Campaña</b></td>
+                                        <td><b>Clave del producto</b></td>
+                                        <td><b>Unidades</b></td>
+                                        <td><b>Descripción</b></td>
+                                        <td><b>Tipo de Producto</b></td>
+                                        <td><b>Precio Representante</b></td>
+                                        <td><b>Monto Ajuste inmediato</b></td>
+                                        <td><b>Razón</b></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    $$DETAILROWSTART2$$
+                                    <tr>
+                                        <td>$$RPLCMT_CMPGN_NR$$</td>
+                                        <td>$$RPLCMT_LINE_NR$$</td>
+                                        <td>$$RPLCMT_QTY$$</td>
+                                        <td>$$RPLCMT_PROD_NM$$</td>
+                                        <td>$$ITEM_SRCE_CD$$</td>
+                                        <td>$$PYMENT_TOT_AMT$$</td>
+                                        <td>$$INSTNT_CRDT_TOT_AMT$$</td>
+                                        <td>$$TRAN_RSN_CD$$</td>
+                                    </tr>
+                                    $$DETAILROWEND2$$
+                                    
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!-- if ("$$RPLCMNT_REC_CNT$$" gt 0) -->
+                    <tr>
+                        <td>
+                            Cambios <br /><br />
+                            <table class="av-table">
+                                <thead>
+                                    <tr style="background-color: #606060;color: #fff;">
+                                        <td colspan="2"><b>Solicitaste cambiar este producto</b></td>
+                                        <td><b>Clave del producto</b></td>
+                                        <td><b>Unidades</b></td>
+                                        <td><b>Tipo de Producto</b></td>
+                                        <td><b>Precio Representante</b></td>
+                                        <td><b>Monto Ajuste inmediato</b></td>
+                                        <td style="background-color: #f00088;"><b>Campaña</b></td>
+                                        <td style="background-color: #f00088;"><b>Por este producto</b></td>
+                                        <td style="background-color: #f00088;"><b>Clave del producto</b></td>
+                                        <td style="background-color: #f00088;"><b>Razón</b></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    $$DETAILROWSTART3$$
+                                <tr>
+                                    <td>$$RPLCMT_CMPGN_NR$$</td>
+                                    <td>$$RPLCMT_PROD_NM$$</td>
+                                    <td>$$RPLCMT_LINE_NR$$</td>
+                                    <td>$$ORD_DTL_QTY$$</td>
+                                    <td>$$ITEM_SRCE_CD$$</td>
+                                    <td>$$PYMENT_TOT_AMT$$</td>
+                                    <td>$$INSTNT_CRDT_TOT_AMT$$</td>
+                                    <td>$$CMPGN_NR$$</td>
+                                    <td>$$PRODNM$$</td>
+                                    <td>$$LINE_NR$$</td>
+                                    <td>$$TRAN_RSN_CD$$</td>
+                                </tr>
+                                $$DETAILROWEND3$$
+                                    
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!-- if (("$$PAI_REC_CNT$$" gt 0) || ("$$RSTR_REC_CNT$$" gt 0)) -->
+                    <tr>
+                        <td>
+                            Productos que NO serán facturados <br />
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!-- if ("$$PAI_REC_CNT$$" gt 0) -->
+                    <tr>
+                        <td>
+                            <table class="av-table">
+                                <thead>
+                                    <tr style="background-color: #606060;color: #fff;">
+                                        <td><b>Campaña</b></td>
+                                        <td><b>Clave del Producto</b></td>
+                                        <td><b>Descripción</b></td>
+                                        <td><b>Disponibilidad</b></td>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    $$DETAILROWSTART5$$
+                                    <tr>
+                                        <td>$$CMPGN_NR$$</td>
+                                        <td>$$LINE_NR$$</td>
+                                        <td>$$PRODNM$$</td>
+                                        <td>$$AVLBLTY_CD$$</td>
+                                    </tr>
+                                    $$DETAILROWEND5$$
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!-- if ("$$RSTR_REC_CNT$$" gt 0) -->
+                    <tr>
+                        <td>
+                            Los siguientes productos NO pudieron ser agregados pues deben ser solicitados por ti de manera personal, por lo que no es aplicable cuando los solicita la Gerente de Zona o Empresaria: 
+                            <br /><br />
+                            <table class="av-table">
+                                <thead>
+                                    <tr style="background-color: #606060;color: #fff;">
+                                        <td><b>Campaña</b></td>
+                                        <td><b>Clave del Producto</b></td>
+                                        <td><b>Descripción</b></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    $$DETAILROWSTART6$$
+                                    <tr>
+                                        <td>$$CMPGN_NR$$</td>
+                                        <td>$$LINE_NR$$</td>
+                                        <td>$$PRODNM$$</td>
+                                    </tr>
+                                    $$DETAILROWEND6$$
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!-- if ("$$NEW_DUE_BAL_AMT$$" ne "$0.00") -->
+                    <tr>
+                        <td>
+                            <br /><br />
+                            <hr>
+                            <p>
+                                Tus devoluciones tienen un Ajuste inmediato <strong
+                                    style="color: #f00088;">APROBADO</strong> por <strong>$$DISCNT_ADJSTMT_AMT$$</strong>. Éste monto es aplicable a <strong
+                                    style="color: #f00088;">C$$PREV_CMPGN_NR$$</strong>
+                            </p>
+                            <p>
+                                Aquí encontrarás tus saldos y tus <strong>nuevas referencias bancarias</strong>:
+                            </p>
+                            <ul style="border-bottom: 1px solid #e2e2e2; padding-bottom: 15px;">
+                                <li style="list-style: none;">
+                                    <strong>Saldo anterior:</strong> $$OLD_DUE_BAL_AMT$$
+                                </li>
+                                <li style="list-style: none;">
+                                    <strong>Saldo actual:</strong> $$NEW_DUE_BAL_AMT$$
+                                </li>
+                            </ul>
+                            <ul>
+                                $$DETAILROWSTART4$$
+                                <li style="list-style: none; margin-bottom: 8px;">
+                                    <strong>$$PARM_DESC_TXT$$:</strong>$$INSTNT_CRDT_PYMT_REF_NR$$
+                                </li>
+                                $$DETAILROWEND4$$
+                            </ul>
+                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">Por favor paga antes de: $$DLVRY_DUE_DT$$</p>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <!-- if ("$$NEW_DUE_BAL_AMT$$" eq "$0.00") -->
+                    <tr>
+                        <td>
+                            <br /><br />
+                            <hr>
+                            <p>
+                                Tus devoluciones tienen un Ajuste inmediato <strong
+                                    style="color: #f00088;">APROBADO</strong> por <strong
+                                    style="color: #f00088;">$$DISCNT_ADJSTMT_AMT$$</strong>. Éste monto es aplicable a
+                                <strong style="color: #f00088;">C$$PREV_CMPGN_NR$$</strong>
+                            </p>
+                            <ul>
+                                <li style="list-style: none;">
+                                    <strong>Saldo anterior:</strong> $$OLD_DUE_BAL_AMT$$
+                                </li>
+                                <li style="list-style: none;">
+                                    <strong>Saldo actual:</strong> $$NEW_DUE_BAL_AMT$$
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">¡Felicidades!</p>
+                            <p>
+                                Gracias a tu Ajuste inmediato, no tienes saldo pendiente en la campaña actual.
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- endif -->
+                    <tr>
                         <td class="av-text">
+                            <br /><br />
+                            <hr>
+                            <br />
                             Para dudas o aclaraciones llama a nuestro Servicio a la Representante al
                             <br />
                             <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">55 1000 AVON (2866)</p>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <br />
+                            <table style="border-collapse: collapse;border-spacing: 0px;width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/correoBienvenidaAvonOn5.jpg">
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a style="display:block;" href="https://play.google.com/store/apps/details?id=com.avon.avonon&hl=en&gl=US" target="_blank">
+                                                <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/correoBienvenidaAvonOn4.jpg">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a style="display:block;" href="https://apps.apple.com/us/app/avon-on/id1439105374" target="_blank">
+                                                <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/correoBienvenidaAvonOn3.jpg">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    
                 </table>
-                
             </td>
         </tr>
-		<tr>
+        <tr>
             <td>
                 <table style="font-size: 13px;background-color: #eee;">
                     <tr>
@@ -227,18 +446,21 @@
                             <div style="
                                 background-color: #eee;
                                 padding: 20px 12px; text-align: center;">
+                                <span>
+                                    Al ingresar tu orden de compra, estás aceptando la orden de pedido, el importe y la recepción del mismo.
+                                    Al ingresar tus datos personales, manifiestas tu consentimiento para el uso y tratamiento de los mismos para 
+                                    los fines de negocio aquí establecidos; puedes acceder al aviso de privacidad completo <a href="https://www.avon.mx/avon-mx/terminos-y-condiciones.html">aquí.</a>
+                                </span>
+                                <br><br>
                                 <span>Este material y la información en él contenida ha sido preparada por Avon Cosmetics, S. de R.L. de C.V., para su uso y difusión restringida y privada en la República Mexicana, de acuerdo con la estrategia comercial de la fuerza de ventas y Representantes Revendedoras Independientes. &#169; DR Avon Products Inc., 2020 Salud es Belleza 133300202D0056</span>
                             </div>
-
-                            
                         </td>
                     </tr>
                     
                 </table>
             </td>
         </tr>
-        
     </table>
-   
 </body>
+
 </html>

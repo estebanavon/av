@@ -79,7 +79,8 @@ a {
         font-size: 13px;
     }
 }
-.products-category h2, .brands h3 {
+.products-category h2, .brands h3,
+h3.searchHeader {
     @include title;
 }
 .brands h3 {

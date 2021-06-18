@@ -1,24 +1,48 @@
 
-const brochuresNcm15 = [
-    {
-        title: 'Avon Contigo 3',
-        file: 'avon_contigo_c0121.pdf',
-        type: 'contigo',
-    },
+const brochures12 = [
     {
         title: 'Belleza',
-        file: '1',
-        type: 'imb',
+        file: 'BellezaMx12.pdf',
+        type: 'flyer',
     },
     {
         title: 'Fashion & Home',
-        file: '2',
-        type: 'imb',
+        file: 'FashionNHomeMx12.pdf',
+        type: 'flyer',
     },
     {
-        title: 'Rutinas Anew',
-        file: '3',
-        type: 'imb',
+        title: 'Avon Contigo',
+        file: 'avon_contigo_c1221.pdf',
+        type: 'contigo',
+    },
+    {
+        title: 'Minifolleto Maquillaje',
+        file: 'minifolletoMaquillajeC10.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'F&H Eco Beauty',
+        file: 'ecoc11-c15.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'F&H Aceites',
+        file: 'aceitesC11.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Minifolleto Bundles Q3',
+        file: 'minifolletoBundlesQ3.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Temporada Rosa Avon',
+        file: 'avonTemporadaRosa.pdf',
+        type: 'flyer',
+    },
+    {
+        title: 'Verano Bicampañal Anew',
+        file: 'anewVeranoBicampanal.pdf',
+        type: 'flyer',
     },
 ]
-

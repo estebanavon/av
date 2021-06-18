@@ -1,23 +1,9 @@
 
-// Image route:  "/REPSuite/static/images/home/"
-// Content for new REPs LOA < 7
-const avFreshConfig = [
-    {
-        link:'/REPSuite/interfaz.page',
-        img: 'overlayBienvenida.jpg',
-        title: 'Tu nuevo catalogo'
-    },
-];
 
 // Only one working at the moment
 // Content for older REPs LOA >= 7
 const avOlderConfig = [
-    {
-        link:'/REPSuite/vendorLinksOne.page?linkid=42',
-        img: 'overlayBienvenida.jpg',
-        title: 'Tu nuevo catálogo'
-    },
-  
+   
     {
         link: '/REPSuite/web/static/images/home/ordenMinimac7.png',
         img: 'ordenMinimac7.png',
@@ -25,21 +11,10 @@ const avOlderConfig = [
     },
 ];
 
-// NCM PUSH
-avNCMunshift(AvonAnalyticsObjex.Profile.repAcct);
-// CE PUSH
-avCEunshift(AvonAnalyticsObjex.Profile.repAcct);
-
 
 var avPrinter,avConfig,loaCheck,avdownload;
 avPrinter = ['']
-var loaCheck = AvonAnalyticsObjex.Profile.loa;
-//var loaCheck = 9;
-if (loaCheck < 10){
-    avConfig = avFreshConfig;
-} else {
-    avConfig = avOlderConfig;  
-}
+avConfig = avOlderConfig;  
 for (i=0;i < avConfig.length;i++) {
     avPrinter += '<div class="avModalButton" av-data="'+ i +'">'+ avConfig[i].title +'</div>'
 };

@@ -5,62 +5,91 @@
     <style>
         .av-button-primary {color: #fff;border-radius: 4px;display: block;background-color: #7F28C4;border: none;cursor: pointer;text-decoration: none;text-transform: uppercase;font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;text-align: center;font-style: normal;white-space: nowrap;background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);}
         .av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {color: #fff;outline: none;text-decoration: none !important;}
-        .avEmailContent {width: 100%;color: #3b4546;font-family: montserrat-regular, Helvetica, sans-serif;font-size: 16px;line-height: 20px;margin: 0 auto;}
+        .avEmailContent {width: 300px;color: #3b4546;font-family: montserrat-regular, Helvetica, sans-serif;font-size: 16px;line-height: 20px;margin: 0 auto;}
         .av-text {text-align: left;font-size: 17px;}
         .avEmailText {padding-left: 10px;padding-right: 10px;padding-top: 20px;padding-bottom: 20px;border-spacing: 0px 10px;font-size: 17px;}
         .av-table {font-size: 13px;line-height: 12px;text-align: center;border-collapse: collapse;width: 100%;}
-        @media only screen and (min-width: 480px) {.av-table {    font-size: 13px;    line-height: 14px;    text-align: center;    border-collapse: collapse;}.avEmailText {padding-left: 50px;padding-right: 50px;}.av-table td {padding: 10px;}}
+        .emailText1{padding: 0px 30px;}.emailText2{padding: 5% 15%;}
+        @media only screen and (min-width: 480px) {
+            .av-table {    font-size: 13px;    line-height: 14px;    text-align: center;    border-collapse: collapse;}.avEmailText {padding-left: 50px;padding-right: 50px;}.av-table td {padding: 10px;}
+            .avEmailContent {width: 480px}
+        }
+        @media only screen and (min-width: 600px) {
+            .avEmailContent {width: 600px}
+            .emailText1{padding: 0px 50px;}
+        }
         .av-table tr:nth-child(odd) {background:#F2F2F2;}
     </style>
 </head>
 <body>
     <table class="avEmailContent">
-        <tr><td><div id="__codeblock__" style="display: none; height: 0px; width: 0px;"></div></td></tr>
         <tr>
-            <td style="text-align: center;">
-                <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/dataUpdate2021.jpg">
+            <td colspan="2">
+                <img style="width:100%;" src="../img/EmailSketch2.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img style="width:100%;" src="../img/EmailSketch1.jpg">
+                <b class="emailText2" style="text-align: left;font-size: 25px;line-height: 27px;
+                position: relative; height: 0px;
+                top: -90px;text-transform: uppercase;">CLAUDIA CLAUDIACLAUDIA</b>
+                <b class="emailText1" style="width:100%;display:block;text-align: left;font-size: 25px;line-height: 27px;
+                position: relative; height: 0px;
+                top: 120px;
+                color: white;
+                text-transform: uppercase;">Ya eres parte de esta<br /> gran familia</b>
+                <br />
+                <p class="emailText1" style="text-align: left;
+                position: relative;
+                top: 150px;
+                color: white;height: 0px;">Tu proceso de Nombramiento con AVON<br /> ha concluido con Éxito.</p>
+                <img style="width:100%;" src="../img/EmailSketch3.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 30px;">
+                <b style="width:100%;display:block;text-align: left;font-size: 25px;line-height: 27px;
+                text-transform: uppercase;">Regístrate en<br /> Mi Espacio AVON</b>
+                <p style="text-align: left;">Empieza tu negocio hoy<br />mismo.</p>
+                <a href="" style="width: 260px;height: 35px; padding-top: 15px; font-size: 16px;" class="av-button-primary">
+                    REGÍSTRATE
+                </a>
+            </td>
+            <td style="width: 190px;">
+                <img style="width: 100%;" src="../img/EmailSketch4.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 30px;" valign="top">
+                <img style="width: 100%;" src="../img/EmailSketch6.jpg">
+            </td>
+            <td style="width: 190px;padding-left: 15px;padding-right: 15px;">
+                <br />
+                <b style="width:100%;display:block;text-align: left;font-size: 25px;line-height: 27px;
+                text-transform: uppercase;">verifica</b>
+                <p style="text-align: left;font-size: 15px;">Por favor, verifica tu bandeja de entrada para que tengas tu contrato y número de registro de Representante.</p>
             </td>
         </tr>
 		<tr>
-            <td>
-                <table class="avEmailText">
-                    <tr>
-                        <td class="av-text">
-                            Recientemente solicitaste actualizar tus datos en nuestros sistemas.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="av-text">
-                            Para validar tu correo electrónico, da click en el siguiente botón:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="$$URL$$" style="height: 35px; padding-top: 15px; width: 100%; font-size: 16px;" class="av-button-primary">
-                                Validar correo electrónico
-                            </a>
-                            <a style="text-align: center;width: 100%; display: block;margin-top:10px;" href="$$URL$$"><small>$$URL$$</small></a>
-                            <p class="av-tex" style="text-align: center;">Esta liga estará activa durante los siguientes 5 días.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="av-text">
-                            Recuerda que puedes mantener actualizados tus datos (teléfonos, celular y/o correo ectrónico) ingresando en la sección Mis Datos Personales dentro de Tu Espacio Avon.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="av-text">
-                            Si no realizaste esta solicitud, por favor comunícate con nosotros al
-                            <br />
-                            <p style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">55 1000 AVON (2866)</p>
-                        </td>
-                    </tr>
-                </table>
-                
+            <td colspan="2">
+                <br /><br />
+                <b style="width:100%;display:block;text-align: center;font-size: 25px;line-height: 27px;
+                text-transform: uppercase;">Descubre cómo<br />colocar tu primer pedido </b>
+                <br />
+                <a href="" style="display: block; margin: 0 auto; width: 80%;height: 35px; padding-top: 15px; font-size: 16px;" class="av-button-primary">
+                    Descúbrelo
+                </a>
+                <br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img style="width: 100%;" src="../img/EmailSketch5.jpg">
             </td>
         </tr>
 		<tr>
-            <td>
+            <td colspan="2">
                 <table style="font-size: 13px;background-color: #eee;">
                     <tr>
                         <td valign="middle">
