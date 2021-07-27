@@ -1,7 +1,7 @@
 
 @import '../partial-scss/routes';
 $prod-font: '/dam/avon-mx/static/fonts';
-$route-font: $prod-font;
+$route-font: $dev-font;
 @import '../partial-scss/font';
 @import '../partial-scss/colors';
 @import '../partial-scss/variables';
@@ -24,4 +24,5 @@ $route-font: $prod-font;
 @import 'esr';
 @import 'conoce-avon';
 @import 'anew';
+@import 'ourCompany';
 

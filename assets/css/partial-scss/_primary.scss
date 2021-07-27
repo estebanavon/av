@@ -94,14 +94,12 @@
 
 
 .av-subtitle {
-    @include subtitle(33px,center,20px);
+    @include subtitle(24px,left,0px);
     @include negative();
-
     &-support {
         @include subtitle(30px);
         @include negative();
     }
-    
 }
 .av-title {
     @include title;

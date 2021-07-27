@@ -718,14 +718,14 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .av-subtitle {
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   font-weight: 300;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 20px;
+  text-align: left;
+  font-size: 23px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
   .av-subtitle {
-    font-size: 33px;
+    font-size: 24px;
   }
 }
 
@@ -793,6 +793,22 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 
 .av-title b {
   font-weight: normal !important;
+}
+
+.av-title.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-title.negative {
+    text-align: left;
+  }
+}
+
+.av-title.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .av-text {
@@ -1779,23 +1795,37 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .find-a-rep label {
+    color: #fff !important;
+  }
+}
+
 .far-main-img-container .far-caption-first-line {
   font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
   font-size: 45px;
 }
 
-@supports (-webkit-text-stroke: 1px black) {
+@supports (-webkit-text-stroke: 1px #000) {
   .far-main-img-container .far-caption-first-line {
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px #000;
     -webkit-text-fill-color: transparent;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .far-main-img-container .far-caption-first-line {
     font-size: 34px;
     line-height: 34px;
+  }
+}
+
+@media (min-width: 768px) {
+  @supports (-webkit-text-stroke: 1px #fff) {
+    .far-main-img-container .far-caption-first-line {
+      -webkit-text-stroke: 1px #fff;
+    }
   }
 }
 
@@ -1809,6 +1839,21 @@ body {
   .far-main-img-container .far-caption-second-line {
     font-size: 34px;
   }
+}
+
+.far-main-img-container .far-caption-third-line {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.far-main-img-container .find-representative .form-group input,
+.far-main-img-container .far-caption-third-line {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+.far-main-img-container .far-main-img-container .far-caption-fourth-line, .far-main-img-container .far-main-img-container .far-caption-fifth-line {
+  font-family: montserrat-regular, Helvetica, sans-serif;
 }
 
 video:focus {
@@ -1826,6 +1871,22 @@ video:focus {
 
 .multimedia-title h2 b {
   font-weight: normal !important;
+}
+
+.multimedia-title h2.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .multimedia-title h2.negative {
+    text-align: left;
+  }
+}
+
+.multimedia-title h2.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .left-nav h3 {
@@ -1859,8 +1920,39 @@ video:focus {
   font-weight: normal !important;
 }
 
+.multimedia-layout-wrapper .video-text-item h3.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .multimedia-layout-wrapper .video-text-item h3.negative {
+    text-align: left;
+  }
+}
+
+.multimedia-layout-wrapper .video-text-item h3.negative [class^='material-icons'] {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .bucket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .bucket h3 {
@@ -1934,6 +2026,22 @@ a {
   font-weight: normal !important;
 }
 
+.products-carousel h2.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .products-carousel h2.negative {
+    text-align: left;
+  }
+}
+
+.products-carousel h2.negative [class^='material-icons'] {
+  color: #fff;
+}
+
 .products-carousel h2 > span {
   font-family: montserrat-regular, Helvetica, sans-serif;
   font-size: 13px;
@@ -1957,6 +2065,25 @@ h3.searchHeader {
 .products-category h2 b, .brands h3 b,
 h3.searchHeader b {
   font-weight: normal !important;
+}
+
+.products-category h2.negative, .brands h3.negative,
+h3.searchHeader.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .products-category h2.negative, .brands h3.negative,
+  h3.searchHeader.negative {
+    text-align: left;
+  }
+}
+
+.products-category h2.negative [class^='material-icons'], .brands h3.negative [class^='material-icons'],
+h3.searchHeader.negative [class^='material-icons'] {
+  color: #fff;
 }
 
 .brands h3 {

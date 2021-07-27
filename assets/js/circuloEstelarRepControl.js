@@ -24,6 +24,14 @@ $(document).ready(function () {
             develop: false,
         },
         {
+            file: 'basesCE2021.pdf',
+            develop: false,
+        },
+        {
+            file: 'ceEmotivoVideo.mp4',
+            develop: false,
+        },
+        {
             file: 'COD.jpg',
             develop: false,
         },
@@ -39,7 +47,7 @@ $(document).ready(function () {
             file: 'PostFB.jpg',
             develop: true,
         },
-        {
+        { 
             file: 'PostFB1.jpg',
             develop: true,
         },
@@ -57,10 +65,7 @@ $(document).ready(function () {
             file: 'TipsdeVenta.jpg',
             develop: false,
         },
-        {
-            file: 'CaminoAlExito.mp4',
-            develop: false,
-        },
+        
         {
             file: 'ConoceTuCaja.mp4',
             develop: false,
@@ -129,10 +134,6 @@ $(document).ready(function () {
     var avFiles3 = [
         {
             file: 'CalculaTuOportunidadDeGanancia.mp4',
-            develop: false,
-        },
-        {
-            file: 'MuchasFelicidades.png',
             develop: false,
         },
         {
@@ -242,6 +243,10 @@ $(document).ready(function () {
         },
     ];
     var avFiles7 = [
+        {
+            file: 'videoUniveroEstelar.mp4',
+            develop: false,
+        },
         {
             file: 'lealtad.jpg',
             develop: false,

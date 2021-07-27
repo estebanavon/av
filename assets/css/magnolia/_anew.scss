@@ -528,7 +528,7 @@
 
 @mixin av-anew-section($name) {
     .#{$name} {
-        background-image: url('#{$route-images}/#{$name}.jpg');
+        background-image: url('#{$route-images}/anew/#{$name}.jpg');
     }
 }
 

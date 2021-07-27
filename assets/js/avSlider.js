@@ -50,6 +50,7 @@ $(document).ready(function(){
     $('#avMenuButton').click(function(){
         $('.avMenu').addClass('active');
         $('.av-header').addClass("av-header-white");
+        $("#brandHeader").children().eq(0).attr("xlink:href","#brand");
         $('#avMenuClose').show();
         $(this).hide();
     });
@@ -63,14 +64,16 @@ $(document).ready(function(){
         let documentScroll = $(document).scrollTop();
         if (documentScroll > 500){
             $(".av-header").addClass("av-header-white");
+            $("#brandHeader").children().eq(0).attr("xlink:href","#brand");
         } else {
             $(".av-header").removeClass("av-header-white");
+            $("#brandHeader").children().eq(0).attr("xlink:href","#brandWhite");
         }
     });
 
     const avLoader = '<div class="av-loader">'+
-            '<svg width="154.2px" height="30px">'+
-                '<use xlink:href="#brand"></use>'+
+            '<svg width="154.2px" height="35px">'+
+                '<use xlink:href="#brandWhite"></use>'+
             '</svg>'+
             '<div class="w-25">'+
                 '<div class="avLoader">'+
@@ -79,7 +82,7 @@ $(document).ready(function(){
 
     const avFooterInsert = '<footer class="av-footer">'+
                                 '<div class="row">'+
-                                    '<div class="col-auto mx-auto"><svg width="154.2px" height="30px" fill="#fff"><use xlink:href="#brand"></use></svg></div>'+
+                                    '<div class="col-auto mx-auto"><svg width="154.2px" height="35px" fill="#fff"><use xlink:href="#brandWhite"></use></svg></div>'+
                                     '<div class="av-spacer"></div><div class="w-100"></div>'+
                                     '<div class="col-12 col-md">'+
                                         '<ul class="av-list av-footer-list">'+
@@ -135,11 +138,11 @@ $(document).ready(function(){
     setTimeout(function(){ 
         $('.av-loader').addClass('loaderFadeOut');
         sessionStorage.setItem('loaderOnce', 'true');
-     }, 3000);
+     }, 5000);
     setTimeout(function(){ 
         $('body').css('overflow-y','auto');
         $('.av-loader').remove();
-     }, 3900);
+     }, 5900);
     $('header').css('opacity','0');
 });
 

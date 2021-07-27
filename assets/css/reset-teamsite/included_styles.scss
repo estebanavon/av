@@ -13,13 +13,14 @@ $line-height: 19px;
 @import '../partial-scss/components';
 
 
+@import '../GI3/demos';
 @import '../GI3/mxExceptions';
 @import '../GI3/orderSummary';
 @import '../GI3/subtotal';
 @import '../GI3/step0';
 @import '../GI3/clearanceOffers';
 @import '../GI3/brosura';
-@import '../GI3/thickboxPopUp';
+@import '../GI3/popUp';
 @import '../GI3/step1';
 @import '../GI3/yourTeamOrder';
 @import '../GI3/headerLinks';

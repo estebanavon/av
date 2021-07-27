@@ -1,0 +1,143 @@
+
+
+// LOG IN
+body[onunload="closeAllChilds();"] > table.border[width="770px"] > tbody > tr:nth-child(2) {
+    > td > table > tbody > tr {
+        display: flex;
+        > td {
+            flex: 1;
+            height: 76vh;
+            &:first-child {
+                display: none;
+                @media (min-width:$media-3) {
+                    display: block;
+                }
+            }
+            &:last-child {
+                > table {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+body[onunload="closeAllChilds();"] > table.border:not([width="770px"]) > tbody > tr:nth-child(2) {
+    @include bodyMixin();
+}
+[name="homeNavParent"] > table {
+    background-image: none;
+    > tbody {
+        tr:nth-child(2) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            td:last-child {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+#logindiv {
+    box-sizing: border-box;
+    display: block !important;
+    width: 400px;
+    padding: 40px 50px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    > table > tbody > tr:first-child > td > img {
+        width: 100%;
+    }
+    .loginBoxBG > table > tbody > tr > td > table {
+        width: 100%;
+    }
+    [name="loginForm"] ~ tr {
+        &:nth-last-child(4), &:nth-last-child(6), &:nth-last-child(8){
+            tr {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 12px;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        &:nth-last-child(4) {
+            td:nth-child(2) {
+                margin: 10px 0px;
+            }
+        }
+    }
+    a.bodyCenter {
+        margin: 5px 0px;
+    }
+}
+.avlogin-support {
+    margin-top: 35px;
+    width: 400px;
+    text-align: left;
+   
+    .avlogin-contact {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        &.mx {
+            margin-top: 30px;
+            flex-direction: column;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            svg {
+                margin-right: 3px;
+            }
+        }
+    }
+}
+.avlogin-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+   
+}
+.avlogin-cont {
+    background-position: center;
+    background-size: cover;
+}
+.avlogin-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 50px;
+    background-color: $color-light-white;
+    a {
+        text-decoration: none;
+        color: $color-text;
+    }
+    > div {
+        font-size: 15px;
+        &:first-child {
+            margin-bottom: 15px;
+            svg {
+                opacity: 0.8;
+                height: 30px;
+            }
+        }
+        &:last-child {
+            text-align: left;
+            > div:first-child a::after {
+                content: ' /';
+            }
+            > div:last-child {
+                a:first-child {
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+}
+
+

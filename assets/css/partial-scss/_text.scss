@@ -7,6 +7,19 @@
     padding: 0;
     font-style: normal;
 }
+@mixin negative($align:center) {
+    &.negative {
+        color: $color-white;
+        text-align: $align;
+        fill: $color-white;
+        @media (min-width:$media-1) {
+            text-align: left;
+        }
+        [class^='material-icons'] {
+            color: $color-white;
+        }
+    }
+}
 @mixin titleRegular() {
     @extend %titles;
     font-family: $regular-monts;
@@ -37,6 +50,7 @@
     b {
         font-weight: normal !important;
     }
+    @include negative;
 }
 @mixin highlight() {
     .av-highlight {
@@ -56,13 +70,12 @@
     }
 }
 @mixin modal-title {
-    color: $color-text;
+    @extend %titles;
     font-family: $bold-monts;
     line-height: 34px;
     font-size: 20px;
     text-align: center;
     padding: 20px 0;
-    display: block;
 }
 
 @mixin text-system($font:$regular-monts){
@@ -71,19 +84,7 @@
     font-size: 16px;
     line-height: 19px;
 }
-@mixin negative($align:center) {
-    &.negative {
-        color: $color-white;
-        text-align: $align;
-        fill: $color-white;
-        @media (min-width:$media-1) {
-            text-align: left;
-        }
-        [class^='material-icons'] {
-            color: $color-white;
-        }
-    }
-}
+
 @mixin salePrice{
     font-size: 22px;
     font-family: $bold-monts !important;
@@ -122,3 +123,5 @@
     @extend %av-list;
     list-style-type: decimal;
 }
+
+

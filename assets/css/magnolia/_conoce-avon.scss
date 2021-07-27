@@ -30,7 +30,7 @@
 
 .av-ca-hero {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -45,14 +45,14 @@
         padding: 75px;
     }
     @media (min-width:$media-2){
-        padding: 120px;
+        padding: 100px;
     }
     
     
 
 
     @mixin caTitle($color) {
-        $LetSize: 43px;
+        $LetSize: 30px;
         @media (max-width:$media-1) {
             position: relative;
             top: -15%;    
@@ -85,12 +85,12 @@
             width: 100%;
             font-family: $regular-monts;
             font-style: normal;
-            font-size: 16px;
-            line-height: 20px;
-            @media (min-width:$media-3) {
+            font-size: $LetSize / 2;
+            line-height: 16px;
+            @media (min-width:$media-1) {
                 width: 47%;
-                font-size: 25px;
-                line-height: 27px;
+                font-size: $LetSize / 1.7;
+                line-height: 20px;
             }
         }
         .av-number {
@@ -115,10 +115,13 @@
         @include caTitle($color-conoce-avon1);
     }
     .av-mark {
-        @include caTitle($color-white);
+        @include caTitle($color-dark);
     }
     .av-eau {
         @include caTitle($color-conoce-avon2);
+    }
+    .av-lider {
+        @include caTitle($color-white);
     }
     &.productos{
         &:nth-child(1){
@@ -130,13 +133,13 @@
         &:nth-child(2){
             background-image: url('#{$route-images}/conoce-avon/ca-products-2b.jpg');
             @media (min-width:$media-1) {
-                background-image: url('#{$route-images}/conoce-avon/ca-products-2.jpg');
+                background-image: url('#{$route-images}/conoce-avon/ca-products-a2.jpg');
             }
         }
         &:nth-child(3){
             background-image: url('#{$route-images}/conoce-avon/ca-products-3b.jpg');
             @media (min-width:$media-1) {
-                background-image: url('#{$route-images}/conoce-avon/ca-products-3.jpg');
+                background-image: url('#{$route-images}/conoce-avon/ca-products-a3.jpg');
             }
         }
     }
@@ -196,7 +199,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     
-    $caPadding: 100px;
+    $caPadding: 130px;
     $caPaddingSmall: 5%;
     @mixin caPadding($child1,$child2){
     
@@ -234,10 +237,10 @@
         }
         @media (min-width:$media-5){
             &:#{$child1}-child {
-                padding-left: $caPadding * 2.8;
+                padding-left: $caPadding * 2.3;
             }
             &:#{$child2}-child {
-                padding-right: $caPadding * 2.8;
+                padding-right: $caPadding * 2.3;
             }
         }
         @media (min-width:$media-6){
@@ -366,6 +369,7 @@ div.p-fix, h3.p-fix {
     width: 100%;
     background-color: transparent;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -375,11 +379,12 @@ div.p-fix, h3.p-fix {
     top: 0;
     right: 0;
     left: 0;
-    transition: all 0.4s;
+    transition: all 0.3s;
     z-index: 110;
     @media (min-width:$media-3) {
+        flex-direction: column;
         justify-content: center;
-        padding: 30px 0px 10px 0px;
+        padding: 10px 0px;
     }
     
     svg {
@@ -387,14 +392,23 @@ div.p-fix, h3.p-fix {
     }
     
     @include headerLink;
-    
+    .avonmxLink{
+        align-self: flex-end;
+        color: $color-white;
+        display: none;
+        padding-right: 30px;
+        font-size: 14px;
+        @media (min-width:$media-3) {
+            display: block;
+        }
+    }
     
     .av-header-line {
         position: absolute;
         bottom: 0;
         right: 0;
         width: 100%;
-        height: 3px;
+        height: 2px;
         background-color: transparent;
     }
     &.av-header-white {
@@ -434,9 +448,9 @@ div.p-fix, h3.p-fix {
 }
 
 .pt-10 {
-    padding-top: 50px;
+    padding-top: 30px;
     @media (min-width:$media-1){
-        padding-top: 130px;
+        padding-top: 50px;
     }
 }
 .pb-15 {
@@ -472,6 +486,7 @@ div.p-fix, h3.p-fix {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-decoration: none;
     }
 }
 
@@ -537,26 +552,25 @@ div.p-fix, h3.p-fix {
     align-items: center;
     flex-direction: column-reverse;
     margin: 0 auto;
-    min-height: 720px;
     @media (min-width:$media-1){
         flex-direction: row;
         min-height: 500px;
     }
     .av-ca-earn {
-        background-color: $color-secondary;
+        background-image: $color-gradient;
         position: relative;
-        top: -4.5rem;
+        top: -20px;
         z-index: 0;
-        padding: 30px;
+        padding: 40px 30px;
         text-align: center;
         
         @media (min-width:$media-1){
-            padding: 4rem 20rem 4rem 4rem;
+            padding: 4rem 10% 4rem 6%;
             top: 0;
-            left: 12%;
+            left: 6%;
         }
         @media (min-width:$media-2){
-            padding: 4rem 30rem 4rem 4rem;
+            padding-right: 20%;
             left: 4%;
             width: 800px;
         }
@@ -571,7 +585,7 @@ div.p-fix, h3.p-fix {
             width: 100%;
             
             @media (min-width:$media-1){
-                right: 15%;
+                right: 20%;
                 width: 500px;
             }
             
@@ -626,11 +640,16 @@ div.p-fix, h3.p-fix {
     min-height: 40vh;
 }
 .bookPin {
-    height: 100vh;
+    height: 80vh;
     z-index: 0;
+    @media (min-width:$media-1){
+        height: 60vh;
+        padding-top: 50px;
+    }
 }
 .book1a,.book1b {
     position: absolute;
+    top: -30px;
     width: 55%;
     max-width: 38rem;
     min-width: 20rem;

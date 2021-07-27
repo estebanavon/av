@@ -1,0 +1,9 @@
+@mixin ourCompany($variable){
+    .#{$variable} {
+        background-image: url('#{$route-images}/#{$variable}.jpg');
+    }
+}
+@include ourCompany(ourCompanyKnow);
+@include ourCompany(ourCompanyMison);
+@include ourCompany(ourCompanyMain);
+@include ourCompany(ourCompanyQuality);
