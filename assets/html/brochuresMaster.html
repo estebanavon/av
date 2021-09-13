@@ -1,217 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-    <link rel="stylesheet" type="text/css" href="../css/styles-teamsite/styles_scss.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.228/pdf.min.js"></script>
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dam/avon-mx/static/css/conoceavonsupport.css">
+    <link rel="stylesheet" type="application/json" href="/dam/nola-assets/css/conoceavonsupport.css.map">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/dam/nola-assets/css/styles_simulador.css">
+    <link rel="stylesheet" type="application/json" href="/dam/nola-assets/css/styles_simulador.css.map">
+    <script src="https://kit.fontawesome.com/60d5b8c1af.js" crossorigin="anonymous"></script>
+    <script src="/dam/nola-assets/js/simuladorInteraction_sv.js"></script>
+	<script src="/dam/nola-assets/js/data_sv.js"></script>
+	
+	
 
-        <script src="../js/brochuresItems-01.js"></script>
-        <script src="../js/brochuresItems-02.js"></script>
-        <script src="../js/brochuresItems-03.js"></script>
-        <script src="../js/brochuresItems-04.js"></script>
-        <script src="../js/brochuresItems-05.js"></script>
-        <script src="../js/brochuresItems-06.js"></script>
-        <script src="../js/brochuresItems-07.js"></script>
-        <script src="../js/brochuresItems-08.js"></script>
-        <script src="../js/brochuresItems-09.js"></script>
-        <script src="../js/brochuresItems-10.js"></script>
-        <script src="../js/brochuresItems-11.js"></script>
-        <script src="../js/brochuresItems-12.js"></script>
-        <script src="../js/brochuresItems-13.js"></script>
-        <script src="../js/brochuresItems-14.js"></script>
-        <script src="../js/brochuresItems-15.js"></script>
-        <script src="../js/brochuresItems-16.js"></script>
-        <script src="../js/brochuresItems-17.js"></script>
-        <script src="../js/brochuresItems-18.js"></script>
-        <script src="../js/brochuresItems-19.js"></script>
-        <script src="../js/brochuresItems-20.js"></script>
-        
-        <script src="../js/brochuresControl.js"></script>
-        
-        
-        <script src="https://kit.fontawesome.com/60d5b8c1af.js" crossorigin="anonymous"></script>
-        
-</head>
-
-<body>
-    <!-- <div class="av-loader">
-        <div class="av-loader-content">
-            <h3 class="av-subtitle av-fade negative">Bienvenida a</h3>
-            <h3 class="av-subtitle negative">MIS FOLLETOS</h3>
-            <p class="av-text av-fade negative">Para optimas visualizaciones utilizar Google Chrome, Mozilla FireFox, Microsoft Edge, Safari u Opera</p>
-        </div>
-    </div> -->
-    <section class="av-lw">
-        <aside id="brochureAside" class="av-brochure-aside">  
-            <div class="av-share">
-                <div>
-                    <i class="fas fa-share"></i><span>Comparte</span>
-                </div>
-                <div>
-                    <a href="mailto:subject=Este es mi Catálogo para ti">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?text=Este es mi Catálogo para ti" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+    <section class="container_simulador">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col">
+                    <h2 class="title_simulador"><span style="font-size: 34px;" class="material-icons">attach_money</span> Simulador de ganancias</h2>
+                    <p class="subtitle_simulador">¿Cuanto te gustaría ganar en una campaña?</p>
                 </div>
             </div>
-            <div class="av-map">
-                <div class="">
-                    <svg width="30px" height="22.7px" >
-                        <use xlink:href="#flyers"></use>
-                    </svg>
-                    <span>Flyers / Minifolletos</span>
+            <div class="row">
+                <div class="col">
+                    <div class="selector_simulador_container">
+                        <div class="selector_simulador " value="0">
+                            <div class="av-wrapper">
+                                <svg width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><span class="material-icons">attach_money</span>10 - <span class="material-icons">attach_money</span>20</p>
+                        </div>
+                        <div class="selector_simulador" value="1">
+                            <div class="av-wrapper">
+                                <svg style="transform: scale(1.45);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><span class="material-icons">attach_money</span>20 - <span class="material-icons">attach_money</span>40</p>
+                        </div>
+                        <div class="selector_simulador active" value="2">
+                            <div class="av-wrapper">
+                                <svg style="transform: scale(1.7) rotate(20deg);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><span class="material-icons">attach_money</span>40 - <span class="material-icons">attach_money</span>50</p>
+                        </div>
+                        <div class="selector_simulador" value="3">
+                            <div class="av-wrapper">
+                                <svg style="transform: scale(1.5) translateX(-4px);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                                <svg style="transform: scale(1.5) rotate(20deg) translateY(-2px);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><span class="material-icons">attach_money</span>50 - <span class="material-icons">attach_money</span>60</p>
+                        </div>
+                        <div class="selector_simulador" value="4">
+                            <div class="av-wrapper">
+                                <svg style="transform: scale(1.3);display:block;margin:0 auto;" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                                <svg style="transform: scale(1.3) rotate(-20deg);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                                <svg style="transform: scale(1.3);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p>+ <span class="material-icons">attach_money</span>65</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="av-spacer"></div>
+            <div class="row">
+                <div class="col">
+                    <p class="subtitle_simulador">¿Cómo lograr tus metas?</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <div class="paper_simulador">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="title_text" id="clientsQuantity">6</span>
+                            <span class="material-icons title_icon">person</span>
+                        </div>
+                        <p class="main_text text-center">Cantidad de clientes en tu primera campaña</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="paper_simulador">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="title_text mr-2" id="starLevel">3</span>
+                            <i class="fas fa-star-half-alt title_icon"></i>
+                        </div>
+                        <p class="main_text text-center">Nivel de estrella a alcanzar</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="paper_simulador d-flex align-items-center">
+                        <div id="carousel_simulador" class="carousel slide carousel_simulador w-100" data-ride="carousel">
+                            <div class="carousel-inner" id="incentives">
+                              <div class="carousel-item active" data-interval="15000">
+                                <div class="d-flex align-items-center justify-content-center" id="incentive">
+                                    <span class="material-icons title_icon">account_balance_wallet</span>
+                                    <span class="title_text_small mx-3"><span id="Campaign">2da</span><br /> Campaña</span>
+                                    <p class="main_text">Gana una mochila<br /> de <b>incentivo</b> en tu<br /> segunda campaña</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-interval="15000">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <!--<span class="material-icons title_icon">backpack</span>-->
+									<i class="fas fa-shopping-bag title_icon"></i>
+                                    <span class="title_text_small mx-3"><span id="">4ta</span><br /> Campaña</span>
+                                    <p class="main_text">Gana una cartera<br /> de <b>incentivo</b> en tu<br /> cuarta campaña</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_simulador" role="button" data-slide="prev">
+                              <span class="material-icons" aria-hidden="true">navigate_before</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_simulador" role="button" data-slide="next">
+                              <span class="material-icons" aria-hidden="true">navigate_next</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
                 </div>
                 
-                <div class="">
-                    <svg width="30px" height="23px">
-                        <use xlink:href="#brochures"></use>
-                    </svg>
-                    <span>Catálogo Avon Móvil</span>
+                <div class="w-100"></div>
+                <div class="col-xs-12 col-sm">
+                    <div class="paper_simulador d-flex align-items-center">
+                        <h3 class="title_text mr-3" id="brochuresSell" style="font-size: 34px;
+"><span class="material-icons">attach_money</span>16.3</h3>
+                        <span class="main_text">Venta por cliente en tu primera campaña</span>
+                    </div>
                 </div>
-                <div>
-                    <svg width="30px" height="23px">
-                        <use xlink:href="#docs"></use>
-                    </svg>
-                    <span>Bazar</span>
+                <div class="col-xs-12 col-sm">
+                    <div class="paper_simulador d-flex align-items-center">
+                        <h3 class="title_text mr-3" id="clientSell"><span class="material-icons">attach_money</span> 97.5 
+</h3>
+                        <span class="main_text">Venta total en la primera campaña</span>
+                    </div>
                 </div>
-                <div class="">
-                    <svg width="31.6px" height="24px">
-                        <use xlink:href="#contigo"></use>
-                    </svg>
-                    <span>Avon Contigo</span>
-                </div>
-            </div>
-            
-        </aside>
-        <section class="av-section-container expand">
-            <h2 class="av-brochure-title"><span class="av-title-stroke">Mis</span> folletos</h2>
-            <div class="av-filtros" id="avFiltros">
-                <div class="filter-all" data-filter="all">TODOS</div>
-                <div class="no-active flyer av-tooltip" data-filter="flyer">
-                    <svg x="0px" y="0px" width="25px" height="22.7px" >
-                        <use xlink:href="#flyers"></use>
-                    </svg>
-                    <span class="tooltiptext">Flyers / Minifolletos</span>
-                </div>
-                <div class="no-active imb av-tooltip" data-filter="imb">
-                    <svg width="28.7px" height="23px">
-                        <use xlink:href="#brochures"></use>
-                    </svg>
-                    <span class="tooltiptext">Catálogo Avon Móvil</span>
-                </div>
-                <div class="no-active bazar av-tooltip" data-filter="bazar">
-                    <svg width="18.4px" height="23px">
-                        <use xlink:href="#docs"></use>
-                    </svg>
-                    <span class="tooltiptext">Bazar</span>
-                </div>
-                <div class="no-active contigo av-tooltip" data-filter="contigo">
-                    <svg width="31.6px" height="24px">
-                        <use xlink:href="#contigo"></use>
-                    </svg>
-                    <span class="tooltiptext">Avon Contigo</span>
-                </div>
-            </div>
-            <div class="av-brochures-container" id="brochureContainer"></div>
-            <h3 class="w-100 av-brochures-subtitle">
-                <svg width="30.6px" height="23px">
-                    <use xlink:href="#campaign"></use>
-                </svg>
-                &nbsp;Campaña
-                </h3>
-            <div class="av-brochures-container" id="brochureContainerPast"></div>
-            <h3 class="w-100 av-brochures-subtitle">
-                <svg width="30.6px" height="23px">
-                    <use xlink:href="#campaign"></use>
-                </svg>
-                &nbsp;Campaña&nbsp;
-             </h3>
-            <div class="av-brochures-container" id="brochureList">
-                <ul class="av-list av-list-item w-100"></ul>
-            </div>
-            <button class="av-button-primary av-brochure-button" id="viewMore">Consultar previas campañas</button>
-            <svg class="av-defs">
-                <defs>
-                    <g id="flyers">
-                        <path d="M25,16.6c0,1.1-0.6,1.8-1.5,2.2c-2.9,1.2-5.8,2.5-8.7,3.6c-1.5,0.6-2.6,0-3.4-1.6c-0.7-1.6-1.4-3.3-2-4.9
-                            c-1.2-2.8-2.3-5.6-3.5-8.4c-0.8-2-0.4-3.1,1.6-3.9c2.6-1.1,5.1-2.1,7.7-3.2c2-0.8,3.1-0.3,3.9,1.6c1.8,4.4,3.7,8.9,5.5,13.3
-                            C24.8,15.8,24.9,16.2,25,16.6z M7.9,6c2,4.8,4,9.6,5.9,14.3c3-1.2,5.9-2.4,8.8-3.6c-2-4.8-4-9.6-6-14.3C13.7,3.6,10.8,4.7,7.9,6z"
-                            />
-                        <path d="M5.7,13.2c1.3,3.1,2.6,6.2,4,9.5c-1-0.1-1.8-0.1-2.6-0.3c-1-0.2-1.5-1-1.5-2c-0.1-2.4,0-4.8,0-7.2
-                            C5.6,13.2,5.6,13.2,5.7,13.2z"/>
-                        <path d="M3,10.7c0,3.3,0,6.6,0,10.1c-0.8-0.4-1.5-0.7-2.1-1.1c-0.8-0.6-1.1-1.4-0.8-2.3c0.8-2.3,1.8-4.5,2.7-6.7
-                            C2.9,10.7,2.9,10.7,3,10.7z"/>
-                        <path d="M12.8,7.4c0,0.6-0.5,1.2-1.1,1.2c-0.6,0-1.2-0.5-1.2-1.1c0-0.7,0.5-1.2,1.2-1.2C12.3,6.3,12.8,6.8,12.8,7.4z"/>
-                    </g>
-                </defs>
-                <defs>
-                    <g id="brochures">
-                        <path d="M28.7,10.1c0,2.8,0,5.7,0,8.5c0,0.7-0.3,1.2-0.9,1.4c-0.2,0.1-0.4,0.1-0.5,0.1c-1.3,0-2.6,0.1-4,0.2
-                            c-2,0.2-3.9,0.5-5.8,1.3c-0.8,0.3-1.6,0.7-2.4,1.2c-0.5,0.3-1,0.4-1.5,0c-1.6-1-3.3-1.6-5.1-2c-1.5-0.3-3-0.5-4.5-0.6
-                            c-0.9,0-1.7-0.1-2.6-0.1c-0.9,0-1.5-0.6-1.5-1.5C0,12.9,0,7.2,0,1.5C0,0.6,0.6,0,1.5,0C3,0,4.5,0.1,6,0.2c2.3,0.2,4.5,0.7,6.6,1.6
-                            c0.6,0.2,1.1,0.5,1.6,0.8c0.1,0,0.1,0,0.2,0c1.7-0.9,3.5-1.5,5.3-1.9c2.5-0.5,5-0.7,7.5-0.7c0.8,0,1.4,0.6,1.4,1.4
-                            C28.7,4.3,28.7,7.2,28.7,10.1C28.7,10.1,28.7,10.1,28.7,10.1z M12.9,19.2c0-0.1,0-0.2,0-0.3c0-4.4,0-8.8,0-13.1
-                            c0-0.2,0.1-0.4,0-0.5c-0.1-0.1-0.3-0.2-0.5-0.3c-2-1-4.1-1.4-6.2-1.7C5.3,3,4.5,3,3.6,2.9c-0.3,0-0.5,0-0.8,0c0,4.8,0,9.6,0,14.3
-                            C6.3,17.4,9.7,17.8,12.9,19.2z M25.9,17.3c0-4.8,0-9.6,0-14.4c-0.4,0-0.7,0-1,0.1c-1.5,0.1-3,0.2-4.4,0.5c-1.5,0.3-3,0.8-4.4,1.5
-                            c-0.2,0.1-0.2,0.2-0.2,0.4c0,4.5,0,8.9,0,13.4c0,0.1,0,0.3,0,0.4C19,17.8,22.4,17.4,25.9,17.3z"/>
-    
-                    </g>
-                </defs>
-                <defs>
-                    <g id="docs">
-                        <path d="M0,11.5c0-2.9,0-5.8,0-8.7C0,1,0.9,0,2.8,0C5.4,0,8,0,10.6,0c0.5,0,1.2,0.3,1.5,0.6c1.9,1.8,3.8,3.7,5.6,5.7
-                        c0.3,0.4,0.6,1,0.6,1.5c0,4.2,0,8.4,0,12.5c0,1.3-0.9,2.7-2.7,2.7c-4.4-0.1-8.8,0-13.3,0C0.9,23,0,22.1,0,20.6
-                        C0,17.6,0,14.6,0,11.5z M10.4,8.1c0-1.7,0-3.3,0-4.8c0-0.7-0.2-1-1-1c-2.1,0.1-4.2,0.1-6.3,0c-0.7,0-0.9,0.2-0.9,0.9
-                        c0,5.5,0,11.1,0,16.6c0,0.7,0.2,0.9,0.9,0.9c4,0,8,0,12.1,0c0.7,0,0.9-0.2,0.9-0.9c0-3.6,0-7.3,0-10.9c0-0.7-0.2-0.9-0.9-0.8
-                        C13.7,8.1,12.1,8.1,10.4,8.1z"/>
-                    <path d="M13.7,11.5c0.3,2.3,0.3,2.3-1.9,2.3c-2.1,0-4.2,0-6.3,0c-0.7,0-1.1-0.2-1-1c0,0,0-0.1,0-0.1c0-1.3,0-1.3,1.3-1.3
-                        c2.3,0,4.6,0,6.9,0C13.1,11.5,13.4,11.5,13.7,11.5z"/>
-                    <path d="M9.2,18.4c-1.2,0-2.5,0-3.7,0c-0.7,0-0.9-0.2-0.9-0.9c0-1.7,0-1.4,1.4-1.4c2.3,0,4.6,0,6.9,0c0.7,0,1,0.1,0.9,0.9
-                        c-0.1,1.5,0.2,1.4-1.4,1.4C11.3,18.4,10.2,18.4,9.2,18.4z"/>
-                    </g>
-                </defs>
-                <defs>
-                    <g id="contigo">
-                        <path d="M0,12.7c0-3.2,0-6.4,0-9.6C0,2.4,0.2,2,0.8,1.7c3-1.6,6.3-1.9,9.6-1.4c1.7,0.3,3.4,1.1,5.1,1.6c0.4,0.1,0.9,0,1.3-0.2
-                        c4.7-2.2,9.4-2.2,14,0c0.7,0.3,0.9,0.8,0.9,1.5c0,6.4,0,12.8,0,19.2c0,1.5-0.3,1.7-1.6,1.1c-4.2-1.8-8.4-1.6-12.6,0.2
-                        c-1.1,0.5-1.9,0.5-3-0.1c-4-1.9-8.1-1.7-12.1-0.3C0,24.1,0,24.2,0,21.8C0,18.8,0,15.7,0,12.7z M15.8,21.5c4.2-2,8.4-2.8,13-1.3
-                        c0-5.5,0-10.7,0-16c0-0.2-0.4-0.6-0.7-0.7c-4-1-7.8-0.6-11.5,1.2c-0.7,0.3-0.8,0.7-0.8,1.4c0,4.2,0,8.3,0,12.5
-                        C15.8,19.4,15.8,20.4,15.8,21.5z"/>
-                    </g>
-                </defs>
-                <defs>
-                    <g id="campaign">
-                        <path d="M6.1,16.4c-1-0.2-2.1-0.5-3.1-0.7c-0.1,0.2-0.3,0.5-0.4,0.7C2.2,16.8,1.6,17,1,16.8c-0.6-0.2-1-0.8-1-1.4c0-1.5,0-3,0-4.5
-                            c0-1.5,0-3.1,0-4.6c0-1,0.8-1.7,1.8-1.6c0.6,0.1,1,0.4,1.2,1c0,0,0,0.1,0.1,0.2c0.6-0.1,1.1-0.2,1.7-0.4c3-0.7,6.1-1.4,9.1-2
-                            c2.7-0.6,5.3-1.2,8-1.8c2.3-0.5,4.7-1,7-1.6c0.9-0.2,1.8,0.5,1.8,1.5c0,3,0,6.1,0,9.1c0,3.1,0,6.1,0,9.2c0,0.6-0.2,1.1-0.7,1.4
-                            c-0.3,0.2-0.7,0.3-1.1,0.2c-3.5-0.8-6.9-1.5-10.4-2.3c0,0,0,0-0.1,0c-0.1,0.3-0.2,0.6-0.3,0.9c-0.7,1.7-2,2.7-3.8,2.9
-                            c-0.7,0.1-1.4,0-2.2,0c-0.6,0-1.2,0-1.8,0c-1.9-0.2-3.1-1.2-3.8-3c-0.2-0.5-0.3-1.1-0.3-1.7C6.1,17.7,6.1,17,6.1,16.4z M27.6,3.5
-                            c-0.1,0-0.1,0-0.1,0c-1.7,0.4-3.5,0.8-5.2,1.2c-2.9,0.6-5.7,1.3-8.6,1.9c-3.5,0.8-7,1.6-10.4,2.3c-0.1,0-0.2,0.1-0.2,0.2
-                            c0,1.1,0,2.2,0,3.4c0,0.1,0,0.2,0.2,0.2C5,13,6.8,13.4,8.6,13.8c2.4,0.5,4.7,1,7.1,1.6c3.9,0.9,7.7,1.7,11.6,2.6
-                            c0.1,0,0.2,0,0.4,0.1C27.6,13.1,27.6,8.3,27.6,3.5z M15.3,18.4c-2.1-0.5-4.1-0.9-6.1-1.4c0,0.1,0,0.1,0,0.2c0,0.4,0,0.7,0,1.1
-                            c0,0.8,0.6,1.6,1.6,1.6c1,0,2,0,3,0c0.3,0,0.5-0.1,0.8-0.2C15,19.4,15.3,19,15.3,18.4z"/>
-                    </g>
-                </defs>
-            </svg>    
-        </section>
-        
-    </section>   
-    <section style="height: 100vh;"></section>
-    <section style="height: 100vh;"></section>
-</body>
+                <div class="w-100"></div>
+                <div class="col">
+                    <div class="paper_simulador">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>Todos los resultados</caption>
+                                <thead class="th_simulador">
+                                    <tr>
+                                        <th scope="col">Campaña</th>
+                                        <th scope="col">Clientes</th>
+                                        <th scope="col">Venta por cliente</th>
+                                        <th scope="col">Venta de kit</th>
+                                        <th scope="col">Venta de folletos</th>
+                                        <th scope="col">Venta Total</th>
+                                        <th scope="col">Acumulado de Venta</th>
+                                        <th scope="col">Nivel de estrella</th>
+                                        <th scope="col">Descuent CFT</th>
+                                        <th scope="col">Descuento F&H</th>
+                                        <th scope="col">Ganancia de Kit</th>
+                                        <th scope="col">Ganancia de folletos</th>
+                                        <th scope="col">Ganancia de campaña</th>
+                                    </tr>
+                                </thead>
 
-</html>
-
+                                <tbody id="tbl">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 0px;opacity:0;position:absolute;" x="0px" y="0px" xml:space="preserve">
+        <g id="brand">
+            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="15.7787" x2="140" y2="15.7787">
+                <stop  offset="0" style="stop-color:#80139B"/>
+                <stop  offset="0.5155" style="stop-color:#AC047E"/>
+                <stop  offset="1" style="stop-color:#CD3679"/>
+            </linearGradient>
+            <path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);" d="M17.88,1.63l14.73,29.93h-6.89
+                c-4.4-5.93-9.28-7.94-14.73-8.61l0,0l-3.06,5.93c-1.05,1.72-2.58,2.58-4.4,2.58l0,0H0L14.73,1.53h3.16V1.63z M38.16,1.63
+                c1.82,0,3.35,1.05,4.11,2.68l7.84,16.73L57.95,4.3c0.77-1.63,2.39-2.68,4.11-2.68h3.92L51.64,31.56h-3.16L34.14,1.63H38.16z
+                 M118.01,1.63l15.87,18.93V4.78c0-1.72,1.43-3.16,3.25-3.16l0,0H140v29.93h-1.34c-3.73,0-6.31-3.35-6.31-3.35l0,0l-13.01-15.59
+                V28.4c0,1.72-1.43,3.16-3.25,3.16l0,0h-2.87V1.63H118.01z M87.31,0c4.49,0,8.51,1.53,11.57,4.49c3.06,2.96,4.78,6.98,4.78,11.19
+                c0,4.3-1.72,8.22-4.88,11.19c-3.06,2.96-7.17,4.59-11.57,4.59s-8.42-1.63-11.57-4.59c-3.06-2.96-4.78-6.89-4.78-11.19
+                s1.72-8.22,4.78-11.19C78.8,1.63,82.72,0,87.31,0z M87.31,5.93c-5.55,0-10.04,4.4-10.04,9.85s4.49,9.85,10.04,9.85
+                s10.14-4.4,10.14-9.85C97.35,10.33,92.86,5.93,87.31,5.93z M16.35,11.86l-2.87,6.02c2.3,0.48,4.59,1.15,6.79,2.2l0,0L16.35,11.86z
+                "/>
+        </g>
+        <g id="coins">
+            <path d="M11.764,0.048C5.918,0.048,0,1.566,0,4.466v4.715c0,2.9,5.918,4.417,11.764,4.417s11.764-1.517,11.764-4.417V4.466
+                C23.528,1.566,17.61,0.048,11.764,0.048z M4.294,2.722c1.983-0.65,4.636-1.009,7.47-1.009c6.534,0,10.099,1.818,10.099,2.752
+                c0,0.327-0.554,1.063-2.629,1.744c-1.983,0.65-4.636,1.009-7.47,1.009C5.23,7.218,1.665,5.4,1.665,4.466
+                C1.665,4.138,2.219,3.403,4.294,2.722z M10.931,8.872v3.05c-1.957-0.048-3.623-0.26-4.979-0.557V8.35
+                C7.489,8.655,9.201,8.829,10.931,8.872z M12.597,8.872c1.376-0.034,2.741-0.151,4.015-0.351v3.031
+                c-1.237,0.208-2.596,0.335-4.015,0.37V8.872z M1.665,9.181V6.845c0.704,0.437,1.599,0.804,2.622,1.102v2.967
+                C2.565,10.342,1.665,9.65,1.665,9.181z M19.234,10.924c-0.304,0.1-0.624,0.191-0.958,0.277V8.198
+                c1.427-0.332,2.669-0.784,3.586-1.353v2.336C21.863,9.508,21.309,10.244,19.234,10.924z"/>
+        </g>
+    </svg>

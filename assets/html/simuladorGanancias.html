@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/magnolia/styles_simulador.css" />
+    <script src="https://kit.fontawesome.com/60d5b8c1af.js" crossorigin="anonymous"></script>
+    <script src="../js/simuladorInteraction.js"></script>
+</head>
+<body>
+    <section class="container_simulador">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col">
+                    <h2 class="title_simulador"><span style="font-size: 34px;" class="material-icons">attach_money</span> Simulador de ganancias</h2>
+                    <p class="subtitle_simulador">¿Cuanto te gustaría ganar en una campaña?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="selector_simulador_container">
+                        <div class="selector_simulador" value="0">
+                            <div class="wrapper">
+                                <svg width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><sup class="coin"></sup>100 - <sup class="coin"></sup>150</p>
+                        </div>
+                        <div class="selector_simulador" value="1">
+                            <div class="wrapper">
+                                <svg style="transform: scale(1.45);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><sup class="coin"></sup>150 - <sup class="coin"></sup>200</p>
+                        </div>
+                        <div class="selector_simulador active" value="2">
+                            <div class="wrapper">
+                                <svg style="transform: scale(1.7) rotate(20deg);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><sup class="coin"></sup>200 - <sup class="coin"></sup>300</p>
+                        </div>
+                        <div class="selector_simulador" value="3">
+                            <div class="wrapper">
+                                <svg style="transform: scale(1.5) translateX(-4px);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                                <svg style="transform: scale(1.5) rotate(20deg) translateY(-2px);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p><sup class="coin"></sup>300 - <sup class="coin"></sup>700</p>
+                        </div>
+                        <div class="selector_simulador" value="4">
+                            <div class="wrapper">
+                                <svg style="transform: scale(1.3);display:block;margin:0 auto;" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                                <svg style="transform: scale(1.3) rotate(-20deg);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                                <svg style="transform: scale(1.3);" width="24px" height="14px"><use xlink:href="#coins"></use></svg>
+                            </div>
+                            <p>+ <sup class="coin"></sup>1000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="av-spacer"></div>
+            <div class="row">
+                <div class="col">
+                    <p class="subtitle_simulador">¿Cómo lograr tus metas?</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <div class="paper_simulador">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="title_text" id="clientsQuantity">14</span>
+                            <span class="material-icons title_icon">person</span>
+                        </div>
+                        <p class="main_text text-center">Cantidad de clientes en tu primera campaña</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="paper_simulador">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="title_text mr-2" id="starLevel">4</span>
+                            <i class="fas fa-star-half-alt title_icon"></i>
+                        </div>
+                        <p class="main_text text-center">Nivel de estrella a alcanzar</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="paper_simulador d-flex align-items-center">
+                        <div id="carousel_simulador" class="carousel slide carousel_simulador w-100" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-interval="15000">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="material-icons title_icon">account_balance_wallet</span>
+                                    <span class="title_text_small mx-3"><span id="">3da</span><br /> Campaña</span>
+                                    <p class="main_text">Ganas una mochila<br /> de <b>incentivo</b> en tu<br /> segunda campaña</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-interval="15000">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="material-icons title_icon">backpack</span>
+                                    <span class="title_text_small mx-3"><span id="">2da</span><br /> Campaña</span>
+                                    <p class="main_text">Ganas una mochila<br /> de <b>incentivo</b> en tu<br /> segunda campaña</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_simulador" role="button" data-slide="prev">
+                              <span class="material-icons" aria-hidden="true">navigate_before</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_simulador" role="button" data-slide="next">
+                              <span class="material-icons" aria-hidden="true">navigate_next</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                </div>
+                
+                <div class="w-100"></div>
+                <div class="col-xs-12 col-sm">
+                    <div class="paper_simulador d-flex align-items-center">
+                        <h3 class="title_text mr-3" id="brochuresSell"><b class="coin"></b>68.99</h3>
+                        <span class="main_text">Venta por cliente en tu primera campaña</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm">
+                    <div class="paper_simulador d-flex align-items-center">
+                        <h3 class="title_text mr-3" id="clientSell"><b class="coin"></b>115.99</h3>
+                        <span class="main_text">Venta de folletos en la primera campaña</span>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <div class="paper_simulador">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>Todos los resultados</caption>
+                                <thead class="th_simulador">
+                                    <tr>
+                                        <th scope="col">Campaña</th>
+                                        <th scope="col">Clientes</th>
+                                        <th scope="col">Venta por cliente</th>
+                                        <th scope="col">Venta de kit</th>
+                                        <th scope="col">Venta de folletos</th>
+                                        <th scope="col">Venta Total</th>
+                                        <th scope="col">Acumulado de Venta</th>
+                                        <th scope="col">Nivel de estrella</th>
+                                        <th scope="col">Descuent CFT</th>
+                                        <th scope="col">Descuento F&H</th>
+                                        <th scope="col">Ganancia de Kit</th>
+                                        <th scope="col">Ganancia de folletos</th>
+                                        <th scope="col">Ganancia de campaña</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      <th scope="row">1ra</th>
+                                      <td>Mark</td>
+                                      <td>Otto</td>
+                                      <td>@mdo</td>
+                                      <td>Jacob</td>
+                                      <td>Thornton</td>
+                                      <td>@fat</td>
+                                      <td>Larry</td>
+                                      <td>the Bird</td>
+                                      <td>@twitter</td>
+                                      <td>the Bird</td>
+                                      <td>@twitter</td>
+                                      <td>@twitter</td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 0px;opacity:0;position:absolute;" x="0px" y="0px" xml:space="preserve">
+        <g id="brand">
+            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="15.7787" x2="140" y2="15.7787">
+                <stop  offset="0" style="stop-color:#80139B"/>
+                <stop  offset="0.5155" style="stop-color:#AC047E"/>
+                <stop  offset="1" style="stop-color:#CD3679"/>
+            </linearGradient>
+            <path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);" d="M17.88,1.63l14.73,29.93h-6.89
+                c-4.4-5.93-9.28-7.94-14.73-8.61l0,0l-3.06,5.93c-1.05,1.72-2.58,2.58-4.4,2.58l0,0H0L14.73,1.53h3.16V1.63z M38.16,1.63
+                c1.82,0,3.35,1.05,4.11,2.68l7.84,16.73L57.95,4.3c0.77-1.63,2.39-2.68,4.11-2.68h3.92L51.64,31.56h-3.16L34.14,1.63H38.16z
+                 M118.01,1.63l15.87,18.93V4.78c0-1.72,1.43-3.16,3.25-3.16l0,0H140v29.93h-1.34c-3.73,0-6.31-3.35-6.31-3.35l0,0l-13.01-15.59
+                V28.4c0,1.72-1.43,3.16-3.25,3.16l0,0h-2.87V1.63H118.01z M87.31,0c4.49,0,8.51,1.53,11.57,4.49c3.06,2.96,4.78,6.98,4.78,11.19
+                c0,4.3-1.72,8.22-4.88,11.19c-3.06,2.96-7.17,4.59-11.57,4.59s-8.42-1.63-11.57-4.59c-3.06-2.96-4.78-6.89-4.78-11.19
+                s1.72-8.22,4.78-11.19C78.8,1.63,82.72,0,87.31,0z M87.31,5.93c-5.55,0-10.04,4.4-10.04,9.85s4.49,9.85,10.04,9.85
+                s10.14-4.4,10.14-9.85C97.35,10.33,92.86,5.93,87.31,5.93z M16.35,11.86l-2.87,6.02c2.3,0.48,4.59,1.15,6.79,2.2l0,0L16.35,11.86z
+                "/>
+        </g>
+        <g id="coins">
+            <path d="M11.764,0.048C5.918,0.048,0,1.566,0,4.466v4.715c0,2.9,5.918,4.417,11.764,4.417s11.764-1.517,11.764-4.417V4.466
+                C23.528,1.566,17.61,0.048,11.764,0.048z M4.294,2.722c1.983-0.65,4.636-1.009,7.47-1.009c6.534,0,10.099,1.818,10.099,2.752
+                c0,0.327-0.554,1.063-2.629,1.744c-1.983,0.65-4.636,1.009-7.47,1.009C5.23,7.218,1.665,5.4,1.665,4.466
+                C1.665,4.138,2.219,3.403,4.294,2.722z M10.931,8.872v3.05c-1.957-0.048-3.623-0.26-4.979-0.557V8.35
+                C7.489,8.655,9.201,8.829,10.931,8.872z M12.597,8.872c1.376-0.034,2.741-0.151,4.015-0.351v3.031
+                c-1.237,0.208-2.596,0.335-4.015,0.37V8.872z M1.665,9.181V6.845c0.704,0.437,1.599,0.804,2.622,1.102v2.967
+                C2.565,10.342,1.665,9.65,1.665,9.181z M19.234,10.924c-0.304,0.1-0.624,0.191-0.958,0.277V8.198
+                c1.427-0.332,2.669-0.784,3.586-1.353v2.336C21.863,9.508,21.309,10.244,19.234,10.924z"/>
+        </g>
+    </svg>
+</body>
+</html>

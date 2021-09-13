@@ -29,7 +29,7 @@ $(document).ready(function(){
             }
         }
     });
-    
+    var screenWidth;
     $('.av-anew-trio .avMove').click(function(){
         screenWidth = window.innerWidth;
         let avDirection = $(this).attr('av-value');
@@ -100,6 +100,8 @@ $(document).ready(function(){
         $('#avMenuButton').addClass('active');
         $(this).removeClass('active');
     });
+
+
     function avAnewTransition(avvalue){
         let selector = $('section').eq(avvalue)
         $('.av-anew-transition').css({
@@ -118,20 +120,34 @@ $(document).ready(function(){
             $('.av-anew-transition').removeAttr('style');
        }, 2800);
     }
+
+
+
     $('.scrollTo').click(function(){
         let avvalue = $(this).attr('value');
         var elmnt = document.getElementById(avvalue);
         elmnt.scrollIntoView();
 
     });
+
+
+
+
+    
     $('.avMenuAnew').children().click(function(){
+
         let avvalue = $(this).attr('value');
         avAnewTransition(avvalue);
+
         $(this).addClass('active').siblings().removeClass('active');
         $('.avMenu').removeClass('active');
         $('#avMenuClose').removeClass('active').prev().addClass('active');
     });
     
+
+
+
+
     $('.avAnewAgeAllLink').click(function(){
         avAnewTransition(3);
         $('.avMenuAnew').children().eq(3).addClass('active').siblings().removeClass('active');
@@ -146,4 +162,68 @@ $(document).ready(function(){
         $(this).hide().prev().show('slow');
     });
 
+
+    var showSlide = 3;
+    var timeOut;
+
+    avShowSlide(3,0,true);
+    
+
+    function avShowSlide(end,start,forwardOrBackward){ 
+        let avSlide,showSlide2;
+        if (showSlide == end){
+            showSlide = start;
+            showSlide2 = end
+        } else {
+            showSlide2 = showSlide;
+            if(forwardOrBackward){
+                showSlide++;
+            } else {
+                showSlide--;
+            };
+        }
+        if(forwardOrBackward){
+            avSlide = 'active'
+        } else {
+            avSlide = 'active back'
+        }
+        $('.avData').each(function(){
+            $(this).children().eq(showSlide).addClass(avSlide).siblings().removeClass('active back');
+            $(this).children().eq(showSlide2).addClass("lastOne").siblings().removeClass('lastOne');
+        })
+        var avAnewDays = [
+            {
+                percentage: '86%',
+                data: 'De las mujeres notó una disminución en las líneas de expresión.',
+            },
+            {
+                percentage: '92%',
+                data: 'De las mujeres notó su piel más firme.',
+            },
+            {
+                percentage: '92%',
+                data: 'De las mujeres vio su piel dramáticamente más suave.',
+            },
+           
+            {
+                percentage: '96%',
+                data: 'De las mujeres notó su piel más radiante.',
+            },
+           
+        ]
+        $('#avThickboxLoader').removeClass().addClass('av'+ showSlide);
+        $('#avAnewPercentage').children().eq(0).text(avAnewDays[showSlide].percentage).next().text(avAnewDays[showSlide].data);
+        $('.avDataDots').children().eq(showSlide).removeClass().addClass('active').siblings().removeClass();
+        
+        timeOut = setTimeout(function(){avShowSlide(3,0,true);},3500);
+    }
+
+    $("#avDataFw").click(function(){
+        clearTimeout(timeOut);
+        avShowSlide(3,0,true);
+    });
+    $("#avDataBk").click(function(){
+        clearTimeout(timeOut);
+        avShowSlide(0,3,false);
+    });
 });

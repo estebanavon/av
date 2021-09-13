@@ -1,0 +1,173 @@
+
+@import '../partial-scss/routes';
+$prod-font: '/dam/avon-mx/static/fonts';
+$route-font: $prod-font;
+@import '../partial-scss/font';
+@import '../partial-scss/colors';
+@import '../partial-scss/variables';
+@import '../partial-scss/text';
+
+@import '../partial-scss/primary-grid';
+@import '../partial-scss/primary';
+@import '../partial-scss/button';
+@import '../partial-scss/slider';
+@import '../partial-scss/components';
+@import '../partial-scss/concert-loader';
+@import '../partial-scss/reset';
+
+
+
+nav.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 24px;
+    z-index: 100;
+    background-color: $color-white;
+
+    .decorator {
+        width: 100%;
+        height: 2px;
+        background-image: $color-gradient;
+    }
+}
+.container_simulador {
+    background-color: $color-light-white;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    > div {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    p {
+        margin: 0;
+    }
+    .title_simulador {
+        font-family: $regular-monts;
+        font-size: 30px;
+        color: $color-text;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 20px;
+        font-style: normal;
+        @media (min-width:$media-1){
+            font-size: 36px;
+        }
+    }
+    .subtitle_simulador {
+        font-family: $bold-monts;
+        color: #4C0F60;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .paper_simulador {
+        min-height: 30px;
+        height: 90%;
+        background-color: $color-white;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+        border-radius: 4px;
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .title_text {
+        font-family: $bold-monts;
+        font-size: 35px;
+        color: $color-simulador;
+        &_small {
+            font-family: $bold-monts;
+            font-size: 20px;
+            line-height: 19px;
+            margin: 0 3px;
+            color: $color-simulador;
+        }
+    }
+    .carousel_simulador {
+        .carousel-control-next, .carousel-control-prev {
+            color: $color-darker-footer;
+        }
+        .title_icon {
+            font-size: 45px;
+        }
+    } 
+    .title_icon {
+        font-size: 35px;
+        color: $color-simulador;
+    }
+    .main_text {
+        font-family: $regular-monts;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-dark;
+    }
+    .selector_simulador_container {
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+        @media (max-width:$media-1){
+            flex-wrap: wrap;
+        }
+    }
+    .selector_simulador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-dark-light;
+        width: 20%;
+        border-radius: 4px;
+        margin: 10px;
+        min-height: 20px;
+        min-width: 128px;
+        cursor: pointer;
+        transition: all 0.4s;
+        font-family: $bold-monts;
+        text-align: center;
+        color: scale-color($color-dark, $lightness: 40%);
+        fill: scale-color($color-dark, $lightness: 40%);
+        font-size: 18px;
+        padding: 17px 4px;
+        &:hover {
+            background-color: $color-white;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+        &.active {
+            background-color: $color-white;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+            border-color: transparent;
+            border-bottom-color: $color-primary;
+            color: $color-darker-footer;
+            svg {
+                fill: $color-simulador;
+            }
+        }
+        > div.av-wrapper {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+    }
+}
+.th_simulador {
+    th {
+        line-height: 16px !important;
+        color: $color-text;
+        vertical-align: middle !important;
+        font-family: $bold-monts;
+    }
+}
+.table {
+    font-size: 15px;
+    font-family: $regular-monts;
+    td {
+        white-space: nowrap;
+    }
+}

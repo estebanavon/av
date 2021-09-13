@@ -202,6 +202,9 @@ table[width="98%"] {
         .offer_font_bold .offer_prize_font_size {
             color: $color-secondary;
         }
+        .offers_store_dropDown_variant {
+            max-width: 310px;
+        }
     }
     td:last-child > .horizontal_solid_line {
         margin: 0 0 0 auto;
@@ -210,6 +213,10 @@ table[width="98%"] {
         margin: 0 auto 0 0;
     }
 } 
+[src*="banner_offer_store"]{
+    width: 100%;
+    margin-bottom: 15px;
+}
 .offer_action_header_txt, .offer_font_bold .offer_prize_font_size, .offer_decription {
     @include text-system($bold-monts);
     display: block;
@@ -308,4 +315,36 @@ div[style*="#A9A9A9;"] {
 // RESUMEN ROJO
 td:nth-child(2)#attTableColumns {
     background-color: $color-light-white;
+}
+
+/*  ---- css  sweetAlert ----- */
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: rgba(84,98,100,0.85);
+}
+
+.swal2-popup {
+    padding: 3.5em 1em;
+    border-radius: 2px;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.16);
+    @media(min-width:$media-1){
+        padding: 4em 3.5em;
+    }
+}
+$sizeLet: 20px;
+.swal2-title{
+    font-style: normal;
+    font-weight: normal;
+    font-family: $regular-monts;
+    color: $color-text;
+    @media(min-width:$media-1){
+        font-size: $sizeLet;
+        line-height: $sizeLet + 2;
+    }
+}
+.swal2-styled.swal2-confirm {
+    @include av-button-outline;
+    width: 70% !important;
+    &:focus {
+        box-shadow:none;
+    }
 }

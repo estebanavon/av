@@ -1649,7 +1649,7 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 .btn-pink:hover:not(.subscribe-button), .av-button-icon:active, .av-button-primary:active, .av-button-secondary:active, .av-button-tertiary:active, .av-button-outline:active, .bucket .read-more:active, header nav .container-subnav ul.subnav-brands li.btn-see-all .btn:active,
 .btn-pink:active:not(.subscribe-button), .av-button-icon:focus, .av-button-primary:focus, .av-button-secondary:focus, .av-button-tertiary:focus, .av-button-outline:focus, .bucket .read-more:focus, header nav .container-subnav ul.subnav-brands li.btn-see-all .btn:focus,
 .btn-pink:focus:not(.subscribe-button) {
-  outline: none;
+  outline: none !important;
   text-decoration: none !important;
 }
 
@@ -1776,7 +1776,8 @@ section.av-container.av-container-small .av-row, section.av-container.av-contain
 }
 
 .av-button-outline:hover {
-  background-color: rgba(200, 200, 200, 0.1);
+  border-color: rgba(106, 23, 173, 0.02);
+  background-color: rgba(106, 23, 173, 0.02);
   color: #7F28C4;
 }
 

@@ -14,9 +14,7 @@
         display: none;
         font-size: 40px;
         cursor: pointer;
-        &:active{
-            background-color: $color-dark-10;
-        }
+    
         &:focus{
             outline: none;
             border: none;
@@ -57,7 +55,7 @@
             display: none;
             min-width: 100%;
             
-            &.active {
+            &.active,&.active-back {
                 opacity: 1;
                 display: flex;
             }
@@ -77,7 +75,11 @@
                 animation-name: $animationName;
                 animation-duration: 5.5s;
                 animation-fill-mode: forwards;
+                &.back {
+                    animation-name: slideInwardsBack !important;
+                }
             }
+            
         }
         &.slide {
             @include variants(slideInwards);
@@ -89,9 +91,19 @@
             @include variants(slideInwards,0);
         }
         @keyframes slideInwards {
+            0% {
+                opacity: 0;
+                transform: translateX(100px);
+                display: flex;
+            }
+            5%{opacity: 1;}
+            15% {transform: translateX(0);}
+            100%{opacity: 1;}
+        }
+        @keyframes slideInwardsBack {
             0%{
                 opacity: 0;
-                transform: translateX(1200px);
+                transform: translateX(-100px);
                 display: flex;
             }
             5%{opacity: 1;}

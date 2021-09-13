@@ -1,9 +1,51 @@
 @mixin ourCompany($variable){
     .#{$variable} {
-        background-image: url('#{$route-images}/#{$variable}.jpg');
+        background-image: url('#{$route-images}/nuestra-compania/#{$variable}.jpg');
     }
 }
 @include ourCompany(ourCompanyKnow);
 @include ourCompany(ourCompanyMison);
 @include ourCompany(ourCompanyMain);
 @include ourCompany(ourCompanyQuality);
+@include ourCompany(jobNow);
+@include ourCompany(jobHistory);
+.content {
+    overflow-x: scroll;
+    padding-bottom: 70px;
+}
+.linea_tiempo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .linea {
+        height: 2px;
+        background-color: $color-dark-light;
+        flex-grow: 1;
+    }
+    .linea_spacer {
+        flex-shrink: 0;
+    }
+    .linea_spot_container {
+        display: flex;
+    }
+    .linea_spot {
+        flex-shrink: 0;
+        max-width: 250px;
+        min-width: 100px;
+        p {
+            color: $color-text;
+            font-family: $regular-monts;
+        }
+        h3 {
+            font-size: 25px;
+            color: $color-text;
+            font-family: $bold-monts;
+        }
+        .spot {
+            width: 10px;
+            height: 10px;
+            background-color: $color-dark-light;
+        }
+    }
+    
+}

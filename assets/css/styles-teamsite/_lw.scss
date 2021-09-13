@@ -2,7 +2,7 @@ section.av-lw {
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 96vh;
+    //min-height: 96vh;
     > div:first-child {
         display: none;
         @media (min-width:$media-1){
@@ -16,8 +16,8 @@ section.av-lw {
         box-shadow: 7px 0px 8px rgba(0,0,0,0.1);
         
         .av-intro {
-            flex: 3;
-            height: 72%;
+            flex: 2;
+            height: 60%;
             padding: 2rem;
             background-image: url('./../images/liderazgo_web/lw-i.jpg');
             background-repeat: no-repeat;

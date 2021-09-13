@@ -11,10 +11,6 @@ $color-bazar: #00CE15;
     flex-wrap: wrap;
     flex-direction: row;
     padding: 1.5rem 0rem 1.5rem 1.5rem;
-    &:nth-child(5),
-    &:nth-child(7){
-        display: none;
-    }
 }
 .av-filtros {
     padding: 0 2.5rem;
@@ -35,9 +31,11 @@ $color-bazar: #00CE15;
         align-items: center;
         box-shadow: 0 0 15px rgba(0,0,0,0.3);
         transition: all 0.5s;
+        border: 1px solid transparent;
+
         @media (min-width:$media-1) {
             padding: 0.5rem 1.5rem;
-            margin-right: 0.2rem;
+            margin-right: 20px;
         }
         &.filter-all {
             background-color: $color-text;
@@ -47,6 +45,7 @@ $color-bazar: #00CE15;
             fill: $color-text;
             color: $color-text;
             box-shadow: none;
+            border-color: rgba(0,0,0,0.1);
         }
     }
     
@@ -66,13 +65,14 @@ h2.av-brochure-title {
     }
 }
 h3.av-brochures-subtitle {
-    display: none;
+    display: flex;
     margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
-    font-family: $regular-monts;
-    margin-bottom: 1rem;
+    font-family: $bold-monts;
     color: $color-text;
+    text-transform: uppercase;
+    font-size: 18px;
     svg {
         margin-right: 1rem;
         fill: $color-text;
@@ -93,22 +93,34 @@ h3.av-brochures-subtitle {
         margin: 10px 0px;
     }
      i{
-         margin-right: 1rem;
          font-size: 24px;
-         color: $color-text;
+     }
+     a {
+        background-color: #b3b3b3;
+        border-radius: 50%;
+        padding: 0px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+        &:hover{
+            background-color:$color-primary;
+        }
      }
 }
 .av-map {
     padding: 20px 25px;
-    div{
+    div {
         display: flex;
         align-items: center;
         margin-bottom: 23px;
-        span {
+        span:nth-child(2) {
             font-size: 13px;
-        }
-        svg {
-            margin-right: 23px;
+            margin-left: 5px;
         }
     }
 }

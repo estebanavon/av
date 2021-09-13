@@ -13,7 +13,7 @@
     &:hover,
     &:active,
     &:focus {
-        outline: none;
+        outline: none !important;
         text-decoration: none !important;
     }
     &.negative {
@@ -108,7 +108,8 @@
     color: $color-primary;
     border: solid 1px $color-primary;
     &:hover {
-        background-color: $color-dark-10;
+        border-color: rgba(106, 23, 173, 0.02);
+        background-color: rgba(106, 23, 173, 0.02);
         color: $color-primary;
     } 
     &.small {

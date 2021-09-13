@@ -536,6 +536,7 @@
 @include av-anew-section(sectionAnPerfectSkin);
 @include av-anew-section(sectionAnProtinol);
 @include av-anew-section(sectionAnInstitute);
+@include av-anew-section(sectionPowerSerum2);
 @include av-anew-section(sectionAnExp2);
 @include av-anew-section(sectionAnExp3);
 @include av-anew-section(avAnewAgeAll);
@@ -543,3 +544,62 @@
 @include av-anew-section(avAnewAge30);
 @include av-anew-section(avAnewAge45);
 @include av-anew-section(avAnewAge60);
+
+.av-anew-circle {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    svg {
+        transform: rotate(-35deg);
+    }
+}
+.avDataDots {
+    display: flex;
+    margin: 0 auto;
+    div {
+        margin-right: 10px;
+        width: 10px;
+        height: 10px;
+        background-color: $color-dark-light;
+        border-radius: 50%;
+        &.active {
+            background-color: $color-dark;
+        }
+    }
+}
+.avThickboxLoaderOutline {
+    fill: transparent;
+	stroke-dasharray: 1260;
+	stroke: rgb(212, 212, 212);
+	stroke-width: 8;
+}
+#avThickboxLoader {
+	fill: transparent;
+	stroke-dasharray: 1260;
+	stroke: $color-serum-gold;
+	stroke-width: 30;
+    transition: all 1s;
+}
+.av {
+    &0{
+        stroke-dashoffset: 550;
+    }
+    &1{
+        stroke-dashoffset: 540;
+    }
+    &2{
+        stroke-dashoffset: 540;
+    }
+    &3{
+        stroke-dashoffset: 530;
+    }
+}
+.av-anew-percentage {
+    font-family: $bold-monts;
+    color: $color-serum-gold;
+    font-size: $size-text * 2.2;
+    width: 85px;
+    display: block;
+    margin-top: 7px;
+}
