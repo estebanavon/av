@@ -551,7 +551,7 @@
     display: flex;
     justify-content: center;
     svg {
-        transform: rotate(-35deg);
+        transform: rotate(-0deg);
     }
 }
 .avDataDots {
@@ -583,16 +583,16 @@
 }
 .av {
     &0{
-        stroke-dashoffset: 550;
+        stroke-dashoffset: 850;
     }
     &1{
         stroke-dashoffset: 540;
     }
     &2{
-        stroke-dashoffset: 540;
+        stroke-dashoffset: 640;
     }
     &3{
-        stroke-dashoffset: 530;
+        stroke-dashoffset: 730;
     }
 }
 .av-anew-percentage {

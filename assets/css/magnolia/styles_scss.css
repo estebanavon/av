@@ -6117,8 +6117,8 @@ div.p-fix, h3.p-fix {
 }
 
 .av-anew-circle svg {
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .avDataDots {
@@ -6157,7 +6157,7 @@ div.p-fix, h3.p-fix {
 }
 
 .av0 {
-  stroke-dashoffset: 550;
+  stroke-dashoffset: 850;
 }
 
 .av1 {
@@ -6165,11 +6165,11 @@ div.p-fix, h3.p-fix {
 }
 
 .av2 {
-  stroke-dashoffset: 540;
+  stroke-dashoffset: 640;
 }
 
 .av3 {
-  stroke-dashoffset: 530;
+  stroke-dashoffset: 730;
 }
 
 .av-anew-percentage {
