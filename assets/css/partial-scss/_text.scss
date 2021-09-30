@@ -96,6 +96,10 @@
 .av-sale-price {
     @include salePrice;
 }
+
+
+
+// LISTS
 %av-list {
     font-family: $regular-monts;
     line-height: 19px;
@@ -111,6 +115,77 @@
         margin: 10px 0px;
     }
 }
+
+.av-list {
+    font-family: $regular-monts;
+    padding-left: $size-text;
+    line-height: 19px;
+    font-size: 17px;
+    color: $color-text;
+    list-style-type: disc;
+    @include highlight();
+    
+    li {
+        margin-bottom: $size-text / 2.5;
+        display: block;
+    }
+    &.av-list-small {
+        line-height: 21px;
+        font-size: 16px;
+        li {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    &.av-list-item {
+        padding-left: 0;
+        @include negative();
+        li {
+            padding: 0 0.5rem;
+            border-bottom: 1px $color-dark-lighter solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+
+            [class^='material-icons'] {
+                color: $color-primary;
+            }
+            &:hover:not(.av-list-divider) {
+                background-color: $color-dark-10;
+            }
+            .av-list-spacer{
+                flex: 1;
+            }
+        }
+        &.noactive{
+            display: none;
+        }   
+    }
+    
+    .av-list-title {
+        font-size: $size-text;
+        font-family: $bold-monts;
+        padding: ($size-text * 2) 0rem $size-text 0rem !important;
+        color: $color-text;
+        display: block;
+        &:hover{
+            background-color: unset !important;
+        }
+    }
+    &.av-footer-list {
+        list-style-type: none;
+        text-align: left;
+        li a {
+            color: $color-white;
+        }
+        .av-list-title {
+            color: $color-white;
+        }
+    }
+}
+
 .av-list-disc {
     @extend %av-list;
     list-style-type: disc;

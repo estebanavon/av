@@ -1,7 +1,7 @@
 
 @import '../partial-scss/routes';
 $prod-font: '/dam/avon-mx/static/fonts';
-$route-font: $dev-font;
+$route-font: $prod-font;
 @import '../partial-scss/font';
 @import '../partial-scss/colors';
 @import '../partial-scss/variables';

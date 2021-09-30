@@ -244,6 +244,116 @@
   margin: 10px 0px;
 }
 
+.av-list {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  padding-left: 15px;
+  line-height: 19px;
+  font-size: 17px;
+  color: #3b4546;
+  list-style-type: disc;
+}
+
+.av-list .av-highlight {
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+}
+
+.av-list li {
+  margin-bottom: 6px;
+  display: block;
+}
+
+.av-list.av-list-small {
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.av-list.av-list-small li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.av-list.av-list-item {
+  padding-left: 0;
+}
+
+.av-list.av-list-item.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-list.av-list-item.negative {
+    text-align: left;
+  }
+}
+
+.av-list.av-list-item.negative [class^='material-icons'] {
+  color: #fff;
+}
+
+.av-list.av-list-item li {
+  padding: 0 0.5rem;
+  border-bottom: 1px #f0f0f0 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.av-list.av-list-item li [class^='material-icons'] {
+  color: #7F28C4;
+}
+
+.av-list.av-list-item li:hover:not(.av-list-divider) {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+.av-list.av-list-item li .av-list-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.av-list.av-list-item.noactive {
+  display: none;
+}
+
+.av-list .av-list-title {
+  font-size: 15px;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  padding: 30px 0rem 15px 0rem !important;
+  color: #3b4546;
+  display: block;
+}
+
+.av-list .av-list-title:hover {
+  background-color: unset !important;
+}
+
+.av-list.av-footer-list {
+  list-style-type: none;
+  text-align: left;
+}
+
+.av-list.av-footer-list li a {
+  color: #fff;
+}
+
+.av-list.av-footer-list .av-list-title {
+  color: #fff;
+}
+
 .av-list-disc {
   list-style-type: disc;
 }
