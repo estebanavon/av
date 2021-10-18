@@ -6,9 +6,20 @@
 @mixin gridDemos {
     @extend %borderShadow;
     font-size: 13px;
-    padding: 0px 30px 30px 30px;
+    padding: 20px 30px 30px 30px;
     line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 5px;
 
+    br {
+        display: none;
+    }
+    img {
+        align-self: center;
+        margin-bottom: 20px;
+    }
     > p span.red_txt2 {
         @include salePrice;
     }
@@ -16,10 +27,14 @@
     > div.padding_top10 {
         padding-top: 17px;
     }
+    > p.padding_top10 {
+        margin-top: auto;
+    }
     strong {
         font-family: $bold-monts;
         font-size: 17px;
         margin-bottom: 5px;
+        line-height: 19px;
     }
     .buttonBgorder {
         width: 100%;
@@ -32,7 +47,11 @@
 
 [name="exForm"] #lineno0 ~ table {
     @include borderSpace;
-        tr td.td_bot_border {
+    tr {
+        display: flex;
+        justify-content: space-between;
+        td.td_bot_border {
             @include gridDemos;
-        }        
+        }  
+    }      
 }

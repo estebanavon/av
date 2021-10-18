@@ -1,9 +1,6 @@
 
 // Color
-$color-flyer: #DC05FF;
-$color-contigo: #FB8F00;
 $color-imb: #0057FF;
-$color-bazar: #00CE15;
 
 
 .av-brochures-container {
@@ -13,40 +10,40 @@ $color-bazar: #00CE15;
     padding: 1.5rem 0rem 1.5rem 1.5rem;
 }
 .av-filtros {
-    padding: 0 2.5rem;
     display: flex;
-    flex-wrap: wrap;
-    cursor: pointer;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    label {
+        cursor: pointer;
+    }
     
-    div {
-        font-size: 1rem;
-        padding: 0.5rem 0.7rem;
+    ul {
+        padding: 0 2.5rem;
+        cursor: pointer;
+        list-style-type: none;
+        padding: 15px 0px; 
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
         border-radius: 4px;
-        font-family: $semi-bold-monts;
-        margin-right: 0.1rem;
-        fill: $color-white;
-        color: $color-white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        transition: all 0.5s;
-        border: 1px solid transparent;
-
-        @media (min-width:$media-1) {
-            padding: 0.5rem 1.5rem;
-            margin-right: 20px;
+        position: absolute;
+        z-index: 10;
+        right: 10px;
+        top: 10px;
+        background-color: $color-white;
+        display: none;
+        li {
+            padding: 15px 25px;
+            &:hover {
+                background-color: $color-dark-30;
+            }
         }
-        &.filter-all {
-            background-color: $color-text;
+        &.active {
+            display: block;
         }
-        &.no-active {
-            background-color: transparent;
-            fill: $color-text;
-            color: $color-text;
-            box-shadow: none;
-            border-color: rgba(0,0,0,0.1);
-        }
+    }
+    .avFilterSelected {
+        width: 180px;
+        text-align: center;
     }
     
 }
@@ -65,14 +62,11 @@ h2.av-brochure-title {
     }
 }
 h3.av-brochures-subtitle {
-    display: flex;
-    margin-bottom: 1rem;
-    align-items: center;
-    justify-content: center;
     font-family: $bold-monts;
     color: $color-text;
     text-transform: uppercase;
     font-size: 18px;
+    padding-left: 30px;
     svg {
         margin-right: 1rem;
         fill: $color-text;
@@ -150,7 +144,7 @@ h3.av-brochures-subtitle {
             z-index: 30;
             box-shadow: 0 0 20px rgba(0,0,0,0.9);
             
-            .av-overlay {
+            .av-overlay, .av-copys {
                 visibility: visible;
                 opacity: 1;
             }
@@ -184,7 +178,8 @@ h3.av-brochures-subtitle {
                 font-size: 38px;
             }
         }
-        .av-copy {
+        
+        .av-copys, .av-download {
             padding: 11px;
             border-radius: 50%;
             cursor: pointer;
@@ -212,6 +207,12 @@ h3.av-brochures-subtitle {
             &:active,&:focus {
                 outline: none;
             }
+        }
+        .av-copys {
+            bottom: 10px;
+            top: unset;
+            visibility: hidden;
+            opacity: 0;
         }
         .av-type {
             color: $color-white;
@@ -274,17 +275,8 @@ h3.av-brochures-subtitle {
     }
 }
 
-.contigo{
-    background-color: $color-contigo;
-}
-.bazar{
-    background-color: $color-bazar;
-}
 .imb{
     background-color: $color-imb;
-}
-.flyer{
-    background-color: $color-flyer;
 }
 
 

@@ -2358,7 +2358,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-concert-banner {
-  background-image: url("../images/concierto-avon/avConciertoHeader.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHeader.jpg");
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2398,80 +2398,80 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-concierto {
-  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
+  background-image: url("../../img/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../images/conciertoBasesHeader.jpg");
+    background-image: url("../../img/conciertoBasesHeader.jpg");
   }
 }
 
 .av-concert1 {
-  background-image: url("../images/concierto-avon/avConciertoHow1.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert2 {
-  background-image: url("../images/concierto-avon/avConciertoHow2.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert3 {
-  background-image: url("../images/concierto-avon/avConciertoHow3.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert4 {
-  background-image: url("../images/concierto-avon/avConciertoHow4.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert5 {
-  background-image: url("../images/concierto-avon/avConciertoHow5.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert6 {
-  background-image: url("../images/concierto-avon/avConciertoHow6.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert7 {
-  background-image: url("../images/concierto-avon/avConciertoHow7.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert8 {
-  background-image: url("../images/concierto-avon/avConciertoHow8.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert9 {
-  background-image: url("../images/concierto-avon/avConciertoHow9.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-img-higiene {
-  background-image: url("../images/folletos/hg-1.jpg");
+  background-image: url("../../img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2616,7 +2616,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-ce-header {
-  background-image: url("../images/ce-header.jpg");
+  background-image: url("../../img/ce-header.jpg");
 }
 
 .av-ce-obk .av-title, .av-ce-obk .av-title-stroke {
@@ -2688,7 +2688,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
   text-transform: uppercase;
   color: #fff;
   font-family: montserrat-light, Helvetica, sans-serif;
-  background-image: url("../images/circulo_estelar/avceSection-0.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-0.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2715,23 +2715,23 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-ce .av-ce-1 {
-  background-image: url("../images/circulo_estelar/avceSection-1.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-1.jpg");
 }
 
 .av-ce .av-ce-2 {
-  background-image: url("../images/circulo_estelar/avceSection-2.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-2.jpg");
 }
 
 .av-ce .av-ce-3 {
-  background-image: url("../images/circulo_estelar/avceSection-3.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-3.jpg");
 }
 
 .av-ce .av-ce-4 {
-  background-image: url("../images/circulo_estelar/avceSection-4.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-4.jpg");
 }
 
 .av-ce .av-ce-5 {
-  background-image: url("../images/circulo_estelar/avceSection-5.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-5.jpg");
 }
 
 .av-ce-tabs > div {
@@ -3326,57 +3326,53 @@ section.av-lw .disable {
 }
 
 .av-filtros {
-  padding: 0 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  cursor: pointer;
-}
-
-.av-filtros div {
-  font-size: 1rem;
-  padding: 0.5rem 0.7rem;
-  border-radius: 4px;
-  font-family: montserrat-semi-bold, Helvetica, sans-serif;
-  margin-right: 0.1rem;
-  fill: #fff;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border: 1px solid transparent;
+  position: relative;
 }
 
-@media (min-width: 768px) {
-  .av-filtros div {
-    padding: 0.5rem 1.5rem;
-    margin-right: 20px;
-  }
+.av-filtros label {
+  cursor: pointer;
 }
 
-.av-filtros div.filter-all {
-  background-color: #3b4546;
+.av-filtros ul {
+  padding: 0 2.5rem;
+  cursor: pointer;
+  list-style-type: none;
+  padding: 15px 0px;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  display: none;
 }
 
-.av-filtros div.no-active {
-  background-color: transparent;
-  fill: #3b4546;
-  color: #3b4546;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-color: rgba(0, 0, 0, 0.1);
+.av-filtros ul li {
+  padding: 15px 25px;
+}
+
+.av-filtros ul li:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.av-filtros ul.active {
+  display: block;
+}
+
+.av-filtros .avFilterSelected {
+  width: 180px;
+  text-align: center;
 }
 
 h2.av-brochure-title {
@@ -3396,20 +3392,11 @@ h2.av-brochure-title {
 }
 
 h3.av-brochures-subtitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
   color: #3b4546;
   text-transform: uppercase;
   font-size: 18px;
+  padding-left: 30px;
 }
 
 h3.av-brochures-subtitle svg {
@@ -3523,7 +3510,7 @@ h3.av-brochures-subtitle svg {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
-.av-brochure-item .av-brochure-image:hover .av-overlay, .av-brochure-item .av-brochure-image:active .av-overlay, .av-brochure-item .av-brochure-image:focus .av-overlay {
+.av-brochure-item .av-brochure-image:hover .av-overlay, .av-brochure-item .av-brochure-image:hover .av-copys, .av-brochure-item .av-brochure-image:active .av-overlay, .av-brochure-item .av-brochure-image:active .av-copys, .av-brochure-item .av-brochure-image:focus .av-overlay, .av-brochure-item .av-brochure-image:focus .av-copys {
   visibility: visible;
   opacity: 1;
 }
@@ -3568,7 +3555,7 @@ h3.av-brochures-subtitle svg {
   font-size: 38px;
 }
 
-.av-brochure-item .av-brochure-image .av-copy {
+.av-brochure-item .av-brochure-image .av-copys, .av-brochure-item .av-brochure-image .av-download {
   padding: 11px;
   border-radius: 50%;
   cursor: pointer;
@@ -3595,22 +3582,29 @@ h3.av-brochures-subtitle svg {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.av-brochure-item .av-brochure-image .av-copy .material-icons {
+.av-brochure-item .av-brochure-image .av-copys .material-icons, .av-brochure-item .av-brochure-image .av-download .material-icons {
   font-size: 20px;
 }
 
-.av-brochure-item .av-brochure-image .av-copy:hover {
+.av-brochure-item .av-brochure-image .av-copys:hover, .av-brochure-item .av-brochure-image .av-download:hover {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
 }
 
-.av-brochure-item .av-brochure-image .av-copy:active {
+.av-brochure-item .av-brochure-image .av-copys:active, .av-brochure-item .av-brochure-image .av-download:active {
   background-color: #66209d;
   outline: none;
 }
 
-.av-brochure-item .av-brochure-image .av-copy:active, .av-brochure-item .av-brochure-image .av-copy:focus {
+.av-brochure-item .av-brochure-image .av-copys:active, .av-brochure-item .av-brochure-image .av-copys:focus, .av-brochure-item .av-brochure-image .av-download:active, .av-brochure-item .av-brochure-image .av-download:focus {
   outline: none;
+}
+
+.av-brochure-item .av-brochure-image .av-copys {
+  bottom: 10px;
+  top: unset;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .av-brochure-item .av-brochure-image .av-type {
@@ -3677,19 +3671,7 @@ h3.av-brochures-subtitle svg {
   background-color: transparent;
 }
 
-.contigo {
-  background-color: #FB8F00;
-}
-
-.bazar {
-  background-color: #00CE15;
-}
-
 .imb {
   background-color: #0057FF;
-}
-
-.flyer {
-  background-color: #DC05FF;
 }
 /*# sourceMappingURL=styles_scss.css.map */

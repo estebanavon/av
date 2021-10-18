@@ -80,6 +80,9 @@
     &.guerreras{
         background-image: url('#{$route-images}/responsabilidad-social/avRespGuerrerasRosa.jpg');
     }
+    &.encuesta{
+        background-image: url('#{$route-images}/responsabilidad-social/encuesta-responsabilidad-social.jpg');
+    }
 }
 .av-resp-support {
     display: block;
@@ -115,6 +118,25 @@
         border-radius: 60px 0px 60px 0px;
         text-align: center;
         text-transform: uppercase;
+    }
+}
+.respGallery {
+    display: grid;
+    grid-gap: 15px;
+    grid-template: 110px 110px 110px 110px 110px / auto auto;
+    @media (min-width:$media-1) {
+        grid-template: 150px 150px 150px 300px / auto auto auto auto;
+    }
+    div {
+        background-position: top;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .unique {
+        grid-column: 1 / span 3; 
+        @media (min-width:$media-1) {
+            grid-column: 1 / span 4; 
+        }
     }
 }
 %imageLet {
