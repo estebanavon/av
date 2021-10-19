@@ -330,7 +330,7 @@ $(document).ready(function () {
             if (avFilesConstructor[e][i].develop){
                 avArrayPrintTrue[e] += '<div class="av-brochure-item">'+
                             '<div class="av-brochure-image" style="background-image: url(\'/FLDSuite/static/images/circulo_estelar/'+ avFilesConstructor[e][i].file +'.jpg\');">'+
-                            '<a download href="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[e][i].file +'" class="av-copy av-tooltip">'+
+                            '<a download href="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[e][i].file +'" class="av-download av-tooltip">'+
                                     '<span class="material-icons">file_download</span>'+
                                     '<div class="tooltiptext">Descargar</div>'+
                                 '</a>'+
@@ -341,7 +341,7 @@ $(document).ready(function () {
             } else {
                 avArrayPrintFalse[e] += '<div class="av-brochure-item">'+
                 '<div class="av-brochure-image" style="background-image: url(\'/FLDSuite/static/images/circulo_estelar/'+ avFilesConstructor[e][i].file +'.jpg\');">'+
-                    '<a download href="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[e][i].file +'" class="av-copy av-tooltip">'+
+                    '<a download href="/FLDSuite/static/pdf/circulo_estelar_documents/'+ avFilesConstructor[e][i].file +'" class="av-download av-tooltip">'+
                         '<span class="material-icons">file_download</span>'+
                         '<div class="tooltiptext">Descargar</div>'+
                     '</a>'+

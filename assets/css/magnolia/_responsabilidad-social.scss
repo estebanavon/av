@@ -127,10 +127,36 @@
     @media (min-width:$media-1) {
         grid-template: 150px 150px 150px 300px / auto auto auto auto;
     }
-    div {
+    > div {
         background-position: top;
         background-size: cover;
         cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            box-shadow: 0 0 50px rgba(0,0,0,0.55);
+            z-index: 30;
+        }
+        a {
+            position: relative;
+            div {
+                display: none;
+                background-color: rgba(0,0,0,0.75);
+                font-family: $bold-monts;
+                width: auto;
+                height: 25%;
+                justify-content: flex-end;
+                padding: 0 40px;
+                align-items: center;
+                color: $color-white;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            &:hover div {
+                display: flex;
+            }
+        }
+        
     }
     .unique {
         grid-column: 1 / span 3; 

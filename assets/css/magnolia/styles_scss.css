@@ -2849,10 +2849,47 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
   }
 }
 
-.respGallery div {
+.respGallery > div {
   background-position: top;
   background-size: cover;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.respGallery > div:hover {
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
+  z-index: 30;
+}
+
+.respGallery > div a {
+  position: relative;
+}
+
+.respGallery > div a div {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  width: auto;
+  height: 25%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.respGallery > div a:hover div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .respGallery .unique {
