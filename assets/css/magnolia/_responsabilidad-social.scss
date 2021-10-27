@@ -133,7 +133,7 @@
         cursor: pointer;
         transition: all 0.5s;
         &:hover {
-            box-shadow: 0 0 50px rgba(0,0,0,0.55);
+            box-shadow: 0 0 20px rgba(0,0,0,0.45);
             z-index: 30;
         }
         a {

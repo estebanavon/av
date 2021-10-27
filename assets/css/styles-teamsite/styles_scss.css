@@ -3093,7 +3093,7 @@ section.av-lw section.av-section-container {
 }
 
 section.av-lw section.av-section-container.expand {
-  width: 100%;
+  width: 450px;
 }
 
 @media (min-width: 768px) {
@@ -3342,6 +3342,12 @@ section.av-lw .disable {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .av-filtros {
+    top: 0px !important;
+  }
+}
+
 .av-filtros ul {
   padding: 0 2.5rem;
   cursor: pointer;
@@ -3397,6 +3403,7 @@ h3.av-brochures-subtitle {
   text-transform: uppercase;
   font-size: 18px;
   padding-left: 30px;
+  line-height: 36px;
 }
 
 h3.av-brochures-subtitle svg {

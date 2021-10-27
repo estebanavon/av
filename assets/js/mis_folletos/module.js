@@ -27,67 +27,54 @@ try{
     const currentYear = c.slice(2,4);
     
     const avMarket = AvonAnalyticsObjex.Visitor.market;
-    // const avMarket = 'mx';
+    //const avMarket = 'gt';
     
+    var site = AvonAnalyticsObjex.Content.siteID
     var d = AvonAnalyticsObjex.Profile.zone;
     var zm = AvonAnalyticsObjex.Profile.repAcct;
-    //var d = '271';
-    //var zm = '1'
-    var avNcmBoolean,brochuresWrapper,masterHtml;
-    avNcmBoolean = 0;
-    
-    var NCMzone = [
-        '2700','2701','2702','2703','2704','2705','2706','2707','2708','2709','2710',
-    ];
-    if (NCMzone.includes(d) || zm == '888888827') {
-        avNcmBoolean = 1;
-    }
-
-    brochuresWrapper = [data1[avNcmBoolean],data2[avNcmBoolean],data3[avNcmBoolean],data4[avNcmBoolean],data5[avNcmBoolean],data6[avNcmBoolean],data7[avNcmBoolean],data8[avNcmBoolean],data9[avNcmBoolean],data10[avNcmBoolean],data11[avNcmBoolean],data12[avNcmBoolean],data13[avNcmBoolean],data14[avNcmBoolean],data15[avNcmBoolean],data16[avNcmBoolean],data17[avNcmBoolean],data18[avNcmBoolean],data19[avNcmBoolean],data20[avNcmBoolean]];
+    // var site = 'DMSuite'
+    // var d = '271';
+    // var zm = '1'
+    var brochuresWrapper,masterHtml;
     
 
-    var brochuresConstructor = [brochuresWrapper[currentCampaign],brochuresWrapper[currentCampaign - 1],brochuresWrapper[currentCampaign - 2]];
+    brochuresWrapper = [data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,data12,data13,data14,data15,data16,data17,data18,data19,data20];
+    
+
+    var brochuresConstructor = [brochuresWrapper[currentCampaign - 1],brochuresWrapper[currentCampaign - 2],brochuresWrapper[currentCampaign - 3]];
     var brochurePrint = ["","","","","",""];
 
 
 
-
+    
     function campaignSelector(e){
         let campaignSelected;
         switch (e) {
             case 0:
-                campaignSelected = currentCampaign + 1;
-                break
-            case 1:
                 campaignSelected = currentCampaign;
                 break
-            default:
+            case 1:
                 campaignSelected = currentCampaign - 1;
+                break
+            default:
+                campaignSelected = currentCampaign - 2;
         }
         return campaignSelected
     }
     
-
-    
-    function copyText(type){
-        let copyText;
-        if (type == "imb"){
-            copyText = 'Copiar link';
-        } else {
-            copyText = '¡Recuerda que es solo para ti!';
-        }
-        return copyText
-    }
 
 
     function urlFile(type,file){
         let urlFile;
         switch (type){
             case "contigo":
-                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
+                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/incentivos/' + file
+                break
+            case "youtube":
+                urlFile = file
                 break
             default:
-                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
+                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/' + file
         }
         return urlFile
     }
@@ -97,15 +84,20 @@ try{
 
     function pdfImg(type,canvasIdNumber,file){
         let avCanvasLet;
-        avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
-        canvasID = '#avCanvas' + canvasIdNumber;
-        
-        if (type == 'contigo'){
-            folder = 'incentivos2019'
+        if(type == 'youtube') {
+            avCanvasLet = ''
         } else {
-            folder = 'mis_folletos'
-        }  
-        showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/'+ folder +'/'+ file +'',canvasID);
+            avCanvasLet = '<div class="av-canvas-container"><canvas width="132" class="av-canvas" id="avCanvas'+ canvasIdNumber +'"></canvas></div>'
+            canvasID = '#avCanvas' + canvasIdNumber;
+            
+            if (type == 'contigo'){
+                showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/incentivos/'+ file +'',canvasID);
+            } else {
+                showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/'+ file +'',canvasID);
+            }  
+            
+        }
+        
 
         return avCanvasLet
     }
@@ -154,10 +146,10 @@ try{
                     
                     brochurePrint[e] += '<div class="av-brochure-item" data-type="'+ brochuresConstructor[e][i].type +'">'+
                         '<div class="av-brochure-image">' + pdfImg(brochuresConstructor[e][i].type,canvasIdNumber,brochuresConstructor[e][i].file) +
-                            '<div class="av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
-                            '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) + '" />' +
-                            '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                            '<div class="av-type '+ brochuresConstructor[e][i].type +'">'+ campaignSelector(e) +'</div>' +
+                            '<a download href="'+ urlFile(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) +'" class="av-download" style="text-decoration:none;" target="_blank"><span class="material-icons">file_download</span></a>' +
+                            '<div class="av-overlay"><input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) + '" />'+
+                            '<p class="material-icons">visibility</p><p>Ver</p></div><div class="av-copys av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">Copiar link</div></div>' +
+                            '<div class="av-type imb">'+ campaignSelector(e) +'</div>' +
                         '</div>' +
                         '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[e][i].title +'</h3></div>'+
                     '</div>'
@@ -171,7 +163,7 @@ try{
                     '<span class="av-list-spacer"></span>' +
                     '<a class="av-button-icon av-tooltip" href="'+ urlFile(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) +'" target="_blank">' +
                     '<span class="material-icons">visibility</span><div class="tooltiptext">Ver</div></a>' +
-                    '<div class="av-button-icon av-copy av-tooltip"><span class="material-icons">content_copy</span><div class="tooltiptext">'+ copyText(brochuresConstructor[e][i].type) +'</div></div>' +
+                    '<a download class="av-button-icon" href="'+ urlFile(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) +'" target="_blank"><span class="material-icons">file_download</span></a>' +
                     '<input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[e][i].type,brochuresConstructor[e][i].file) +'" />' +
                     '</li>'
                 }
@@ -180,28 +172,40 @@ try{
         e++
     };
     brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
-                            '<div style="background-image:url(\'/FLDSuite/static/images/mis_folletos/brochureCover'+ (currentCampaign + 1) +'.jpg\')" class="av-brochure-image">' +
-                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[0][0].type,0,brochuresConstructor[0][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
-                                '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ (currentCampaign + 1) +'</div>' +
+                            '<div style="background-image:url(\'/FLDSuite/static/images/mis_folletos/brochureCover'+ currentCampaign +'.jpg\')" class="av-brochure-image">' +
+                                '<div class="av-overlay"><input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file) + '" /><p class="material-icons">visibility</p><p>Ver</p></div>' +
+                                '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ currentCampaign +'</div>' +
                             '</div>' +
                             '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[0][0].title +'</h3></div>' +
                         '</div>'
+    let vendorlink = 'https://www.avon.com.'+ avMarket +'/cam-home/catalogo-avon-movil.html';                    
     brochurePrint[4] += currentCampaign;
     brochurePrint[5] += currentCampaign - 1;
-    masterHtml = '<section class="av-lw"><aside id="brochureAside" class="av-brochure-aside"><div class="av-share"><div><i class="fas fa-share" aria-hidden="true"></i><span>Comparte</span></div><div><a href="mailto:subject=Este es mi Catálogo para ti"><i class="far fa-envelope" aria-hidden="true"></i></a><a style="margin: 0 20px;" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="https://api.whatsapp.com/send?text=Este es mi Catálogo para ti" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div></div><div class="av-map"><div class=""><span class="material-icons">bookmark_border</span><span>Flyers / Minifolletos</span></div><div class=""><span class="material-icons">insert_drive_file</span><span>Catálogo Avon Móvil</span></div><div><span class="material-icons">description</span></svg><span>Bazar</span></div><div class=""><span class="material-icons">import_contacts</span><span>Avon Contigo</span></div></div></aside><section class="av-section-container expand"><h2 class="av-brochure-title"><span class="av-title-stroke">Mis</span> folletos</h2><div class="av-filtros" id="avFiltros"><div class="filter-all" data-filter="all">TODOS</div><div class="no-active flyer av-tooltip" data-filter="flyer"><span class="material-icons">bookmark_border</span><span class="tooltiptext">Flyers / Minifolletos</span></div><div class="no-active imb av-tooltip" data-filter="imb"><span class="material-icons">insert_drive_file</span><span class="tooltiptext">Catálogo Avon Móvil</span></div><div class="no-active bazar av-tooltip" data-filter="bazar"><span class="material-icons">description</span><span class="tooltiptext">Bazar</span></div><div class="no-active contigo av-tooltip" data-filter="contigo"><span class="material-icons">import_contacts</span><span class="tooltiptext">Avon Contigo</span></div></div><h3 style="margin-top:30px;display:flex;font-family: montserrat-bold, Gadget, sans-serif;text-transform: uppercase;font-size: 18px;" class="w-100 av-brochures-subtitle"><span class="material-icons">campaign</span> Campaña </h3><div class="av-brochures-container" id="brochureContainer"></div><h3 style="display:flex;font-family: montserrat-bold, Gadget, sans-serif;text-transform: uppercase;font-size: 18px;" class="w-100 av-brochures-subtitle"><span class="material-icons">campaign</span> Campaña </h3><div class="av-brochures-container" style="display:flex;" id="brochureContainerPast"></div><div class="av-brochures-container" id="brochureList"><ul class="av-list av-list-item w-100"></ul></div><button class="av-button-primary av-brochure-button" id="viewMore" style="display:block;">Consultar campaña previa</button></section></section>'
-} catch {
-    masterHtml = '<section class="av-lw"><aside class="av-brochure-aside"></aside><section class="av-section-container expand"><h2 class="av-brochure-title"><span class="av-title-stroke">Mis</span> folletos</h2><h1 style="padding:40px;font-size:40px;line-height: 42px;">Disculpa las molestias, por el momento no tenemos folletos disponibles. <br /><br />Intenta más tarde.</h1></section>';
-}
+    masterHtml = '<section class="av-lw"><aside id="brochureAside" style="box-shadow:none;" class="av-brochure-aside"><a class="av-button-secondary" href="'+ vendorlink +'" style="width:85%;margin:60px auto 0px auto;">Tablero de control</a>'+
+    '<a class="av-button-outline" href="/'+ site +'/beautyArticles.page" style="width:85%;margin:10px auto;">Avon On</a><div class="av-share"><div><i class="fas fa-share" aria-hidden="true"></i><span>Comparte</span></div><div><a href="mailto:subject=Este es mi Catálogo para ti">'+
+    '<i class="far fa-envelope" aria-hidden="true"></i></a><a style="margin: 0 20px;" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="https://api.whatsapp.com/send?text=Este es mi Catálogo para ti" target="_blank">'+
+    '<i class="fab fa-whatsapp" aria-hidden="true"></i></a></div></div></aside><section class="av-section-container expand"><h2 class="av-brochure-title"><span class="av-title-stroke">Materiales</span> descargables</h2><div class="av-filtros" style="top: 50px;"><label style="font-family: montserrat-bold, Arial Black, Gadget, sans-serif;"><i class="fas fa-filter"></i> Filtrar por: </label>'+
+    '<label class="avFilterSelected">Todos</label><span class="material-icons">expand_more</span><ul id="avFiltros" style="z-index: 50;"><li class="filter-all" data-filter="all">Todos</li><li class="no-active" data-filter="flyer">Flyers / Minifolletos</li><li class="no-active" data-filter="imb">Catálogo Avon Móvil</li>'+
+    '<li class="no-active" data-filter="bazar">Bazar</li><li class="no-active" data-filter="contigo">Avon Contigo</li></ul></div><h3 style="margin-top:30px;" class="w-100 av-brochures-subtitle"><i class="far fa-calendar-check"></i> Campaña </h3>'+
+    '<div class="av-brochures-container" id="brochureContainer"></div><h3 class="w-100 av-brochures-subtitle"><i class="far fa-calendar-check"></i> Campaña </h3><div class="av-brochures-container" style="display:flex;" id="brochureContainerPast"></div>'+
+    '<div class="av-brochures-container" id="brochureList"><ul class="av-list av-list-item w-100"></ul></div><button class="av-button-primary av-brochure-button" id="viewMore" style="display:block;">Consultar campaña previa</button></section></section><div id="avOverlay" class="av-modal" style="display: none;">'+
+    '<div class="av-modal-background avClose"></div><div style="z-index: 9999;"><div class="av-modal-content"><div class="av-modal-close avClose">✕</div></div></div></div>'
 
+} catch(e) {
+    masterHtml = '<section class="av-lw"><aside class="av-brochure-aside" style="box-shadow:none;"></aside><section class="av-section-container expand"><h2 class="av-brochure-title"><span class="av-title-stroke">Materiales</span> descargables</h2><h1 style="padding:40px;font-size:40px;line-height: 42px;">Disculpa las molestias, por el momento no tenemos folletos disponibles. <br /><br />Intenta más tarde o intenta otro navegador.</h1></section>';
+    console.log(e)
+}
 $(document).ready(function(){
     
-    $('#avContaner').append(masterHtml)
-    $('#brochureContainer').prepend(brochurePrint[0]).prev().append(parseInt(brochurePrint[4], 10) + 1);
-    $('#brochureContainerPast').append(brochurePrint[1]).prev().append(brochurePrint[4]);
+    $('#avContainer').append(masterHtml);
+    
+    $('#brochureContainer').prepend(brochurePrint[0]).prev().append(brochurePrint[4]);
+    $('#brochureContainerPast').append(brochurePrint[1]).prev().append(brochurePrint[5]);
     $('#brochureAside').prepend(brochurePrint[3]);
-
+    
     $('#viewMore').click(function(){
-        $('#brochureList').css('display','flex').prepend('<h3 class="w-100 av-brochures-subtitle" style="display:flex;font-family: montserrat-bold, Gadget, sans-serif;text-transform: uppercase;font-size: 18px;"><span class="material-icons">campaign</span> Campaña '+ brochurePrint[5] +'</h3>');
+        $('#brochureList').css('display','flex').prepend('<h3 class="w-100 av-brochures-subtitle"'+
+        'style="padding-left: 10px; margin-top:10px;"><i class="far fa-calendar-check"></i> Campaña '+ brochurePrint[5] +'</h3>');
         $('#brochureList ul').append(brochurePrint[2]);
         $(this).hide();
         avCopy();
@@ -209,10 +213,10 @@ $(document).ready(function(){
     avCopy();
 
     function avCopy (){
-        $('.av-copy').click(function(){
-            $(this).next().select();
+        $('.av-copys').click(function(){
+            $(this).prev().children().eq(0).select();
             document.execCommand("copy");
-            $(this).find('.tooltiptext').text('Â¡Copiado al portapapeles!');
+            $(this).find('.tooltiptext').text('¡Copiado al portapapeles!');
             $(this).mouseleave(function(){
                 $(this).find('.tooltiptext').text('Copiar link');  
             })
@@ -222,11 +226,33 @@ $(document).ready(function(){
     const brochureSelector = $('#brochureContainer,#brochureContainerPast,#brochureList ul');
     $('#avFiltros').children().click(function(){
         let avFilter = $(this).attr('data-filter');
-        $(this).removeClass('no-active').siblings().addClass('no-active');
+        let avText = $(this).text()
+        $('.avFilterSelected').text(avText);
         brochureSelector.children().show();
         if (avFilter != "all"){
             brochureSelector.children(':not([data-type="'+ avFilter +'"])').hide();
         }
+    });
+    $('.av-filtros').click(function(){
+        $('#avFiltros').toggle();
+    });
+
+    $('.av-modal-content').css('backgroundColor','transparent');
+    
+    $('.av-overlay').click(function(){
+        $('#avOverlay').show();
+        var docURL = $(this).children().eq(0).attr('value');
+        $('.av-modal-content').append('<iframe id="contentLoad" style="width: 90vw;height:80vh;" src="/FLDSuite/static/js/pdfjs-2.7.570-dist/web/viewer.html?file='+ docURL +'"></iframe>')
+        if(docURL.search("youtube")!= -1) {
+            $('.av-modal-content').children().eq(1).remove();
+            $('#avOverlay').hide();
+            window.open(docURL);
+        }
+    });
+
+    $(".avClose").click(function () {
+        $('#avOverlay').hide();
+        $('.av-modal-content').children().eq(1).remove();
     });
 
 })

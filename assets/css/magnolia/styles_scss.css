@@ -2858,8 +2858,8 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .respGallery > div:hover {
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
-          box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
   z-index: 30;
 }
 

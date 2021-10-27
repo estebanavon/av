@@ -17,6 +17,9 @@ $color-imb: #0057FF;
     label {
         cursor: pointer;
     }
+    @media (max-width:$media-1){
+        top: 0px !important;
+    }
     
     ul {
         padding: 0 2.5rem;
@@ -67,6 +70,7 @@ h3.av-brochures-subtitle {
     text-transform: uppercase;
     font-size: 18px;
     padding-left: 30px;
+    line-height: 36px;
     svg {
         margin-right: 1rem;
         fill: $color-text;

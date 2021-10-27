@@ -1,5 +1,31 @@
 
-var data1 = []
+var data1 = [
+	[
+        {
+            title: 'Rostro 20 Mx',
+            file: 'Rostro20Mx.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Minifolleto Navidad Kids',
+            file: 'MinifolletoNavidadKidsMx.pdf',
+            type: 'flyer',
+          },
+		
+	],
+	[
+        {
+            title: 'Rostro 20 Mx',
+            file: 'Rostro20Mx.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Minifolleto Navidad Kids',
+            file: 'MinifolletoNavidadKidsMx.pdf',
+            type: 'flyer',
+          },
+	]
+]
 var data2 = []
 var data3 = []
 var data4 = []
@@ -315,10 +341,55 @@ var data20 = [
             file: 'Rostro20Mx.pdf',
             type: 'imb',
         },
+		{
+			title: 'Belleza',
+			file: 'BellezaMx20.pdf',
+			type: 'imb',
+		},
+		{
+			title: 'Fashion & Home',
+			file: 'FashionNHomeMx20.pdf',
+			type: 'imb',
+		},
         {
           title: 'Avon Contigo',
           file: 'avon_contigo_c2021.pdf',
           type: 'contigo',
+        },
+        {
+          title: 'Minifolleto Navidad Kids',
+          file: 'MinifolletoNavidadKidsMx.pdf',
+          type: 'flyer',
+        },
+        {
+          title: 'Minifolleto Hermetic',
+          file: 'MinifolletoHermeticC20_2021.pdf',
+          type: 'flyer',
+        },
+        {
+          title: 'Gran Venta Fin de Año',
+          file: 'GranVentaFinDeAnio.pdf',
+          type: 'flyer',
+        },
+        {
+          title: 'VEA Digital Sweet Honesty Treasures',
+          file: 'VEADigitalSweetHonestyTreasures.pdf',
+          type: 'flyer',
+        },
+        {
+          title: 'Flyer The Body Shop',
+          file: 'FlyerTheBodyShop.pdf',
+          type: 'flyer',
+        },
+        {
+          title: 'Buenos Deseos',
+          file: 'BuenosDeseos.pdf',
+          type: 'flyer',
+        },
+        {
+          title: 'Avon 300 kms',
+          file: 'Avon_300kms.pdf',
+          type: 'flyer',
         },
 	],
 	[
@@ -327,30 +398,76 @@ var data20 = [
             file: 'Rostro20Mx.pdf',
             type: 'imb',
         },
+		{
+			title: 'Belleza',
+			file: 'BellezaMx20.pdf',
+			type: 'imb',
+		},
+		{
+			title: 'Fashion & Home',
+			file: 'FashionNHomeMx20.pdf',
+			type: 'imb',
+		},
         {
           title: 'Avon Contigo',
           file: 'avon_contigo_c2021_ncm.pdf',
           type: 'contigo',
         },
+        {
+            title: 'Minifolleto Navidad Kids',
+            file: 'MinifolletoNavidadKidsMx.pdf',
+            type: 'flyer',
+          },
+          {
+            title: 'Minifolleto Hermetic',
+            file: 'MinifolletoHermeticC20_2021.pdf',
+            type: 'flyer',
+          },
+          {
+            title: 'Gran Venta Fin de Año',
+            file: 'GranVentaFindeAnioBerilioXswa.pdf',
+            type: 'flyer',
+          },
+          {
+            title: 'VEA Digital Sweet Honesty Treasures',
+            file: 'SweetHonestyTreasuresNCMXsma23.pdf',
+            type: 'flyer',
+          },
+          {
+            title: 'Flyer The Body Shop',
+            file: 'FlyerTheBodyShop.pdf',
+            type: 'flyer',
+          },
+          {
+            title: 'Buenos Deseos',
+            file: 'BuenosDeseosBerilioXsms.pdf',
+            type: 'flyer',
+          },
+          {
+            title: 'Avon 300 kms',
+            file: 'Avon_300kms.pdf',
+            type: 'flyer',
+          },
 	]
 ]
 
-try{ 
+    // const avMarket = 'mx';
+    // var site = 'ZMSuite'
+    // var d = '271';
+    // var zm = '1'
+    // var c = '2021:C17';
     var c = AvonAnalyticsObjex.Profile.campaignInfo;
-    //var c = '2021:C17';
+    
     const currentCampaign = parseInt(c.slice(6), 10);
     const currentYear = c.slice(2,4);
     
     const avMarket = AvonAnalyticsObjex.Visitor.market;
-    //const avMarket = 'mx';
     
     var site = AvonAnalyticsObjex.Content.siteID
     var d = AvonAnalyticsObjex.Profile.zone;
     var zm = AvonAnalyticsObjex.Profile.repAcct;
-    //var site = 'ZMSuite'
-    //var d = '271';
-    //var zm = '1'
-    var avNcmBoolean,brochuresWrapper,masterHtml;
+    
+    var avNcmBoolean,brochuresWrapper,masterHtml,brochuresConstructor;
     avNcmBoolean = 0;
     
     var NCMzone = [
@@ -362,8 +479,13 @@ try{
 
     brochuresWrapper = [data1[avNcmBoolean],data2[avNcmBoolean],data3[avNcmBoolean],data4[avNcmBoolean],data5[avNcmBoolean],data6[avNcmBoolean],data7[avNcmBoolean],data8[avNcmBoolean],data9[avNcmBoolean],data10[avNcmBoolean],data11[avNcmBoolean],data12[avNcmBoolean],data13[avNcmBoolean],data14[avNcmBoolean],data15[avNcmBoolean],data16[avNcmBoolean],data17[avNcmBoolean],data18[avNcmBoolean],data19[avNcmBoolean],data20[avNcmBoolean]];
     
+    if (currentCampaign == '20') {
+        brochuresConstructor = [brochuresWrapper[0],brochuresWrapper[19],brochuresWrapper[18]];
+    } else {
+        brochuresConstructor = [brochuresWrapper[currentCampaign],brochuresWrapper[currentCampaign - 1],brochuresWrapper[currentCampaign - 2]];
+    }
 
-    var brochuresConstructor = [brochuresWrapper[currentCampaign],brochuresWrapper[currentCampaign - 1],brochuresWrapper[currentCampaign - 2]];
+    
     var brochurePrint = ["","","","","",""];
 
 
@@ -373,7 +495,12 @@ try{
         let campaignSelected;
         switch (e) {
             case 0:
-                campaignSelected = currentCampaign + 1;
+                if (currentCampaign == '20') {
+                    campaignSelected = '1';
+                } else {
+                    campaignSelected = currentCampaign + 1;
+                }
+                
                 break
             case 1:
                 campaignSelected = currentCampaign;
@@ -384,19 +511,19 @@ try{
         return campaignSelected
     }
     
-
+    let avEnviorment = 'www';
 
     function urlFile(type,file){
         let urlFile;
         switch (type){
             case "contigo":
-                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
+                urlFile = 'https://'+ avEnviorment + '.' + avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/incentivos2019/' + file
                 break
             case "youtube":
                 urlFile = file
                 break
             default:
-                urlFile = 'https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
+                urlFile = 'https://'+ avEnviorment + '.' + avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/mis_folletos/' + file
         }
         return urlFile
     }
@@ -417,7 +544,7 @@ try{
             } else {
                 folder = 'mis_folletos'
             }  
-            showPDF('https://www.'+ avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/'+ folder +'/'+ file +'',canvasID);
+            showPDF('https://'+ avEnviorment + '.' + avMarket.toLowerCase() +'.avon.com/FLDSuite/static/pdf/'+ folder +'/'+ file +'',canvasID);
         }
         
 
@@ -495,7 +622,7 @@ try{
     };
     brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
                             '<div style="background-image:url(\'/FLDSuite/static/images/mis_folletos/brochureCover'+ (currentCampaign + 1) +'.jpg\')" class="av-brochure-image">' +
-                                '<a class="av-overlay" href="'+ urlFile(brochuresConstructor[0][0].type,0,brochuresConstructor[0][0].file) + '" target="_blank"><p class="material-icons">visibility</p><p>Ver</p></a>' +
+                                '<div class="av-overlay"><input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file) + '" /><p class="material-icons">visibility</p><p>Ver</p></div>' +
                                 '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ (currentCampaign + 1) +'</div>' +
                             '</div>' +
                             '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[0][0].title +'</h3></div>' +
@@ -516,17 +643,13 @@ try{
     masterHtml = '<section class="av-lw"><aside id="brochureAside" style="box-shadow:none;" class="av-brochure-aside"><a class="av-button-secondary" href="'+ vendorlink +'" style="width:85%;margin:60px auto 0px auto;">Tablero de control</a>'+
     '<a class="av-button-outline" href="/'+ site +'/beautyArticles.page" style="width:85%;margin:10px auto;">Avon On</a><div class="av-share"><div><i class="fas fa-share" aria-hidden="true"></i><span>Comparte</span></div><div><a href="mailto:subject=Este es mi Catálogo para ti">'+
     '<i class="far fa-envelope" aria-hidden="true"></i></a><a style="margin: 0 20px;" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="https://api.whatsapp.com/send?text=Este es mi Catálogo para ti" target="_blank">'+
-    '<i class="fab fa-whatsapp" aria-hidden="true"></i></a></div></div></aside><section class="av-section-container expand"><h2 class="av-brochure-title"><span class="av-title-stroke">Materiales</span> descargables</h2><div class="av-filtros" style="top: 50px;"><label style="font-family: montserrat-bold, Arial Black, Gadget, sans-serif;"><i class="fas fa-filter"></i> Filtrar por: </label>'+
+    '<i class="fab fa-whatsapp" aria-hidden="true"></i></a></div></div></aside><section class="av-section-container expand"><h2 class="av-brochure-title" style="line-height: 38px;"><span class="av-title-stroke">Materiales</span> descargables</h2><div class="av-filtros" style="top: 50px;"><label style="font-family: montserrat-bold, Arial Black, Gadget, sans-serif;"><i class="fas fa-filter"></i> Filtrar por: </label>'+
     '<label class="avFilterSelected">Todos</label><span class="material-icons">expand_more</span><ul id="avFiltros" style="z-index: 50;"><li class="filter-all" data-filter="all">Todos</li><li class="no-active" data-filter="flyer">Flyers / Minifolletos</li><li class="no-active" data-filter="imb">Catálogo Avon Móvil</li>'+
     '<li class="no-active" data-filter="bazar">Bazar</li><li class="no-active" data-filter="contigo">Avon Contigo</li></ul></div><h3 style="margin-top:30px;" class="w-100 av-brochures-subtitle"><i class="far fa-calendar-check"></i> Campaña </h3>'+
     '<div class="av-brochures-container" id="brochureContainer"></div><h3 class="w-100 av-brochures-subtitle"><i class="far fa-calendar-check"></i> Campaña </h3><div class="av-brochures-container" style="display:flex;" id="brochureContainerPast"></div>'+
     '<div class="av-brochures-container" id="brochureList"><ul class="av-list av-list-item w-100"></ul></div><button class="av-button-primary av-brochure-button" id="viewMore" style="display:block;">Consultar campaña previa</button></section></section><div id="avOverlay" class="av-modal" style="display: none;">'+
     '<div class="av-modal-background avClose"></div><div style="z-index: 9999;"><div class="av-modal-content"><div class="av-modal-close avClose">✕</div></div></div></div>'
 
-} catch(e) {
-    masterHtml = '<section class="av-lw"><aside class="av-brochure-aside" style="box-shadow:none;"></aside><section class="av-section-container expand"><h2 class="av-brochure-title"><span class="av-title-stroke">Materiales</span> descargables</h2><h1 style="padding:40px;font-size:40px;line-height: 42px;">Disculpa las molestias, por el momento no tenemos folletos disponibles. <br /><br />Intenta más tarde o intenta otro navegador.</h1></section>';
-    console.log(e)
-}
 
 $(document).ready(function(){
     

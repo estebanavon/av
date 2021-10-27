@@ -1,19 +1,10 @@
 
 const brochures16 = [
-    [
-        {
-            title: 'Belleza 16',
-            file: '1',
-            type: 'imb',
-        },
-    ],
-    [
-        {
-            title: 'Fashion & Home',
-            file: '2',
-            type: 'imb',
-        },
-    ],
+    {
+        title: 'Belleza 16',
+        file: '1',
+        type: 'imb',
+    },
     
 ]
 

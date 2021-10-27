@@ -1,0 +1,49 @@
+$prod-font: '/FLDSuite/static/fonts';
+$route-font: $prod-font;
+$route-images: '../images';
+@import '../partial-scss/font';
+@import '../partial-scss/variables';
+@import '../partial-scss/colors';
+@import '../partial-scss/text';
+@import './usec';
+
+.contentbackgroundcolor[width^="210"] {
+    width: 0px;
+}
+.contentbackgroundcolor[width^="540"] {
+    max-width: 1100px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+#self-appt > table > tbody > tr:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+.border > tbody > tr > td > table > tbody > tr:first-child{
+    border-bottom: 1px solid $color-text;
+    background-color: $color-white;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+body {
+    padding-top: 160px;
+    @include text-system($regular-monts);
+}
+.item td {
+    // font-family: $regular-monts;
+    // font-size: 13px;
+    line-height: 14px;
+    font-style: normal;
+    padding: 4px 10px !important;
+}
+span.body > iframe, span.body > table {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
