@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .av-button-primary {color: #fff;border-radius: 4px;display: block;background-color: #7F28C4;border: none;cursor: pointer;text-decoration: none;text-transform: uppercase;font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;text-align: center;font-style: normal;white-space: nowrap;background-image: -webkit-gradient(linear, left top, right top, from(#9113B0), color-stop(#C1047E), to(#E23679));background-image: linear-gradient(to right, #9113B0, #C1047E, #E23679);}
+        .av-button-primary:hover, .av-button-primary:active, .av-button-primary:focus {color: #fff;outline: none;text-decoration: none !important;}
+        .avEmailContent {width: 100%;max-width: 800px;color: #3b4546;font-family: montserrat-regular, Helvetica, sans-serif;font-size: 16px;line-height: 20px;margin: 0 auto;}
+        .av-text {text-align: left;font-size: 17px;}
+        .avEmailText {padding-left: 10px;padding-right: 10px;padding-top: 20px;padding-bottom: 20px;border-spacing: 0px 10px;font-size: 17px;}
+        .av-table {font-size: 13px;line-height: 12px;text-align: center;border-collapse: collapse;width: 100%;}
+        @media only screen and (min-width: 480px) {.av-table {    font-size: 13px;    line-height: 14px;    text-align: center;    border-collapse: collapse;}.avEmailText {padding-left: 50px;padding-right: 50px;}.av-table td {padding: 10px;}}
+        .av-table tr:nth-child(odd) {background:#F2F2F2;}
+    </style>
+</head>
+
+
+<body>
+
+    <table class="avEmailContent">
+        <tr><td><div id="__codeblock__" style="display: none; height: 0px; width: 0px;"></div></td></tr>
+        <tr>
+            <td style="text-align: center;">
+                <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/orderConfirmation2021.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="avEmailText">
+                    <tr>
+                        <td class="av-text">
+                            <b style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">Hola $$PRFRD_NM$$.</b><br />
+                            Colocaste tu pedido número <b style="font-weight: bolder;">$$VT_ORD_ID$$</b> de campaña $$CMPGN_NR$$-$$CMPGN_YR_NR$$ el día $$ORD_DT$$.
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td class="av-text">
+                            Número de confirmación: <br />
+                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">$$ORD_REF$$</p>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td class="av-text">
+                            Total de la orden:
+                            <br />
+                            <p style="font-size: 26px;font-weight: bolder;margin: 5px 0px;">$$$TOT_ORD_AMT$$</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="av-text" valign="top">
+                            Campaña: <b style="font-size: 20px;font-weight: bolder;margin: 5px 0px;">$$CMPGN_NR$$</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br />
+                            <hr>
+                            <br />
+                            Tu orden <br />
+                            <br />
+                            <table class="av-table">
+                                <thead>
+                                    <tr style="background-color: #606060;color: #fff;">
+                                        <td><b>Campaña</b></td>
+                                        <td><b>Número</b></td>
+                                        <td><b>Descripción</b></td>
+                                        <td><b>Cantidad</b></td>
+                                        <td><b>Monto</b></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    $$DETAILROWSTART1$$
+                                    <tr>
+                                        <!-- $$VT_ORD_DETL_ID$$ -->
+                                        <td><!-- $$CMPGN_YR_NR$$ -->$$CMPGN_NR$$</td>
+                                        <td>$$LINE_NR$$</td>
+                                        <td>$$PROD_NM$$</td>
+                                        <td>$$ORD_DTL_QTY$$</td>
+                                        <td>$$$ORD_DTL_AMT$$</td>
+                                    </tr>
+                                    $$DETAILROWEND1$$
+                                    
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <br />
+                            <table style="border-collapse: collapse;border-spacing: 0px;width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/correoBienvenidaAvonOn5.jpg">
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a style="display:block;" href="https://play.google.com/store/apps/details?id=com.avon.avonon&hl=en&gl=US" target="_blank">
+                                                <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/correoBienvenidaAvonOn4.jpg">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a style="display:block;" href="https://apps.apple.com/us/app/avon-on/id1439105374" target="_blank">
+                                                <img style="width:100%;" src="https://www.avon.mx/cam-home/dam/nola-assets/email-templates/correoBienvenidaAvonOn3.jpg">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="font-size: 13px;background-color: #eee;">
+                    <tr>
+                        <td valign="middle">
+                            <div style="background-color: #5c5c5c;
+                                text-align: center;
+                                color: #fff;
+                                font-family: montserrat-regular, Helvetica, sans-serif;
+                                padding: 20px 0px;">
+                                <a href="https://www.avon.mx/avon-mx/" style="color: #fff;">AVON.COM.MX</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="av-text" style="text-align: center;">
+                            <br>
+                            Favor de no responder este correo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <a style="color: #7F28C4;
+                            font-family: montserrat-regular, Helvetica, sans-serif;margin-right:26px;" href="https://www.avon.mx/avon-mx/terminos-y-condiciones.html">Términos y condiciones</a>
+                            <a style="color: #7F28C4;
+                            font-family: montserrat-regular, Helvetica, sans-serif;" href="https://www.avon.mx/avon-mx/privacidad-y-seguridad.html">Privacidad y seguridad</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="av-text" style="text-align: center;padding: 0px 12px;">
+                            Este correo electrónico fue enviado por: Avon Cosmetics Manufacturing, S De R L De CV
+                            Blvd Manuel Ávila Camacho No. 32 Ciudad de México, DF, 11000, Mx 
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="middle">
+                            <div style="
+                                background-color: #eee;
+                                padding: 20px 12px; text-align: center;">
+                                <span>
+                                    Al ingresar tu orden de compra, estás aceptando la orden de pedido, el importe y la recepción del mismo.
+                                    Al ingresar tus datos personales, manifiestas tu consentimiento para el uso y tratamiento de los mismos para 
+                                    los fines de negocio aquí establecidos; puedes acceder al aviso de privacidad completo <a href="https://www.avon.mx/avon-mx/terminos-y-condiciones.html">aquí.</a>
+                                </span>
+                                <br><br>
+                                <span>Este material y la información en él contenida ha sido preparada por Avon Cosmetics Manufacturing, S. de R.L. de C.V., para su uso y difusión restringida y privada en la República Mexicana, de acuerdo con la estrategia comercial de la fuerza de ventas y Representantes Revendedoras Independientes. &#169; DR Avon Products Inc., 2020 Salud es Belleza 133300202D0056</span>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -3,7 +3,9 @@
 [name="addDemoForm"],
 [name="addOffersForm"],
 [name="addeditform"] {
-    padding: 0 30px;
+    @media (min-width:$media-1) {
+        padding: 0 30px;
+    }
 }
 [name="addeditform"] {
     .padding_10 {

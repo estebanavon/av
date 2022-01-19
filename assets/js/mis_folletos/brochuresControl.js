@@ -2,31 +2,130 @@
 var data1 = [
 	[
         {
-            title: 'Rostro 20 Mx',
-            file: 'Rostro20Mx.pdf',
-            type: 'imb',
-        },
-        {
             title: 'Minifolleto Navidad Kids',
             file: 'MinifolletoNavidadKidsMx.pdf',
             type: 'flyer',
-          },
-		
+        },
+        {
+            title: 'Belleza Mx',
+            file: 'BellezaMx1_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Fashion & Home Mx',
+            file: 'FashionNHomeMx1_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Sxy Side',
+            file: 'flyerSxySide.1.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'Avon Contigo',
+            file: 'avon_contigo_c0122.pdf',
+            type: 'contigo',
+        },
+        {
+            title: 'Avon Care Granada',
+            file: 'granadaC01_22.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'Descuentos que no son cuentos',
+            file: 'descuentosQueNoSonCuentos.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'Ding Dong Venta Invernal',
+            file: 'DingDongC012022VentaInvernalAVON.pdf',
+            type: 'flyer',
+        },
 	],
 	[
         {
-            title: 'Rostro 20 Mx',
-            file: 'Rostro20Mx.pdf',
-            type: 'imb',
-        },
-        {
             title: 'Minifolleto Navidad Kids',
             file: 'MinifolletoNavidadKidsMx.pdf',
             type: 'flyer',
           },
+          {
+            title: 'Belleza Mx',
+            file: 'BellezaMx1_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Fashion & Home Mx',
+            file: 'FashionNHomeMx1_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Avon Temporada de Labiales',
+            file: 'AvonTemporadaDeLabiales.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'Avon Contigo',
+            file: 'avon_contigo_c0122_ncm.pdf',
+            type: 'contigo',
+        },
+        {
+            title: 'Avon Care Granada',
+            file: 'avonCareGranada.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'Descuentos que no son cuentos',
+            file: 'descuentosQueNoSonCuentos.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'NCM Venta Invernal',
+            file: 'NCMFlyerVentaInvernal.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'Sxy Side',
+            file: 'flyerSxySideNCMxsow.pdf',
+            type: 'flyer',
+        },
 	]
 ]
-var data2 = []
+var data2 = [
+    [
+        {
+            title: 'Belleza Mx',
+            file: 'BellezaMx2_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Fashion & Home Mx',
+            file: 'FashionNHomeMx2_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Avon Contigo',
+            file: 'avon_contigo_c0222.pdf',
+            type: 'contigo',
+        },
+    ],
+    [
+        {
+            title: 'Belleza Mx',
+            file: 'BellezaMx2_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Fashion & Home Mx',
+            file: 'FashionNHomeMx2_22.pdf',
+            type: 'imb',
+        },
+        {
+            title: 'Avon Contigo',
+            file: 'avon_contigo_c0222_ncm.pdf',
+            type: 'contigo',
+        },
+    ]
+]
 var data3 = []
 var data4 = []
 var data5 = []
@@ -40,229 +139,9 @@ var data12 = []
 var data13 = []
 var data14 = []
 var data15 = []
- var data16 = []
-
-var  data17 = [
-    [
-        {
-            title: 'Belleza',
-            file: 'BellezaMx17.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Fashion & Home',
-            file: 'FashionNHomeMx17.pdf',
-            type: 'imb',
-        },
-        
-        {
-            title: 'Avon Contigo',
-            file: 'avon_contigo_c1721.pdf',
-            type: 'contigo',
-        },
-        {
-            title: 'Minifolleto Bcos C16-19',
-            file: 'folletoBco4qC16_19.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Avon Dulces Ofertas C17-18',
-            file: 'AvonDulcesOfertasC17_18.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Rostro C17 MX',
-            file: 'RostroC1721MX.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Bazar 17',
-            file: 'Bazar17Mx.pdf',
-            type: 'bazar',
-        },
-        {
-            title: 'Haloween c17-18',
-            file: 'Haloween17_18Mx.pdf',
-            type: 'imb',
-          },
-    ],
-    [
-        {
-            title: 'Belleza',
-            file: 'BellezaMx17.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Fashion & Home',
-            file: 'FashionNHomeMx17.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Avon Contigo',
-            file: 'avon_contigo_c1721_ncm.pdf',
-            type: 'contigo',
-        },
-        {
-            title: 'Minifolleto Bcos C16-19',
-            file: 'folletoBco4qC16_19.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Rostro C17 MX',
-            file: 'RostroC1721MX.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Adelantos NavideÃ±oos 2021 Ncm',
-            file: 'AdelantosNavidenos2021Ncm.pdf',
-            type: 'flyer',
-        },
-        {
-            title: 'Avon Dulces Ofertas C17-18 Ncm',
-            file: 'AvonDulcesOfertasC17_18NCM_Berilio.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Ofertas Ncm C17-18 Actividad',
-            file: 'OfertasNcmC17_18Actividad.pdf',
-            type: 'flyer',
-        },
-        {
-            title: 'Bazar 17',
-            file: 'Bazar17Mx.pdf',
-            type: 'bazar',
-        },
-        {
-            title: 'Haloween c17-18',
-            file: 'Haloween17_18Mx.pdf',
-            type: 'imb',
-          },
-    ],
-    
-]
-var  data18 = [
-    [
-        {
-            title: 'Belleza',
-            file: 'BellezaMx18.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Fashion & Home',
-            file: 'FashionNHomeMx18.pdf',
-            type: 'imb',
-        },
-        {
-          title: 'Avon Contigo',
-          file: 'avon_contigo_c1821.pdf',
-          type: 'contigo',
-        },
-        {
-            title: 'Rostro C18 MX',
-            file: 'RostroC1821MX.pdf',
-            type: 'imb',
-        },
-
-        {
-            title: 'Minifolleto Bcos C16-19',
-            file: 'folletoBco4qC16_19.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Avon Dulces Ofertas C17-18',
-            file: 'AvonDulcesOfertasC17_18.pdf',
-            type: 'imb',
-        },
-		{
-            title: 'Ganarle a Santa',
-            file: 'GanarleASanta.pdf',
-            type: 'flyer',
-        },
-		{
-            title: 'Anew c18',
-            file: 'MBAnewC18-2021.pdf',
-            type: 'flyer',
-        },
-		{
-            title: 'MiniFolleto Bazar Ahorro',
-            file: 'MiniFolletoBazarAhorroC18-20_21.pdf',
-            type: 'bazar',
-        },
-		{
-            title: 'The Body Shop',
-            file: 'TheBodyShop.pdf',
-            type: 'flyer',
-        },
-        {
-            title: 'Haloween c17-18',
-            file: 'Haloween17_18Mx.pdf',
-            type: 'imb',
-          },
-    ],
-    [
-        {
-            title: 'Belleza',
-            file: 'BellezaMx18.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Fashion & Home',
-            file: 'FashionNHomeMx18.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Avon Contigo',
-            file: 'avon_contigo_c1821_ncm.pdf',
-            type: 'contigo',
-          },
-          {
-            title: 'Rostro C18 MX',
-            file: 'RostroC1821MX.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Minifolleto Bcos C16-19',
-            file: 'folletoBco4qC16_19.pdf',
-            type: 'imb',
-        },
-		{
-            title: 'Avon Dulces Ofertas C17-18 Ncm',
-            file: 'AvonDulcesOfertasC17_18NCM_Berilio.pdf',
-            type: 'imb',
-        },
-        {
-            title: 'Ding Dong c18',
-            file: 'DingDong.pdf',
-            type: 'flyer',
-        },
-        {
-            title: 'Ofertas Ncm C17-18 Actividad',
-            file: 'OfertasNcmC17_18Actividad.pdf',
-            type: 'flyer',
-        },
-		{
-            title: 'Anew c18',
-            file: 'MBAnewC18-2021.pdf',
-            type: 'flyer',
-        },
-		{
-            title: 'MiniFolleto Bazar Ahorro',
-            file: 'MiniFolletoBazarAhorroC18-20_21.pdf',
-            type: 'bazar',
-        },
-		{
-            title: 'The Body Shop',
-            file: 'TheBodyShop.pdf',
-            type: 'flyer',
-        },
-        {
-            title: 'Haloween c17-18',
-            file: 'Haloween17_18Mx.pdf',
-            type: 'imb',
-          },
-    ],
-    
-]
+var data16 = []
+var data17 = []
+var data18 = []
 var data19 = [
 	[
         {
@@ -332,6 +211,11 @@ var data19 = [
             file: 'miniFolletoFinTemporada.pdf',
             type: 'flyer',
           },
+          {
+            title: 'Avon Temporada de Labiales',
+            file: 'AvonTemporadaDeLabiales.pdf',
+            type: 'flyer',
+        },
 	]
 ]
 var data20 = [
@@ -391,6 +275,16 @@ var data20 = [
           file: 'Avon_300kms.pdf',
           type: 'flyer',
         },
+        {
+          title: 'Sxy Side',
+          file: 'flyerSxySide.1.pdf',
+          type: 'flyer',
+        },
+        {
+          title: 'Splashes Christmas',
+          file: 'splashesXMASc20_21.pdf',
+          type: 'flyer',
+        },
 	],
 	[
         {
@@ -448,6 +342,16 @@ var data20 = [
             file: 'Avon_300kms.pdf',
             type: 'flyer',
           },
+          {
+            title: 'Avon Temporada de Labiales',
+            file: 'AvonTemporadaDeLabiales.pdf',
+            type: 'flyer',
+        },
+        {
+            title: 'Sxy Side',
+            file: 'flyerSxySideNCMxsow.pdf',
+            type: 'flyer',
+        },
 	]
 ]
 
@@ -481,12 +385,14 @@ var data20 = [
     
     if (currentCampaign == '20') {
         brochuresConstructor = [brochuresWrapper[0],brochuresWrapper[19],brochuresWrapper[18]];
-    } else {
+    } else if (currentCampaign == '1'){
+        brochuresConstructor = [brochuresWrapper[1],brochuresWrapper[0],brochuresWrapper[19]];
+    }  else {
         brochuresConstructor = [brochuresWrapper[currentCampaign],brochuresWrapper[currentCampaign - 1],brochuresWrapper[currentCampaign - 2]];
     }
 
     
-    var brochurePrint = ["","","","","",""];
+    var brochurePrint = ["","","","","","",""];
 
 
 
@@ -506,7 +412,12 @@ var data20 = [
                 campaignSelected = currentCampaign;
                 break
             default:
-                campaignSelected = currentCampaign - 1;
+                if (currentCampaign == '1') {
+                    campaignSelected = '20';
+                } else {
+                    campaignSelected = currentCampaign - 1;
+                }
+                
         }
         return campaignSelected
     }
@@ -620,26 +531,41 @@ var data20 = [
         }
         e++
     };
+    var fwdCampaign,backCampaign;
+    switch (currentCampaign) {
+        case 20:
+            fwdCampaign = '1';
+            backCampaign = '19';
+        break
+        case 1:
+            fwdCampaign = '2';
+            backCampaign = '20';
+        break
+        default:
+            fwdCampaign = currentCampaign + 1;
+            backCampaign = currentCampaign - 1;
+    }
     brochurePrint[3] += '<div class="av-brochure-item av-brochure-main" data-type="'+ brochuresConstructor[0][0].type +'">'+
-                            '<div style="background-image:url(\'/FLDSuite/static/images/mis_folletos/brochureCover'+ (currentCampaign + 1) +'.jpg\')" class="av-brochure-image">' +
+                            '<div style="background-image:url(\'/FLDSuite/static/images/mis_folletos/brochureCover'+ fwdCampaign +'.jpg\')" class="av-brochure-image">' +
                                 '<div class="av-overlay"><input type="text" class="av-hidden" value="'+ urlFile(brochuresConstructor[0][0].type,brochuresConstructor[0][0].file) + '" /><p class="material-icons">visibility</p><p>Ver</p></div>' +
-                                '<div class="av-type '+ brochuresConstructor[0][0].type +'">'+ (currentCampaign + 1) +'</div>' +
+                                '<div class="av-type imb">'+ fwdCampaign +'</div>' +
                             '</div>' +
                             '<div class="av-brochure-text"><h3 class="av-brochure-title">'+ brochuresConstructor[0][0].title +'</h3></div>' +
                         '</div>'
-                        let vendorlink;
-                        switch(site){
-                            case 'REPSuite':
-                                vendorlink = '/REPSuite/vendorLinksOne.page?linkid=42'
-                                break
-                            case 'SLSuite':
-                                vendorlink = '/SLSuite/vendorLinksOne.page?linkid=45'
-                                break
-                            default:
-                                vendorlink = '/REPSuite/vendorLinksOne.page?linkid=42' 
-                        }
-    brochurePrint[4] += currentCampaign;
-    brochurePrint[5] += currentCampaign - 1;
+    let vendorlink;
+    switch(site){
+        case 'REPSuite':
+            vendorlink = '/REPSuite/vendorLinksOne.page?linkid=42'
+            break
+        case 'SLSuite':
+            vendorlink = '/SLSuite/vendorLinksOne.page?linkid=45'
+            break
+        default:
+            vendorlink = '/REPSuite/vendorLinksOne.page?linkid=42' 
+    }
+    brochurePrint[4] += fwdCampaign;
+    brochurePrint[5] += backCampaign;
+    brochurePrint[6] += currentCampaign;
     masterHtml = '<section class="av-lw"><aside id="brochureAside" style="box-shadow:none;" class="av-brochure-aside"><a class="av-button-secondary" href="'+ vendorlink +'" style="width:85%;margin:60px auto 0px auto;">Tablero de control</a>'+
     '<a class="av-button-outline" href="/'+ site +'/beautyArticles.page" style="width:85%;margin:10px auto;">Avon On</a><div class="av-share"><div><i class="fas fa-share" aria-hidden="true"></i><span>Comparte</span></div><div><a href="mailto:subject=Este es mi Catálogo para ti">'+
     '<i class="far fa-envelope" aria-hidden="true"></i></a><a style="margin: 0 20px;" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="https://api.whatsapp.com/send?text=Este es mi Catálogo para ti" target="_blank">'+
@@ -654,8 +580,8 @@ var data20 = [
 $(document).ready(function(){
     
     $('#avContaner').append(masterHtml)
-    $('#brochureContainer').prepend(brochurePrint[0]).prev().append(parseInt(brochurePrint[4], 10) + 1);
-    $('#brochureContainerPast').append(brochurePrint[1]).prev().append(brochurePrint[4]);
+    $('#brochureContainer').prepend(brochurePrint[0]).prev().append(brochurePrint[4]);
+    $('#brochureContainerPast').append(brochurePrint[1]).prev().append(brochurePrint[6]);
     $('#brochureAside').prepend(brochurePrint[3]);
 
     $('#viewMore').click(function(){

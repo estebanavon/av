@@ -53,8 +53,7 @@
     box-shadow: none;
     transition: border-bottom 1s;
     border-radius: 0px;
-    min-width: 42px;
-    width: auto;
+    width: 100%;
     font-size: 16px;
 
     &:hover {
@@ -64,7 +63,11 @@
     &:focus {
         border-bottom: 1px solid $color-primary;
         outline: none;
-    }   
+    }
+    @media (min-width:$media-1){
+        min-width: 42px;
+        width: auto;
+    }
 }
 @mixin av-textarea{
     width: 100%;

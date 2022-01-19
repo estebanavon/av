@@ -129,7 +129,7 @@ a.offersLink,
 	@include av-link();
 }
 
-.linearFormInput, input[type="text"]:not(.searchBox), input[type="password"] {
+.linearFormInput, input[type="text"]:not(.searchBox,.quantity), input[type="password"] {
     @include av-input-text();
 }
 select {

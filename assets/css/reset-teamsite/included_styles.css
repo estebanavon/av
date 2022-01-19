@@ -1300,7 +1300,7 @@ td.leftalign > table.bor_outer.padding10 .leftalign {
 }
 
 /*------- SUBTOTAL 2020 ------*/
-form[name="frmPreviewOrder"] img {
+form[name="frmPreviewOrder"] td.body > img {
   width: 100%;
 }
 
@@ -1586,10 +1586,12 @@ div#alternate .placeAnOrder_image > tbody > tr > td:nth-child(3) {
 }
 
 /*------- Popup 2020 ------*/
-[name="addDemoForm"],
-[name="addOffersForm"],
-[name="addeditform"] {
-  padding: 0 30px;
+@media (min-width: 768px) {
+  [name="addDemoForm"],
+  [name="addOffersForm"],
+  [name="addeditform"] {
+    padding: 0 30px;
+  }
 }
 
 [name="addeditform"] .padding_10 {
@@ -5134,7 +5136,7 @@ a.offersLink.visited,
   color: #66209d;
 }
 
-.linearFormInput, input[type="text"]:not(.searchBox), input[type="password"] {
+.linearFormInput, input[type="text"]:not(.searchBox):not(.quantity), input[type="password"] {
   font-family: montserrat-regular, Helvetica, sans-serif;
   color: #3b4546;
   border-radius: 4px;
@@ -5147,19 +5149,25 @@ a.offersLink.visited,
   -webkit-transition: border-bottom 1s;
   transition: border-bottom 1s;
   border-radius: 0px;
-  min-width: 42px;
-  width: auto;
+  width: 100%;
   font-size: 16px;
 }
 
-.linearFormInput:hover, input[type="text"]:not(.searchBox):hover, input[type="password"]:hover {
+.linearFormInput:hover, input[type="text"] :hover, input[type="password"]:hover {
   border-bottom: 1px solid #cccccc;
   outline: none;
 }
 
-.linearFormInput:focus, input[type="text"]:not(.searchBox):focus, input[type="password"]:focus {
+.linearFormInput:focus, input[type="text"] :focus, input[type="password"]:focus {
   border-bottom: 1px solid #7F28C4;
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .linearFormInput, input[type="text"]:not(.searchBox):not(.quantity), input[type="password"] {
+    min-width: 42px;
+    width: auto;
+  }
 }
 
 select {
@@ -5175,8 +5183,7 @@ select {
   -webkit-transition: border-bottom 1s;
   transition: border-bottom 1s;
   border-radius: 0px;
-  min-width: 42px;
-  width: auto;
+  width: 100%;
   font-size: 16px;
   background-color: transparent;
 }
@@ -5189,6 +5196,13 @@ select:hover {
 select:focus {
   border-bottom: 1px solid #7F28C4;
   outline: none;
+}
+
+@media (min-width: 768px) {
+  select {
+    min-width: 42px;
+    width: auto;
+  }
 }
 
 input[type="checkbox"] {
