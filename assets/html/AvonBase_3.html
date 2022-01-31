@@ -13,22 +13,31 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="../js/primary.js"></script>
     <style>
-        .avTest{
-            width: 100%;
-            padding: 10%;
-            display: block;
-            box-shadow: 0px 0px 30px rgba(0,0,0,0.15);
-        }
-        @media (min-width:1100px) {
-            .avTest{
-                width: 1100px;
-                padding: 100px;
-                margin: 40px auto 100px auto;
-            }
-        }
+        .avTest{width: 100%;padding: 10%;display: block;box-shadow: 0px 0px 30px rgba(0,0,0,0.15);}@media (min-width:1100px) {.avTest{width: 1100px;padding: 100px;margin: 40px auto 100px auto;}}
     </style>
+    <script src="../js/jszip.min.js"></script>
+    <script src="../js/FileSaver.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var zip = new JSZip();
+
+            $('.file').click(function(){
+
+                // zip.file("Hello.txt", "Hello World\n");
+
+                // var img = zip.folder("images");
+                //img.file("smile.gif", imgData, {base64: true});
+
+                zip.generateAsync({type:"blob"}).then(function(content) {
+                    // see FileSaver.js
+                    saveAs("https://estebanavon.github.io/av/assets/pdf/Default_Report.pdf", "1.pdf");
+                });
+            
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -42,8 +51,7 @@
         <div class="av-resp-support">Si estás interesado en unirte a nuestro equipo envía tu CV a: rh.integracion@avon.com</div>
         <div class="row av-row pt-0">
             <div class="col-6 mx-auto">
-                <h2 class="av-title text-center">¡Únete a nuestro equipo!</h2>
-                <a href="mailto:rh.integracion@avon.com" class="av-button-secondary w-100 mt-5">Mandar email</a>
+                <a class="file av-button-secondary w-100 mt-5">Descargar</a>
             </div>
         </div>
     </section>
