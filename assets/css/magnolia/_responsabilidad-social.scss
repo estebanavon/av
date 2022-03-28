@@ -23,7 +23,7 @@
     
 }
 .text-justify {
-    text-align: justify;
+    text-align: justify !important;
 }
 @include image-placer(1);
 @include image-placer(2);
