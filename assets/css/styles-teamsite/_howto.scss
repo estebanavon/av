@@ -10,3 +10,45 @@
 .avTimeLine {
     display: flex;
 }
+.av-precaptura-texture {
+    background-image: url('/FLDSuite/static/images/banners/texture.jpg');
+    background-size: cover;
+    min-height: 150px;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $bold-monts;
+    padding: 30px;
+}
+.carouselIcon {
+    font-size:50px !important;
+    margin-right: 20px;
+}
+.preCapturaSlide {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 180px;
+    background-color: $color-white;
+    @media (min-width:$media-1){
+        flex-direction: row;
+    }
+}
+.avDataDots {
+    display: flex;
+    margin: 0 auto;
+    div {
+        margin-right: 10px;
+        width: 10px;
+        height: 10px;
+        background-color: $color-dark-light;
+        border-radius: 50%;
+        &.active {
+            background-color: $color-dark;
+        }
+    }
+}

@@ -238,6 +238,7 @@ h3.searchHeader {
   color: #3b4546;
   padding: 15px 0px;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .av-tabs div:not(.active):hover {

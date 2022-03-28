@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60d5b8c1af.js" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@2.4.1/css/grid.min.css">
     <link rel="stylesheet" href="../css/magnolia/styles_scss.css">
+    <link rel="stylesheet" href="../css/styles-teamsite/styles_scss.css" />
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -16,45 +20,189 @@
     <style>
         .avTest{width: 100%;padding: 10%;display: block;box-shadow: 0px 0px 30px rgba(0,0,0,0.15);}@media (min-width:1100px) {.avTest{width: 1100px;padding: 100px;margin: 40px auto 100px auto;}}
     </style>
-    <script src="../js/jszip.min.js"></script>
-    <script src="../js/FileSaver.min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            var zip = new JSZip();
-
-            $('.file').click(function(){
-
-                // zip.file("Hello.txt", "Hello World\n");
-
-                // var img = zip.folder("images");
-                //img.file("smile.gif", imgData, {base64: true});
-
-                zip.generateAsync({type:"blob"}).then(function(content) {
-                    // see FileSaver.js
-                    saveAs("https://estebanavon.github.io/av/assets/pdf/Default_Report.pdf", "1.pdf");
-                });
-            
-            })
-        })
-    </script>
+    
 </head>
 
 <body>
+    <section class="avTest">
+        <section class="av-container av-container-small">
+            <section class="av-resp-title av-convocatoria-2021">
+                <div>
+                    Ganadores Convocatoria <p class="av-title-stroke">2021</p>
+                </div>
+            </section>
+            <div class="av-resp-support">Promesa AVON para poner fin a la violencia contra las mujeres</div>
+            <div class="row av-row py-0">
+                <div class="col-5 mx-auto mb-5">
+                    <!-- <img src="/dam/avon-mx/static/images/responsabilidad-social/violencia_logo4.png" class="w-100"> -->
+                    <img src="../img/violencia_logo4.png" class="w-100">
+                </div>
+                <div class="w-100"></div>
+                <div class="col-12">
+                    <p class="av-text text-justify">
+                        <b class="av-highlight">Desde el 2004, a nivel global la Promesa Avon para Poner Fin a la Violencia contra las Mujeres</b> lidera esfuerzos 
+                        para hacer frente a la lucha contra la violencia hacia las mujeres, fomentando el diálogo sobre las distintas formas de violencia, 
+                        brindar información para reconocer y responder activamente a una situación de violencia y garantizar que las mujeres tengan acceso al apoyo que necesitan.
+                    </p>
+                    <p class="av-text text-justify">
+                        Nos llena de mucha emoción y orgullo dar a conocer los <b class="av-highlight">proyectos ganadores</b> de la Convocatoria mediante este comunicado; nos comunicaremos por correo electrónico 
+                        y por teléfono con los ganadores para indicarles los siguientes pasos a realizar para la recepción de los fondos.
+                    </p>
+                </div>
+            </div>
+            
     
-    <section class="av-container av-container-small avTest">
-        <section class="av-resp-title jobNow">
-            <div style="font-size: 50px; line-height: 51px;">
-                Trabajo<p class="av-title-stroke">inspirador</p>
+            
+            <div class="row av-row av-conv-row">
+                <div class="col">
+                    <h3 class="av-title mb-3"><span class="av-pink">10 proyectos</span> fueron seleccionados entre los más de 124 que recibimos.</h3>
+                    <p class="av-text text-justify">
+                        Para definir a los ganadores contamos con el apoyo de un grupo de dictaminadores expertos, quienes realizaron una estricta evaluación 
+                        según el nivel de innovación, el impacto, la aplicación real entre los objetivos a llevar a cabo y los resultados que se obtendrán, la 
+                        gestión del proyecto y la calendarización. 
+                    </p>
+                    <p class="av-text">
+                        A continuación se presentan las organizaciones y proyectos ganadores:
+                    </p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <div class="av-table-container">
+                        <table class="av-table">
+                            <thead>
+                                <tr>
+                                    <td>Nombre del proyecto</td>
+                                    <td>Organización</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Observatorio Comunitario de Violencia contra las Mujeres en el estado de Guerrero.
+                                    </td>
+                                    <td>
+                                        <b>Centro de Estudios Ecuménicos</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Alianza contra la violencia hacia las jóvenes indígenas y rurales.
+                                    </td>
+                                    <td>
+                                        <b>Miel Solidaria Campesina AC</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Emprendiendo en Libertad entre Nosotras
+                                    </td>
+                                    <td>
+                                        <b>Interculturalidad, Salud y Derechos AC (INSADE)</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Espacios digitales seguros para niñas, adolescentes y jóvenes.
+                                    </td>
+                                    <td>
+                                        <b>Fundación Mexicana para la Planeación Familiar AC</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Proyecto Tolerancia Cero.
+                                    </td>
+                                    <td>
+                                        <b>L&S Proyectos Culturales AC</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        #JuventudEsSinViolencia: promotoras y promotores por la equidad de género.
+                                    </td>
+                                    <td>
+                                        <b>Fundación de Apoyo a la Juventud IAP</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Jóvenes con Rumbo: Empoderamiento económico de mujeres jóvenes leonesas.
+                                    </td>
+                                    <td>
+                                        <b>YouthBuild México AC</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Proyecto de educación docente con enfoque de género en Chiapas.
+                                    </td>
+                                    <td>
+                                        <b>Ideas Información y Diseños Educativos para Acciones Saludables</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Compartiendo aprendizajes para la prevención del abuso sexual infantil.
+                                    </td>
+                                    <td>
+                                        <b>Laboratorio de Imaginación y Acción Social AC</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Prevención y atención de la Violencia de Género mediante el fortalecimiento de Instancias Municipales de la Mujer (IMM) en la región Valles Centrales de Oaxaca.
+                                    </td>
+                                    <td>
+                                        <b>Visión y Alma Comunitaria AC</b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <p class="av-text text-justify">
+                        El equipo de Responsabilidad Social de Avon se pondrá en contacto con los proyectos que no resultaron ganadores, para compartirles los comentarios que nos hicieron llegar los dictaminadores, esperando que esa información sea útil y represente una oportunidad de fortalecer el proyecto, a fin que participen nuevamente en la
+                        <b class="av-highlight">Convocatoria 2022 de la Promesa Avon Para Poner Fin a la Violencia Hacia las Mujeres y Niñas.</b>
+                    </p>
+                    <p class="av-text text-justify">
+                        Los participantes deberán cumplir con todos los requisitos establecidos en las presentes Bases y a las demás regulaciones que delimitan las actividades de Avon y de la Promesa Avon; el incumplimiento de cualquiera de dichos requisitos dará lugar a su descalificación.
+                    </p>
+                </div>
+                
+                <div class="col-12 mt-5">
+                    <h3 class="av-title mb-3">
+                        <b class="av-pink">Nada</b> justifica la violencia <br/><b class="av-pink">Junt@s</b> podemos crear un mundo mejor para todas las mujeres, que es un mundo mejor para
+                            <b class="av-pink">Tod@s.</b><br><b class="av-pink">¡Seamos parte del cambio!</b>
+                    </h3>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <p class="av-text">
+                        Queremos agradecerles mucho su total comprensión y atención al proceso.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row av-row av-gray">
+                <div class="col">
+                    <h3 class="av-title mb-3-support left">Para atender cualquier duda:</h3>
+                    <p class="av-text">
+                        Envíe sus preguntas vía correo electrónico a la siguiente dirección:
+                        <br>
+                        <a href="mailto:ingrid.espinosa@avon.com">
+                        Ingrid Espinosa: ingrid.espinosa@avon.com</a>
+                        <br>
+                        Asunto del correo electrónico: DUDAS-Convocatoria_PromesaPonerFinViolencia2021_ (Nombre del grupo o institución postulante)
+                    </p>
+                </div>
             </div>
         </section>
-        <div class="av-resp-support">Si estás interesado en unirte a nuestro equipo envía tu CV a: rh.integracion@avon.com</div>
-        <div class="row av-row pt-0">
-            <div class="col-6 mx-auto">
-                <a class="file av-button-secondary w-100 mt-5">Descargar</a>
-            </div>
-        </div>
     </section>
+
 </body>
 
 </html>
+
+        

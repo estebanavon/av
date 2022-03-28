@@ -253,6 +253,7 @@
   color: #3b4546;
   padding: 15px 0px;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .av-tabs div:not(.active):hover {
@@ -2358,7 +2359,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-concert-banner {
-  background-image: url("../images/concierto-avon/avConciertoHeader.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHeader.jpg");
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2398,80 +2399,80 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-concierto {
-  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
+  background-image: url("../../img/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../images/conciertoBasesHeader.jpg");
+    background-image: url("../../img/conciertoBasesHeader.jpg");
   }
 }
 
 .av-concert1 {
-  background-image: url("../images/concierto-avon/avConciertoHow1.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert2 {
-  background-image: url("../images/concierto-avon/avConciertoHow2.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert3 {
-  background-image: url("../images/concierto-avon/avConciertoHow3.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert4 {
-  background-image: url("../images/concierto-avon/avConciertoHow4.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert5 {
-  background-image: url("../images/concierto-avon/avConciertoHow5.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert6 {
-  background-image: url("../images/concierto-avon/avConciertoHow6.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert7 {
-  background-image: url("../images/concierto-avon/avConciertoHow7.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert8 {
-  background-image: url("../images/concierto-avon/avConciertoHow8.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert9 {
-  background-image: url("../images/concierto-avon/avConciertoHow9.jpg");
+  background-image: url("../../img/concierto-avon/avConciertoHow9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-img-higiene {
-  background-image: url("../images/folletos/hg-1.jpg");
+  background-image: url("../../img/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2616,7 +2617,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-ce-header {
-  background-image: url("../images/ce-header.jpg");
+  background-image: url("../../img/ce-header.jpg");
 }
 
 .av-ce-obk .av-title, .av-ce-obk .av-title-stroke {
@@ -2688,7 +2689,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
   text-transform: uppercase;
   color: #fff;
   font-family: montserrat-light, Helvetica, sans-serif;
-  background-image: url("../images/circulo_estelar/avceSection-0.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-0.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2715,23 +2716,23 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-ce .av-ce-1 {
-  background-image: url("../images/circulo_estelar/avceSection-1.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-1.jpg");
 }
 
 .av-ce .av-ce-2 {
-  background-image: url("../images/circulo_estelar/avceSection-2.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-2.jpg");
 }
 
 .av-ce .av-ce-3 {
-  background-image: url("../images/circulo_estelar/avceSection-3.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-3.jpg");
 }
 
 .av-ce .av-ce-4 {
-  background-image: url("../images/circulo_estelar/avceSection-4.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-4.jpg");
 }
 
 .av-ce .av-ce-5 {
-  background-image: url("../images/circulo_estelar/avceSection-5.jpg");
+  background-image: url("../../img/circulo_estelar/avceSection-5.jpg");
 }
 
 .av-ce-tabs > div {
@@ -2832,6 +2833,75 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.av-precaptura-texture {
+  background-image: url("/FLDSuite/static/images/banners/texture.jpg");
+  background-size: cover;
+  min-height: 150px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+  padding: 30px;
+}
+
+.carouselIcon {
+  font-size: 50px !important;
+  margin-right: 20px;
+}
+
+.preCapturaSlide {
+  padding: 50px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 180px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .preCapturaSlide {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.avDataDots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.avDataDots div {
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #cccccc;
+  border-radius: 50%;
+}
+
+.avDataDots div.active {
+  background-color: #3b4546;
 }
 
 .avHome {
@@ -2995,8 +3065,6 @@ section.av-lw aside {
           flex: 1;
   z-index: 20;
   display: none;
-  -webkit-box-shadow: 7px 0px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 7px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 section.av-lw aside .av-intro {
@@ -3310,6 +3378,25 @@ section.av-lw .disable {
   }
 }
 
+.av-panorama-header {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  .av-panorama-header {
+    display: none;
+  }
+}
+
+.av-panorama-header a {
+  text-decoration: none;
+}
+
 .av-brochures-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3323,127 +3410,55 @@ section.av-lw .disable {
   padding: 1.5rem 0rem 1.5rem 1.5rem;
 }
 
-.av-filtros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+.av-brochure-show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-animation-name: brochure-fade-in;
+          animation-name: brochure-fade-in;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
 }
 
-.av-filtros label {
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .av-filtros {
-    top: 0px !important;
+@-webkit-keyframes brochure-fade-in {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
   }
 }
 
-.av-filtros ul {
-  padding: 0 2.5rem;
-  cursor: pointer;
-  list-style-type: none;
-  padding: 15px 0px;
-  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  position: absolute;
-  z-index: 10;
-  right: 10px;
-  top: 10px;
-  background-color: #fff;
-  display: none;
-}
-
-.av-filtros ul li {
-  padding: 15px 25px;
-}
-
-.av-filtros ul li:hover {
-  background-color: rgba(200, 200, 200, 0.3);
-}
-
-.av-filtros ul.active {
-  display: block;
-}
-
-.av-filtros .avFilterSelected {
-  width: 180px;
-  text-align: center;
-}
-
-h2.av-brochure-title {
-  padding: 3rem 2.5rem 2rem 2.5rem;
-  font-size: 38px;
-  color: #3b4546;
-  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
-  text-transform: uppercase;
-  font-style: normal;
-}
-
-@supports (-webkit-text-stroke: 1px #3b4546) {
-  h2.av-brochure-title .av-title-stroke {
-    -webkit-text-stroke: 1px #3b4546;
-    -webkit-text-fill-color: transparent;
+@keyframes brochure-fade-in {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
   }
-}
-
-h3.av-brochures-subtitle {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  color: #3b4546;
-  text-transform: uppercase;
-  font-size: 18px;
-  padding-left: 30px;
-  line-height: 36px;
-}
-
-h3.av-brochures-subtitle svg {
-  margin-right: 1rem;
-  fill: #3b4546;
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .av-brochure-button {
-  display: block;
-  margin: 0 auto 4rem auto;
-}
-
-.av-share {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2.5rem 1rem;
-  font-size: 19px;
-}
-
-.av-share > div {
-  margin: 10px 0px;
-}
-
-.av-share i {
-  font-size: 24px;
-}
-
-.av-share a {
-  background-color: #b3b3b3;
+  cursor: pointer;
+  background-color: #7F28C4;
   border-radius: 50%;
-  padding: 0px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  z-index: 10;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3453,46 +3468,212 @@ h3.av-brochures-subtitle svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: absolute;
+  right: 40%;
+  bottom: -35px;
 }
 
-.av-share a:hover {
-  background-color: #7F28C4;
+.av-brochure-button .material-icons {
+  font-size: 27px;
 }
 
-.av-map {
-  padding: 20px 25px;
+@media (min-width: 576px) {
+  .av-brochure-button {
+    right: 30px;
+  }
 }
 
-.av-map div {
+.av-br-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 117px;
+}
+
+@media (min-width: 576px) {
+  .av-br-grid {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 576px) {
+  .av-br-grid > div {
+    width: 210px;
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+}
+
+.av-br-grid aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-left: 1px solid #cccccc;
+}
+
+@media (min-width: 576px) {
+  .av-br-grid .brochure-tab div {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+    border-radius: 4px;
+  }
+  .av-br-grid .brochure-tab div:hover {
+    background-color: #eee;
+  }
+  .av-br-grid .brochure-tab div.active {
+    background-color: #f6effc;
+    color: #66209d;
+  }
+  .av-br-grid .brochure-tab div a {
+    text-decoration: none;
+    color: #3b4546;
+  }
+}
+
+@media (max-width: 576px) {
+  .av-br-grid .brochure-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 64px;
+    overflow-x: scroll;
+    z-index: 50;
+    width: 100%;
+  }
+  .av-br-grid .brochure-tab div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    background-color: #fff;
+    font-family: montserrat-regular, Helvetica, sans-serif;
+    color: #3b4546;
+    padding: 15px 0px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .av-br-grid .brochure-tab div:not(.active):hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  .av-br-grid .brochure-tab div.active {
+    font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
+    border-bottom: 3px solid #7F28C4;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .av-br-grid .brochure-tab div {
+    padding: 15px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .av-br-grid .av-br {
+    display: none;
+  }
+}
+
+.av-brochure-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.av-br-banner {
+  height: 190px;
+  width: 100%;
+  background-image: url("../../img/mis_folletos/PanoramaDigital.jpg");
+  background-position: center;
+  position: relative;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 23px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.av-map div span:nth-child(2) {
-  font-size: 13px;
-  margin-left: 5px;
+@media (min-width: 576px) {
+  .av-br-banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px;
+  }
+}
+
+.av-br-banner .av-text {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .av-br-banner .av-text {
+    width: 25%;
+  }
+}
+
+h2.av-brochure-title {
+  font-size: 38px;
+  line-height: 32.3px;
+  color: #fff;
+  font-family: zona-pro-black, "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: center;
+}
+
+@supports (-webkit-text-stroke: 1px #fff) {
+  h2.av-brochure-title .av-title-stroke {
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (min-width: 576px) {
+  h2.av-brochure-title {
+    font-size: 38px;
+    line-height: 38px;
+    text-align: left;
+  }
 }
 
 .av-brochure-item {
-  width: 132px;
+  width: 115px;
   min-height: 160px;
   margin: 10px;
 }
 
 .av-brochure-item .av-brochure-image {
   width: 100%;
-  height: 130px;
+  height: 115px;
   position: relative;
   background-color: rgba(200, 200, 200, 0.3);
   border-radius: 8px;
@@ -3522,7 +3703,7 @@ h3.av-brochures-subtitle svg {
 
 .av-brochure-item .av-brochure-image .av-canvas-container {
   width: 100%;
-  height: 130px;
+  height: 115px;
   overflow: hidden;
   position: absolute;
   border-radius: 8px;
@@ -3669,6 +3850,7 @@ h3.av-brochures-subtitle svg {
   z-index: -1;
   background-color: transparent;
   color: transparent;
+  cursor: pointer;
 }
 
 .av-hidden:active, .av-hidden:focus {
@@ -3678,5 +3860,40 @@ h3.av-brochures-subtitle svg {
 
 .imb {
   background-color: #0057FF;
+}
+
+.av-filtros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.av-filtros label:nth-child(1) {
+  margin-right: 50px;
+}
+
+.av-filtros label:nth-child(2) {
+  margin-right: 20px;
+}
+
+.av-filtros ul {
+  list-style-type: none;
+  padding: 20px;
+  background-color: white;
+  width: 300px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+}
+
+.av-filtros ul li {
+  padding: 5px 0px;
 }
 /*# sourceMappingURL=styles_scss.css.map */

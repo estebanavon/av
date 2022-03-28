@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
 
-    var showSlide = 2;
+    var showSlide = 3;
     var timeOut;
 
-    avShowSlide(2,0,true);
+    avShowSlide(3,0,true);
     
 
     function avShowSlide(end,start,forwardOrBackward){ 
@@ -29,18 +29,20 @@ $(document).ready(function(){
             $(this).children().eq(showSlide).addClass(avSlide).siblings().removeClass('active back');
             $(this).children().eq(showSlide2).addClass("lastOne").siblings().removeClass('lastOne');
         })
+        $('.avDataDots').children().eq(showSlide).removeClass().addClass('active').siblings().removeClass();
+        timeOut = setTimeout(function(){avShowSlide(3,0,true);},5500);
         
-        timeOut = setTimeout(function(){avShowSlide(2,0,true);},5500);
     }
 
     $("#avDataFw").click(function(){
         clearTimeout(timeOut);
-        avShowSlide(2,0,true);
+        avShowSlide(3,0,true);
     });
     $("#avDataBk").click(function(){
         clearTimeout(timeOut);
-        avShowSlide(0,2,false);
+        avShowSlide(0,3,false);
     });
+    
 
 });
 

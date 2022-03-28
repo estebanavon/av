@@ -651,11 +651,6 @@ var data8 = [
           file: 'IMBRostroMX_C8.pdf',
           type: 'pd',
         },
-        {
-          title: 'Festival de Ofertas c08',
-          file: 'minibrochureC08_2022FestivalOfertas.pdf',
-          type: 'flyer',
-        },
     ],
     [
         {
@@ -683,16 +678,6 @@ var data8 = [
           title: 'Rostro MX C8',
           file: 'IMBRostroMX_C8.pdf',
           type: 'pd',
-        },
-        {
-          title: 'Avon Anew VIT_C',
-          file: 'AvonAnewVIT_C_Berilio.pdf',
-          type: 'pd',
-        },
-        {
-          title: 'Festival de Ofertas c08',
-          file: 'C8MXMiniBrochure_NMC.pdf',
-          type: 'flyer',
         },
     ]
 ]
@@ -754,11 +739,6 @@ var data9 = [
         {
           title: 'Grandes Oportunidades 2022',
           file: 'minifolletoGrandesOportunidades.pdf',
-          type: 'pd',
-        },
-        {
-          title: 'Avon Anew VIT_C',
-          file: 'AvonAnewVIT_C_Berilio.pdf',
           type: 'pd',
         },
     ]
@@ -1073,7 +1053,7 @@ var data20 = [
         
     var brochurePrint = ["","","","","","","","","","",""];
     
-    let avEnviorment = 'www';
+    let avEnviorment = 'qaf';
     let urlFilesLet,folder;
     let panoramaUrl = [[],[],[],[],[]]
     function urlFile(type,file,title,e){
