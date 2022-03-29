@@ -2359,7 +2359,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-concert-banner {
-  background-image: url("../../img/concierto-avon/avConciertoHeader.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHeader.jpg");
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2399,80 +2399,80 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-concierto {
-  background-image: url("../../img/conciertoBasesHeaderMobile.jpg");
+  background-image: url("../images/conciertoBasesHeaderMobile.jpg");
 }
 
 @media (min-width: 992px) {
   .av-concierto {
-    background-image: url("../../img/conciertoBasesHeader.jpg");
+    background-image: url("../images/conciertoBasesHeader.jpg");
   }
 }
 
 .av-concert1 {
-  background-image: url("../../img/concierto-avon/avConciertoHow1.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert2 {
-  background-image: url("../../img/concierto-avon/avConciertoHow2.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert3 {
-  background-image: url("../../img/concierto-avon/avConciertoHow3.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert4 {
-  background-image: url("../../img/concierto-avon/avConciertoHow4.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert5 {
-  background-image: url("../../img/concierto-avon/avConciertoHow5.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert6 {
-  background-image: url("../../img/concierto-avon/avConciertoHow6.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert7 {
-  background-image: url("../../img/concierto-avon/avConciertoHow7.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert8 {
-  background-image: url("../../img/concierto-avon/avConciertoHow8.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-concert9 {
-  background-image: url("../../img/concierto-avon/avConciertoHow9.jpg");
+  background-image: url("../images/concierto-avon/avConciertoHow9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .av-img-higiene {
-  background-image: url("../../img/folletos/hg-1.jpg");
+  background-image: url("../images/folletos/hg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2617,7 +2617,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-ce-header {
-  background-image: url("../../img/ce-header.jpg");
+  background-image: url("../images/ce-header.jpg");
 }
 
 .av-ce-obk .av-title, .av-ce-obk .av-title-stroke {
@@ -2689,7 +2689,7 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
   text-transform: uppercase;
   color: #fff;
   font-family: montserrat-light, Helvetica, sans-serif;
-  background-image: url("../../img/circulo_estelar/avceSection-0.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-0.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2716,23 +2716,23 @@ body .h1, body .h2, body .h3, body h1, body h2, body h3 {
 }
 
 .av-ce .av-ce-1 {
-  background-image: url("../../img/circulo_estelar/avceSection-1.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-1.jpg");
 }
 
 .av-ce .av-ce-2 {
-  background-image: url("../../img/circulo_estelar/avceSection-2.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-2.jpg");
 }
 
 .av-ce .av-ce-3 {
-  background-image: url("../../img/circulo_estelar/avceSection-3.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-3.jpg");
 }
 
 .av-ce .av-ce-4 {
-  background-image: url("../../img/circulo_estelar/avceSection-4.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-4.jpg");
 }
 
 .av-ce .av-ce-5 {
-  background-image: url("../../img/circulo_estelar/avceSection-5.jpg");
+  background-image: url("../images/circulo_estelar/avceSection-5.jpg");
 }
 
 .av-ce-tabs > div {
@@ -3601,7 +3601,7 @@ section.av-lw .disable {
 .av-br-banner {
   height: 190px;
   width: 100%;
-  background-image: url("../../img/mis_folletos/PanoramaDigital.jpg");
+  background-image: url("../images/mis_folletos/PanoramaDigital.jpg");
   background-position: center;
   position: relative;
   padding: 40px;
