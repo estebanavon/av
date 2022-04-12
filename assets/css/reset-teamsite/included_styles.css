@@ -198,7 +198,7 @@
   font-size: 14px;
 }
 
-.av-subtitle, .av-subtitle-support, .av-title, .orderbrochure_content, td.font_bold.font_14.txt_fff, [name="addeditform"] .tbl_header.tbl_bgmid3,
+.av-subtitle, .av-subtitle-support, .av-title, .av-title-regular, .orderbrochure_content, td.font_bold.font_14.txt_fff, [name="addeditform"] .tbl_header.tbl_bgmid3,
 .pop_main_header_txt, .misprint_header, #popup_title, .articleHeader, .av-tc h2, .tbl_header_big,
 .contentbackgroundcolor td.tbl_bgmid3,
 .sub_heading1,
@@ -290,9 +290,36 @@
 }
 
 .av-title {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 24px;
+  font-family: montserrat-light, Helvetica, sans-serif;
   text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.av-title b {
+  font-weight: normal !important;
+}
+
+.av-title.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-title.negative {
+    text-align: left;
+  }
+}
+
+.av-title.negative [class^='material-icons'] {
+  color: #fff;
+}
+
+.av-title-regular {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 24px;
 }
 
 .av-text {

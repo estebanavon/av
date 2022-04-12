@@ -108,10 +108,10 @@
     }
 }
 .av-title {
-    @extend %titles;
-    font-family: $bold-monts;
-    font-size: 24px;
-    text-transform: uppercase
+    @include title;
+}
+.av-title-regular {
+    @include titleRegular;
 }
 
 .av-text{

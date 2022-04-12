@@ -53,7 +53,7 @@
   font-family: gotham-book;
 }
 
-.av-subtitle, .av-subtitle-support, .av-title {
+.av-subtitle, .av-subtitle-support, .av-title, .av-title-regular {
   color: #3b4546;
   text-align: left;
   margin: 0px;
@@ -141,9 +141,36 @@
 }
 
 .av-title {
-  font-family: montserrat-bold, "Arial Black", Gadget, sans-serif;
-  font-size: 24px;
+  font-family: montserrat-light, Helvetica, sans-serif;
   text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.av-title b {
+  font-weight: normal !important;
+}
+
+.av-title.negative {
+  color: #fff;
+  text-align: center;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .av-title.negative {
+    text-align: left;
+  }
+}
+
+.av-title.negative [class^='material-icons'] {
+  color: #fff;
+}
+
+.av-title-regular {
+  font-family: montserrat-regular, Helvetica, sans-serif;
+  font-size: 24px;
 }
 
 .av-text {
