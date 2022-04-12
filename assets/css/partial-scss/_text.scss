@@ -99,6 +99,56 @@
 
 
 
+.av-subtitle {
+    @include subtitle(24px,left,0px);
+    @include negative();
+    &-support {
+        @include subtitle(30px);
+        @include negative();
+    }
+}
+.av-title {
+    @extend %titles;
+    font-family: $bold-monts;
+    font-size: 24px;
+    text-transform: uppercase
+}
+
+.av-text{
+    @include text-mixin();
+
+    @include negative;
+    
+    @include highlight();
+    
+    &.av-text-small {
+        font-size: $size-text - 2;
+        line-height: 20px;
+        p {
+            margin-bottom: $size-text;
+        }
+    }
+    &.av-text-large {
+        font-size: $size-text + 5;
+        line-height: 25px;
+    }
+
+    &:last-child{
+        margin-bottom: $margin-none;
+    }
+}
+.av-pink {
+    color: $color-primary;
+}
+
+
+.av-hashtag {
+    font-family: $light-zona;
+    margin: 1rem 0;
+    color: $color-text;
+    font-size: $size-text + 2;
+}
+
 // LISTS
 %av-list {
     font-family: $regular-monts;

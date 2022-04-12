@@ -101,12 +101,11 @@
         height: 4px;
     }
 }
-// .wrapper {
-//     width: 100%;
-//     > tbody > tr > td[width="3px"] {
-//         display: none;
-//     }
-// }
+.wrapper {
+    > tbody > tr > td[width="3px"][bgcolor="gray"] {
+        display: none;
+    }
+}
 #my_dashboard.wrapper > tbody > tr:first-child {
     display: none;
 }

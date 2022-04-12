@@ -11,6 +11,9 @@
 .av-convocatoria-2021 {
     background-image: url('#{$route-images}/responsabilidad-social/convocatoriaViolencia2021.jpg');
 }
+.av-convocatoria-2022 {
+    background-image: url('#{$route-images}/responsabilidad-social/convocatoriaViolencia2022.jpg');
+}
 
 @mixin image-placer($number){
     .av-conv-#{$number} {
