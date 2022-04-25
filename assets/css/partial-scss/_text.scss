@@ -112,6 +112,7 @@
 }
 .av-title-regular {
     @include titleRegular;
+    font-family: $bold-monts;
 }
 
 .av-text{

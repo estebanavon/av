@@ -1,80 +1,509 @@
-
-
-$(document).ready(function(){
-  const berilio = [
-      '2700','2701','2702','2703','2704','2705','2706','2707','2708','2709','2710',
+const imssSection = [
+	{
+		name: 'Flyer IMSS PERIODO A 2022',
+		file: 'FlyerPeriodoA2022.pdf',
+	},
+	{
+		name: 'Flyer IMSS PERIODO B 2022',
+		file: 'IMSSperiodoB2022.pdf',
+	},
+	{
+		name: 'Programa IMSS periodo A 2021',
+		file: 'flyerA_IMSS.pdf',
+	},
+	{
+		name: 'Programa IMSS periodo B 2021',
+		file: 'IMSS_periodoB.pdf',
+	},
+	{
+		name: 'Programa IMSS periodo C 2021',
+		file: 'IMSS_periodo_2.pdf',
+	},
+  
   ];
-  const norte = [
-    "0372","0373","0374","0375","0376","0379","0380","0381","0382","0467","0468","0603","0604","0608","0609","0615","0629","2350","1130","1131","1132","1134","1135","1136","1140","1144","1145","1600","1601","1602","1604","1606","1607","1608","1610","1611","1612","1613","1614","1900","1230","1231","1232","1233","1236","1237","1242","1332","1333","1335","1336","1337","1338","1339","1340","1341","1342","1343","1344","2400","2401","2403","0602","0605","0607","0622","0624","0627","1502","1510","1511","1513","1514","1516","1517","1518","1519","1520","1534","1536","1537","1538","2711","0090","0093","0099","0100","0101","0102","0103","0104","0105","0107","0108","0109","0113","0114","0115","0116","0117","1240","1241","1244","1609"
-  ];
-  const sur = [
-    "0150","0152","0155","0156","0158","0159","0160","0161","0162","0163","0164","0165","0166","0171","0172","0190","0437","0440","0015","0016","0019","0050","0051","0054","0058","0059","0060","0061","0062","0063","0064","0067","0068","0069","0070","0071","0072","0073","0074","0075","0758","0759","0766","0767","0768","0777","0783","0784","0785","0786","0787","0788","0792","0797","0799","2750","0325","0326","0329","0331","0334","0335","0336","0337","0338","0342","0343","0344","0345","0349","0355","0357","0360","0441","1515","2300","0250","0252","0253","0254","0255","0256","0257","0262","0263","0264","0269","0270","0271","0272","0273","0277","0279","2250","2251","1133","1137","1138","1139","1141","1142","1143","1430","1431","1433","1434","1435","1437","1438","1439","1440","1441","1442","1443","1700","1701","1800"
-  ];
-  const centro = [
-    "0362","0363","0366","0367","0368","0370","0445","0446","0447","0449","0453","0454","0460","0461","0462","0465","0466","0469","0470","0471","2450","2451","2452","0643","0645","0647","0650","0654","0661","0662","0663","0666","0667","0677","0678","0679","2650","0207","0209","0210","0903","0905","0906","0907","0908","0911","0912","0913","0914","0917","0918","0919","0921","0675","0682","0802","0804","0805","0806","0807","0810","0811","0816","0819","0820","0821","0828","0829","0831","2800","2801","0668","0669","0670","0854","0855","0856","0857","0858","0859","0860","0861","0862","0863","0866","0873","0874","0200","0201","0202","0203","0204","0205","0208","0636","0637","0638","0640","0641","0646","0648","0649","0651","0652"
-  ];
-  const norEste = [
-    "0034","0036","0543","0544","0545","0546","0547","0548","0549","0550","0551","0553","0556","0560","0561","0562","0563","0567","0570","0572","0212","0213","0480","0483","0486","0488","0489","0490","0491","0495","0496","0538","0892","0893","0953","0956","2500","2501","2502","0881","0882","0883","0884","0888","0890","0894","0895","0896","0897","0898","0950","0951","0958","0959","0960","0961","0962","0964","0965","0969","0980","0400","0401","0402","0403","0404","0405","0406","0409","0410","0411","0412","0413","0414","0415","0416","0418","0419","0424","0434","0442","2000","0002","0003","0004","0005","0010","0011","0012","0014","0021","0022","0025","0033","0037","0138","0139","0142","0148","2050","2051","2052","0131","0132","0133","0134","1330","1331","1334","1444","1445","1702","1703","1704","1705","1706","1707","1708","1709","1710","1711","1712","1713","1714"
+  const championshipSection = [
+  
+	{
+		name: 'Post Campeonato 2do periodo',
+		file: 'Post_Liderazgo.jpg',
+		year: true,
+	},
+	{
+		name: 'Portada Campeonato 2do periodo',
+		file: 'Portada_facebook.jpg',
+		year: true,
+	},
+	{
+		name: 'Video Campeonato 2do periodo',
+		file: 'VideoCampeonato_1.mp4',
+		year: true,
+	},
+	{
+		name: 'Bases Generales Campeonato 2022 2do Periodo',
+		file: 'basesGenenralesCampeonato2doPeriodo2022.pdf',
+		year: true,
+	},
+	{
+		name: 'Díptico Campeonato 2do Periodo',
+		file: 'dipticoCampeonatoDOBAbril2022.pdf',
+		year: true,
+	},
+	{
+		name: 'Bases Generales Campeonato 2022 1er Periodo',
+		file: 'basesGenenralesCampeonato1erPeriodo2022c2c7.pdf',
+		year: true,
+	},
+	{
+		name: 'Flyer campeonato 2022 1 Periodo C5 2022',
+		file: 'FlyerCampeonato2022.pdf',
+		year: true,
+	},
+	{
+		name: 'Video llenado de camioneta con fragancias Far Away',
+		file: 'LlenadoDeCamioneta210122.mp4',
+		year: false,
+	},
+	{
+		name: 'Bases Dinámica de llenado de camioneta con cajillas Far Away',
+		file: 'Flyer_Campeonato.pdf',
+		year: false,
+	},
+	{
+		name: 'Flyer 4to Trimestre Campeonato 2021',
+		file: 'FLYER_CAMPEONATO_2021.pdf',
+		year: false,
+	},
+	{
+		name: 'Video de Campeonato 2021',
+		file: 'VideoCampeonato.mp4',
+		year: false,
+	},
+  ];  
+  
+  const conventionSection = [
+  {
+	name: 'Flyer Convención C5 2022',
+	file: 'FlyerAvonSalida.pdf',
+		year: true,
+  },
+	{
+	name: 'Video Convención 2022 Cartagena',
+	file: 'ConvencionLiderazgo2022_1.mp4',
+		year: true,
+  },
+	{
+	name: 'Bases Convención Liderazgo AVON 2022',
+	file: 'BasesConvencionLiderazgoavon2022_v6RZ.pdf',
+	year: true,
+  },
+	{
+	name: 'Flyer Convención de ventas 2021',
+	file: 'FlyerConvencionC5.pdf',
+		year: false,
+  },
+  {
+	name: 'Convención de Ventas 2021 (video)',
+	file: 'ConvencionVentas_2022.mp4',
+		year: false,
+  },
+	{
+	name: 'Bases Generales Convención de Ventas Liderazgo Avon 2021',
+	file: 'Bases_Convencion_b.pdf',
+		year: false,
+  },
   ];
   
-  var zone = AvonAnalyticsObjex.Profile.zone;
-  //var zone = "0150";
-  var zoneMaster = [berilio,norte,sur,centro,norEste];
-  var zoneMasterStringPdf = ['berilio','norte','sur','norEste_centro','norEste_centro'];
-  var zoneMasterStringLabel = ['berilio','norte','sur','NorEste y Centro','NorEste y Centro'];
-
-  var i,slPrintLabel,slPrintPdf;
+  
+  const videosSection = [
+  {
+	name: 'Jingle Circulo Estelar',
+	file: 'JingleCirculoEstelar.mp4',
+  },
+  {
+	name: 'Ofrece 60/10',
+	file: 'Ofrece_60_10.mp4',
+  },
+	{
+	name: 'Video Circulo Estelar 1',
+	file: 'CE_3er_LOA.mp4',
+  },   
+  {
+	name: 'Video Circulo Estelar 2',
+	file: 'Guia_al_exito_C1.mp4',
+  },
+  ];
+  const generalToolsSection = [
+		{
+			name: 'Calendario de depósito de comisiones 2022',
+			file: 'Avon_Calendario_Comisiones_2022.pdf',
+		},
+		{
+			name: 'Guía de referencia',
+			file: 'GuiadeEmpresariasVol2.pdf',
+		},
+		{
+			name: 'Acuerdo PM',
+			file: 'Avon_Acuerdo_Empresaria_PM.pdf',
+		},
+		{
+			name: 'Acuerdo TL',
+			file: 'Avon_Acuerdo_Empresaria_TL.pdf',
+		},
+		
+		{
+			name: 'Formato de Oportunidad de Ganancia Certificada',
+			file: 'Formato_Oportunidad_Ganancia_Certificada.pdf',
+		},
+		{
+			name: 'Hoja de Retroalimentación',
+			file: 'hoja_retroalimentacion.pdf',
+		}
+  ];
+  const messagesToolsSection = [
+		{
+			name: 'BASES DE PROGRAMA 300 KM SURFER',
+			file: 'bases300kmAVONv1MarkupLegal15mzo22.pdf',
+			year: true
+		},
+		{
+			name: 'Alta de Cuentas Clabes',
+			file: 'flyerDigital_CuentaClabe.jpg',
+			year: true
+		},
+		{
+			name: 'Prácticas Comerciales No Aceptadas por Avon ',
+			file: 'practicas_comerciales_no_aceptadas_en_avon.pdf',
+			year: true
+		},
+		{
+			name: 'Actualización de Términos para Empresarias TL',
+			file: 'Avon_actualizacion_terminos_empresarias_TL.pdf',
+			year: true
+		},
+		{
+			name: 'Video Youtube 16X9',
+			file: 'VideoYoutube16X9.mp4',
+			year: false
+		},
+		{
+			name: 'Video Youtube 16X9 6s',
+			file: 'VideoYoutube16X9_6seg.mp4',
+			year: false
+		},
+		{
+			name: 'Video Redes Sociales 1x1',
+			file: 'VideoRedesSociales1x1.mp4',
+			year: false
+		},
+		{
+			name: 'Video Redes Sociales 1x1 6s',
+			file: 'VideoRedesSociales1x1_6seg.mp4',
+			year: false
+		},
+		{
+			name: 'Video Instagram 9X16',
+			file: 'VideoInstagram9X16.mp4',
+			year: false
+		},
+		{
+			name: 'Video Instagram 9X16 6s',
+			file: 'VideoInstagram9X16_6seg.mp4',
+			year: false
+		},
+		{
+			name: 'Video Redes Sociales 1x1 (2)',
+			file: 'Video2RedesSociales1x1.mp4',
+			year: false
+		},
+		{
+			name: 'Video Instagram 9X16 (2)',
+			file: 'Video2Instagram9X16.mp4',
+			year: false
+		},
+		{
+			name: 'Video Youtube 16X9 (2)',
+			file: 'Video2Youtube16X9.mp4',
+			year: false
+		},
+		{
+			name: 'Version Youtube 16X9 6s',
+			file: 'VersionYoutube16X9_6seg.mp4',
+			year: false
+		},
+		{
+			name: 'Version Redes Sociales 1X1 6s',
+			file: 'VersionRedesSociales1x1_6seg.mp4',
+			year: false
+		},
+		{
+			name: 'Version Instagram 9X16 6s',
+			file: 'VersionInstagram9X16_6seg.mp4',
+			year: false
+		},
+		{
+			name: 'Reclutamiento 1',
+			file: 'Reclutamiento-1.jpg',
+			year: false
+		},
+		{
+			name: 'Reclutamiento 2',
+			file: 'Reclutamiento-2.jpg',
+			year: false
+		},
+		{
+			name: 'Reclutamiento 3',
+			file: 'Reclutamiento-3.jpg',
+			year: false
+		},
+		{
+			name: 'Reclutamiento 4',
+			file: 'Reclutamiento-4.jpg',
+			year: false
+		},
+		{
+			name: 'Reclutamiento 5',
+			file: 'Reclutamiento-5.jpg',
+			year: false
+		},
+  ];
+  const prospectionSection = [
+	{
+	name: 'PLAN 60.15 VIGENCIA C5 A C9 2022',
+	file: 'Plan60_15VigenciaC5aC9_2022.pdf',
+  },
+  {
+	name: 'Fase 1 2021',
+	file: 'fase1_digital.pdf',
+  },
+  {
+	name: 'Fase 2 2021',
+	file: 'fase2_digital.pdf',
+  },
+  {
+	name: 'Flyer Inspiracional',
+	file: 'Flyer_Inspiracional.pdf',
+  },
+  {
+	name: 'Plan 60-10 Digital',
+	file: 'Plan_60-10_Digital.pdf',
+  },
+	{
+	name: 'Guía para apoyar a representantes a ingresar pedidos',
+	file: 'Flyer_Representantes_2021.1.pdf',
+  },
+  {
+	name: 'Guía de seguimiento de colocación de órdenes',
+	file: 'Flyer_Empresarias_2021.1.pdf',
+  },
+  {
+	name: 'Check List ROA',
+	file: 'check_list_roa.pdf',
+  },
+  ];
+  const seasonPropsSection = [
+	  {
+	  name: 'Flyer Retención C2 2022',
+	  file: 'FlyerLiderazgoRetencionDesarrolloC2.pdf',
+	}, 
+	  {
+	  name: 'Certfica y Activa tu negocio con Avon',
+	  file: 'flyerCertificacionC8FEB_2022V3.pdf',
+	}, 
+	  {
+	  name: 'Apoyo Certificaciones vigencia C7 a C9 2022',
+	  file: 'certificaciones_C7_C9_gif.mp4',
+	}, 
+  
+  ];
+  const modelPropsSection = [
+	{
+		name: 'Video Avon MOC 2022',
+		file: 'Avon_MOC_2022.mp4',
+	}, 
+	{
+		name: 'Home MOC',
+		file: 'Home_MOC.jpg',
+	}, 
+	{
+		name: 'Flyer Digital MOC 2022',
+		file: 'Flyer_Digital_MOC_2022.jpg',
+	}, 
+	{
+		name: 'Post Digital',
+		file: 'Post_Digital.jpg',
+	}, 
+  ];
+  const evolutionSection = [
+	{
+		name: 'Carta Cambios de Ajustes del Modelo',
+		file: 'CartaCambiosdeAjustesdelModelo.pdf',
+	}, 
+	{
+		name: 'Calendario de Pagos 2022',
+		file: 'CalendariodePagos_Abr_2022.pdf',
+	}, 
+	{
+		name: 'Planograma 2022',
+		file: 'PLANOGRAMA_Abr_2022.pdf',
+	}, 
+	{
+		name: 'Flyer Evolución de Modelo Multinivel 2022',
+		file: 'EvolucionModeloMultinivel2022.pdf',
+	}, 
+  ];
+  
+  const cen4q = [
+  {
+	name:'Apoyo de Certificaciones C16 a C18 60_15',
+	file: 'ApoyodeCertificacionesC16_C18_60_15.pdf'
+  },
+  {
+	name:'Bases Convención B 2021',
+	file: 'Bases_Convencion_b_2021.pdf'
+  },
+  {
+	name:'Flyer Convención',
+	file: 'flyer_Convencion.pdf'
+  },
+  {
+	name:'IMSS Periodo C 2021',
+	file: 'IMSS_periodoC_2021.pdf'
+  },
+  {
+	name:'Plan 60_15 de C16 a C18',
+	file: 'Plan_60_15_C16_C18.pdf'
+  },
+  {
+	name:'Bases Campeonato 4o Trimestre C16 - C20',
+	file: 'Bases_Campeonato_4oTrimestreC16_C20.3.pdf'
+  },
+  
+  ];
+  const facebookSection = [
+  {
+	name:'Imagen 1 Facebook',
+	file: 'Imagen1.jpg'
+  },
+  {
+	name:'Imagen 2 Facebook',
+	file: 'Imagen2.jpg'
+  },
+  {
+	name:'Imagen 3 Facebook',
+	file: 'Imagen3.jpg'
+  },
+  {
+	name:'Imagen 4 Facebook',
+	file: 'Imagen4.jpg'
+  },
+  {
+	name:'Manual para anuncio Facebook',
+	file: 'ManualAnuncioFacebook.pdf'
+  },
+  {
+	name:'Textos para Anuncio de Facebook',
+	file: 'TextosAnuncioFacebook.pdf'
+  },
+  {
+	name:'Video Facebook 1',
+	file: 'video1Facebook.mp4'
+  },
+  {
+	name:'Video Facebook 2',
+	file: 'video2Facebook.mp4'
+  },
+  {
+	name:'Video Facebook 3',
+	file: 'video3Facebook.mp4'
+  },
+  {
+	name:'Como Crear Tu Anuncio en Facebook',
+	file: 'ComoCrearTuAnuncioenFacebook.mp4'
+  },
+  ];
+  var suite = AvonAnalyticsObjex.Content.siteID;
+  var avNCMSL = ['2700','2701','2702','2703','2704','2705','2706','2707','2708','2709','2710'];
+  if (avNCMSL.includes(AvonAnalyticsObjex.Profile.zone)) {
+		championshipSection.push(
+			{
+				name: 'Bases Campeonato de 1er a 3er Trimestre',
+				file: 'B_3_trimestre_21.pdf',
+				year: false
+			},
+		)
+	} else {
+	if(suite == "SLSuite") {
+	  championshipSection.push(
+				{
+					name: 'Bases Campeonato de 1er a 3er Trimestre',
+					file: 'B_3_trimestre_21.pdf',
+					year: false
+				},
+				{
+					name:'Bases Campeonato 4o Trimestre C16 - C20',
+					file: 'Bases_Campeonato_4oTrimestreC16_C20.3.pdf',
+					year: false
+				},
+			)
+	}
+  }
+	
+  var avConstructor = [
+	generalToolsSection,messagesToolsSection,prospectionSection,seasonPropsSection,
+	championshipSection,modelPropsSection,videosSection,imssSection,conventionSection,cen4q,
+	facebookSection,evolutionSection
+	];
+  
+  var once = ["true","true","true","true","true","true","true","true","true","true","true","true"];
+  
   var e = 0;
-  while (e < zoneMaster.length) {
-    if(zoneMaster[e].includes(zone)){
-      slPrintPdf = zoneMasterStringPdf[e];
-      slPrintLabel = zoneMasterStringLabel[e];
-    }
-    e++
+  var i,a,sub,subTwo;
+  var yearSeparation = ['',''];
+  
+  var avArrayPrintContent = ["","","","","","","","","","","","","","","","","","","","","","",""];
+  while (e < avConstructor.length){
+  for (i = 0; i < avConstructor[e].length; i++) {
+		switch (e) {
+			case 1:
+			case 4:
+			case 8:
+				if(avConstructor[e][i].year) {
+					a = 0
+				} else {
+					a = 1;
+				}
+				if(e==1){
+					sub = 'General'
+					subTwo = 'Materiales de Reclutamiento'
+				} else {
+					sub = '2022'
+					subTwo = '2021'
+				}
+		yearSeparation[a] += '<li>' +
+								'<span>' + avConstructor[e][i].name + '</span>' +
+								'<span class="av-list-spacer"></span>' +
+								'<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span></a>' +
+								'<a download class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">cloud_download</span></a>'+
+								'</li>';
+				avArrayPrintContent[e] = '<li style="padding: 10px 10px;font-family: montserrat-bold, Helvetica, sans-serif;">'+ sub +'</li>' +
+											yearSeparation[0] + '<li style="padding: 10px 10px;font-family: montserrat-bold, Helvetica, sans-serif;">'+ subTwo +'</li>' +
+											yearSeparation[1]
+		
+				break
+			default:
+				avArrayPrintContent[e] += '<li>' +
+				'<span>' + avConstructor[e][i].name + '</span>' +
+				'<span class="av-list-spacer"></span>' +
+				'<a class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">visibility</span></a>' +
+				'<a download class="av-button-icon" href="/SLSuite/static/liderazgo_2014/descargables/' + avConstructor[e][i].file + '" target="_blank"><span class="material-icons">cloud_download</span></a>'+
+				'</li>';
+  
+		}
   }
-  var htmlPrint = ['','','']
-  var hotfix = ['_22','','_22']
-
-  function slPrintPdfFunction(i,slPrintPdf){
-    switch (i){
-      case 1:
-        slPrintPdf = slPrintPdf;
-        break
-      default:
-        if(zoneMaster[0].includes(zone)){
-          if(i == 0) {slPrintPdf = '_22berilio';}
-          else {slPrintPdf = 'berilio';}
-        } else {
-          slPrintPdf = hotfix[i];
-        }
-    }
-    return slPrintPdf
+  yearSeparation[0] = '';
+  yearSeparation[1] = '';
+  e++    
   }
-
-
-  function slPrintLabelFunction(i,slPrintLabel){
-    switch (i){
-      case 1:
-        slPrintLabel = slPrintLabel;
-        break
-      default:
-        if(zoneMaster[0].includes(zone)){
-          slPrintLabel = 'berilio';
-        } else {
-          slPrintLabel = '';
-        }
-    }
-    return slPrintLabel
-  }
-
-  for(i=0;i<=2;i++){
-      htmlPrint[i] = 
-      '<div class="col"><a href="/SLSuite/static/pdf/sinergia/sinergia_c0'+ (constCampaign - i) + slPrintPdfFunction(i,slPrintPdf) +'.pdf" target="_blank" class="av-card-link"><div class="av-card">'+
-      '<div class="av-card-image"><img class="w-100 av-fallback" src="/SLSuite/static/images/sinergia/img/C0'+ (constCampaign - i) + 'c_sinergia.jpg" alt="Descargables"></div>'+
-      '<div class="av-card-text"><h4 class="av-card-title">Sinergia 0'+ (constCampaign - i) + ' ' + slPrintLabelFunction(i,slPrintLabel).toUpperCase() +'</h4><p class="av-text">Haz clic sobre la campaña que deseas descargar</p>'+
-      '<span class="av-button-tertiary">VER</span></div></div></a></div>';
-  }
-  $('#sinergiaBox').append(htmlPrint[2]).append(htmlPrint[1]).append(htmlPrint[0]);
-
-});
-
+  
+  
+  

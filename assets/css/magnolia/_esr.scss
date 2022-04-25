@@ -42,17 +42,4 @@
         }
     }
 }
-.av-esr-3{
-    .av-title-text {
-        @media (min-width:$media-1) {
-            text-align: right;
-        }
-    }
-    .av-title-support {
-        text-align: left;
-        @media (min-width:$media-1) {
-            text-align: right;
-        }
-    }
-}
 
