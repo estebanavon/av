@@ -32,14 +32,11 @@
     padding: 5rem;
     display: flex;
     align-items: center;
-    h3 {
-        font-size: 2rem;
+    h4 {
+        font-size: 16px;
         font-family: $light-monts;
         text-align: right;
         color: $color-white;
-        @media (min-width:$media-1){
-            font-size: 2.8rem;
-        }
     }
 }
 
