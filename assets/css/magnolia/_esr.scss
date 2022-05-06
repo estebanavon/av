@@ -14,7 +14,7 @@
     }
     @mixin avEsrGrid($number) {
         > div:nth-child(#{$number}) .av-card {
-            background-image: url('#{$route-images}/responsabilidad-social/esr-#{$number + 4}.jpg');
+            background-image: url('#{$route-images}/responsabilidad-social/esr-#{$number + 14}.jpg');
         }   
     }
     @include avEsrGrid(1);
