@@ -69,7 +69,11 @@
         min-width: 42px;
         width: auto;
     }
+    &.av-error {
+        background-color: rgba(133, 17, 104, 0.05) !important;
+    }
 }
+
 @mixin av-textarea{
     width: 100%;
     padding: 10px;
@@ -311,6 +315,12 @@
         cursor: pointer;
     }
     
+}
+.av-error {
+    color: $color-error;
+}
+.av-focus {
+    color: $color-primary;
 }
 /* by Gerber Barillas */
 

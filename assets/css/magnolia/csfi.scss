@@ -1,0 +1,83 @@
+
+@import '../partial-scss/routes';
+$prod-font: '/dam/avon-mx/static/fonts';
+$route-font: $dev-font;
+@import '../partial-scss/font';
+@import '../partial-scss/colors';
+@import '../partial-scss/variables';
+@import '../partial-scss/text';
+@import '../partial-scss/primary-grid';
+@import '../partial-scss/primary';
+@import '../partial-scss/button';
+@import '../partial-scss/components';
+
+body{margin: 0px;}
+.sideImg {
+    min-height: 100vh !important;
+    background-image: url('../../img/models.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sideForm{
+    padding: 7%;
+    max-width: 800px;
+    @media (min-width:$media-1){
+        padding: 15%;
+    }
+    .success {
+        color: $color-success;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 11px;
+    }
+}
+.av-csfi-modal {
+    width: 90vw;
+    padding: 15% 10%;
+    
+    @media (min-width:$media-1){
+        padding: 10% 15%;
+        width: 50vw;
+    }
+    
+    > .material-symbols-outlined {
+        color: $color-warning;
+        font-size: 130px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 11px;
+    }
+}
+
+.av-input{
+    @include av-input-text();
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.av-helper {
+    font-size: 13px;
+}
+
+.av-error-message {
+    cursor: pointer;
+    padding: 15px 30px;
+    width: 100%;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    background-color: $color-error;
+    color: $color-white;
+    font-family: $regular-monts;
+    box-shadow: 2px 0px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

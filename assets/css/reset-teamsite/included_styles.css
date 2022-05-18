@@ -755,6 +755,14 @@
   cursor: pointer;
 }
 
+.av-error {
+  color: #851168;
+}
+
+.av-focus {
+  color: #7F28C4;
+}
+
 /* by Gerber Barillas */
 /* CSS MX */
 /* by Gerber Barillas */
@@ -5337,6 +5345,10 @@ a.offersLink.visited,
   }
 }
 
+.linearFormInput.av-error, input[type="text"] .av-error, input[type="password"].av-error {
+  background-color: rgba(133, 17, 104, 0.05) !important;
+}
+
 select {
   font-family: montserrat-regular, Helvetica, sans-serif;
   color: #3b4546;
@@ -5370,6 +5382,10 @@ select:focus {
     min-width: 42px;
     width: auto;
   }
+}
+
+select.av-error {
+  background-color: rgba(133, 17, 104, 0.05) !important;
 }
 
 input[type="checkbox"] {

@@ -583,6 +583,14 @@ h3.searchHeader {
   cursor: pointer;
 }
 
+.av-error {
+  color: #851168;
+}
+
+.av-focus {
+  color: #7F28C4;
+}
+
 /* by Gerber Barillas */
 /* CSS MX */
 /* by Gerber Barillas */
