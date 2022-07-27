@@ -60,6 +60,11 @@
 }
 .av-anew-container {
     padding-top: 93px;
+    &.dia-labial {
+        @media (min-width:$media-3) {
+            padding-top: 103px !important;
+        }    
+    }
     @media (min-width:$media-3) {
         padding-top: 144px;
     }

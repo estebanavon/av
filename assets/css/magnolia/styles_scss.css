@@ -5444,6 +5444,12 @@ div.p-fix, h3.p-fix {
 }
 
 @media (min-width: 1024px) {
+  .av-anew-container.dia-labial {
+    padding-top: 103px !important;
+  }
+}
+
+@media (min-width: 1024px) {
   .av-anew-container {
     padding-top: 144px;
   }

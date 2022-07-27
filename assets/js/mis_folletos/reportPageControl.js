@@ -26,8 +26,10 @@
         };
         
         var user = agregaCeros(userLogin, 11);
-        let cero;
-        function cero(c, i) {
+        
+
+        var cero;
+        function ceroFunction(c, i) {
             if (c >= 13) {
                 cero = ''
             } else if (c <= 10) {
@@ -65,7 +67,7 @@
                 } else {
                     y = currentYear
                 }
-                html += "<div class='col-sm load-wrapp contReport'><a href='" + baseUrlCampaing + y + groupCampaing2[i] + "_" + user + ".pdf' class='btn btn-primary text-dark' target='_blank'><img src='https://qaf.do.avon.com/FLDSuite/static/images/pronto_pago/img/reporte1.png' ><br>CampaÃ±a <span class='rdBtn'> " + groupCampaing2[i] + "</span></a></a></div>";
+                html += "<div class='col-sm load-wrapp contReport'><a href='" + baseUrlCampaing + y + groupCampaing2[i] + "_" + user + ".pdf' class='btn btn-primary text-dark' target='_blank'><img src='https://www.do.avon.com/FLDSuite/static/images/pronto_pago/img/reporte1.png' ><br>Campaña <span class='rdBtn'> " + groupCampaing2[i] + "</span></a></a></div>";
             }
         } else if (webCampaing == 3) {
             for (i = 0; i < groupCampaing3.length; i++) {
@@ -74,17 +76,17 @@
                 } else {
                     y = currentYear
                 }
-                html += "<div class='col-sm load-wrapp contReport'><a href='" + baseUrlCampaing + y + groupCampaing3[i] + "_" + user + ".pdf' class='btn btn-primary text-dark' target='_blank'><img src='https://qaf.do.avon.com/FLDSuite/static/images/pronto_pago/img/reporte1.png' ><br>CampaÃ±a <span class='rdBtn'> " + groupCampaing3[i] + "</span></a></a></div>";
+                html += "<div class='col-sm load-wrapp contReport'><a href='" + baseUrlCampaing + y + groupCampaing3[i] + "_" + user + ".pdf' class='btn btn-primary text-dark' target='_blank'><img src='https://www.do.avon.com/FLDSuite/static/images/pronto_pago/img/reporte1.png' ><br>Campaña <span class='rdBtn'> " + groupCampaing3[i] + "</span></a></a></div>";
             }
         } else if (webCampaing >= 4) {
             for (i = 1; i <= 3; i++) {
-                html += "<div class='col-sm load-wrapp contReport'><a href='" + baseUrlCampaing + currentYear + cero(webCampaing, i) + (webCampaing - i) + "_" + user + ".pdf' class='btn btn-primary text-dark' target='_blank'><img src='https://qaf.do.avon.com/FLDSuite/static/images/pronto_pago/img/reporte1.png' ><br>CampaÃ±a <span class='rdBtn'> 0" + (webCampaing - i) + "</span></a></a></div>";
+                html += "<div class='col-sm load-wrapp contReport'><a href='" + baseUrlCampaing + currentYear + ceroFunction(webCampaing, i) + (webCampaing - i) + "_" + user + ".pdf' class='btn btn-primary text-dark' target='_blank'><img src='https://www.do.avon.com/FLDSuite/static/images/pronto_pago/img/reporte1.png' ><br>Campaña <span class='rdBtn'> 0" + (webCampaing - i) + "</span></a></a></div>";
             }
         };
 
 
         $('#botones').append(html);
-        debugger;
+
 
      
 
